@@ -1,15 +1,138 @@
-# Personality Engram Knowledge Base
+# Sol
 
-This workspace is an internal research and RAG scaffold for evaluating whether a
-user-consented data model can infer stable, useful personality/style signals and
-use them to guide multimodal generation.
+Sol is an early research and planning workspace for a user-consented
+personality and style modeling platform. The project is investigating whether
+personal data, user declarations, and user corrections can support a structured,
+evidence-weighted model that helps generative systems produce outputs that feel
+more aligned with a user's communication style, creative taste, motivations,
+values, and context.
 
 The project intentionally avoids claiming that it can discover a user's "true"
-personality. The working goal is narrower:
+personality or produce a clinical diagnosis. The working goal is narrower:
 
 > Build a user-inspectable, evidence-weighted, context-aware personality and
 > style model from consented data, then use that model to personalize generated
 > outputs across modalities.
+
+## Intent
+
+Modern generative systems can write, draw, summarize, synthesize, and act, but
+they usually lack a durable model of the specific person they are helping. Sol
+starts from the hypothesis that a useful user model should not be a single
+personality score. It should be a layered, inspectable structure made from:
+
+- stable trait tendencies
+- context-specific states and modes
+- communication and linguistic markers
+- aesthetic and creative preferences
+- motivational patterns
+- values and goals
+- behavioral regularities
+- user-declared self-concepts
+- contraindications and uncertainty markers
+
+Every profile claim should carry provenance, confidence, context, recency, and
+room for user correction. The system should preserve uncertainty instead of
+flattening a person into a fixed label.
+
+## First Product Wedge
+
+The first candidate feature set is a Personal Creative Style Kit.
+
+The wedge takes a small set of user-provided materials, such as writing samples,
+liked and disliked examples, short calibration answers, and optional moodboard
+references. It converts those inputs into editable profile atoms, then uses the
+profile to generate artifacts the user can evaluate.
+
+Initial outputs may include:
+
+- communication style summary
+- writing voice guide
+- aesthetic preference summary
+- motivational and value hypotheses
+- creative pattern observations
+- short bio or positioning statement
+- content ideas
+- image prompt directions
+- visual moodboard description
+
+The main product loop is:
+
+1. The user authorizes or uploads data.
+2. The system extracts evidence-backed observations.
+3. Observations update profile atoms with confidence and provenance.
+4. The user confirms, edits, or rejects profile atoms.
+5. Generation uses scoped profile atoms for a specific task.
+6. Feedback updates confidence, mappings, and future generation behavior.
+
+## Future Feature Set
+
+The long-term platform should generalize beyond the first creative wedge while
+keeping consent, interpretability, and user control as core primitives.
+
+Candidate product capabilities:
+
+- Profile workbench for viewing, editing, deleting, exporting, and versioning
+  profile atoms.
+- Consent and source controls for deciding which data can be used for which
+  modeling or generation purposes.
+- Evidence browser showing why a profile claim exists and which sources support
+  or contradict it.
+- Multimodal generation adapters for text, image, audio, video, avatar, UI, and
+  agent behavior.
+- Style transfer and voice continuity tools for writing, brand, creative
+  direction, and personal expression.
+- Reflective self-modeling flows where users compare system hypotheses against
+  their declared self-concept.
+- Feedback loops for "feels like me", usefulness, confidence calibration, and
+  direct corrections.
+- API layer for requesting scoped, permissioned profile context inside other
+  applications.
+- Evaluation harnesses for construct validity, prediction quality, user
+  satisfaction, bias, privacy, and misuse risk.
+- Safety controls for sensitive attributes, contraindications, uncertainty
+  markers, deletion, audit, and non-diagnostic boundaries.
+
+Candidate platform services:
+
+- data ingestion and source normalization
+- consent and permissions
+- feature extraction
+- profile atom store
+- inference engine
+- user correction interface
+- generation orchestrator
+- modality adapters
+- feedback loop
+- audit, deletion, and export
+
+## Research Foundation
+
+This repository currently prioritizes the knowledge base before application
+code. The research program pulls from personality psychology, psychometrics,
+behavioral science, abnormal psychology, computational linguistics, aesthetic
+preference research, motivation and values research, human-computer interaction,
+privacy, and model evaluation.
+
+The RAG corpus is intended to help answer questions such as:
+
+- Which constructs are well-supported enough to model?
+- Which signals are weak, context-bound, biased, or overclaimed?
+- How should user corrections update confidence?
+- Which inferences should be forbidden, gated, or marked uncertain?
+- What evidence is required before a profile atom can affect generation?
+
+## Non-Goals
+
+Sol is not intended to:
+
+- diagnose mental health conditions
+- infer protected traits without explicit user intent and controls
+- rank people for employment, housing, lending, insurance, education, legal, or
+  similar eligibility decisions
+- hide profiling from users
+- claim complete psychological accuracy
+- present generated personality claims as immutable facts
 
 ## Structure
 
