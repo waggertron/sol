@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personality RAG Research"
+  short_description: "Research and maintain the personality engram knowledge base."
+  default_prompt: "Use the personality RAG research workflow to expand the knowledge base, evaluate sources, and preserve ethical modeling boundaries."

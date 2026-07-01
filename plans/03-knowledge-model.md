@@ -1,0 +1,53 @@
+# Knowledge Model Plan
+
+## Objective
+
+Define a research-backed ontology that can support personality/style modeling
+without overclaiming.
+
+## Core Model Layers
+
+- observed evidence
+- style preferences
+- trait hypotheses
+- context-specific modes
+- motivations and values
+- aesthetic preferences
+- generation mappings
+- sensitive or blocked inference categories
+
+## Candidate Research Foundations
+
+- Big Five / Five-Factor Model
+- HEXACO
+- CAPS
+- Whole Trait Theory
+- construct validity and psychometrics
+- language-based personality inference
+- digital footprint inference
+- dimensional psychopathology for boundary design
+
+## Profile Atom Requirements
+
+Each profile atom should include:
+
+- claim
+- domain
+- evidence
+- source IDs
+- context
+- confidence
+- stability
+- recency
+- counterevidence
+- user confirmation status
+- sensitivity level
+- generation mappings
+
+## Open Questions
+
+- Which constructs are useful enough for generation?
+- Which constructs require explicit user self-report?
+- Which constructs should never be stored?
+- How should confidence be calibrated across data sources?
+

@@ -1,0 +1,137 @@
+{
+  "sources": [
+    {
+      "id": "frontiers_2022_cps_personality",
+      "title": "Frontiers in Psychology article on personality and complex problem solving",
+      "type": "peer_reviewed_article",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.788402/full",
+      "domains": ["personality_psychology", "complex_problem_solving"],
+      "status": "seed_card_created",
+      "evidence_grade": "B"
+    },
+    {
+      "id": "schwartz_2013_open_vocab_language",
+      "title": "Personality, Gender, and Age in the Language of Social Media: The Open-Vocabulary Approach",
+      "authors": ["H. Andrew Schwartz", "Johannes C. Eichstaedt", "Margaret L. Kern", "et al."],
+      "year": 2013,
+      "type": "peer_reviewed_article",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0073791",
+      "domains": ["computational_linguistics", "personality_inference"],
+      "status": "seed_card_created",
+      "evidence_grade": "B"
+    },
+    {
+      "id": "youyou_2015_computer_personality_judgments",
+      "title": "Computer-based personality judgments are more accurate than those made by humans",
+      "authors": ["Wu Youyou", "Michal Kosinski", "David Stillwell"],
+      "year": 2015,
+      "type": "peer_reviewed_article",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25583507/",
+      "domains": ["digital_footprints", "personality_prediction"],
+      "status": "seed_card_created",
+      "evidence_grade": "B"
+    },
+    {
+      "id": "kosinski_2013_private_traits_digital_records",
+      "title": "Private traits and attributes are predictable from digital records of human behavior",
+      "authors": ["Michal Kosinski", "David Stillwell", "Thore Graepel"],
+      "year": 2013,
+      "type": "peer_reviewed_article",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.1218772110",
+      "domains": ["digital_footprints", "privacy", "personality_prediction"],
+      "status": "to_summarize",
+      "evidence_grade": "B"
+    },
+    {
+      "id": "bach_first_2018_icd11_personality",
+      "title": "Application of the ICD-11 classification of personality disorders",
+      "authors": ["Bo Bach", "Michael B. First"],
+      "year": 2018,
+      "type": "peer_reviewed_article",
+      "url": "https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-018-1908-3",
+      "domains": ["abnormal_psychology", "personality_disorders"],
+      "status": "seed_card_created",
+      "evidence_grade": "B"
+    },
+    {
+      "id": "nimh_rdoc_framework",
+      "title": "Research Domain Criteria (RDoC)",
+      "type": "research_framework",
+      "url": "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc",
+      "domains": ["clinical_research", "affective_science", "cognitive_systems"],
+      "status": "seed_card_created",
+      "evidence_grade": "C"
+    },
+    {
+      "id": "hitop_framework",
+      "title": "Hierarchical Taxonomy of Psychopathology",
+      "type": "research_framework",
+      "url": "https://www.hitop-system.org/",
+      "domains": ["dimensional_psychopathology", "clinical_research"],
+      "status": "seed_card_created",
+      "evidence_grade": "C"
+    },
+    {
+      "id": "goldberg_1990_big_five",
+      "title": "An alternative description of personality: the Big-Five factor structure",
+      "authors": ["Lewis R. Goldberg"],
+      "year": 1990,
+      "type": "peer_reviewed_article",
+      "doi": "10.1037/0022-3514.59.6.1216",
+      "domains": ["personality_structure", "lexical_hypothesis"],
+      "status": "seed_card_created",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "ashton_lee_hexaco",
+      "title": "HEXACO model of personality structure",
+      "authors": ["Michael C. Ashton", "Kibeom Lee"],
+      "type": "research_program",
+      "doi_examples": ["10.1037/0022-3514.86.2.356", "10.1177/1088868306294907"],
+      "domains": ["personality_structure"],
+      "status": "seed_card_created",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "mischel_shoda_1995_caps",
+      "title": "A cognitive-affective system theory of personality",
+      "authors": ["Walter Mischel", "Yuichi Shoda"],
+      "year": 1995,
+      "type": "peer_reviewed_article",
+      "doi": "10.1037/0033-295X.102.2.246",
+      "domains": ["personality_dynamics", "person_situation"],
+      "status": "seed_card_created",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "cronbach_meehl_1955_construct_validity",
+      "title": "Construct validity in psychological tests",
+      "authors": ["Lee J. Cronbach", "Paul E. Meehl"],
+      "year": 1955,
+      "type": "foundational_paper",
+      "doi": "10.1037/h0040957",
+      "domains": ["psychometrics", "construct_validity"],
+      "status": "seed_card_created",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "fleeson_jayawickreme_2015_whole_trait",
+      "title": "Whole Trait Theory",
+      "authors": ["William Fleeson", "Eranda Jayawickreme"],
+      "year": 2015,
+      "type": "peer_reviewed_article",
+      "doi": "10.1016/j.jrp.2014.10.009",
+      "domains": ["personality_dynamics", "trait_state"],
+      "status": "seed_card_created",
+      "evidence_grade": "A"
+    },
+    {
+      "id": "engram_concept_boundary",
+      "title": "Engram concept boundary for this project",
+      "type": "internal_note",
+      "domains": ["terminology", "model_boundary"],
+      "status": "seed_card_created",
+      "evidence_grade": "D"
+    }
+  ]
+}
