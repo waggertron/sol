@@ -110,6 +110,8 @@ For each assessment, capture:
 Outputs:
 
 - `jsondb/assessment_inventory.json`
+- `assessments/ocean/manifest.json`
+- `assessments/ocean/instruments/*.json`
 - `kb/assessments/ocean_assessment_catalog_v0.md`
 - import queue entries for missing validation papers
 - license review queue for instruments with uncertain permissions

@@ -1,0 +1,771 @@
+{
+  "construct_system": "Big Five aspects",
+  "family": "OCEAN",
+  "id": "ipip_big_five_aspects",
+  "license": {
+    "evidence": "The official IPIP site states that its items and scales are in the public domain and can be copied, edited, translated, or used for any purpose without permission or a fee.",
+    "source_url": "https://ipip.ori.org/",
+    "status": "public_domain"
+  },
+  "name": "IPIP Big Five Aspects Scales",
+  "notes": [],
+  "response_scale": {
+    "type": "likert_1_5_accuracy",
+    "values": [
+      {
+        "label": "Very Inaccurate",
+        "value": 1
+      },
+      {
+        "label": "Moderately Inaccurate",
+        "value": 2
+      },
+      {
+        "label": "Neither Inaccurate nor Accurate",
+        "value": 3
+      },
+      {
+        "label": "Moderately Accurate",
+        "value": 4
+      },
+      {
+        "label": "Very Accurate",
+        "value": 5
+      }
+    ]
+  },
+  "scales": [
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "neuroticism",
+      "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Get angry easily."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Get upset easily."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Change my mood a lot."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am a person whose moods go up and down easily."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Get easily agitated."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Can be stirred up easily."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Rarely get irritated."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Keep my emotions under control."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Rarely lose my composure."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_volatility_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am not easily annoyed."
+        }
+      ],
+      "label": "Volatility 10-item scale",
+      "reliability_alpha": 0.85,
+      "source_construct": "Volatility",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "neuroticism",
+      "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am filled with doubts about things."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Feel threatened easily."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Worry about things."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am easily discouraged."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Become overwhelmed by events."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Am afraid of many things."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Seldom feel blue."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Feel comfortable with myself."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Rarely feel depressed."
+        },
+        {
+          "id": "ipip_big_five_aspects:neuroticism_withdrawal_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am not embarrassed easily."
+        }
+      ],
+      "label": "Withdrawal 10-item scale",
+      "reliability_alpha": 0.84,
+      "source_construct": "Withdrawal",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "agreeableness",
+      "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Feel others' emotions."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Inquire about others' well-being."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Sympathize with others' feelings."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Take an interest in other people's lives."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Like to do things for others."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am not interested in other people's problems."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Can't be bothered with other's needs."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am indifferent to the feelings of others."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Take no time for others."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_compassion_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Don't have a soft side."
+        }
+      ],
+      "label": "Compassion 10-item scale",
+      "reliability_alpha": 0.84,
+      "source_construct": "Compassion",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "agreeableness",
+      "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Respect authority."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Hate to seem pushy."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Avoid imposing my will on others."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Rarely put people under pressure."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Insult people."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Believe that I am better than others."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Take advantage of others."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Seek conflict."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Love a good fight."
+        },
+        {
+          "id": "ipip_big_five_aspects:agreeableness_politeness_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am out for my own personal gain."
+        }
+      ],
+      "label": "Politeness 10-item scale",
+      "reliability_alpha": 0.75,
+      "source_construct": "Politeness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "conscientiousness",
+      "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Carry out my plans."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Finish what I start."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Get things done quickly."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Always know what I am doing."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Waste my time."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Find it difficult to get down to work."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Mess things up."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Don't put my mind on the task at hand."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Postpone decisions."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_industriousness_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am easily distracted."
+        }
+      ],
+      "label": "Industriousness 10-item scale",
+      "reliability_alpha": 0.81,
+      "source_construct": "Industriousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "conscientiousness",
+      "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Like order."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Keep things tidy."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Follow a schedule."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Want everything to be \"just right.\""
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "See that rules are observed."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Want every detail taken care of."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Leave my belongings around."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am not bothered by messy people."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am not bothered by disorder."
+        },
+        {
+          "id": "ipip_big_five_aspects:conscientiousness_orderliness_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Dislike routine."
+        }
+      ],
+      "label": "Orderliness 10-item scale",
+      "reliability_alpha": 0.8,
+      "source_construct": "Orderliness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "extraversion",
+      "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Make friends easily."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Warm up quickly to others."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Show my feelings when I'm happy."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Have a lot of fun."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Laugh a lot."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am hard to get to know."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Keep others at a distance."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Reveal little about myself."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Rarely get caught up in the excitement."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_enthusiasm_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am not a very enthusiastic person."
+        }
+      ],
+      "label": "Enthusiasm 10-item scale",
+      "reliability_alpha": 0.81,
+      "source_construct": "Enthusiasm",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "extraversion",
+      "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Take charge."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Have a strong personality."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Know how to captivate people."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "See myself as a good leader."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Can talk others into doing things."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Am the first to act."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Do not have an assertive personality."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Lack the talent for influencing people."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Wait for others to lead the way."
+        },
+        {
+          "id": "ipip_big_five_aspects:extraversion_assertiveness_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Hold back my opinions."
+        }
+      ],
+      "label": "Assertiveness 10-item scale",
+      "reliability_alpha": 0.85,
+      "source_construct": "Assertiveness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "openness",
+      "id": "ipip_big_five_aspects:openness_intellect_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am quick to understand things."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Can handle a lot of information."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Like to solve complex problems."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Have a rich vocabulary."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Think quickly."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Formulate ideas clearly."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Have difficulty understanding abstract ideas."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Avoid philosophical discussions."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Avoid difficult reading material."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_intellect_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Learn things slowly."
+        }
+      ],
+      "label": "Intellect 10-item scale",
+      "reliability_alpha": 0.84,
+      "source_construct": "Intellect",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "openness",
+      "id": "ipip_big_five_aspects:openness_openness_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Enjoy the beauty of nature."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Believe in the importance of art."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Love to reflect on things."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Get deeply immersed in music."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "See beauty in things that others might not notice."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Need a creative outlet."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Do not like poetry."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Seldom get lost in thought."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Seldom daydream."
+        },
+        {
+          "id": "ipip_big_five_aspects:openness_openness_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Seldom notice the emotional aspects of paintings and pictures."
+        }
+      ],
+      "label": "Openness 10-item scale",
+      "reliability_alpha": 0.78,
+      "source_construct": "Openness",
+      "test_retest_correlation": null
+    }
+  ],
+  "schema_version": 1,
+  "scoring": {
+    "method": "sum_keyed_items",
+    "negative_keyed": "reverse score 1-5 responses before summing",
+    "positive_keyed": "1=Very Inaccurate through 5=Very Accurate",
+    "score_interpretation": "Higher scores indicate greater endorsement of the named construct."
+  },
+  "source": {
+    "publisher": "International Personality Item Pool",
+    "retrieved_date": "2026-07-01",
+    "url": "https://ipip.ori.org/BFASKeys.htm"
+  }
+}

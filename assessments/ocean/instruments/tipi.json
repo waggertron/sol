@@ -1,0 +1,184 @@
+{
+  "construct_system": "Big Five very brief measure",
+  "family": "OCEAN",
+  "id": "tipi",
+  "items": [
+    {
+      "domain": "extraversion",
+      "id": "tipi:item:001",
+      "keyed": "positive",
+      "source_order": 1,
+      "text": "Extraverted, enthusiastic."
+    },
+    {
+      "domain": "agreeableness",
+      "id": "tipi:item:002",
+      "keyed": "negative",
+      "source_order": 2,
+      "text": "Critical, quarrelsome."
+    },
+    {
+      "domain": "conscientiousness",
+      "id": "tipi:item:003",
+      "keyed": "positive",
+      "source_order": 3,
+      "text": "Dependable, self-disciplined."
+    },
+    {
+      "domain": "emotional_stability",
+      "id": "tipi:item:004",
+      "keyed": "negative",
+      "source_order": 4,
+      "text": "Anxious, easily upset."
+    },
+    {
+      "domain": "openness",
+      "id": "tipi:item:005",
+      "keyed": "positive",
+      "source_order": 5,
+      "text": "Open to new experiences, complex."
+    },
+    {
+      "domain": "extraversion",
+      "id": "tipi:item:006",
+      "keyed": "negative",
+      "source_order": 6,
+      "text": "Reserved, quiet."
+    },
+    {
+      "domain": "agreeableness",
+      "id": "tipi:item:007",
+      "keyed": "positive",
+      "source_order": 7,
+      "text": "Sympathetic, warm."
+    },
+    {
+      "domain": "conscientiousness",
+      "id": "tipi:item:008",
+      "keyed": "negative",
+      "source_order": 8,
+      "text": "Disorganized, careless."
+    },
+    {
+      "domain": "emotional_stability",
+      "id": "tipi:item:009",
+      "keyed": "positive",
+      "source_order": 9,
+      "text": "Calm, emotionally stable."
+    },
+    {
+      "domain": "openness",
+      "id": "tipi:item:010",
+      "keyed": "negative",
+      "source_order": 10,
+      "text": "Conventional, uncreative."
+    }
+  ],
+  "license": {
+    "evidence": "The official TIPI page states that anyone can use it for any purpose without asking permission.",
+    "source_url": "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/",
+    "status": "permissive_use"
+  },
+  "name": "Ten Item Personality Inventory",
+  "notes": [
+    "Very brief measure; use only when short administration length is more important than precision.",
+    "The official TIPI page cautions that brief measures have diminished psychometric properties."
+  ],
+  "response_scale": {
+    "type": "likert_1_7_agreement",
+    "values": [
+      {
+        "label": "Disagree strongly",
+        "value": 1
+      },
+      {
+        "label": "Disagree moderately",
+        "value": 2
+      },
+      {
+        "label": "Disagree a little",
+        "value": 3
+      },
+      {
+        "label": "Neither agree nor disagree",
+        "value": 4
+      },
+      {
+        "label": "Agree a little",
+        "value": 5
+      },
+      {
+        "label": "Agree moderately",
+        "value": 6
+      },
+      {
+        "label": "Agree strongly",
+        "value": 7
+      }
+    ]
+  },
+  "scales": [
+    {
+      "domain": "extraversion",
+      "id": "tipi:extraversion",
+      "item_refs": [
+        "tipi:item:001",
+        "tipi:item:006"
+      ],
+      "label": "Extraversion"
+    },
+    {
+      "domain": "agreeableness",
+      "id": "tipi:agreeableness",
+      "item_refs": [
+        "tipi:item:002",
+        "tipi:item:007"
+      ],
+      "label": "Agreeableness"
+    },
+    {
+      "domain": "conscientiousness",
+      "id": "tipi:conscientiousness",
+      "item_refs": [
+        "tipi:item:003",
+        "tipi:item:008"
+      ],
+      "label": "Conscientiousness"
+    },
+    {
+      "domain": "emotional_stability",
+      "id": "tipi:emotional_stability",
+      "item_refs": [
+        "tipi:item:004",
+        "tipi:item:009"
+      ],
+      "label": "Emotional Stability"
+    },
+    {
+      "domain": "openness",
+      "id": "tipi:openness",
+      "item_refs": [
+        "tipi:item:005",
+        "tipi:item:010"
+      ],
+      "label": "Openness"
+    }
+  ],
+  "schema_version": 1,
+  "scoring": {
+    "method": "average_two_items_per_domain",
+    "reverse_scored_items": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "score_interpretation": "Average the domain item and reverse-scored paired item."
+  },
+  "source": {
+    "publisher": "Gosling Lab, University of Texas at Austin",
+    "retrieved_date": "2026-07-01",
+    "url": "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/ten-item-personality-inventory-tipi/"
+  }
+}

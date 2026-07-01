@@ -1,0 +1,135 @@
+{
+  "description": "Manifest of acquired OCEAN and OCEAN-adjacent assessment instruments stored in this repo.",
+  "instrument_count": 11,
+  "instruments": [
+    {
+      "construct_system": "Big Five factor markers",
+      "family": "OCEAN",
+      "id": "ipip_big_five_factor_markers",
+      "item_count": 150,
+      "license_status": "public_domain",
+      "name": "IPIP Goldberg Big-Five Factor Markers",
+      "path": "instruments/ipip_big_five_factor_markers.json",
+      "scale_count": 10,
+      "source_url": "https://ipip.ori.org/newBigFive5broadKey.htm"
+    },
+    {
+      "construct_system": "Big Five factor markers short form",
+      "family": "OCEAN",
+      "id": "mini_ipip",
+      "item_count": 20,
+      "license_status": "public_domain",
+      "name": "Mini-IPIP Big Five Factors",
+      "path": "instruments/mini_ipip.json",
+      "scale_count": 5,
+      "source_url": "https://ipip.ori.org/MiniIPIPKey.htm"
+    },
+    {
+      "construct_system": "Big Six / HEXACO-adjacent short form",
+      "family": "OCEAN_adjacent",
+      "id": "mini_ipip6",
+      "item_count": 24,
+      "license_status": "public_domain",
+      "name": "Mini-IPIP6 Big Six Factors",
+      "path": "instruments/mini_ipip6.json",
+      "scale_count": 6,
+      "source_url": "https://ipip.ori.org/MiniIPIP6Key.htm"
+    },
+    {
+      "construct_system": "Big Five aspects",
+      "family": "OCEAN",
+      "id": "ipip_big_five_aspects",
+      "item_count": 100,
+      "license_status": "public_domain",
+      "name": "IPIP Big Five Aspects Scales",
+      "path": "instruments/ipip_big_five_aspects.json",
+      "scale_count": 10,
+      "source_url": "https://ipip.ori.org/BFASKeys.htm"
+    },
+    {
+      "construct_system": "Abridged Big Five Circumplex facets",
+      "family": "OCEAN",
+      "id": "ipip_ab5c_45_facets",
+      "item_count": 487,
+      "license_status": "public_domain",
+      "name": "IPIP AB5C 45 Facets",
+      "path": "instruments/ipip_ab5c_45_facets.json",
+      "scale_count": 45,
+      "source_url": "https://ipip.ori.org/newAB5CKey.htm"
+    },
+    {
+      "construct_system": "NEO-PI-R domain representation",
+      "family": "OCEAN",
+      "id": "ipip_neo_domains_goldberg_1999",
+      "item_count": 150,
+      "license_status": "public_domain",
+      "name": "IPIP NEO-PI-R Domain Representation",
+      "path": "instruments/ipip_neo_domains_goldberg_1999.json",
+      "scale_count": 10,
+      "source_url": "https://ipip.ori.org/newNEODomainsKey.htm"
+    },
+    {
+      "construct_system": "NEO-PI-R facet representation",
+      "family": "OCEAN",
+      "id": "ipip_neo_facets_goldberg_1999",
+      "item_count": 300,
+      "license_status": "public_domain",
+      "name": "IPIP NEO-PI-R Facet Representation",
+      "path": "instruments/ipip_neo_facets_goldberg_1999.json",
+      "scale_count": 30,
+      "source_url": "https://ipip.ori.org/newNEOFacetsKey.htm"
+    },
+    {
+      "construct_system": "IPIP-NEO-120 facet representation",
+      "family": "OCEAN",
+      "id": "ipip_neo_120_johnson_2014",
+      "item_count": 120,
+      "license_status": "public_domain",
+      "name": "IPIP-NEO-120 Johnson 2014",
+      "path": "instruments/ipip_neo_120_johnson_2014.json",
+      "scale_count": 30,
+      "source_url": "https://ipip.ori.org/30FacetNEO-PI-RItems.htm"
+    },
+    {
+      "construct_system": "IPIP-NEO-120 facet representation",
+      "family": "OCEAN",
+      "id": "ipip_neo_120_maples_2014",
+      "item_count": 118,
+      "license_status": "public_domain",
+      "name": "IPIP-NEO-120 Maples et al. 2014",
+      "path": "instruments/ipip_neo_120_maples_2014.json",
+      "scale_count": 30,
+      "source_url": "https://ipip.ori.org/30FacetNEO-PI-RItems_Maples_etal.htm"
+    },
+    {
+      "construct_system": "IPIP-NEO-60 domain representation",
+      "family": "OCEAN",
+      "id": "ipip_neo_60_maples_keller_2019",
+      "item_count": 60,
+      "license_status": "public_domain",
+      "name": "IPIP-NEO-60 Maples-Keller et al. 2019",
+      "path": "instruments/ipip_neo_60_maples_keller_2019.json",
+      "scale_count": 5,
+      "source_url": "https://ipip.ori.org/IPIP-NEO-60ScoringKeys.htm"
+    },
+    {
+      "construct_system": "Big Five very brief measure",
+      "family": "OCEAN",
+      "id": "tipi",
+      "item_count": 10,
+      "license_status": "permissive_use",
+      "name": "Ten Item Personality Inventory",
+      "path": "instruments/tipi.json",
+      "scale_count": 5,
+      "source_url": "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/ten-item-personality-inventory-tipi/"
+    }
+  ],
+  "item_count": 1539,
+  "policy": {
+    "full_item_text_allowed_only_when_permissive": true,
+    "protected_or_uncertain_instruments": "metadata_only_or_reference_only"
+  },
+  "scale_count": 186,
+  "schema_version": 1,
+  "updated": "2026-07-01"
+}

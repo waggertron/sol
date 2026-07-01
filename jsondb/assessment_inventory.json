@@ -1,8 +1,14 @@
 {
   "version": 1,
   "updated": "2026-07-01",
+  "assessment_area": {
+    "manifest": "assessments/ocean/manifest.json",
+    "instruments_dir": "assessments/ocean/instruments",
+    "reference_only": "assessments/ocean/reference_only/ocean_reference_inventory.json"
+  },
   "policy": {
     "store_item_text_by_default": false,
+    "store_item_text_exception": "Full item text may be stored only when the source is clearly public-domain, explicitly permissive, or otherwise approved for this repo.",
     "reason": "Assessment item text may be copyrighted, licensed, clinically sensitive, or otherwise unsuitable for a public repository.",
     "allowed_content": [
       "instrument metadata",
@@ -10,7 +16,8 @@
       "source links",
       "scoring concepts",
       "licensing posture",
-      "product suitability notes"
+      "product suitability notes",
+      "full item and scoring data when license posture is public-domain or explicitly permissive"
     ]
   },
   "assessments": [
@@ -24,8 +31,20 @@
       "use_posture": "usable_now",
       "license_posture": "public_domain_per_official_site",
       "product_suitability": "best_first_candidate_for_prototype",
-      "item_text_stored": false,
-      "scoring_stored": false,
+      "item_text_stored": true,
+      "scoring_stored": true,
+      "stored_paths": [
+        "assessments/ocean/instruments/ipip_big_five_factor_markers.json",
+        "assessments/ocean/instruments/mini_ipip.json",
+        "assessments/ocean/instruments/mini_ipip6.json",
+        "assessments/ocean/instruments/ipip_big_five_aspects.json",
+        "assessments/ocean/instruments/ipip_ab5c_45_facets.json",
+        "assessments/ocean/instruments/ipip_neo_domains_goldberg_1999.json",
+        "assessments/ocean/instruments/ipip_neo_facets_goldberg_1999.json",
+        "assessments/ocean/instruments/ipip_neo_120_johnson_2014.json",
+        "assessments/ocean/instruments/ipip_neo_120_maples_2014.json",
+        "assessments/ocean/instruments/ipip_neo_60_maples_keller_2019.json"
+      ],
       "source_urls": [
         "https://ipip.ori.org/",
         "https://ipip.ori.org/newPermission.htm",
@@ -46,8 +65,11 @@
       "use_posture": "usable_now",
       "license_posture": "official_site_says_anyone_can_use_for_any_purpose",
       "product_suitability": "fast_onboarding_or_smoke_test_only",
-      "item_text_stored": false,
-      "scoring_stored": false,
+      "item_text_stored": true,
+      "scoring_stored": true,
+      "stored_paths": [
+        "assessments/ocean/instruments/tipi.json"
+      ],
       "source_urls": [
         "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/"
       ],
@@ -158,4 +180,3 @@
     }
   ]
 }
-

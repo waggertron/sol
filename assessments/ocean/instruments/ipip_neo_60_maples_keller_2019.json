@@ -1,0 +1,543 @@
+{
+  "construct_system": "IPIP-NEO-60 domain representation",
+  "family": "OCEAN",
+  "id": "ipip_neo_60_maples_keller_2019",
+  "license": {
+    "evidence": "The official IPIP site states that its items and scales are in the public domain and can be copied, edited, translated, or used for any purpose without permission or a fee.",
+    "source_url": "https://ipip.ori.org/",
+    "status": "public_domain"
+  },
+  "name": "IPIP-NEO-60 Maples-Keller et al. 2019",
+  "notes": [],
+  "response_scale": {
+    "type": "likert_1_5_accuracy",
+    "values": [
+      {
+        "label": "Very Inaccurate",
+        "value": 1
+      },
+      {
+        "label": "Moderately Inaccurate",
+        "value": 2
+      },
+      {
+        "label": "Neither Inaccurate nor Accurate",
+        "value": 3
+      },
+      {
+        "label": "Moderately Accurate",
+        "value": 4
+      },
+      {
+        "label": "Very Accurate",
+        "value": 5
+      }
+    ]
+  },
+  "scales": [
+    {
+      "construct_code": null,
+      "declared_item_count": 12,
+      "domain": "neuroticism",
+      "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism",
+      "items": [
+        {
+          "facet_source": "N1: Anxiety",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Worry about things."
+        },
+        {
+          "facet_source": "N1: Anxiety",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Get stressed out easily."
+        },
+        {
+          "facet_source": "N2: Anger",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Get angry easily."
+        },
+        {
+          "facet_source": "N2: Anger",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Lose my temper."
+        },
+        {
+          "facet_source": "N3: Depression",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Often feel blue."
+        },
+        {
+          "facet_source": "N3: Depression",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:006",
+          "keyed": "positive",
+          "review_flags": [
+            "self_evaluation"
+          ],
+          "source_order": 6,
+          "text": "Dislike myself."
+        },
+        {
+          "facet_source": "N4: Self-Consciousness",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Find it difficult to approach others."
+        },
+        {
+          "facet_source": "N4: Self-Consciousness",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Am easily intimidated."
+        },
+        {
+          "facet_source": "N5: Immoderation",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:009",
+          "keyed": "negative",
+          "review_flags": [
+            "substance_or_impulse"
+          ],
+          "source_order": 9,
+          "text": "Rarely overindulge."
+        },
+        {
+          "facet_source": "N5: Immoderation",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am able to control my cravings."
+        },
+        {
+          "facet_source": "N6: Vulnerability",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Remain calm under pressure."
+        },
+        {
+          "facet_source": "N6: Vulnerability",
+          "id": "ipip_neo_60_maples_keller_2019:neuroticism_neuroticism:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Am calm even in tense situations."
+        }
+      ],
+      "label": "Neuroticism",
+      "reliability_alpha": 0.95,
+      "source_construct": "Neuroticism",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 12,
+      "domain": "extraversion",
+      "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion",
+      "items": [
+        {
+          "facet_source": "E1: Friendliness",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Make friends easily."
+        },
+        {
+          "facet_source": "E1: Friendliness",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Act comfortably with others."
+        },
+        {
+          "facet_source": "E2: Gregariousness",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Love large parties."
+        },
+        {
+          "facet_source": "E2: Gregariousness",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Avoid crowds."
+        },
+        {
+          "facet_source": "E3: Assertiveness",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Take charge."
+        },
+        {
+          "facet_source": "E3: Assertiveness",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Try to lead others."
+        },
+        {
+          "facet_source": "E4: Activity Level",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Am always busy."
+        },
+        {
+          "facet_source": "E4: Activity Level",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Am always on the go."
+        },
+        {
+          "facet_source": "E5: Excitement-Seeking",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Love excitement."
+        },
+        {
+          "facet_source": "E5: Excitement-Seeking",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:010",
+          "keyed": "positive",
+          "source_order": 10,
+          "text": "Seek adventure."
+        },
+        {
+          "facet_source": "E6: Cheerfulness",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:011",
+          "keyed": "positive",
+          "source_order": 11,
+          "text": "Have a lot of fun."
+        },
+        {
+          "facet_source": "E6: Cheerfulness",
+          "id": "ipip_neo_60_maples_keller_2019:extraversion_extraversion:item:012",
+          "keyed": "positive",
+          "source_order": 12,
+          "text": "Love life."
+        }
+      ],
+      "label": "Extraversion",
+      "reliability_alpha": 0.92,
+      "source_construct": "Extraversion",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 12,
+      "domain": "openness",
+      "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience",
+      "items": [
+        {
+          "facet_source": "O1: Imagination",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have a vivid imagination."
+        },
+        {
+          "facet_source": "O1: Imagination",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Love to daydream."
+        },
+        {
+          "facet_source": "O2: Artistic Interests",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Believe in the importance of art."
+        },
+        {
+          "facet_source": "O2: Artistic Interests",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Do not like art."
+        },
+        {
+          "facet_source": "O3: Emotionality",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Experience my emotions intensely."
+        },
+        {
+          "facet_source": "O3: Emotionality",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am not easily affected by my emotions."
+        },
+        {
+          "facet_source": "O4: Adventurousness",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Prefer to stick with things that I know."
+        },
+        {
+          "facet_source": "O4: Adventurousness",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Don't like the idea of change."
+        },
+        {
+          "facet_source": "O5: Intellect",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Avoid philosophical discussions."
+        },
+        {
+          "facet_source": "O5: Intellect",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am not interested in theoretical discussions."
+        },
+        {
+          "facet_source": "O6: Liberalism",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:011",
+          "keyed": "positive",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 11,
+          "text": "Tend to vote for liberal political candidates."
+        },
+        {
+          "facet_source": "O6: Liberalism",
+          "id": "ipip_neo_60_maples_keller_2019:openness_openness_to_experience:item:012",
+          "keyed": "negative",
+          "review_flags": [
+            "religion"
+          ],
+          "source_order": 12,
+          "text": "Believe in one true religion."
+        }
+      ],
+      "label": "Openness To Experience",
+      "reliability_alpha": 0.92,
+      "source_construct": "Openness To Experience",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 12,
+      "domain": "agreeableness",
+      "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness",
+      "items": [
+        {
+          "facet_source": "A1: Trust",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Trust others."
+        },
+        {
+          "facet_source": "A1: Trust",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Believe that others have good intentions."
+        },
+        {
+          "facet_source": "A2: Morality",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Cheat to get ahead."
+        },
+        {
+          "facet_source": "A2: Morality",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Take advantage of others."
+        },
+        {
+          "facet_source": "A3: Altruism",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Love to help others."
+        },
+        {
+          "facet_source": "A3: Altruism",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Am concerned about others."
+        },
+        {
+          "facet_source": "A4: Cooperation",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Insult people."
+        },
+        {
+          "facet_source": "A4: Cooperation",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Get back at others."
+        },
+        {
+          "facet_source": "A5: Modesty",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Believe that I am better than others."
+        },
+        {
+          "facet_source": "A5: Modesty",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Think highly of myself."
+        },
+        {
+          "facet_source": "A6: Sympathy",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:011",
+          "keyed": "positive",
+          "source_order": 11,
+          "text": "Sympathize with the homeless."
+        },
+        {
+          "facet_source": "A6: Sympathy",
+          "id": "ipip_neo_60_maples_keller_2019:agreeableness_agreeableness:item:012",
+          "keyed": "positive",
+          "source_order": 12,
+          "text": "Feel sympathy for those who are worse off than myself."
+        }
+      ],
+      "label": "Agreeableness",
+      "reliability_alpha": 0.9,
+      "source_construct": "Agreeableness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 12,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness",
+      "items": [
+        {
+          "facet_source": "C1: Self-Efficacy",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Handle tasks smoothly."
+        },
+        {
+          "facet_source": "C1: Self-Efficacy",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Know how to get things done."
+        },
+        {
+          "facet_source": "C2: Orderliness",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Like order."
+        },
+        {
+          "facet_source": "C2: Orderliness",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Leave a mess in my room."
+        },
+        {
+          "facet_source": "C3: Dutifulness",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Tell the truth."
+        },
+        {
+          "facet_source": "C3: Dutifulness",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Break my promises."
+        },
+        {
+          "facet_source": "C4: Achievement-Striving",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Work hard."
+        },
+        {
+          "facet_source": "C4: Achievement-Striving",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Set high standards for myself and others."
+        },
+        {
+          "facet_source": "C5: Self-Discipline",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Carry out my plans."
+        },
+        {
+          "facet_source": "C5: Self-Discipline",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Have difficulty starting tasks."
+        },
+        {
+          "facet_source": "C6: Cautiousness",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Make rash decisions."
+        },
+        {
+          "facet_source": "C6: Cautiousness",
+          "id": "ipip_neo_60_maples_keller_2019:conscientiousness_conscientiousness:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Act without thinking."
+        }
+      ],
+      "label": "Conscientiousness",
+      "reliability_alpha": 0.92,
+      "source_construct": "Conscientiousness",
+      "test_retest_correlation": null
+    }
+  ],
+  "schema_version": 1,
+  "scoring": {
+    "method": "sum_keyed_items",
+    "negative_keyed": "reverse score 1-5 responses before summing",
+    "positive_keyed": "1=Very Inaccurate through 5=Very Accurate",
+    "score_interpretation": "Higher scores indicate greater endorsement of the named construct."
+  },
+  "source": {
+    "publisher": "International Personality Item Pool",
+    "retrieved_date": "2026-07-01",
+    "url": "https://ipip.ori.org/IPIP-NEO-60ScoringKeys.htm"
+  }
+}

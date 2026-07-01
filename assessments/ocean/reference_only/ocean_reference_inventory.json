@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "updated": "2026-07-01",
+  "purpose": "Track OCEAN assessments that are relevant but not fully stored because item, scoring, commercial-use, clinical, or proprietary permissions require review.",
+  "policy": {
+    "store_item_text": false,
+    "store_scoring_keys": false,
+    "use": "construct reference, validation planning, or license-review queue only"
+  },
+  "instruments": [
+    {
+      "id": "big_five_inventory_44",
+      "name": "Big Five Inventory",
+      "abbreviation": "BFI-44",
+      "construct_family": "Big Five",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "status": "license_review",
+      "reason_not_imported": "Need authoritative item and commercial/product permission review before storing or administering.",
+      "project_use": "construct comparison and validation reference"
+    },
+    {
+      "id": "big_five_inventory_2",
+      "name": "Big Five Inventory-2",
+      "abbreviation": "BFI-2",
+      "construct_family": "Big Five",
+      "domains": ["open_mindedness", "conscientiousness", "extraversion", "agreeableness", "negative_emotionality"],
+      "status": "license_review",
+      "reason_not_imported": "Strong 15-facet reference, but item storage and product-use permission must be verified.",
+      "source": "https://doi.org/10.1037/pspp0000096",
+      "project_use": "facet schema reference"
+    },
+    {
+      "id": "big_five_inventory_10",
+      "name": "10-item short version of the Big Five Inventory",
+      "abbreviation": "BFI-10",
+      "construct_family": "Big Five",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "status": "license_review",
+      "reason_not_imported": "Very short comparator; item storage and scoring permission require review.",
+      "source": "https://doi.org/10.1016/j.jrp.2006.02.001",
+      "project_use": "brief-assessment comparator"
+    },
+    {
+      "id": "neo_family",
+      "name": "NEO PI-R / NEO-PI-3 / NEO-FFI",
+      "construct_family": "Five-Factor Model",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "status": "reference_only",
+      "reason_not_imported": "Proprietary family of instruments; do not reproduce or administer without appropriate license and qualified-use review.",
+      "project_use": "historical, construct, and psychometric reference"
+    },
+    {
+      "id": "hexaco_pi_r",
+      "name": "HEXACO Personality Inventory-Revised",
+      "construct_family": "HEXACO",
+      "domains": ["honesty_humility", "emotionality", "extraversion", "agreeableness", "conscientiousness", "openness"],
+      "status": "license_review",
+      "reason_not_imported": "Adjacent six-factor instrument; confirm research, teaching, commercial, translation, and item-storage terms before use.",
+      "source": "https://hexaco.org/",
+      "project_use": "adjacent model comparison"
+    },
+    {
+      "id": "international_english_big_five_mini_markers",
+      "name": "International English Big-Five Mini-Markers",
+      "construct_family": "Big Five adjective markers",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "status": "license_review",
+      "reason_not_imported": "Adjective marker inventory should be reviewed for item and reuse permissions before storing.",
+      "project_use": "lexical/adjective assessment comparator"
+    },
+    {
+      "id": "single_item_measure_of_personality",
+      "name": "Single-Item Measure of Personality",
+      "abbreviation": "SIMP",
+      "construct_family": "Big Five very brief measure",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "status": "license_review",
+      "reason_not_imported": "Very brief comparator referenced by TIPI materials; item text and reuse permissions require review.",
+      "project_use": "brief-assessment comparator"
+    }
+  ]
+}

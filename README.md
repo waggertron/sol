@@ -141,6 +141,7 @@ Sol is not intended to:
 - `kb/research/research_plan.md` - outward-expanding research plan.
 - `kb/assessments/` - assessment catalogs and profile atom mapping notes.
 - `kb/cards/` - source cards and research notes.
+- `assessments/` - acquired assessment instruments and scoring metadata.
 - `docs/architecture/rag/structure.md` - RAG architecture and update workflow.
 - `docs/project-memory.md` - compact context for future sessions.
 - `plans/` - product and platform planning skeleton.

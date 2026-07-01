@@ -1,0 +1,2238 @@
+{
+  "construct_system": "NEO-PI-R facet representation",
+  "family": "OCEAN",
+  "id": "ipip_neo_facets_goldberg_1999",
+  "license": {
+    "evidence": "The official IPIP site states that its items and scales are in the public domain and can be copied, edited, translated, or used for any purpose without permission or a fee.",
+    "source_url": "https://ipip.ori.org/",
+    "status": "public_domain"
+  },
+  "name": "IPIP NEO-PI-R Facet Representation",
+  "notes": [],
+  "response_scale": {
+    "type": "likert_1_5_accuracy",
+    "values": [
+      {
+        "label": "Very Inaccurate",
+        "value": 1
+      },
+      {
+        "label": "Moderately Inaccurate",
+        "value": 2
+      },
+      {
+        "label": "Neither Inaccurate nor Accurate",
+        "value": 3
+      },
+      {
+        "label": "Moderately Accurate",
+        "value": 4
+      },
+      {
+        "label": "Very Accurate",
+        "value": 5
+      }
+    ]
+  },
+  "scales": [
+    {
+      "construct_code": "N1",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Worry about things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Fear for the worst."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am afraid of many things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Get stressed out easily."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Get caught up in my problems."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am not easily bothered by things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am relaxed most of the time."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am not easily disturbed by events."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Don't worry about things that have already happened."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n1_anxiety:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Adapt easily to new situations."
+        }
+      ],
+      "label": "Anxiety",
+      "reliability_alpha": 0.83,
+      "source_construct": "Anxiety",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N2",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Get angry easily."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Get irritated easily."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Get upset easily."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am often in a bad mood."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Lose my temper."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Rarely get irritated."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Seldom get mad."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am not easily annoyed."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Keep my cool."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n2_anger:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Rarely complain."
+        }
+      ],
+      "label": "Anger",
+      "reliability_alpha": 0.88,
+      "source_construct": "Anger",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N3",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Often feel blue."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:002",
+          "keyed": "positive",
+          "review_flags": [
+            "self_evaluation"
+          ],
+          "source_order": 2,
+          "text": "Dislike myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am often down in the dumps."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:004",
+          "keyed": "positive",
+          "review_flags": [
+            "self_evaluation"
+          ],
+          "source_order": 4,
+          "text": "Have a low opinion of myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Have frequent mood swings."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Feel desperate."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Feel that my life lacks direction."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Seldom feel blue."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Feel comfortable with myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n3_depression:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am very pleased with myself."
+        }
+      ],
+      "label": "Depression",
+      "reliability_alpha": 0.88,
+      "source_construct": "Depression",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N4",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am easily intimidated."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am afraid that I will do the wrong thing."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Find it difficult to approach others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am afraid to draw attention to myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Only feel comfortable with friends."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Stumble over my words."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am not embarrassed easily."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am comfortable in unfamiliar situations."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am not bothered by difficult social situations."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n4_self_consciousness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am able to stand up for myself."
+        }
+      ],
+      "label": "Self-Consciousness",
+      "reliability_alpha": 0.8,
+      "source_construct": "Self-Consciousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N5",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Often eat too much."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Don't know why I do some of the things I do."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Do things I later regret."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:004",
+          "keyed": "positive",
+          "review_flags": [
+            "substance_or_impulse"
+          ],
+          "source_order": 4,
+          "text": "Go on binges."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Love to eat."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:006",
+          "keyed": "negative",
+          "review_flags": [
+            "substance_or_impulse"
+          ],
+          "source_order": 6,
+          "text": "Rarely overindulge."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Easily resist temptations."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am able to control my cravings."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Never spend more than I can afford."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n5_immoderation:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Never splurge."
+        }
+      ],
+      "label": "Immoderation",
+      "reliability_alpha": 0.77,
+      "source_construct": "Immoderation",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N6",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Panic easily."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Become overwhelmed by events."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Feel that I'm unable to deal with things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Can't make up my mind."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Get overwhelmed by emotions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Remain calm under pressure."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Can handle complex problems."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Know how to cope."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Readily overcome setbacks."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:neuroticism_n6_vulnerability:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am calm even in tense situations."
+        }
+      ],
+      "label": "Vulnerability",
+      "reliability_alpha": 0.82,
+      "source_construct": "Vulnerability",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E1",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Make friends easily."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Warm up quickly to others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Feel comfortable around people."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Act comfortably with others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Cheer people up."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am hard to get to know."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Often feel uncomfortable around others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Avoid contacts with others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am not really interested in others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e1_friendliness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Keep others at a distance."
+        }
+      ],
+      "label": "Friendliness",
+      "reliability_alpha": 0.87,
+      "source_construct": "Friendliness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E2",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Love large parties."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Talk to a lot of different people at parties."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Enjoy being part of a group."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Involve others in what I am doing."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Love surprise parties."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Prefer to be alone."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Want to be left alone."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Don't like crowded events."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Avoid crowds."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e2_gregariousness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Seek quiet."
+        }
+      ],
+      "label": "Gregariousness",
+      "reliability_alpha": 0.79,
+      "source_construct": "Gregariousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E3",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Take charge."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Try to lead others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Can talk others into doing things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Seek to influence others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Take control of things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Wait for others to lead the way."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Keep in the background."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Have little to say."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Don't like to draw attention to myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e3_assertiveness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Hold back my opinions."
+        }
+      ],
+      "label": "Assertiveness",
+      "reliability_alpha": 0.84,
+      "source_construct": "Assertiveness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E4",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am always busy."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am always on the go."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Do a lot in my spare time."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Can manage many things at the same time."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "React quickly."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Like to take it easy."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Like to take my time."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Like a leisurely lifestyle."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Let things proceed at their own pace."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e4_activity_level:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "React slowly."
+        }
+      ],
+      "label": "Activity Level",
+      "reliability_alpha": 0.71,
+      "source_construct": "Activity Level",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E5",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Love excitement."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Seek adventure."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Love action."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Enjoy being part of a loud crowd."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Enjoy being reckless."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Act wild and crazy."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Am willing to try anything once."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Seek danger."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Would never go hang gliding or bungee jumping."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e5_excitement_seeking:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Dislike loud music."
+        }
+      ],
+      "label": "Excitement-Seeking",
+      "reliability_alpha": 0.78,
+      "source_construct": "Excitement-Seeking",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E6",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Radiate joy."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Have a lot of fun."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Express childlike joy."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Laugh my way through life."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Love life."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Look at the bright side of life."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Laugh aloud."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Amuse my friends."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am not easily amused."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:extraversion_e6_cheerfulness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Seldom joke around."
+        }
+      ],
+      "label": "Cheerfulness",
+      "reliability_alpha": 0.81,
+      "source_construct": "Cheerfulness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O1",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have a vivid imagination."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Enjoy wild flights of fantasy."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Love to daydream."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Like to get lost in thought."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Indulge in my fantasies."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Spend time reflecting on things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Seldom daydream."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Do not have a good imagination."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Seldom get lost in thought."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o1_imagination:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Have difficulty imagining things."
+        }
+      ],
+      "label": "Imagination",
+      "reliability_alpha": 0.83,
+      "source_construct": "Imagination",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O2",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Believe in the importance of art."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Like music."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "See beauty in things that others might not notice."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Love flowers."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Enjoy the beauty of nature."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Do not like art."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Do not like poetry."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Do not enjoy going to art museums."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Do not like concerts."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o2_artistic_interests:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Do not enjoy watching dance performances."
+        }
+      ],
+      "label": "Artistic Interests",
+      "reliability_alpha": 0.84,
+      "source_construct": "Artistic Interests",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O3",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Experience my emotions intensely."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Feel others' emotions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am passionate about causes."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Enjoy examining myself and my life."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Try to understand myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Seldom get emotional."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am not easily affected by my emotions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Rarely notice my emotional reactions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Experience very few emotional highs and lows."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o3_emotionality:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Don't understand people who get emotional."
+        }
+      ],
+      "label": "Emotionality",
+      "reliability_alpha": 0.81,
+      "source_construct": "Emotionality",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O4",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Prefer variety to routine."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Like to visit new places."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am interested in many things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Like to begin new things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Prefer to stick with things that I know."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Dislike changes."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Don't like the idea of change."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am a creature of habit."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Dislike new foods."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o4_adventurousness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am attached to conventional ways."
+        }
+      ],
+      "label": "Adventurousness",
+      "reliability_alpha": 0.77,
+      "source_construct": "Adventurousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O5",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Like to solve complex problems."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Love to read challenging material."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Have a rich vocabulary."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Can handle a lot of information."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Enjoy thinking about things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am not interested in abstract ideas."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Avoid philosophical discussions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Have difficulty understanding abstract ideas."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am not interested in theoretical discussions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o5_intellect:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Avoid difficult reading material."
+        }
+      ],
+      "label": "Intellect",
+      "reliability_alpha": 0.86,
+      "source_construct": "Intellect",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O6",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:001",
+          "keyed": "positive",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 1,
+          "text": "Tend to vote for liberal political candidates."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Believe that there is no absolute right and wrong."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Believe that criminals should receive help rather than punishment."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:004",
+          "keyed": "negative",
+          "review_flags": [
+            "religion"
+          ],
+          "source_order": 4,
+          "text": "Believe in one true religion."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:005",
+          "keyed": "negative",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 5,
+          "text": "Tend to vote for conservative political candidates."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:006",
+          "keyed": "negative",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 6,
+          "text": "Believe that too much tax money goes to support artists."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Believe laws should be strictly enforced."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Believe that we coddle criminals too much."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Believe that we should be tough on crime."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:openness_o6_liberalism:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Like to stand during the national anthem."
+        }
+      ],
+      "label": "Liberalism",
+      "reliability_alpha": 0.86,
+      "source_construct": "Liberalism",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A1",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Trust others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Believe that others have good intentions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Trust what people say."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Believe that people are basically moral."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Believe in human goodness."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Think that all will be well."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Distrust people."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Suspect hidden motives in others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am wary of others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a1_trust:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Believe that people are essentially evil."
+        }
+      ],
+      "label": "Trust",
+      "reliability_alpha": 0.82,
+      "source_construct": "Trust",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A2",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:001",
+          "keyed": "positive",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 1,
+          "text": "Would never cheat on my taxes."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Stick to the rules."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Use flattery to get ahead."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Use others for my own ends."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Know how to get around the rules."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Cheat to get ahead."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Put people under pressure."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Pretend to be concerned for others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Take advantage of others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a2_morality:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Obstruct others' plans."
+        }
+      ],
+      "label": "Morality",
+      "reliability_alpha": 0.75,
+      "source_construct": "Morality",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A3",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Make people feel welcome."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Anticipate the needs of others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Love to help others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am concerned about others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Have a good word for everyone."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Look down on others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am indifferent to the feelings of others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Make people feel uncomfortable."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Turn my back on others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a3_altruism:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Take no time for others."
+        }
+      ],
+      "label": "Altruism",
+      "reliability_alpha": 0.77,
+      "source_construct": "Altruism",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A4",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am easy to satisfy."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Can't stand confrontations."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Hate to seem pushy."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Have a sharp tongue."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Contradict others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Love a good fight."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Yell at people."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Insult people."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Get back at others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a4_cooperation:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Hold a grudge."
+        }
+      ],
+      "label": "Cooperation",
+      "reliability_alpha": 0.73,
+      "source_construct": "Cooperation",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A5",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Dislike being the center of attention."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Dislike talking about myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Consider myself an average person."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Seldom toot my own horn."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Believe that I am better than others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Think highly of myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Have a high opinion of myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Know the answers to many questions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Boast about my virtues."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a5_modesty:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Make myself the center of attention."
+        }
+      ],
+      "label": "Modesty",
+      "reliability_alpha": 0.77,
+      "source_construct": "Modesty",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A6",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Sympathize with the homeless."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Feel sympathy for those who are worse off than myself."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Value cooperation over competition."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Suffer from others' sorrows."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Am not interested in other people's problems."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Tend to dislike soft-hearted people."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Believe in an eye for an eye."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Try not to think about the needy."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Believe people should fend for themselves."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:agreeableness_a6_sympathy:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Can't stand weak people."
+        }
+      ],
+      "label": "Sympathy",
+      "reliability_alpha": 0.75,
+      "source_construct": "Sympathy",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C1",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Complete tasks successfully."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Excel in what I do."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Handle tasks smoothly."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am sure of my ground."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Come up with good solutions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Know how to get things done."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Misjudge situations."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Don't understand things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Have little to contribute."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c1_self_efficacy:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Don't see the consequences of things."
+        }
+      ],
+      "label": "Self-Efficacy",
+      "reliability_alpha": 0.78,
+      "source_construct": "Self-Efficacy",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C2",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Like order."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Like to tidy up."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Want everything to be \"just right.\""
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Love order and regularity."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Do things according to a plan."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Often forget to put things back in their proper place."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Leave a mess in my room."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Leave my belongings around."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am not bothered by messy people."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c2_orderliness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am not bothered by disorder."
+        }
+      ],
+      "label": "Orderliness",
+      "reliability_alpha": 0.82,
+      "source_construct": "Orderliness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C3",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Try to follow the rules."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Keep my promises."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Pay my bills on time."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Tell the truth."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Listen to my conscience."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Break rules."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Break my promises."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Get others to do my duties."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Do the opposite of what is asked."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c3_dutifulness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Misrepresent the facts."
+        }
+      ],
+      "label": "Dutifulness",
+      "reliability_alpha": 0.71,
+      "source_construct": "Dutifulness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C4",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Go straight for the goal."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Work hard."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Turn plans into actions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Plunge into tasks with all my heart."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Do more than what's expected of me."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Set high standards for myself and others."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Demand quality."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am not highly motivated to succeed."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Do just enough work to get by."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c4_achievement_striving:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Put little time and effort into my work."
+        }
+      ],
+      "label": "Achievement-Striving",
+      "reliability_alpha": 0.78,
+      "source_construct": "Achievement-Striving",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C5",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Get chores done right away."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am always prepared."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Start tasks right away."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Get to work at once."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Carry out my plans."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Find it difficult to get down to work."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Waste my time."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Need a push to get started."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Have difficulty starting tasks."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c5_self_discipline:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Postpone decisions."
+        }
+      ],
+      "label": "Self-Discipline",
+      "reliability_alpha": 0.85,
+      "source_construct": "Self-Discipline",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C6",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness",
+      "items": [
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Avoid mistakes."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Choose my words with care."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Stick to my chosen path."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Jump into things without thinking."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Make rash decisions."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Like to act on a whim."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Rush into things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Do crazy things."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Act without thinking."
+        },
+        {
+          "id": "ipip_neo_facets_goldberg_1999:conscientiousness_c6_cautiousness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Often make last-minute plans."
+        }
+      ],
+      "label": "Cautiousness",
+      "reliability_alpha": 0.76,
+      "source_construct": "Cautiousness",
+      "test_retest_correlation": null
+    }
+  ],
+  "schema_version": 1,
+  "scoring": {
+    "method": "sum_keyed_items",
+    "negative_keyed": "reverse score 1-5 responses before summing",
+    "positive_keyed": "1=Very Inaccurate through 5=Very Accurate",
+    "score_interpretation": "Higher scores indicate greater endorsement of the named construct."
+  },
+  "source": {
+    "publisher": "International Personality Item Pool",
+    "retrieved_date": "2026-07-01",
+    "url": "https://ipip.ori.org/newNEOFacetsKey.htm"
+  }
+}

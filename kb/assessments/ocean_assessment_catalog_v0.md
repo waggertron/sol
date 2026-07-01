@@ -9,6 +9,19 @@ of questionnaire items.
 The project should store instrument metadata, scoring concepts, source links,
 and licensing posture before storing any actual item text.
 
+## Stored Assessment Area
+
+Full item and scoring data that is currently permitted for repo storage lives in
+`assessments/ocean/`.
+
+The acquisition manifest is:
+
+- `assessments/ocean/manifest.json`
+
+Current stored instruments include IPIP Big Five factor markers, Mini-IPIP,
+Mini-IPIP6, IPIP Big Five Aspects, IPIP AB5C facets, IPIP NEO domain and facet
+representations, IPIP-NEO-120 variants, IPIP-NEO-60, and TIPI.
+
 ## Use Posture Legend
 
 - `usable_now`: appears suitable for prototype use based on current public
@@ -267,4 +280,3 @@ Source:
 Use IPIP as the first real assessment source and optionally use TIPI as a
 low-friction onboarding prototype. Use BFI-2, BFAS, and NEO as structure and
 validation references until permissions are resolved.
-

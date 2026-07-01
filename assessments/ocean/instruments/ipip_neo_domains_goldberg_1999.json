@@ -1,0 +1,1092 @@
+{
+  "construct_system": "NEO-PI-R domain representation",
+  "family": "OCEAN",
+  "id": "ipip_neo_domains_goldberg_1999",
+  "license": {
+    "evidence": "The official IPIP site states that its items and scales are in the public domain and can be copied, edited, translated, or used for any purpose without permission or a fee.",
+    "source_url": "https://ipip.ori.org/",
+    "status": "public_domain"
+  },
+  "name": "IPIP NEO-PI-R Domain Representation",
+  "notes": [],
+  "response_scale": {
+    "type": "likert_1_5_accuracy",
+    "values": [
+      {
+        "label": "Very Inaccurate",
+        "value": 1
+      },
+      {
+        "label": "Moderately Inaccurate",
+        "value": 2
+      },
+      {
+        "label": "Neither Inaccurate nor Accurate",
+        "value": 3
+      },
+      {
+        "label": "Moderately Accurate",
+        "value": 4
+      },
+      {
+        "label": "Very Accurate",
+        "value": 5
+      }
+    ]
+  },
+  "scales": [
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "neuroticism",
+      "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Often feel blue."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:002",
+          "keyed": "positive",
+          "review_flags": [
+            "self_evaluation"
+          ],
+          "source_order": 2,
+          "text": "Dislike myself."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am often down in the dumps."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Have frequent mood swings."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Panic easily."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Rarely get irritated."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Seldom feel blue."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Feel comfortable with myself."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am not easily bothered by things."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_10_item_scale_2:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am very pleased with myself."
+        }
+      ],
+      "label": "Neuroticism 10-item scale",
+      "reliability_alpha": 0.86,
+      "source_construct": "Neuroticism",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 20,
+      "domain": "neuroticism",
+      "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Often feel blue."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:002",
+          "keyed": "positive",
+          "review_flags": [
+            "self_evaluation"
+          ],
+          "source_order": 2,
+          "text": "Dislike myself."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am often down in the dumps."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Have frequent mood swings."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Panic easily."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Am filled with doubts about things."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Feel threatened easily."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Get stressed out easily."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Fear for the worst."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:010",
+          "keyed": "positive",
+          "source_order": 10,
+          "text": "Worry about things."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Seldom feel blue."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Feel comfortable with myself."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "Rarely get irritated."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:014",
+          "keyed": "negative",
+          "source_order": 14,
+          "text": "Am not easily bothered by things."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:015",
+          "keyed": "negative",
+          "source_order": 15,
+          "text": "Am very pleased with myself."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:016",
+          "keyed": "negative",
+          "source_order": 16,
+          "text": "Am relaxed most of the time."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:017",
+          "keyed": "negative",
+          "source_order": 17,
+          "text": "Seldom get mad."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:018",
+          "keyed": "negative",
+          "source_order": 18,
+          "text": "Am not easily frustrated."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:019",
+          "keyed": "negative",
+          "source_order": 19,
+          "text": "Remain calm under pressure."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:neuroticism_neuroticism_20_item_scale_2:item:020",
+          "keyed": "negative",
+          "source_order": 20,
+          "text": "Rarely lose my composure."
+        }
+      ],
+      "label": "Neuroticism 20-item scale",
+      "reliability_alpha": 0.91,
+      "source_construct": "Neuroticism",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "extraversion",
+      "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Feel comfortable around people."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Make friends easily."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am skilled in handling social situations."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am the life of the party."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Know how to captivate people."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Have little to say."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Keep in the background."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Would describe my experiences as somewhat dull."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Don't like to draw attention to myself."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Don't talk a lot."
+        }
+      ],
+      "label": "Extraversion 10-item scale",
+      "reliability_alpha": 0.86,
+      "source_construct": "Extraversion",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 20,
+      "domain": "extraversion",
+      "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Feel comfortable around people."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Make friends easily."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am skilled in handling social situations."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am the life of the party."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Know how to captivate people."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Start conversations."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Warm up quickly to others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Talk to a lot of different people at parties."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Don't mind being the center of attention."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:010",
+          "keyed": "positive",
+          "source_order": 10,
+          "text": "Cheer people up."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Have little to say."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Keep in the background."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "Would describe my experiences as somewhat dull."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:014",
+          "keyed": "negative",
+          "source_order": 14,
+          "text": "Don't like to draw attention to myself."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:015",
+          "keyed": "negative",
+          "source_order": 15,
+          "text": "Don't talk a lot."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:016",
+          "keyed": "negative",
+          "source_order": 16,
+          "text": "Avoid contacts with others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:017",
+          "keyed": "negative",
+          "source_order": 17,
+          "text": "Am hard to get to know."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:018",
+          "keyed": "negative",
+          "source_order": 18,
+          "text": "Retreat from others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:019",
+          "keyed": "negative",
+          "source_order": 19,
+          "text": "Find it difficult to approach others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:extraversion_extraversion_20_item_scale_2:item:020",
+          "keyed": "negative",
+          "source_order": 20,
+          "text": "Keep others at a distance."
+        }
+      ],
+      "label": "Extraversion 20-item scale",
+      "reliability_alpha": 0.91,
+      "source_construct": "Extraversion",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "openness",
+      "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Believe in the importance of art."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Have a vivid imagination."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:003",
+          "keyed": "positive",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 3,
+          "text": "Tend to vote for liberal political candidates."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Carry the conversation to a higher level."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Enjoy hearing new ideas."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am not interested in abstract ideas."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Do not like art."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Avoid philosophical discussions."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Do not enjoy going to art museums."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_10_item_scale_2:item:010",
+          "keyed": "negative",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 10,
+          "text": "Tend to vote for conservative political candidates."
+        }
+      ],
+      "label": "Openness To Experience 10-item scale",
+      "reliability_alpha": 0.82,
+      "source_construct": "Openness To Experience",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 20,
+      "domain": "openness",
+      "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Believe in the importance of art."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Have a vivid imagination."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:003",
+          "keyed": "positive",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 3,
+          "text": "Tend to vote for liberal political candidates."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Carry the conversation to a higher level."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Enjoy hearing new ideas."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Enjoy thinking about things."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Can say things beautifully."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Enjoy wild flights of fantasy."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Get excited by new ideas."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:010",
+          "keyed": "positive",
+          "source_order": 10,
+          "text": "Have a rich vocabulary."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Am not interested in abstract ideas."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Do not like art."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "Avoid philosophical discussions."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:014",
+          "keyed": "negative",
+          "source_order": 14,
+          "text": "Do not enjoy going to art museums."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:015",
+          "keyed": "negative",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 15,
+          "text": "Tend to vote for conservative political candidates."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:016",
+          "keyed": "negative",
+          "source_order": 16,
+          "text": "Do not like poetry."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:017",
+          "keyed": "negative",
+          "source_order": 17,
+          "text": "Rarely look for a deeper meaning in things."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:018",
+          "keyed": "negative",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 18,
+          "text": "Believe that too much tax money goes to support artists."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:019",
+          "keyed": "negative",
+          "source_order": 19,
+          "text": "Am not interested in theoretical discussions."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:openness_openness_to_experience_20_item_scale_2:item:020",
+          "keyed": "negative",
+          "source_order": 20,
+          "text": "Have difficulty understanding abstract ideas."
+        }
+      ],
+      "label": "Openness To Experience 20-item scale",
+      "reliability_alpha": 0.89,
+      "source_construct": "Openness To Experience",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "agreeableness",
+      "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have a good word for everyone."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Believe that others have good intentions."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Respect others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Accept people as they are."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Make people feel at ease."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Have a sharp tongue."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Cut others to pieces."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Suspect hidden motives in others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Get back at others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Insult people."
+        }
+      ],
+      "label": "Agreeableness 10-item scale",
+      "reliability_alpha": 0.77,
+      "source_construct": "Agreeableness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 20,
+      "domain": "agreeableness",
+      "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have a good word for everyone."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Believe that others have good intentions."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Respect others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Accept people as they are."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Make people feel at ease."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Am concerned about others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Trust what people say."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Sympathize with others' feelings."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Am easy to satisfy."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:010",
+          "keyed": "positive",
+          "source_order": 10,
+          "text": "Treat all people equally."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Have a sharp tongue."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Cut others to pieces."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "Suspect hidden motives in others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:014",
+          "keyed": "negative",
+          "source_order": 14,
+          "text": "Get back at others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:015",
+          "keyed": "negative",
+          "source_order": 15,
+          "text": "Insult people."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:016",
+          "keyed": "negative",
+          "source_order": 16,
+          "text": "Believe that I am better than others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:017",
+          "keyed": "negative",
+          "source_order": 17,
+          "text": "Contradict others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:018",
+          "keyed": "negative",
+          "source_order": 18,
+          "text": "Make demands on others."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:019",
+          "keyed": "negative",
+          "source_order": 19,
+          "text": "Hold a grudge."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:agreeableness_agreeableness_20_item_scale_2:item:020",
+          "keyed": "negative",
+          "source_order": 20,
+          "text": "Am out for my own personal gain."
+        }
+      ],
+      "label": "Agreeableness 20-item scale",
+      "reliability_alpha": 0.85,
+      "source_construct": "Agreeableness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 10,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am always prepared."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Pay attention to details."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Get chores done right away."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Carry out my plans."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Make plans and stick to them."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Waste my time."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Find it difficult to get down to work."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Do just enough work to get by."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Don't see things through."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_10_item_scale:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Shirk my duties."
+        }
+      ],
+      "label": "Conscientiousness 10-item scale",
+      "reliability_alpha": 0.81,
+      "source_construct": "Conscientiousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": 20,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2",
+      "items": [
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am always prepared."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Pay attention to details."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Get chores done right away."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Carry out my plans."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Make plans and stick to them."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Complete tasks successfully."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Do things according to a plan."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Am exacting in my work."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Finish what I start."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:010",
+          "keyed": "positive",
+          "source_order": 10,
+          "text": "Follow through with my plans."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Waste my time."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Find it difficult to get down to work."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "Do just enough work to get by."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:014",
+          "keyed": "negative",
+          "source_order": 14,
+          "text": "Don't see things through."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:015",
+          "keyed": "negative",
+          "source_order": 15,
+          "text": "Shirk my duties."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:016",
+          "keyed": "negative",
+          "source_order": 16,
+          "text": "Mess things up."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:017",
+          "keyed": "negative",
+          "source_order": 17,
+          "text": "Leave things unfinished."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:018",
+          "keyed": "negative",
+          "source_order": 18,
+          "text": "Don't put my mind on the task at hand."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:019",
+          "keyed": "negative",
+          "source_order": 19,
+          "text": "Make a mess of things."
+        },
+        {
+          "id": "ipip_neo_domains_goldberg_1999:conscientiousness_conscientiousness_20_item_scale_2:item:020",
+          "keyed": "negative",
+          "source_order": 20,
+          "text": "Need a push to get started."
+        }
+      ],
+      "label": "Conscientiousness 20-item scale",
+      "reliability_alpha": 0.9,
+      "source_construct": "Conscientiousness",
+      "test_retest_correlation": null
+    }
+  ],
+  "schema_version": 1,
+  "scoring": {
+    "method": "sum_keyed_items",
+    "negative_keyed": "reverse score 1-5 responses before summing",
+    "positive_keyed": "1=Very Inaccurate through 5=Very Accurate",
+    "score_interpretation": "Higher scores indicate greater endorsement of the named construct."
+  },
+  "source": {
+    "publisher": "International Personality Item Pool",
+    "retrieved_date": "2026-07-01",
+    "url": "https://ipip.ori.org/newNEODomainsKey.htm"
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "construct_system": "Big Six / HEXACO-adjacent short form",
+  "family": "OCEAN_adjacent",
+  "id": "mini_ipip6",
+  "license": {
+    "evidence": "The official IPIP site states that its items and scales are in the public domain and can be copied, edited, translated, or used for any purpose without permission or a fee.",
+    "source_url": "https://ipip.ori.org/",
+    "status": "public_domain"
+  },
+  "name": "Mini-IPIP6 Big Six Factors",
+  "notes": [
+    "Includes Honesty-Humility in addition to the five broad factors."
+  ],
+  "response_scale": {
+    "type": "likert_1_5_accuracy",
+    "values": [
+      {
+        "label": "Very Inaccurate",
+        "value": 1
+      },
+      {
+        "label": "Moderately Inaccurate",
+        "value": 2
+      },
+      {
+        "label": "Neither Inaccurate nor Accurate",
+        "value": 3
+      },
+      {
+        "label": "Moderately Accurate",
+        "value": 4
+      },
+      {
+        "label": "Very Accurate",
+        "value": 5
+      }
+    ]
+  },
+  "scales": [
+    {
+      "construct_code": null,
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "mini_ipip6:extraversion_extraversion",
+      "items": [
+        {
+          "id": "mini_ipip6:extraversion_extraversion:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am the life of the party."
+        },
+        {
+          "id": "mini_ipip6:extraversion_extraversion:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Talk to a lot of different people at parties."
+        },
+        {
+          "id": "mini_ipip6:extraversion_extraversion:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Don't talk a lot."
+        },
+        {
+          "id": "mini_ipip6:extraversion_extraversion:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Keep in the background."
+        }
+      ],
+      "label": "Extraversion",
+      "reliability_alpha": null,
+      "source_construct": "Extraversion",
+      "test_retest_correlation": 0.75
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "mini_ipip6:agreeableness_agreeableness",
+      "items": [
+        {
+          "id": "mini_ipip6:agreeableness_agreeableness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Sympathize with others' feelings."
+        },
+        {
+          "id": "mini_ipip6:agreeableness_agreeableness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Feel others' emotions."
+        },
+        {
+          "id": "mini_ipip6:agreeableness_agreeableness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Am not really interested in others."
+        },
+        {
+          "id": "mini_ipip6:agreeableness_agreeableness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Am not interested in other people's problems."
+        }
+      ],
+      "label": "Agreeableness",
+      "reliability_alpha": null,
+      "source_construct": "Agreeableness",
+      "test_retest_correlation": 0.62
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "mini_ipip6:conscientiousness_conscientiousness",
+      "items": [
+        {
+          "id": "mini_ipip6:conscientiousness_conscientiousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Get chores done right away."
+        },
+        {
+          "id": "mini_ipip6:conscientiousness_conscientiousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Like order."
+        },
+        {
+          "id": "mini_ipip6:conscientiousness_conscientiousness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Often forget to put things back in their proper place."
+        },
+        {
+          "id": "mini_ipip6:conscientiousness_conscientiousness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Make a mess of things."
+        }
+      ],
+      "label": "Conscientiousness",
+      "reliability_alpha": null,
+      "source_construct": "Conscientiousness",
+      "test_retest_correlation": 0.69
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "mini_ipip6:neuroticism_neuroticism",
+      "items": [
+        {
+          "id": "mini_ipip6:neuroticism_neuroticism:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have frequent mood swings."
+        },
+        {
+          "id": "mini_ipip6:neuroticism_neuroticism:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Get upset easily."
+        },
+        {
+          "id": "mini_ipip6:neuroticism_neuroticism:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Am relaxed most of the time."
+        },
+        {
+          "id": "mini_ipip6:neuroticism_neuroticism:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Seldom feel blue."
+        }
+      ],
+      "label": "Neuroticism",
+      "reliability_alpha": null,
+      "source_construct": "Neuroticism",
+      "test_retest_correlation": 0.69
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "mini_ipip6:openness_openness_to_experience",
+      "items": [
+        {
+          "id": "mini_ipip6:openness_openness_to_experience:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have a vivid imagination."
+        },
+        {
+          "id": "mini_ipip6:openness_openness_to_experience:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Have difficulty understanding abstract ideas."
+        },
+        {
+          "id": "mini_ipip6:openness_openness_to_experience:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Am not interested in abstract ideas."
+        },
+        {
+          "id": "mini_ipip6:openness_openness_to_experience:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Do not have a good imagination."
+        }
+      ],
+      "label": "Openness To Experience",
+      "reliability_alpha": null,
+      "source_construct": "Openness To Experience",
+      "test_retest_correlation": 0.66
+    },
+    {
+      "construct_code": null,
+      "declared_item_count": null,
+      "domain": "honesty_humility",
+      "id": "mini_ipip6:honesty_humility_honesty_humility",
+      "items": [
+        {
+          "id": "mini_ipip6:honesty_humility_honesty_humility:item:001",
+          "keyed": "negative",
+          "source_order": 1,
+          "text": "Feel entitled to more of everything."
+        },
+        {
+          "id": "mini_ipip6:honesty_humility_honesty_humility:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Deserve more things in life."
+        },
+        {
+          "id": "mini_ipip6:honesty_humility_honesty_humility:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Would like to be seen driving around in a very expensive car."
+        },
+        {
+          "id": "mini_ipip6:honesty_humility_honesty_humility:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Would get a lot of pleasure from owning expensive luxury goods."
+        }
+      ],
+      "label": "Honesty-Humility",
+      "reliability_alpha": null,
+      "source_construct": "Honesty-Humility",
+      "test_retest_correlation": 0.71
+    }
+  ],
+  "schema_version": 1,
+  "scoring": {
+    "method": "sum_keyed_items",
+    "negative_keyed": "reverse score 1-5 responses before summing",
+    "positive_keyed": "1=Very Inaccurate through 5=Very Accurate",
+    "score_interpretation": "Higher scores indicate greater endorsement of the named construct."
+  },
+  "source": {
+    "publisher": "International Personality Item Pool",
+    "retrieved_date": "2026-07-01",
+    "url": "https://ipip.ori.org/MiniIPIP6Key.htm"
+  }
+}

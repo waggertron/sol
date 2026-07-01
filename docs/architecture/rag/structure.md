@@ -29,6 +29,8 @@ The source of truth is human-readable Markdown and JSON:
 - `kb/wiki_imports/*.md` - imported Wikipedia summary cards
 - `sources/*.json` - structured source registries
 - `jsondb/*.json` - import queue, term inventory, and run logs
+- `assessments/**/*.json` - acquired instrument metadata, item text when
+  permitted, scoring metadata, and assessment manifests
 - `docs/project-memory.md` - compact future-session context
 - `plans/*.md` - product and platform planning skeleton
 
@@ -149,6 +151,7 @@ Good results should surface explanatory sections, not only metadata headers.
 Add later when the corpus stabilizes:
 
 - paper ingestion helpers for HTML and PDFs
+- assessment import validation and duplicate-item analysis
 - source-card schema validation
 - citation-aware synthesis
 - query evaluation set

@@ -23,6 +23,7 @@ DEFAULT_PATHS = [
     Path("kb"),
     Path("sources"),
     Path("jsondb"),
+    Path("assessments"),
     Path("docs"),
     Path("plans"),
     Path("README.md"),

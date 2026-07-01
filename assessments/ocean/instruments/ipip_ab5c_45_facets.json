@@ -1,0 +1,3525 @@
+{
+  "construct_system": "Abridged Big Five Circumplex facets",
+  "family": "OCEAN",
+  "id": "ipip_ab5c_45_facets",
+  "license": {
+    "evidence": "The official IPIP site states that its items and scales are in the public domain and can be copied, edited, translated, or used for any purpose without permission or a fee.",
+    "source_url": "https://ipip.ori.org/",
+    "status": "public_domain"
+  },
+  "name": "IPIP AB5C 45 Facets",
+  "notes": [],
+  "response_scale": {
+    "type": "likert_1_5_accuracy",
+    "values": [
+      {
+        "label": "Very Inaccurate",
+        "value": 1
+      },
+      {
+        "label": "Moderately Inaccurate",
+        "value": 2
+      },
+      {
+        "label": "Neither Inaccurate nor Accurate",
+        "value": 3
+      },
+      {
+        "label": "Moderately Accurate",
+        "value": 4
+      },
+      {
+        "label": "Very Accurate",
+        "value": 5
+      }
+    ]
+  },
+  "scales": [
+    {
+      "construct_code": "I+/I+ vs I-/I-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am the life of the party."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Talk to a lot of different people at partie s."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Start conversations."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Love large parties."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Don't talk a lot."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Keep in the background."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am quiet around strangers."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Don't like to draw attention to myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Bottle up my feelings."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_i_vs_i_i_gregariousness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Keep my thoughts to myself."
+        }
+      ],
+      "label": "Gregariousness",
+      "reliability_alpha": null,
+      "source_construct": "Gregariousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "I+/II+ vs I-/II-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Make friends easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am open about my feelings."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Act comfortably with others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Radiate joy."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Warm up quickly to others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am hard to get to know."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am a very private person."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Avoid contacts with others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Keep others at a distance."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_friendliness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Reveal little about myself."
+        }
+      ],
+      "label": "Friendliness",
+      "reliability_alpha": null,
+      "source_construct": "Friendliness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "I+/III+ vs I-/III-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Automatically take charge."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Can easily push myself forward."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Try to lead others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Turn plans into actions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Stick up for myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Am always busy."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Come up with a solution right away."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Do a lot in my spare time."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Know what I want."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Let myself be pushed around."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Am not highly motivated to succeed."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_assertiveness:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Need a lot of time to do things."
+        }
+      ],
+      "label": "Assertiveness",
+      "reliability_alpha": null,
+      "source_construct": "Assertiveness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "I+/IV+ vs I-/IV-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Feel comfortable around people."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am comfortable in unfamiliar situations."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Have a lot of fun."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am not embarrassed easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Love life."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Often feel uncomfortable around others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Find it difficult to approach others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Retreat from others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Give up easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_poise:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Only feel comfortable with friends."
+        }
+      ],
+      "label": "Poise",
+      "reliability_alpha": null,
+      "source_construct": "Poise",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "I+/V+ vs I-/V-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Take charge."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Know how to captivate people."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Express myself easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am the first to act."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Never at a loss for words."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Have little to say."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Have difficulty expressing my feelings."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Wait for others to lead the way."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am afraid to draw attention to myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_leadership:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Let others make the decisions."
+        }
+      ],
+      "label": "Leadership",
+      "reliability_alpha": null,
+      "source_construct": "Leadership",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "I+/II- vs I-/II+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Dare to say anything."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am not afraid of providing criticism."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Boast about my virtues."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "[Know no limits.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "[Know how to get around the rules.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "[Can take strong measures.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "[Don't mind being the center of attention.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "[Make demands on others.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Can't stand confrontations."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Wait for my turn."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_ii_vs_i_ii_provocativeness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "[Hate to seem pushy.]"
+        }
+      ],
+      "label": "Provocativeness",
+      "reliability_alpha": null,
+      "source_construct": "Provocativeness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "I+/III- vs I-/III+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Act wild and crazy."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am open about myself to others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Let myself go."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Disclose my intimate thoughts."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Laugh my way through life."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Express childlike joy."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Joke around a lot."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Like to amuse others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Seldom joke around."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iii_vs_i_iii_self_disclosure:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Prefer to deal with strangers in a formal manner."
+        }
+      ],
+      "label": "Self-Disclosure",
+      "reliability_alpha": null,
+      "source_construct": "Self-Disclosure",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "I+/IV- vs I-/IV+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Do most of the talking."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Talk too much."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Speak loudly."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Make myself the center of attention."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Like to attract attention."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Never stop talking."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Make a lot of noise."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Demand to be the center of interest."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Speak softly."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_iv_vs_i_iv_talkativeness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Dislike talking about myself."
+        }
+      ],
+      "label": "Talkativeness",
+      "reliability_alpha": null,
+      "source_construct": "Talkativeness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "I+/V- vs I-/V+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Can't do without the company of others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "[Enjoy being part of a loud crowd.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "[Enjoy being on the go.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Like to be alone."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Seek quiet."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Enjoy silence."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "[Don't like crowded events.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "[Dislike neighbors living too close.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "[Amuse myself easily.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:i_v_vs_i_v_sociability:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "[Go my own way.]"
+        }
+      ],
+      "label": "Sociability",
+      "reliability_alpha": null,
+      "source_construct": "Sociability",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "II+/II+ vs II-/II-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Sympathize with others' feelings."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Respect others' feelings."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Take others' interests into account."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Like to be of service to others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Appreciate the viewpoints of others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Feel little concern for others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am not interested in other people's problems."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am indifferent to the feelings of others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Take no time for others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_ii_vs_ii_ii_understanding:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Can't be bothered with other's needs."
+        }
+      ],
+      "label": "Understanding",
+      "reliability_alpha": null,
+      "source_construct": "Understanding",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "II+/I+ vs II-/I-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am interested in people."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Make people feel at ease."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Know how to comfort others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Inquire about others' well-being."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Take time out for others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Make people feel welcome."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Show my gratitude."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Make others feel good."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Feel others' emotions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am not really interested in others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_warmth:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Rarely smile."
+        }
+      ],
+      "label": "Warmth",
+      "reliability_alpha": null,
+      "source_construct": "Warmth",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "II+/III+ vs II-/III-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:001",
+          "keyed": "positive",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 1,
+          "text": "Would never cheat on my taxes."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Respect the privacy of others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Like harmony in my life."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "[Try to follow the rules.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "[Respect authority.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Don't care about rules."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Turn my back on others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Only talk about my own interests."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Overestimate my achievements."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Scheme against others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "[Act at the expense of others.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_morality:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "[Break rules.]"
+        }
+      ],
+      "label": "Morality",
+      "reliability_alpha": null,
+      "source_construct": "Morality",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "II+/IV+ vs II-/IV-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am easy to satisfy."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Have a good word for everyone."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am on good terms with nearly everyone."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Trust others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Respect others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Trust what people say."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am hard to satisfy."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am quick to judge others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Insult people."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Find it hard to forgive others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Contradict others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_pleasantness:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Criticize others' shortcomings."
+        }
+      ],
+      "label": "Pleasantness",
+      "reliability_alpha": null,
+      "source_construct": "Pleasantness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "II+/V+ vs II-/V-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Anticipate the needs of others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Sense others' wishes."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "[Love to reflect on things.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "[Try to stay in touch with myself.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "[Work on improving myself.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Pretend to be concerned for others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "[Don't have a soft side.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "[Treat people as inferiors.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_empathy:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "[Am not in touch with my feelings.]"
+        }
+      ],
+      "label": "Empathy",
+      "reliability_alpha": null,
+      "source_construct": "Empathy",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "II+/I- vs II-/I+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Value cooperation over competition."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Listen to my conscience."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Impose my will on others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Love a good fight."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Seek conflict."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Think too highly of myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Tell tall stories about myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Play tricks on others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Enjoy crude jokes."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "[Comment loudly about others.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "[Enjoy being reckless.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_i_vs_ii_i_cooperation:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "[Do dangerous things.]"
+        }
+      ],
+      "label": "Cooperation",
+      "reliability_alpha": null,
+      "source_construct": "Cooperation",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "II+/III- vs II-/III+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am concerned about others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am deeply moved by others' misfortunes."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Feel sympathy for those who are worse off than myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "[Take an interest in other people's lives.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "[Like to do things for others.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "[Reassure others.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Demand a lot from others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Don't fall for sob-stories."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Listen to my brain rather than my heart."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Tend to dislike soft-hearted people."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Try not to think about the needy."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Look down on any weakness."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iii_vs_ii_iii_sympathy:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "Believe people should fend for themselves."
+        }
+      ],
+      "label": "Sympathy",
+      "reliability_alpha": null,
+      "source_construct": "Sympathy",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "II+/IV- vs II-/IV+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Suffer from others' sorrows."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Listen to my heart rather than my brain."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:003",
+          "keyed": "positive",
+          "review_flags": [
+            "children"
+          ],
+          "source_order": 3,
+          "text": "Love children's movies."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Want to please others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Remember my friends' birthdays."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Cherish mementos."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Want to mean something to others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "[Believe crying helps me feel better.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "[Show my feelings.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Don't understand people who get emotional."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "[Don't get excited about things.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "[Don't call people just to talk.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_iv_vs_ii_iv_tenderness:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "[Don't care about dressing nicely.]"
+        }
+      ],
+      "label": "Tenderness",
+      "reliability_alpha": null,
+      "source_construct": "Tenderness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "II+/V- vs II-/V+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have a soft heart."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Go out of my way for others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Think of others first."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Will do anything for others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Like to please others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Wouldn't harm a fly."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Make enemies."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Oppose authority."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Believe that I am better than others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Seek danger."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Put people under pressure."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Try to outdo others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:ii_v_vs_ii_v_nurturance:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "Believe only in myself."
+        }
+      ],
+      "label": "Nurturance",
+      "reliability_alpha": null,
+      "source_construct": "Nurturance",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "III+/III+ vs III-/III-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Accomplish my work on time."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Do things according to a plan."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am careful to avoid making mistakes."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Keep my checkbook balanced."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Like to plan ahead."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Often forget to put things back in their proper place."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Neglect my duties."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Take tasks too lightly."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Leave my work undone."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Do not plan ahead."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Put off unpleasant tasks."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iii_vs_iii_iii_conscientiousness:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Am often late to work."
+        }
+      ],
+      "label": "Conscientiousness",
+      "reliability_alpha": null,
+      "source_construct": "Conscientiousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "III+/I+ vs III-/I-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am exacting in my work."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Make plans and stick to them."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Get chores done right away."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Follow through with my plans."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Finish what I start."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Waste my time."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Find it difficult to get down to work."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Postpone decisions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Have difficulty starting tasks."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Need a push to get started."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_efficiency:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Frequently forget to do things."
+        }
+      ],
+      "label": "Efficiency",
+      "reliability_alpha": null,
+      "source_construct": "Efficiency",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "III+/II+ vs III-/II-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Follow directions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Keep myself well-groomed."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Check over my work."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Behave properly."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "[Stick to the rules.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "[Appreciate good manners.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Do improper things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Disregard rules."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Do the opposite of what is asked."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Pay no attention to my appearance."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "[Don't think laws apply to me.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "[Make rash decisions.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_dutifulness:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "[Say inappropriate things.]"
+        }
+      ],
+      "label": "Dutifulness",
+      "reliability_alpha": null,
+      "source_construct": "Dutifulness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "III+/IV+ vs III-/IV-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am always prepared."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Carry out my plans."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Get to work at once."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am not easily distracted."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Handle tasks smoothly."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Make a mess of things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am easily distracted."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Mess things up."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Shirk my duties."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Don't see things through."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Do things at the last minute."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_purposefulness:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Can't make up my mind."
+        }
+      ],
+      "label": "Purposefulness",
+      "reliability_alpha": null,
+      "source_construct": "Purposefulness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "III+/V+ vs III-/V-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Pay attention to details."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Complete tasks successfully."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Have an eye for detail."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Demand quality."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Set high standards for myself and others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Make well-considered decisions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Follow through on my commitments."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "Detect mistakes."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "Think ahead."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Seldom notice details."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Put little time and effort into my work."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_organization:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Don't pay attention."
+        }
+      ],
+      "label": "Organization",
+      "reliability_alpha": null,
+      "source_construct": "Organization",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "III+/I- vs III-/I+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Purchase only practical things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Tend to dislike impulsive people."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Take precautions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "[Never splurge.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "[Never spend more than I can afford.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Do crazy things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Often make last-minute plans."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am easily talked into doing silly things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Laugh at the slightest provocation."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Like to laugh out loud."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "[Like to act on a whim.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_i_vs_iii_i_cautiousness:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "[Jump into things without thinking.]"
+        }
+      ],
+      "label": "Cautiousness",
+      "reliability_alpha": null,
+      "source_construct": "Cautiousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "III+/II- vs III-/II+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Do things in a logical order."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Come straight to the point."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Believe in a logical answer for everything."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Get a head start on others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Dislike imperfect work."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Believe in an eye for an eye."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "[Have no sympathy for criminals.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "[Reason logically.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Sympathize with the homeless."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am not as strict as I should be."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Let people pull my leg."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "[Do things in a half-way manner.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:013",
+          "keyed": "negative",
+          "source_order": 13,
+          "text": "[Let my attention wander off.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_ii_vs_iii_ii_rationality:item:014",
+          "keyed": "negative",
+          "source_order": 14,
+          "text": "[Believe that criminals should receive help rather than punishment.]"
+        }
+      ],
+      "label": "Rationality",
+      "reliability_alpha": null,
+      "source_construct": "Rationality",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "III+/IV- vs III-/IV+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Continue until everything is perfect."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Want every detail taken care of."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Want everything to be \"just right.\""
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Want things to proceed according to plan."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Demand perfection in others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Keep a sharp eye on others' work."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Expect dedicated work from others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am not bothered by messy people."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_iv_vs_iii_iv_perfectionism:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Am not bothered by disorder."
+        }
+      ],
+      "label": "Perfectionism",
+      "reliability_alpha": null,
+      "source_construct": "Perfectionism",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "III+/V- vs III-/V+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Like order."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Follow a schedule."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Work according to a routine."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Like to tidy up."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Do things by the book."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Take good care of my belongings."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "See that rules are observed."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Leave my belongings around."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Leave a mess in my room."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iii_v_vs_iii_v_orderliness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Dislike routine."
+        }
+      ],
+      "label": "Orderliness",
+      "reliability_alpha": null,
+      "source_construct": "Orderliness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "IV+/IV+ vs IV-/IV-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Seldom get mad."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am not easily bothered by things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am not easily frustrated."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Seldom take offense."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Keep my cool."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Get stressed out easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Get upset easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am easily disturbed."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Change my mood a lot."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iv_vs_iv_iv_stability:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Get caught up in my problems."
+        }
+      ],
+      "label": "Stability",
+      "reliability_alpha": null,
+      "source_construct": "Stability",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "IV+/I+ vs IV-/I-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Seldom feel blue."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Feel comfortable with myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Adapt easily to new situations."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Look at the bright side of life."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Am sure of my ground."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Often feel blue."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Worry about things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Feel threatened easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:009",
+          "keyed": "negative",
+          "review_flags": [
+            "self_evaluation"
+          ],
+          "source_order": 9,
+          "text": "Dislike myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_happiness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am filled with doubts about things."
+        }
+      ],
+      "label": "Happiness",
+      "reliability_alpha": null,
+      "source_construct": "Happiness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "IV+/II+ vs IV-/II-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Rarely get irritated."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am not easily annoyed."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Take things as they come."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Accept people as they are."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Get angry easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am often in a bad mood."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Get furious."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Snap at people."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Lose my temper."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_calmness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Have days when I'm mad at the world."
+        }
+      ],
+      "label": "Calmness",
+      "reliability_alpha": null,
+      "source_construct": "Calmness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "IV+/III+ vs IV-/III-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Remain calm under pressure."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Easily resist temptations."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:003",
+          "keyed": "positive",
+          "review_flags": [
+            "substance_or_impulse"
+          ],
+          "source_order": 3,
+          "text": "Rarely overindulge."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Am able to control my cravings."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Am guided by my moods."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am not sure where my life is going."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Don't know why I do some of the things I do."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Get out of control."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Can't concentrate."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_moderation:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Do things I later regret."
+        }
+      ],
+      "label": "Moderation",
+      "reliability_alpha": null,
+      "source_construct": "Moderation",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "IV+/V+ vs IV-/V-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am calm even in tense situations."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Don't lose my head."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Know how to cope."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Can stand criticism."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Take offense easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Panic easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am easily hurt."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am easily offended."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Feel crushed by setbacks."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Become overwhelmed by events."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Am easily frightened."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_toughness:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Am easily confused."
+        }
+      ],
+      "label": "Toughness",
+      "reliability_alpha": null,
+      "source_construct": "Toughness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "IV+/I- vs IV-/I+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Keep my emotions under control."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Let others finish what they are saying."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Demand attention."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "React intensely."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Talk even when I know I shouldn't."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Often make a fuss."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Shoot my mouth off."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am easily excited."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Blurt out whatever comes into my mind."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Barge in on conversations."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_i_vs_iv_i_impulse_control:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Like to gossip."
+        }
+      ],
+      "label": "Impulse Control",
+      "reliability_alpha": null,
+      "source_construct": "Impulse Control",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "IV+/II- vs IV-/II+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Seldom get emotional."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am not easily affected by my emotions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Get overwhelmed by emotions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Cry easily."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "Burst into tears."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Am easily moved to tears."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Cry during movies."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Wear my heart on my sleeve."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_ii_vs_iv_ii_imperturbability:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Have crying fits."
+        }
+      ],
+      "label": "Imperturbability",
+      "reliability_alpha": null,
+      "source_construct": "Imperturbability",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "IV+/III- vs IV-/III+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "(No positive items.)"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Want everything to add up perfectly."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Demand obedience."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Keep up an appearance."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:005",
+          "keyed": "negative",
+          "source_order": 5,
+          "text": "[Love order and regularity.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "[Am attached to conventional ways.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "[Want things done my way.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "[Am a creature of habit.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "[Try to impress others.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "[Can't stand being contradicted.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_iii_vs_iv_iii_cool_headedness:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "[Want to be told I am right.]"
+        }
+      ],
+      "label": "Cool-Headedness",
+      "reliability_alpha": null,
+      "source_construct": "Cool-Headedness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "IV+/V- vs IV-/V+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Experience very few emotional highs and lows."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Tend to feel the same every day."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am always in the same mood."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Rarely notice my emotional reactions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "[Am relaxed most of the time.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "[Am not easily stirred.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "[Am not disturbed by events.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Experience my emotions intensely."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "[Have frequent mood swings.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "[Am swayed by my emotions.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:iv_v_vs_iv_v_tranquility:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "[Can be stirred up easily.]"
+        }
+      ],
+      "label": "Tranquility",
+      "reliability_alpha": null,
+      "source_construct": "Tranquility",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "V+/V+ vs V-/V-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have a rich vocabulary."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Use difficult words."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Make insightful remarks."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Show a mastery of language."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Enjoy thinking about things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Try to understand myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Am not interested in abstract ideas."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Will not probe deeply into a subject."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Have a poor vocabulary."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Dislike learning."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_v_vs_v_v_intellect:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Skip difficult words while reading."
+        }
+      ],
+      "label": "Intellect",
+      "reliability_alpha": null,
+      "source_construct": "Intellect",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "V+/I+ vs V-/I-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am full of ideas."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Have excellent ideas."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Carry the conversation to a higher level."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Come up with bold plans."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Quickly think up new ideas."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Am good at many things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Do not have a good imagination."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Have difficulty imagining things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_ingenuity:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Can't come up with new ideas."
+        }
+      ],
+      "label": "Ingenuity",
+      "reliability_alpha": null,
+      "source_construct": "Ingenuity",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "V+/II+ vs V-/II-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "See beauty in things that others might not notice."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Take time to reflect on things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Make beautiful things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Enjoy the beauty of nature."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Enjoy discussing movies and books with others."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "[Like music.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "[Love flowers.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "[Love beautiful things.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Do not like concerts."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_reflection:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "[Do not enjoy watching dance performances.]"
+        }
+      ],
+      "label": "Reflection",
+      "reliability_alpha": null,
+      "source_construct": "Reflection",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "V+/III+ vs V-/III-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Learn quickly."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Use my brain."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Excel in what I do."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Look at the facts."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Meet challenges."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Seek explanations of things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Need things explained only once."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "[Know how to apply my knowledge.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_competence:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "(No negative items.)"
+        }
+      ],
+      "label": "Competence",
+      "reliability_alpha": null,
+      "source_construct": "Competence",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "V+/IV+ vs V-/IV-",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Can handle complex problems."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am quick to understand things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Catch on to things quickly."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Love to read challenging material."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Am able to find out things by myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Can handle a lot of information."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "Quickly get the idea of things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Avoid difficult reading material."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Try to avoid complex people."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_quickness:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Don't understand things."
+        }
+      ],
+      "label": "Quickness",
+      "reliability_alpha": null,
+      "source_construct": "Quickness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "V+/I- vs V-/I+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Spend time reflecting on things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Enjoy spending time by myself."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Live in a world of my own."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Enjoy my privacy."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Don't mind eating alone."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "Do things at my own pace."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "[Enjoy contemplation.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:008",
+          "keyed": "positive",
+          "source_order": 8,
+          "text": "[Prefer to be alone.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:009",
+          "keyed": "positive",
+          "source_order": 9,
+          "text": "[Have a point of view all my own.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:010",
+          "keyed": "positive",
+          "source_order": 10,
+          "text": "[Want to be left alone.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:011",
+          "keyed": "negative",
+          "source_order": 11,
+          "text": "Can't stand being alone."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_i_vs_v_i_introspection:item:012",
+          "keyed": "negative",
+          "source_order": 12,
+          "text": "Don't like to ponder over things."
+        }
+      ],
+      "label": "Introspection",
+      "reliability_alpha": null,
+      "source_construct": "Introspection",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "V+/II- vs V-/II+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Like to solve complex problems."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Ask questions that nobody else does."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Know the answers to many questions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Challenge others' points of view."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Can easily link facts together."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Have difficulty understanding abstract ideas."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Avoid philosophical discussions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Am not interested in theoretical discussions."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Consider myself an average person."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_ii_vs_v_ii_creativity:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Am not interested in speculating about things."
+        }
+      ],
+      "label": "Creativity",
+      "reliability_alpha": null,
+      "source_construct": "Creativity",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "V+/III- vs V-/III+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have a vivid imagination."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Prefer variety to routine."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Believe in the importance of art."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Enjoy wild flights of fantasy."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "Need a creative outlet."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:006",
+          "keyed": "negative",
+          "source_order": 6,
+          "text": "Do not like art."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:007",
+          "keyed": "negative",
+          "source_order": 7,
+          "text": "Do not enjoy going to art museums."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "Do not like poetry."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "Seldom get lost in thought."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iii_vs_v_iii_imagination:item:010",
+          "keyed": "negative",
+          "source_order": 10,
+          "text": "Seldom daydream."
+        }
+      ],
+      "label": "Imagination",
+      "reliability_alpha": null,
+      "source_construct": "Imagination",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "V+/IV- vs V-/IV+",
+      "declared_item_count": null,
+      "domain": null,
+      "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth",
+      "items": [
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Look for hidden meanings in things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Like to get lost in thought."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Think deeply about things."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Need to understand my motives."
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth:item:005",
+          "keyed": "positive",
+          "source_order": 5,
+          "text": "[Tend to analyze things.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth:item:006",
+          "keyed": "positive",
+          "source_order": 6,
+          "text": "[Tend to think about something for hours.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth:item:007",
+          "keyed": "positive",
+          "source_order": 7,
+          "text": "[Enjoy examining myself and my life.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth:item:008",
+          "keyed": "negative",
+          "source_order": 8,
+          "text": "[Rarely look for a deeper meaning in things.]"
+        },
+        {
+          "id": "ipip_ab5c_45_facets:v_iv_vs_v_iv_depth:item:009",
+          "keyed": "negative",
+          "source_order": 9,
+          "text": "[Never challenge things.]"
+        }
+      ],
+      "label": "Depth",
+      "reliability_alpha": null,
+      "source_construct": "Depth",
+      "test_retest_correlation": null
+    }
+  ],
+  "schema_version": 1,
+  "scoring": {
+    "method": "sum_keyed_items",
+    "negative_keyed": "reverse score 1-5 responses before summing",
+    "positive_keyed": "1=Very Inaccurate through 5=Very Accurate",
+    "score_interpretation": "Higher scores indicate greater endorsement of the named construct."
+  },
+  "source": {
+    "publisher": "International Personality Item Pool",
+    "retrieved_date": "2026-07-01",
+    "url": "https://ipip.ori.org/newAB5CKey.htm"
+  }
+}

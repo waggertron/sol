@@ -1,0 +1,1140 @@
+{
+  "construct_system": "IPIP-NEO-120 facet representation",
+  "family": "OCEAN",
+  "id": "ipip_neo_120_maples_2014",
+  "license": {
+    "evidence": "The official IPIP site states that its items and scales are in the public domain and can be copied, edited, translated, or used for any purpose without permission or a fee.",
+    "source_url": "https://ipip.ori.org/",
+    "status": "public_domain"
+  },
+  "name": "IPIP-NEO-120 Maples et al. 2014",
+  "notes": [],
+  "response_scale": {
+    "type": "likert_1_5_accuracy",
+    "values": [
+      {
+        "label": "Very Inaccurate",
+        "value": 1
+      },
+      {
+        "label": "Moderately Inaccurate",
+        "value": 2
+      },
+      {
+        "label": "Neither Inaccurate nor Accurate",
+        "value": 3
+      },
+      {
+        "label": "Moderately Accurate",
+        "value": 4
+      },
+      {
+        "label": "Very Accurate",
+        "value": 5
+      }
+    ]
+  },
+  "scales": [
+    {
+      "construct_code": "N1",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_120_maples_2014:neuroticism_n1_anxiety",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n1_anxiety:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Worry about things."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n1_anxiety:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Fear for the worst."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n1_anxiety:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am afraid of many things."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n1_anxiety:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Get stressed out easily."
+        }
+      ],
+      "label": "Anxiety",
+      "reliability_alpha": 0.71,
+      "source_construct": "Anxiety",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N2",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_120_maples_2014:neuroticism_n2_anger",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n2_anger:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Get angry easily"
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n2_anger:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Get irritated easily."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n2_anger:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Lose my temper."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n2_anger:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Rarely get irritated."
+        }
+      ],
+      "label": "Anger",
+      "reliability_alpha": 0.8,
+      "source_construct": "Anger",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N3",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_120_maples_2014:neuroticism_n3_depression",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n3_depression:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Often feel blue."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n3_depression:item:002",
+          "keyed": "positive",
+          "review_flags": [
+            "self_evaluation"
+          ],
+          "source_order": 2,
+          "text": "Dislike myself."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n3_depression:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am often down in the dumps."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n3_depression:item:004",
+          "keyed": "positive",
+          "review_flags": [
+            "self_evaluation"
+          ],
+          "source_order": 4,
+          "text": "Have a low opinion of myself."
+        }
+      ],
+      "label": "Depression",
+      "reliability_alpha": 0.78,
+      "source_construct": "Depression",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N4",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_120_maples_2014:neuroticism_n4_self_consciousness",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n4_self_consciousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Find it difficult to approach others."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n4_self_consciousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am easily intimidated."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n4_self_consciousness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Am not embarrassed easily."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n4_self_consciousness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Am able to stand up for myself."
+        }
+      ],
+      "label": "Self-Consciousness",
+      "reliability_alpha": 0.64,
+      "source_construct": "Self-Consciousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N5",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_120_maples_2014:neuroticism_n5_immoderation",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n5_immoderation:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Often eat too much."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n5_immoderation:item:002",
+          "keyed": "positive",
+          "review_flags": [
+            "substance_or_impulse"
+          ],
+          "source_order": 2,
+          "text": "Go on binges."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n5_immoderation:item:003",
+          "keyed": "negative",
+          "review_flags": [
+            "substance_or_impulse"
+          ],
+          "source_order": 3,
+          "text": "Rarely overindulge."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n5_immoderation:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Am able to control my cravings."
+        }
+      ],
+      "label": "Immoderation",
+      "reliability_alpha": 0.72,
+      "source_construct": "Immoderation",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "N6",
+      "declared_item_count": null,
+      "domain": "neuroticism",
+      "id": "ipip_neo_120_maples_2014:neuroticism_n6_vulnerability",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n6_vulnerability:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Feel that I'm unable to deal with things."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n6_vulnerability:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Know how to cope."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n6_vulnerability:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Am calm even in tense situations."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:neuroticism_n6_vulnerability:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Remain calm under pressure."
+        }
+      ],
+      "label": "Vulnerability",
+      "reliability_alpha": 0.66,
+      "source_construct": "Vulnerability",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E1",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_120_maples_2014:extraversion_e1_friendliness",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e1_friendliness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Make friends easily."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e1_friendliness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Warm up quickly to others."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e1_friendliness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Feel comfortable around people."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e1_friendliness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Act comfortably with others."
+        }
+      ],
+      "label": "Friendliness",
+      "reliability_alpha": 0.79,
+      "source_construct": "Friendliness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E2",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_120_maples_2014:extraversion_e2_gregariousness",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e2_gregariousness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Love large parties."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e2_gregariousness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Talk to a lot of different people at parties."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e2_gregariousness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Don't like crowded events."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e2_gregariousness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Avoid crowds."
+        }
+      ],
+      "label": "Gregariousness",
+      "reliability_alpha": 0.72,
+      "source_construct": "Gregariousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E3",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_120_maples_2014:extraversion_e3_assertiveness",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e3_assertiveness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Take charge."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e3_assertiveness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Try to lead others."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e3_assertiveness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Take control of things."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e3_assertiveness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Wait for others to lead the way."
+        }
+      ],
+      "label": "Assertiveness",
+      "reliability_alpha": 0.76,
+      "source_construct": "Assertiveness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E4",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_120_maples_2014:extraversion_e4_activity_level",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e4_activity_level:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Am always busy."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e4_activity_level:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Am always on the go."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e4_activity_level:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Do a lot in my spare time."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e4_activity_level:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Can manage many things at the same time."
+        }
+      ],
+      "label": "Activity Level",
+      "reliability_alpha": 0.71,
+      "source_construct": "Activity Level",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E5",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_120_maples_2014:extraversion_e5_excitement_seeking",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e5_excitement_seeking:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Love excitement."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e5_excitement_seeking:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Seek adventure."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e5_excitement_seeking:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Love action."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e5_excitement_seeking:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Enjoy being reckless."
+        }
+      ],
+      "label": "Excitement-Seeking",
+      "reliability_alpha": 0.71,
+      "source_construct": "Excitement-Seeking",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "E6",
+      "declared_item_count": null,
+      "domain": "extraversion",
+      "id": "ipip_neo_120_maples_2014:extraversion_e6_cheerfulness",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e6_cheerfulness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Radiate joy."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e6_cheerfulness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Have a lot of fun."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e6_cheerfulness:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Love life."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:extraversion_e6_cheerfulness:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Laugh aloud."
+        }
+      ],
+      "label": "Cheerfulness",
+      "reliability_alpha": 0.65,
+      "source_construct": "Cheerfulness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O1",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_120_maples_2014:openness_o1_imagination",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o1_imagination:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Have a vivid imagination."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o1_imagination:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Enjoy wild flights of fantasy."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o1_imagination:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Love to daydream."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o1_imagination:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Like to get lost in thought."
+        }
+      ],
+      "label": "Imagination",
+      "reliability_alpha": 0.72,
+      "source_construct": "Imagination",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O2",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_120_maples_2014:openness_o2_artistic_interests",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o2_artistic_interests:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "See beauty in things that others might not notice."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o2_artistic_interests:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Do not like art."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o2_artistic_interests:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Do not like poetry."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o2_artistic_interests:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Do not enjoy going to art museums."
+        }
+      ],
+      "label": "Artistic Interests",
+      "reliability_alpha": 0.72,
+      "source_construct": "Artistic Interests",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O3",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_120_maples_2014:openness_o3_emotionality",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o3_emotionality:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Experience my emotions intensely."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o3_emotionality:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Seldom get emotional."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o3_emotionality:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Am not easily affected by my emotions. Experience very few emotional highs and lows."
+        }
+      ],
+      "label": "Emotionality",
+      "reliability_alpha": 0.76,
+      "source_construct": "Emotionality",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O4",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_120_maples_2014:openness_o4_adventurousness",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o4_adventurousness:item:001",
+          "keyed": "negative",
+          "source_order": 1,
+          "text": "Prefer to stick with things that I know."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o4_adventurousness:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Dislike changes."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o4_adventurousness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Don't like the idea of change."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o4_adventurousness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Am attached to conventional ways."
+        }
+      ],
+      "label": "Adventurousness",
+      "reliability_alpha": 0.72,
+      "source_construct": "Adventurousness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O5",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_120_maples_2014:openness_o5_intellect",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o5_intellect:item:001",
+          "keyed": "negative",
+          "source_order": 1,
+          "text": "Am not interested in abstract ideas."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o5_intellect:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Avoid philosophical discussions."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o5_intellect:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Have difficulty understanding abstract ideas."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o5_intellect:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Am not interested in theoretical discussions."
+        }
+      ],
+      "label": "Intellect",
+      "reliability_alpha": 0.84,
+      "source_construct": "Intellect",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "O6",
+      "declared_item_count": null,
+      "domain": "openness",
+      "id": "ipip_neo_120_maples_2014:openness_o6_liberalism",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o6_liberalism:item:001",
+          "keyed": "positive",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 1,
+          "text": "Tend to vote for liberal political candidates."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o6_liberalism:item:002",
+          "keyed": "negative",
+          "review_flags": [
+            "religion"
+          ],
+          "source_order": 2,
+          "text": "Believe in one true religion."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:openness_o6_liberalism:item:003",
+          "keyed": "negative",
+          "review_flags": [
+            "politics"
+          ],
+          "source_order": 3,
+          "text": "Tend to vote for conservative political candidates. Like to stand during the national anthem."
+        }
+      ],
+      "label": "Liberalism",
+      "reliability_alpha": 0.78,
+      "source_construct": "Liberalism",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A1",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_120_maples_2014:agreeableness_a1_trust",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a1_trust:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Trust others."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a1_trust:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Believe that others have good intentions."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a1_trust:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Trust what people say."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a1_trust:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Distrust people."
+        }
+      ],
+      "label": "Trust",
+      "reliability_alpha": 0.71,
+      "source_construct": "Trust",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A2",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_120_maples_2014:agreeableness_a2_morality",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a2_morality:item:001",
+          "keyed": "negative",
+          "source_order": 1,
+          "text": "Use flattery to get ahead."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a2_morality:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Know how to get around the rules."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a2_morality:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Cheat to get ahead."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a2_morality:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Take advantage of others."
+        }
+      ],
+      "label": "Morality",
+      "reliability_alpha": 0.53,
+      "source_construct": "Morality",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A3",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_120_maples_2014:agreeableness_a3_altruism",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a3_altruism:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Make people feel welcome."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a3_altruism:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Love to help others."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a3_altruism:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Am concerned about others."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a3_altruism:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Turn my back on others."
+        }
+      ],
+      "label": "Altruism",
+      "reliability_alpha": 0.58,
+      "source_construct": "Altruism",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A4",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_120_maples_2014:agreeableness_a4_cooperation",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a4_cooperation:item:001",
+          "keyed": "negative",
+          "source_order": 1,
+          "text": "Love a good fight."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a4_cooperation:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Yell at people."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a4_cooperation:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Insult people."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a4_cooperation:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Get back at others."
+        }
+      ],
+      "label": "Cooperation",
+      "reliability_alpha": 0.63,
+      "source_construct": "Cooperation",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A5",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_120_maples_2014:agreeableness_a5_modesty",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a5_modesty:item:001",
+          "keyed": "negative",
+          "source_order": 1,
+          "text": "Believe that I am better than others."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a5_modesty:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Think highly of myself."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a5_modesty:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Have a high opinion of myself."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a5_modesty:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Make myself the center of attention."
+        }
+      ],
+      "label": "Modesty",
+      "reliability_alpha": 0.64,
+      "source_construct": "Modesty",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "A6",
+      "declared_item_count": null,
+      "domain": "agreeableness",
+      "id": "ipip_neo_120_maples_2014:agreeableness_a6_sympathy",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a6_sympathy:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Sympathize with the homeless."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a6_sympathy:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Feel sympathy for those who are worse off than myself."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a6_sympathy:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Suffer from others' sorrows."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:agreeableness_a6_sympathy:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Am not interested in other people's problems ."
+        }
+      ],
+      "label": "Sympathy",
+      "reliability_alpha": 0.63,
+      "source_construct": "Sympathy",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C1",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_120_maples_2014:conscientiousness_c1_self_efficacy",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c1_self_efficacy:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Complete tasks successfully"
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c1_self_efficacy:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Excel in what I do."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c1_self_efficacy:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Handle tasks smoothly."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c1_self_efficacy:item:004",
+          "keyed": "positive",
+          "source_order": 4,
+          "text": "Know how to get things done."
+        }
+      ],
+      "label": "Self-Efficacy",
+      "reliability_alpha": 0.67,
+      "source_construct": "Self-Efficacy",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C2",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_120_maples_2014:conscientiousness_c2_orderliness",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c2_orderliness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Like order."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c2_orderliness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Like to tidy up."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c2_orderliness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Leave a mess in my room."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c2_orderliness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Leave my belongings around."
+        }
+      ],
+      "label": "Orderliness",
+      "reliability_alpha": 0.73,
+      "source_construct": "Orderliness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C3",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_120_maples_2014:conscientiousness_c3_dutifulness",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c3_dutifulness:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Keep my promises."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c3_dutifulness:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Tell the truth."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c3_dutifulness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Break my promises."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c3_dutifulness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Get others to do my duties."
+        }
+      ],
+      "label": "Dutifulness",
+      "reliability_alpha": 0.51,
+      "source_construct": "Dutifulness",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C4",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_120_maples_2014:conscientiousness_c4_achievement_striving",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c4_achievement_striving:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Work hard."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c4_achievement_striving:item:002",
+          "keyed": "positive",
+          "source_order": 2,
+          "text": "Do more than what's expected of me."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c4_achievement_striving:item:003",
+          "keyed": "positive",
+          "source_order": 3,
+          "text": "Set high standards for myself and others."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c4_achievement_striving:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Am not highly motivated to succeed."
+        }
+      ],
+      "label": "Achievement-Striving",
+      "reliability_alpha": 0.63,
+      "source_construct": "Achievement-Striving",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C5",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_120_maples_2014:conscientiousness_c5_self_discipline",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c5_self_discipline:item:001",
+          "keyed": "positive",
+          "source_order": 1,
+          "text": "Start tasks right away."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c5_self_discipline:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Find it difficult to get down to work."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c5_self_discipline:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Need a push to get started."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c5_self_discipline:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Have difficulty starting tasks."
+        }
+      ],
+      "label": "Self-Discipline",
+      "reliability_alpha": 0.78,
+      "source_construct": "Self-Discipline",
+      "test_retest_correlation": null
+    },
+    {
+      "construct_code": "C6",
+      "declared_item_count": null,
+      "domain": "conscientiousness",
+      "id": "ipip_neo_120_maples_2014:conscientiousness_c6_cautiousness",
+      "items": [
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c6_cautiousness:item:001",
+          "keyed": "negative",
+          "source_order": 1,
+          "text": "Jump into things without thinking."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c6_cautiousness:item:002",
+          "keyed": "negative",
+          "source_order": 2,
+          "text": "Make rash decisions."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c6_cautiousness:item:003",
+          "keyed": "negative",
+          "source_order": 3,
+          "text": "Rush into things."
+        },
+        {
+          "id": "ipip_neo_120_maples_2014:conscientiousness_c6_cautiousness:item:004",
+          "keyed": "negative",
+          "source_order": 4,
+          "text": "Act without thinking."
+        }
+      ],
+      "label": "Cautiousness",
+      "reliability_alpha": 0.7,
+      "source_construct": "Cautiousness",
+      "test_retest_correlation": null
+    }
+  ],
+  "schema_version": 1,
+  "scoring": {
+    "method": "sum_keyed_items",
+    "negative_keyed": "reverse score 1-5 responses before summing",
+    "positive_keyed": "1=Very Inaccurate through 5=Very Accurate",
+    "score_interpretation": "Higher scores indicate greater endorsement of the named construct."
+  },
+  "source": {
+    "publisher": "International Personality Item Pool",
+    "retrieved_date": "2026-07-01",
+    "url": "https://ipip.ori.org/30FacetNEO-PI-RItems_Maples_etal.htm"
+  }
+}
