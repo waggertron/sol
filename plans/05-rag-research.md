@@ -12,14 +12,16 @@ feasibility of personality/style modeling.
 - adjacent source registry in `sources/adjacent_sources_v1.json`
 - ontology drafts in `kb/model/`
 - assessment notes in `kb/assessments/`
+- metadata-only paper imports in `kb/paper_imports/`
 - acquired OCEAN instruments in `assessments/ocean/`
 - JSONDB import queue in `jsondb/import_queue.json`
 - local lexical retriever in `tools/rag.py`
 
 Current snapshot:
 
-- 1,800 RAG chunks
-- 82 Wikipedia summary cards
+- 2,100 RAG chunks
+- 102 Wikipedia summary cards
+- 25 paper metadata cards
 - 3,373 import queue entries
 - 11 OCEAN assessment instruments
 

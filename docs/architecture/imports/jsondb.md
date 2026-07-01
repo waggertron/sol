@@ -62,6 +62,8 @@ Subcommands:
 
 - `init-db`
 - `import-wikipedia`
+- `import-queued-wikipedia`
+- `import-paper-metadata`
 - `queue-crossref-references`
 - `run-initial`
 - `sync-wikipedia-terms`
@@ -76,6 +78,19 @@ python3 tools/import_ocean_assessments.py --source-dir /path/to/downloaded/html
 
 The assessment inventory links JSONDB metadata to concrete stored instruments
 under `assessments/ocean/`.
+
+## Queue Ingestion Policy
+
+Wikipedia queue items can be imported as summary cards under `kb/wiki_imports/`.
+These are background references, not peer-reviewed evidence.
+
+Queued paper DOI references can be imported as metadata-only cards under
+`kb/paper_imports/`. These cards intentionally omit full paper text and
+abstracts until a human review promotes the source into a source card.
+
+Recent queue ingestion imported 20 additional Wikipedia summaries and 25 paper
+metadata cards. A subsequent Wikipedia retry hit `HTTP 429` rate limiting, so
+remaining linked articles should be retried later with a slower batch.
 
 ## Policy
 

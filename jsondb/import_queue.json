@@ -48,11 +48,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:16pf_questionnaire",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:56+00:00",
+      "imported_path": "kb/wiki_imports/16pf_questionnaire.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "16PF Questionnaire",
@@ -66,16 +68,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:2016_us_presidential_election",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:57+00:00",
+      "imported_path": "kb/wiki_imports/2016_united_states_presidential_election.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "2016 US presidential election",
-      "title": "2016 US presidential election",
-      "url": "https://en.wikipedia.org/wiki/2016_US_presidential_election"
+      "title": "2016 United States presidential election",
+      "url": "https://en.wikipedia.org/wiki/2016_United_States_presidential_election"
     },
     {
       "created_at": "2026-07-01T10:26:34+00:00",
@@ -128,11 +132,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:affective_neuroscience",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:57+00:00",
+      "imported_path": "kb/wiki_imports/affective_neuroscience.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Affective neuroscience",
@@ -159,11 +165,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:affective_science",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:57+00:00",
+      "imported_path": "kb/wiki_imports/affective_science.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Affective science",
@@ -183,11 +191,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:agoraphobia",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:57+00:00",
+      "imported_path": "kb/wiki_imports/agoraphobia.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Agoraphobia",
@@ -239,11 +249,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:alzheimer_s_disease",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:57+00:00",
+      "imported_path": "kb/wiki_imports/alzheimer_s_disease.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Alzheimer's disease",
@@ -260,11 +272,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:american_psychologist",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:58+00:00",
+      "imported_path": "kb/wiki_imports/american_psychologist.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "American Psychologist",
@@ -288,11 +302,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:anomalistic_psychology",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:58+00:00",
+      "imported_path": "kb/wiki_imports/anomalistic_psychology.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Anomalistic psychology",
@@ -314,11 +330,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:applied_behavior_analysis",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:58+00:00",
+      "imported_path": "kb/wiki_imports/applied_behavior_analysis.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Applied behavior analysis",
@@ -339,11 +357,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:applied_psychology",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:33:58+00:00",
+      "imported_path": "kb/wiki_imports/applied_psychology.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Applied psychology",
@@ -368,7 +388,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "ArXiv (identifier)",
@@ -386,7 +407,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Archana Singh-Manoux",
@@ -405,7 +427,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Association for Psychological Science",
@@ -427,7 +450,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Aviation psychology",
@@ -445,7 +469,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Avoidant",
@@ -467,7 +492,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Basic science (psychology)",
@@ -491,7 +517,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Behavior",
@@ -508,11 +535,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:behavioral_neuroscience",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:00+00:00",
+      "imported_path": "kb/wiki_imports/behavioral_neuroscience.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Behavioral neuroscience",
@@ -531,11 +560,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:behaviorism",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:00+00:00",
+      "imported_path": "kb/wiki_imports/behaviorism.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Behaviorism",
@@ -554,11 +585,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:behavioural_genetics",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:00+00:00",
+      "imported_path": "kb/wiki_imports/behavioural_genetics.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Behavioural genetics",
@@ -572,16 +605,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:behavioural_science",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:00+00:00",
+      "imported_path": "kb/wiki_imports/behavioural_sciences.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Behavioural science",
-      "title": "Behavioural science",
-      "url": "https://en.wikipedia.org/wiki/Behavioural_science"
+      "title": "Behavioural sciences",
+      "url": "https://en.wikipedia.org/wiki/Behavioural_sciences"
     },
     {
       "created_at": "2026-07-01T10:26:34+00:00",
@@ -608,16 +643,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:bibcode_identifier",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:01+00:00",
+      "imported_path": "kb/wiki_imports/bibcode.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Bibcode (identifier)",
-      "title": "Bibcode (identifier)",
-      "url": "https://en.wikipedia.org/wiki/Bibcode_%28identifier%29"
+      "title": "Bibcode",
+      "url": "https://en.wikipedia.org/wiki/Bibcode"
     },
     {
       "created_at": "2026-07-01T10:26:34+00:00",
@@ -626,11 +663,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:big_five_personality_traits_and_culture",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:01+00:00",
+      "imported_path": "kb/wiki_imports/big_five_personality_traits_and_culture.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Big Five personality traits and culture",
@@ -665,16 +704,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:academic_performance",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:01+00:00",
+      "imported_path": "kb/wiki_imports/academic_achievement.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Academic performance",
-      "title": "Academic performance",
-      "url": "https://en.wikipedia.org/wiki/Academic_performance"
+      "title": "Academic achievement",
+      "url": "https://en.wikipedia.org/wiki/Academic_achievement"
     },
     {
       "created_at": "2026-07-01T10:26:36+00:00",
@@ -685,11 +726,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:alternative_five_model_of_personality",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:01+00:00",
+      "imported_path": "kb/wiki_imports/alternative_five_model_of_personality.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Alternative five model of personality",
@@ -703,16 +746,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:altruistic",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:02+00:00",
+      "imported_path": "kb/wiki_imports/altruism.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Altruistic",
-      "title": "Altruistic",
-      "url": "https://en.wikipedia.org/wiki/Altruistic"
+      "title": "Altruism",
+      "url": "https://en.wikipedia.org/wiki/Altruism"
     },
     {
       "created_at": "2026-07-01T10:26:36+00:00",
@@ -738,16 +783,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:citeseerx_identifier",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:02+00:00",
+      "imported_path": "kb/wiki_imports/citeseerx.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "CiteSeerX (identifier)",
-      "title": "CiteSeerX (identifier)",
-      "url": "https://en.wikipedia.org/wiki/CiteSeerX_%28identifier%29"
+      "title": "CiteSeerX",
+      "url": "https://en.wikipedia.org/wiki/CiteSeerX"
     },
     {
       "created_at": "2026-07-01T10:26:36+00:00",
@@ -789,7 +836,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Counterproductive work behavior",
@@ -807,7 +855,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Dark triad",
@@ -854,7 +903,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Doi (identifier)",
@@ -877,7 +927,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Extraversion",
@@ -924,7 +975,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Factor analysis",
@@ -954,7 +1006,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Hdl (identifier)",
@@ -972,7 +1025,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Helping behavior",
@@ -990,7 +1044,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Honesty-humility factor of the HEXACO model of personality",
@@ -1023,7 +1078,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "ISBN (identifier)",
@@ -1056,7 +1112,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "ISSN (identifier)",
@@ -1075,7 +1132,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "International Personality Item Pool",
@@ -1094,7 +1152,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Job satisfaction",
@@ -1112,7 +1171,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Kernel density estimation",
@@ -1130,7 +1190,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Kin altruism",
@@ -1159,7 +1220,7 @@
       "url": "https://en.wikipedia.org/wiki/Lexical_hypothesis"
     },
     {
-      "container_title": "PLoS One",
+      "container_title": "PLoS ONE",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -1167,14 +1228,17 @@
       "doi": "10.1371/journal.pone.0027633",
       "first_page": "e27633",
       "id": "paper:10.1371/journal.pone.0027633",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:21+00:00",
+      "imported_path": "kb/paper_imports/personality_is_reflected_in_the_brain_s_intrinsic_functional_architecture.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personality is reflected in the brain\u2019s intrinsic functional architecture",
+      "title": "Personality Is Reflected in the Brain's Intrinsic Functional Architecture",
       "url": "https://doi.org/10.1371/journal.pone.0027633",
-      "year": "2011"
+      "year": 2011
     },
     {
       "container_title": null,
@@ -1204,14 +1268,17 @@
       "doi": "10.1111/j.1469-8986.2007.00609.x",
       "first_page": "11",
       "id": "paper:10.1111/j.1469-8986.2007.00609.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:21+00:00",
+      "imported_path": "kb/paper_imports/neurocognitive_components_of_the_behavioral_inhibition_and_activation_systems_implications_for_theories_of_self_regulati.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Neurocognitive components of the behavioral inhibition and activation systems: Implications for theories of self-regulation",
+      "title": "Neurocognitive components of the behavioral inhibition and activation systems: Implications for theories of self\u2010regulation",
       "url": "https://doi.org/10.1111/j.1469-8986.2007.00609.x",
-      "year": "2008"
+      "year": 2008
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -1222,14 +1289,17 @@
       "doi": "10.1037/a0017159",
       "first_page": "1142",
       "id": "paper:10.1037/a0017159",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:22+00:00",
+      "imported_path": "kb/paper_imports/the_nature_and_structure_of_correlations_among_big_five_ratings_the_halo_alpha_beta_model.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The nature and structure of correlations among Big Five ratings: The Halo-Alpha-Beta model",
+      "title": "The nature and structure of correlations among Big Five ratings: The halo-alpha-beta model.",
       "url": "https://doi.org/10.1037/a0017159",
-      "year": "2009"
+      "year": 2009
     },
     {
       "container_title": "Journal of Personality Disorders",
@@ -1240,14 +1310,17 @@
       "doi": "10.1521/pedi.2012.26.5.641",
       "first_page": "641",
       "id": "paper:10.1521/pedi.2012.26.5.641",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:22+00:00",
+      "imported_path": "kb/paper_imports/the_maladaptive_personality_traits_of_the_personality_inventory_for_i_dsm_5_i_pid_5_in_relation_to_the_hexaco_personalit.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The maladaptive personality traits of the personality inventory for DSM-5 (PID-5) in relation to the HEXACO personality factors and schizotypy/dissociation",
+      "title": "The Maladaptive Personality Traits of the Personality Inventory for<i>DSM-5</i>(PID-5) in Relation to the HEXACO Personality Factors and Schizotypy/Dissociation",
       "url": "https://doi.org/10.1521/pedi.2012.26.5.641",
-      "year": "2012"
+      "year": 2012
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -1259,14 +1332,17 @@
       "doi": "10.1037/0022-3514.86.2.356",
       "first_page": "356",
       "id": "paper:10.1037/0022-3514.86.2.356",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:22+00:00",
+      "imported_path": "kb/paper_imports/a_six_factor_structure_of_personality_descriptive_adjectives_solutions_from_psycholexical_studies_in_seven_languages.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "A six-factor structure of personality descriptive adjectives: Solutions from psycholexical studies in seven languages",
+      "title": "A Six-Factor Structure of Personality-Descriptive Adjectives: Solutions From Psycholexical Studies in Seven Languages.",
       "url": "https://doi.org/10.1037/0022-3514.86.2.356",
-      "year": "2004"
+      "year": 2004
     },
     {
       "container_title": "Psychological Bulletin",
@@ -1278,14 +1354,17 @@
       "doi": "10.1037/0033-2909.120.3.338",
       "first_page": "338",
       "id": "paper:10.1037/0033-2909.120.3.338",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:23+00:00",
+      "imported_path": "kb/paper_imports/goal_constructs_in_psychology_structure_process_and_content.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Goal constructs in psychology: Structure, process, and content",
+      "title": "Goal constructs in psychology: Structure, process, and content.",
       "url": "https://doi.org/10.1037/0033-2909.120.3.338",
-      "year": "1996"
+      "year": 1996
     },
     {
       "container_title": "Psychological Review",
@@ -1296,14 +1375,17 @@
       "doi": "10.1037/a0016262",
       "first_page": "567",
       "id": "paper:10.1037/a0016262",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:23+00:00",
+      "imported_path": "kb/paper_imports/a_new_lease_of_life_for_thomson_s_bonds_model_of_intelligence.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "A new lease of life for Thomson\u2019s bonds model of intelligence",
+      "title": "A new lease of life for Thomson\u2019s bonds model of intelligence.",
       "url": "https://doi.org/10.1037/a0016262",
-      "year": "2009"
+      "year": 2009
     },
     {
       "container_title": "Journal of Research in Personality",
@@ -1314,14 +1396,17 @@
       "doi": "10.1016/j.jrp.2010.07.004",
       "first_page": "593",
       "id": "paper:10.1016/j.jrp.2010.07.004",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:23+00:00",
+      "imported_path": "kb/paper_imports/it_depends_how_you_look_at_it_on_the_relationship_between_neuroticism_and_conscientiousness_at_the_within_and_the_betwee.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "It depends how you look at it: On the relationship between neuroticism and conscientiousness at the within- and the between-person levels of analysis",
       "url": "https://doi.org/10.1016/j.jrp.2010.07.004",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Psychopharmacology",
@@ -1332,14 +1417,17 @@
       "doi": "10.1007/s00213-006-0578-x",
       "first_page": "391",
       "id": "paper:10.1007/s00213-006-0578-x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:24+00:00",
+      "imported_path": "kb/paper_imports/the_debate_over_dopamine_s_role_in_reward_the_case_for_incentive_salience.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The debate over dopamine\u2019s role in reward: The case for incentive salience",
+      "title": "The debate over dopamine\u2019s role in reward: the case for incentive salience",
       "url": "https://doi.org/10.1007/s00213-006-0578-x",
-      "year": "2007"
+      "year": 2007
     },
     {
       "container_title": null,
@@ -1368,14 +1456,17 @@
       "doi": "10.1126/science.1068749",
       "first_page": "2191",
       "id": "paper:10.1126/science.1068749",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:24+00:00",
+      "imported_path": "kb/paper_imports/amygdala_response_to_happy_faces_as_a_function_of_extraversion.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Amygdala response to happy faces as a function of Extraversion",
+      "title": "Amygdala Response to Happy Faces as a Function of Extraversion",
       "url": "https://doi.org/10.1126/science.1068749",
-      "year": "2002"
+      "year": 2002
     },
     {
       "container_title": "Creativity Research Journal",
@@ -1386,17 +1477,20 @@
       "doi": "10.1207/s15326934crj1701_4",
       "first_page": "37",
       "id": "paper:10.1207/s15326934crj1701_4",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:25+00:00",
+      "imported_path": "kb/paper_imports/reliability_validity_and_factor_structure_of_the_creative_achievement_questionnaire.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Reliability, validity, and factor structure of the Creative Achievement Questionnaire",
+      "title": "Reliability, Validity, and Factor Structure of the Creative Achievement Questionnaire",
       "url": "https://doi.org/10.1207/s15326934crj1701_4",
-      "year": "2005"
+      "year": 2005
     },
     {
-      "container_title": "Cognition & Emotion",
+      "container_title": "Cognition and Emotion",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -1404,14 +1498,17 @@
       "doi": "10.1080/02699930302294",
       "first_page": "241",
       "id": "paper:10.1080/02699930302294",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:25+00:00",
+      "imported_path": "kb/paper_imports/pleasure_as_a_sign_you_can_attend_to_something_else_placing_positive_feelings_within_a_general_model_of_affect.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Pleasure as a sign you can attend to something else: Placing positive feelings within a general model of affect",
       "url": "https://doi.org/10.1080/02699930302294",
-      "year": "2003"
+      "year": 2003
     },
     {
       "container_title": "Psychological Bulletin",
@@ -1422,14 +1519,17 @@
       "doi": "10.1037/a0013740",
       "first_page": "912",
       "id": "paper:10.1037/a0013740",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:25+00:00",
+      "imported_path": "kb/paper_imports/serotonergic_function_two_mode_models_of_self_regulation_and_vulnerability_to_depression_what_depression_has_in_common_w.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Serotonergic function, two-mode models of self-regulation, and vulnerability to depression: What depression has in common with impulsive aggression",
+      "title": "Serotonergic function, two-mode models of self-regulation, and vulnerability to depression: What depression has in common with impulsive aggression.",
       "url": "https://doi.org/10.1037/a0013740",
-      "year": "2008"
+      "year": 2008
     },
     {
       "container_title": null,
@@ -1459,14 +1559,17 @@
       "doi": "10.1037/0033-295X.111.1.183",
       "first_page": "183",
       "id": "paper:10.1037/0033-295x.111.1.183",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:26+00:00",
+      "imported_path": "kb/paper_imports/the_architecture_of_personality.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The architecture of personality",
-      "url": "https://doi.org/10.1037/0033-295X.111.1.183",
-      "year": "2004"
+      "title": "The Architecture of Personality.",
+      "url": "https://doi.org/10.1037/0033-295x.111.1.183",
+      "year": 2004
     },
     {
       "container_title": "Annual Review of Psychology",
@@ -1478,14 +1581,17 @@
       "doi": "10.1146/annurev.psych.56.091103.070133",
       "first_page": "423",
       "id": "paper:10.1146/annurev.psych.56.091103.070133",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:26+00:00",
+      "imported_path": "kb/paper_imports/personality_architecture_within_person_structures_and_processes.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personality architecture: Within-person structures and processes",
+      "title": "Personality Architecture: Within-Person Structures and Processes",
       "url": "https://doi.org/10.1146/annurev.psych.56.091103.070133",
-      "year": "2005"
+      "year": 2005
     },
     {
       "container_title": "Psychological Medicine",
@@ -1496,17 +1602,20 @@
       "doi": "10.1017/S0033291707000669",
       "first_page": "1281",
       "id": "paper:10.1017/s0033291707000669",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:26+00:00",
+      "imported_path": "kb/paper_imports/highly_neurotic_never_depressed_students_have_negative_biases_in_information_processing.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Highly neurotic never-depressed students have negative biases in information processing",
-      "url": "https://doi.org/10.1017/S0033291707000669",
-      "year": "2007"
+      "url": "https://doi.org/10.1017/s0033291707000669",
+      "year": 2007
     },
     {
-      "container_title": "Proceedings of the National Academy of Sciences of the United States of America",
+      "container_title": "Proceedings of the National Academy of Sciences",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -1514,14 +1623,17 @@
       "doi": "10.1073/pnas.1010658108",
       "first_page": "15655",
       "id": "paper:10.1073/pnas.1010658108",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:27+00:00",
+      "imported_path": "kb/paper_imports/temporal_view_of_the_costs_and_benefits_of_self_deception.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Temporal view of the costs and benefits of self-deception",
       "url": "https://doi.org/10.1073/pnas.1010658108",
-      "year": "2011"
+      "year": 2011
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -1532,14 +1644,17 @@
       "doi": "10.1037/a0025559",
       "first_page": "408",
       "id": "paper:10.1037/a0025559",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:27+00:00",
+      "imported_path": "kb/paper_imports/separating_method_factors_and_higher_order_traits_of_the_big_five_a_meta_analytic_multitrait_multimethod_approach.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Separating method factors and higher order traits of the Big Five: A meta-analytic multitrait\u2013multimethod approach",
+      "title": "Separating method factors and higher order traits of the Big Five: A meta-analytic multitrait\u2013multimethod approach.",
       "url": "https://doi.org/10.1037/a0025559",
-      "year": "2012"
+      "year": 2012
     },
     {
       "container_title": "Journal of Personality Disorders",
@@ -1550,14 +1665,17 @@
       "doi": "10.1521/pedi_2014_28_128",
       "first_page": null,
       "id": "paper:10.1521/pedi_2014_28_128",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:27+00:00",
+      "imported_path": "kb/paper_imports/openness_to_experience_intellect_schizotypal_personality_disorder_and_psychoticism_resolving_the_controversy.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Openness to experience, intellect, schizotypal personality disorder, and psychoticism: Resolving the controversy",
+      "title": "Openness to Experience, Intellect, Schizotypal Personality Disorder, and Psychoticism: Resolving the Controversy",
       "url": "https://doi.org/10.1521/pedi_2014_28_128",
-      "year": "2014"
+      "year": 2014
     },
     {
       "container_title": "Psychotherapy and Psychosomatics",
@@ -1568,14 +1686,17 @@
       "doi": "10.1159/000235737",
       "first_page": "342",
       "id": "paper:10.1159/000235737",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:28+00:00",
+      "imported_path": "kb/paper_imports/diagnosis_and_measurement_of_subjective_incompetence_the_clinical_hallmark_of_demoralization.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Diagnosis and measurement of subjective incompetence: The clinical hallmark of demoralization",
+      "title": "Diagnosis and Measurement of Subjective Incompetence: The Clinical Hallmark of Demoralization",
       "url": "https://doi.org/10.1159/000235737",
-      "year": "2009"
+      "year": 2009
     },
     {
       "container_title": "Cognitive Brain Research",
@@ -1586,14 +1707,17 @@
       "doi": "10.1016/j.cogbrainres.2005.09.018",
       "first_page": "851",
       "id": "paper:10.1016/j.cogbrainres.2005.09.018",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:28+00:00",
+      "imported_path": "kb/paper_imports/individual_differences_in_extraversion_and_dopamine_genetics_predict_neural_reward_responses.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Individual differences in extraversion and dopamine genetics predict neural reward responses",
       "url": "https://doi.org/10.1016/j.cogbrainres.2005.09.018",
-      "year": "2005"
+      "year": 2005
     },
     {
       "container_title": "European Journal of Personality",
@@ -1604,14 +1728,17 @@
       "doi": "10.1002/per.779",
       "first_page": "376",
       "id": "paper:10.1002/per.779",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:28+00:00",
+      "imported_path": "kb/paper_imports/automatic_and_controlled_processes_in_behavioural_control_implications_for_personality_psychology.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Automatic and controlled processes in behavioural control: Implications for personality psychology",
+      "title": "Automatic and Controlled Processes in Behavioural Control: Implications for Personality Psychology",
       "url": "https://doi.org/10.1002/per.779",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Social and Personality Psychology Compass",
@@ -1622,14 +1749,17 @@
       "doi": "10.1111/spc3.12016",
       "first_page": "158",
       "id": "paper:10.1111/spc3.12016",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:29+00:00",
+      "imported_path": "kb/paper_imports/motivation_and_personality_a_neuropsychological_perspective.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Motivation and personality: A neuropsychological perspective",
+      "title": "Motivation and Personality: A Neuropsychological Perspective",
       "url": "https://doi.org/10.1111/spc3.12016",
-      "year": "2013"
+      "year": 2013
     },
     {
       "container_title": null,
@@ -1677,17 +1807,20 @@
       "doi": "10.1002/per.1866",
       "first_page": "414",
       "id": "paper:10.1002/per.1866",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:29+00:00",
+      "imported_path": "kb/paper_imports/dimensions_of_normal_personality_as_networks_in_search_of_equilibrium_you_can_t_like_parties_if_you_don_t_like_people.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Dimensions of normal personality as networks in search of equilibrium: You can\u2019t like parties if you don\u2019t like people",
+      "title": "Dimensions of Normal Personality as Networks in Search of Equilibrium: You Can't like Parties if you Don't like People",
       "url": "https://doi.org/10.1002/per.1866",
-      "year": "2012"
+      "year": 2012
     },
     {
-      "container_title": "Neuroimage",
+      "container_title": "NeuroImage",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -1695,14 +1828,17 @@
       "doi": "10.1016/j.neuroimage.2009.08.023",
       "first_page": "963",
       "id": "paper:10.1016/j.neuroimage.2009.08.023",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-01T18:34:29+00:00",
+      "imported_path": "kb/paper_imports/neuroticism_modulates_amygdala_prefrontal_connectivity_in_response_to_negative_emotional_facial_expressions.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Neuroticism modulates amygdala\u2014Prefrontal connectivity in response to negative emotional facial expressions",
+      "title": "Neuroticism modulates amygdala\u2014prefrontal connectivity in response to negative emotional facial expressions",
       "url": "https://doi.org/10.1016/j.neuroimage.2009.08.023",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -36032,7 +36168,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Accountability",
@@ -36056,7 +36193,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Achourya",
@@ -36080,7 +36218,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Adhi\u1e6d\u1e6dh\u0101na",
@@ -36130,7 +36269,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Agape",
@@ -36153,7 +36293,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Ahimsa",
@@ -36176,7 +36317,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Akrodha",
@@ -36200,7 +36342,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Alertness",
@@ -36221,7 +36364,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Alexithymia",
@@ -36247,7 +36391,8 @@
       "imported_path": null,
       "kind": "wikipedia_linked_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
       ],
       "priority": "background",
       "term": "Altruism",

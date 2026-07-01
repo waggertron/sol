@@ -26,6 +26,7 @@ IMPORT_RUNS = JSONDB / "import_runs.json"
 TERM_INVENTORY = JSONDB / "term_inventory.json"
 WIKI_REVIEW = JSONDB / "wiki_import_review.json"
 WIKI_IMPORTS = ROOT / "kb" / "wiki_imports"
+PAPER_IMPORTS = ROOT / "kb" / "paper_imports"
 SOURCES_DIR = ROOT / "sources"
 USER_AGENT = "sol-personality-rag/0.1 (research import; contact: local)"
 
@@ -60,6 +61,7 @@ def request_json(url: str) -> dict[str, Any]:
 def ensure_db() -> None:
     JSONDB.mkdir(parents=True, exist_ok=True)
     WIKI_IMPORTS.mkdir(parents=True, exist_ok=True)
+    PAPER_IMPORTS.mkdir(parents=True, exist_ok=True)
     if not IMPORT_QUEUE.exists():
         save_json(IMPORT_QUEUE, {"version": 1, "items": []})
     if not IMPORT_RUNS.exists():
@@ -237,21 +239,22 @@ def queue_wikipedia_terms() -> dict[str, int]:
 
 
 def wikipedia_page(term: str, link_limit: int = 25) -> dict[str, Any] | None:
-    params = urllib.parse.urlencode(
-        {
-            "action": "query",
-            "generator": "search",
-            "gsrsearch": term,
-            "gsrlimit": 1,
-            "prop": "extracts|links|info",
-            "exintro": 1,
-            "explaintext": 1,
-            "inprop": "url",
-            "pllimit": min(link_limit, 50),
-            "format": "json",
-            "utf8": 1,
-        }
-    )
+    query = {
+        "action": "query",
+        "generator": "search",
+        "gsrsearch": term,
+        "gsrlimit": 1,
+        "prop": "extracts|info",
+        "exintro": 1,
+        "explaintext": 1,
+        "inprop": "url",
+        "format": "json",
+        "utf8": 1,
+    }
+    if link_limit > 0:
+        query["prop"] = "extracts|links|info"
+        query["pllimit"] = min(link_limit, 50)
+    params = urllib.parse.urlencode(query)
     data = request_json(f"https://en.wikipedia.org/w/api.php?{params}")
     pages = data.get("query", {}).get("pages", {})
     if not pages:
@@ -271,11 +274,48 @@ def wikipedia_page(term: str, link_limit: int = 25) -> dict[str, Any] | None:
     }
 
 
+def wikipedia_page_by_title(title: str, link_limit: int = 25) -> dict[str, Any] | None:
+    query = {
+        "action": "query",
+        "titles": title,
+        "redirects": 1,
+        "prop": "extracts|info",
+        "exintro": 1,
+        "explaintext": 1,
+        "inprop": "url",
+        "format": "json",
+        "utf8": 1,
+    }
+    if link_limit > 0:
+        query["prop"] = "extracts|links|info"
+        query["pllimit"] = min(link_limit, 50)
+    params = urllib.parse.urlencode(query)
+    data = request_json(f"https://en.wikipedia.org/w/api.php?{params}")
+    pages = data.get("query", {}).get("pages", {})
+    if not pages:
+        return None
+    page = next(iter(pages.values()))
+    if page.get("missing") is not None:
+        return None
+    links = [
+        link["title"]
+        for link in page.get("links", [])
+        if link.get("title") and not link["title"].startswith(("Help:", "File:", "Template:", "Wikipedia:"))
+    ]
+    return {
+        "title": page.get("title") or title,
+        "extract": page.get("extract") or "",
+        "content_urls": {"desktop": {"page": page.get("fullurl")}},
+        "description": "",
+        "links": links,
+    }
+
+
 def write_wiki_card(term: str, domain: str, summary: dict[str, Any]) -> Path:
     title = summary.get("title") or term
     page_url = summary.get("content_urls", {}).get("desktop", {}).get("page") or summary.get("canonicalurl")
-    extract = summary.get("extract") or ""
-    description = summary.get("description") or ""
+    extract = (summary.get("extract") or "").strip()
+    description = (summary.get("description") or "").strip()
     path = WIKI_IMPORTS / f"{slugify(title)}.md"
     text = f"""# Wikipedia Import: {title}
 
@@ -312,6 +352,84 @@ Imported as background reference. Not a peer-reviewed source.
 """
     path.write_text(text, encoding="utf-8")
     return path
+
+
+def import_queued_wikipedia(limit: int | None = None, link_limit: int = 0, sleep_seconds: float = 0.2) -> dict[str, int]:
+    queue = load_queue()
+    candidates = [
+        item
+        for item in queue["items"]
+        if item.get("kind") == "wikipedia_linked_article" and not item.get("imported")
+    ]
+    if limit is not None:
+        candidates = candidates[:limit]
+
+    imported = 0
+    linked_added = 0
+    errors = 0
+
+    for item in candidates:
+        title = item.get("title") or item.get("term")
+        if not title:
+            continue
+        domain = item.get("domain", "unknown")
+        try:
+            summary = wikipedia_page_by_title(title, link_limit=link_limit) or wikipedia_page(title, link_limit=link_limit)
+            if not summary:
+                errors += 1
+                notes = set(item.get("notes", []))
+                notes.add("Queued Wikipedia import found no matching page.")
+                item["notes"] = sorted(notes)
+                continue
+
+            resolved_title = summary.get("title") or title
+            path = write_wiki_card(title, domain, summary)
+            page_url = summary.get("content_urls", {}).get("desktop", {}).get("page")
+            item["kind"] = "wikipedia_article"
+            item["title"] = resolved_title
+            item["term"] = title
+            item["url"] = page_url
+            item["imported"] = True
+            item["imported_path"] = path.as_posix()
+            item["imported_at"] = utc_now()
+            notes = set(item.get("notes", []))
+            notes.add("Imported queued linked Wikipedia summary; full article not imported by default.")
+            item["notes"] = sorted(notes)
+            imported += 1
+
+            for linked_title in summary.get("links", []):
+                linked_item = {
+                    "id": f"wikipedia:{slugify(linked_title)}",
+                    "kind": "wikipedia_linked_article",
+                    "title": linked_title,
+                    "term": linked_title,
+                    "url": f"https://en.wikipedia.org/wiki/{urllib.parse.quote(linked_title.replace(' ', '_'))}",
+                    "domain": domain,
+                    "discovered_from": [f"wikipedia:{slugify(resolved_title)}"],
+                    "imported": False,
+                    "imported_path": None,
+                    "priority": "background",
+                    "notes": ["Discovered from imported queued Wikipedia article links."],
+                    "created_at": utc_now(),
+                }
+                if add_queue_item(queue, linked_item):
+                    linked_added += 1
+            time.sleep(sleep_seconds)
+        except Exception as exc:  # noqa: BLE001 - queue import should log and continue.
+            errors += 1
+            notes = set(item.get("notes", []))
+            notes.add(f"Pending retry after queued Wikipedia import error: {exc}")
+            item["notes"] = sorted(notes)
+
+    save_queue(queue)
+    result = {
+        "candidates_checked": len(candidates),
+        "summaries_imported": imported,
+        "linked_articles_added": linked_added,
+        "errors": errors,
+    }
+    append_run_log({"type": "import_queued_wikipedia", "timestamp": utc_now(), "result": result})
+    return result
 
 
 def import_wikipedia(limit: int | None = None, link_limit: int = 25, sleep_seconds: float = 0.2) -> dict[str, int]:
@@ -448,6 +566,128 @@ def import_wikipedia(limit: int | None = None, link_limit: int = 25, sleep_secon
     return result
 
 
+def format_authors(work: dict[str, Any], limit: int = 12) -> str:
+    authors = []
+    for author in work.get("author", [])[:limit]:
+        parts = [author.get("given"), author.get("family")]
+        name = " ".join(part for part in parts if part)
+        if name:
+            authors.append(name)
+    if len(work.get("author", [])) > limit:
+        authors.append("et al.")
+    return ", ".join(authors) if authors else "Unknown"
+
+
+def first_value(values: Any) -> str | None:
+    if isinstance(values, list) and values:
+        return str(values[0])
+    if values:
+        return str(values)
+    return None
+
+
+def published_year(work: dict[str, Any]) -> int | None:
+    for key in ("published-print", "published-online", "published", "issued"):
+        parts = work.get(key, {}).get("date-parts", [])
+        if parts and parts[0]:
+            return parts[0][0]
+    return None
+
+
+def write_paper_metadata_card(item: dict[str, Any], work: dict[str, Any]) -> Path:
+    title = first_value(work.get("title")) or item.get("title") or item.get("doi") or "Untitled paper"
+    doi = normalize_doi(work.get("DOI") or item.get("doi") or "")
+    url = work.get("URL") or doi_url(doi)
+    container = first_value(work.get("container-title")) or item.get("container_title") or ""
+    year = published_year(work) or item.get("year") or ""
+    authors = format_authors(work)
+    reference_count = work.get("reference-count", "")
+    cited_by_count = work.get("is-referenced-by-count", "")
+    source_ids = ", ".join(item.get("discovered_from", [])) or "unknown"
+    path = PAPER_IMPORTS / f"{slugify(title)}.md"
+    text = f"""# Paper Metadata Import: {title}
+
+## Citation Metadata
+
+- Authors: {authors}
+- Year: {year}
+- Venue: {container}
+- DOI: {doi}
+- URL: {url}
+
+## Queue Metadata
+
+- Queue id: `{item.get("id")}`
+- Discovered from: {source_ids}
+- Reference count: {reference_count}
+- Crossref cited-by count: {cited_by_count}
+
+## Import Policy
+
+This card imports bibliographic metadata only. It does not import full paper
+text or abstracts by default. Promote this paper into a reviewed source card
+only after reading the source and recording project-specific implications,
+limits, and evidence grade.
+
+## Import Status
+
+Imported as background paper metadata. Not yet reviewed into the knowledge
+model.
+"""
+    path.write_text(text, encoding="utf-8")
+    return path
+
+
+def import_paper_metadata(limit: int | None = None, sleep_seconds: float = 0.2) -> dict[str, int]:
+    queue = load_queue()
+    candidates = [
+        item
+        for item in queue["items"]
+        if item.get("kind") == "paper_reference" and not item.get("imported") and item.get("doi")
+    ]
+    if limit is not None:
+        candidates = candidates[:limit]
+
+    imported = 0
+    errors = 0
+    skipped = 0
+    for item in candidates:
+        doi = item.get("doi")
+        if not doi:
+            skipped += 1
+            continue
+        try:
+            work = crossref_work(doi)
+            path = write_paper_metadata_card(item, work)
+            item["title"] = first_value(work.get("title")) or item.get("title")
+            item["url"] = work.get("URL") or doi_url(doi)
+            item["year"] = published_year(work) or item.get("year")
+            item["container_title"] = first_value(work.get("container-title")) or item.get("container_title")
+            item["imported"] = True
+            item["imported_path"] = path.as_posix()
+            item["imported_at"] = utc_now()
+            notes = set(item.get("notes", []))
+            notes.add("Imported Crossref bibliographic metadata only; source not reviewed.")
+            item["notes"] = sorted(notes)
+            imported += 1
+            time.sleep(sleep_seconds)
+        except Exception as exc:  # noqa: BLE001 - queue import should log and continue.
+            errors += 1
+            notes = set(item.get("notes", []))
+            notes.add(f"Pending retry after paper metadata import error: {exc}")
+            item["notes"] = sorted(notes)
+
+    save_queue(queue)
+    result = {
+        "candidates_checked": len(candidates),
+        "metadata_cards_imported": imported,
+        "skipped": skipped,
+        "errors": errors,
+    }
+    append_run_log({"type": "import_paper_metadata", "timestamp": utc_now(), "result": result})
+    return result
+
+
 def command_init_db(_: argparse.Namespace) -> None:
     ensure_db()
     print(f"Initialized JSONDB in {JSONDB}")
@@ -465,6 +705,16 @@ def command_queue_wikipedia_terms(_: argparse.Namespace) -> None:
 
 def command_import_wikipedia(args: argparse.Namespace) -> None:
     result = import_wikipedia(limit=args.limit, link_limit=args.link_limit, sleep_seconds=args.sleep)
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+
+def command_import_queued_wikipedia(args: argparse.Namespace) -> None:
+    result = import_queued_wikipedia(limit=args.limit, link_limit=args.link_limit, sleep_seconds=args.sleep)
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+
+def command_import_paper_metadata(args: argparse.Namespace) -> None:
+    result = import_paper_metadata(limit=args.limit, sleep_seconds=args.sleep)
     print(json.dumps(result, indent=2, sort_keys=True))
 
 
@@ -579,6 +829,17 @@ def make_parser() -> argparse.ArgumentParser:
     wiki_parser.add_argument("--link-limit", type=int, default=25, help="Linked articles to queue per imported article")
     wiki_parser.add_argument("--sleep", type=float, default=0.2, help="Delay between requests")
     wiki_parser.set_defaults(func=command_import_wikipedia)
+
+    queued_wiki_parser = subparsers.add_parser("import-queued-wikipedia", help="Import pending linked Wikipedia summaries from the queue")
+    queued_wiki_parser.add_argument("--limit", type=int, default=25, help="Maximum queued linked articles to import")
+    queued_wiki_parser.add_argument("--link-limit", type=int, default=0, help="Linked articles to queue per imported article")
+    queued_wiki_parser.add_argument("--sleep", type=float, default=0.2, help="Delay between requests")
+    queued_wiki_parser.set_defaults(func=command_import_queued_wikipedia)
+
+    paper_metadata_parser = subparsers.add_parser("import-paper-metadata", help="Import Crossref metadata cards for queued paper references")
+    paper_metadata_parser.add_argument("--limit", type=int, default=25, help="Maximum queued DOI references to import")
+    paper_metadata_parser.add_argument("--sleep", type=float, default=0.2, help="Delay between requests")
+    paper_metadata_parser.set_defaults(func=command_import_paper_metadata)
 
     crossref_parser = subparsers.add_parser("queue-crossref-references", help="Queue Crossref references from source DOI metadata")
     crossref_parser.add_argument("--limit", type=int, default=None, help="Maximum source DOI records to inspect")

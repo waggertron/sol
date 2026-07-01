@@ -151,6 +151,36 @@
       },
       "timestamp": "2026-07-01T10:47:16+00:00",
       "type": "clean_notes"
+    },
+    {
+      "result": {
+        "candidates_checked": 50,
+        "errors": 30,
+        "linked_articles_added": 0,
+        "summaries_imported": 20
+      },
+      "timestamp": "2026-07-01T18:34:05+00:00",
+      "type": "import_queued_wikipedia"
+    },
+    {
+      "result": {
+        "candidates_checked": 25,
+        "errors": 0,
+        "metadata_cards_imported": 25,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-01T18:34:29+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 10,
+        "errors": 10,
+        "linked_articles_added": 0,
+        "summaries_imported": 0
+      },
+      "timestamp": "2026-07-01T18:34:41+00:00",
+      "type": "import_queued_wikipedia"
     }
   ],
   "version": 1

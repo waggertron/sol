@@ -26,6 +26,7 @@ The source of truth is human-readable Markdown and JSON:
 - `kb/research/source_backlog.md` - source backlog by domain
 - `kb/assessments/*.md` - assessment catalogs and profile mapping notes
 - `kb/cards/*.md` - source cards
+- `kb/paper_imports/*.md` - metadata-only paper imports from queued DOI references
 - `kb/wiki_imports/*.md` - imported Wikipedia summary cards
 - `sources/*.json` - structured source registries
 - `jsondb/*.json` - import queue, term inventory, and run logs
@@ -50,7 +51,7 @@ from the Markdown/JSON corpus:
 python3 tools/rag.py index
 ```
 
-Current index snapshot: 1,800 chunks. Treat this as a rebuildable state marker,
+Current index snapshot: 2,100 chunks. Treat this as a rebuildable state marker,
 not a durable contract.
 
 ## Retrieval Tool

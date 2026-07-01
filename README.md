@@ -158,6 +158,7 @@ Sol is not intended to:
 - `kb/research/research_plan.md` - outward-expanding research plan.
 - `kb/assessments/` - assessment catalogs and profile atom mapping notes.
 - `kb/cards/` - source cards and research notes.
+- `kb/paper_imports/` - metadata-only paper imports from queued DOI references.
 - `assessments/` - acquired assessment instruments and scoring metadata.
 - `docs/current-state.md` - current repo snapshot, counts, and next build target.
 - `docs/architecture/rag/structure.md` - RAG architecture and update workflow.
@@ -185,6 +186,7 @@ python3 tools/rag.py search "personality problem solving context traits"
 python3 tools/rag.py search "why avoid diagnostic claims"
 python3 tools/rag.py search "language cues digital footprints personality"
 python3 tools/rag.py search "TIPI scoring reverse scored items"
+python3 tools/rag.py search "paper metadata import personality architecture"
 ```
 
 Print larger context blocks for downstream prompting:
