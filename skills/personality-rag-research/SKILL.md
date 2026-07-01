@@ -50,6 +50,8 @@ python3 tools/kb_importer.py import-queued-wikipedia --limit 20 --link-limit 0 -
   the queue.
 - Progress logs are enabled by default; use `--no-progress` only for quiet
   JSON-only runs.
+- Queue imports checkpoint `jsondb/import_queue.json` after each attempted item,
+  so interrupted long runs should be resumed rather than manually cleaned up.
 - Wikipedia cards are background summaries only, not reviewed evidence.
 
 ## Modeling Rules

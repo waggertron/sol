@@ -2,7 +2,7 @@
 
 ## Matched Term
 
-16PF Questionnaire
+16 Personality Factors
 
 ## Domain
 
@@ -23,8 +23,6 @@ Beginning in the 1940s, Cattell used several techniques including the new statis
 The measurement of normal personality trait constructs is an integral part of Cattell's comprehensive theory of intrapersonal psychological variables covering individual differences in cognitive abilities, normal personality traits, abnormal (psychopathological) personality traits, dynamic motivational traits, mood states, and transitory emotional states which are all taken into account in his behavioral specification/prediction equation. The 16PF has also been translated into over 30 languages and dialects and is widely used internationally.
 Cattell and his co-workers also constructed downward extensions of the 16PF – parallel personality questionnaires designed to measure corresponding trait constructs in younger age ranges, such as the High School Personality Questionnaire (HSPQ) – now the Adolescent Personality Questionnaire (APQ) for ages 12 to 18 years, the Children's Personality Questionnaire (CPQ), the Early School Personality Questionnaire (ESPQ), as well as the Preschool Personality Questionnaire (PSPQ).
 Cattell also constructed (T-data) tests of cognitive abilities such as the Comprehensive Ability Battery (CAB) – a multidimensional measure of 20 primary cognitive abilities, as well as measures of non-verbal visuo-spatial abilities, such as the three scales of the Culture-Fair Intelligence Test (CFIT), In addition, Cattell and his colleagues constructed objective (T-data) measures of dynamic motivational traits including the Motivation Analysis Test (MAT), the School Motivation Analysis Test (SMAT), as well as the Children's Motivation Analysis Test (CMAT). As for the mood state domain, Cattell and his colleagues constructed the Eight State Questionnaire (8SQ), a self-report (Q-data) measure of eight clinically important emotional/mood states, labeled Anxiety, Stress, Depression, Regression, Fatigue, Guilt, Extraversion, and Arousal.
-
-
 
 ## Import Policy
 

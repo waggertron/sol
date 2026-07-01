@@ -88,10 +88,10 @@ Queued paper DOI references can be imported as metadata-only cards under
 `kb/paper_imports/`. These cards intentionally omit full paper text and
 abstracts until a human review promotes the source into a source card.
 
-Recent queue ingestion imported 42 additional Wikipedia summaries and 25 paper
+Recent queue ingestion imported 642 queued Wikipedia records and 25 paper
 metadata cards across the latest runs. A fast Wikipedia retry hit `HTTP 429`
-rate limiting; a later slow run at one request every 12 seconds imported 22
-additional summaries without rate limiting.
+rate limiting; later slow runs at one request every 12 seconds imported 622
+additional queued records without rate limiting.
 
 ## Wikimedia Rate Policy
 
@@ -112,6 +112,8 @@ Operational rules:
   is to grow the queue.
 - Progress logs are enabled by default for Wikipedia import commands and are
   written to stderr; use `--no-progress` only for quiet JSON-only runs.
+- Queue imports checkpoint `jsondb/import_queue.json` after each attempted item
+  so interrupted long runs can be resumed without losing queue state.
 - If Wikimedia returns HTTP `429` or `503`, respect `Retry-After` when present,
   wait at least the configured sleep interval, and stop the batch.
 - Retry later at `--sleep 30` if `429` repeats.

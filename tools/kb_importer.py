@@ -442,6 +442,7 @@ def import_queued_wikipedia(
                 notes = set(item.get("notes", []))
                 notes.add("Queued Wikipedia import found no matching page.")
                 item["notes"] = sorted(notes)
+                save_queue(queue)
                 progress_log(progress, f"[wiki-queue {checked}/{len(candidates)}] no matching page; sleeping {sleep_seconds}s")
                 time.sleep(sleep_seconds)
                 continue
@@ -482,6 +483,7 @@ def import_queued_wikipedia(
                 }
                 if add_queue_item(queue, linked_item):
                     linked_added += 1
+            save_queue(queue)
             progress_log(progress, f"[wiki-queue {checked}/{len(candidates)}] sleeping {sleep_seconds}s")
             time.sleep(sleep_seconds)
         except RetryableHttpError as exc:
@@ -494,6 +496,7 @@ def import_queued_wikipedia(
                 f"retry_after_seconds={exc.retry_after_seconds or 'unknown'}."
             )
             item["notes"] = sorted(notes)
+            save_queue(queue)
             pause = rate_limit_sleep_seconds(exc, sleep_seconds)
             progress_log(
                 progress,
@@ -507,6 +510,7 @@ def import_queued_wikipedia(
             notes = set(item.get("notes", []))
             notes.add(f"Pending retry after queued Wikipedia import error: {exc}")
             item["notes"] = sorted(notes)
+            save_queue(queue)
             progress_log(progress, f"[wiki-queue {checked}/{len(candidates)}] error={exc}; sleeping {sleep_seconds}s")
             time.sleep(sleep_seconds)
 
@@ -559,6 +563,7 @@ def import_wikipedia(
             summary = wikipedia_page(term, link_limit=link_limit)
             if not summary:
                 errors += 1
+                save_queue(queue)
                 progress_log(progress, f"[wiki-term {checked}/{len(terms)}] no matching page; sleeping {sleep_seconds}s")
                 time.sleep(sleep_seconds)
                 continue
@@ -622,6 +627,7 @@ def import_wikipedia(
                 }
                 if add_queue_item(queue, linked_item):
                     linked_added += 1
+            save_queue(queue)
             progress_log(progress, f"[wiki-term {checked}/{len(terms)}] sleeping {sleep_seconds}s")
             time.sleep(sleep_seconds)
         except RetryableHttpError as exc:
@@ -648,6 +654,7 @@ def import_wikipedia(
                     "created_at": utc_now(),
                 },
             )
+            save_queue(queue)
             pause = rate_limit_sleep_seconds(exc, sleep_seconds)
             progress_log(
                 progress,
@@ -691,6 +698,7 @@ def import_wikipedia(
                     "created_at": utc_now(),
                 },
             )
+            save_queue(queue)
             progress_log(progress, f"[wiki-term {checked}/{len(terms)}] error={exc}; sleeping {sleep_seconds}s")
             time.sleep(sleep_seconds)
 

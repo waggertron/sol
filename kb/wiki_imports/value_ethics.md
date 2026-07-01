@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Value system
+Value (ethics and social sciences)
 
 ## Domain
 
-values_and_goals
+context_specific_states
 
 ## Source
 

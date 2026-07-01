@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Trait theory
+Personality trait
 
 ## Domain
 
-stable_trait_tendencies
+context_specific_states
 
 ## Source
 

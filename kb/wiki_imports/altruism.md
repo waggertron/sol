@@ -2,7 +2,7 @@
 
 ## Matched Term
 
-Altruistic
+Altruism
 
 ## Domain
 

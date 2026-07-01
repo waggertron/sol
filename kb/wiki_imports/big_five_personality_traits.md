@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Personality trait
+Five factor model
 
 ## Domain
 
-stable_trait_tendencies
+aesthetic_creative_preferences
 
 ## Source
 

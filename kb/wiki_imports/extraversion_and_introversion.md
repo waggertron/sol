@@ -2,7 +2,7 @@
 
 ## Matched Term
 
-Extraversion
+Introverted
 
 ## Domain
 

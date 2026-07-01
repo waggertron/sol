@@ -2,7 +2,7 @@
 
 ## Matched Term
 
-Alternative five model of personality
+Alternative five
 
 ## Domain
 
