@@ -19,8 +19,8 @@ feasibility of personality/style modeling.
 
 Current snapshot:
 
-- 2,100 RAG chunks
-- 102 Wikipedia summary cards
+- 2,275 RAG chunks
+- 123 Wikipedia summary cards
 - 25 paper metadata cards
 - 3,373 import queue entries
 - 11 OCEAN assessment instruments

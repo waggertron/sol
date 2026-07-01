@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Personal strivings
+Extraversion
 
 ## Domain
 
-values_and_goals
+stable_trait_tendencies
 
 ## Source
 

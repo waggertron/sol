@@ -384,17 +384,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:arxiv_identifier",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:57:08+00:00",
+      "imported_path": "kb/wiki_imports/arxiv.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "ArXiv (identifier)",
-      "title": "ArXiv (identifier)",
-      "url": "https://en.wikipedia.org/wiki/ArXiv_%28identifier%29"
+      "title": "ArXiv",
+      "url": "https://en.wikipedia.org/wiki/ArXiv"
     },
     {
       "created_at": "2026-07-01T10:26:34+00:00",
@@ -403,12 +404,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:archana_singh_manoux",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:57:20+00:00",
+      "imported_path": "kb/wiki_imports/archana_singh_manoux.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Archana Singh-Manoux",
@@ -423,12 +425,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:association_for_psychological_science",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:57:33+00:00",
+      "imported_path": "kb/wiki_imports/association_for_psychological_science.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Association for Psychological Science",
@@ -446,12 +449,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:aviation_psychology",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:57:45+00:00",
+      "imported_path": "kb/wiki_imports/aviation_psychology.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Aviation psychology",
@@ -465,17 +469,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:avoidant",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:57:57+00:00",
+      "imported_path": "kb/wiki_imports/avoidant_personality_disorder.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Avoidant",
-      "title": "Avoidant",
-      "url": "https://en.wikipedia.org/wiki/Avoidant"
+      "title": "Avoidant personality disorder",
+      "url": "https://en.wikipedia.org/wiki/Avoidant_personality_disorder"
     },
     {
       "created_at": "2026-07-01T10:26:34+00:00",
@@ -488,17 +493,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:basic_science_psychology",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:58:09+00:00",
+      "imported_path": "kb/wiki_imports/basic_science_psychology.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Basic science (psychology)",
       "title": "Basic science (psychology)",
-      "url": "https://en.wikipedia.org/wiki/Basic_science_%28psychology%29"
+      "url": "https://en.wikipedia.org/wiki/Basic_science_(psychology)"
     },
     {
       "created_at": "2026-07-01T10:26:34+00:00",
@@ -513,12 +519,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:behavior",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:58:21+00:00",
+      "imported_path": "kb/wiki_imports/behavior.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Behavior",
@@ -832,12 +839,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:counterproductive_work_behavior",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:58:34+00:00",
+      "imported_path": "kb/wiki_imports/counterproductive_work_behavior.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Counterproductive work behavior",
@@ -851,12 +859,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:dark_triad",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:58:46+00:00",
+      "imported_path": "kb/wiki_imports/dark_triad.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Dark triad",
@@ -899,17 +908,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:doi_identifier",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:58:58+00:00",
+      "imported_path": "kb/wiki_imports/digital_object_identifier.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Doi (identifier)",
-      "title": "Doi (identifier)",
-      "url": "https://en.wikipedia.org/wiki/Doi_%28identifier%29"
+      "title": "Digital object identifier",
+      "url": "https://en.wikipedia.org/wiki/Digital_object_identifier"
     },
     {
       "created_at": "2026-07-01T10:26:36+00:00",
@@ -923,17 +933,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:extraversion",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:59:10+00:00",
+      "imported_path": "kb/wiki_imports/extraversion_and_introversion.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Extraversion",
-      "title": "Extraversion",
-      "url": "https://en.wikipedia.org/wiki/Extraversion"
+      "title": "Extraversion and introversion",
+      "url": "https://en.wikipedia.org/wiki/Extraversion_and_introversion"
     },
     {
       "created_at": "2026-07-01T10:26:36+00:00",
@@ -971,12 +982,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:factor_analysis",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:59:22+00:00",
+      "imported_path": "kb/wiki_imports/factor_analysis.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Factor analysis",
@@ -1002,17 +1014,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:hdl_identifier",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:59:34+00:00",
+      "imported_path": "kb/wiki_imports/handle_system.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Hdl (identifier)",
-      "title": "Hdl (identifier)",
-      "url": "https://en.wikipedia.org/wiki/Hdl_%28identifier%29"
+      "title": "Handle System",
+      "url": "https://en.wikipedia.org/wiki/Handle_System"
     },
     {
       "created_at": "2026-07-01T10:26:36+00:00",
@@ -1021,12 +1034,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:helping_behavior",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:59:47+00:00",
+      "imported_path": "kb/wiki_imports/helping_behavior.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Helping behavior",
@@ -1040,12 +1054,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:honesty_humility_factor_of_the_hexaco_model_of_personality",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T18:59:59+00:00",
+      "imported_path": "kb/wiki_imports/honesty_humility_factor_of_the_hexaco_model_of_personality.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Honesty-humility factor of the HEXACO model of personality",
@@ -1074,17 +1089,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:isbn_identifier",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T19:00:11+00:00",
+      "imported_path": "kb/wiki_imports/isbn.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "ISBN (identifier)",
-      "title": "ISBN (identifier)",
-      "url": "https://en.wikipedia.org/wiki/ISBN_%28identifier%29"
+      "title": "ISBN",
+      "url": "https://en.wikipedia.org/wiki/ISBN"
     },
     {
       "created_at": "2026-07-01T10:26:36+00:00",
@@ -1108,17 +1124,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:issn_identifier",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T19:00:23+00:00",
+      "imported_path": "kb/wiki_imports/issn.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "ISSN (identifier)",
-      "title": "ISSN (identifier)",
-      "url": "https://en.wikipedia.org/wiki/ISSN_%28identifier%29"
+      "title": "ISSN",
+      "url": "https://en.wikipedia.org/wiki/ISSN"
     },
     {
       "created_at": "2026-07-01T10:26:36+00:00",
@@ -1128,12 +1145,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:international_personality_item_pool",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T19:00:36+00:00",
+      "imported_path": "kb/wiki_imports/international_personality_item_pool.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "International Personality Item Pool",
@@ -1148,12 +1166,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:job_satisfaction",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T19:00:48+00:00",
+      "imported_path": "kb/wiki_imports/job_satisfaction.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Job satisfaction",
@@ -1167,12 +1186,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:kernel_density_estimation",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T19:01:00+00:00",
+      "imported_path": "kb/wiki_imports/kernel_density_estimation.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Kernel density estimation",
@@ -1186,17 +1206,18 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:kin_altruism",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T19:02:30+00:00",
+      "imported_path": "kb/wiki_imports/kin_selection.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Kin altruism",
-      "title": "Kin altruism",
-      "url": "https://en.wikipedia.org/wiki/Kin_altruism"
+      "title": "Kin selection",
+      "url": "https://en.wikipedia.org/wiki/Kin_selection"
     },
     {
       "created_at": "2026-07-01T10:26:36+00:00",
@@ -36164,12 +36185,13 @@
       ],
       "domain": "stable_trait_tendencies",
       "id": "wikipedia:accountability",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-01T19:02:42+00:00",
+      "imported_path": "kb/wiki_imports/accountability.md",
+      "kind": "wikipedia_article",
       "notes": [
         "Discovered from imported Wikipedia article links.",
-        "Pending retry after queued Wikipedia import error: HTTP Error 429: Too Many Requests"
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Accountability",

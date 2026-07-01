@@ -48,6 +48,8 @@ python3 tools/kb_importer.py import-queued-wikipedia --limit 20 --link-limit 0 -
 - Do not run parallel Wikipedia imports.
 - Keep `--link-limit 0` for queue-drain batches unless intentionally expanding
   the queue.
+- Progress logs are enabled by default; use `--no-progress` only for quiet
+  JSON-only runs.
 - Wikipedia cards are background summaries only, not reviewed evidence.
 
 ## Modeling Rules

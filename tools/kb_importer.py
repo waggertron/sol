@@ -12,6 +12,7 @@ import argparse
 import email.utils
 import json
 import re
+import sys
 import time
 import urllib.error
 import urllib.parse
@@ -83,6 +84,15 @@ def parse_retry_after(value: str | None) -> float | None:
 
 def rate_limit_sleep_seconds(exc: RetryableHttpError, fallback: float) -> float:
     return max(exc.retry_after_seconds or WIKIMEDIA_MIN_RETRY_SECONDS, fallback)
+
+
+def progress_log(enabled: bool, message: str) -> None:
+    if enabled:
+        print(message, file=sys.stderr, flush=True)
+
+
+def clean_multiline_text(value: str) -> str:
+    return "\n".join(line.rstrip() for line in value.splitlines()).strip()
 
 
 def request_json(url: str) -> dict[str, Any]:
@@ -352,8 +362,8 @@ def wikipedia_page_by_title(title: str, link_limit: int = 25) -> dict[str, Any] 
 def write_wiki_card(term: str, domain: str, summary: dict[str, Any]) -> Path:
     title = summary.get("title") or term
     page_url = summary.get("content_urls", {}).get("desktop", {}).get("page") or summary.get("canonicalurl")
-    extract = (summary.get("extract") or "").strip()
-    description = (summary.get("description") or "").strip()
+    extract = clean_multiline_text(summary.get("extract") or "")
+    description = clean_multiline_text(summary.get("description") or "")
     path = WIKI_IMPORTS / f"{slugify(title)}.md"
     text = f"""# Wikipedia Import: {title}
 
@@ -396,6 +406,7 @@ def import_queued_wikipedia(
     limit: int | None = None,
     link_limit: int = 0,
     sleep_seconds: float = WIKIMEDIA_DEFAULT_SLEEP_SECONDS,
+    progress: bool = False,
 ) -> dict[str, Any]:
     queue = load_queue()
     candidates = [
@@ -419,9 +430,11 @@ def import_queued_wikipedia(
             continue
         checked += 1
         domain = item.get("domain", "unknown")
+        progress_log(progress, f"[wiki-queue {checked}/{len(candidates)}] title={title!r} domain={domain!r}")
         try:
             summary = wikipedia_page_by_title(title, link_limit=link_limit)
             if not summary:
+                progress_log(progress, f"[wiki-queue {checked}/{len(candidates)}] no exact title match; sleeping {sleep_seconds}s before search")
                 time.sleep(sleep_seconds)
                 summary = wikipedia_page(title, link_limit=link_limit)
             if not summary:
@@ -429,6 +442,7 @@ def import_queued_wikipedia(
                 notes = set(item.get("notes", []))
                 notes.add("Queued Wikipedia import found no matching page.")
                 item["notes"] = sorted(notes)
+                progress_log(progress, f"[wiki-queue {checked}/{len(candidates)}] no matching page; sleeping {sleep_seconds}s")
                 time.sleep(sleep_seconds)
                 continue
 
@@ -446,6 +460,10 @@ def import_queued_wikipedia(
             notes.add("Imported queued linked Wikipedia summary; full article not imported by default.")
             item["notes"] = sorted(notes)
             imported += 1
+            progress_log(
+                progress,
+                f"[wiki-queue {checked}/{len(candidates)}] imported title={resolved_title!r} path={path.as_posix()}",
+            )
 
             for linked_title in summary.get("links", []):
                 linked_item = {
@@ -464,6 +482,7 @@ def import_queued_wikipedia(
                 }
                 if add_queue_item(queue, linked_item):
                     linked_added += 1
+            progress_log(progress, f"[wiki-queue {checked}/{len(candidates)}] sleeping {sleep_seconds}s")
             time.sleep(sleep_seconds)
         except RetryableHttpError as exc:
             errors += 1
@@ -475,13 +494,20 @@ def import_queued_wikipedia(
                 f"retry_after_seconds={exc.retry_after_seconds or 'unknown'}."
             )
             item["notes"] = sorted(notes)
-            time.sleep(rate_limit_sleep_seconds(exc, sleep_seconds))
+            pause = rate_limit_sleep_seconds(exc, sleep_seconds)
+            progress_log(
+                progress,
+                f"[wiki-queue {checked}/{len(candidates)}] rate limited HTTP {exc.status}; "
+                f"retry_after={exc.retry_after_seconds}; sleeping {pause}s and stopping",
+            )
+            time.sleep(pause)
             break
         except Exception as exc:  # noqa: BLE001 - queue import should log and continue.
             errors += 1
             notes = set(item.get("notes", []))
             notes.add(f"Pending retry after queued Wikipedia import error: {exc}")
             item["notes"] = sorted(notes)
+            progress_log(progress, f"[wiki-queue {checked}/{len(candidates)}] error={exc}; sleeping {sleep_seconds}s")
             time.sleep(sleep_seconds)
 
     save_queue(queue)
@@ -502,6 +528,7 @@ def import_wikipedia(
     limit: int | None = None,
     link_limit: int = 25,
     sleep_seconds: float = WIKIMEDIA_DEFAULT_SLEEP_SECONDS,
+    progress: bool = False,
 ) -> dict[str, Any]:
     queue = load_queue()
     imported = 0
@@ -527,10 +554,12 @@ def import_wikipedia(
             skipped_existing += 1
             continue
         checked += 1
+        progress_log(progress, f"[wiki-term {checked}/{len(terms)}] term={term!r} domain={domain!r}")
         try:
             summary = wikipedia_page(term, link_limit=link_limit)
             if not summary:
                 errors += 1
+                progress_log(progress, f"[wiki-term {checked}/{len(terms)}] no matching page; sleeping {sleep_seconds}s")
                 time.sleep(sleep_seconds)
                 continue
             title = summary.get("title") or term
@@ -574,6 +603,7 @@ def import_wikipedia(
                 },
             )
             imported += 1
+            progress_log(progress, f"[wiki-term {checked}/{len(terms)}] imported title={title!r} path={path.as_posix()}")
 
             for linked_title in summary.get("links", []):
                 linked_item = {
@@ -592,6 +622,7 @@ def import_wikipedia(
                 }
                 if add_queue_item(queue, linked_item):
                     linked_added += 1
+            progress_log(progress, f"[wiki-term {checked}/{len(terms)}] sleeping {sleep_seconds}s")
             time.sleep(sleep_seconds)
         except RetryableHttpError as exc:
             errors += 1
@@ -617,7 +648,13 @@ def import_wikipedia(
                     "created_at": utc_now(),
                 },
             )
-            time.sleep(rate_limit_sleep_seconds(exc, sleep_seconds))
+            pause = rate_limit_sleep_seconds(exc, sleep_seconds)
+            progress_log(
+                progress,
+                f"[wiki-term {checked}/{len(terms)}] rate limited HTTP {exc.status}; "
+                f"retry_after={exc.retry_after_seconds}; sleeping {pause}s and stopping",
+            )
+            time.sleep(pause)
             break
         except Exception as exc:  # noqa: BLE001 - import queue should log and continue.
             errors += 1
@@ -654,6 +691,7 @@ def import_wikipedia(
                     "created_at": utc_now(),
                 },
             )
+            progress_log(progress, f"[wiki-term {checked}/{len(terms)}] error={exc}; sleeping {sleep_seconds}s")
             time.sleep(sleep_seconds)
 
     save_queue(queue)
@@ -809,12 +847,22 @@ def command_queue_wikipedia_terms(_: argparse.Namespace) -> None:
 
 
 def command_import_wikipedia(args: argparse.Namespace) -> None:
-    result = import_wikipedia(limit=args.limit, link_limit=args.link_limit, sleep_seconds=args.sleep)
+    result = import_wikipedia(
+        limit=args.limit,
+        link_limit=args.link_limit,
+        sleep_seconds=args.sleep,
+        progress=not args.no_progress,
+    )
     print(json.dumps(result, indent=2, sort_keys=True))
 
 
 def command_import_queued_wikipedia(args: argparse.Namespace) -> None:
-    result = import_queued_wikipedia(limit=args.limit, link_limit=args.link_limit, sleep_seconds=args.sleep)
+    result = import_queued_wikipedia(
+        limit=args.limit,
+        link_limit=args.link_limit,
+        sleep_seconds=args.sleep,
+        progress=not args.no_progress,
+    )
     print(json.dumps(result, indent=2, sort_keys=True))
 
 
@@ -825,7 +873,12 @@ def command_import_paper_metadata(args: argparse.Namespace) -> None:
 
 def command_run_initial(args: argparse.Namespace) -> None:
     ensure_db()
-    wiki_result = import_wikipedia(limit=args.wiki_limit, link_limit=args.link_limit, sleep_seconds=args.sleep)
+    wiki_result = import_wikipedia(
+        limit=args.wiki_limit,
+        link_limit=args.link_limit,
+        sleep_seconds=args.sleep,
+        progress=not args.no_progress,
+    )
     reference_result = queue_crossref_references(limit=args.reference_limit, sleep_seconds=args.sleep)
     print(json.dumps({"wikipedia": wiki_result, "crossref": reference_result}, indent=2, sort_keys=True))
 
@@ -912,7 +965,7 @@ def command_clean_notes(_: argparse.Namespace) -> None:
         if not item.get("imported"):
             continue
         notes = item.get("notes", [])
-        cleaned = [note for note in notes if not note.startswith("Pending retry after import error:")]
+        cleaned = [note for note in notes if not note.startswith("Pending retry after")]
         if cleaned != notes:
             item["notes"] = cleaned
             updated += 1
@@ -933,12 +986,14 @@ def make_parser() -> argparse.ArgumentParser:
     wiki_parser.add_argument("--limit", type=int, default=None, help="Maximum terms to import")
     wiki_parser.add_argument("--link-limit", type=int, default=25, help="Linked articles to queue per imported article")
     wiki_parser.add_argument("--sleep", type=float, default=WIKIMEDIA_DEFAULT_SLEEP_SECONDS, help="Delay between requests")
+    wiki_parser.add_argument("--no-progress", action="store_true", help="Disable per-item progress logs on stderr")
     wiki_parser.set_defaults(func=command_import_wikipedia)
 
     queued_wiki_parser = subparsers.add_parser("import-queued-wikipedia", help="Import pending linked Wikipedia summaries from the queue")
     queued_wiki_parser.add_argument("--limit", type=int, default=25, help="Maximum queued linked articles to import")
     queued_wiki_parser.add_argument("--link-limit", type=int, default=0, help="Linked articles to queue per imported article")
     queued_wiki_parser.add_argument("--sleep", type=float, default=WIKIMEDIA_DEFAULT_SLEEP_SECONDS, help="Delay between requests")
+    queued_wiki_parser.add_argument("--no-progress", action="store_true", help="Disable per-item progress logs on stderr")
     queued_wiki_parser.set_defaults(func=command_import_queued_wikipedia)
 
     paper_metadata_parser = subparsers.add_parser("import-paper-metadata", help="Import Crossref metadata cards for queued paper references")
@@ -959,6 +1014,7 @@ def make_parser() -> argparse.ArgumentParser:
     run_parser.add_argument("--reference-limit", type=int, default=20, help="Maximum source DOI records to inspect")
     run_parser.add_argument("--link-limit", type=int, default=25, help="Linked articles to queue per imported article")
     run_parser.add_argument("--sleep", type=float, default=WIKIMEDIA_DEFAULT_SLEEP_SECONDS, help="Delay between requests")
+    run_parser.add_argument("--no-progress", action="store_true", help="Disable per-item progress logs on stderr")
     run_parser.set_defaults(func=command_run_initial)
 
     clear_errors_parser = subparsers.add_parser("clear-errors", help="Remove import_error queue entries")

@@ -181,6 +181,39 @@
       },
       "timestamp": "2026-07-01T18:34:41+00:00",
       "type": "import_queued_wikipedia"
+    },
+    {
+      "result": {
+        "candidates_checked": 20,
+        "candidates_planned": 20,
+        "errors": 0,
+        "linked_articles_added": 0,
+        "rate_limit_retry_after_seconds": null,
+        "stopped_after_rate_limit": false,
+        "summaries_imported": 20
+      },
+      "timestamp": "2026-07-01T19:01:12+00:00",
+      "type": "import_queued_wikipedia"
+    },
+    {
+      "result": {
+        "candidates_checked": 2,
+        "candidates_planned": 2,
+        "errors": 0,
+        "linked_articles_added": 0,
+        "rate_limit_retry_after_seconds": null,
+        "stopped_after_rate_limit": false,
+        "summaries_imported": 2
+      },
+      "timestamp": "2026-07-01T19:02:54+00:00",
+      "type": "import_queued_wikipedia"
+    },
+    {
+      "result": {
+        "imported_items_cleaned": 22
+      },
+      "timestamp": "2026-07-01T19:03:23+00:00",
+      "type": "clean_notes"
     }
   ],
   "version": 1
