@@ -92,6 +92,33 @@ Recent queue ingestion imported 20 additional Wikipedia summaries and 25 paper
 metadata cards. A subsequent Wikipedia retry hit `HTTP 429` rate limiting, so
 remaining linked articles should be retried later with a slower batch.
 
+## Wikimedia Rate Policy
+
+Use slow, serial imports for Wikimedia/Wikipedia API calls. The project default
+is one request every 12 seconds, which is intentionally below the lowest
+published 2026 Wikimedia API bucket for unidentified clients.
+
+Recommended queue-drain command:
+
+```bash
+python3 tools/kb_importer.py import-queued-wikipedia --limit 20 --link-limit 0 --sleep 12
+```
+
+Operational rules:
+
+- Do not run parallel Wikipedia import jobs.
+- Keep linked-article expansion disabled with `--link-limit 0` unless the goal
+  is to grow the queue.
+- If Wikimedia returns HTTP `429` or `503`, respect `Retry-After` when present,
+  wait at least the configured sleep interval, and stop the batch.
+- Retry later at `--sleep 30` if `429` repeats.
+- Treat Wikipedia imports as background summaries only.
+
+References:
+
+- <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>
+- <https://www.mediawiki.org/wiki/API:Etiquette>
+
 ## Policy
 
 Wikipedia article imports store summaries and source links by default. Full

@@ -34,6 +34,22 @@ python3 tools/rag.py index
 python3 tools/rag.py search "<new source concept>"
 ```
 
+## Import Rate Policy
+
+For Wikimedia/Wikipedia imports, use conservative serialized requests:
+
+```bash
+python3 tools/kb_importer.py import-queued-wikipedia --limit 20 --link-limit 0 --sleep 12
+```
+
+- Default to at most one Wikimedia request every 12 seconds.
+- If a run receives HTTP 429 or 503, stop the batch after respecting
+  `Retry-After` or waiting at least the configured sleep interval.
+- Do not run parallel Wikipedia imports.
+- Keep `--link-limit 0` for queue-drain batches unless intentionally expanding
+  the queue.
+- Wikipedia cards are background summaries only, not reviewed evidence.
+
 ## Modeling Rules
 
 - Treat "engram" as an internal metaphor, not a literal neuroscience claim.

@@ -9,9 +9,11 @@ article dumps by default because this repository is public.
 from __future__ import annotations
 
 import argparse
+import email.utils
 import json
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -29,6 +31,18 @@ WIKI_IMPORTS = ROOT / "kb" / "wiki_imports"
 PAPER_IMPORTS = ROOT / "kb" / "paper_imports"
 SOURCES_DIR = ROOT / "sources"
 USER_AGENT = "sol-personality-rag/0.1 (research import; contact: local)"
+WIKIMEDIA_DEFAULT_SLEEP_SECONDS = 12.0
+WIKIMEDIA_MIN_RETRY_SECONDS = 5.0
+
+
+class RetryableHttpError(RuntimeError):
+    """HTTP response that should pause or stop an import batch."""
+
+    def __init__(self, status: int, url: str, retry_after_seconds: float | None = None) -> None:
+        self.status = status
+        self.url = url
+        self.retry_after_seconds = retry_after_seconds
+        super().__init__(f"HTTP {status} for {url}")
 
 
 def utc_now() -> str:
@@ -52,10 +66,34 @@ def save_json(path: Path, data: Any) -> None:
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
+def parse_retry_after(value: str | None) -> float | None:
+    if not value:
+        return None
+    value = value.strip()
+    if value.isdigit():
+        return float(value)
+    try:
+        retry_at = email.utils.parsedate_to_datetime(value)
+    except (TypeError, ValueError):
+        return None
+    if retry_at.tzinfo is None:
+        retry_at = retry_at.replace(tzinfo=timezone.utc)
+    return max(0.0, (retry_at - datetime.now(timezone.utc)).total_seconds())
+
+
+def rate_limit_sleep_seconds(exc: RetryableHttpError, fallback: float) -> float:
+    return max(exc.retry_after_seconds or WIKIMEDIA_MIN_RETRY_SECONDS, fallback)
+
+
 def request_json(url: str) -> dict[str, Any]:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        if exc.code in {429, 503}:
+            raise RetryableHttpError(exc.code, url, parse_retry_after(exc.headers.get("Retry-After"))) from exc
+        raise
 
 
 def ensure_db() -> None:
@@ -354,7 +392,11 @@ Imported as background reference. Not a peer-reviewed source.
     return path
 
 
-def import_queued_wikipedia(limit: int | None = None, link_limit: int = 0, sleep_seconds: float = 0.2) -> dict[str, int]:
+def import_queued_wikipedia(
+    limit: int | None = None,
+    link_limit: int = 0,
+    sleep_seconds: float = WIKIMEDIA_DEFAULT_SLEEP_SECONDS,
+) -> dict[str, Any]:
     queue = load_queue()
     candidates = [
         item
@@ -367,19 +409,27 @@ def import_queued_wikipedia(limit: int | None = None, link_limit: int = 0, sleep
     imported = 0
     linked_added = 0
     errors = 0
+    checked = 0
+    stopped_after_rate_limit = False
+    rate_limit_retry_after_seconds: float | None = None
 
     for item in candidates:
         title = item.get("title") or item.get("term")
         if not title:
             continue
+        checked += 1
         domain = item.get("domain", "unknown")
         try:
-            summary = wikipedia_page_by_title(title, link_limit=link_limit) or wikipedia_page(title, link_limit=link_limit)
+            summary = wikipedia_page_by_title(title, link_limit=link_limit)
+            if not summary:
+                time.sleep(sleep_seconds)
+                summary = wikipedia_page(title, link_limit=link_limit)
             if not summary:
                 errors += 1
                 notes = set(item.get("notes", []))
                 notes.add("Queued Wikipedia import found no matching page.")
                 item["notes"] = sorted(notes)
+                time.sleep(sleep_seconds)
                 continue
 
             resolved_title = summary.get("title") or title
@@ -415,29 +465,52 @@ def import_queued_wikipedia(limit: int | None = None, link_limit: int = 0, sleep
                 if add_queue_item(queue, linked_item):
                     linked_added += 1
             time.sleep(sleep_seconds)
+        except RetryableHttpError as exc:
+            errors += 1
+            stopped_after_rate_limit = True
+            rate_limit_retry_after_seconds = exc.retry_after_seconds
+            notes = set(item.get("notes", []))
+            notes.add(
+                f"Pending retry after Wikimedia HTTP {exc.status}; "
+                f"retry_after_seconds={exc.retry_after_seconds or 'unknown'}."
+            )
+            item["notes"] = sorted(notes)
+            time.sleep(rate_limit_sleep_seconds(exc, sleep_seconds))
+            break
         except Exception as exc:  # noqa: BLE001 - queue import should log and continue.
             errors += 1
             notes = set(item.get("notes", []))
             notes.add(f"Pending retry after queued Wikipedia import error: {exc}")
             item["notes"] = sorted(notes)
+            time.sleep(sleep_seconds)
 
     save_queue(queue)
     result = {
-        "candidates_checked": len(candidates),
+        "candidates_checked": checked,
+        "candidates_planned": len(candidates),
         "summaries_imported": imported,
         "linked_articles_added": linked_added,
         "errors": errors,
+        "stopped_after_rate_limit": stopped_after_rate_limit,
+        "rate_limit_retry_after_seconds": rate_limit_retry_after_seconds,
     }
     append_run_log({"type": "import_queued_wikipedia", "timestamp": utc_now(), "result": result})
     return result
 
 
-def import_wikipedia(limit: int | None = None, link_limit: int = 25, sleep_seconds: float = 0.2) -> dict[str, int]:
+def import_wikipedia(
+    limit: int | None = None,
+    link_limit: int = 25,
+    sleep_seconds: float = WIKIMEDIA_DEFAULT_SLEEP_SECONDS,
+) -> dict[str, Any]:
     queue = load_queue()
     imported = 0
     skipped_existing = 0
     linked_added = 0
     errors = 0
+    checked = 0
+    stopped_after_rate_limit = False
+    rate_limit_retry_after_seconds: float | None = None
     terms = load_terms()
     if limit is not None:
         terms = terms[:limit]
@@ -453,10 +526,12 @@ def import_wikipedia(limit: int | None = None, link_limit: int = 25, sleep_secon
         if term.lower() in already_imported_terms:
             skipped_existing += 1
             continue
+        checked += 1
         try:
             summary = wikipedia_page(term, link_limit=link_limit)
             if not summary:
                 errors += 1
+                time.sleep(sleep_seconds)
                 continue
             title = summary.get("title") or term
             path = write_wiki_card(term, domain, summary)
@@ -518,6 +593,32 @@ def import_wikipedia(limit: int | None = None, link_limit: int = 25, sleep_secon
                 if add_queue_item(queue, linked_item):
                     linked_added += 1
             time.sleep(sleep_seconds)
+        except RetryableHttpError as exc:
+            errors += 1
+            stopped_after_rate_limit = True
+            rate_limit_retry_after_seconds = exc.retry_after_seconds
+            add_queue_item(
+                queue,
+                {
+                    "id": f"wikipedia-term:{slugify(term)}",
+                    "kind": "wikipedia_term",
+                    "title": term,
+                    "term": term,
+                    "url": f"https://en.wikipedia.org/w/index.php?search={urllib.parse.quote(term)}",
+                    "domain": domain,
+                    "discovered_from": ["term_inventory"],
+                    "imported": False,
+                    "imported_path": None,
+                    "priority": "background",
+                    "notes": [
+                        f"Pending retry after Wikimedia HTTP {exc.status}; "
+                        f"retry_after_seconds={exc.retry_after_seconds or 'unknown'}."
+                    ],
+                    "created_at": utc_now(),
+                },
+            )
+            time.sleep(rate_limit_sleep_seconds(exc, sleep_seconds))
+            break
         except Exception as exc:  # noqa: BLE001 - import queue should log and continue.
             errors += 1
             add_queue_item(
@@ -553,14 +654,18 @@ def import_wikipedia(limit: int | None = None, link_limit: int = 25, sleep_secon
                     "created_at": utc_now(),
                 },
             )
+            time.sleep(sleep_seconds)
 
     save_queue(queue)
     result = {
-        "terms_checked": len(terms),
+        "terms_checked": checked,
+        "terms_planned": len(terms),
         "summaries_imported": imported,
         "skipped_existing": skipped_existing,
         "linked_articles_added": linked_added,
         "errors": errors,
+        "stopped_after_rate_limit": stopped_after_rate_limit,
+        "rate_limit_retry_after_seconds": rate_limit_retry_after_seconds,
     }
     append_run_log({"type": "import_wikipedia", "timestamp": utc_now(), "result": result})
     return result
@@ -827,13 +932,13 @@ def make_parser() -> argparse.ArgumentParser:
     wiki_parser = subparsers.add_parser("import-wikipedia", help="Import Wikipedia summaries for term inventory")
     wiki_parser.add_argument("--limit", type=int, default=None, help="Maximum terms to import")
     wiki_parser.add_argument("--link-limit", type=int, default=25, help="Linked articles to queue per imported article")
-    wiki_parser.add_argument("--sleep", type=float, default=0.2, help="Delay between requests")
+    wiki_parser.add_argument("--sleep", type=float, default=WIKIMEDIA_DEFAULT_SLEEP_SECONDS, help="Delay between requests")
     wiki_parser.set_defaults(func=command_import_wikipedia)
 
     queued_wiki_parser = subparsers.add_parser("import-queued-wikipedia", help="Import pending linked Wikipedia summaries from the queue")
     queued_wiki_parser.add_argument("--limit", type=int, default=25, help="Maximum queued linked articles to import")
     queued_wiki_parser.add_argument("--link-limit", type=int, default=0, help="Linked articles to queue per imported article")
-    queued_wiki_parser.add_argument("--sleep", type=float, default=0.2, help="Delay between requests")
+    queued_wiki_parser.add_argument("--sleep", type=float, default=WIKIMEDIA_DEFAULT_SLEEP_SECONDS, help="Delay between requests")
     queued_wiki_parser.set_defaults(func=command_import_queued_wikipedia)
 
     paper_metadata_parser = subparsers.add_parser("import-paper-metadata", help="Import Crossref metadata cards for queued paper references")
@@ -853,7 +958,7 @@ def make_parser() -> argparse.ArgumentParser:
     run_parser.add_argument("--wiki-limit", type=int, default=40, help="Maximum term inventory records to import")
     run_parser.add_argument("--reference-limit", type=int, default=20, help="Maximum source DOI records to inspect")
     run_parser.add_argument("--link-limit", type=int, default=25, help="Linked articles to queue per imported article")
-    run_parser.add_argument("--sleep", type=float, default=0.2, help="Delay between requests")
+    run_parser.add_argument("--sleep", type=float, default=WIKIMEDIA_DEFAULT_SLEEP_SECONDS, help="Delay between requests")
     run_parser.set_defaults(func=command_run_initial)
 
     clear_errors_parser = subparsers.add_parser("clear-errors", help="Remove import_error queue entries")

@@ -74,6 +74,9 @@ Current queue ingestion support:
 - `import-queued-wikipedia` imports pending linked Wikipedia summaries.
 - `import-paper-metadata` imports Crossref bibliographic metadata for queued
   DOI references.
+- Wikimedia/Wikipedia imports now default to a conservative serialized cadence:
+  one request every 12 seconds, no parallel jobs, stop on HTTP `429` or `503`
+  after respecting `Retry-After` or the configured delay.
 
 Paper imports are metadata-only by default. Full paper text and abstracts are
 not imported without separate review.

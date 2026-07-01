@@ -73,6 +73,10 @@ then generate text and visual direction the user can evaluate.
 - `tools/kb_importer.py import-queued-wikipedia` imports pending linked
   Wikipedia summaries; `import-paper-metadata` imports Crossref metadata-only
   cards for queued DOI references.
+- Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
+  keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
+  after HTTP `429` or `503` once `Retry-After` or the configured delay has been
+  respected.
 - `tools/import_ocean_assessments.py` normalizes downloaded official assessment
   pages into repo JSON.
 
