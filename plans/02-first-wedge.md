@@ -6,6 +6,11 @@ Create a Personal Creative Style Kit that turns user-provided data into an
 editable personality/style profile, then generates text and visual direction
 that the user can evaluate.
 
+Current implementation note: the first build step should be assessment-first.
+The app should administer a stored OCEAN instrument, score it, present
+non-diagnostic results, and create editable profile atom candidates before the
+full creative style kit is built.
+
 ## Why This Wedge
 
 - It exercises the complete platform loop.
@@ -17,7 +22,7 @@ that the user can evaluate.
 ## MVP Inputs
 
 - 3-10 writing samples
-- short calibration questionnaire
+- short calibration questionnaire or OCEAN assessment from `assessments/ocean/`
 - liked/disliked examples
 - optional moodboard or visual references
 - direct user corrections
@@ -56,4 +61,3 @@ that the user can evaluate.
 - music/audio direction
 - adaptive AI companion behavior
 - API profile layer
-

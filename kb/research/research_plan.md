@@ -69,6 +69,13 @@ Output:
 - data minimization rules
 - source provenance format
 
+Current assessment status:
+
+- OCEAN assessment acquisition has started under `assessments/ocean/`
+- permissive/open instruments are stored as JSON with item text, keying, and
+  scoring metadata
+- license-review instruments remain metadata-only
+
 ## Phase 4: Generation Mapping
 
 Goal: map profile atoms to output controls.
@@ -132,4 +139,3 @@ Each source card should include:
 - useful search terms
 - evidence grade
 - follow-up questions
-

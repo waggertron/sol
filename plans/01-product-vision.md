@@ -35,6 +35,13 @@ Initial candidates:
 The system should help users produce outputs that feel more personally aligned
 than generic generation.
 
+## Current State
+
+The repository now has a research RAG, JSONDB import queue, and OCEAN
+assessment corpus. The next MVP should validate the profile loop through
+assessment administration, scoring, result presentation, and editable profile
+atom creation before broader multimodal generation.
+
 ## Non-Goals
 
 - diagnose mental health conditions
@@ -49,4 +56,3 @@ than generic generation.
   facing?
 - What level of profile visibility feels useful without becoming overwhelming?
 - Which output modalities matter first after text?
-

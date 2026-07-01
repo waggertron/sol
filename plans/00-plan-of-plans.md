@@ -15,6 +15,16 @@ Current first wedge:
 
 > Personal Creative Style Kit
 
+Current implementation state:
+
+- research RAG scaffold is built and indexes `kb/`, `sources/`, `jsondb/`,
+  `assessments/`, `docs/`, `plans/`, and the root README
+- JSONDB import queue is active for papers and Wikipedia imports
+- OCEAN assessment repository is populated with permissive/open instruments
+- MVP app is not yet built
+
+See `docs/current-state.md` for current counts.
+
 ## Plan Set
 
 ### 1. Product Vision
@@ -108,11 +118,23 @@ Output:
 - blocked-use policy
 - safety review checklist
 
+### 8. OCEAN Assessment Path
+
+Define the assessment-first MVP path for OCEAN self-report calibration.
+
+Output:
+
+- assessment inventory
+- stored permissive/open instruments
+- scoring metadata
+- assessment-to-profile atom mapping
+- MVP administration and scoring requirements
+
 ## Immediate Next Steps
 
-1. Expand source cards for Phase 1 research foundations.
-2. Convert `knowledge_model_v0` into a candidate profile atom schema.
-3. Define the Personal Creative Style Kit MVP journey.
-4. Add an ingestion workflow for papers and source notes.
-5. Create a first evaluation rubric for generated outputs.
-
+1. Build the MVP web app assessment flow against `assessments/ocean/manifest.json`.
+2. Implement response storage, scoring, and result presentation for TIPI or
+   Mini-IPIP.
+3. Convert assessment scores into editable profile atom candidates.
+4. Define validation checks for scoring correctness and result copy safety.
+5. Continue OCEAN research imports and license-review queue expansion.

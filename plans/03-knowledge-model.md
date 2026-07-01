@@ -9,6 +9,7 @@ without overclaiming.
 
 - observed evidence
 - style preferences
+- assessment responses and score results
 - trait hypotheses
 - context-specific modes
 - motivations and values
@@ -23,6 +24,7 @@ without overclaiming.
 - CAPS
 - Whole Trait Theory
 - construct validity and psychometrics
+- OCEAN assessment instruments under `assessments/ocean/`
 - language-based personality inference
 - digital footprint inference
 - dimensional psychopathology for boundary design
@@ -50,4 +52,4 @@ Each profile atom should include:
 - Which constructs require explicit user self-report?
 - Which constructs should never be stored?
 - How should confidence be calibrated across data sources?
-
+- How should assessment-derived atoms be versioned when scoring specs change?

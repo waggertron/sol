@@ -3,6 +3,8 @@
 This directory stores assessment instruments, scoring metadata, and import
 manifests for the Sol personality and style modeling project.
 
+The current repo-wide status is summarized in `docs/current-state.md`.
+
 Assessment storage is intentionally separated from the research KB:
 
 - `kb/` stores research interpretation, source cards, and model implications.

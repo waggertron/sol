@@ -65,6 +65,14 @@ RAG questions:
 - How should inferred traits be calibrated against self-report?
 - How do we avoid overfitting personality labels to sparse data?
 
+Current implementation note:
+
+- OCEAN assessment metadata and permissive/open instruments live under
+  `assessments/ocean/`
+- assessment-derived claims should be treated as self-report evidence, not
+  final profile truth
+- score-derived profile atoms should remain user-visible and editable
+
 ### 4. Language and Communication Signals
 
 Purpose: infer style and possible trait signals from user-authored text.
@@ -266,4 +274,3 @@ Example:
   "last_updated": "2026-07-01"
 }
 ```
-

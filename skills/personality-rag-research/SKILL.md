@@ -13,7 +13,8 @@ context-aware, and conservative about psychological claims.
 
 ## Workflow
 
-1. Read the current project memory in `docs/project-memory.md`.
+1. Read the current project memory in `docs/project-memory.md` and the snapshot
+   in `docs/current-state.md`.
 2. Search the local RAG before adding new claims:
 
 ```bash
@@ -61,7 +62,10 @@ URLs, DOI values when available, evidence grade, and limits.
 ## Key Files
 
 - `docs/project-memory.md` - compact project context
+- `docs/current-state.md` - current corpus counts and next build target
 - `plans/` - product and platform planning skeleton
+- `assessments/ocean/` - stored OCEAN instruments and scoring metadata
+- `jsondb/` - import queues and assessment inventory metadata
 - `kb/00_intent.md` - intent and boundaries
 - `kb/model/knowledge_model_v0.md` - research ontology
 - `kb/model/signal_matrix_v0.md` - permissible inference map

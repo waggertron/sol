@@ -65,6 +65,23 @@ The main product loop is:
 5. Generation uses scoped profile atoms for a specific task.
 6. Feedback updates confidence, mappings, and future generation behavior.
 
+## Current State
+
+The repository is currently research-first and assessment-ready. It has:
+
+- a local Markdown/JSON RAG corpus with source cards, planning docs, imported
+  Wikipedia summaries, source registries, and import queues
+- a JSONDB import queue for pending papers, Wikipedia linked articles, and
+  reviewed/rejected imports
+- an OCEAN assessment repository with 11 permissive/open instruments, 186
+  scales, and 1,539 stored items
+
+The next build target is an MVP assessment web app that can administer one
+stored OCEAN instrument, persist responses, compute scores, present results,
+and create editable profile atom candidates.
+
+See `docs/current-state.md` for the latest snapshot.
+
 ## Future Feature Set
 
 The long-term platform should generalize beyond the first creative wedge while
@@ -108,11 +125,11 @@ Candidate platform services:
 
 ## Research Foundation
 
-This repository currently prioritizes the knowledge base before application
-code. The research program pulls from personality psychology, psychometrics,
-behavioral science, abnormal psychology, computational linguistics, aesthetic
-preference research, motivation and values research, human-computer interaction,
-privacy, and model evaluation.
+This repository currently prioritizes the knowledge base, assessment corpus,
+and architecture plan before application code. The research program pulls from
+personality psychology, psychometrics, behavioral science, abnormal psychology,
+computational linguistics, aesthetic preference research, motivation and values
+research, human-computer interaction, privacy, and model evaluation.
 
 The RAG corpus is intended to help answer questions such as:
 
@@ -142,7 +159,9 @@ Sol is not intended to:
 - `kb/assessments/` - assessment catalogs and profile atom mapping notes.
 - `kb/cards/` - source cards and research notes.
 - `assessments/` - acquired assessment instruments and scoring metadata.
+- `docs/current-state.md` - current repo snapshot, counts, and next build target.
 - `docs/architecture/rag/structure.md` - RAG architecture and update workflow.
+- `docs/architecture/assessments/ocean.md` - OCEAN assessment architecture.
 - `docs/project-memory.md` - compact context for future sessions.
 - `plans/` - product and platform planning skeleton.
 - `sources/*.json` - source registries for papers, frameworks, and references.
@@ -165,6 +184,7 @@ Search the internal knowledge base:
 python3 tools/rag.py search "personality problem solving context traits"
 python3 tools/rag.py search "why avoid diagnostic claims"
 python3 tools/rag.py search "language cues digital footprints personality"
+python3 tools/rag.py search "TIPI scoring reverse scored items"
 ```
 
 Print larger context blocks for downstream prompting:

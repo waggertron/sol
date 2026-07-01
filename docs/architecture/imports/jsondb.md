@@ -10,6 +10,7 @@ It supports:
 - paper references discovered from Crossref metadata
 - Wikipedia articles matched from term inventory
 - linked Wikipedia articles discovered from imported pages
+- assessment inventory metadata and links into the assessment repository
 - import run logs
 - `imported: false` status for future import runs
 
@@ -17,10 +18,14 @@ It supports:
 
 ```text
 jsondb/
+  assessment_inventory.json
   term_inventory.json
   import_queue.json
   import_runs.json
+  wiki_import_review.json
 ```
+
+Current queue snapshot is summarized in `docs/current-state.md`.
 
 ## Queue Item Shape
 
@@ -59,10 +64,21 @@ Subcommands:
 - `import-wikipedia`
 - `queue-crossref-references`
 - `run-initial`
+- `sync-wikipedia-terms`
+- `apply-wiki-review`
+- `clean-notes`
+
+Assessment imports are handled separately by:
+
+```bash
+python3 tools/import_ocean_assessments.py --source-dir /path/to/downloaded/html
+```
+
+The assessment inventory links JSONDB metadata to concrete stored instruments
+under `assessments/ocean/`.
 
 ## Policy
 
 Wikipedia article imports store summaries and source links by default. Full
 article content should be handled only through a separate licensed-content
 workflow with attribution and share-alike implications documented.
-

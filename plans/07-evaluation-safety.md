@@ -13,6 +13,8 @@ hidden profiling, and unsafe use.
 - Does trust increase or decrease over time?
 - Which data sources produce useful signal?
 - Which constructs are too noisy or risky?
+- Do self-report assessment scores produce useful, user-accepted profile atom
+  candidates?
 
 ## Candidate Metrics
 
@@ -23,6 +25,9 @@ hidden profiling, and unsafe use.
 - profile atom rejection rate
 - confidence calibration
 - longitudinal trust score
+- assessment completion rate
+- score regeneration consistency
+- assessment-derived profile atom confirmation/rejection rate
 
 ## Safety Boundaries
 
@@ -51,4 +56,4 @@ High-sensitivity:
 - Is the attribute sensitive?
 - Is the context clearly scoped?
 - Is confidence visible internally, and where useful, externally?
-
+- Can the user delete assessment responses separately from derived profile atoms?

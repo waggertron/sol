@@ -48,6 +48,16 @@ The first candidate wedge is a Personal Creative Style Kit: infer a user's
 communication style, aesthetic preferences, motivations, and creative patterns,
 then generate text and visual direction that the user can evaluate.
 
+Current implementation state:
+
+- research RAG and source-card structure exist
+- JSONDB import queues exist for papers and Wikipedia-linked knowledge
+- OCEAN assessment instruments and scoring metadata are stored under
+  `assessments/ocean/`
+- the next product target is an assessment-first MVP web app
+
+See `docs/current-state.md` for current counts and repo state.
+
 ## Research Orientation
 
 The knowledge base should start from rigorous field knowledge, including:
@@ -94,4 +104,3 @@ The central question is not "can we know the person?" It is:
 > Can we maintain a useful, ethical, evidence-weighted representation that helps
 > generated outputs better match how the user wants to think, communicate, and
 > create?
-

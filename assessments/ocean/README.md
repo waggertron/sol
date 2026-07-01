@@ -3,6 +3,12 @@
 This area contains acquired Big Five / OCEAN and OCEAN-adjacent assessment
 materials for prototype administration and scoring.
 
+Current acquisition:
+
+- 11 stored instruments
+- 186 scales
+- 1,539 stored items
+
 ## Imported Instruments
 
 The current import is summarized in:

@@ -87,6 +87,8 @@ Cautions:
 Permissible:
 
 - self-reported traits
+- OCEAN assessment responses and score results from stored permissive/open
+  instruments
 - explicit values
 - declared goals
 - preferred terms
@@ -97,6 +99,8 @@ Cautions:
 - questionnaires can be biased by self-presentation and current mood
 - direct self-report should be combined with user-visible uncertainty, not
   treated as final truth
+- assessment item text, scoring, and norms should be stored only when the source
+  is public-domain, explicitly permissive, or otherwise approved
 
 ## Generation Feedback
 
@@ -132,4 +136,3 @@ Default high sensitivity:
 - honesty or exploitiveness claims
 - attachment style claims
 - intelligence or competence claims
-

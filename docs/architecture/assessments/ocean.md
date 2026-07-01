@@ -8,6 +8,15 @@ calibration, scoring, result presentation, and profile atom generation.
 The assessment area is separate from the research KB because it contains
 administrable instrument data rather than only interpretive notes.
 
+The latest counts and repo-wide status are maintained in
+`docs/current-state.md`.
+
+Current OCEAN assessment corpus:
+
+- 11 stored instruments
+- 186 scales
+- 1,539 items
+
 ## Directory Layout
 
 ```text

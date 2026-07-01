@@ -14,7 +14,7 @@ inspection, correction, export, and deletion.
 - creative artifacts
 - preference ratings
 - output edits
-- questionnaires
+- questionnaires and assessment responses
 - visual/audio references
 
 ## Consent Requirements
@@ -22,6 +22,7 @@ inspection, correction, export, and deletion.
 - user knows which data sources are used
 - user can see what each source contributed
 - user can delete source data
+- user can delete assessment responses separately from derived profile atoms
 - user can delete derived profile atoms
 - user can export profile data
 - sensitive inferences are opt-in or blocked
@@ -36,6 +37,7 @@ Every profile atom should be traceable to:
 - timestamp
 - context
 - confidence
+- assessment and scoring version, when applicable
 
 ## Open Questions
 
@@ -43,4 +45,3 @@ Every profile atom should be traceable to:
 - How much evidence should be shown in the UI?
 - What is the default retention period?
 - How should third-party data inside chats be handled?
-

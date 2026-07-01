@@ -57,8 +57,30 @@ then generate text and visual direction the user can evaluate.
 - `kb/model/signal_matrix_v0.md` maps data sources to permissible inference
   levels.
 - `kb/cards/` contains source cards.
+- `kb/assessments/` contains OCEAN assessment catalog and profile atom mapping
+  notes.
 - `sources/sources.json` tracks source metadata.
+- `sources/adjacent_sources_v1.json` tracks 34 adjacent research sources.
+- `jsondb/import_queue.json` tracks 3,373 pending/imported/rejected research
+  import candidates.
+- `assessments/ocean/` stores the current OCEAN assessment corpus: 11
+  instruments, 186 scales, and 1,539 items.
 - `tools/rag.py` provides local lexical retrieval.
+- `tools/kb_importer.py` manages research import queues.
+- `tools/import_ocean_assessments.py` normalizes downloaded official assessment
+  pages into repo JSON.
+
+The latest snapshot is maintained in `docs/current-state.md`.
+
+## Current Build Direction
+
+Build the first MVP around assessment administration before broader generation:
+
+1. Load an instrument from `assessments/ocean/manifest.json`.
+2. Administer TIPI, Mini-IPIP, or IPIP-NEO-60.
+3. Persist responses and scores with assessment-version provenance.
+4. Present non-diagnostic results with uncertainty.
+5. Let users confirm, edit, reject, export, or delete profile atom candidates.
 
 ## Key Source Anchors
 
@@ -90,4 +112,3 @@ Default high-sensitivity:
 - emotional instability claims
 - attachment-style claims
 - intelligence or competence claims
-

@@ -25,6 +25,10 @@ This plan has four phases:
 4. Build an MVP web app for administration, result storage, scoring, and score
    presentation.
 
+Current state: Phase 2 has an initial acquisition complete for permissive/open
+instruments. `assessments/ocean/manifest.json` currently tracks 11 instruments,
+186 scales, and 1,539 items. The next implementation target is Phase 4.
+
 ## Working Principles
 
 - Do not copy protected test items into the repo unless the instrument license

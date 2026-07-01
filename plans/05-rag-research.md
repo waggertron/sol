@@ -9,8 +9,21 @@ feasibility of personality/style modeling.
 
 - Markdown source cards in `kb/cards/`
 - source registry in `sources/sources.json`
+- adjacent source registry in `sources/adjacent_sources_v1.json`
 - ontology drafts in `kb/model/`
+- assessment notes in `kb/assessments/`
+- acquired OCEAN instruments in `assessments/ocean/`
+- JSONDB import queue in `jsondb/import_queue.json`
 - local lexical retriever in `tools/rag.py`
+
+Current snapshot:
+
+- 1,800 RAG chunks
+- 82 Wikipedia summary cards
+- 3,373 import queue entries
+- 11 OCEAN assessment instruments
+
+See `docs/current-state.md` for details.
 
 ## Expansion Workflow
 
@@ -20,6 +33,9 @@ feasibility of personality/style modeling.
 4. Update the source backlog or knowledge model.
 5. Rebuild the local index.
 6. Query the index against project-critical questions.
+
+For assessment imports, use the separate assessment workflow documented in
+`docs/architecture/assessments/ocean.md`.
 
 ## Evidence Grades
 
@@ -35,4 +51,3 @@ feasibility of personality/style modeling.
 - digital footprint privacy
 - aesthetic preference and creativity
 - consent UX and explainable personalization
-

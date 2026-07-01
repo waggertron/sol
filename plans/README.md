@@ -5,6 +5,7 @@ style modeling platform.
 
 Start here:
 
+- `../docs/current-state.md` - current repo state, corpus counts, and next build target
 - `00-plan-of-plans.md` - planning map and document index
 - `01-product-vision.md` - product thesis, users, and boundaries
 - `02-first-wedge.md` - initial Personal Creative Style Kit wedge

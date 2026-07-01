@@ -32,6 +32,7 @@ The source of truth is human-readable Markdown and JSON:
 - `assessments/**/*.json` - acquired instrument metadata, item text when
   permitted, scoring metadata, and assessment manifests
 - `docs/project-memory.md` - compact future-session context
+- `docs/current-state.md` - current repo snapshot and next build target
 - `plans/*.md` - product and platform planning skeleton
 
 ## Generated Index
@@ -48,6 +49,9 @@ from the Markdown/JSON corpus:
 ```bash
 python3 tools/rag.py index
 ```
+
+Current index snapshot: 1,800 chunks. Treat this as a rebuildable state marker,
+not a durable contract.
 
 ## Retrieval Tool
 
@@ -121,6 +125,7 @@ Use for product and platform planning:
 
 - product vision
 - first wedge
+- current state
 - data and consent
 - architecture
 - evaluation and safety
