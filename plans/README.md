@@ -13,4 +13,4 @@ Start here:
 - `05-rag-research.md` - internal knowledge base and research expansion
 - `06-platform-architecture.md` - platform services and module boundaries
 - `07-evaluation-safety.md` - evaluation, misuse boundaries, and risk controls
-
+- `08-ocean-assessment-plan.md` - first OCEAN assessment gathering and mapping plan

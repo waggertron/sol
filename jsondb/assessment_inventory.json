@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "updated": "2026-07-01",
+  "policy": {
+    "store_item_text_by_default": false,
+    "reason": "Assessment item text may be copyrighted, licensed, clinically sensitive, or otherwise unsuitable for a public repository.",
+    "allowed_content": [
+      "instrument metadata",
+      "construct labels",
+      "source links",
+      "scoring concepts",
+      "licensing posture",
+      "product suitability notes"
+    ]
+  },
+  "assessments": [
+    {
+      "id": "ipip_big_five_family",
+      "name": "International Personality Item Pool Big Five / IPIP-NEO representations",
+      "family": "OCEAN",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "construct_level": ["domain", "facet"],
+      "administration_length": "varies by selected IPIP scale",
+      "use_posture": "usable_now",
+      "license_posture": "public_domain_per_official_site",
+      "product_suitability": "best_first_candidate_for_prototype",
+      "item_text_stored": false,
+      "scoring_stored": false,
+      "source_urls": [
+        "https://ipip.ori.org/",
+        "https://ipip.ori.org/newPermission.htm",
+        "https://ipip.ori.org/newCitation.htm"
+      ],
+      "notes": [
+        "Select a specific IPIP representation before implementation.",
+        "Public-domain status makes this the safest first OCEAN instrument for prototyping."
+      ]
+    },
+    {
+      "id": "tipi",
+      "name": "Ten Item Personality Inventory",
+      "family": "OCEAN",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "construct_level": ["domain"],
+      "administration_length": "10 items",
+      "use_posture": "usable_now",
+      "license_posture": "official_site_says_anyone_can_use_for_any_purpose",
+      "product_suitability": "fast_onboarding_or_smoke_test_only",
+      "item_text_stored": false,
+      "scoring_stored": false,
+      "source_urls": [
+        "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/"
+      ],
+      "notes": [
+        "Very short measure with diminished psychometric precision.",
+        "Not suitable for facet-level claims."
+      ]
+    },
+    {
+      "id": "bfi2_family",
+      "name": "Big Five Inventory-2 family",
+      "family": "OCEAN",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "negative_emotionality"],
+      "construct_level": ["domain", "facet"],
+      "administration_length": "varies by full, short, or extra-short form",
+      "use_posture": "license_review",
+      "license_posture": "verify_before_product_use",
+      "product_suitability": "strong_reference_for_facet_schema",
+      "item_text_stored": false,
+      "scoring_stored": false,
+      "source_urls": [
+        "https://doi.org/10.1037/pspp0000096"
+      ],
+      "notes": [
+        "Strong 15-facet structure for profile atom design.",
+        "Do not administer or copy items until permissions are verified."
+      ]
+    },
+    {
+      "id": "big_five_aspects_scale",
+      "name": "Big Five Aspects Scale",
+      "family": "OCEAN",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "construct_level": ["aspect"],
+      "administration_length": "long_form",
+      "use_posture": "license_review",
+      "license_posture": "verify_before_product_use",
+      "product_suitability": "useful_middle_layer_between_domains_and_facets",
+      "item_text_stored": false,
+      "scoring_stored": false,
+      "source_urls": [
+        "https://doi.org/10.1037/0022-3514.93.5.880"
+      ],
+      "notes": [
+        "Aspect level may map better to generation controls than broad traits.",
+        "Confirm item and scoring terms before implementation."
+      ]
+    },
+    {
+      "id": "bfi10",
+      "name": "10-item short version of the Big Five Inventory",
+      "family": "OCEAN",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "construct_level": ["domain"],
+      "administration_length": "10 items",
+      "use_posture": "license_review",
+      "license_posture": "verify_before_product_use",
+      "product_suitability": "possible_low_friction_comparator_to_tipi",
+      "item_text_stored": false,
+      "scoring_stored": false,
+      "source_urls": [
+        "https://doi.org/10.1016/j.jrp.2006.02.001"
+      ],
+      "notes": [
+        "Very short measure; use only for coarse calibration.",
+        "Need permission/scoring review."
+      ]
+    },
+    {
+      "id": "hexaco_pi_r",
+      "name": "HEXACO Personality Inventory-Revised",
+      "family": "HEXACO",
+      "domains": ["honesty_humility", "emotionality", "extraversion", "agreeableness", "conscientiousness", "openness"],
+      "construct_level": ["domain", "facet"],
+      "administration_length": "varies by form",
+      "use_posture": "license_review",
+      "license_posture": "verify_research_teaching_commercial_terms_before_product_use",
+      "product_suitability": "adjacent_model_comparison",
+      "item_text_stored": false,
+      "scoring_stored": false,
+      "source_urls": [
+        "https://hexaco.org/"
+      ],
+      "notes": [
+        "Not strictly OCEAN; useful for later expansion.",
+        "Do not collapse Honesty-Humility into Big Five labels."
+      ]
+    },
+    {
+      "id": "neo_family",
+      "name": "NEO PI-R / NEO-PI-3 / NEO-FFI",
+      "family": "Five-Factor Model",
+      "domains": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"],
+      "construct_level": ["domain", "facet"],
+      "administration_length": "varies by instrument",
+      "use_posture": "reference_only",
+      "license_posture": "proprietary_reference_until_licensed",
+      "product_suitability": "construct_reference_not_initial_product_assessment",
+      "item_text_stored": false,
+      "scoring_stored": false,
+      "source_urls": [
+        "https://www.parinc.com/Products/Pkey/276"
+      ],
+      "notes": [
+        "Major reference point for Five-Factor Model measurement.",
+        "Do not reproduce or administer without appropriate license and review."
+      ]
+    }
+  ]
+}
+

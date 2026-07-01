@@ -24,6 +24,7 @@ The source of truth is human-readable Markdown and JSON:
 - `kb/model/signal_matrix_v0.md` - data-source to inference-permission map
 - `kb/research/research_plan.md` - research expansion workflow
 - `kb/research/source_backlog.md` - source backlog by domain
+- `kb/assessments/*.md` - assessment catalogs and profile mapping notes
 - `kb/cards/*.md` - source cards
 - `kb/wiki_imports/*.md` - imported Wikipedia summary cards
 - `sources/*.json` - structured source registries
