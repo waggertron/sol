@@ -19,7 +19,14 @@ from typing import Iterable
 
 
 DEFAULT_INDEX = Path("rag_index/index.json")
-DEFAULT_PATHS = [Path("kb"), Path("sources"), Path("docs"), Path("plans"), Path("README.md")]
+DEFAULT_PATHS = [
+    Path("kb"),
+    Path("sources"),
+    Path("jsondb"),
+    Path("docs"),
+    Path("plans"),
+    Path("README.md"),
+]
 TOKEN_RE = re.compile(r"[a-zA-Z0-9][a-zA-Z0-9_\-']*")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 SUPPORTED_SUFFIXES = {".md", ".txt", ".json"}

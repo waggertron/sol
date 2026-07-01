@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "rejected_mappings": [
+    {
+      "article_id": "wikipedia:dissociative_identity_disorder",
+      "term": "Personality state",
+      "reason": "Wikipedia search resolved to a clinical disorder article rather than a personality-state concept."
+    },
+    {
+      "article_id": "wikipedia:james_w_pennebaker",
+      "term": "Linguistic Inquiry and Word Count",
+      "reason": "Wikipedia search resolved to a researcher biography rather than LIWC itself."
+    },
+    {
+      "article_id": "wikipedia:coefficient_of_relationship",
+      "term": "Relatedness",
+      "reason": "Wikipedia search resolved to a kinship/genetics term rather than motivational relatedness."
+    },
+    {
+      "article_id": "wikipedia:style_sociolinguistics",
+      "term": "Linguistic style matching",
+      "reason": "Wikipedia search resolved to a broad sociolinguistic style article rather than linguistic style matching."
+    },
+    {
+      "article_id": "wikipedia:swot_analysis",
+      "term": "Personal project analysis",
+      "reason": "Wikipedia search resolved to SWOT analysis rather than Little's personal project analysis."
+    },
+    {
+      "article_id": "wikipedia:text_to_video_model",
+      "term": "Realistic accuracy model",
+      "reason": "Wikipedia search resolved to an unrelated AI media-generation article."
+    },
+    {
+      "article_id": "wikipedia:observational_error",
+      "term": "Measurement error",
+      "reason": "Wikipedia search resolved to a narrower observational-error article rather than the broader measurement-error concept needed here."
+    }
+  ]
+}
+

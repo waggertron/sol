@@ -1,0 +1,157 @@
+{
+  "runs": [
+    {
+      "result": {
+        "errors": 99,
+        "linked_articles_added": 0,
+        "summaries_imported": 0,
+        "terms_checked": 99
+      },
+      "timestamp": "2026-07-01T10:25:45+00:00",
+      "type": "import_wikipedia"
+    },
+    {
+      "result": {
+        "queue_items_added": 0,
+        "sources_checked": 38,
+        "sources_skipped": 9
+      },
+      "timestamp": "2026-07-01T10:25:45+00:00",
+      "type": "queue_crossref_references"
+    },
+    {
+      "result": {
+        "remaining": 0,
+        "removed": 137
+      },
+      "timestamp": "2026-07-01T10:26:13+00:00",
+      "type": "clear_errors"
+    },
+    {
+      "result": {
+        "errors": 95,
+        "linked_articles_added": 46,
+        "summaries_imported": 4,
+        "terms_checked": 99
+      },
+      "timestamp": "2026-07-01T10:26:50+00:00",
+      "type": "import_wikipedia"
+    },
+    {
+      "result": {
+        "queue_items_added": 1929,
+        "sources_checked": 38,
+        "sources_skipped": 9
+      },
+      "timestamp": "2026-07-01T10:27:05+00:00",
+      "type": "queue_crossref_references"
+    },
+    {
+      "result": {
+        "remaining": 1977,
+        "removed": 95
+      },
+      "timestamp": "2026-07-01T10:28:23+00:00",
+      "type": "clear_errors"
+    },
+    {
+      "result": {
+        "errors": 87,
+        "linked_articles_added": 85,
+        "skipped_existing": 2,
+        "summaries_imported": 10,
+        "terms_checked": 99
+      },
+      "timestamp": "2026-07-01T10:28:55+00:00",
+      "type": "import_wikipedia"
+    },
+    {
+      "result": {
+        "remaining": 2065,
+        "removed": 87
+      },
+      "timestamp": "2026-07-01T10:29:57+00:00",
+      "type": "clear_errors"
+    },
+    {
+      "result": {
+        "terms_queued": 99,
+        "terms_total": 99
+      },
+      "timestamp": "2026-07-01T10:29:57+00:00",
+      "type": "queue_wikipedia_terms"
+    },
+    {
+      "result": {
+        "errors": 5,
+        "linked_articles_added": 193,
+        "skipped_existing": 5,
+        "summaries_imported": 20,
+        "terms_checked": 30
+      },
+      "timestamp": "2026-07-01T10:31:57+00:00",
+      "type": "import_wikipedia"
+    },
+    {
+      "result": {
+        "remaining": 2367,
+        "removed": 87
+      },
+      "timestamp": "2026-07-01T10:32:18+00:00",
+      "type": "clear_errors"
+    },
+    {
+      "result": {
+        "errors": 23,
+        "linked_articles_added": 212,
+        "skipped_existing": 21,
+        "summaries_imported": 16,
+        "terms_checked": 60
+      },
+      "timestamp": "2026-07-01T10:33:58+00:00",
+      "type": "import_wikipedia"
+    },
+    {
+      "result": {
+        "remaining": 2590,
+        "removed": 23
+      },
+      "timestamp": "2026-07-01T10:34:07+00:00",
+      "type": "clear_errors"
+    },
+    {
+      "result": {
+        "errors": 0,
+        "linked_articles_added": 745,
+        "skipped_existing": 33,
+        "summaries_imported": 66,
+        "terms_checked": 99
+      },
+      "timestamp": "2026-07-01T10:43:28+00:00",
+      "type": "import_wikipedia"
+    },
+    {
+      "result": {
+        "wikipedia_terms_synced": 5
+      },
+      "timestamp": "2026-07-01T10:44:10+00:00",
+      "type": "sync_wikipedia_terms"
+    },
+    {
+      "result": {
+        "files_deleted": 7,
+        "queue_items_updated": 14
+      },
+      "timestamp": "2026-07-01T10:45:45+00:00",
+      "type": "apply_wiki_review"
+    },
+    {
+      "result": {
+        "imported_items_cleaned": 26
+      },
+      "timestamp": "2026-07-01T10:47:16+00:00",
+      "type": "clean_notes"
+    }
+  ],
+  "version": 1
+}

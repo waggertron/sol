@@ -20,8 +20,10 @@ personality. The working goal is narrower:
 - `docs/architecture/rag/structure.md` - RAG architecture and update workflow.
 - `docs/project-memory.md` - compact context for future sessions.
 - `plans/` - product and platform planning skeleton.
-- `sources/sources.json` - source registry for papers, frameworks, and references.
+- `sources/*.json` - source registries for papers, frameworks, and references.
+- `jsondb/` - import queue, term inventory, and import run logs.
 - `tools/rag.py` - local standard-library retrieval CLI.
+- `tools/kb_importer.py` - import queue and Wikipedia/Crossref helper.
 - `rag_index/` - generated retrieval index.
 
 ## Local RAG

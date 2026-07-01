@@ -25,7 +25,9 @@ The source of truth is human-readable Markdown and JSON:
 - `kb/research/research_plan.md` - research expansion workflow
 - `kb/research/source_backlog.md` - source backlog by domain
 - `kb/cards/*.md` - source cards
-- `sources/sources.json` - structured source registry
+- `kb/wiki_imports/*.md` - imported Wikipedia summary cards
+- `sources/*.json` - structured source registries
+- `jsondb/*.json` - import queue, term inventory, and run logs
 - `docs/project-memory.md` - compact future-session context
 - `plans/*.md` - product and platform planning skeleton
 
@@ -152,4 +154,3 @@ Add later when the corpus stabilizes:
 - hybrid lexical plus embedding retrieval
 - local or hosted vector store
 - source-level permissions and sensitivity tags
-
