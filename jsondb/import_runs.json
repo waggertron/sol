@@ -267,6 +267,29 @@
       },
       "timestamp": "2026-07-02T04:49:50+00:00",
       "type": "clean_notes"
+    },
+    {
+      "result": {
+        "candidates_checked": 14,
+        "candidates_planned": 14,
+        "errors": 0,
+        "linked_articles_added": 0,
+        "rate_limit_retry_after_seconds": null,
+        "stopped_after_rate_limit": false,
+        "summaries_imported": 14
+      },
+      "timestamp": "2026-07-02T16:04:28+00:00",
+      "type": "import_queued_wikipedia"
+    },
+    {
+      "result": {
+        "candidates_checked": 100,
+        "errors": 0,
+        "metadata_cards_imported": 100,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-02T16:07:57+00:00",
+      "type": "import_paper_metadata"
     }
   ],
   "version": 1

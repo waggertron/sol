@@ -1870,14 +1870,17 @@
       "doi": "10.1037/a0017184",
       "first_page": "160",
       "id": "paper:10.1037/a0017184",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:09+00:00",
+      "imported_path": "kb/paper_imports/only_three_factors_of_personality_description_are_fully_replicable_across_languages_a_comparison_of_14_trait_taxonomies.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Only three factors of personality description are fully replicable across languages: A comparison of 14 trait taxonomies",
+      "title": "Only three factors of personality description are fully replicable across languages: A comparison of 14 trait taxonomies.",
       "url": "https://doi.org/10.1037/a0017184",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": null,
@@ -1906,14 +1909,17 @@
       "doi": "10.1146/annurev-psych-120710-100353",
       "first_page": "453",
       "id": "paper:10.1146/annurev-psych-120710-100353",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:09+00:00",
+      "imported_path": "kb/paper_imports/intelligence.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Intelligence",
       "url": "https://doi.org/10.1146/annurev-psych-120710-100353",
-      "year": "2012"
+      "year": 2012
     },
     {
       "container_title": "Journal of Research in Personality",
@@ -1924,14 +1930,17 @@
       "doi": "10.1016/j.jrp.2008.04.002",
       "first_page": "1285",
       "id": "paper:10.1016/j.jrp.2008.04.002",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:10+00:00",
+      "imported_path": "kb/paper_imports/motivational_individual_reaction_norms_underlying_the_five_factor_model_of_personality_first_steps_towards_a_theory_base.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Motivational individual reaction norms underlying the Five-Factor model of personality: First steps towards a theory-based conceptual framework",
       "url": "https://doi.org/10.1016/j.jrp.2008.04.002",
-      "year": "2008"
+      "year": 2008
     },
     {
       "container_title": "Behavioral and Brain Sciences",
@@ -1944,14 +1953,17 @@
       "doi": "10.1017/S0140525X99002046",
       "first_page": "491",
       "id": "paper:10.1017/s0140525x99002046",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:10+00:00",
+      "imported_path": "kb/paper_imports/neurobiology_of_the_structure_of_personality_dopamine_facilitation_of_incentive_motivation_and_extraversion.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Neurobiology of the structure of personality: Dopamine, facilitation of incentive motivation, and extraversion",
-      "url": "https://doi.org/10.1017/S0140525X99002046",
-      "year": "1999"
+      "url": "https://doi.org/10.1017/s0140525x99002046",
+      "year": 1999
     },
     {
       "container_title": null,
@@ -1980,14 +1992,17 @@
       "doi": "10.1017/S0140525X05000063",
       "first_page": "313",
       "id": "paper:10.1017/s0140525x05000063",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:11+00:00",
+      "imported_path": "kb/paper_imports/a_neurobehavioral_model_of_affiliative_bonding_implications_for_conceptualizing_a_human_trait_of_affiliation.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "A neurobehavioral model of affiliative bonding: Implications for conceptualizing a human trait of affiliation",
-      "url": "https://doi.org/10.1017/S0140525X05000063",
-      "year": "2005"
+      "title": "a neurobehavioral model of affiliative bonding: implications for conceptualizing a human trait of affiliation",
+      "url": "https://doi.org/10.1017/s0140525x05000063",
+      "year": 2005
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -1998,14 +2013,17 @@
       "doi": "10.1037/0022-3514.91.6.1138",
       "first_page": "1138",
       "id": "paper:10.1037/0022-3514.91.6.1138",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:11+00:00",
+      "imported_path": "kb/paper_imports/higher_order_factors_of_the_big_five_in_a_multi_informant_sample.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Higher-order factors of the Big Five in a multi-informant sample",
+      "title": "Higher-order factors of the Big Five in a multi-informant sample.",
       "url": "https://doi.org/10.1037/0022-3514.91.6.1138",
-      "year": "2006"
+      "year": 2006
     },
     {
       "container_title": "Social and Personality Psychology Compass",
@@ -2017,14 +2035,17 @@
       "doi": "10.1111/j.1751-9004.2010.00327.x",
       "first_page": "1165",
       "id": "paper:10.1111/j.1751-9004.2010.00327.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:12+00:00",
+      "imported_path": "kb/paper_imports/personality_neuroscience_and_the_biology_of_traits.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personality neuroscience and the biology of traits",
+      "title": "Personality Neuroscience and the Biology of Traits",
       "url": "https://doi.org/10.1111/j.1751-9004.2010.00327.x",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Psychological Inquiry",
@@ -2035,14 +2056,17 @@
       "doi": "10.1080/10478401003648674",
       "first_page": "26",
       "id": "paper:10.1080/10478401003648674",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:12+00:00",
+      "imported_path": "kb/paper_imports/toward_a_theory_of_the_big_five.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Toward a theory of the Big Five",
+      "title": "Toward a Theory of the Big Five",
       "url": "https://doi.org/10.1080/10478401003648674",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Frontiers in Human Neuroscience",
@@ -2053,14 +2077,17 @@
       "doi": "10.3389/fnhum.2013.00762",
       "first_page": null,
       "id": "paper:10.3389/fnhum.2013.00762",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:13+00:00",
+      "imported_path": "kb/paper_imports/the_neuromodulator_of_exploration_a_unifying_theory_of_the_role_of_dopamine_in_personality.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "The neuromodulator of exploration: A unifying theory of the role of dopamine in personality",
       "url": "https://doi.org/10.3389/fnhum.2013.00762",
-      "year": "2013"
+      "year": 2013
     },
     {
       "container_title": null,
@@ -2089,14 +2116,17 @@
       "doi": "10.1016/j.jrp.2011.12.003",
       "first_page": "63",
       "id": "paper:10.1016/j.jrp.2011.12.003",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:13+00:00",
+      "imported_path": "kb/paper_imports/from_madness_to_genius_the_openness_intellect_trait_domain_as_a_paradoxical_simplex.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "From madness to genius: The Openness/Intellect trait domain as a paradoxical simplex",
       "url": "https://doi.org/10.1016/j.jrp.2011.12.003",
-      "year": "2012"
+      "year": 2012
     },
     {
       "container_title": "Psychological Science",
@@ -2108,14 +2138,17 @@
       "doi": "10.1177/0956797610370159",
       "first_page": "820",
       "id": "paper:10.1177/0956797610370159",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:14+00:00",
+      "imported_path": "kb/paper_imports/testing_predictions_from_personality_neuroscience.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Testing predictions from personality neuroscience: Brain structure and the Big Five",
+      "title": "Testing Predictions From Personality Neuroscience",
       "url": "https://doi.org/10.1177/0956797610370159",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Personality and Individual Differences",
@@ -2126,14 +2159,17 @@
       "doi": "10.1016/S0191-8869(01)00171-4",
       "first_page": "533",
       "id": "paper:10.1016/s0191-8869(01)00171-4",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:14+00:00",
+      "imported_path": "kb/paper_imports/higher_order_factors_of_the_big_five_predict_conformity_are_there_neuroses_of_health.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Higher-order factors of the Big Five predict conformity: Are there neuroses of health?",
-      "url": "https://doi.org/10.1016/S0191-8869(01)00171-4",
-      "year": "2002"
+      "url": "https://doi.org/10.1016/s0191-8869(01)00171-4",
+      "year": 2002
     },
     {
       "container_title": "Journal of Abnormal Psychology",
@@ -2144,14 +2180,17 @@
       "doi": "10.1037/a0013742",
       "first_page": "947",
       "id": "paper:10.1037/a0013742",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:15+00:00",
+      "imported_path": "kb/paper_imports/externalizing_behavior_and_the_higher_order_factors_of_the_big_five.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Externalizing behavior and the higher-order factors of the Big Five",
+      "title": "Externalizing behavior and the higher order factors of the Big Five.",
       "url": "https://doi.org/10.1037/a0013742",
-      "year": "2008"
+      "year": 2008
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2162,14 +2201,17 @@
       "doi": "10.1037/0022-3514.93.5.880",
       "first_page": "880",
       "id": "paper:10.1037/0022-3514.93.5.880",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:15+00:00",
+      "imported_path": "kb/paper_imports/between_facets_and_domains_10_aspects_of_the_big_five.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Between facets and domains: 10 aspects of the Big Five",
+      "title": "Between facets and domains: 10 aspects of the Big Five.",
       "url": "https://doi.org/10.1037/0022-3514.93.5.880",
-      "year": "2007"
+      "year": 2007
     },
     {
       "container_title": "Journal of Personality Assessment",
@@ -2180,14 +2222,17 @@
       "doi": "10.1080/00223891.2013.806327",
       "first_page": "46",
       "id": "paper:10.1080/00223891.2013.806327",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:16+00:00",
+      "imported_path": "kb/paper_imports/openness_to_experience_intellect_and_cognitive_ability.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Openness to Experience, Intellect, and cognitive ability",
+      "title": "Openness to Experience, Intellect, and Cognitive Ability",
       "url": "https://doi.org/10.1080/00223891.2013.806327",
-      "year": "2014"
+      "year": 2014
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2198,14 +2243,17 @@
       "doi": "10.1037/a0016615",
       "first_page": "883",
       "id": "paper:10.1037/a0016615",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:16+00:00",
+      "imported_path": "kb/paper_imports/intellect_as_distinct_from_openness_differences_revealed_by_fmri_of_working_memory.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Intellect as distinct from Openness: Differences revealed by fMRI of working memory",
+      "title": "Intellect as distinct from openness: Differences revealed by fMRI of working memory.",
       "url": "https://doi.org/10.1037/a0016615",
-      "year": "2009"
+      "year": 2009
     },
     {
       "container_title": null,
@@ -2253,14 +2301,17 @@
       "doi": "10.1111/jopy.12020",
       "first_page": "465",
       "id": "paper:10.1111/jopy.12020",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:16+00:00",
+      "imported_path": "kb/paper_imports/unifying_the_aspects_of_the_big_five_the_interpersonal_circumplex_and_trait_affiliation.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Unifying the aspects of the Big Five, the interpersonal circumplex, and trait affiliation",
+      "title": "Unifying the Aspects of the Big Five, the Interpersonal Circumplex, and Trait Affiliation",
       "url": "https://doi.org/10.1111/jopy.12020",
-      "year": "2013"
+      "year": 2013
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2271,17 +2322,20 @@
       "doi": "10.1037/0022-3514.73.6.1246",
       "first_page": "1246",
       "id": "paper:10.1037/0022-3514.73.6.1246",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:17+00:00",
+      "imported_path": "kb/paper_imports/higher_order_factors_of_the_big_five.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Higher-order factors of the Big Five",
+      "title": "Higher-order factors of the Big Five.",
       "url": "https://doi.org/10.1037/0022-3514.73.6.1246",
-      "year": "1997"
+      "year": 1997
     },
     {
-      "container_title": "Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences",
+      "container_title": "Philosophical Transactions of the Royal Society B: Biological Sciences",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -2289,14 +2343,17 @@
       "doi": "10.1098/rstb.2006.2001",
       "first_page": "649",
       "id": "paper:10.1098/rstb.2006.2001",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:17+00:00",
+      "imported_path": "kb/paper_imports/understanding_primate_brain_evolution.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Understanding primate brain evolution",
       "url": "https://doi.org/10.1098/rstb.2006.2001",
-      "year": "2007"
+      "year": 2007
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2309,14 +2366,17 @@
       "doi": "10.1037/0022-3514.37.7.1097",
       "first_page": "1097",
       "id": "paper:10.1037/0022-3514.37.7.1097",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:18+00:00",
+      "imported_path": "kb/paper_imports/the_stability_of_behavior_i_on_predicting_most_of_the_people_much_of_the_time.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The stability of behavior: I. On predicting most of the people much of the time",
+      "title": "The stability of behavior: I. On predicting most of the people much of the time.",
       "url": "https://doi.org/10.1037/0022-3514.37.7.1097",
-      "year": "1979"
+      "year": 1979
     },
     {
       "container_title": null,
@@ -2345,14 +2405,17 @@
       "doi": "10.1016/j.neuron.2004.12.006",
       "first_page": "1043",
       "id": "paper:10.1016/j.neuron.2004.12.006",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:18+00:00",
+      "imported_path": "kb/paper_imports/individual_differences_in_trait_anxiety_predict_the_response_of_the_basolateral_amygdala_to_unconsciously_processed_fear.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Individual differences in trait anxiety predict the response of the basolateral amygdala to unconsciously processed fearful faces",
+      "title": "Individual Differences in Trait Anxiety Predict the Response of the Basolateral Amygdala to Unconsciously Processed Fearful Faces",
       "url": "https://doi.org/10.1016/j.neuron.2004.12.006",
-      "year": "2004"
+      "year": 2004
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2365,14 +2428,17 @@
       "doi": "10.1037/0022-3514.80.6.1011",
       "first_page": "1011",
       "id": "paper:10.1037/0022-3514.80.6.1011",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:19+00:00",
+      "imported_path": "kb/paper_imports/toward_a_structure_and_process_integrated_view_of_personality_traits_as_density_distributions_of_states.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Toward a structure- and process-integrated view of personality: Traits as density distributions of states",
+      "title": "Toward a structure- and process-integrated view of personality: Traits as density distributions of states.",
       "url": "https://doi.org/10.1037/0022-3514.80.6.1011",
-      "year": "2001"
+      "year": 2001
     },
     {
       "container_title": null,
@@ -2403,14 +2469,17 @@
       "doi": "10.1037/a0016786",
       "first_page": "1097",
       "id": "paper:10.1037/a0016786",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:19+00:00",
+      "imported_path": "kb/paper_imports/the_implications_of_big_five_standing_for_the_distribution_of_trait_manifestation_in_behavior_fifteen_experience_samplin.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The implications of Big Five standing for the distribution of trait manifestation in behavior: Fifteen experience-sampling studies and a meta-analysis",
+      "title": "The implications of Big Five standing for the distribution of trait manifestation in behavior: Fifteen experience-sampling studies and a meta-analysis.",
       "url": "https://doi.org/10.1037/a0016786",
-      "year": "2009"
+      "year": 2009
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2422,17 +2491,20 @@
       "doi": "10.1037/0022-3514.83.6.1409",
       "first_page": "1409",
       "id": "paper:10.1037/0022-3514.83.6.1409",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:20+00:00",
+      "imported_path": "kb/paper_imports/an_intraindividual_process_approach_to_the_relationship_between_extraversion_and_positive_affect_is_acting_extraverted_a.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "An intraindividual process approach to the relationship between extraversion and positive affect: Is acting extraverted as\u201d good\u201d as being extraverted?",
+      "title": "An intraindividual process approach to the relationship between extraversion and positive affect: Is acting extraverted as \"good\" as being extraverted?",
       "url": "https://doi.org/10.1037/0022-3514.83.6.1409",
-      "year": "2002"
+      "year": 2002
     },
     {
-      "container_title": "Proceedings of the National Academy of Sciences of the United States of America",
+      "container_title": "Proceedings of the National Academy of Sciences",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -2440,14 +2512,17 @@
       "doi": "10.1073/pnas.0604187103",
       "first_page": "10046",
       "id": "paper:10.1073/pnas.0604187103",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:20+00:00",
+      "imported_path": "kb/paper_imports/spontaneous_neuronal_activity_distinguishes_human_dorsal_and_ventral_attention_systems.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Spontaneous neuronal activity distinguishes human dorsal and ventral attention systems",
       "url": "https://doi.org/10.1073/pnas.0604187103",
-      "year": "2006"
+      "year": 2006
     },
     {
       "container_title": "American Journal of Primatology",
@@ -2458,14 +2533,17 @@
       "doi": "10.1002/ajp.20833",
       "first_page": "653",
       "id": "paper:10.1002/ajp.20833",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:21+00:00",
+      "imported_path": "kb/paper_imports/personality_in_nonhuman_primates_a_review_and_evaluation_of_past_research.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personality in nonhuman primates: A review and evaluation of past research",
+      "title": "Personality in nonhuman primates: a review and evaluation of past research",
       "url": "https://doi.org/10.1002/ajp.20833",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Psychological Science",
@@ -2476,14 +2554,17 @@
       "doi": "10.1177/0956797610373372",
       "first_page": "1021",
       "id": "paper:10.1177/0956797610373372",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:21+00:00",
+      "imported_path": "kb/paper_imports/pushing_and_coasting_in_dynamic_goal_pursuit.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Pushing and coasting in dynamic goal pursuit coasting is attenuated in bipolar disorder",
+      "title": "Pushing and Coasting in Dynamic Goal Pursuit",
       "url": "https://doi.org/10.1177/0956797610373372",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Psychological Science",
@@ -2495,14 +2576,17 @@
       "doi": "10.1111/j.1467-9280.1991.tb00093.x",
       "first_page": "31",
       "id": "paper:10.1111/j.1467-9280.1991.tb00093.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:22+00:00",
+      "imported_path": "kb/paper_imports/global_traits_a_neo_allportian_approach_to_personality.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Global traits: A neo-Allportian approach to personality",
+      "title": "Global Traits: A Neo-Allportian Approach to Personality",
       "url": "https://doi.org/10.1111/j.1467-9280.1991.tb00093.x",
-      "year": "1991"
+      "year": 1991
     },
     {
       "container_title": null,
@@ -2550,14 +2634,17 @@
       "doi": "10.1111/1467-8721.00017",
       "first_page": "69",
       "id": "paper:10.1111/1467-8721.00017",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:22+00:00",
+      "imported_path": "kb/paper_imports/personality_dimensions_in_nonhuman_animals.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personality dimension in non-human animals: A cross-species review",
+      "title": "Personality Dimensions in Nonhuman Animals",
       "url": "https://doi.org/10.1111/1467-8721.00017",
-      "year": "1999"
+      "year": 1999
     },
     {
       "container_title": null,
@@ -2622,14 +2709,17 @@
       "doi": "10.1006/nlme.1998.3843",
       "first_page": "119",
       "id": "paper:10.1006/nlme.1998.3843",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:23+00:00",
+      "imported_path": "kb/paper_imports/the_basal_ganglia_and_chunking_of_action_repertoires.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The basal ganglia and chunking of action repertoires",
+      "title": "The Basal Ganglia and Chunking of Action Repertoires",
       "url": "https://doi.org/10.1006/nlme.1998.3843",
-      "year": "1998"
+      "year": 1998
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2640,14 +2730,17 @@
       "doi": "10.1037/0022-3514.93.4.583",
       "first_page": "583",
       "id": "paper:10.1037/0022-3514.93.4.583",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:23+00:00",
+      "imported_path": "kb/paper_imports/agreeableness_empathy_and_helping_a_person_situation_perspective.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Agreeableness, empathy, and helping: A person x situation perspective",
+      "title": "Agreeableness, empathy, and helping: A person \u00d7 situation perspective.",
       "url": "https://doi.org/10.1037/0022-3514.93.4.583",
-      "year": "2007"
+      "year": 2007
     },
     {
       "container_title": null,
@@ -2676,14 +2769,17 @@
       "doi": "10.1111/j.1551-6708.1987.tb00862.x",
       "first_page": "23",
       "id": "paper:10.1111/j.1551-6708.1987.tb00862.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:24+00:00",
+      "imported_path": "kb/paper_imports/competitive_learning_from_interactive_activation_to_adaptive_resonance.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Competitive learning: From interactive activation to adaptive resonance",
+      "title": "Competitive Learning: From Interactive Activation to Adaptive Resonance",
       "url": "https://doi.org/10.1111/j.1551-6708.1987.tb00862.x",
-      "year": "1987"
+      "year": 1987
     },
     {
       "container_title": "Neural Networks",
@@ -2694,14 +2790,17 @@
       "doi": "10.1016/j.neunet.2012.09.017",
       "first_page": "1",
       "id": "paper:10.1016/j.neunet.2012.09.017",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:24+00:00",
+      "imported_path": "kb/paper_imports/adaptive_resonance_theory_how_a_brain_learns_to_consciously_attend_learn_and_recognize_a_changing_world.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Adaptive Resonance Theory: How a brain learns to consciously attend, learn, and recognize a changing world",
       "url": "https://doi.org/10.1016/j.neunet.2012.09.017",
-      "year": "2013"
+      "year": 2013
     },
     {
       "container_title": "Behavioral Neuroscience",
@@ -2712,14 +2811,17 @@
       "doi": "10.1037/0735-7044.121.2.249",
       "first_page": "249",
       "id": "paper:10.1037/0735-7044.121.2.249",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:25+00:00",
+      "imported_path": "kb/paper_imports/emotional_conflict_and_neuroticism_personality_dependent_activation_in_the_amygdala_and_subgenual_anterior_cingulate.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Emotional conflict and Neuroticism: Personality-dependent activation in the amygdala and subgenual anterior cingulate",
+      "title": "Emotional conflict and neuroticism: Personality-dependent activation in the amygdala and subgenual anterior cingulate.",
       "url": "https://doi.org/10.1037/0735-7044.121.2.249",
-      "year": "2007"
+      "year": 2007
     },
     {
       "container_title": "Psychological Science",
@@ -2730,14 +2832,17 @@
       "doi": "10.1111/j.1467-9280.2007.01861.x",
       "first_page": "130",
       "id": "paper:10.1111/j.1467-9280.2007.01861.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:25+00:00",
+      "imported_path": "kb/paper_imports/is_automatic_emotion_regulation_associated_with_agreeableness.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Is automatic emotion regulation associated with Agreeableness? A perspective using a social neuroscience approach",
+      "title": "Is Automatic Emotion Regulation Associated With Agreeableness?",
       "url": "https://doi.org/10.1111/j.1467-9280.2007.01861.x",
-      "year": "2007"
+      "year": 2007
     },
     {
       "container_title": "Psychological Assessment",
@@ -2748,14 +2853,17 @@
       "doi": "10.1037/a0025830",
       "first_page": "432",
       "id": "paper:10.1037/a0025830",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:26+00:00",
+      "imported_path": "kb/paper_imports/the_personality_psychopathology_five_psy_5_recent_constructive_replication_and_assessment_literature_review.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The personality psychopathology\u2013five (PSY-5): Recent constructive replication and assessment literature review",
+      "title": "The Personality Psychopathology\u2014Five (PSY\u20135): Recent constructive replication and assessment literature review.",
       "url": "https://doi.org/10.1037/a0025830",
-      "year": "2012"
+      "year": 2012
     },
     {
       "container_title": "Journal of Personality Assessment",
@@ -2766,14 +2874,17 @@
       "doi": "10.1080/00223891.2013.823438",
       "first_page": "121",
       "id": "paper:10.1080/00223891.2013.823438",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:26+00:00",
+      "imported_path": "kb/paper_imports/a_review_of_systems_for_psychology_and_psychiatry_adaptive_systems_personality_psychopathology_five_psy_5_and_the_i_dsm_.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "A review of systems for psychology and psychiatry: Adaptive systems, personality psychopathology five (PSY-5), and the DSM-5",
+      "title": "A Review of Systems for Psychology and Psychiatry: Adaptive Systems, Personality Psychopathology Five (PSY\u20135), and the\n            <i>DSM\u20135</i>",
       "url": "https://doi.org/10.1080/00223891.2013.823438",
-      "year": "2014"
+      "year": 2014
     },
     {
       "container_title": "European Journal of Social Psychology",
@@ -2784,14 +2895,17 @@
       "doi": "10.1002/ejsp.27",
       "first_page": "3",
       "id": "paper:10.1002/ejsp.27",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:27+00:00",
+      "imported_path": "kb/paper_imports/achievement_orientations_from_subjective_histories_of_success_promotion_pride_versus_prevention_pride.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Achievement orientations from subjective histories of success: Promotion pride versus prevention pride",
       "url": "https://doi.org/10.1002/ejsp.27",
-      "year": "2001"
+      "year": 2001
     },
     {
       "container_title": "Journal of Personality",
@@ -2802,14 +2916,17 @@
       "doi": "10.1111/j.1467-6494.2009.00575.x",
       "first_page": "1085",
       "id": "paper:10.1111/j.1467-6494.2009.00575.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:27+00:00",
+      "imported_path": "kb/paper_imports/metatraits_of_the_big_five_differentially_predict_engagement_and_restraint_of_behavior.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Metatraits of the Big Five differentially predict engagement and restraint of behavior",
+      "title": "Metatraits of the Big Five Differentially Predict Engagement and Restraint of Behavior",
       "url": "https://doi.org/10.1111/j.1467-6494.2009.00575.x",
-      "year": "2009"
+      "year": 2009
     },
     {
       "container_title": "Psychological Science",
@@ -2820,14 +2937,17 @@
       "doi": "10.1111/j.1467-9280.2008.02183.x",
       "first_page": "962",
       "id": "paper:10.1111/j.1467-9280.2008.02183.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:28+00:00",
+      "imported_path": "kb/paper_imports/the_devil_you_know.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The devil you know: Neuroticism predicts neural response to uncertainty",
+      "title": "The Devil You Know",
       "url": "https://doi.org/10.1111/j.1467-9280.2008.02183.x",
-      "year": "2008"
+      "year": 2008
     },
     {
       "container_title": "Psychological Review",
@@ -2838,14 +2958,17 @@
       "doi": "10.1037/a0026767",
       "first_page": "304",
       "id": "paper:10.1037/a0026767",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:28+00:00",
+      "imported_path": "kb/paper_imports/psychological_entropy_a_framework_for_understanding_uncertainty_related_anxiety.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Psychological entropy: A framework for understanding uncertainty-related anxiety",
+      "title": "Psychological entropy: A framework for understanding uncertainty-related anxiety.",
       "url": "https://doi.org/10.1037/a0026767",
-      "year": "2012"
+      "year": 2012
     },
     {
       "container_title": "Behavioral and Brain Sciences",
@@ -2856,14 +2979,17 @@
       "doi": "10.1017/S0140525X12002269",
       "first_page": "216",
       "id": "paper:10.1017/s0140525x12002269",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:29+00:00",
+      "imported_path": "kb/paper_imports/personal_narratives_as_the_highest_level_of_cognitive_integration.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Personal narratives as the highest level of cognitive integration",
-      "url": "https://doi.org/10.1017/S0140525X12002269",
-      "year": "2013"
+      "url": "https://doi.org/10.1017/s0140525x12002269",
+      "year": 2013
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2874,14 +3000,17 @@
       "doi": "10.1037/0022-3514.63.1.146",
       "first_page": "146",
       "id": "paper:10.1037/0022-3514.63.1.146",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:29+00:00",
+      "imported_path": "kb/paper_imports/integration_of_the_big_five_and_circumplex_approaches_to_trait_structure.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Integration of the Big Five and circumplex approaches to trait structure",
+      "title": "Integration of the Big Five and circumplex approaches to trait structure.",
       "url": "https://doi.org/10.1037/0022-3514.63.1.146",
-      "year": "1992"
+      "year": 1992
     },
     {
       "container_title": "Personality and Individual Differences",
@@ -2892,14 +3021,17 @@
       "doi": "10.1016/S0191-8869(01)00137-4",
       "first_page": "83",
       "id": "paper:10.1016/s0191-8869(01)00137-4",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:29+00:00",
+      "imported_path": "kb/paper_imports/genetic_and_environmental_influences_on_the_covariance_of_facets_defining_the_domains_of_the_five_factor_model_of_person.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Genetic and environmental influences on the covariance of facets defining the domains of the five-factor model of personality",
-      "url": "https://doi.org/10.1016/S0191-8869(01)00137-4",
-      "year": "2002"
+      "url": "https://doi.org/10.1016/s0191-8869(01)00137-4",
+      "year": 2002
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2910,14 +3042,17 @@
       "doi": "10.1037/0022-3514.74.6.1556",
       "first_page": "1556",
       "id": "paper:10.1037/0022-3514.74.6.1556",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:30+00:00",
+      "imported_path": "kb/paper_imports/heritability_of_facet_level_traits_in_a_cross_cultural_twin_sample_support_for_a_hierarchical_model_of_personality.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Heritability of facet-level traits in a cross-cultural twin sample: Support for a hierarchical model of personality",
+      "title": "Heritability of facet-level traits in a cross-cultural twin sample: Support for a hierarchical model of personality.",
       "url": "https://doi.org/10.1037/0022-3514.74.6.1556",
-      "year": "1998"
+      "year": 1998
     },
     {
       "container_title": null,
@@ -2946,14 +3081,17 @@
       "doi": "10.1177/0963721410370136",
       "first_page": "177",
       "id": "paper:10.1177/0963721410370136",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:30+00:00",
+      "imported_path": "kb/paper_imports/understanding_the_genetics_of_intelligence.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Understanding the genetics of intelligence: Can height help? Can corn oil?",
+      "title": "Understanding the Genetics of Intelligence",
       "url": "https://doi.org/10.1177/0963721410370136",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -2964,14 +3102,17 @@
       "doi": "10.1037/0022-3514.83.3.693",
       "first_page": "693",
       "id": "paper:10.1037/0022-3514.83.3.693",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:31+00:00",
+      "imported_path": "kb/paper_imports/are_measures_of_self_esteem_neuroticism_locus_of_control_and_generalized_self_efficacy_indicators_of_a_common_core_const.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Are measures of self-esteem, neuroticism, locus of control, and generalized self-efficacy indicators of a common core construct?",
       "url": "https://doi.org/10.1037/0022-3514.83.3.693",
-      "year": "2002"
+      "year": 2002
     },
     {
       "container_title": "Human Brain Mapping",
@@ -2982,14 +3123,17 @@
       "doi": "10.1002/hbm.22108",
       "first_page": "2829",
       "id": "paper:10.1002/hbm.22108",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:31+00:00",
+      "imported_path": "kb/paper_imports/the_five_factors_of_personality_and_regional_cortical_variability_in_the_baltimore_longitudinal_study_of_aging.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "The five factors of personality and regional cortical variability in the baltimore longitudinal study of aging",
       "url": "https://doi.org/10.1002/hbm.22108",
-      "year": "2013"
+      "year": 2013
     },
     {
       "container_title": "The Journal of Creative Behavior",
@@ -3000,14 +3144,17 @@
       "doi": "10.1002/jocb.33",
       "first_page": "233",
       "id": "paper:10.1002/jocb.33",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:32+00:00",
+      "imported_path": "kb/paper_imports/opening_up_openness_to_experience_a_four_factor_model_and_relations_to_creative_achievement_in_the_arts_and_sciences.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Opening up Openness to Experience: A four-factor model and relations to creative achievement in the arts and sciences",
+      "title": "Opening up Openness to Experience: A Four\u2010Factor Model and Relations to Creative Achievement in the Arts and Sciences",
       "url": "https://doi.org/10.1002/jocb.33",
-      "year": "2013"
+      "year": 2013
     },
     {
       "container_title": "Cognition",
@@ -3018,17 +3165,20 @@
       "doi": "10.1016/j.cognition.2010.05.011",
       "first_page": "321",
       "id": "paper:10.1016/j.cognition.2010.05.011",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:32+00:00",
+      "imported_path": "kb/paper_imports/implicit_learning_as_an_ability.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Implicit learning as an ability",
       "url": "https://doi.org/10.1016/j.cognition.2010.05.011",
-      "year": "2010"
+      "year": 2010
     },
     {
-      "container_title": null,
+      "container_title": "Journal of Personality",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -3036,14 +3186,17 @@
       "doi": "10.1111/jopy.12156",
       "first_page": null,
       "id": "paper:10.1111/jopy.12156",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:33+00:00",
+      "imported_path": "kb/paper_imports/openness_to_experience_and_intellect_differentially_predict_creative_achievement_in_the_arts_and_sciences.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "10.1111/jopy.12156",
+      "title": "Openness to Experience and Intellect Differentially Predict Creative Achievement in the Arts and Sciences",
       "url": "https://doi.org/10.1111/jopy.12156",
-      "year": null
+      "year": 2016
     },
     {
       "container_title": "Cognitive Neuroscience",
@@ -3054,14 +3207,17 @@
       "doi": "10.1080/17588928.2011.628383",
       "first_page": "89",
       "id": "paper:10.1080/17588928.2011.628383",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:33+00:00",
+      "imported_path": "kb/paper_imports/intelligence_and_the_brain_a_model_based_approach.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Intelligence and the brain: A model-based approach",
       "url": "https://doi.org/10.1080/17588928.2011.628383",
-      "year": "2012"
+      "year": 2012
     },
     {
       "container_title": null,
@@ -3090,14 +3246,17 @@
       "doi": "10.1016/j.jesp.2009.08.018",
       "first_page": "213",
       "id": "paper:10.1016/j.jesp.2009.08.018",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:34+00:00",
+      "imported_path": "kb/paper_imports/personality_traits_function_as_causal_concepts.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Personality traits function as causal concepts",
       "url": "https://doi.org/10.1016/j.jesp.2009.08.018",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Journal of Abnormal Psychology",
@@ -3108,14 +3267,17 @@
       "doi": "10.1037/0021-843X.111.3.411",
       "first_page": "411",
       "id": "paper:10.1037/0021-843x.111.3.411",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:34+00:00",
+      "imported_path": "kb/paper_imports/etiologic_connections_among_substance_dependence_antisocial_behavior_and_personality_modeling_the_externalizing_spectrum.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Etiologic connections among substance dependence, antisocial behavior, and personality: Modeling the externalizing spectrum",
-      "url": "https://doi.org/10.1037/0021-843X.111.3.411",
-      "year": "2002"
+      "title": "Etiologic connections among substance dependence, antisocial behavior and personality: Modeling the externalizing spectrum.",
+      "url": "https://doi.org/10.1037/0021-843x.111.3.411",
+      "year": 2002
     },
     {
       "container_title": null,
@@ -3144,14 +3306,17 @@
       "doi": "10.1146/annurev-clinpsy-032813-153732",
       "first_page": null,
       "id": "paper:10.1146/annurev-clinpsy-032813-153732",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:35+00:00",
+      "imported_path": "kb/paper_imports/the_role_of_the_dsm_5_personality_trait_model_in_moving_toward_a_quantitative_and_empirically_based_approach_to_classify.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The role of the DSM-5 personality trait model in moving toward a quantitative and empirically based approach to classifying personality and psychopathology",
+      "title": "The Role of the DSM-5 Personality Trait Model in Moving Toward a Quantitative and Empirically Based Approach to Classifying Personality and Psychopathology",
       "url": "https://doi.org/10.1146/annurev-clinpsy-032813-153732",
-      "year": "2014"
+      "year": 2014
     },
     {
       "container_title": "Behavioral and Brain Sciences",
@@ -3162,14 +3327,17 @@
       "doi": "10.1017/S0140525X0500004X",
       "first_page": "169",
       "id": "paper:10.1017/s0140525x0500004x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:35+00:00",
+      "imported_path": "kb/paper_imports/bridging_emotion_theory_and_neurobiology_through_dynamic_systems_modeling.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Bridging emotion theory and neurobiology through dynamic systems modeling",
-      "url": "https://doi.org/10.1017/S0140525X0500004X",
-      "year": "2005"
+      "url": "https://doi.org/10.1017/s0140525x0500004x",
+      "year": 2005
     },
     {
       "container_title": "Environment and Behavior",
@@ -3181,17 +3349,20 @@
       "doi": "10.1177/0013916583153002",
       "first_page": "273",
       "id": "paper:10.1177/0013916583153002",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:36+00:00",
+      "imported_path": "kb/paper_imports/personal_projects.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personal projects: A rationale and method for investigation",
+      "title": "Personal Projects",
       "url": "https://doi.org/10.1177/0013916583153002",
-      "year": "1983"
+      "year": 1983
     },
     {
-      "container_title": "Applied Psychology: An International Review",
+      "container_title": "Applied Psychology",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -3199,14 +3370,17 @@
       "doi": "10.1111/j.1464-0597.2006.00262.x",
       "first_page": "419",
       "id": "paper:10.1111/j.1464-0597.2006.00262.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:36+00:00",
+      "imported_path": "kb/paper_imports/personality_science_and_self_regulation_personal_projects_as_integrative_units.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personality science and self-regulation: Personal projects as integrative units",
+      "title": "Personality Science and Self\u2010Regulation: Personal Projects as Integrative Units",
       "url": "https://doi.org/10.1111/j.1464-0597.2006.00262.x",
-      "year": "2006"
+      "year": 2006
     },
     {
       "container_title": "Social and Personality Psychology Compass",
@@ -3217,17 +3391,20 @@
       "doi": "10.1111/j.1751-9004.2008.00106.x",
       "first_page": "1235",
       "id": "paper:10.1111/j.1751-9004.2008.00106.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:37+00:00",
+      "imported_path": "kb/paper_imports/personal_projects_and_free_traits_personality_and_motivation_reconsidered.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personal projects and free traits: Personality and motivation reconsidered",
+      "title": "Personal Projects and Free Traits: Personality and Motivation Reconsidered",
       "url": "https://doi.org/10.1111/j.1751-9004.2008.00106.x",
-      "year": "2008"
+      "year": 2008
     },
     {
-      "container_title": "Canadian Journal of Psychiatry",
+      "container_title": "The Canadian Journal of Psychiatry",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -3235,14 +3412,17 @@
       "doi": "10.1177/070674379804300202",
       "first_page": "137",
       "id": "paper:10.1177/070674379804300202",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:37+00:00",
+      "imported_path": "kb/paper_imports/suggestions_for_a_framework_for_an_empirically_based_classification_of_personality_disorder.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Suggestions for a framework for an empirically based classification of personality disorder",
+      "title": "Suggestions for a Framework for an Empirically Based Classification of Personality Disorder",
       "url": "https://doi.org/10.1177/070674379804300202",
-      "year": "1998"
+      "year": 1998
     },
     {
       "container_title": null,
@@ -3271,14 +3451,17 @@
       "doi": "10.1037/a0023743",
       "first_page": "620",
       "id": "paper:10.1037/a0023743",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:38+00:00",
+      "imported_path": "kb/paper_imports/a_random_walk_down_university_avenue_life_paths_life_events_and_personality_trait_change_at_the_transition_to_university.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "A random walk down University Avenue: Life paths, life events, and personality trait change at the transition to university life",
+      "title": "A random walk down university avenue: Life paths, life events, and personality trait change at the transition to university life.",
       "url": "https://doi.org/10.1037/a0023743",
-      "year": "2011"
+      "year": 2011
     },
     {
       "container_title": "Journal of Personality",
@@ -3289,14 +3472,17 @@
       "doi": "10.1111/j.1467-6494.1995.tb00505.x",
       "first_page": "525",
       "id": "paper:10.1111/j.1467-6494.1995.tb00505.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:38+00:00",
+      "imported_path": "kb/paper_imports/evolution_the_five_factor_model_and_levels_of_personality.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Evolution, the five-factor model, and levels of personality",
+      "title": "Evolution, the Five\u2010Factor Model, and Levels of Personality",
       "url": "https://doi.org/10.1111/j.1467-6494.1995.tb00505.x",
-      "year": "2006"
+      "year": 1995
     },
     {
       "container_title": "Developmental Psychology",
@@ -3307,14 +3493,17 @@
       "doi": "10.1037/a0030583",
       "first_page": "1442",
       "id": "paper:10.1037/a0030583",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:39+00:00",
+      "imported_path": "kb/paper_imports/theory_driven_intervention_for_changing_personality_expectancy_value_theory_behavioral_activation_and_conscientiousness.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Theory-driven intervention for changing personality: Expectancy Value Theory, behavioral activation, and Conscientiousness",
+      "title": "Theory-driven intervention for changing personality: Expectancy value theory, behavioral activation, and conscientiousness.",
       "url": "https://doi.org/10.1037/a0030583",
-      "year": "2014"
+      "year": 2014
     },
     {
       "container_title": "Psychological Medicine",
@@ -3325,14 +3514,17 @@
       "doi": "10.1017/S0033291709990183",
       "first_page": "273",
       "id": "paper:10.1017/s0033291709990183",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:39+00:00",
+      "imported_path": "kb/paper_imports/modeling_psychopathology_structure_a_symptom_level_analysis_of_axis_i_and_ii_disorders.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Modeling psychopathology structure: A symptom-level analysis of Axis I and II disorders",
-      "url": "https://doi.org/10.1017/S0033291709990183",
-      "year": "2010"
+      "title": "Modeling psychopathology structure: a symptom-level analysis of Axis I and II disorders",
+      "url": "https://doi.org/10.1017/s0033291709990183",
+      "year": 2010
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -3343,14 +3535,17 @@
       "doi": "10.1037/0022-3514.88.1.139",
       "first_page": "139",
       "id": "paper:10.1037/0022-3514.88.1.139",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:40+00:00",
+      "imported_path": "kb/paper_imports/delineating_the_structure_of_normal_and_abnormal_personality_an_integrative_hierarchical_approach.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Delineating the structure of normal and abnormal personality: An integrative hierarchical approach",
+      "title": "Delineating the Structure of Normal and Abnormal Personality: An Integrative Hierarchical Approach.",
       "url": "https://doi.org/10.1037/0022-3514.88.1.139",
-      "year": "2005"
+      "year": 2005
     },
     {
       "container_title": "Annual Review of Psychology",
@@ -3361,14 +3556,17 @@
       "doi": "10.1146/annurev.psych.59.103006.093646",
       "first_page": "507",
       "id": "paper:10.1146/annurev.psych.59.103006.093646",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:40+00:00",
+      "imported_path": "kb/paper_imports/human_abilities_emotional_intelligence.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Human abilities: Emotional intelligence",
+      "title": "Human Abilities: Emotional Intelligence",
       "url": "https://doi.org/10.1146/annurev.psych.59.103006.093646",
-      "year": "2008"
+      "year": 2008
     },
     {
       "container_title": "American Psychologist",
@@ -3380,14 +3578,17 @@
       "doi": "10.1037/0003-066X.61.3.204",
       "first_page": "204",
       "id": "paper:10.1037/0003-066x.61.3.204",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:41+00:00",
+      "imported_path": "kb/paper_imports/a_new_big_five_fundamental_principles_for_an_integrative_science_of_personality.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "A new Big Five: Fundamental principles for an integrative science of personality",
-      "url": "https://doi.org/10.1037/0003-066X.61.3.204",
-      "year": "2006"
+      "title": "A new Big Five: Fundamental principles for an integrative science of personality.",
+      "url": "https://doi.org/10.1037/0003-066x.61.3.204",
+      "year": 2006
     },
     {
       "container_title": "Psychological Science",
@@ -3399,14 +3600,17 @@
       "doi": "10.1177/0956797612444904",
       "first_page": "1498",
       "id": "paper:10.1177/0956797612444904",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:41+00:00",
+      "imported_path": "kb/paper_imports/what_is_extraversion_for_integrating_trait_and_motivational_perspectives_and_identifying_the_purpose_of_extraversion.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "What is extraversion for? Integrating trait and motivational perspectives and identifying the purpose of extraversion",
+      "title": "What Is Extraversion For? Integrating Trait and Motivational Perspectives and Identifying the Purpose of Extraversion",
       "url": "https://doi.org/10.1177/0956797612444904",
-      "year": "2012"
+      "year": 2012
     },
     {
       "container_title": "Journal of Personality and Social Psychology",
@@ -3418,14 +3622,17 @@
       "doi": "10.1037/0022-3514.52.6.1258",
       "first_page": "1258",
       "id": "paper:10.1037/0022-3514.52.6.1258",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:42+00:00",
+      "imported_path": "kb/paper_imports/creativity_divergent_thinking_and_openness_to_experience.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Creativity, divergent thinking, and Openness to Experience",
+      "title": "Creativity, divergent thinking, and openness to experience.",
       "url": "https://doi.org/10.1037/0022-3514.52.6.1258",
-      "year": "1987"
+      "year": 1987
     },
     {
       "container_title": null,
@@ -3454,14 +3661,17 @@
       "doi": "10.1037/0022-3514.95.2.442",
       "first_page": "442",
       "id": "paper:10.1037/0022-3514.95.2.442",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:42+00:00",
+      "imported_path": "kb/paper_imports/substance_and_artifact_in_the_higher_order_factors_of_the_big_five.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Substance and artifact in the higher-order factors of the big five",
+      "title": "Substance and artifact in the higher-order factors of the Big Five.",
       "url": "https://doi.org/10.1037/0022-3514.95.2.442",
-      "year": "2008"
+      "year": 2008
     },
     {
       "container_title": "Journal of Research in Personality",
@@ -3472,14 +3682,17 @@
       "doi": "10.1016/j.jrp.2005.05.002",
       "first_page": "551",
       "id": "paper:10.1016/j.jrp.2005.05.002",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:43+00:00",
+      "imported_path": "kb/paper_imports/personal_projects_life_stories_and_happiness_on_being_true_to_traits.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Personal projects, life stories, and happiness: On being true to traits",
       "url": "https://doi.org/10.1016/j.jrp.2005.05.002",
-      "year": "2006"
+      "year": 2006
     },
     {
       "container_title": "Neurobiology of Learning and Memory",
@@ -3490,14 +3703,17 @@
       "doi": "10.1016/j.nlm.2013.09.014",
       "first_page": "185",
       "id": "paper:10.1016/j.nlm.2013.09.014",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:43+00:00",
+      "imported_path": "kb/paper_imports/associations_and_propositions_the_case_for_a_dual_process_account_of_learning_in_humans.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Associations and propositions: The case for a dual-process account of learning in humans",
       "url": "https://doi.org/10.1016/j.nlm.2013.09.014",
-      "year": "2013"
+      "year": 2014
     },
     {
       "container_title": "Psychological Science",
@@ -3508,14 +3724,17 @@
       "doi": "10.1111/j.1467-9280.2006.01676.x",
       "first_page": "136",
       "id": "paper:10.1111/j.1467-9280.2006.01676.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:44+00:00",
+      "imported_path": "kb/paper_imports/turning_the_other_cheek.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Turning the other cheek: Agreeableness and the regulation of aggression-related primes",
+      "title": "Turning the Other Cheek",
       "url": "https://doi.org/10.1111/j.1467-9280.2006.01676.x",
-      "year": "2006"
+      "year": 2006
     },
     {
       "container_title": "Psychological Review",
@@ -3528,14 +3747,17 @@
       "doi": "10.1037/0033-295X.102.2.246",
       "first_page": "246",
       "id": "paper:10.1037/0033-295x.102.2.246",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:44+00:00",
+      "imported_path": "kb/paper_imports/a_cognitive_affective_system_theory_of_personality_reconceptualizing_situations_dispositions_dynamics_and_invariance_in_.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "A cognitive\u2013affective system theory of personality: Reconceptualizing situations, dispositions, dynamics, and invariance in personality structure",
-      "url": "https://doi.org/10.1037/0033-295X.102.2.246",
-      "year": "1995"
+      "title": "A cognitive-affective system theory of personality: Reconceptualizing situations, dispositions, dynamics, and invariance in personality structure.",
+      "url": "https://doi.org/10.1037/0033-295x.102.2.246",
+      "year": 1995
     },
     {
       "container_title": null,
@@ -3556,7 +3778,7 @@
       "year": "2008"
     },
     {
-      "container_title": "Proceedings of the National Academy of Science of the United States of America",
+      "container_title": "Proceedings of the National Academy of Sciences",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -3564,17 +3786,20 @@
       "doi": "10.1073/pnas.0408457102",
       "first_page": "16502",
       "id": "paper:10.1073/pnas.0408457102",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:45+00:00",
+      "imported_path": "kb/paper_imports/personality_predicts_activity_in_reward_and_emotional_regions_associated_with_humor.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Personality predicts activity in reward and emotional regions associated with humor",
       "url": "https://doi.org/10.1073/pnas.0408457102",
-      "year": "2005"
+      "year": 2005
     },
     {
-      "container_title": "Cognition & Emotion",
+      "container_title": "Cognition and Emotion",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -3582,14 +3807,17 @@
       "doi": "10.1080/02699930902978436",
       "first_page": "741",
       "id": "paper:10.1080/02699930902978436",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:45+00:00",
+      "imported_path": "kb/paper_imports/cognitive_sources_of_evidence_for_neuroticism_s_link_to_punishment_reactivity_processes.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Cognitive sources of evidence for Neuroticism\u2019s link to punishment-reactivity processes",
+      "title": "Cognitive sources of evidence for neuroticism's link to punishment-reactivity processes",
       "url": "https://doi.org/10.1080/02699930902978436",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Current Directions in Psychological Science",
@@ -3600,17 +3828,20 @@
       "doi": "10.1111/j.1467-8721.2009.01619.x",
       "first_page": "112",
       "id": "paper:10.1111/j.1467-8721.2009.01619.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:46+00:00",
+      "imported_path": "kb/paper_imports/the_new_person_specific_paradigm_in_psychology.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The new person-specific paradigm in psychology",
+      "title": "The New Person-Specific Paradigm in Psychology",
       "url": "https://doi.org/10.1111/j.1467-8721.2009.01619.x",
-      "year": "2009"
+      "year": 2009
     },
     {
-      "container_title": "Human Molecular Genetics, Review Issue",
+      "container_title": "Human Molecular Genetics",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
@@ -3618,14 +3849,17 @@
       "doi": "10.1093/hmg/ddi114",
       "first_page": "R47",
       "id": "paper:10.1093/hmg/ddi114",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:46+00:00",
+      "imported_path": "kb/paper_imports/epigenetic_reprogramming_in_mammals.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Epigenetic reprogramming in mammals",
       "url": "https://doi.org/10.1093/hmg/ddi114",
-      "year": "2005"
+      "year": 2005
     },
     {
       "container_title": "Journal of Research in Personality",
@@ -3636,14 +3870,17 @@
       "doi": "10.1016/j.jrp.2004.09.004",
       "first_page": "130",
       "id": "paper:10.1016/j.jrp.2004.09.004",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:47+00:00",
+      "imported_path": "kb/paper_imports/robust_predictors_of_flux_pulse_and_spin.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Robust predictors of flux, pulse, and spin",
       "url": "https://doi.org/10.1016/j.jrp.2004.09.004",
-      "year": "2005"
+      "year": 2005
     },
     {
       "container_title": "American Psychologist",
@@ -3654,14 +3891,17 @@
       "doi": "10.1037/0003-066X.61.6.622",
       "first_page": "622",
       "id": "paper:10.1037/0003-066x.61.6.622",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:47+00:00",
+      "imported_path": "kb/paper_imports/the_evolution_of_personality_variation_in_humans_and_other_animals.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The evolution of personality variation in humans and other animals",
-      "url": "https://doi.org/10.1037/0003-066X.61.6.622",
-      "year": "2006"
+      "title": "The evolution of personality variation in humans and other animals.",
+      "url": "https://doi.org/10.1037/0003-066x.61.6.622",
+      "year": 2006
     },
     {
       "container_title": null,
@@ -3690,14 +3930,17 @@
       "doi": "10.1002/per.672",
       "first_page": "323",
       "id": "paper:10.1002/per.672",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:48+00:00",
+      "imported_path": "kb/paper_imports/agreeableness_is_related_to_social_cognitive_but_not_social_perceptual_theory_of_mind.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Agreeableness is related to social-cognitive, but not social\u2013perceptual, theory of mind",
+      "title": "Agreeableness is related to social\u2010cognitive, but not social\u2010perceptual, theory of mind",
       "url": "https://doi.org/10.1002/per.672",
-      "year": "2008"
+      "year": 2008
     },
     {
       "container_title": null,
@@ -3726,14 +3969,17 @@
       "doi": "10.1037/0022-3514.93.1.116",
       "first_page": "116",
       "id": "paper:10.1037/0022-3514.93.1.116",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:48+00:00",
+      "imported_path": "kb/paper_imports/personality_predictors_of_academic_outcomes_big_five_correlates_of_gpa_and_sat_scores.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personality predictors of academic outcomes: Big five correlates of GPA and SAT scores",
+      "title": "Personality predictors of academic outcomes: Big five correlates of GPA and SAT scores.",
       "url": "https://doi.org/10.1037/0022-3514.93.1.116",
-      "year": "2007"
+      "year": 2007
     },
     {
       "container_title": null,
@@ -3762,14 +4008,17 @@
       "doi": "10.1111/j.1467-6494.2011.00718.x",
       "first_page": "1043",
       "id": "paper:10.1111/j.1467-6494.2011.00718.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:49+00:00",
+      "imported_path": "kb/paper_imports/an_experiential_thinking_style_its_facets_and_relations_with_objective_and_subjective_criterion_measures.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "An experiential thinking style: Its facets and relations with objective and subjective criterion measures",
+      "title": "An Experiential Thinking Style: Its Facets and Relations With Objective and Subjective Criterion Measures",
       "url": "https://doi.org/10.1111/j.1467-6494.2011.00718.x",
-      "year": "2011"
+      "year": 2011
     },
     {
       "container_title": "Developmental Review",
@@ -3780,14 +4029,17 @@
       "doi": "10.1016/j.dr.2005.10.004",
       "first_page": "351",
       "id": "paper:10.1016/j.dr.2005.10.004",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:49+00:00",
+      "imported_path": "kb/paper_imports/the_emergence_of_personality_dynamic_foundations_of_individual_variation.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "The emergence of personality: Dynamic foundations of individual variation",
+      "title": "The emergence of personality: Dynamic foundations of individual variation\u2606",
       "url": "https://doi.org/10.1016/j.dr.2005.10.004",
-      "year": "2005"
+      "year": 2005
     },
     {
       "container_title": "Personality and Individual Differences",
@@ -3798,14 +4050,17 @@
       "doi": "10.1016/j.paid.2004.11.003",
       "first_page": "1689",
       "id": "paper:10.1016/j.paid.2004.11.003",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:50+00:00",
+      "imported_path": "kb/paper_imports/engagement_and_self_control_superordinate_dimensions_of_big_five_traits.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Engagement and Self-Control: Superordinate dimensions of Big Five traits",
       "url": "https://doi.org/10.1016/j.paid.2004.11.003",
-      "year": "2005"
+      "year": 2005
     },
     {
       "container_title": "NeuroReport",
@@ -3816,14 +4071,17 @@
       "doi": "10.1097/01.wnr.0000186596.64458.76",
       "first_page": "1905",
       "id": "paper:10.1097/01.wnr.0000186596.64458.76",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:50+00:00",
+      "imported_path": "kb/paper_imports/amygdala_gray_matter_concentration_is_associated_with_extraversion_and_neuroticism.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Amygdala gray matter concentration is associated with extraversion and neuroticism",
       "url": "https://doi.org/10.1097/01.wnr.0000186596.64458.76",
-      "year": "2005"
+      "year": 2005
     },
     {
       "container_title": null,
@@ -3852,14 +4110,17 @@
       "doi": "10.1146/annurev.psych.57.102904.190127",
       "first_page": "201",
       "id": "paper:10.1146/annurev.psych.57.102904.190127",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:50+00:00",
+      "imported_path": "kb/paper_imports/personality_and_the_prediction_of_consequential_outcomes.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Personality and the prediction of consequential outcomes",
+      "title": "Personality and the Prediction of Consequential Outcomes",
       "url": "https://doi.org/10.1146/annurev.psych.57.102904.190127",
-      "year": "2006"
+      "year": 2006
     },
     {
       "container_title": "European Journal of Personality",
@@ -3870,14 +4131,17 @@
       "doi": "10.1002/per.629",
       "first_page": "549",
       "id": "paper:10.1002/per.629",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:51+00:00",
+      "imported_path": "kb/paper_imports/the_evolutionary_genetics_of_personality.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "The evolutionary genetics of personality",
       "url": "https://doi.org/10.1002/per.629",
-      "year": "2007"
+      "year": 2007
     },
     {
       "container_title": "Psychological Inquiry",
@@ -3889,14 +4153,17 @@
       "doi": "10.1207/s15327965pli0502_1",
       "first_page": "103",
       "id": "paper:10.1207/s15327965pli0502_1",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:51+00:00",
+      "imported_path": "kb/paper_imports/a_critical_analysis_of_current_trait_theory.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "A critical analysis of current trait theory",
+      "title": "A Critical Analysis of Current Trait Theory",
       "url": "https://doi.org/10.1207/s15327965pli0502_1",
-      "year": "1994"
+      "year": 1994
     },
     {
       "container_title": null,
@@ -3943,14 +4210,17 @@
       "doi": "10.1016/S0092-6566(02)00569-X",
       "first_page": "205",
       "id": "paper:10.1016/s0092-6566(02)00569-x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:52+00:00",
+      "imported_path": "kb/paper_imports/self_deception_and_failure_to_modulate_responses_despite_accruing_evidence_of_error.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Self-deception and failure to modulate responses despite accruing evidence of error",
-      "url": "https://doi.org/10.1016/S0092-6566(02)00569-X",
-      "year": "2003"
+      "url": "https://doi.org/10.1016/s0092-6566(02)00569-x",
+      "year": 2003
     },
     {
       "container_title": "Personality and Individual Differences",
@@ -3961,14 +4231,17 @@
       "doi": "10.1016/S0191-8869(01)00158-1",
       "first_page": "327",
       "id": "paper:10.1016/s0191-8869(01)00158-1",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:53+00:00",
+      "imported_path": "kb/paper_imports/self_deception_and_impaired_categorization_of_anomaly.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Self-deception and impaired categorization of anomaly",
-      "url": "https://doi.org/10.1016/S0191-8869(01)00158-1",
-      "year": "2002"
+      "url": "https://doi.org/10.1016/s0191-8869(01)00158-1",
+      "year": 2002
     },
     {
       "container_title": "Cortex",
@@ -3979,14 +4252,17 @@
       "doi": "10.1016/S0010-9452(08)70680-4",
       "first_page": "429",
       "id": "paper:10.1016/s0010-9452(08)70680-4",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:53+00:00",
+      "imported_path": "kb/paper_imports/complexity_management_theory_motivation_for_ideological_rigidity_and_social_conflict.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Complexity management theory: Motivation for ideological rigidity and social conflict",
-      "url": "https://doi.org/10.1016/S0010-9452(08)70680-4",
-      "year": "2002"
+      "title": "Complexity Management Theory: Motivation for Ideological Rigidity and Social Conflict",
+      "url": "https://doi.org/10.1016/s0010-9452(08)70680-4",
+      "year": 2002
     },
     {
       "container_title": "Psychological Assessment",
@@ -3997,14 +4273,17 @@
       "doi": "10.1037/a0035587",
       "first_page": null,
       "id": "paper:10.1037/a0035587",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:54+00:00",
+      "imported_path": "kb/paper_imports/do_maladaptive_behaviors_exist_at_one_or_both_ends_of_personality_traits.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Do maladaptive behaviors exist at one or both ends of personality traits?",
       "url": "https://doi.org/10.1037/a0035587",
-      "year": "2014"
+      "year": 2014
     },
     {
       "container_title": null,
@@ -4069,14 +4348,17 @@
       "doi": "10.1016/j.tics.2012.04.002",
       "first_page": "285",
       "id": "paper:10.1016/j.tics.2012.04.002",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:54+00:00",
+      "imported_path": "kb/paper_imports/understanding_all_inconsistency_compensation_as_a_palliative_response_to_violated_expectations.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Understanding all inconsistency compensation as a palliative response to violated expectations",
       "url": "https://doi.org/10.1016/j.tics.2012.04.002",
-      "year": "2012"
+      "year": 2012
     },
     {
       "container_title": "Journal of Personality Assessment",
@@ -4087,14 +4369,17 @@
       "doi": "10.1080/00223891.2013.834440",
       "first_page": "87",
       "id": "paper:10.1080/00223891.2013.834440",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:55+00:00",
+      "imported_path": "kb/paper_imports/extraversion_and_behavioral_activation_integrating_the_components_of_approach.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Extraversion and behavioural activation: Integrating the components of approach",
+      "title": "Extraversion and Behavioral Activation: Integrating the Components of Approach",
       "url": "https://doi.org/10.1080/00223891.2013.834440",
-      "year": "2014"
+      "year": 2014
     },
     {
       "container_title": "NeuroReport",
@@ -4105,14 +4390,17 @@
       "doi": "10.1097/01.wnr.0000186599.66243.50",
       "first_page": "1909",
       "id": "paper:10.1097/01.wnr.0000186599.66243.50",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:55+00:00",
+      "imported_path": "kb/paper_imports/orbitofrontal_thickness_retention_of_fear_extinction_and_extraversion.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "Orbitofrontal thickness, retention of fear extinction, and extraversion",
       "url": "https://doi.org/10.1097/01.wnr.0000186599.66243.50",
-      "year": "2005"
+      "year": 2005
     },
     {
       "container_title": "Psychological Review",
@@ -4124,14 +4412,17 @@
       "doi": "10.1037/a0018131",
       "first_page": "61",
       "id": "paper:10.1037/a0018131",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:55+00:00",
+      "imported_path": "kb/paper_imports/a_neural_network_model_of_the_structure_and_dynamics_of_human_personality.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "A neural network model of the structure and dynamics of human personality",
+      "title": "A neural network model of the structure and dynamics of human personality.",
       "url": "https://doi.org/10.1037/a0018131",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Journal of Research in Personality",
@@ -4142,14 +4433,17 @@
       "doi": "10.1016/j.jrp.2013.04.012",
       "first_page": "493",
       "id": "paper:10.1016/j.jrp.2013.04.012",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:56+00:00",
+      "imported_path": "kb/paper_imports/the_general_factor_of_personality_a_general_critique.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
       "title": "The general factor of personality: A general critique",
       "url": "https://doi.org/10.1016/j.jrp.2013.04.012",
-      "year": "2013"
+      "year": 2013
     },
     {
       "container_title": "Journal of Personality",
@@ -4160,14 +4454,17 @@
       "doi": "10.1111/j.1467-6494.1997.tb00324.x",
       "first_page": "449",
       "id": "paper:10.1111/j.1467-6494.1997.tb00324.x",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:56+00:00",
+      "imported_path": "kb/paper_imports/genetic_and_environmental_influences_on_personality_a_study_of_twins_reared_together_using_the_self_and_peer_report_neo_.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Genetic and environmental influences on personality: A study of twins reared together using the self- and peer report NEO-FFI scales",
+      "title": "Genetic and Environmental Influences on Personality: A Study of Twins Reared Together Using the Self\u2010 and Peer Report NEO\u2010FFI Scales",
       "url": "https://doi.org/10.1111/j.1467-6494.1997.tb00324.x",
-      "year": "1997"
+      "year": 1997
     },
     {
       "container_title": "European Journal of Personality",
@@ -4178,14 +4475,17 @@
       "doi": "10.1002/per.760",
       "first_page": "258",
       "id": "paper:10.1002/per.760",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-02T16:07:57+00:00",
+      "imported_path": "kb/paper_imports/construct_validation_using_multitrait_multimethod_twin_data_the_case_of_a_general_factor_of_personality.md",
       "kind": "paper_reference",
-      "notes": [],
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed."
+      ],
       "priority": "normal",
-      "title": "Construct validation using multitrait\u2013multimethod-twin data: The case of a general factor of personality",
+      "title": "Construct validation using multitrait\u2010multimethod\u2010twin data: The case of a general factor of personality",
       "url": "https://doi.org/10.1002/per.760",
-      "year": "2010"
+      "year": 2010
     },
     {
       "container_title": "Journal of Personality",
@@ -64453,11 +64753,13 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:ancient_egypt",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:01:37+00:00",
+      "imported_path": "kb/wiki_imports/ancient_egypt.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Ancient Egypt",
@@ -64471,16 +64773,18 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:ancient_greeks",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:01:49+00:00",
+      "imported_path": "kb/wiki_imports/ancient_greece.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Ancient Greeks",
-      "title": "Ancient Greeks",
-      "url": "https://en.wikipedia.org/wiki/Ancient_Greeks"
+      "title": "Ancient Greece",
+      "url": "https://en.wikipedia.org/wiki/Ancient_Greece"
     },
     {
       "created_at": "2026-07-01T10:43:11+00:00",
@@ -64489,16 +64793,18 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:ancient_romans",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:02:01+00:00",
+      "imported_path": "kb/wiki_imports/roman_people.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Ancient Romans",
-      "title": "Ancient Romans",
-      "url": "https://en.wikipedia.org/wiki/Ancient_Romans"
+      "title": "Roman people",
+      "url": "https://en.wikipedia.org/wiki/Roman_people"
     },
     {
       "created_at": "2026-07-01T10:43:11+00:00",
@@ -64507,11 +64813,13 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:ancient_rome",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:02:14+00:00",
+      "imported_path": "kb/wiki_imports/ancient_rome.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Ancient Rome",
@@ -64525,11 +64833,13 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:animism",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:02:26+00:00",
+      "imported_path": "kb/wiki_imports/animism.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Animism",
@@ -64543,11 +64853,13 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:anna_freud",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:02:38+00:00",
+      "imported_path": "kb/wiki_imports/anna_freud.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Anna Freud",
@@ -64561,11 +64873,13 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:anthrozoology",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:02:50+00:00",
+      "imported_path": "kb/wiki_imports/anthrozoology.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Anthrozoology",
@@ -64579,11 +64893,13 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:2021_facebook_leak",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:03:02+00:00",
+      "imported_path": "kb/wiki_imports/2021_facebook_leak.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "2021 Facebook leak",
@@ -64597,11 +64913,13 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:achenbach_system_of_empirically_based_assessment",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:03:15+00:00",
+      "imported_path": "kb/wiki_imports/achenbach_system_of_empirically_based_assessment.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Achenbach System of Empirically Based Assessment",
@@ -64615,16 +64933,18 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:allied_health_professions",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:03:27+00:00",
+      "imported_path": "kb/wiki_imports/allied_health_professionals.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Allied health professions",
-      "title": "Allied health professions",
-      "url": "https://en.wikipedia.org/wiki/Allied_health_professions"
+      "title": "Allied health professionals",
+      "url": "https://en.wikipedia.org/wiki/Allied_health_professionals"
     },
     {
       "created_at": "2026-07-01T10:43:20+00:00",
@@ -64633,11 +64953,13 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:american_board_of_professional_psychology",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:03:40+00:00",
+      "imported_path": "kb/wiki_imports/american_board_of_professional_psychology.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "American Board of Professional Psychology",
@@ -64651,16 +64973,18 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:anesthesia_technician",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:03:52+00:00",
+      "imported_path": "kb/wiki_imports/anesthetic_technician.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Anesthesia technician",
-      "title": "Anesthesia technician",
-      "url": "https://en.wikipedia.org/wiki/Anesthesia_technician"
+      "title": "Anesthetic technician",
+      "url": "https://en.wikipedia.org/wiki/Anesthetic_technician"
     },
     {
       "created_at": "2026-07-01T10:43:20+00:00",
@@ -64669,16 +64993,18 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:anxiety_disorders",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:04:04+00:00",
+      "imported_path": "kb/wiki_imports/anxiety_disorder.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Anxiety disorders",
-      "title": "Anxiety disorders",
-      "url": "https://en.wikipedia.org/wiki/Anxiety_disorders"
+      "title": "Anxiety disorder",
+      "url": "https://en.wikipedia.org/wiki/Anxiety_disorder"
     },
     {
       "created_at": "2026-07-01T10:43:20+00:00",
@@ -64687,11 +65013,13 @@
       ],
       "domain": "contraindications_uncertainty",
       "id": "wikipedia:aquatic_therapy",
-      "imported": false,
-      "imported_path": null,
-      "kind": "wikipedia_linked_article",
+      "imported": true,
+      "imported_at": "2026-07-02T16:04:16+00:00",
+      "imported_path": "kb/wiki_imports/aquatic_therapy.md",
+      "kind": "wikipedia_article",
       "notes": [
-        "Discovered from imported Wikipedia article links."
+        "Discovered from imported Wikipedia article links.",
+        "Imported queued linked Wikipedia summary; full article not imported by default."
       ],
       "priority": "background",
       "term": "Aquatic therapy",

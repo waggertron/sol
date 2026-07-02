@@ -2,7 +2,7 @@
 
 ## Matched Term
 
-Anxiety or fear-related disorders
+Anxiety disorders
 
 ## Domain
 
