@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Anti-social behaviour
+Anti-social behavior
 
 ## Domain
 
-stable_trait_tendencies
+contraindications_uncertainty
 
 ## Source
 

@@ -2,7 +2,7 @@
 
 ## Matched Term
 
-Construct validity
+Intrinsic validity
 
 ## Domain
 

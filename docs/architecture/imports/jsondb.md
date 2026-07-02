@@ -88,10 +88,19 @@ Queued paper DOI references can be imported as metadata-only cards under
 `kb/paper_imports/`. These cards intentionally omit full paper text and
 abstracts until a human review promotes the source into a source card.
 
-Recent queue ingestion imported 642 queued Wikipedia records and 25 paper
-metadata cards across the latest runs. A fast Wikipedia retry hit `HTTP 429`
-rate limiting; later slow runs at one request every 12 seconds imported 622
-additional queued records without rate limiting.
+Current queue snapshot:
+
+- 1,324 imported queue records with `kind: wikipedia_article`
+- 14 pending `wikipedia_linked_article` records
+- 7 pending `wikipedia_term` records
+- 25 imported paper metadata cards
+- 1,904 pending `paper_reference` records
+- 7 rejected Wikipedia mappings tracked in `wiki_import_review.json`
+
+The latest slow serialized queue drains at one request every 12 seconds
+imported 1,200 queued Wikipedia records without rate limiting. That completed
+the current `wikipedia_article` backlog; what remains now is mostly review of a
+small tail of linked or search-derived candidates.
 
 ## Wikimedia Rate Policy
 

@@ -17,18 +17,19 @@ assessment instruments as the first administrable flow.
 
 ## Current Corpus
 
-- RAG index: 7,057 chunks
+- RAG index: 11,676 chunks
 - Base source registry: 13 sources
 - Adjacent source registry: 34 sources
 - Source cards: 13 Markdown cards
-- Wikipedia summary imports: 695 background cards
+- Wikipedia summary imports: 1,248 background cards
 - Paper metadata imports: 25 background cards
 - Import queue: 3,373 total queue entries
-- Imported queue entries: 841
+- Imported queue entries: 1,441
 - Pending paper references: 1,904
-- Pending linked Wikipedia articles: 614
+- Pending linked Wikipedia articles: 14
+- Pending direct Wikipedia term matches: 7
 - Rejected Wikipedia mappings: 7
-- Queued Wikipedia retry notes from latest rate limit: 2
+- Queued Wikipedia retry notes from latest rate limit: 0
 
 ## Assessment Area
 
@@ -82,6 +83,9 @@ Current queue ingestion support:
 - Wikipedia queue imports checkpoint `jsondb/import_queue.json` after each
   attempted item so interrupted long runs do not leave generated files and queue
   records out of sync.
+- All current `wikipedia_article` queue records have been imported. Remaining
+  Wikipedia backlog is now mostly review work on a small number of linked or
+  search-derived candidates rather than another large queue drain.
 
 Paper imports are metadata-only by default. Full paper text and abstracts are
 not imported without separate review.

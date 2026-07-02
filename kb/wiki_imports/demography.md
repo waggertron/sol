@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Demography
+Demographics
 
 ## Domain
 
-communication_linguistic_markers
+behavioral_regularities
 
 ## Source
 

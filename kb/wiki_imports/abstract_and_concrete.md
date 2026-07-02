@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Abstract and concrete
+Abstract object
 
 ## Domain
 
-communication_linguistic_markers
+values_and_goals
 
 ## Source
 

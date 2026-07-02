@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Action selector
+Action selection
 
 ## Domain
 
-aesthetic_creative_preferences
+behavioral_regularities
 
 ## Source
 

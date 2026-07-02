@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Aggression
+Aggressive
 
 ## Domain
 
-stable_trait_tendencies
+contraindications_uncertainty
 
 ## Source
 

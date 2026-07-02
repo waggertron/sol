@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Antipsychotic medication
+Antipsychotic
 
 ## Domain
 
-motivational_patterns
+contraindications_uncertainty
 
 ## Source
 

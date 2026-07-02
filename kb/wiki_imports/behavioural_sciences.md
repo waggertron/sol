@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Behavioural science
+Behavioral sciences
 
 ## Domain
 
-stable_trait_tendencies
+behavioral_regularities
 
 ## Source
 
@@ -19,8 +19,6 @@ https://en.wikipedia.org/wiki/Behavioural_sciences
 ## Summary
 
 Behavioural science is the branch of science concerned with theorizing on categorizing and judging human behaviour. It sits in the interstice between fields such as psychology, cognitive science, neuroscience, behavioral biology, behavioral genetics and social science. While the term can technically be applied to the study of behaviour amongst all living organisms, it is nearly always used with reference to humans as the primary target of investigation (though animals may be studied in some instances, e.g. invasive techniques).
-
-
 
 ## Import Policy
 

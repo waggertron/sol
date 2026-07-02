@@ -1,0 +1,36 @@
+# Wikipedia Import: Bias of an estimator
+
+## Matched Term
+
+Bias of an estimator
+
+## Domain
+
+contraindications_uncertainty
+
+## Source
+
+https://en.wikipedia.org/wiki/Bias_of_an_estimator
+
+## Description
+
+
+
+## Summary
+
+In statistics, the bias of an estimator (or bias function) is the difference between this estimator's expected value and the true value of the parameter being estimated. An estimator or decision rule with zero bias is called unbiased. In statistics, "bias" is an objective property of an estimator. Bias is a distinct concept from consistency: consistent estimators converge in probability to the true value of the parameter, but may be biased or unbiased (see bias versus consistency for more).
+All else being equal, an unbiased estimator is preferable to a biased estimator, although in practice, biased estimators (with generally small bias) are frequently used. When a biased estimator is used, bounds of the bias are calculated. A biased estimator may be used for various reasons: because an unbiased estimator does not exist without further assumptions about a population; because an estimator is difficult to compute (as in unbiased estimation of standard deviation); because a biased estimator may be unbiased with respect to different measures of central tendency; because a biased estimator gives a lower value of some loss function (particularly mean squared error) compared with unbiased estimators (notably in shrinkage estimators); or because in some cases being unbiased is too strong a condition, and the only unbiased estimators are not useful.
+Bias can also be measured with respect to the median, rather than the mean (expected value), in which case one distinguishes median-unbiased from the usual mean-unbiasedness property.
+Mean-unbiasedness is not preserved under non-linear transformations, though median-unbiasedness is (see § Effect of transformations); for example, the sample variance is a biased estimator for the population variance. These are all illustrated below.
+An unbiased estimator for a parameter need not always exist. For example, there is no unbiased estimator for the reciprocal of the parameter of a binomial random variable.
+
+## Import Policy
+
+This card imports the Wikipedia article summary, not the full article text.
+Wikipedia content is licensed under CC BY-SA; use the source URL for full
+attribution and further review before promoting article content into reviewed
+project knowledge.
+
+## Import Status
+
+Imported as background reference. Not a peer-reviewed source.

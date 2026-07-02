@@ -36,6 +36,37 @@
       "term": "Measurement error",
       "reason": "Wikipedia search resolved to a narrower observational-error article rather than the broader measurement-error concept needed here."
     }
+  ],
+  "follow_up_candidates": [
+    {
+      "article_id": "wikipedia:niosh_air_filtration_rating",
+      "term": "42 CFR Part 2",
+      "reason": "Queue import fallback resolved a US substance-use privacy regulation to an unrelated air-filtration article."
+    },
+    {
+      "article_id": "wikipedia:association_for_the_advancement_of_artificial_intelligence",
+      "term": "AI Magazine",
+      "reason": "Queue import fallback resolved a publication title to its parent organization; this is probably too broad for the intended concept."
+    },
+    {
+      "article_id": "wikipedia:harpercollins",
+      "term": "AMACOM",
+      "reason": "Queue import fallback resolved a publisher/imprint reference to a broader corporate publisher article."
+    },
+    {
+      "article_id": "wikipedia:wiley_publisher",
+      "term": "Bloomberg Press",
+      "reason": "Queue import fallback resolved a specific imprint reference to a broader publisher article."
+    },
+    {
+      "article_id": "wikipedia:witch_hunt",
+      "term": "Anne Lewellyn Barstow",
+      "reason": "Queue import fallback resolved an author name to a topic article rather than the person."
+    },
+    {
+      "article_id": "wikipedia:jos_fern_ndez_middle_distance_runner",
+      "term": "José Fernandez-Serrano",
+      "reason": "Queue import fallback resolved an author name to a different person with a similar name."
+    }
   ]
 }
-

@@ -1,0 +1,34 @@
+# Wikipedia Import: Cost
+
+## Matched Term
+
+Cost
+
+## Domain
+
+values_and_goals
+
+## Source
+
+https://en.wikipedia.org/wiki/Cost
+
+## Description
+
+
+
+## Summary
+
+Cost is the value of money that has been used up to produce something or deliver a service, and hence is not available for use anymore. In business, the cost may be one of acquisition, in which case the amount of money expended to acquire it is counted as cost. In this case, money is the input that is gone in order to acquire the thing. This acquisition cost may be the sum of the cost of production as incurred by the original producer, and further costs of transaction as incurred by the acquirer over and above the price paid to the producer. Usually, the price also includes a mark-up for profit over the cost of production.
+More generalized in the field of economics, cost is a metric that is totaling up as a result of a process or as a differential for the result of a decision.  Hence cost is the metric used in the standard modeling paradigm applied to economic processes.
+Costs (pl.) are often further described based on their timing or their applicability.
+
+## Import Policy
+
+This card imports the Wikipedia article summary, not the full article text.
+Wikipedia content is licensed under CC BY-SA; use the source URL for full
+attribution and further review before promoting article content into reviewed
+project knowledge.
+
+## Import Status
+
+Imported as background reference. Not a peer-reviewed source.

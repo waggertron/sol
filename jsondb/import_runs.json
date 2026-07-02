@@ -247,6 +247,26 @@
       },
       "timestamp": "2026-07-01T23:00:53+00:00",
       "type": "clean_notes"
+    },
+    {
+      "result": {
+        "candidates_checked": 600,
+        "candidates_planned": 600,
+        "errors": 0,
+        "linked_articles_added": 0,
+        "rate_limit_retry_after_seconds": null,
+        "stopped_after_rate_limit": false,
+        "summaries_imported": 600
+      },
+      "timestamp": "2026-07-02T04:49:37+00:00",
+      "type": "import_queued_wikipedia"
+    },
+    {
+      "result": {
+        "imported_items_cleaned": 0
+      },
+      "timestamp": "2026-07-02T04:49:50+00:00",
+      "type": "clean_notes"
     }
   ],
   "version": 1

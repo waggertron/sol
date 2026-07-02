@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Artificial neural network
+Artificial neural networks
 
 ## Domain
 
-stable_trait_tendencies
+behavioral_regularities
 
 ## Source
 

@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Avoidant
+Avoidant personality disorder
 
 ## Domain
 
-stable_trait_tendencies
+contraindications_uncertainty
 
 ## Source
 

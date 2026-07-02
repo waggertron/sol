@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Academic performance
+Academic success
 
 ## Domain
 
-stable_trait_tendencies
+motivational_patterns
 
 ## Source
 

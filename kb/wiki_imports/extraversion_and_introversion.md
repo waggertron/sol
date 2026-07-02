@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Introverted
+Extroversion
 
 ## Domain
 
-stable_trait_tendencies
+behavioral_regularities
 
 ## Source
 

@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Alan Turing
+Alan Said
 
 ## Domain
 
-communication_linguistic_markers
+behavioral_regularities
 
 ## Source
 

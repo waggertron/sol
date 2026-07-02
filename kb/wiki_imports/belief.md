@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Belief
+Beliefs
 
 ## Domain
 
-context_specific_states
+motivational_patterns
 
 ## Source
 

@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Attention deficit hyperactivity disorder
+ADHD
 
 ## Domain
 
-stable_trait_tendencies
+contraindications_uncertainty
 
 ## Source
 

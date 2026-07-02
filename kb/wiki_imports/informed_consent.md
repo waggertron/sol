@@ -2,7 +2,7 @@
 
 ## Matched Term
 
-Informed consent
+21CFR50.24
 
 ## Domain
 
@@ -28,8 +28,6 @@ Reasoning, the mental acuity to make the relevant inferences from, and mental ma
 Impairments to reasoning and judgment that may preclude informed consent include intellectual or emotional immaturity, high levels of stress such as post-traumatic stress disorder or a severe intellectual disability, severe mental disorder, intoxication, severe sleep deprivation, dementia, or coma.
 Obtaining informed consent is not always required. If an individual is considered unable to give informed consent, another person is generally authorized to give consent on the individual's  behalf—for example, the parents or legal guardians of a child (though in this circumstance the child may be required to provide informed assent) and conservators for the mentally disordered. Alternatively, the doctrine of implied consent permits treatment in limited cases, for example when an unconscious person will die without immediate intervention. Cases in which an individual is provided insufficient information to form a reasoned decision raise serious ethical issues. When these issues occur, or are anticipated to occur, in a clinical trial, they are subject to review by an ethics committee or institutional review board.
 Informed consent is codified in both national and international law. 'Free consent' is a cognate term in the International Covenant on Civil and Political Rights, adopted in 1966 by the United Nations, and intended to be in force by 23 March 1976. Article 7 of the covenant prohibits experiments conducted without the "free consent to medical or scientific experimentation" of the subject. As of September 2019, the covenant has 173 parties and six more signatories without ratification.
-
-
 
 ## Import Policy
 

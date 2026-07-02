@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Anterior cingulate cortex
+Anterior cingulate
 
 ## Domain
 
-stable_trait_tendencies
+motivational_patterns
 
 ## Source
 

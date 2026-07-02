@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Adjustment disorder
+Adjustment disorders
 
 ## Domain
 
-stable_trait_tendencies
+contraindications_uncertainty
 
 ## Source
 

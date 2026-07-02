@@ -63,7 +63,7 @@ then generate text and visual direction the user can evaluate.
 - `sources/adjacent_sources_v1.json` tracks 34 adjacent research sources.
 - `jsondb/import_queue.json` tracks 3,373 pending/imported/rejected research
   import candidates.
-- `kb/wiki_imports/` contains 695 background Wikipedia summary imports.
+- `kb/wiki_imports/` contains 1,248 background Wikipedia summary imports.
 - `kb/paper_imports/` contains 25 metadata-only paper imports from queued DOI
   references.
 - `assessments/ocean/` stores the current OCEAN assessment corpus: 11
@@ -78,7 +78,9 @@ then generate text and visual direction the user can evaluate.
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
   respected. Wikipedia import commands emit progress logs by default; use
   `--no-progress` only for quiet JSON-only runs. Queue imports checkpoint after
-  each attempted item.
+  each attempted item. Current state: all `wikipedia_article` queue records are
+  imported; the remaining Wikipedia backlog is a small review tail rather than
+  a large blind batch target.
 - `tools/import_ocean_assessments.py` normalizes downloaded official assessment
   pages into repo JSON.
 

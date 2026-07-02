@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Five factor model
+Big Five traits
 
 ## Domain
 
-aesthetic_creative_preferences
+behavioral_regularities
 
 ## Source
 

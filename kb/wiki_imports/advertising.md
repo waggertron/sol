@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Advertising
+Advertisement
 
 ## Domain
 
-aesthetic_creative_preferences
+motivational_patterns
 
 ## Source
 
