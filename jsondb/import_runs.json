@@ -290,6 +290,16 @@
       },
       "timestamp": "2026-07-02T16:07:57+00:00",
       "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1000,
+        "errors": 0,
+        "metadata_cards_imported": 1000,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T13:38:23+00:00",
+      "type": "import_paper_metadata"
     }
   ],
   "version": 1

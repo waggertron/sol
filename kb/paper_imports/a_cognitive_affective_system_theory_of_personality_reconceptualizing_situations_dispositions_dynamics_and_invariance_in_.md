@@ -10,10 +10,10 @@
 
 ## Queue Metadata
 
-- Queue id: `paper:10.1037/0033-295x.102.2.246`
-- Discovered from: deyoung_2015_cybernetic_big_five, fleeson_jayawickreme_2015_whole_trait, mcadams_2001_life_stories
+- Queue id: `paper:10.1037//0033-295x.102.2.246`
+- Discovered from: cervone_2005_personality_architecture, deci_ryan_2000_goal_pursuits
 - Reference count: 0
-- Crossref cited-by count: 2522
+- Crossref cited-by count: 2524
 
 ## Import Policy
 

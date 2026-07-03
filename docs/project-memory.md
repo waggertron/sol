@@ -64,7 +64,7 @@ then generate text and visual direction the user can evaluate.
 - `jsondb/import_queue.json` tracks 3,373 pending/imported/rejected research
   import candidates.
 - `kb/wiki_imports/` contains 1,261 background Wikipedia summary imports.
-- `kb/paper_imports/` contains 125 metadata-only paper imports from queued DOI
+- `kb/paper_imports/` contains 1,125 metadata-only paper imports from queued DOI
   references.
 - `assessments/ocean/` stores the current OCEAN assessment corpus: 11
   instruments, 186 scales, and 1,539 items.

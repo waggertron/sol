@@ -1,6 +1,6 @@
 # Current State
 
-Last updated: 2026-07-02
+Last updated: 2026-07-03
 
 ## Project Status
 
@@ -17,16 +17,16 @@ assessment instruments as the first administrable flow.
 
 ## Current Corpus
 
-- RAG index: 12,295 chunks
+- RAG index: 17,308 chunks
 - Base source registry: 13 sources
 - Adjacent source registry: 34 sources
 - Source cards: 13 Markdown cards
 - Wikipedia summary imports: 1,261 background cards
-- Paper metadata imports: 125 background cards
+- Paper metadata imports: 1,125 background cards
 - Import queue: 3,373 total queue entries
-- Imported queue entries: 1,555
-- Pending paper references: 1,804
-- Pending paper references with DOI: 1,506
+- Imported queue entries: 2,555
+- Pending paper references: 804
+- Pending paper references with DOI: 506
 - Pending title-only paper references: 298
 - Pending linked Wikipedia articles: 0
 - Pending direct Wikipedia term matches: 7

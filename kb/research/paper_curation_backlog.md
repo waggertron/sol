@@ -7,11 +7,11 @@ metadata-only paper cards.
 
 ## Current Queue Shape
 
-Snapshot after the latest metadata import run on 2026-07-02:
+Snapshot after the latest metadata import run on 2026-07-03:
 
-- imported paper metadata cards: 125
-- pending paper references: 1,804
-- pending DOI-backed references: 1,506
+- imported paper metadata cards: 1,125
+- pending paper references: 804
+- pending DOI-backed references: 506
 - pending title-only references: 298
 
 This means the next large automated batch can continue on DOI-backed Crossref

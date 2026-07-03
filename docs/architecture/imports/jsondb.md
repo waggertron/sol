@@ -93,9 +93,9 @@ Current queue snapshot:
 - 1,338 imported queue records with `kind: wikipedia_article` or
   `wikipedia_linked_article`
 - 7 pending `wikipedia_term` records
-- 125 imported paper metadata cards
-- 1,804 pending `paper_reference` records
-- 1,506 pending DOI-backed `paper_reference` records
+- 1,125 imported paper metadata cards
+- 804 pending `paper_reference` records
+- 506 pending DOI-backed `paper_reference` records
 - 298 pending title-only `paper_reference` records
 - 7 rejected Wikipedia mappings tracked in `wiki_import_review.json`
 
@@ -104,11 +104,11 @@ imported 1,214 queued Wikipedia records without rate limiting. That completed
 the current importable Wikipedia-article backlog; what remains now is the small
 set of direct term matches under manual review.
 
-Paper ingestion has now resumed. `import-paper-metadata` imported 100 new
-Crossref metadata cards in the latest bounded pass, bringing the paper corpus
-to 125 metadata-only cards. The current bottleneck is no longer DOI ingestion
-volume alone: the queue now has a distinct title-only tail that needs separate
-resolution.
+Paper ingestion is now deep into the DOI-backed backlog. The latest bounded
+batch imported 1,000 new Crossref metadata cards with no errors, bringing the
+paper corpus to 1,125 metadata-only cards. The remaining backlog is now split
+between 506 DOI-backed records and a title-only tail of 298 records that needs
+separate resolution.
 
 ## Wikimedia Rate Policy
 
