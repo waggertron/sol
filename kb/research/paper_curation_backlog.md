@@ -7,22 +7,22 @@ metadata-only paper cards.
 
 ## Current Queue Shape
 
-Snapshot after the latest metadata import run on 2026-07-03:
+Snapshot after the latest metadata import runs on 2026-07-03:
 
-- imported paper metadata cards: 1,125
-- pending paper references: 804
-- pending DOI-backed references: 506
-- pending title-only references: 298
+- imported paper metadata cards: 1,643
+- pending paper references: 286
+- pending DOI-backed references: 2
+- pending title-only references: 284
 
-This means the next large automated batch can continue on DOI-backed Crossref
-imports, while the title-only remainder needs a separate resolution workflow.
+This means the DOI-backed backlog is effectively exhausted. What remains is a
+small unresolved tail dominated by title-only references.
 
 ## Recommended Near-Term Flow
 
-1. Continue bounded `import-paper-metadata` batches against DOI-backed items.
-2. Periodically rebuild the RAG index after each large batch.
-3. Promote selected metadata cards into reviewed source cards in `kb/cards/`.
-4. Add a dedicated title-resolution path for `paper-title:*` queue items.
+1. Promote selected metadata cards into reviewed source cards in `kb/cards/`.
+2. Resolve the remaining title-only tail with a more reliable external lookup
+   path or manual review.
+3. Clean or manually resolve the two remaining DOI-backed records.
 
 ## Promotion Heuristics
 
@@ -38,5 +38,7 @@ Use these fields to choose which metadata-only cards to read and promote first:
 
 ## Current Constraint
 
-The importer can only automate queue items that already have DOIs. The
-title-only backlog now represents the main curation gap in the paper pipeline.
+The importer now supports Crossref title-search fallback, but the remaining
+title-only tail is still constrained by external lookup quality and network
+behavior. The unresolved remainder should be treated as a review queue, not a
+high-volume batch target.

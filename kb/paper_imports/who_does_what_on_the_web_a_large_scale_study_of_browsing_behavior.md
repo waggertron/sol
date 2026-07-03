@@ -10,8 +10,8 @@
 
 ## Queue Metadata
 
-- Queue id: `paper:10.1609/icwsm.v6i1.14266`
-- Discovered from: kosinski_2013_private_traits_digital_records
+- Queue id: `paper-title:who_does_what_on_the_web_a_large_scale_study_of_browsing_behavior`
+- Discovered from: olteanu_2019_social_data_biases
 - Reference count: 0
 - Crossref cited-by count: 16
 

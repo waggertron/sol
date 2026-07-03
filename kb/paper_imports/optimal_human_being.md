@@ -10,8 +10,8 @@
 
 ## Queue Metadata
 
-- Queue id: `paper:10.4324/9781410610973`
-- Discovered from: mcadams_pals_2006_new_big_five
+- Queue id: `paper-title:optimal_human_being_an_integrated_multilevel_perspective`
+- Discovered from: deyoung_2015_cybernetic_big_five
 - Reference count: 0
 - Crossref cited-by count: 142
 

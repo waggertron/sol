@@ -1,19 +1,19 @@
-# Paper Metadata Import: Computational Social Science
+# Paper Metadata Import: Computational social science
 
 ## Citation Metadata
 
-- Authors: David Lazer, Alex Pentland, Lada Adamic, Sinan Aral, Albert-László Barabási, Devon Brewer, Nicholas Christakis, Noshir Contractor, James Fowler, Myron Gutmann, Tony Jebara, Gary King, et al.
-- Year: 2009
-- Venue: Science
-- DOI: 10.1126/science.1167742
-- URL: https://doi.org/10.1126/science.1167742
+- Authors: Scott Counts, Munmun De Choudhury, Jana Diesner, Eric Gilbert, Marta Gonzalez, Brian Keegan, Mor Naaman, Hanna Wallach
+- Year: 2014
+- Venue: Proceedings of the companion publication of the 17th ACM conference on Computer supported cooperative work &amp; social computing
+- DOI: 10.1145/2556420.2556849
+- URL: https://doi.org/10.1145/2556420.2556849
 
 ## Queue Metadata
 
-- Queue id: `paper:10.1126/science.1167742`
-- Discovered from: kosinski_2013_private_traits_digital_records, lazer_2014_google_flu, olteanu_2019_social_data_biases
-- Reference count: 19
-- Crossref cited-by count: 2524
+- Queue id: `paper-title:computational_social_science_cscw_in_the_social_media_era`
+- Discovered from: olteanu_2019_social_data_biases
+- Reference count: 8
+- Crossref cited-by count: 11
 
 ## Import Policy
 

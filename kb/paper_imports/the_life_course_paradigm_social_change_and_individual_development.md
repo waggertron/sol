@@ -3,15 +3,15 @@
 ## Citation Metadata
 
 - Authors: Glen H. Elder
-- Year: 
+- Year: 1995
 - Venue: Examining lives in context: Perspectives on the ecology of human development.
 - DOI: 10.1037/10176-003
 - URL: https://doi.org/10.1037/10176-003
 
 ## Queue Metadata
 
-- Queue id: `paper:10.1037/10176-003`
-- Discovered from: mcadams_2001_life_stories
+- Queue id: `paper-title:the_life_course_paradigm_social_change_and_individual_development`
+- Discovered from: mcadams_pals_2006_new_big_five
 - Reference count: 0
 - Crossref cited-by count: 331
 

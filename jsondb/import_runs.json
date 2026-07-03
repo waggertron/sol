@@ -300,6 +300,144 @@
       },
       "timestamp": "2026-07-03T13:38:23+00:00",
       "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 506,
+        "errors": 3,
+        "metadata_cards_imported": 503,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T13:45:13+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 3,
+        "errors": 2,
+        "metadata_cards_imported": 1,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T13:46:21+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 300,
+        "errors": 300,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T13:48:02+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:07+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:09+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:11+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:13+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:15+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:16+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:18+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:20+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:21+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "candidates_checked": 1,
+        "errors": 1,
+        "metadata_cards_imported": 0,
+        "skipped": 0
+      },
+      "timestamp": "2026-07-03T18:20:23+00:00",
+      "type": "import_paper_metadata"
+    },
+    {
+      "result": {
+        "files_deleted": 1,
+        "queue_items_updated": 14
+      },
+      "timestamp": "2026-07-03T18:21:55+00:00",
+      "type": "apply_wiki_review"
     }
   ],
   "version": 1

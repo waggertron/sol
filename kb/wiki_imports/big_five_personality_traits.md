@@ -2,11 +2,11 @@
 
 ## Matched Term
 
-Big Five traits
+Five-Factor Model of personality
 
 ## Domain
 
-behavioral_regularities
+stable_trait_tendencies
 
 ## Source
 

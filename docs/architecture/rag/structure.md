@@ -51,7 +51,7 @@ from the Markdown/JSON corpus:
 python3 tools/rag.py index
 ```
 
-Current index snapshot: 17,308 chunks. Treat this as a rebuildable state marker,
+Current index snapshot: 20,600 chunks. Treat this as a rebuildable state marker,
 not a durable contract.
 
 ## Retrieval Tool

@@ -10,7 +10,7 @@
 
 ## Queue Metadata
 
-- Queue id: `paper:10.1037/0022-3514.72.1.218`
+- Queue id: `paper-title:integrating_the_classic_and_contemporary_approaches_to_achievement_motivation_a_hierarchical_model_of_approach_and_avoid`
 - Discovered from: elliot_thrash_2002_approach_avoidance
 - Reference count: 0
 - Crossref cited-by count: 2265

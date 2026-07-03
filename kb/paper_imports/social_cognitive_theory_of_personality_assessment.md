@@ -10,8 +10,8 @@
 
 ## Queue Metadata
 
-- Queue id: `paper:10.1207/s15327957pspr0501_3`
-- Discovered from: cervone_2005_personality_architecture
+- Queue id: `paper-title:social_cognitive_theory_of_personality`
+- Discovered from: roberts_2006_personality_change_meta
 - Reference count: 140
 - Crossref cited-by count: 102
 

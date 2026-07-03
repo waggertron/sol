@@ -12,6 +12,7 @@ import argparse
 import email.utils
 import json
 import re
+import subprocess
 import sys
 import time
 import urllib.error
@@ -95,10 +96,10 @@ def clean_multiline_text(value: str) -> str:
     return "\n".join(line.rstrip() for line in value.splitlines()).strip()
 
 
-def request_json(url: str) -> dict[str, Any]:
+def request_json(url: str, timeout: float = 30) -> dict[str, Any]:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
-        with urllib.request.urlopen(request, timeout=30) as response:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
             return json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
         if exc.code in {429, 503}:
@@ -168,6 +169,7 @@ def source_entries() -> list[dict[str, Any]]:
 def normalize_doi(doi: str) -> str:
     doi = doi.strip()
     doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi, flags=re.I)
+    doi = doi.rstrip(".,;:)]}")
     return doi
 
 
@@ -175,9 +177,89 @@ def doi_url(doi: str) -> str:
     return f"https://doi.org/{normalize_doi(doi)}"
 
 
-def crossref_work(doi: str) -> dict[str, Any]:
+def crossref_work(doi: str, timeout: float = 30) -> dict[str, Any]:
     encoded = urllib.parse.quote(normalize_doi(doi), safe="")
-    return request_json(f"https://api.crossref.org/works/{encoded}")["message"]
+    return request_json(f"https://api.crossref.org/works/{encoded}", timeout=timeout)["message"]
+
+
+def normalize_title_for_match(title: str) -> str:
+    title = title.lower()
+    title = title.replace("&", "and")
+    title = re.sub(r"[^a-z0-9]+", " ", title)
+    return " ".join(title.split())
+
+
+def crossref_search_title(title: str, rows: int = 3, timeout: float = 1.5) -> list[dict[str, Any]]:
+    params = urllib.parse.urlencode(
+        {
+            "query.title": title,
+            "rows": rows,
+        }
+    )
+    url = f"https://api.crossref.org/works?{params}"
+    result = subprocess.run(
+        [
+            "curl",
+            "--silent",
+            "--show-error",
+            "--location",
+            "--max-time",
+            str(timeout),
+            "-A",
+            USER_AGENT,
+            url,
+        ],
+        capture_output=True,
+        text=True,
+        check=False,
+        timeout=timeout + 1.0,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.strip() or f"curl failed with exit code {result.returncode}")
+    return json.loads(result.stdout).get("message", {}).get("items", [])
+
+
+def resolve_crossref_by_title(title: str, year: Any = None) -> dict[str, Any] | None:
+    normalized_target = normalize_title_for_match(title)
+    year_str = str(year) if year else None
+    year_int = int(year_str) if year_str and year_str.isdigit() else None
+    best_work: dict[str, Any] | None = None
+    best_score = -1
+
+    for work in crossref_search_title(title):
+        candidate_title = first_value(work.get("title"))
+        if not candidate_title:
+            continue
+        normalized_candidate = normalize_title_for_match(candidate_title)
+        score = 0
+
+        if normalized_candidate == normalized_target:
+            score += 100
+        elif normalized_target and normalized_target in normalized_candidate:
+            score += 70
+        elif normalized_candidate and normalized_candidate in normalized_target:
+            score += 60
+
+        target_tokens = set(normalized_target.split())
+        candidate_tokens = set(normalized_candidate.split())
+        if target_tokens and candidate_tokens:
+            overlap = len(target_tokens & candidate_tokens)
+            score += overlap * 2
+
+        candidate_year = published_year(work)
+        if year_str and candidate_year is not None:
+            if str(candidate_year) == year_str:
+                score += 15
+            elif year_int is not None and abs(candidate_year - year_int) <= 1:
+                score += 5
+
+        if score > best_score:
+            best_score = score
+            best_work = work
+
+    if best_score < 60:
+        return None
+    return best_work
 
 
 def queue_crossref_references(limit: int | None = None, sleep_seconds: float = 0.2) -> dict[str, int]:
@@ -789,12 +871,32 @@ model.
     return path
 
 
+def apply_paper_work_to_item(item: dict[str, Any], work: dict[str, Any], note: str) -> Path:
+    doi = normalize_doi(work.get("DOI") or item.get("doi") or "")
+    path = write_paper_metadata_card(item, work)
+    item["title"] = first_value(work.get("title")) or item.get("title")
+    item["doi"] = doi or item.get("doi")
+    item["url"] = work.get("URL") or (doi_url(doi) if doi else item.get("url"))
+    item["year"] = published_year(work) or item.get("year")
+    item["container_title"] = first_value(work.get("container-title")) or item.get("container_title")
+    item["imported"] = True
+    item["imported_path"] = path.as_posix()
+    item["imported_at"] = utc_now()
+    notes = set(item.get("notes", []))
+    notes = {entry for entry in notes if not entry.startswith("Pending retry after paper metadata import error:")}
+    notes.add(note)
+    item["notes"] = sorted(notes)
+    return path
+
+
 def import_paper_metadata(limit: int | None = None, sleep_seconds: float = 0.2) -> dict[str, int]:
     queue = load_queue()
     candidates = [
         item
         for item in queue["items"]
-        if item.get("kind") == "paper_reference" and not item.get("imported") and item.get("doi")
+        if item.get("kind") == "paper_reference"
+        and not item.get("imported")
+        and (item.get("doi") or item.get("title"))
     ]
     if limit is not None:
         candidates = candidates[:limit]
@@ -804,29 +906,45 @@ def import_paper_metadata(limit: int | None = None, sleep_seconds: float = 0.2) 
     skipped = 0
     for item in candidates:
         doi = item.get("doi")
-        if not doi:
+        title = item.get("title")
+        if not doi and not title:
             skipped += 1
             continue
         try:
-            work = crossref_work(doi)
-            path = write_paper_metadata_card(item, work)
-            item["title"] = first_value(work.get("title")) or item.get("title")
-            item["url"] = work.get("URL") or doi_url(doi)
-            item["year"] = published_year(work) or item.get("year")
-            item["container_title"] = first_value(work.get("container-title")) or item.get("container_title")
-            item["imported"] = True
-            item["imported_path"] = path.as_posix()
-            item["imported_at"] = utc_now()
-            notes = set(item.get("notes", []))
-            notes.add("Imported Crossref bibliographic metadata only; source not reviewed.")
-            item["notes"] = sorted(notes)
+            work: dict[str, Any] | None = None
+            note = "Imported Crossref bibliographic metadata only; source not reviewed."
+            if doi:
+                try:
+                    work = crossref_work(doi)
+                except Exception:
+                    if title:
+                        work = resolve_crossref_by_title(title, item.get("year"))
+                        if work:
+                            note = (
+                                "Imported Crossref bibliographic metadata only; source not reviewed. "
+                                "Resolved via Crossref title search fallback."
+                            )
+                    if not work:
+                        raise
+            elif title:
+                work = resolve_crossref_by_title(title, item.get("year"))
+                note = (
+                    "Imported Crossref bibliographic metadata only; source not reviewed. "
+                    "Resolved via Crossref title search."
+                )
+            if not work:
+                raise RuntimeError("No Crossref title match found.")
+
+            apply_paper_work_to_item(item, work, note)
             imported += 1
+            save_queue(queue)
             time.sleep(sleep_seconds)
         except Exception as exc:  # noqa: BLE001 - queue import should log and continue.
             errors += 1
             notes = set(item.get("notes", []))
             notes.add(f"Pending retry after paper metadata import error: {exc}")
             item["notes"] = sorted(notes)
+            save_queue(queue)
 
     save_queue(queue)
     result = {

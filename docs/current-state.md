@@ -17,17 +17,17 @@ assessment instruments as the first administrable flow.
 
 ## Current Corpus
 
-- RAG index: 17,308 chunks
+- RAG index: 20,600 chunks
 - Base source registry: 13 sources
 - Adjacent source registry: 34 sources
 - Source cards: 13 Markdown cards
 - Wikipedia summary imports: 1,261 background cards
-- Paper metadata imports: 1,125 background cards
+- Paper metadata imports: 1,643 background cards
 - Import queue: 3,373 total queue entries
-- Imported queue entries: 2,555
-- Pending paper references: 804
-- Pending paper references with DOI: 506
-- Pending title-only paper references: 298
+- Imported queue entries: 3,073
+- Pending paper references: 286
+- Pending paper references with DOI: 2
+- Pending title-only paper references: 284
 - Pending linked Wikipedia articles: 0
 - Pending direct Wikipedia term matches: 7
 - Rejected Wikipedia mappings: 7
@@ -90,9 +90,10 @@ Current queue ingestion support:
   search-derived candidates rather than another large queue drain.
 
 Paper imports are metadata-only by default. Full paper text and abstracts are
-not imported without separate review. The current paper queue has now split
-cleanly into DOI-backed references that can be imported in more Crossref
-batches and title-only references that need a separate resolution workflow.
+not imported without separate review. The importer now supports Crossref
+title-search fallback as well as DOI lookups, which cleared most of the former
+title-only backlog. The remaining paper tail is small but noisy and should be
+treated as a review/resolution queue rather than a bulk-ingestion batch.
 
 ## Current Product Direction
 

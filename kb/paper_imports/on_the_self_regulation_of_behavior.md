@@ -10,8 +10,8 @@
 
 ## Queue Metadata
 
-- Queue id: `paper:10.1017/cbo9781139174794`
-- Discovered from: cervone_2005_personality_architecture, deci_ryan_2000_goal_pursuits, elliot_thrash_2002_approach_avoidance
+- Queue id: `paper-title:on_the_self_regulation_of_behavior`
+- Discovered from: deyoung_2015_cybernetic_big_five
 - Reference count: 0
 - Crossref cited-by count: 2722
 

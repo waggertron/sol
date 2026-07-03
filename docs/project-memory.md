@@ -64,7 +64,7 @@ then generate text and visual direction the user can evaluate.
 - `jsondb/import_queue.json` tracks 3,373 pending/imported/rejected research
   import candidates.
 - `kb/wiki_imports/` contains 1,261 background Wikipedia summary imports.
-- `kb/paper_imports/` contains 1,125 metadata-only paper imports from queued DOI
+- `kb/paper_imports/` contains 1,643 metadata-only paper imports from queued DOI
   references.
 - `assessments/ocean/` stores the current OCEAN assessment corpus: 11
   instruments, 186 scales, and 1,539 items.
@@ -81,10 +81,10 @@ then generate text and visual direction the user can evaluate.
   each attempted item. Current state: all `wikipedia_article` queue records are
   imported; the remaining Wikipedia backlog is a small review tail rather than
   a large blind batch target.
-- Paper ingestion is now split between DOI-backed queue items and title-only
-  queue items. Continue `import-paper-metadata` for DOI-backed references in
-  bounded batches; handle `paper-title:*` records through a separate resolution
-  workflow.
+- Paper ingestion now includes Crossref title-search fallback in addition to
+  DOI lookups. That cleared most of the backlog, but the remaining unresolved
+  tail is still mostly `paper-title:*` records plus two bad DOI records and
+  should be handled as a review queue rather than a blind bulk batch.
 - `tools/import_ocean_assessments.py` normalizes downloaded official assessment
   pages into repo JSON.
 
