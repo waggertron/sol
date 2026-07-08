@@ -19,3 +19,6 @@ Start here:
   title-only paper review backlog
 - `10-assessment-web-mvp-implementation.md` - execution plan for the first
   local browser-based assessment administration slice
+- `11-mvp-hardening-and-profile-loop.md` - active task ledger for browser QA,
+  tests, atom editing, evidence views, profile export, and first generation
+  pilot

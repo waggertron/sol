@@ -5,6 +5,8 @@
 Record the next execution steps after the assessment-first CLI MVP so the repo
 keeps a visible implementation history.
 
+Status: completed by commit `74684b4`.
+
 ## Current Baseline
 
 As of 2026-07-08, the repository already has:
@@ -15,6 +17,10 @@ As of 2026-07-08, the repository already has:
 - an executable CLI flow in `tools/run_assessment_mvp.py`
 
 What it does not yet have is a user-facing assessment administration surface.
+
+Historical note: the local browser administration surface, workbench, export,
+and delete controls were completed in commit `74684b4`. The follow-on active
+task ledger now lives in `plans/11-mvp-hardening-and-profile-loop.md`.
 
 ## Next Execution Steps
 
