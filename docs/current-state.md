@@ -1,6 +1,6 @@
 # Current State
 
-Last updated: 2026-07-06
+Last updated: 2026-07-08
 
 ## Project Status
 
@@ -12,8 +12,8 @@ and style modeling platform. The repo now has three concrete foundations:
 - a JSONDB queue for tracking future research and Wikipedia imports
 - an OCEAN assessment area with permissive/open instruments and scoring metadata
 
-There is not yet an MVP web app. The next product build should use the stored
-assessment instruments as the first administrable flow.
+There is now a local browser-based MVP web app. The current product build uses
+the stored assessment instruments as the first administrable flow.
 
 ## Current Corpus
 
@@ -82,6 +82,10 @@ Reference-only or license-review instruments are tracked in:
   storage.
 - `tools/run_assessment_mvp.py` runs the current end-to-end local assessment
   MVP flow and writes export artifacts for later UI integration.
+- `tools/assessment_web_mvp.py` serves the current local browser flow and a
+  thin JSON API over the same session store. The UI now includes assessment
+  administration, session export/delete controls, and a cross-session profile
+  atom workbench.
 
 Current queue ingestion support:
 
@@ -124,19 +128,23 @@ docs.
 ## Current Product Direction
 
 The first product wedge remains the Personal Creative Style Kit, but the
-immediate implementation path is now assessment-first:
+immediate implementation path remains assessment-first:
 
 1. Administer a permissive OCEAN instrument.
 2. Store responses and score results with instrument-version provenance.
 3. Convert scores into editable, non-diagnostic profile atom candidates.
-4. Present results with uncertainty and user correction controls.
-5. Use confirmed atoms as scoped context for future generation experiments.
+4. Present results with uncertainty and user correction controls in the local
+   web MVP.
+5. Export or delete local assessment sessions when needed.
+6. Review profile atoms across sessions in the workbench.
+7. Use confirmed atoms as scoped context for future generation experiments.
 
 The first implementation-facing assessment output contract now lives at:
 
 - `docs/architecture/assessments/profile-atom-output.md`
 - `docs/architecture/assessments/session-storage.md`
 - `docs/architecture/assessments/mvp-flow.md`
+- `docs/architecture/assessments/web-mvp.md`
 
 The first sample response fixture for end-to-end testing lives at:
 
@@ -147,6 +155,14 @@ Recommended first MVP instruments:
 - `tipi.json` for the fastest end-to-end flow test
 - `mini_ipip.json` for a short OCEAN assessment path
 - `ipip_neo_60_maples_keller_2019.json` for a compact NEO-domain path
+
+Run the current web MVP with:
+
+```bash
+python3 tools/assessment_web_mvp.py --port 8765
+```
+
+Then open `http://127.0.0.1:8765`.
 
 ## Safety Posture
 

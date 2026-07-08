@@ -43,6 +43,59 @@ def find_session(data: dict[str, Any], session_id: str) -> dict[str, Any] | None
     return None
 
 
+def summarize_session(session: dict[str, Any]) -> dict[str, Any]:
+    atoms = session.get("profile_atoms", [])
+    return {
+        "session_id": session["session_id"],
+        "user_id": session.get("user_id"),
+        "instrument_id": session.get("instrument_id"),
+        "instrument_name": session.get("instrument_name"),
+        "status": session.get("status"),
+        "started_at": session.get("started_at"),
+        "completed_at": session.get("completed_at"),
+        "response_count": len(session.get("responses", {})),
+        "score_count": len(session.get("scores", [])),
+        "profile_atom_count": len(atoms),
+        "active_atom_count": sum(1 for atom in atoms if atom.get("state") == "active_atom"),
+        "suppressed_atom_count": sum(1 for atom in atoms if atom.get("state") == "suppressed_atom"),
+        "confirmed_atom_count": sum(1 for atom in atoms if atom.get("user_feedback") == "confirmed"),
+        "rejected_atom_count": sum(1 for atom in atoms if atom.get("user_feedback") == "rejected"),
+    }
+
+
+def list_sessions() -> dict[str, Any]:
+    data = load_sessions()
+    summaries = [summarize_session(session) for session in data["sessions"]]
+    summaries.sort(key=lambda session: session.get("started_at") or "", reverse=True)
+    return {
+        "version": data.get("version", 1),
+        "session_count": len(summaries),
+        "sessions": summaries,
+    }
+
+
+def list_profile_atoms() -> dict[str, Any]:
+    data = load_sessions()
+    records: list[dict[str, Any]] = []
+    for session in data["sessions"]:
+        summary = summarize_session(session)
+        for atom in session.get("profile_atoms", []):
+            records.append(
+                {
+                    **atom,
+                    "session": summary,
+                    "session_id": session["session_id"],
+                    "instrument_id": session.get("instrument_id"),
+                    "instrument_name": session.get("instrument_name"),
+                }
+            )
+    records.sort(key=lambda atom: atom.get("last_updated") or atom.get("recency") or "", reverse=True)
+    return {
+        "atom_count": len(records),
+        "atoms": records,
+    }
+
+
 def create_session(
     session_id: str,
     instrument_path: str,
@@ -72,21 +125,26 @@ def create_session(
     return session
 
 
-def save_responses(session_id: str, responses_path: str, merge: bool = True) -> dict[str, Any]:
+def save_response_map(session_id: str, responses: dict[str, float], merge: bool = True) -> dict[str, Any]:
     data = load_sessions()
     session = find_session(data, session_id)
     if not session:
         raise ValueError(f"Unknown session: {session_id}")
 
-    responses = parse_responses(Path(responses_path))
+    normalized = {str(key): float(value) for key, value in responses.items()}
     if merge:
         merged = dict(session.get("responses", {}))
-        merged.update(responses)
+        merged.update(normalized)
         session["responses"] = merged
     else:
-        session["responses"] = responses
+        session["responses"] = normalized
     save_sessions(data)
     return session
+
+
+def save_responses(session_id: str, responses_path: str, merge: bool = True) -> dict[str, Any]:
+    responses = parse_responses(Path(responses_path))
+    return save_response_map(session_id, responses, merge=merge)
 
 
 def score_session(session_id: str, completed_at: str) -> dict[str, Any]:
@@ -113,6 +171,16 @@ def show_session(session_id: str) -> dict[str, Any]:
     if not session:
         raise ValueError(f"Unknown session: {session_id}")
     return session
+
+
+def delete_session(session_id: str) -> dict[str, Any]:
+    data = load_sessions()
+    for index, session in enumerate(data["sessions"]):
+        if session["session_id"] == session_id:
+            removed = data["sessions"].pop(index)
+            save_sessions(data)
+            return summarize_session(removed)
+    raise ValueError(f"Unknown session: {session_id}")
 
 
 def find_atom(session: dict[str, Any], atom_id: str) -> dict[str, Any] | None:
@@ -160,6 +228,10 @@ def parse_args() -> argparse.Namespace:
 
     subparsers.add_parser("init-db", help="Initialize the assessment sessions JSONDB.")
 
+    subparsers.add_parser("list-sessions", help="List stored assessment response sessions.")
+
+    subparsers.add_parser("list-profile-atoms", help="List derived profile atoms across stored sessions.")
+
     create_parser = subparsers.add_parser("create-session", help="Create a new assessment response session.")
     create_parser.add_argument("--session-id", required=True)
     create_parser.add_argument("--instrument", required=True, help="Path to instrument JSON.")
@@ -177,6 +249,9 @@ def parse_args() -> argparse.Namespace:
 
     show_parser = subparsers.add_parser("show-session", help="Show a stored session.")
     show_parser.add_argument("--session-id", required=True)
+
+    delete_parser = subparsers.add_parser("delete-session", help="Delete a stored session.")
+    delete_parser.add_argument("--session-id", required=True)
 
     review_parser = subparsers.add_parser("review-atom", help="Update user review state for a derived profile atom.")
     review_parser.add_argument("--session-id", required=True)
@@ -200,6 +275,14 @@ def main() -> None:
         result = create_session(args.session_id, args.instrument, args.started_at, args.user_id)
         print(json.dumps(result, indent=2, sort_keys=True))
         return
+    if args.command == "list-sessions":
+        result = list_sessions()
+        print(json.dumps(result, indent=2, sort_keys=True))
+        return
+    if args.command == "list-profile-atoms":
+        result = list_profile_atoms()
+        print(json.dumps(result, indent=2, sort_keys=True))
+        return
     if args.command == "save-responses":
         result = save_responses(args.session_id, args.responses, merge=not args.replace)
         print(json.dumps(result, indent=2, sort_keys=True))
@@ -210,6 +293,10 @@ def main() -> None:
         return
     if args.command == "show-session":
         result = show_session(args.session_id)
+        print(json.dumps(result, indent=2, sort_keys=True))
+        return
+    if args.command == "delete-session":
+        result = delete_session(args.session_id)
         print(json.dumps(result, indent=2, sort_keys=True))
         return
     if args.command == "review-atom":

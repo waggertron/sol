@@ -17,3 +17,5 @@ Start here:
 - `08-ocean-assessment-plan.md` - first OCEAN assessment gathering and mapping plan
 - `09-paper-tail-curation.md` - phased plan for finishing the remaining
   title-only paper review backlog
+- `10-assessment-web-mvp-implementation.md` - execution plan for the first
+  local browser-based assessment administration slice

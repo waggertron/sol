@@ -76,9 +76,18 @@ The repository is currently research-first and assessment-ready. It has:
 - an OCEAN assessment repository with 11 permissive/open instruments, 186
   scales, and 1,539 stored items
 
-The next build target is an MVP assessment web app that can administer one
+The repository now has a local assessment web MVP that can administer one
 stored OCEAN instrument, persist responses, compute scores, present results,
-and create editable profile atom candidates.
+create editable profile atom candidates, export/delete sessions, and review
+profile atoms across sessions against the current JSONDB storage layer.
+
+Start it locally:
+
+```bash
+python3 tools/assessment_web_mvp.py --port 8765
+```
+
+Then open `http://127.0.0.1:8765`.
 
 See `docs/current-state.md` for the latest snapshot.
 
@@ -163,11 +172,14 @@ Sol is not intended to:
 - `docs/current-state.md` - current repo snapshot, counts, and next build target.
 - `docs/architecture/rag/structure.md` - RAG architecture and update workflow.
 - `docs/architecture/assessments/ocean.md` - OCEAN assessment architecture.
+- `docs/architecture/assessments/web-mvp.md` - local browser MVP architecture.
 - `docs/project-memory.md` - compact context for future sessions.
 - `plans/` - product and platform planning skeleton.
 - `sources/*.json` - source registries for papers, frameworks, and references.
 - `jsondb/` - import queue, term inventory, and import run logs.
 - `tools/rag.py` - local standard-library retrieval CLI.
+- `tools/assessment_web_mvp.py` - local browser app and JSON API for the
+  current assessment-first MVP.
 - `tools/kb_importer.py` - import queue and Wikipedia/Crossref helper.
 - `rag_index/` - generated retrieval index.
 

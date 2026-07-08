@@ -17,6 +17,7 @@ Current implementation references:
 - `docs/architecture/assessments/profile-atom-output.md`
 - `docs/architecture/assessments/session-storage.md`
 - `docs/architecture/assessments/mvp-flow.md`
+- `docs/architecture/assessments/web-mvp.md`
 
 ## Policy
 

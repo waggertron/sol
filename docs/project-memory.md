@@ -88,6 +88,10 @@ then generate text and visual direction the user can evaluate.
   a local session, stores responses, scores the instrument, derives
   `provisional_atom` candidates, and writes export artifacts under
   `artifacts/assessment_runs/`.
+- `tools/assessment_web_mvp.py` is the first local browser-facing assessment
+  surface. It serves a static UI plus a thin JSON API over the same shared
+  session-store contract. It now supports session export/delete and a
+  cross-session profile atom workbench.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -128,6 +132,8 @@ then generate text and visual direction the user can evaluate.
   assessment session persistence contract.
 - `docs/architecture/assessments/mvp-flow.md` defines the current executable
   MVP assessment flow.
+- `docs/architecture/assessments/web-mvp.md` defines the current browser-based
+  assessment surface and route contract.
 
 The latest snapshot is maintained in `docs/current-state.md`.
 
@@ -140,6 +146,8 @@ Build the first MVP around assessment administration before broader generation:
 3. Persist responses and scores with assessment-version provenance.
 4. Present non-diagnostic results with uncertainty.
 5. Let users confirm, edit, reject, export, or delete profile atom candidates.
+6. Keep the web UI thin and route persistence through the shared Python session
+   store instead of a second ad hoc storage format.
 
 ## Key Source Anchors
 

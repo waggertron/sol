@@ -63,6 +63,8 @@ Current local MVP flow:
   `tools/assessment_to_profile_atoms.py`
 - persist sessions and derived results with `tools/assessment_session_store.py`
 - run the end-to-end local workflow with `tools/run_assessment_mvp.py`
+- serve the local browser workflow with `tools/assessment_web_mvp.py`
+  including session export/delete and cross-session atom review
 
 ## Known Import Caveats
 

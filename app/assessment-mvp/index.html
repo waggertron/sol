@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sol Assessment MVP</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h1>Sol</h1>
+          <p>Assessment MVP</p>
+        </div>
+        <nav class="nav-tabs" aria-label="Assessment workspace">
+          <button id="nav-administer" class="nav-tab active" type="button">Administer</button>
+          <button id="nav-workbench" class="nav-tab" type="button">Workbench</button>
+        </nav>
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Instruments</h2>
+            <button id="reload-manifest" class="icon-button" type="button" aria-label="Reload instruments">Reload</button>
+          </div>
+          <div id="instrument-list" class="instrument-list"></div>
+        </section>
+        <section class="panel">
+          <h2>Resume Session</h2>
+          <div class="field-stack">
+            <label for="resume-session-id">Session ID</label>
+            <input id="resume-session-id" type="text" placeholder="web_tipi_...">
+            <button id="resume-session" type="button">Load</button>
+          </div>
+        </section>
+      </aside>
+      <main class="main">
+        <section class="topbar">
+          <div>
+            <div class="eyebrow">Local JSONDB-backed flow</div>
+            <h2 id="selected-instrument-name">Select an instrument</h2>
+          </div>
+          <div class="session-meta">
+            <div><span>Session</span><strong id="session-id">Not started</strong></div>
+            <div><span>Status</span><strong id="session-status">idle</strong></div>
+          </div>
+          <div class="session-actions">
+            <button id="export-current-session" type="button" disabled>Export</button>
+            <button id="delete-current-session" class="danger-button" type="button" disabled>Delete</button>
+          </div>
+        </section>
+        <section id="admin-view" class="workspace">
+          <div class="column">
+            <section class="panel">
+              <h2>Consent</h2>
+              <p class="muted">
+                This flow stores self-report responses and derived profile atoms locally in
+                <code>jsondb/assessment_sessions.json</code>. Results are provisional,
+                editable, and non-diagnostic.
+              </p>
+              <label class="checkbox-row">
+                <input id="consent-checkbox" type="checkbox">
+                <span>I consent to local storage and provisional profile-atom generation for this session.</span>
+              </label>
+              <div class="button-row">
+                <button id="start-session" type="button">Start session</button>
+                <button id="score-session" type="button" disabled>Score session</button>
+              </div>
+            </section>
+            <section class="panel">
+              <div class="panel-header">
+                <h2>Questionnaire</h2>
+                <span id="autosave-status" class="status-pill">Not started</span>
+              </div>
+              <div id="response-scale" class="response-scale"></div>
+              <form id="questionnaire" class="questionnaire"></form>
+            </section>
+          </div>
+          <div class="column">
+            <section class="panel">
+              <h2>Scores</h2>
+              <div id="score-results" class="empty-state">No scored results yet.</div>
+            </section>
+            <section class="panel">
+              <h2>Profile Atoms</h2>
+              <div id="atom-results" class="empty-state">No derived atoms yet.</div>
+            </section>
+          </div>
+        </section>
+        <section id="workbench-view" class="workbench" hidden>
+          <section class="panel">
+            <div class="panel-header">
+              <h2>Profile Workbench</h2>
+              <button id="refresh-workbench" type="button">Refresh</button>
+            </div>
+            <div id="workbench-summary" class="summary-grid"></div>
+          </section>
+          <section class="workbench-grid">
+            <div class="column">
+              <section class="panel">
+                <h2>Sessions</h2>
+                <div id="session-list" class="session-list"></div>
+              </section>
+            </div>
+            <div class="column">
+              <section class="panel">
+                <div class="panel-header">
+                  <h2>Atoms</h2>
+                  <select id="atom-filter" aria-label="Filter profile atoms">
+                    <option value="all">All atoms</option>
+                    <option value="active_atom">Active</option>
+                    <option value="provisional_atom">Provisional</option>
+                    <option value="suppressed_atom">Suppressed</option>
+                    <option value="confirmed">Confirmed feedback</option>
+                    <option value="rejected">Rejected feedback</option>
+                  </select>
+                </div>
+                <div id="workbench-atoms" class="atom-list"></div>
+              </section>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
