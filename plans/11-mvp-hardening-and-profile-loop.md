@@ -35,37 +35,50 @@ behavior.
 
 Tasks:
 
-- [ ] Add focused tests for `tools/assessment_session_store.py`.
+- [x] Add focused tests for `tools/assessment_session_store.py`.
+  - Commit: `b627a9f`
   - Cover create, save responses, score, list sessions, list profile atoms,
     review atom, export shape, and delete.
   - Use isolated temp JSONDB state rather than mutating the tracked
     `jsondb/assessment_sessions.json`.
-- [ ] Add focused tests for `tools/assessment_web_mvp.py` route behavior.
+- [x] Add focused tests for `tools/assessment_web_mvp.py` route behavior.
+  - Commit: `b627a9f`
   - Cover health, manifest, instrument fetch, session create, response save,
     score, export, atom review, aggregate atoms, and delete.
   - Start the server on a test port or use handler-level tests if cleaner.
-- [ ] Add a browser smoke test for the static UI.
+- [x] Add a static UI smoke test for the browser surface.
+  - Commit: `b627a9f`
   - Verify Administer and Workbench tabs render.
   - Verify instrument list loads.
   - Verify session export/delete buttons enable only when a session is loaded.
   - Verify workbench session and atom sections render from API data.
+  - Current coverage checks served HTML/JS and static UI contracts; full
+    rendered-browser automation remains a later enhancement.
 - [ ] Add responsive layout checks for desktop and mobile widths.
   - Confirm no visible text overlap in the sidebar, topbar, questionnaire,
     session cards, atom cards, and action rows.
-- [ ] Add a local QA script or documented command set.
+  - Commit `b627a9f` added static responsive CSS guard checks; rendered visual
+    overlap checks are still open.
+- [x] Add a local QA script or documented command set.
+  - Commit: `b627a9f`
   - The script should compile Python, validate JS syntax, validate JSONDB, and
     run the route/browser smoke checks.
-- [ ] Document cleanup behavior.
+- [x] Document cleanup behavior.
+  - Commit: `b627a9f`
   - Any generated QA sessions must be deleted automatically.
   - Any screenshots or temporary artifacts must live under an ignored local
     path.
 
 Acceptance criteria:
 
-- [ ] A single local validation command can prove the assessment web MVP still
+- [x] A single local validation command can prove the assessment web MVP still
   works.
-- [ ] Tests do not leave persistent repo data changes.
+  - Commit: `b627a9f`
+- [x] Tests do not leave persistent repo data changes.
+  - Commit: `b627a9f`
 - [ ] The UI is visually usable on desktop and mobile widths.
+  - Static responsive guards exist in commit `b627a9f`; rendered browser
+    verification remains open.
 
 ## Phase 2: Profile Atom Editing
 
