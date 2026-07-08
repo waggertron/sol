@@ -438,6 +438,191 @@
       },
       "timestamp": "2026-07-03T18:21:55+00:00",
       "type": "apply_wiki_review"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-04T04:25:06+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "queue_items_updated": 0
+      },
+      "timestamp": "2026-07-04T04:26:39+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-04T04:27:14+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-04T04:27:27+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-05T18:17:03+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "queue_items_updated": 19
+      },
+      "timestamp": "2026-07-05T18:17:03+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "queue_items_updated": 26
+      },
+      "timestamp": "2026-07-06T20:04:49+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "candidates_checked": 2,
+        "errors": 0,
+        "metadata_cards_imported": 2
+      },
+      "timestamp": "2026-07-06T20:04:49+00:00",
+      "type": "import_paper_manual_matches"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-06T20:05:20+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "queue_items_updated": 26
+      },
+      "timestamp": "2026-07-06T20:05:40+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "queue_items_updated": 26
+      },
+      "timestamp": "2026-07-06T20:06:00+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-06T20:06:23+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "queue_items_updated": 37
+      },
+      "timestamp": "2026-07-06T21:18:04+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-06T21:18:36+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "queue_items_updated": 37
+      },
+      "timestamp": "2026-07-06T21:18:46+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-06T21:18:57+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "queue_items_updated": 42
+      },
+      "timestamp": "2026-07-06T21:20:24+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-06T21:20:24+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "queue_items_updated": 48
+      },
+      "timestamp": "2026-07-06T21:58:31+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-06T21:58:31+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "queue_items_updated": 52
+      },
+      "timestamp": "2026-07-06T22:07:59+00:00",
+      "type": "apply_paper_review"
+    },
+    {
+      "result": {
+        "items_written": 200,
+        "path": "kb/research/paper_review_queue.md"
+      },
+      "timestamp": "2026-07-06T22:08:00+00:00",
+      "type": "paper_review_report"
+    },
+    {
+      "result": {
+        "candidates_checked": 4,
+        "errors": 0,
+        "metadata_cards_imported": 4
+      },
+      "timestamp": "2026-07-08T19:34:54+00:00",
+      "type": "import_paper_manual_matches"
+    },
+    {
+      "result": {
+        "candidates_checked": 8,
+        "errors": 0,
+        "metadata_cards_imported": 8
+      },
+      "timestamp": "2026-07-08T19:39:21+00:00",
+      "type": "import_paper_manual_matches"
     }
   ],
   "version": 1

@@ -1,19 +1,19 @@
-# Paper Metadata Import: On the Self-Regulation of Behavior
+# Paper Metadata Import: A framework for consciousness
 
 ## Citation Metadata
 
-- Authors: Bradley R. Entner Wright, Charles S. Carver, Michael F. Scheier
-- Year: 2000
-- Venue: Contemporary Sociology
-- DOI: 10.2307/2654424
-- URL: https://doi.org/10.2307/2654424
+- Authors: Francis Crick, Christof Koch
+- Year: 2003
+- Venue: Nature Neuroscience
+- DOI: 10.1038/nn0203-119
+- URL: https://doi.org/10.1038/nn0203-119
 
 ## Queue Metadata
 
-- Queue id: `paper-title:on_the_self_regulation_of_behavior`
-- Discovered from: deyoung_2015_cybernetic_big_five
-- Reference count: 0
-- Crossref cited-by count: 11
+- Queue id: `paper:10.1038/nn0203-119`
+- Discovered from: paper-title:a_cognitive_theory_of_consciousness, user-request:2026-07-08
+- Reference count: 60
+- Crossref cited-by count: 905
 
 ## Import Policy
 

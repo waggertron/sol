@@ -1,0 +1,376 @@
+{
+  "completed_at": "2026-07-08T21:05:00Z",
+  "instrument_id": "tipi",
+  "instrument_name": "Ten Item Personality Inventory",
+  "instrument_path": "assessments/ocean/instruments/tipi.json",
+  "profile_atoms": [
+    {
+      "activation_scope": "review_only",
+      "assessment_metadata": {
+        "assessment_family": "OCEAN",
+        "assessment_id": "tipi",
+        "assessment_name": "Ten Item Personality Inventory",
+        "construct_system": "Big Five very brief measure",
+        "normalized_score": 0.8333,
+        "scale_id": "tipi:extraversion",
+        "scale_label": "Extraversion",
+        "score_range": [
+          1,
+          7
+        ],
+        "score_type": "average_two_items_per_domain",
+        "score_value": 6.0,
+        "session_id": "session_tipi_example",
+        "trait": "extraversion"
+      },
+      "claim": "User self-report suggests relatively high extraversion on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.52,
+      "context": [
+        "general_self_report"
+      ],
+      "counterevidence": [],
+      "data_modality": [
+        "assessment"
+      ],
+      "domain": "stable_trait_tendencies",
+      "evidence": [
+        "Self-report assessment score from instrument `tipi` scale `tipi:extraversion`.",
+        "Raw score 6.00 on range [1.00, 7.00] normalized to 0.83.",
+        "tipi:item:001=6 (positive-keyed)",
+        "tipi:item:006=2 (reverse-keyed)"
+      ],
+      "generation_mappings": [],
+      "id": "assessment.tipi.tipi_extraversion.v0",
+      "label": "Extraversion self-report tendency",
+      "last_updated": "2026-07-08T21:05:00Z",
+      "recency": "2026-07-08T21:05:00Z",
+      "sensitivity_level": "low",
+      "source_ids": [
+        "assessment:tipi",
+        "assessment_session:session_tipi_example",
+        "assessment_scale:tipi:extraversion"
+      ],
+      "stability": "high",
+      "state": "provisional_atom",
+      "user_feedback": "unconfirmed",
+      "user_visibility": "visible_editable"
+    },
+    {
+      "activation_scope": "review_only",
+      "assessment_metadata": {
+        "assessment_family": "OCEAN",
+        "assessment_id": "tipi",
+        "assessment_name": "Ten Item Personality Inventory",
+        "construct_system": "Big Five very brief measure",
+        "normalized_score": 0.75,
+        "scale_id": "tipi:agreeableness",
+        "scale_label": "Agreeableness",
+        "score_range": [
+          1,
+          7
+        ],
+        "score_type": "average_two_items_per_domain",
+        "score_value": 5.5,
+        "session_id": "session_tipi_example",
+        "trait": "agreeableness"
+      },
+      "claim": "User self-report suggests moderately elevated agreeableness on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.52,
+      "context": [
+        "general_self_report"
+      ],
+      "counterevidence": [],
+      "data_modality": [
+        "assessment"
+      ],
+      "domain": "stable_trait_tendencies",
+      "evidence": [
+        "Self-report assessment score from instrument `tipi` scale `tipi:agreeableness`.",
+        "Raw score 5.50 on range [1.00, 7.00] normalized to 0.75.",
+        "tipi:item:002=3 (reverse-keyed)",
+        "tipi:item:007=6 (positive-keyed)"
+      ],
+      "generation_mappings": [],
+      "id": "assessment.tipi.tipi_agreeableness.v0",
+      "label": "Agreeableness self-report tendency",
+      "last_updated": "2026-07-08T21:05:00Z",
+      "recency": "2026-07-08T21:05:00Z",
+      "sensitivity_level": "low",
+      "source_ids": [
+        "assessment:tipi",
+        "assessment_session:session_tipi_example",
+        "assessment_scale:tipi:agreeableness"
+      ],
+      "stability": "high",
+      "state": "provisional_atom",
+      "user_feedback": "unconfirmed",
+      "user_visibility": "visible_editable"
+    },
+    {
+      "activation_scope": "review_only",
+      "assessment_metadata": {
+        "assessment_family": "OCEAN",
+        "assessment_id": "tipi",
+        "assessment_name": "Ten Item Personality Inventory",
+        "construct_system": "Big Five very brief measure",
+        "normalized_score": 0.8333,
+        "scale_id": "tipi:conscientiousness",
+        "scale_label": "Conscientiousness",
+        "score_range": [
+          1,
+          7
+        ],
+        "score_type": "average_two_items_per_domain",
+        "score_value": 6.0,
+        "session_id": "session_tipi_example",
+        "trait": "conscientiousness"
+      },
+      "claim": "User self-report suggests relatively high conscientiousness on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.52,
+      "context": [
+        "general_self_report"
+      ],
+      "counterevidence": [],
+      "data_modality": [
+        "assessment"
+      ],
+      "domain": "stable_trait_tendencies",
+      "evidence": [
+        "Self-report assessment score from instrument `tipi` scale `tipi:conscientiousness`.",
+        "Raw score 6.00 on range [1.00, 7.00] normalized to 0.83.",
+        "tipi:item:003=6 (positive-keyed)",
+        "tipi:item:008=2 (reverse-keyed)"
+      ],
+      "generation_mappings": [],
+      "id": "assessment.tipi.tipi_conscientiousness.v0",
+      "label": "Conscientiousness self-report tendency",
+      "last_updated": "2026-07-08T21:05:00Z",
+      "recency": "2026-07-08T21:05:00Z",
+      "sensitivity_level": "low",
+      "source_ids": [
+        "assessment:tipi",
+        "assessment_session:session_tipi_example",
+        "assessment_scale:tipi:conscientiousness"
+      ],
+      "stability": "high",
+      "state": "provisional_atom",
+      "user_feedback": "unconfirmed",
+      "user_visibility": "visible_editable"
+    },
+    {
+      "activation_scope": "review_only",
+      "assessment_metadata": {
+        "assessment_family": "OCEAN",
+        "assessment_id": "tipi",
+        "assessment_name": "Ten Item Personality Inventory",
+        "construct_system": "Big Five very brief measure",
+        "normalized_score": 0.5833,
+        "scale_id": "tipi:emotional_stability",
+        "scale_label": "Emotional Stability",
+        "score_range": [
+          1,
+          7
+        ],
+        "score_type": "average_two_items_per_domain",
+        "score_value": 4.5,
+        "session_id": "session_tipi_example",
+        "trait": "neuroticism"
+      },
+      "claim": "User self-report suggests mid-range emotional stability on this instrument. Treat as provisional self-report evidence, not a diagnostic conclusion.",
+      "confidence": 0.52,
+      "context": [
+        "general_self_report"
+      ],
+      "counterevidence": [],
+      "data_modality": [
+        "assessment"
+      ],
+      "domain": "stable_trait_tendencies",
+      "evidence": [
+        "Self-report assessment score from instrument `tipi` scale `tipi:emotional_stability`.",
+        "Raw score 4.50 on range [1.00, 7.00] normalized to 0.58.",
+        "tipi:item:004=4 (reverse-keyed)",
+        "tipi:item:009=5 (positive-keyed)"
+      ],
+      "generation_mappings": [],
+      "id": "assessment.tipi.tipi_emotional_stability.v0",
+      "label": "Emotional Stability self-report tendency",
+      "last_updated": "2026-07-08T21:05:00Z",
+      "recency": "2026-07-08T21:05:00Z",
+      "sensitivity_level": "medium",
+      "source_ids": [
+        "assessment:tipi",
+        "assessment_session:session_tipi_example",
+        "assessment_scale:tipi:emotional_stability"
+      ],
+      "stability": "high",
+      "state": "provisional_atom",
+      "user_feedback": "unconfirmed",
+      "user_visibility": "visible_editable"
+    },
+    {
+      "activation_scope": "review_only",
+      "assessment_metadata": {
+        "assessment_family": "OCEAN",
+        "assessment_id": "tipi",
+        "assessment_name": "Ten Item Personality Inventory",
+        "construct_system": "Big Five very brief measure",
+        "normalized_score": 0.9167,
+        "scale_id": "tipi:openness",
+        "scale_label": "Openness",
+        "score_range": [
+          1,
+          7
+        ],
+        "score_type": "average_two_items_per_domain",
+        "score_value": 6.5,
+        "session_id": "session_tipi_example",
+        "trait": "openness"
+      },
+      "claim": "User self-report suggests relatively high openness on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.52,
+      "context": [
+        "general_self_report"
+      ],
+      "counterevidence": [],
+      "data_modality": [
+        "assessment"
+      ],
+      "domain": "stable_trait_tendencies",
+      "evidence": [
+        "Self-report assessment score from instrument `tipi` scale `tipi:openness`.",
+        "Raw score 6.50 on range [1.00, 7.00] normalized to 0.92.",
+        "tipi:item:005=7 (positive-keyed)",
+        "tipi:item:010=2 (reverse-keyed)"
+      ],
+      "generation_mappings": [],
+      "id": "assessment.tipi.tipi_openness.v0",
+      "label": "Openness self-report tendency",
+      "last_updated": "2026-07-08T21:05:00Z",
+      "recency": "2026-07-08T21:05:00Z",
+      "sensitivity_level": "low",
+      "source_ids": [
+        "assessment:tipi",
+        "assessment_session:session_tipi_example",
+        "assessment_scale:tipi:openness"
+      ],
+      "stability": "high",
+      "state": "provisional_atom",
+      "user_feedback": "unconfirmed",
+      "user_visibility": "visible_editable"
+    }
+  ],
+  "responses": {
+    "tipi:item:001": 6.0,
+    "tipi:item:002": 3.0,
+    "tipi:item:003": 6.0,
+    "tipi:item:004": 4.0,
+    "tipi:item:005": 7.0,
+    "tipi:item:006": 2.0,
+    "tipi:item:007": 6.0,
+    "tipi:item:008": 2.0,
+    "tipi:item:009": 5.0,
+    "tipi:item:010": 2.0
+  },
+  "scores": [
+    {
+      "domain": "extraversion",
+      "evidence_lines": [
+        "tipi:item:001=6 (positive-keyed)",
+        "tipi:item:006=2 (reverse-keyed)"
+      ],
+      "item_count": 2,
+      "label": "Extraversion",
+      "normalized_score": 0.8333333333333334,
+      "raw_responses": [
+        6.0,
+        2.0
+      ],
+      "raw_score": 6.0,
+      "reliability_alpha": null,
+      "scale_id": "tipi:extraversion",
+      "score_max": 7,
+      "score_min": 1
+    },
+    {
+      "domain": "agreeableness",
+      "evidence_lines": [
+        "tipi:item:002=3 (reverse-keyed)",
+        "tipi:item:007=6 (positive-keyed)"
+      ],
+      "item_count": 2,
+      "label": "Agreeableness",
+      "normalized_score": 0.75,
+      "raw_responses": [
+        3.0,
+        6.0
+      ],
+      "raw_score": 5.5,
+      "reliability_alpha": null,
+      "scale_id": "tipi:agreeableness",
+      "score_max": 7,
+      "score_min": 1
+    },
+    {
+      "domain": "conscientiousness",
+      "evidence_lines": [
+        "tipi:item:003=6 (positive-keyed)",
+        "tipi:item:008=2 (reverse-keyed)"
+      ],
+      "item_count": 2,
+      "label": "Conscientiousness",
+      "normalized_score": 0.8333333333333334,
+      "raw_responses": [
+        6.0,
+        2.0
+      ],
+      "raw_score": 6.0,
+      "reliability_alpha": null,
+      "scale_id": "tipi:conscientiousness",
+      "score_max": 7,
+      "score_min": 1
+    },
+    {
+      "domain": "emotional_stability",
+      "evidence_lines": [
+        "tipi:item:004=4 (reverse-keyed)",
+        "tipi:item:009=5 (positive-keyed)"
+      ],
+      "item_count": 2,
+      "label": "Emotional Stability",
+      "normalized_score": 0.5833333333333334,
+      "raw_responses": [
+        4.0,
+        5.0
+      ],
+      "raw_score": 4.5,
+      "reliability_alpha": null,
+      "scale_id": "tipi:emotional_stability",
+      "score_max": 7,
+      "score_min": 1
+    },
+    {
+      "domain": "openness",
+      "evidence_lines": [
+        "tipi:item:005=7 (positive-keyed)",
+        "tipi:item:010=2 (reverse-keyed)"
+      ],
+      "item_count": 2,
+      "label": "Openness",
+      "normalized_score": 0.9166666666666666,
+      "raw_responses": [
+        7.0,
+        2.0
+      ],
+      "raw_score": 6.5,
+      "reliability_alpha": null,
+      "scale_id": "tipi:openness",
+      "score_max": 7,
+      "score_min": 1
+    }
+  ],
+  "session_id": "session_tipi_example",
+  "started_at": "2026-07-08T21:00:00Z",
+  "status": "completed",
+  "user_id": null
+}

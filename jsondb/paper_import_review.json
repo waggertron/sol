@@ -1,0 +1,381 @@
+{
+  "deferred_items": [
+    {
+      "id": "paper-title:in_press_the_cumulative_continuity_model_of_personality_trait_development",
+      "reason": "In-press reference; requires manual bibliographic lookup after publication metadata stabilizes.",
+      "title": "(in press). The cumulative continuity model of personality trait development."
+    },
+    {
+      "id": "paper-title:neo_pi_r_professional_manual",
+      "reason": "Assessment manual/book citation; handle through manual catalog review instead of Crossref title matching.",
+      "title": "NEO PI-R professional manual"
+    },
+    {
+      "id": "paper-title:the_symbolic_species_the_co_evolution_of_language_and_the_brain",
+      "reason": "Book citation; requires manual source handling rather than automated paper metadata import.",
+      "title": "The symbolic species: The co-evolution of language and the brain"
+    },
+    {
+      "id": "paper-title:cybernetics_or_control_and_communication_in_the_animal_and_the_machine",
+      "reason": "Canonical book citation; defer to manual source curation.",
+      "title": "Cybernetics—Or control and communication in the animal and the machine"
+    },
+    {
+      "id": "paper-title:studies_in_the_nature_of_character_part_1_studies_in_deceit_book_1_general_methods_and_results_book_2_statistical_method",
+      "reason": "Multi-book citation; defer to manual source curation.",
+      "title": "Studies in the nature of character, [part] 1: Studies in deceit: Book 1, General methods and results; book 2, statistical methods and results"
+    },
+    {
+      "id": "paper-title:personality_formation_the_determinants",
+      "reason": "Book citation; defer to manual source curation.",
+      "title": "Personality formation: The determinants."
+    },
+    {
+      "id": "paper-title:cognitive_therapy_and_the_emotional_disorders",
+      "reason": "Book citation; defer to manual source curation.",
+      "title": "Cognitive therapy and the emotional disorders"
+    },
+    {
+      "id": "paper-title:the_user_illusion_cutting_consciousness_down_to_size",
+      "reason": "Book citation; defer to manual source curation.",
+      "title": "The user illusion: Cutting consciousness down to size"
+    },
+    {
+      "id": "paper-title:maps_of_meaning_the_architecture_of_belief",
+      "reason": "Book citation; defer to manual source curation.",
+      "title": "Maps of meaning: The architecture of belief"
+    },
+    {
+      "id": "paper-title:the_psychology_of_action_linking_cognition_and_motivation_to_behavior",
+      "reason": "Edited volume title rather than a specific cited paper; defer to manual source curation.",
+      "title": "The Psychology of Action: Linking Cognition and Motivation to Behavior"
+    },
+    {
+      "id": "paper-title:the_person_in_psychology_selected_essays",
+      "reason": "Selected essays volume; defer to manual source curation.",
+      "title": "The person in psychology: Selected essays"
+    },
+    {
+      "id": "paper-title:personality_and_assessment",
+      "reason": "Canonical book citation; defer to manual source curation.",
+      "title": "Personality and assessment"
+    },
+    {
+      "id": "paper-title:the_new_experimental_aesthetics",
+      "reason": "Book citation; defer to manual source curation.",
+      "title": "The new experimental aesthetics."
+    },
+    {
+      "id": "paper-title:the_neuropsychology_of_anxiety_an_enquiry_into_the_functions_of_the_septo_hippocampal_system",
+      "reason": "Book citation; defer to manual source curation.",
+      "title": "The neuropsychology of anxiety: An enquiry into the functions of the septo-hippocampal system"
+    },
+    {
+      "id": "paper-title:the_psychology_of_physical_symptoms",
+      "reason": "Book citation; defer to manual source curation.",
+      "title": "The psychology of physical symptoms"
+    },
+    {
+      "id": "paper-title:temperament_a_psychological_perspective",
+      "reason": "Book title; defer to manual source curation.",
+      "title": "Temperament: A Psychological Perspective"
+    },
+    {
+      "id": "paper-title:available_light_anthropological_reflections_on_philosophical_topics",
+      "reason": "Book citation; defer to manual source curation.",
+      "title": "Available Light: Anthropological Reflections on Philosophical Topics"
+    },
+    {
+      "id": "paper-title:handbook_of_self_regulation_research",
+      "reason": "Handbook or edited volume title; defer to manual source curation.",
+      "title": "Handbook of Self-regulation Research"
+    },
+    {
+      "id": "paper-title:how_the_body_shapes_the_mind",
+      "reason": "Book citation; defer to manual source curation.",
+      "title": "How the body shapes the mind"
+    },
+    {
+      "id": "paper-title:personality_psychology_havings_doings_and_beings_in_context",
+      "reason": "Book title; defer to manual source curation.",
+      "title": "Personality psychology: havings, doings, and beings in context"
+    },
+    {
+      "id": "paper-title:web_dictionary_of_cybernetics_and_systems",
+      "reason": "Reference work or website title; defer to manual source curation.",
+      "title": "Web dictionary of cybernetics and systems"
+    },
+    {
+      "id": "paper-title:a_face_is_exposed_for_aol_searcher_no_4417749",
+      "reason": "News article citation; defer to manual source curation.",
+      "title": "A face is exposed for aol searcher no. 4417749"
+    },
+    {
+      "id": "paper-title:personality_traits",
+      "reason": "Generic reference or chapter title; defer to manual source curation.",
+      "title": "Personality traits"
+    },
+    {
+      "id": "paper-title:trait_and_factor_theories",
+      "reason": "Theory chapter or reference-section title; defer to manual source curation.",
+      "title": "Trait and factor theories"
+    },
+    {
+      "id": "paper-title:interpersonal_theory_of_personality",
+      "reason": "Theory chapter or reference-section title; defer to manual source curation.",
+      "title": "Interpersonal theory of personality"
+    },
+    {
+      "id": "paper-title:the_five_factor_theory_of_personality",
+      "reason": "Theory chapter title; defer to manual source curation.",
+      "title": "The five factor theory of personality"
+    },
+    {
+      "id": "paper-title:optimal_human_being_an_integrated_multilevel_perspective",
+      "reason": "Book or integrative volume title; defer to manual source curation.",
+      "title": "Optimal human being: An integrated multilevel perspective"
+    },
+    {
+      "id": "paper-title:mental_causation",
+      "reason": "Book or philosophy reference work title; defer to manual source curation.",
+      "title": "Mental causation"
+    },
+    {
+      "id": "paper-title:measurement_scale_construction_and_reliability",
+      "reason": "Measurement chapter or reference-section title; defer to manual source curation.",
+      "title": "Measurement, scale construction, and reliability."
+    },
+    {
+      "id": "paper-title:neural_systems_emotion_and_personality",
+      "reason": "Book or edited-volume title; defer to manual source curation.",
+      "title": "Neural systems, emotion and personality"
+    },
+    {
+      "id": "paper-title:the_psychophysiology_of_emotion",
+      "reason": "Book or edited-volume title; defer to manual source curation.",
+      "title": "The psychophysiology of emotion."
+    }
+  ],
+  "manual_matches": [
+    {
+      "doi": "10.17605/OSF.IO/4G7FV",
+      "id": "paper:10.17605/osf.io/4g7fv",
+      "reason": "Valid DOI resolves to an OSF repository object rather than a Crossref work.",
+      "source": "osf",
+      "title": "OSF resource 4g7fv",
+      "url": "https://osf.io/4g7fv/"
+    },
+    {
+      "doi": "10.1109/TETC.2015.2458574",
+      "id": "paper:10.1109/tetc.2015.2458574j",
+      "reason": "Queued DOI had a trailing character; manual review confirmed the canonical IEEE DOI.",
+      "source": "crossref",
+      "title": "Toward Reproducibility in Online Social Network Research",
+      "url": "https://doi.org/10.1109/TETC.2015.2458574"
+    },
+    {
+      "doi": "10.1016/S1364-6613(00)01819-2",
+      "id": "paper:10.1016/s1364-6613(00)01819-2",
+      "reason": "Direct manual import of a foundational related article for Baars global workspace theory.",
+      "source": "crossref",
+      "title": "The conscious access hypothesis: Origins and recent evidence",
+      "url": "https://doi.org/10.1016/S1364-6613(00)01819-2"
+    },
+    {
+      "doi": "10.1016/S1364-6613(03)00056-1",
+      "id": "paper:10.1016/s1364-6613(03)00056-1",
+      "reason": "Direct manual import of a closely related Baars article on consciousness and working memory.",
+      "source": "crossref",
+      "title": "How conscious experience and working memory interact",
+      "url": "https://doi.org/10.1016/S1364-6613(03)00056-1"
+    },
+    {
+      "doi": "10.1016/S0079-6123(05)50004-9",
+      "id": "paper:10.1016/s0079-6123(05)50004-9",
+      "reason": "Direct manual import of Baars's later global workspace synthesis chapter.",
+      "source": "crossref",
+      "title": "Global workspace theory of consciousness: toward a cognitive neuroscience of human experience",
+      "url": "https://doi.org/10.1016/S0079-6123(05)50004-9"
+    },
+    {
+      "doi": "10.1016/S0010-0277(00)00123-2",
+      "id": "paper:10.1016/s0010-0277(00)00123-2",
+      "reason": "Direct manual import of a core related workspace-framework article by Dehaene and Naccache.",
+      "source": "crossref",
+      "title": "Towards a cognitive neuroscience of consciousness: Basic evidence and a workspace framework",
+      "url": "https://doi.org/10.1016/S0010-0277(00)00123-2"
+    },
+    {
+      "doi": "10.1038/89551",
+      "id": "paper:10.1038/89551",
+      "reason": "Direct manual import of a closely related empirical consciousness article cited across the Baars workspace cluster.",
+      "source": "crossref",
+      "title": "Cerebral mechanisms of word masking and unconscious repetition priming",
+      "url": "https://doi.org/10.1038/89551"
+    },
+    {
+      "doi": "10.1073/PNAS.1332574100",
+      "id": "paper:10.1073/pnas.1332574100",
+      "reason": "Direct manual import of a core neuronal global-workspace modeling paper.",
+      "source": "crossref",
+      "title": "A neuronal network model linking subjective reports and objective physiological data during conscious perception",
+      "url": "https://doi.org/10.1073/PNAS.1332574100"
+    },
+    {
+      "doi": "10.1016/j.tins.2003.09.015",
+      "id": "paper:10.1016/j.tins.2003.09.015",
+      "reason": "Direct manual import of a related Baars synthesis article in the same consciousness cluster.",
+      "source": "crossref",
+      "title": "Brain, conscious experience and the observing self",
+      "url": "https://doi.org/10.1016/j.tins.2003.09.015"
+    },
+    {
+      "doi": "10.1006/CCOG.2001.0507",
+      "id": "paper:10.1006/ccog.2001.0507",
+      "reason": "Direct manual import of a cited consciousness-related empirical article from the observing-self cluster.",
+      "source": "crossref",
+      "title": "Invariant Reversible QEEG Effects of Anesthetics",
+      "url": "https://doi.org/10.1006/CCOG.2001.0507"
+    },
+    {
+      "doi": "10.1073/PNAS.0931349100",
+      "id": "paper:10.1073/pnas.0931349100",
+      "reason": "Direct manual import of a related theoretical consciousness framework paper cited in the workspace cluster.",
+      "source": "crossref",
+      "title": "Naturalizing consciousness: A theoretical framework",
+      "url": "https://doi.org/10.1073/PNAS.0931349100"
+    },
+    {
+      "doi": "10.1038/NN0203-119",
+      "id": "paper:10.1038/nn0203-119",
+      "reason": "Direct manual import of a cited high-signal consciousness framework article.",
+      "source": "crossref",
+      "title": "A framework for consciousness",
+      "url": "https://doi.org/10.1038/NN0203-119"
+    },
+    {
+      "doi": "10.1073/PNAS.95.24.14529",
+      "id": "paper:10.1073/pnas.95.24.14529",
+      "reason": "Direct manual import of a foundational global workspace computational paper.",
+      "source": "crossref",
+      "title": "A neuronal model of a global workspace in effortful cognitive tasks",
+      "url": "https://doi.org/10.1073/PNAS.95.24.14529"
+    },
+    {
+      "doi": "10.1016/S0010-0277(00)00130-X",
+      "id": "paper:10.1016/s0010-0277(00)00130-x",
+      "reason": "Direct manual import of a linked critical-response article in the same Cognition consciousness issue.",
+      "source": "crossref",
+      "title": "Are we explaining consciousness yet?",
+      "url": "https://doi.org/10.1016/S0010-0277(00)00130-X"
+    }
+  ],
+  "rejected_items": [
+    {
+      "id": "paper-title:communication_research",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Communication Research"
+    },
+    {
+      "id": "paper-title:international_journal_of_psychoanalysis",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "International Journal of Psychoanalysis"
+    },
+    {
+      "id": "paper-title:psychological_issues",
+      "reason": "Journal or series title only, not a specific cited work.",
+      "title": "Psychological Issues"
+    },
+    {
+      "id": "paper-title:science_and_psychoanalysis",
+      "reason": "Series title only, not a specific cited work.",
+      "title": "Science and Psychoanalysis"
+    },
+    {
+      "id": "paper-title:journal_of_medical_education",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Journal of Medical Education"
+    },
+    {
+      "id": "paper-title:homo",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Homo"
+    },
+    {
+      "id": "paper-title:merrill_palmer_quarterly",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Merrill-Palmer Quarterly"
+    },
+    {
+      "id": "paper-title:indian_journal_of_clinical_psychology",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Indian Journal of Clinical Psychology"
+    },
+    {
+      "id": "paper-title:psikologicheskii_zhurnal",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Psikologicheskii Zhurnal"
+    },
+    {
+      "id": "paper-title:soviet_journal_of_psychology",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Soviet Journal of Psychology"
+    },
+    {
+      "id": "paper-title:revue_roumaine_de_psychologie",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Revue Roumaine de Psychologie"
+    },
+    {
+      "id": "paper-title:social_science_international",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Social Science International"
+    },
+    {
+      "id": "paper-title:personality_and_individual_differences",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Personality and Individual Differences"
+    },
+    {
+      "id": "paper-title:research_on_language_and_social_interaction",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Research on Language and Social Interaction"
+    },
+    {
+      "id": "paper-title:monographs_of_the_society_for_research_in_child_development",
+      "reason": "Series title only, not a specific cited work.",
+      "title": "Monographs of the Society for Research in Child Development"
+    },
+    {
+      "id": "paper-title:psychologia_africana_monograph_supplement",
+      "reason": "Series title only, not a specific cited work.",
+      "title": "Psychologia Africana Monograph Supplement"
+    },
+    {
+      "id": "paper-title:eur_j_soc_psychol",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Eur. J. Soc. Psychol."
+    },
+    {
+      "id": "paper-title:eur_j_psychol",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Eur. J. Psychol."
+    },
+    {
+      "id": "paper-title:human_performance_in_extreme_environments",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Human Performance in Extreme Environments"
+    },
+    {
+      "id": "paper-title:journal_of_machine_learning_research",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Journal of Machine Learning Research"
+    },
+    {
+      "id": "paper-title:harv_bus_rev",
+      "reason": "Journal title only, not a specific cited work.",
+      "title": "Harv. Bus. Rev."
+    }
+  ],
+  "version": 1
+}

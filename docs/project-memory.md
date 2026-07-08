@@ -63,16 +63,31 @@ then generate text and visual direction the user can evaluate.
 - `sources/adjacent_sources_v1.json` tracks 34 adjacent research sources.
 - `jsondb/import_queue.json` tracks 3,373 pending/imported/rejected research
   import candidates.
+- `jsondb/paper_import_review.json` stores manual defer/reject/manual-DOI
+  decisions for unresolved paper references.
 - `kb/wiki_imports/` contains 1,261 background Wikipedia summary imports.
-- `kb/paper_imports/` contains 1,643 metadata-only paper imports from queued DOI
+- `kb/paper_imports/` contains 1,646 metadata-only paper imports from queued DOI
   references.
+- `kb/research/paper_review_queue.md` is the generated manual-review queue for
+  unresolved paper references.
 - `assessments/ocean/` stores the current OCEAN assessment corpus: 11
   instruments, 186 scales, and 1,539 items.
 - `tools/rag.py` provides local lexical retrieval.
 - `tools/kb_importer.py` manages research import queues.
 - `tools/kb_importer.py import-queued-wikipedia` imports pending linked
   Wikipedia summaries; `import-paper-metadata` imports Crossref metadata-only
-  cards for queued DOI references.
+  cards for queued DOI references; `import-paper-manual-matches` imports only
+  manually curated paper mappings.
+- `tools/assessment_to_profile_atoms.py` is the first implementation-facing
+  assessment generator. It loads stored instrument JSON, scores responses, and
+  emits `profile_atom_schema_v0`-aligned `provisional_atom` records.
+- `tools/assessment_session_store.py` is the first local persistence layer for
+  assessment sessions. It stores raw responses separately from derived scores
+  and derived atoms in `jsondb/assessment_sessions.json`.
+- `tools/run_assessment_mvp.py` is the first end-to-end MVP runner. It creates
+  a local session, stores responses, scores the instrument, derives
+  `provisional_atom` candidates, and writes export artifacts under
+  `artifacts/assessment_runs/`.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -82,11 +97,37 @@ then generate text and visual direction the user can evaluate.
   imported; the remaining Wikipedia backlog is a small review tail rather than
   a large blind batch target.
 - Paper ingestion now includes Crossref title-search fallback in addition to
-  DOI lookups. That cleared most of the backlog, but the remaining unresolved
-  tail is still mostly `paper-title:*` records plus two bad DOI records and
-  should be handled as a review queue rather than a blind bulk batch.
+  DOI lookups. It now also includes stricter title-match scoring plus a
+  persisted review DB for defer/reject/manual DOI resolution. That cleared most
+  of the backlog, and the remaining unresolved tail is now entirely
+  `paper-title:*` records that should be handled as a review queue rather than
+  a blind bulk batch. The two DOI-backed failures are now resolved through
+  manual mapping. Current seeded review state: 21 rejected
+  journal-title-only or series-title-only records, 31 deferred
+  book/manual/in-press or volume records, and 2 manual mappings.
+- The operating plan for the remaining paper tail now lives in
+  `plans/09-paper-tail-curation.md`. Default approach: conservative hygiene
+  passes first, then clustered manual resolution, and only then reconsider
+  importer automation.
+- A reviewed consciousness/workspace cluster is now present in
+  `kb/cards/baars_global_workspace_theory.md` and
+  `kb/cards/dehaene_workspace_neuroscience.md`. These sources are being used
+  only for architecture around salience, thresholding, and candidate-vs-active
+  profile atoms, not for neuroscientific claims about users.
+- The repo now has a durable research-promotion workflow in
+  `docs/architecture/rag/research-promotion-workflow.md` and a local reusable
+  workspace skill at `.codex/skills/sol-research-kb-workflow/SKILL.md` for
+  future paper-cluster ingestion and promotion work.
+- Repo-local agent guidance now lives in:
+  `AGENTS.md`, `assessments/AGENTS.md`, and `kb/AGENTS.md`.
 - `tools/import_ocean_assessments.py` normalizes downloaded official assessment
   pages into repo JSON.
+- `docs/architecture/assessments/profile-atom-output.md` defines the current
+  scoring-to-profile-atom output contract.
+- `docs/architecture/assessments/session-storage.md` defines the current local
+  assessment session persistence contract.
+- `docs/architecture/assessments/mvp-flow.md` defines the current executable
+  MVP assessment flow.
 
 The latest snapshot is maintained in `docs/current-state.md`.
 

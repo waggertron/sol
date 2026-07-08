@@ -29,6 +29,7 @@ IMPORT_QUEUE = JSONDB / "import_queue.json"
 IMPORT_RUNS = JSONDB / "import_runs.json"
 TERM_INVENTORY = JSONDB / "term_inventory.json"
 WIKI_REVIEW = JSONDB / "wiki_import_review.json"
+PAPER_REVIEW = JSONDB / "paper_import_review.json"
 WIKI_IMPORTS = ROOT / "kb" / "wiki_imports"
 PAPER_IMPORTS = ROOT / "kb" / "paper_imports"
 SOURCES_DIR = ROOT / "sources"
@@ -115,6 +116,8 @@ def ensure_db() -> None:
         save_json(IMPORT_QUEUE, {"version": 1, "items": []})
     if not IMPORT_RUNS.exists():
         save_json(IMPORT_RUNS, {"version": 1, "runs": []})
+    if not PAPER_REVIEW.exists():
+        save_json(PAPER_REVIEW, {"version": 1, "rejected_items": [], "deferred_items": [], "manual_matches": []})
 
 
 def load_queue() -> dict[str, Any]:
@@ -124,6 +127,11 @@ def load_queue() -> dict[str, Any]:
 
 def save_queue(queue: dict[str, Any]) -> None:
     save_json(IMPORT_QUEUE, queue)
+
+
+def load_paper_review() -> dict[str, Any]:
+    ensure_db()
+    return load_json(PAPER_REVIEW, {"version": 1, "rejected_items": [], "deferred_items": [], "manual_matches": []})
 
 
 def add_queue_item(queue: dict[str, Any], item: dict[str, Any]) -> bool:
@@ -184,12 +192,42 @@ def crossref_work(doi: str, timeout: float = 30) -> dict[str, Any]:
 
 def normalize_title_for_match(title: str) -> str:
     title = title.lower()
+    title = (
+        title.replace("\u2019", "'")
+        .replace("\u2018", "'")
+        .replace("\u201c", '"')
+        .replace("\u201d", '"')
+        .replace("\u2013", "-")
+        .replace("\u2014", "-")
+    )
     title = title.replace("&", "and")
     title = re.sub(r"[^a-z0-9]+", " ", title)
     return " ".join(title.split())
 
 
-def crossref_search_title(title: str, rows: int = 3, timeout: float = 1.5) -> list[dict[str, Any]]:
+def build_title_variants(title: str) -> list[str]:
+    variants = [title.strip()]
+    stripped = title.strip().rstrip(".")
+    if stripped not in variants:
+        variants.append(stripped)
+    if ":" in stripped:
+        variants.append(stripped.split(":", 1)[0].strip())
+    if "?" in stripped:
+        variants.append(stripped.split("?", 1)[0].strip())
+    if "(" in stripped:
+        variants.append(re.sub(r"\([^)]*\)", "", stripped).strip())
+
+    normalized = []
+    seen = set()
+    for variant in variants:
+        variant = re.sub(r"\s+", " ", variant).strip(" -:;,.")
+        if variant and variant not in seen:
+            seen.add(variant)
+            normalized.append(variant)
+    return normalized
+
+
+def crossref_search_title(title: str, rows: int = 8, timeout: float = 5.0) -> list[dict[str, Any]]:
     params = urllib.parse.urlencode(
         {
             "query.title": title,
@@ -219,47 +257,92 @@ def crossref_search_title(title: str, rows: int = 3, timeout: float = 1.5) -> li
     return json.loads(result.stdout).get("message", {}).get("items", [])
 
 
+def overlap_ratio(left: set[str], right: set[str]) -> float:
+    if not left or not right:
+        return 0.0
+    return len(left & right) / max(len(left), len(right))
+
+
+def score_crossref_title_match(target_title: str, candidate_title: str, target_year: Any, candidate_year: int | None) -> int:
+    normalized_target = normalize_title_for_match(target_title)
+    normalized_candidate = normalize_title_for_match(candidate_title)
+    if not normalized_target or not normalized_candidate:
+        return -1
+
+    target_tokens = set(normalized_target.split())
+    candidate_tokens = set(normalized_candidate.split())
+    token_overlap = len(target_tokens & candidate_tokens)
+    ratio = overlap_ratio(target_tokens, candidate_tokens)
+    score = 0
+
+    if normalized_candidate == normalized_target:
+        score += 120
+    elif normalized_candidate.startswith(normalized_target) or normalized_target.startswith(normalized_candidate):
+        score += 80
+    elif normalized_target in normalized_candidate or normalized_candidate in normalized_target:
+        score += 55
+
+    score += token_overlap * 4
+    score += int(ratio * 40)
+
+    target_year_str = str(target_year) if target_year else None
+    target_year_int = int(target_year_str) if target_year_str and target_year_str.isdigit() else None
+    if target_year_str and candidate_year is not None:
+        if str(candidate_year) == target_year_str:
+            score += 20
+        elif target_year_int is not None and abs(candidate_year - target_year_int) <= 1:
+            score += 8
+        elif target_year_int is not None and abs(candidate_year - target_year_int) >= 5:
+            score -= 15
+
+    short_target = len(target_tokens) <= 3
+    if short_target and ratio < 1.0:
+        score -= 40
+    elif ratio < 0.6:
+        score -= 20
+
+    return score
+
+
 def resolve_crossref_by_title(title: str, year: Any = None) -> dict[str, Any] | None:
-    normalized_target = normalize_title_for_match(title)
-    year_str = str(year) if year else None
-    year_int = int(year_str) if year_str and year_str.isdigit() else None
     best_work: dict[str, Any] | None = None
     best_score = -1
 
-    for work in crossref_search_title(title):
-        candidate_title = first_value(work.get("title"))
-        if not candidate_title:
-            continue
-        normalized_candidate = normalize_title_for_match(candidate_title)
-        score = 0
+    for variant in build_title_variants(title):
+        try:
+            results = crossref_search_title(variant)
+        except Exception:
+            if best_work is not None:
+                continue
+            raise
+        for work in results:
+            candidate_title = first_value(work.get("title"))
+            if not candidate_title:
+                continue
+            candidate_year = published_year(work)
+            score = score_crossref_title_match(title, candidate_title, year, candidate_year)
+            if score > best_score:
+                best_score = score
+                best_work = work
 
-        if normalized_candidate == normalized_target:
-            score += 100
-        elif normalized_target and normalized_target in normalized_candidate:
-            score += 70
-        elif normalized_candidate and normalized_candidate in normalized_target:
-            score += 60
-
-        target_tokens = set(normalized_target.split())
-        candidate_tokens = set(normalized_candidate.split())
-        if target_tokens and candidate_tokens:
-            overlap = len(target_tokens & candidate_tokens)
-            score += overlap * 2
-
-        candidate_year = published_year(work)
-        if year_str and candidate_year is not None:
-            if str(candidate_year) == year_str:
-                score += 15
-            elif year_int is not None and abs(candidate_year - year_int) <= 1:
-                score += 5
-
-        if score > best_score:
-            best_score = score
-            best_work = work
-
-    if best_score < 60:
+    if best_score < 85:
         return None
     return best_work
+
+
+def reviewed_paper_state(item: dict[str, Any], review: dict[str, Any]) -> tuple[str | None, dict[str, Any] | None]:
+    item_id = item.get("id")
+    title = normalize_title_for_match(item.get("title") or "")
+    for entry in review.get("rejected_items", []):
+        if entry.get("id") == item_id or (title and normalize_title_for_match(entry.get("title") or "") == title):
+            return "rejected", entry
+    for entry in review.get("deferred_items", []):
+        if entry.get("id") == item_id or (title and normalize_title_for_match(entry.get("title") or "") == title):
+            return "deferred", entry
+    for entry in review.get("manual_matches", []):
+        if entry.get("id") == item_id or (title and normalize_title_for_match(entry.get("title") or "") == title):
+            return "manual", entry
+    return None, None
 
 
 def queue_crossref_references(limit: int | None = None, sleep_seconds: float = 0.2) -> dict[str, int]:
@@ -871,6 +954,47 @@ model.
     return path
 
 
+def write_manual_paper_metadata_card(item: dict[str, Any], manual: dict[str, Any]) -> Path:
+    title = manual.get("title") or item.get("title") or item.get("doi") or "Untitled source"
+    doi = normalize_doi(manual.get("doi") or item.get("doi") or "")
+    url = manual.get("url") or item.get("url") or (doi_url(doi) if doi else "")
+    container = manual.get("container_title") or item.get("container_title") or ""
+    year = manual.get("year") or item.get("year") or ""
+    authors = manual.get("authors") or "Unknown"
+    source_ids = ", ".join(item.get("discovered_from", [])) or "unknown"
+    path = PAPER_IMPORTS / f"{slugify(title)}.md"
+    text = f"""# Paper Metadata Import: {title}
+
+## Citation Metadata
+
+- Authors: {authors}
+- Year: {year}
+- Venue: {container}
+- DOI: {doi}
+- URL: {url}
+
+## Queue Metadata
+
+- Queue id: `{item.get("id")}`
+- Discovered from: {source_ids}
+
+## Import Policy
+
+This card was imported from a manual metadata mapping because Crossref metadata
+was unavailable or unsuitable for this source. It does not import full source
+text or abstracts by default. Promote this source into a reviewed source card
+only after reading the source and recording project-specific implications,
+limits, and evidence grade.
+
+## Import Status
+
+Imported as background source metadata via manual review. Not yet reviewed into
+the knowledge model.
+"""
+    path.write_text(text, encoding="utf-8")
+    return path
+
+
 def apply_paper_work_to_item(item: dict[str, Any], work: dict[str, Any], note: str) -> Path:
     doi = normalize_doi(work.get("DOI") or item.get("doi") or "")
     path = write_paper_metadata_card(item, work)
@@ -889,8 +1013,36 @@ def apply_paper_work_to_item(item: dict[str, Any], work: dict[str, Any], note: s
     return path
 
 
+def apply_manual_paper_metadata_to_item(item: dict[str, Any], manual: dict[str, Any], note: str) -> Path:
+    doi = normalize_doi(manual.get("doi") or item.get("doi") or "")
+    path = write_manual_paper_metadata_card(item, manual)
+    item["title"] = manual.get("title") or item.get("title")
+    item["doi"] = doi or item.get("doi")
+    item["url"] = manual.get("url") or item.get("url") or (doi_url(doi) if doi else None)
+    item["year"] = manual.get("year") or item.get("year")
+    item["container_title"] = manual.get("container_title") or item.get("container_title")
+    item["imported"] = True
+    item["imported_path"] = path.as_posix()
+    item["imported_at"] = utc_now()
+    notes = set(item.get("notes", []))
+    notes = {entry for entry in notes if not entry.startswith("Pending retry after paper metadata import error:")}
+    notes.add(note)
+    item["notes"] = sorted(notes)
+    return path
+
+
+def apply_paper_review_state(item: dict[str, Any], status: str, review_entry: dict[str, Any]) -> None:
+    item["review_status"] = status
+    notes = set(item.get("notes", []))
+    notes = {entry for entry in notes if not entry.startswith("Pending retry after paper metadata import error:")}
+    reason = review_entry.get("reason") or "No reason recorded."
+    notes.add(f"Paper review status: {status}. {reason}")
+    item["notes"] = sorted(notes)
+
+
 def import_paper_metadata(limit: int | None = None, sleep_seconds: float = 0.2) -> dict[str, int]:
     queue = load_queue()
+    review = load_paper_review()
     candidates = [
         item
         for item in queue["items"]
@@ -904,16 +1056,51 @@ def import_paper_metadata(limit: int | None = None, sleep_seconds: float = 0.2) 
     imported = 0
     errors = 0
     skipped = 0
+    rejected = 0
+    deferred = 0
     for item in candidates:
         doi = item.get("doi")
         title = item.get("title")
         if not doi and not title:
             skipped += 1
             continue
+        review_state, review_entry = reviewed_paper_state(item, review)
+        if review_state == "rejected":
+            apply_paper_review_state(item, "rejected", review_entry or {})
+            rejected += 1
+            save_queue(queue)
+            continue
+        if review_state == "deferred":
+            apply_paper_review_state(item, "deferred", review_entry or {})
+            deferred += 1
+            save_queue(queue)
+            continue
         try:
             work: dict[str, Any] | None = None
             note = "Imported Crossref bibliographic metadata only; source not reviewed."
-            if doi:
+            if review_state == "manual" and review_entry:
+                manual_url = review_entry.get("url")
+                manual_title = review_entry.get("title")
+                manual_doi = review_entry.get("doi")
+                if manual_doi and (manual_url or manual_title) and review_entry.get("source") != "crossref":
+                    apply_manual_paper_metadata_to_item(
+                        item,
+                        review_entry,
+                        "Imported manual bibliographic metadata only; source not reviewed. Resolved via manual source mapping.",
+                    )
+                    imported += 1
+                    save_queue(queue)
+                    time.sleep(sleep_seconds)
+                    continue
+                if manual_doi:
+                    work = crossref_work(manual_doi)
+                    note = (
+                        "Imported Crossref bibliographic metadata only; source not reviewed. "
+                        "Resolved via manual review DOI mapping."
+                    )
+                else:
+                    raise RuntimeError("Manual paper match is missing a DOI.")
+            elif doi:
                 try:
                     work = crossref_work(doi)
                 except Exception:
@@ -951,9 +1138,67 @@ def import_paper_metadata(limit: int | None = None, sleep_seconds: float = 0.2) 
         "candidates_checked": len(candidates),
         "metadata_cards_imported": imported,
         "skipped": skipped,
+        "rejected": rejected,
+        "deferred": deferred,
         "errors": errors,
     }
     append_run_log({"type": "import_paper_metadata", "timestamp": utc_now(), "result": result})
+    return result
+
+
+def import_paper_manual_matches(sleep_seconds: float = 0.0) -> dict[str, int]:
+    queue = load_queue()
+    review = load_paper_review()
+    candidates = [
+        item
+        for item in queue["items"]
+        if item.get("kind") == "paper_reference"
+        and not item.get("imported")
+        and reviewed_paper_state(item, review)[0] == "manual"
+    ]
+
+    imported = 0
+    errors = 0
+    for item in candidates:
+        _state, review_entry = reviewed_paper_state(item, review)
+        try:
+            if not review_entry:
+                raise RuntimeError("Missing manual review entry.")
+            manual_url = review_entry.get("url")
+            manual_title = review_entry.get("title")
+            manual_doi = review_entry.get("doi")
+            if manual_doi and (manual_url or manual_title) and review_entry.get("source") != "crossref":
+                apply_manual_paper_metadata_to_item(
+                    item,
+                    review_entry,
+                    "Imported manual bibliographic metadata only; source not reviewed. Resolved via manual source mapping.",
+                )
+            elif manual_doi:
+                work = crossref_work(manual_doi)
+                apply_paper_work_to_item(
+                    item,
+                    work,
+                    "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+                )
+            else:
+                raise RuntimeError("Manual review entry is missing a DOI.")
+            imported += 1
+            save_queue(queue)
+            time.sleep(sleep_seconds)
+        except Exception as exc:  # noqa: BLE001
+            errors += 1
+            notes = set(item.get("notes", []))
+            notes.add(f"Pending retry after paper metadata import error: {exc}")
+            item["notes"] = sorted(notes)
+            save_queue(queue)
+
+    save_queue(queue)
+    result = {
+        "candidates_checked": len(candidates),
+        "metadata_cards_imported": imported,
+        "errors": errors,
+    }
+    append_run_log({"type": "import_paper_manual_matches", "timestamp": utc_now(), "result": result})
     return result
 
 
@@ -994,6 +1239,11 @@ def command_import_queued_wikipedia(args: argparse.Namespace) -> None:
 
 def command_import_paper_metadata(args: argparse.Namespace) -> None:
     result = import_paper_metadata(limit=args.limit, sleep_seconds=args.sleep)
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+
+def command_import_paper_manual_matches(args: argparse.Namespace) -> None:
+    result = import_paper_manual_matches(sleep_seconds=args.sleep)
     print(json.dumps(result, indent=2, sort_keys=True))
 
 
@@ -1084,6 +1334,61 @@ def command_apply_wiki_review(_: argparse.Namespace) -> None:
     print(json.dumps(result, indent=2, sort_keys=True))
 
 
+def command_apply_paper_review(_: argparse.Namespace) -> None:
+    review = load_paper_review()
+    queue = load_queue()
+    updated = 0
+    for item in queue["items"]:
+        if item.get("kind") != "paper_reference" or item.get("imported"):
+            continue
+        review_state, review_entry = reviewed_paper_state(item, review)
+        if review_state not in {"rejected", "deferred"}:
+            continue
+        apply_paper_review_state(item, review_state, review_entry or {})
+        updated += 1
+
+    save_queue(queue)
+    result = {"queue_items_updated": updated}
+    append_run_log({"type": "apply_paper_review", "timestamp": utc_now(), "result": result})
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+
+def command_paper_review_report(args: argparse.Namespace) -> None:
+    queue = load_queue()
+    review = load_paper_review()
+    pending = [item for item in queue["items"] if item.get("kind") == "paper_reference" and not item.get("imported")]
+    pending.sort(key=lambda item: ((item.get("year") or ""), item.get("title") or ""))
+
+    lines = [
+        "# Paper Import Review Queue",
+        "",
+        f"Generated: {utc_now()}",
+        "",
+        f"- pending paper references: {len(pending)}",
+        f"- rejected review entries: {len(review.get('rejected_items', []))}",
+        f"- deferred review entries: {len(review.get('deferred_items', []))}",
+        f"- manual DOI mappings: {len(review.get('manual_matches', []))}",
+        "",
+        "## Pending Items",
+        "",
+    ]
+
+    for item in pending[: args.limit]:
+        state, _entry = reviewed_paper_state(item, review)
+        state_label = state or "unreviewed"
+        title = item.get("title") or item.get("id")
+        year = item.get("year") or "unknown"
+        doi = item.get("doi") or "none"
+        lines.append(f"- [{state_label}] {title} ({year}) | id=`{item.get('id')}` | doi={doi}")
+
+    output = Path(args.output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    result = {"path": output.as_posix(), "items_written": min(len(pending), args.limit)}
+    append_run_log({"type": "paper_review_report", "timestamp": utc_now(), "result": result})
+    print(json.dumps(result, indent=2, sort_keys=True))
+
+
 def command_clean_notes(_: argparse.Namespace) -> None:
     queue = load_queue()
     updated = 0
@@ -1127,6 +1432,10 @@ def make_parser() -> argparse.ArgumentParser:
     paper_metadata_parser.add_argument("--sleep", type=float, default=0.2, help="Delay between requests")
     paper_metadata_parser.set_defaults(func=command_import_paper_metadata)
 
+    paper_manual_parser = subparsers.add_parser("import-paper-manual-matches", help="Import only manually curated paper mappings")
+    paper_manual_parser.add_argument("--sleep", type=float, default=0.0, help="Delay between requests")
+    paper_manual_parser.set_defaults(func=command_import_paper_manual_matches)
+
     crossref_parser = subparsers.add_parser("queue-crossref-references", help="Queue Crossref references from source DOI metadata")
     crossref_parser.add_argument("--limit", type=int, default=None, help="Maximum source DOI records to inspect")
     crossref_parser.add_argument("--sleep", type=float, default=0.2, help="Delay between requests")
@@ -1151,6 +1460,18 @@ def make_parser() -> argparse.ArgumentParser:
 
     wiki_review_parser = subparsers.add_parser("apply-wiki-review", help="Apply rejected Wikipedia mapping review decisions")
     wiki_review_parser.set_defaults(func=command_apply_wiki_review)
+
+    paper_review_parser = subparsers.add_parser("apply-paper-review", help="Apply paper review decisions for deferred or rejected items")
+    paper_review_parser.set_defaults(func=command_apply_paper_review)
+
+    paper_review_report_parser = subparsers.add_parser("paper-review-report", help="Write a Markdown report for unresolved paper references")
+    paper_review_report_parser.add_argument("--limit", type=int, default=200, help="Maximum pending items to write")
+    paper_review_report_parser.add_argument(
+        "--output",
+        default="kb/research/paper_review_queue.md",
+        help="Output Markdown path",
+    )
+    paper_review_report_parser.set_defaults(func=command_paper_review_report)
 
     clean_notes_parser = subparsers.add_parser("clean-notes", help="Clean stale retry notes from imported queue records")
     clean_notes_parser.set_defaults(func=command_clean_notes)

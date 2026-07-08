@@ -1,19 +1,19 @@
-# Paper Metadata Import: On the Self-Regulation of Behavior
+# Paper Metadata Import: Towards a cognitive neuroscience of consciousness: basic evidence and a workspace framework
 
 ## Citation Metadata
 
-- Authors: Bradley R. Entner Wright, Charles S. Carver, Michael F. Scheier
-- Year: 2000
-- Venue: Contemporary Sociology
-- DOI: 10.2307/2654424
-- URL: https://doi.org/10.2307/2654424
+- Authors: S Dehaene
+- Year: 2001
+- Venue: Cognition
+- DOI: 10.1016/s0010-0277(00)00123-2
+- URL: https://doi.org/10.1016/s0010-0277(00)00123-2
 
 ## Queue Metadata
 
-- Queue id: `paper-title:on_the_self_regulation_of_behavior`
-- Discovered from: deyoung_2015_cybernetic_big_five
+- Queue id: `paper:10.1016/s0010-0277(00)00123-2`
+- Discovered from: paper-title:a_cognitive_theory_of_consciousness, user-request:2026-07-08
 - Reference count: 0
-- Crossref cited-by count: 11
+- Crossref cited-by count: 1656
 
 ## Import Policy
 

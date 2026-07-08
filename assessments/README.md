@@ -11,6 +11,13 @@ Assessment storage is intentionally separated from the research KB:
 - `assessments/` stores instrument-level data that can eventually drive
   administration, scoring, and result presentation.
 
+Current implementation references:
+
+- `docs/architecture/assessments/ocean.md`
+- `docs/architecture/assessments/profile-atom-output.md`
+- `docs/architecture/assessments/session-storage.md`
+- `docs/architecture/assessments/mvp-flow.md`
+
 ## Policy
 
 Full item text may be stored here only when the source is clearly public-domain,

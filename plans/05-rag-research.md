@@ -27,6 +27,9 @@ Current snapshot:
 
 See `docs/current-state.md` for details.
 
+The remaining paper-reference tail is now governed by
+`plans/09-paper-tail-curation.md` rather than broad bulk ingestion.
+
 ## Expansion Workflow
 
 1. Add source to `sources/sources.json`.

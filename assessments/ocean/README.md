@@ -57,6 +57,13 @@ Assessment results should be treated as self-report evidence, not as fixed
 identity labels. Any score-derived profile atom should remain user-visible,
 editable, and non-diagnostic.
 
+Current local MVP flow:
+
+- generate provisional atoms from responses with
+  `tools/assessment_to_profile_atoms.py`
+- persist sessions and derived results with `tools/assessment_session_store.py`
+- run the end-to-end local workflow with `tools/run_assessment_mvp.py`
+
 ## Known Import Caveats
 
 - `ipip_neo_120_maples_2014.json` currently contains 118 parsed items from the

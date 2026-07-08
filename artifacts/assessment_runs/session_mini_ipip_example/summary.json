@@ -1,0 +1,88 @@
+{
+  "completed_at": "2026-07-08T21:20:00Z",
+  "instrument_id": "mini_ipip",
+  "instrument_name": "Mini-IPIP Big Five Factors",
+  "profile_atom_count": 5,
+  "profile_atoms": [
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests relatively high extraversion on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.72,
+      "id": "assessment.mini_ipip.mini_ipip_extraversion_surgency_or_extraversion.v0",
+      "label": "Surgency Or Extraversion self-report tendency",
+      "normalized_score": 0.8125,
+      "score_range": [
+        4,
+        20
+      ],
+      "score_value": 17.0,
+      "state": "provisional_atom",
+      "trait": "extraversion"
+    },
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests relatively high agreeableness on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.72,
+      "id": "assessment.mini_ipip.mini_ipip_agreeableness_agreeableness.v0",
+      "label": "Agreeableness self-report tendency",
+      "normalized_score": 0.875,
+      "score_range": [
+        4,
+        20
+      ],
+      "score_value": 18.0,
+      "state": "provisional_atom",
+      "trait": "agreeableness"
+    },
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests moderately elevated conscientiousness on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.64,
+      "id": "assessment.mini_ipip.mini_ipip_conscientiousness_conscientiousness.v0",
+      "label": "Conscientiousness self-report tendency",
+      "normalized_score": 0.75,
+      "score_range": [
+        4,
+        20
+      ],
+      "score_value": 16.0,
+      "state": "provisional_atom",
+      "trait": "conscientiousness"
+    },
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests moderately low neuroticism or emotional reactivity on this instrument. Treat as provisional self-report evidence, not a diagnostic conclusion.",
+      "confidence": 0.64,
+      "id": "assessment.mini_ipip.mini_ipip_neuroticism_neuroticism_b.v0",
+      "label": "Neuroticism B self-report tendency",
+      "normalized_score": 0.3125,
+      "score_range": [
+        4,
+        20
+      ],
+      "score_value": 9.0,
+      "state": "provisional_atom",
+      "trait": "neuroticism"
+    },
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests relatively high openness on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.64,
+      "id": "assessment.mini_ipip.mini_ipip_openness_intellect_or_imagination.v0",
+      "label": "Intellect Or Imagination self-report tendency",
+      "normalized_score": 0.875,
+      "score_range": [
+        4,
+        20
+      ],
+      "score_value": 18.0,
+      "state": "provisional_atom",
+      "trait": "openness"
+    }
+  ],
+  "response_count": 20,
+  "score_count": 5,
+  "session_id": "session_mini_ipip_example",
+  "started_at": "2026-07-08T21:15:00Z",
+  "status": "completed"
+}

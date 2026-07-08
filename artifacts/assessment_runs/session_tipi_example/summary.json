@@ -1,0 +1,88 @@
+{
+  "completed_at": "2026-07-08T21:05:00Z",
+  "instrument_id": "tipi",
+  "instrument_name": "Ten Item Personality Inventory",
+  "profile_atom_count": 5,
+  "profile_atoms": [
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests relatively high extraversion on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.52,
+      "id": "assessment.tipi.tipi_extraversion.v0",
+      "label": "Extraversion self-report tendency",
+      "normalized_score": 0.8333,
+      "score_range": [
+        1,
+        7
+      ],
+      "score_value": 6.0,
+      "state": "provisional_atom",
+      "trait": "extraversion"
+    },
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests moderately elevated agreeableness on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.52,
+      "id": "assessment.tipi.tipi_agreeableness.v0",
+      "label": "Agreeableness self-report tendency",
+      "normalized_score": 0.75,
+      "score_range": [
+        1,
+        7
+      ],
+      "score_value": 5.5,
+      "state": "provisional_atom",
+      "trait": "agreeableness"
+    },
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests relatively high conscientiousness on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.52,
+      "id": "assessment.tipi.tipi_conscientiousness.v0",
+      "label": "Conscientiousness self-report tendency",
+      "normalized_score": 0.8333,
+      "score_range": [
+        1,
+        7
+      ],
+      "score_value": 6.0,
+      "state": "provisional_atom",
+      "trait": "conscientiousness"
+    },
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests mid-range emotional stability on this instrument. Treat as provisional self-report evidence, not a diagnostic conclusion.",
+      "confidence": 0.52,
+      "id": "assessment.tipi.tipi_emotional_stability.v0",
+      "label": "Emotional Stability self-report tendency",
+      "normalized_score": 0.5833,
+      "score_range": [
+        1,
+        7
+      ],
+      "score_value": 4.5,
+      "state": "provisional_atom",
+      "trait": "neuroticism"
+    },
+    {
+      "activation_scope": "review_only",
+      "claim": "User self-report suggests relatively high openness on this instrument. Treat as provisional self-report evidence, not a fixed identity claim.",
+      "confidence": 0.52,
+      "id": "assessment.tipi.tipi_openness.v0",
+      "label": "Openness self-report tendency",
+      "normalized_score": 0.9167,
+      "score_range": [
+        1,
+        7
+      ],
+      "score_value": 6.5,
+      "state": "provisional_atom",
+      "trait": "openness"
+    }
+  ],
+  "response_count": 10,
+  "score_count": 5,
+  "session_id": "session_tipi_example",
+  "started_at": "2026-07-08T21:00:00Z",
+  "status": "completed"
+}

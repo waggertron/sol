@@ -37,12 +37,24 @@ Candidate constructs:
 - if-then behavioral signatures
 - trait-state distinction
 - contextual modes
+- salience and global availability
+- candidate versus active profile state
 
 RAG questions:
 
 - What changes across work, social, private, creative, and stress contexts?
 - Can user data distinguish stable tendency from local state?
 - How should the profile represent uncertainty and recency?
+- What evidence threshold should promote a local observation into an active
+  steering atom?
+
+Current implementation note:
+
+- `kb/cards/baars_global_workspace_theory.md` supports modeling current mode,
+  salience, and globally active profile atoms as distinct from latent
+  background tendencies.
+- `kb/cards/dehaene_workspace_neuroscience.md` supports thresholded promotion
+  from candidate observation to active steering state.
 
 ### 3. Psychometrics and Construct Validity
 
@@ -237,10 +249,12 @@ Suggested fields:
 - `label`
 - `domain`
 - `claim`
+- `state`
 - `evidence`
 - `source_ids`
 - `data_modality`
 - `context`
+- `activation_scope`
 - `confidence`
 - `stability`
 - `recency`
@@ -251,6 +265,25 @@ Suggested fields:
 - `counterevidence`
 - `last_updated`
 
+Suggested atom-state values:
+
+- `observed_candidate`: local signal or extracted cue, not yet suitable for
+  downstream personalization
+- `provisional_atom`: aggregated candidate with enough structure to show the
+  user or score internally
+- `active_atom`: high-confidence or user-confirmed atom allowed to influence
+  generation
+- `suppressed_atom`: previously active or provisional atom that is now stale,
+  contradicted, out of context, or user-rejected
+
+Suggested activation-scope values:
+
+- `global`: allowed to influence most downstream generation contexts
+- `contextual`: only active in tagged contexts such as work planning, creative
+  ideation, or reflective writing
+- `review_only`: retrievable for explanation or audit, but not used as a
+  steering variable
+
 Example:
 
 ```json
@@ -258,11 +291,13 @@ Example:
   "id": "style.direct_low_fluff.v0",
   "label": "direct, low-fluff communication",
   "domain": "communication_style",
+  "state": "active_atom",
   "claim": "The user tends to prefer concise, concrete, action-oriented wording.",
   "evidence": ["User edits repeatedly removed hedging and long preambles."],
   "source_ids": ["user_revision_events"],
   "data_modality": "text",
   "context": ["work", "planning"],
+  "activation_scope": "global",
   "confidence": 0.72,
   "stability": "medium",
   "recency": "last_30_days",
@@ -274,3 +309,25 @@ Example:
   "last_updated": "2026-07-01"
 }
 ```
+
+## Promotion Logic
+
+Atoms should not move directly from raw signal to generation control.
+
+Recommended progression:
+
+1. observe local signal
+2. aggregate repeated evidence
+3. create candidate atom with uncertainty
+4. check counterevidence and context fit
+5. request or incorporate user confirmation where the claim is interpretive
+6. promote only then to active atom
+
+This progression is supported by:
+
+- `kb/cards/baars_global_workspace_theory.md`
+- `kb/cards/dehaene_workspace_neuroscience.md`
+
+These sources are being used here as architectural guidance for global
+availability, thresholding, and reportability, not as justification for
+neuroscientific claims about the user.

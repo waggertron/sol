@@ -1,19 +1,19 @@
-# Paper Metadata Import: osf
+# Paper Metadata Import: Are we explaining consciousness yet?
 
 ## Citation Metadata
 
-- Authors: febri yogi
-- Year: 2021
-- Venue: 
-- DOI: 10.31219/osf.io/k3prh
-- URL: https://doi.org/10.31219/osf.io/k3prh
+- Authors: D Dennett
+- Year: 2001
+- Venue: Cognition
+- DOI: 10.1016/s0010-0277(00)00130-x
+- URL: https://doi.org/10.1016/s0010-0277(00)00130-x
 
 ## Queue Metadata
 
-- Queue id: `paper:10.17605/osf.io/4g7fv`
-- Discovered from: flake_fried_2020_measurement_schmeasurement
+- Queue id: `paper:10.1016/s0010-0277(00)00130-x`
+- Discovered from: paper-title:a_cognitive_theory_of_consciousness, user-request:2026-07-08
 - Reference count: 0
-- Crossref cited-by count: 23
+- Crossref cited-by count: 159
 
 ## Import Policy
 

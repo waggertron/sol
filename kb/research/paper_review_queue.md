@@ -1,0 +1,211 @@
+# Paper Import Review Queue
+
+Generated: 2026-07-06T22:08:00+00:00
+
+- pending paper references: 283
+- rejected review entries: 21
+- deferred review entries: 31
+- manual DOI mappings: 2
+
+## Pending Items
+
+- [deferred] (in press). The cumulative continuity model of personality trait development. (unknown) | id=`paper-title:in_press_the_cumulative_continuity_model_of_personality_trait_development` | doi=none
+- [rejected] Communication Research (unknown) | id=`paper-title:communication_research` | doi=none
+- [unreviewed] Comparing the predictive capability of social and interest affinity for recommendations (unknown) | id=`paper-title:comparing_the_predictive_capability_of_social_and_interest_affinity_for_recommendations` | doi=none
+- [unreviewed] Deciphering the 2016 us presidential campaign in the twitter sphere: A comparison of the trumpists and clintonists (unknown) | id=`paper-title:deciphering_the_2016_us_presidential_campaign_in_the_twitter_sphere_a_comparison_of_the_trumpists_and_clintonists` | doi=none
+- [unreviewed] Distilling the outcomes of personal experiences: a propensity-scored analysis of social media (unknown) | id=`paper-title:distilling_the_outcomes_of_personal_experiences_a_propensity_scored_analysis_of_social_media` | doi=none
+- [unreviewed] Potential networks, contagious communities, and understanding social network structure (unknown) | id=`paper-title:potential_networks_contagious_communities_and_understanding_social_network_structure` | doi=none
+- [unreviewed] The limits of abstract evaluation metrics: The case of hate speech detection (unknown) | id=`paper-title:the_limits_of_abstract_evaluation_metrics_the_case_of_hate_speech_detection` | doi=none
+- [deferred] Studies in the nature of character, [part] 1: Studies in deceit: Book 1, General methods and results; book 2, statistical methods and results (1928) | id=`paper-title:studies_in_the_nature_of_character_part_1_studies_in_deceit_book_1_general_methods_and_results_book_2_statistical_method` | doi=none
+- [deferred] Personality formation: The determinants. (1953) | id=`paper-title:personality_formation_the_determinants` | doi=none
+- [rejected] International Journal of Psychoanalysis (1958) | id=`paper-title:international_journal_of_psychoanalysis` | doi=none
+- [rejected] Psychological Issues (1959) | id=`paper-title:psychological_issues` | doi=none
+- [deferred] Cybernetics—Or control and communication in the animal and the machine (1961) | id=`paper-title:cybernetics_or_control_and_communication_in_the_animal_and_the_machine` | doi=none
+- [unreviewed] The inherent variability of behavior. (1961) | id=`paper-title:the_inherent_variability_of_behavior` | doi=none
+- [unreviewed] Role theoretical interpretation of psychological change. (1964) | id=`paper-title:role_theoretical_interpretation_of_psychological_change` | doi=none
+- [unreviewed] World Medical Association declaration of helsinki: ethical principles for medical research involving human subjects (re-published 2002) (1964) | id=`paper-title:world_medical_association_declaration_of_helsinki_ethical_principles_for_medical_research_involving_human_subjects_re_pu` | doi=none
+- [unreviewed] Adult socialization. (1965) | id=`paper-title:adult_socialization` | doi=none
+- [unreviewed] Calculating the singular values and pseudo-inverse of a matrix (1965) | id=`paper-title:calculating_the_singular_values_and_pseudo_inverse_of_a_matrix` | doi=none
+- [unreviewed] Longitudinal changes in intolerance and authoritarianism for subjects differing in amount of college education over four years. (1965) | id=`paper-title:longitudinal_changes_in_intolerance_and_authoritarianism_for_subjects_differing_in_amount_of_college_education_over_four` | doi=none
+- [rejected] Science and Psychoanalysis (1965) | id=`paper-title:science_and_psychoanalysis` | doi=none
+- [unreviewed] Changes in personality for groups completing different amounts of college over two years. (1966) | id=`paper-title:changes_in_personality_for_groups_completing_different_amounts_of_college_over_two_years` | doi=none
+- [unreviewed] The scree test for the number of factors. (1966) | id=`paper-title:the_scree_test_for_the_number_of_factors` | doi=none
+- [deferred] Personality and assessment (1968) | id=`paper-title:personality_and_assessment` | doi=none
+- [rejected] Psychologia Africana Monograph Supplement (1968) | id=`paper-title:psychologia_africana_monograph_supplement` | doi=none
+- [deferred] The person in psychology: Selected essays (1968) | id=`paper-title:the_person_in_psychology_selected_essays` | doi=none
+- [unreviewed] Temperament and time of day. (1971) | id=`paper-title:temperament_and_time_of_day` | doi=none
+- [unreviewed] Affiliation motivation. (1973) | id=`paper-title:affiliation_motivation` | doi=none
+- [unreviewed] Sources of n achievement. (1973) | id=`paper-title:sources_of_n_achievement` | doi=none
+- [unreviewed] An opponent-process theory of motivation: I. Temporal dynamics of affect. (1974) | id=`paper-title:an_opponent_process_theory_of_motivation_i_temporal_dynamics_of_affect` | doi=none
+- [deferred] The new experimental aesthetics. (1974) | id=`paper-title:the_new_experimental_aesthetics` | doi=none
+- [deferred] Cognitive therapy and the emotional disorders (1976) | id=`paper-title:cognitive_therapy_and_the_emotional_disorders` | doi=none
+- [rejected] Journal of Medical Education (1976) | id=`paper-title:journal_of_medical_education` | doi=none
+- [rejected] Homo (1978) | id=`paper-title:homo` | doi=none
+- [unreviewed] Appetitive-aversive interactions and inhibitory processes. (1979) | id=`paper-title:appetitive_aversive_interactions_and_inhibitory_processes` | doi=none
+- [unreviewed] A critique of Eysenck’s theory of personality (1981) | id=`paper-title:a_critique_of_eysenck_s_theory_of_personality` | doi=none
+- [unreviewed] Language and individual differences: The search for universals in personality lexicons. (1981) | id=`paper-title:language_and_individual_differences_the_search_for_universals_in_personality_lexicons` | doi=none
+- [rejected] Merrill-Palmer Quarterly (1981) | id=`paper-title:merrill_palmer_quarterly` | doi=none
+- [rejected] Indian Journal of Clinical Psychology (1982) | id=`paper-title:indian_journal_of_clinical_psychology` | doi=none
+- [unreviewed] Persistence and change in development: The multidimensional self-concept. (1982) | id=`paper-title:persistence_and_change_in_development_the_multidimensional_self_concept` | doi=none
+- [deferred] The neuropsychology of anxiety: An enquiry into the functions of the septo-hippocampal system (1982) | id=`paper-title:the_neuropsychology_of_anxiety_an_enquiry_into_the_functions_of_the_septo_hippocampal_system` | doi=none
+- [deferred] The psychology of physical symptoms (1982) | id=`paper-title:the_psychology_of_physical_symptoms` | doi=none
+- [unreviewed] Endocrine effect of anxiolytic music in dental patients. (1983) | id=`paper-title:endocrine_effect_of_anxiolytic_music_in_dental_patients` | doi=none
+- [rejected] Psikologicheskii Zhurnal (1984) | id=`paper-title:psikologicheskii_zhurnal` | doi=none
+- [unreviewed] Household, kinship, and the life course: Perspectives on Black families and children. (1985) | id=`paper-title:household_kinship_and_the_life_course_perspectives_on_black_families_and_children` | doi=none
+- [unreviewed] Personality and social behavior. (1985) | id=`paper-title:personality_and_social_behavior` | doi=none
+- [unreviewed] Structures of mood and personality and their relevance to assessing anxiety, with an emphasis on self-report. (1985) | id=`paper-title:structures_of_mood_and_personality_and_their_relevance_to_assessing_anxiety_with_an_emphasis_on_self_report` | doi=none
+- [rejected] Soviet Journal of Psychology (1986) | id=`paper-title:soviet_journal_of_psychology` | doi=none
+- [unreviewed] The narrative as a root metaphor for psychology. (1986) | id=`paper-title:the_narrative_as_a_root_metaphor_for_psychology` | doi=none
+- [unreviewed] The social identity theory of intergroup behavior. (1986) | id=`paper-title:the_social_identity_theory_of_intergroup_behavior` | doi=none
+- [unreviewed] Script theory. (1987) | id=`paper-title:script_theory` | doi=none
+- [unreviewed] Anxiety and the allocation of attention to threat (1988) | id=`paper-title:anxiety_and_the_allocation_of_attention_to_threat` | doi=none
+- [unreviewed] Some implications of the trait-state distinction for the study of development over the life span: The case of personality. (1988) | id=`paper-title:some_implications_of_the_trait_state_distinction_for_the_study_of_development_over_the_life_span_the_case_of_personality` | doi=none
+- [unreviewed] Daydreaming and curiosity: Stability and change in gifted children and adolescents. (1990) | id=`paper-title:daydreaming_and_curiosity_stability_and_change_in_gifted_children_and_adolescents` | doi=none
+- [unreviewed] The "Big Five" factor taxonomy: Dimensions of personality in the natural language and in questionnaires. (1990) | id=`paper-title:the_big_five_factor_taxonomy_dimensions_of_personality_in_the_natural_language_and_in_questionnaires` | doi=none
+- [unreviewed] Interindividual differences in intraindividual change. (1991) | id=`paper-title:interindividual_differences_in_intraindividual_change` | doi=none
+- [deferred] Neural systems, emotion and personality (1991) | id=`paper-title:neural_systems_emotion_and_personality` | doi=none
+- [unreviewed] Predicting personality from personal possessions: A self-presentational analysis. (1991) | id=`paper-title:predicting_personality_from_personal_possessions_a_self_presentational_analysis` | doi=none
+- [deferred] The user illusion: Cutting consciousness down to size (1991) | id=`paper-title:the_user_illusion_cutting_consciousness_down_to_size` | doi=none
+- [unreviewed] Meta-analysis of research in music and medical treatment: Effect size as a basis for comparison across multiple dependent and independent variables. (1992) | id=`paper-title:meta_analysis_of_research_in_music_and_medical_treatment_effect_size_as_a_basis_for_comparison_across_multiple_dependent` | doi=none
+- [deferred] NEO PI-R professional manual (1992) | id=`paper-title:neo_pi_r_professional_manual` | doi=none
+- [unreviewed] States and traits in psychological assessment (1992) | id=`paper-title:states_and_traits_in_psychological_assessment` | doi=none
+- [unreviewed] Behavioral disinhibition versus constraint: A dispositional perspective. (1993) | id=`paper-title:behavioral_disinhibition_versus_constraint_a_dispositional_perspective` | doi=none
+- [rejected] Revue Roumaine de Psychologie (1993) | id=`paper-title:revue_roumaine_de_psychologie` | doi=none
+- [rejected] Social Science International (1993) | id=`paper-title:social_science_international` | doi=none
+- [deferred] The psychophysiology of emotion. (1993) | id=`paper-title:the_psychophysiology_of_emotion` | doi=none
+- [rejected] Personality and Individual Differences (1994) | id=`paper-title:personality_and_individual_differences` | doi=none
+- [unreviewed] Random effects models. (1994) | id=`paper-title:random_effects_models` | doi=none
+- [unreviewed] The Big Five factor structure as an integrative framework: An empirical comparison with Eysenck’s PEN model (1994) | id=`paper-title:the_big_five_factor_structure_as_an_integrative_framework_an_empirical_comparison_with_eysenck_s_pen_model` | doi=none
+- [unreviewed] The Big Five: A tip of the iceberg of individual differences. (1994) | id=`paper-title:the_big_five_a_tip_of_the_iceberg_of_individual_differences` | doi=none
+- [unreviewed] A model of the limbic system and basal ganglia: Application to anxiety and schizophrenia (1995) | id=`paper-title:a_model_of_the_limbic_system_and_basal_ganglia_application_to_anxiety_and_schizophrenia` | doi=none
+- [unreviewed] The life course paradigm: Social change and individual development. (1995) | id=`paper-title:the_life_course_paradigm_social_change_and_individual_development` | doi=none
+- [unreviewed] Theories, concepts and terminology (1995) | id=`paper-title:theories_concepts_and_terminology` | doi=none
+- [unreviewed] Variation, selection, and cognitive change. (1995) | id=`paper-title:variation_selection_and_cognitive_change` | doi=none
+- [unreviewed] Writing about structural equation models. (1995) | id=`paper-title:writing_about_structural_equation_models` | doi=none
+- [unreviewed] Social adaptation and the five factors of personality. (1996) | id=`paper-title:social_adaptation_and_the_five_factors_of_personality` | doi=none
+- [deferred] The Psychology of Action: Linking Cognition and Motivation to Behavior (1996) | id=`paper-title:the_psychology_of_action_linking_cognition_and_motivation_to_behavior` | doi=none
+- [unreviewed] The language of personality: Lexical perspectives on the five-factor model. (1996) | id=`paper-title:the_language_of_personality_lexical_perspectives_on_the_five_factor_model` | doi=none
+- [unreviewed] Are personality judgments based on physical appearance consensual and accurate? (1997) | id=`paper-title:are_personality_judgments_based_on_physical_appearance_consensual_and_accurate` | doi=none
+- [unreviewed] Integrating the "classic" and "contemporary" approaches to achievement motivation: A hierarchical model of approach and avoidance achievement motivation. (1997) | id=`paper-title:integrating_the_classic_and_contemporary_approaches_to_achievement_motivation_a_hierarchical_model_of_approach_and_avoid` | doi=none
+- [unreviewed] Precipitating factors for the chronic fatigue syndrome (1997) | id=`paper-title:precipitating_factors_for_the_chronic_fatigue_syndrome` | doi=none
+- [unreviewed] Psychosocial factors in fibromyalgia compared with rheumatoid arthritis: II. Sexual, physical and emotional abuse and neglect (1997) | id=`paper-title:psychosocial_factors_in_fibromyalgia_compared_with_rheumatoid_arthritis_ii_sexual_physical_and_emotional_abuse_and_negle` | doi=none
+- [unreviewed] Somatoform disorders (1997) | id=`paper-title:somatoform_disorders` | doi=none
+- [deferred] The symbolic species: The co-evolution of language and the brain (1997) | id=`paper-title:the_symbolic_species_the_co_evolution_of_language_and_the_brain` | doi=none
+- [unreviewed] Units of analysis for the description and explanation of personality (1997) | id=`paper-title:units_of_analysis_for_the_description_and_explanation_of_personality` | doi=none
+- [unreviewed] Emotion. (1998) | id=`paper-title:emotion` | doi=none
+- [unreviewed] Function of the hypothalamus–pituitary–adrenal axis in patients with fibromyalgia and low back pain (1998) | id=`paper-title:function_of_the_hypothalamus_pituitary_adrenal_axis_in_patients_with_fibromyalgia_and_low_back_pain` | doi=none
+- [unreviewed] Music and social influence. (1998) | id=`paper-title:music_and_social_influence` | doi=none
+- [unreviewed] Promotion and prevention: Regulatory focus as a motivational principle. (1998) | id=`paper-title:promotion_and_prevention_regulatory_focus_as_a_motivational_principle` | doi=none
+- [deferred] Temperament: A Psychological Perspective (1998) | id=`paper-title:temperament_a_psychological_perspective` | doi=none
+- [unreviewed] A broad-bandwidth, public domain, personality inventory measuring the lower-level facets of several five-factor models (1999) | id=`paper-title:a_broad_bandwidth_public_domain_personality_inventory_measuring_the_lower_level_facets_of_several_five_factor_models` | doi=none
+- [unreviewed] Acceptance and commitment therapy – an experiential approach to behaviour change (1999) | id=`paper-title:acceptance_and_commitment_therapy_an_experiential_approach_to_behaviour_change` | doi=none
+- [unreviewed] Bottom-up explanation in personality psychology: The case of cross-situational coherence. (1999) | id=`paper-title:bottom_up_explanation_in_personality_psychology_the_case_of_cross_situational_coherence` | doi=none
+- [unreviewed] Chinese-American differences: A Chinese view. (1999) | id=`paper-title:chinese_american_differences_a_chinese_view` | doi=none
+- [rejected] Eur. J. Soc. Psychol. (1999) | id=`paper-title:eur_j_soc_psychol` | doi=none
+- [deferred] Maps of meaning: The architecture of belief (1999) | id=`paper-title:maps_of_meaning_the_architecture_of_belief` | doi=none
+- [rejected] Monographs of the Society for Research in Child Development (1999) | id=`paper-title:monographs_of_the_society_for_research_in_child_development` | doi=none
+- [unreviewed] On the development of personality. (1999) | id=`paper-title:on_the_development_of_personality` | doi=none
+- [unreviewed] On the interface between personality and social psychology. (1999) | id=`paper-title:on_the_interface_between_personality_and_social_psychology` | doi=none
+- [unreviewed] Personality and motivation: Personal action and the conative evolution. (1999) | id=`paper-title:personality_and_motivation_personal_action_and_the_conative_evolution` | doi=none
+- [unreviewed] Personality change and continuity across the life course. (1999) | id=`paper-title:personality_change_and_continuity_across_the_life_course` | doi=none
+- [unreviewed] Personality development from the bottom up. (1999) | id=`paper-title:personality_development_from_the_bottom_up` | doi=none
+- [rejected] Research on Language and Social Interaction (1999) | id=`paper-title:research_on_language_and_social_interaction` | doi=none
+- [unreviewed] Resting arousal, sensation seeking, and music preference. (1999) | id=`paper-title:resting_arousal_sensation_seeking_and_music_preference` | doi=none
+- [unreviewed] Social cognitive theory of personality. (1999) | id=`paper-title:social_cognitive_theory_of_personality` | doi=none
+- [unreviewed] Stereotype legacy: Culture and person on Japanese/American interactions. (1999) | id=`paper-title:stereotype_legacy_culture_and_person_on_japanese_american_interactions` | doi=none
+- [unreviewed] Stress, coping, and self-regulatory processes. (1999) | id=`paper-title:stress_coping_and_self_regulatory_processes` | doi=none
+- [unreviewed] Temperament: A new paradigm for trait psychology. (1999) | id=`paper-title:temperament_a_new_paradigm_for_trait_psychology` | doi=none
+- [unreviewed] The Big Five trait taxonomy: History, measurement, and theoretical perspectives. (1999) | id=`paper-title:the_big_five_trait_taxonomy_history_measurement_and_theoretical_perspectives` | doi=none
+- [unreviewed] The neuroscience of personality (1999) | id=`paper-title:the_neuroscience_of_personality` | doi=none
+- [deferred] Available Light: Anthropological Reflections on Philosophical Topics (2000) | id=`paper-title:available_light_anthropological_reflections_on_philosophical_topics` | doi=none
+- [unreviewed] Data cleaning: problems and current approaches (2000) | id=`paper-title:data_cleaning_problems_and_current_approaches` | doi=none
+- [unreviewed] Does computer-generated speech manifest personality? An experimental test of similarity-attraction (2000) | id=`paper-title:does_computer_generated_speech_manifest_personality_an_experimental_test_of_similarity_attraction` | doi=none
+- [rejected] Human Performance in Extreme Environments (2000) | id=`paper-title:human_performance_in_extreme_environments` | doi=none
+- [unreviewed] Irrational pursuit: Hyper-incentives from a visceral brain. (2000) | id=`paper-title:irrational_pursuit_hyper_incentives_from_a_visceral_brain` | doi=none
+- [deferred] Measurement, scale construction, and reliability. (2000) | id=`paper-title:measurement_scale_construction_and_reliability` | doi=none
+- [unreviewed] The orchestration of selection, optimization, and compensation: An action-theoretical conceptualization of a theory of developmental regulation. (2000) | id=`paper-title:the_orchestration_of_selection_optimization_and_compensation_an_action_theoretical_conceptualization_of_a_theory_of_deve` | doi=none
+- [unreviewed] Delimiting and integrating achievement motive and goal constructs. (2001) | id=`paper-title:delimiting_and_integrating_achievement_motive_and_goal_constructs` | doi=none
+- [unreviewed] Religion as a hard-to-fake sign of commitment. (2001) | id=`paper-title:religion_as_a_hard_to_fake_sign_of_commitment` | doi=none
+- [unreviewed] Birth cohort, social change, and personality: The interplay of dysphoria and individualism in the 20th century. (2002) | id=`paper-title:birth_cohort_social_change_and_personality_the_interplay_of_dysphoria_and_individualism_in_the_20th_century` | doi=none
+- [rejected] Eur. J. Psychol. (2002) | id=`paper-title:eur_j_psychol` | doi=none
+- [unreviewed] Personality variables differences between disease clusters (2002) | id=`paper-title:personality_variables_differences_between_disease_clusters` | doi=none
+- [unreviewed] Psychosocial treatments for multiple unexplained physical symptoms: a review of the literature (2002) | id=`paper-title:psychosocial_treatments_for_multiple_unexplained_physical_symptoms_a_review_of_the_literature` | doi=none
+- [unreviewed] Self-verification: The search for coherence. (2002) | id=`paper-title:self_verification_the_search_for_coherence` | doi=none
+- [unreviewed] What remains invariant?: Finding order within a person’s thoughts, feelings, and behaviors across situations (2002) | id=`paper-title:what_remains_invariant_finding_order_within_a_person_s_thoughts_feelings_and_behaviors_across_situations` | doi=none
+- [unreviewed] Diagnosis of somatisation: effect of an educational intervention in a cluster randomised controlled trial (2003) | id=`paper-title:diagnosis_of_somatisation_effect_of_an_educational_intervention_in_a_cluster_randomised_controlled_trial` | doi=none
+- [deferred] Interpersonal theory of personality (2003) | id=`paper-title:interpersonal_theory_of_personality` | doi=none
+- [deferred] Personality traits (2003) | id=`paper-title:personality_traits` | doi=none
+- [unreviewed] Causal illness attributions in somatoform disorders — associations with comorbidity and illness behaviour (2004) | id=`paper-title:causal_illness_attributions_in_somatoform_disorders_associations_with_comorbidity_and_illness_behaviour` | doi=none
+- [unreviewed] Exercise therapy for chronic fatigue syndrome (Cochrane Review) (2004) | id=`paper-title:exercise_therapy_for_chronic_fatigue_syndrome_cochrane_review` | doi=none
+- [deferred] Handbook of Self-regulation Research (2004) | id=`paper-title:handbook_of_self_regulation_research` | doi=none
+- [unreviewed] Multiple medically unexplained physical symptoms and health care utilization: outcome of psychological intervention and patient-related predictors of change (2004) | id=`paper-title:multiple_medically_unexplained_physical_symptoms_and_health_care_utilization_outcome_of_psychological_intervention_and_p` | doi=none
+- [unreviewed] Normalisation of unexplained symptoms by general practitioners: a functional typology (2004) | id=`paper-title:normalisation_of_unexplained_symptoms_by_general_practitioners_a_functional_typology` | doi=none
+- [deferred] Optimal human being: An integrated multilevel perspective (2004) | id=`paper-title:optimal_human_being_an_integrated_multilevel_perspective` | doi=none
+- [deferred] Personality psychology: havings, doings, and beings in context (2004) | id=`paper-title:personality_psychology_havings_doings_and_beings_in_context` | doi=none
+- [unreviewed] The neuropsychology of impulsive antisocial sensation seeking personality traits: From dopamine to hippocampal function? (2004) | id=`paper-title:the_neuropsychology_of_impulsive_antisocial_sensation_seeking_personality_traits_from_dopamine_to_hippocampal_function` | doi=none
+- [unreviewed] Voiced but unheard agendas: qualitative analysis of the psychosocial cues that patients with unexplained symptoms present to general practitioners (2004) | id=`paper-title:voiced_but_unheard_agendas_qualitative_analysis_of_the_psychosocial_cues_that_patients_with_unexplained_symptoms_present` | doi=none
+- [unreviewed] A neurobehavioral dimensional model of personality disturbance (2005) | id=`paper-title:a_neurobehavioral_dimensional_model_of_personality_disturbance` | doi=none
+- [unreviewed] Effective functioning: A three level model of affect, motivation, cognition, and behavior (2005) | id=`paper-title:effective_functioning_a_three_level_model_of_affect_motivation_cognition_and_behavior` | doi=none
+- [deferred] How the body shapes the mind (2005) | id=`paper-title:how_the_body_shapes_the_mind` | doi=none
+- [deferred] Web dictionary of cybernetics and systems (2005) | id=`paper-title:web_dictionary_of_cybernetics_and_systems` | doi=none
+- [unreviewed] Web spam taxonomy (2005) | id=`paper-title:web_spam_taxonomy` | doi=none
+- [deferred] A face is exposed for aol searcher no. 4417749 (2006) | id=`paper-title:a_face_is_exposed_for_aol_searcher_no_4417749` | doi=none
+- [unreviewed] A face(book) in the crowd: Social searching vs. social browsing (2006) | id=`paper-title:a_face_book_in_the_crowd_social_searching_vs_social_browsing` | doi=none
+- [unreviewed] A proposed theory of the adult development of intraindividual variability in trait-manifesting behavior (2006) | id=`paper-title:a_proposed_theory_of_the_adult_development_of_intraindividual_variability_in_trait_manifesting_behavior` | doi=none
+- [unreviewed] Chronic Fatigue Syndrome: a case conceptualization approach (2006) | id=`paper-title:chronic_fatigue_syndrome_a_case_conceptualization_approach` | doi=none
+- [unreviewed] Emerging from the CAVE: Attributional style and the narrative study of identity in midlife adults. (2006) | id=`paper-title:emerging_from_the_cave_attributional_style_and_the_narrative_study_of_identity_in_midlife_adults` | doi=none
+- [unreviewed] Personality and the prediction of consequential outcomes (2006) | id=`paper-title:personality_and_the_prediction_of_consequential_outcomes` | doi=none
+- [unreviewed] Personality development in the context of the neo-socioanalytic model of personality (2006) | id=`paper-title:personality_development_in_the_context_of_the_neo_socioanalytic_model_of_personality` | doi=none
+- [deferred] Trait and factor theories (2006) | id=`paper-title:trait_and_factor_theories` | doi=none
+- [unreviewed] Lives lived in milliseconds: Using cognitive methods in personality research (2007) | id=`paper-title:lives_lived_in_milliseconds_using_cognitive_methods_in_personality_research` | doi=none
+- [unreviewed] Personal projects and free traits: Mutable selves and well beings (2007) | id=`paper-title:personal_projects_and_free_traits_mutable_selves_and_well_beings` | doi=none
+- [unreviewed] Personality: What makes you the way you are (2007) | id=`paper-title:personality_what_makes_you_the_way_you_are` | doi=none
+- [unreviewed] Behavioral genetics and personality: A new look at the integration of nature and nurture (2008) | id=`paper-title:behavioral_genetics_and_personality_a_new_look_at_the_integration_of_nature_and_nurture` | doi=none
+- [unreviewed] Changes in use and perception of facebook (2008) | id=`paper-title:changes_in_use_and_perception_of_facebook` | doi=none
+- [unreviewed] Paradigm shift to the integrative Big Five trait taxonomy: History, measurement, and conceptual issues (2008) | id=`paper-title:paradigm_shift_to_the_integrative_big_five_trait_taxonomy_history_measurement_and_conceptual_issues` | doi=none
+- [unreviewed] Paradigm shift to the integrative Big Five trait taxonomy: History: Measurement, and conceptual issue (2008) | id=`paper-title:paradigm_shift_to_the_integrative_big_five_trait_taxonomy_history_measurement_and_conceptual_issue` | doi=none
+- [unreviewed] Personality and subjective well-being (2008) | id=`paper-title:personality_and_subjective_well_being` | doi=none
+- [unreviewed] The development of personality traits in adulthood (2008) | id=`paper-title:the_development_of_personality_traits_in_adulthood` | doi=none
+- [deferred] The five factor theory of personality (2008) | id=`paper-title:the_five_factor_theory_of_personality` | doi=none
+- [unreviewed] Toward a unified theory of personality (2008) | id=`paper-title:toward_a_unified_theory_of_personality` | doi=none
+- [unreviewed] Gaydar: Facebook friendships expose sexual orientation (2009) | id=`paper-title:gaydar_facebook_friendships_expose_sexual_orientation` | doi=none
+- [deferred] Mental causation (2009) | id=`paper-title:mental_causation` | doi=none
+- [unreviewed] Personality neuroscience: Explaining individual differences in affect, behavior, and cognition (2009) | id=`paper-title:personality_neuroscience_explaining_individual_differences_in_affect_behavior_and_cognition` | doi=none
+- [unreviewed] Replicability is not reproducibility: nor is it good science (2009) | id=`paper-title:replicability_is_not_reproducibility_nor_is_it_good_science` | doi=none
+- [unreviewed] Virtue as social intelligence: An empirically grounded theory (2009) | id=`paper-title:virtue_as_social_intelligence_an_empirically_grounded_theory` | doi=none
+- [unreviewed] Broken promises of privacy: responding to the surprising failure of anonymization (2010) | id=`paper-title:broken_promises_of_privacy_responding_to_the_surprising_failure_of_anonymization` | doi=none
+- [unreviewed] Impulsivity as a personality trait (2010) | id=`paper-title:impulsivity_as_a_personality_trait` | doi=none
+- [rejected] Journal of Machine Learning Research (2010) | id=`paper-title:journal_of_machine_learning_research` | doi=none
+- [unreviewed] Language differences and metadata features on twitter (2010) | id=`paper-title:language_differences_and_metadata_features_on_twitter` | doi=none
+- [unreviewed] Trust online: Young adults' evaluation of web content (2010) | id=`paper-title:trust_online_young_adults_evaluation_of_web_content` | doi=none
+- [unreviewed] 4chan and /b/: An analysis of anonymity and ephemerality in a large online community (2011) | id=`paper-title:4chan_and_b_an_analysis_of_anonymity_and_ephemerality_in_a_large_online_community` | doi=none
+- [unreviewed] Center of attention: How facebook users allocate attention across friends (2011) | id=`paper-title:center_of_attention_how_facebook_users_allocate_attention_across_friends` | doi=none
+- [unreviewed] Creating social contagion through viral product design: a randomized trial of peer influence in networks (2011) | id=`paper-title:creating_social_contagion_through_viral_product_design_a_randomized_trial_of_peer_influence_in_networks` | doi=none
+- [unreviewed] Culture matters: a survey study of social q&a behavior (2011) | id=`paper-title:culture_matters_a_survey_study_of_social_q_a_behavior` | doi=none
+- [unreviewed] Do all birds tweet the same?: Characterizing twitter around the world (2011) | id=`paper-title:do_all_birds_tweet_the_same_characterizing_twitter_around_the_world` | doi=none
+- [unreviewed] Intelligence and personality (2011) | id=`paper-title:intelligence_and_personality` | doi=none
+- [unreviewed] Language matters in twitter: a large scale study (2011) | id=`paper-title:language_matters_in_twitter_a_large_scale_study` | doi=none
+- [unreviewed] Limits of electoral predictions using Twitter (2011) | id=`paper-title:limits_of_electoral_predictions_using_twitter` | doi=none
+- [unreviewed] More voices than ever? quantifying media bias in networks (2011) | id=`paper-title:more_voices_than_ever_quantifying_media_bias_in_networks` | doi=none
+- [unreviewed] Searching microblogs: coping with sparsity and document quality (2011) | id=`paper-title:searching_microblogs_coping_with_sparsity_and_document_quality` | doi=none
+- [unreviewed] Tweeting disaster: hashtag constructions and collisions (2011) | id=`paper-title:tweeting_disaster_hashtag_constructions_and_collisions` | doi=none
+- [unreviewed] Unbiased look at dataset bias (2011) | id=`paper-title:unbiased_look_at_dataset_bias` | doi=none
+- [unreviewed] Understanding the demographics of twitter users (2011) | id=`paper-title:understanding_the_demographics_of_twitter_users` | doi=none
+- [unreviewed] Validity issues in the use of social network analysis with digital trace data (2011) | id=`paper-title:validity_issues_in_the_use_of_social_network_analysis_with_digital_trace_data` | doi=none
+- [unreviewed] Alleviating data sparsity for twitter sentiment analysis (2012) | id=`paper-title:alleviating_data_sparsity_for_twitter_sentiment_analysis` | doi=none
+- [rejected] Harv. Bus. Rev. (2012) | id=`paper-title:harv_bus_rev` | doi=none
+- [unreviewed] Machine learning that matters (2012) | id=`paper-title:machine_learning_that_matters` | doi=none
+- [unreviewed] Omg, i have to tweet that! a study of factors that influence tweet rates (2012) | id=`paper-title:omg_i_have_to_tweet_that_a_study_of_factors_that_influence_tweet_rates` | doi=none
+- [unreviewed] Perspectives on the person: Rapid growth and opportunities for integration (2012) | id=`paper-title:perspectives_on_the_person_rapid_growth_and_opportunities_for_integration` | doi=none
+- [unreviewed] Referential processing and competence as determinants of congruence between implicit and explicit motives (2012) | id=`paper-title:referential_processing_and_competence_as_determinants_of_congruence_between_implicit_and_explicit_motives` | doi=none
+- [unreviewed] The length of bridge ties: structural and geographic properties of online social interactions (2012) | id=`paper-title:the_length_of_bridge_ties_structural_and_geographic_properties_of_online_social_interactions` | doi=none
+- [unreviewed] The livehoods project: utilizing social media to understand the dynamics of a city (2012) | id=`paper-title:the_livehoods_project_utilizing_social_media_to_understand_the_dynamics_of_a_city` | doi=none
+- [unreviewed] What is Conscientiousness and how can it be assessed? (2012) | id=`paper-title:what_is_conscientiousness_and_how_can_it_be_assessed` | doi=none
+- [unreviewed] When social bots attack: Modeling susceptibility of users in online social networks (2012) | id=`paper-title:when_social_bots_attack_modeling_susceptibility_of_users_in_online_social_networks` | doi=none
+- [unreviewed] Who does what on the web: A large-scale study of browsing behavior (2012) | id=`paper-title:who_does_what_on_the_web_a_large_scale_study_of_browsing_behavior` | doi=none
+- [unreviewed] i wanted to predict elections with Twitter and all i got was this lousy paper”–a balanced survey on election prediction using Twitter data (2012) | id=`paper-title:i_wanted_to_predict_elections_with_twitter_and_all_i_got_was_this_lousy_paper_a_balanced_survey_on_election_prediction_u` | doi=none
+- [unreviewed] Beliefs and biases in web search (2013) | id=`paper-title:beliefs_and_biases_in_web_search` | doi=none
+- [unreviewed] Big data or right data? (2013) | id=`paper-title:big_data_or_right_data` | doi=none
+- [unreviewed] Bursting your (filter) bubble: strategies for promoting diverse exposure (2013) | id=`paper-title:bursting_your_filter_bubble_strategies_for_promoting_diverse_exposure` | doi=none
+- [unreviewed] Chronicle of Higher Education (2013) | id=`paper-title:chronicle_of_higher_education` | doi=none
+- [unreviewed] Classifying political orientation on twitter: It's not easy! (2013) | id=`paper-title:classifying_political_orientation_on_twitter_it_s_not_easy` | doi=none

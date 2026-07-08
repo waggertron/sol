@@ -15,3 +15,5 @@ Start here:
 - `06-platform-architecture.md` - platform services and module boundaries
 - `07-evaluation-safety.md` - evaluation, misuse boundaries, and risk controls
 - `08-ocean-assessment-plan.md` - first OCEAN assessment gathering and mapping plan
+- `09-paper-tail-curation.md` - phased plan for finishing the remaining
+  title-only paper review backlog

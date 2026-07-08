@@ -11,6 +11,7 @@ It supports:
 - Wikipedia articles matched from term inventory
 - linked Wikipedia articles discovered from imported pages
 - assessment inventory metadata and links into the assessment repository
+- local assessment session storage for MVP scoring and profile-atom generation
 - import run logs
 - `imported: false` status for future import runs
 
@@ -19,13 +20,18 @@ It supports:
 ```text
 jsondb/
   assessment_inventory.json
+  assessment_sessions.json
   term_inventory.json
   import_queue.json
   import_runs.json
   wiki_import_review.json
+  paper_import_review.json
 ```
 
 Current queue snapshot is summarized in `docs/current-state.md`.
+
+The unresolved paper-review tail is summarized in
+`kb/research/paper_review_queue.md`.
 
 ## Queue Item Shape
 
@@ -64,10 +70,13 @@ Subcommands:
 - `import-wikipedia`
 - `import-queued-wikipedia`
 - `import-paper-metadata`
+- `import-paper-manual-matches`
 - `queue-crossref-references`
 - `run-initial`
 - `sync-wikipedia-terms`
 - `apply-wiki-review`
+- `apply-paper-review`
+- `paper-review-report`
 - `clean-notes`
 
 Assessment imports are handled separately by:
@@ -78,6 +87,15 @@ python3 tools/import_ocean_assessments.py --source-dir /path/to/downloaded/html
 
 The assessment inventory links JSONDB metadata to concrete stored instruments
 under `assessments/ocean/`.
+
+Assessment session persistence is handled by:
+
+```bash
+python3 tools/assessment_session_store.py init-db
+```
+
+That file stores local response sessions, derived scores, and provisional
+profile atoms for the assessment-first MVP.
 
 ## Queue Ingestion Policy
 
@@ -93,11 +111,54 @@ Current queue snapshot:
 - 1,338 imported queue records with `kind: wikipedia_article` or
   `wikipedia_linked_article`
 - 7 pending `wikipedia_term` records
-- 1,643 imported paper metadata cards
-- 286 pending `paper_reference` records
-- 2 pending DOI-backed `paper_reference` records
-- 284 pending title-only `paper_reference` records
+- 1,646 imported paper metadata cards
+- 283 pending `paper_reference` records
+- 0 pending DOI-backed `paper_reference` records
+- 283 pending title-only `paper_reference` records
 - 7 rejected Wikipedia mappings tracked in `wiki_import_review.json`
+
+Paper review state is persisted separately in `paper_import_review.json`:
+
+- `rejected_items`: queue records that should stop retrying
+- `deferred_items`: items intentionally parked for later manual work
+- `manual_matches`: queue records with human-approved DOI mappings
+
+Current seeded paper review state:
+
+- 21 rejected journal-title-only or series-title-only records
+- 31 deferred records for books, manuals, edited volumes, in-press references,
+  or clearly non-Crossref-friendly reference works
+- 2 manual mappings for nonstandard DOI resolution
+
+Example:
+
+```json
+{
+  "version": 1,
+  "rejected_items": [
+    {
+      "id": "paper-title:communication_research",
+      "title": "Communication Research",
+      "reason": "Journal title only, not a resolvable cited work."
+    }
+  ],
+  "deferred_items": [
+    {
+      "id": "paper-title:neo_pi_r_professional_manual",
+      "title": "NEO PI-R professional manual",
+      "reason": "Likely book/manual; requires manual catalog lookup."
+    }
+  ],
+  "manual_matches": [
+    {
+      "id": "paper-title:some_title",
+      "title": "Some title",
+      "doi": "10.0000/example",
+      "reason": "Human-confirmed DOI after manual review."
+    }
+  ]
+}
+```
 
 The latest slow serialized queue drains at one request every 12 seconds
 imported 1,214 queued Wikipedia records without rate limiting. That completed
@@ -105,11 +166,11 @@ the current importable Wikipedia-article backlog; what remains now is the small
 set of direct term matches under manual review.
 
 Paper ingestion now supports both direct DOI imports and Crossref title-search
-fallback. That cleared the entire DOI-backed bulk backlog and most of the
-former title-only backlog, bringing the paper corpus to 1,643 metadata-only
-cards. The remaining backlog is a small unresolved tail of 286 records, mostly
-title-only references plus two DOI records with bad or missing Crossref
-resolution.
+fallback, with stricter matching heuristics and a persisted review path for the
+remaining tail. That cleared the entire DOI-backed bulk backlog and most of the
+former title-only backlog, bringing the paper corpus to 1,646 metadata-only
+cards. The remaining backlog is a small unresolved tail of 283 records, now
+entirely title-only references.
 
 ## Wikimedia Rate Policy
 

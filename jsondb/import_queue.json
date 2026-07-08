@@ -1559,31 +1559,25 @@
       "year": 2008
     },
     {
-      "container_title": null,
+      "container_title": "Contemporary Sociology",
       "created_at": "2026-07-01T10:26:50+00:00",
       "discovered_from": [
         "deyoung_2015_cybernetic_big_five"
       ],
-      "doi": null,
+      "doi": "10.2307/2654424",
       "first_page": null,
       "id": "paper-title:on_the_self_regulation_of_behavior",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-04T04:25:11+00:00",
+      "imported_path": "kb/paper_imports/on_the_self_regulation_of_behavior.md",
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: No Crossref title match found.",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1502 milliseconds with 0 bytes received",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1504 milliseconds with 0 bytes received",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1505 milliseconds with 0 bytes received",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1506 milliseconds with 0 bytes received",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1507 milliseconds with 0 bytes received",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1511 milliseconds with 0 bytes received"
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via Crossref title search."
       ],
       "priority": "normal",
-      "title": "On the self-regulation of behavior",
-      "url": null,
-      "year": "1998"
+      "title": "On the Self-Regulation of Behavior",
+      "url": "https://doi.org/10.2307/2654424",
+      "year": 2000
     },
     {
       "container_title": "Psychological Review",
@@ -1831,12 +1825,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1512 milliseconds with 0 bytes received",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 5004 milliseconds with 0 bytes received"
+        "Paper review status: deferred. Assessment manual/book citation; handle through manual catalog review instead of Crossref title matching."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "NEO PI-R professional manual",
       "url": null,
       "year": "1992"
@@ -1918,12 +1910,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1507 milliseconds with 0 bytes received",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 5008 milliseconds with 0 bytes received"
+        "Paper review status: deferred. Book citation; requires manual source handling rather than automated paper metadata import."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "The symbolic species: The co-evolution of language and the brain",
       "url": null,
       "year": "1997"
@@ -2137,7 +2127,8 @@
       "notes": [
         "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
         "Pending retry after paper metadata import error: No Crossref title match found.",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1509 milliseconds with 0 bytes received"
+        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1509 milliseconds with 0 bytes received",
+        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 5006 milliseconds with 0 bytes received"
       ],
       "priority": "normal",
       "title": "Personality neuroscience: Explaining individual differences in affect, behavior, and cognition",
@@ -2308,6 +2299,7 @@
         "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
         "Pending retry after paper metadata import error: The read operation timed out",
         "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1512 milliseconds with 0 bytes received",
+        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 5005 milliseconds with 0 bytes received",
         "Pending retry after paper metadata import error: curl: (28) Operation timed out after 5008 milliseconds with 0 bytes received"
       ],
       "priority": "normal",
@@ -2724,11 +2716,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1508 milliseconds with 0 bytes received"
+        "Paper review status: deferred. Book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "The neuropsychology of anxiety: An enquiry into the functions of the septo-hippocampal system",
       "url": null,
       "year": "1982"
@@ -3316,11 +3307,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1505 milliseconds with 0 bytes received"
+        "Paper review status: deferred. Book or philosophy reference work title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Mental causation",
       "url": null,
       "year": "2009"
@@ -3743,11 +3733,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: Expecting value: line 1 column 1 (char 0)",
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: deferred. Theory chapter title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "The five factor theory of personality",
       "url": null,
       "year": "2008"
@@ -4105,11 +4094,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1506 milliseconds with 0 bytes received"
+        "Paper review status: deferred. Book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "The user illusion: Cutting consciousness down to size",
       "url": null,
       "year": "1991"
@@ -4297,11 +4285,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1504 milliseconds with 0 bytes received"
+        "Paper review status: deferred. Book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Maps of meaning: The architecture of belief",
       "url": null,
       "year": "1999"
@@ -4468,11 +4455,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1512 milliseconds with 0 bytes received"
+        "Paper review status: deferred. Theory chapter or reference-section title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Interpersonal theory of personality",
       "url": null,
       "year": "2003"
@@ -4937,11 +4923,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1500 milliseconds with 0 bytes received"
+        "Paper review status: deferred. Book or integrative volume title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Optimal human being: An integrated multilevel perspective",
       "url": null,
       "year": "2004"
@@ -5403,11 +5388,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1509 milliseconds with 0 bytes received"
+        "Paper review status: deferred. Canonical book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Cybernetics\u2014Or control and communication in the animal and the machine",
       "url": null,
       "year": "1961"
@@ -7868,11 +7852,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1510 milliseconds with 0 bytes received"
+        "Paper review status: deferred. In-press reference; requires manual bibliographic lookup after publication metadata stabilizes."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "(in press). The cumulative continuity model of personality trait development.",
       "url": null,
       "year": null
@@ -9871,11 +9854,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out",
-        "Pending retry after paper metadata import error: curl: (28) Operation timed out after 1512 milliseconds with 0 bytes received"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Eur. J. Psychol.",
       "url": null,
       "year": "2002"
@@ -9998,10 +9980,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: deferred. Handbook or edited volume title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Handbook of Self-regulation Research",
       "url": null,
       "year": "2004"
@@ -10867,10 +10849,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: deferred. Book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Available Light: Anthropological Reflections on Philosophical Topics",
       "url": null,
       "year": "2000"
@@ -11141,10 +11123,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: deferred. Edited volume title rather than a specific cited paper; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "The Psychology of Action: Linking Cognition and Motivation to Behavior",
       "url": null,
       "year": "1996"
@@ -11456,10 +11438,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: deferred. Book title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Personality psychology: havings, doings, and beings in context",
       "url": null,
       "year": "2004"
@@ -12405,10 +12387,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: deferred. Book title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Temperament: A Psychological Perspective",
       "url": null,
       "year": "1998"
@@ -12636,10 +12618,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Eur. J. Soc. Psychol.",
       "url": null,
       "year": "1999"
@@ -12973,10 +12955,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Research on Language and Social Interaction",
       "url": null,
       "year": "1999"
@@ -13015,10 +12997,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Communication Research",
       "url": null,
       "year": null
@@ -13667,10 +13649,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Human Performance in Extreme Environments",
       "url": null,
       "year": "2000"
@@ -14214,10 +14196,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Personality and Individual Differences",
       "url": null,
       "year": "1994"
@@ -14865,10 +14847,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Journal of Medical Education",
       "url": null,
       "year": "1976"
@@ -15453,10 +15435,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: No Crossref title match found."
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Psikologicheskii Zhurnal",
       "url": null,
       "year": "1984"
@@ -15663,10 +15645,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Social Science International",
       "url": null,
       "year": "1993"
@@ -15768,10 +15750,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: The read operation timed out"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Homo",
       "url": null,
       "year": "1978"
@@ -15810,9 +15792,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Series title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Science and Psychoanalysis",
       "url": null,
       "year": "1965"
@@ -15914,9 +15897,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Soviet Journal of Psychology",
       "url": null,
       "year": "1986"
@@ -15997,9 +15981,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Revue Roumaine de Psychologie",
       "url": null,
       "year": "1993"
@@ -16185,9 +16170,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Series title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Psychologia Africana Monograph Supplement",
       "url": null,
       "year": "1968"
@@ -16331,9 +16317,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Indian Journal of Clinical Psychology",
       "url": null,
       "year": "1982"
@@ -16708,9 +16695,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "The new experimental aesthetics.",
       "url": null,
       "year": "1974"
@@ -16834,9 +16822,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Book or edited-volume title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "The psychophysiology of emotion.",
       "url": null,
       "year": "1993"
@@ -18340,9 +18329,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "International Journal of Psychoanalysis",
       "url": null,
       "year": "1958"
@@ -22951,9 +22941,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Measurement chapter or reference-section title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Measurement, scale construction, and reliability.",
       "url": null,
       "year": "2000"
@@ -23746,9 +23737,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Journal or series title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Psychological Issues",
       "url": null,
       "year": "1959"
@@ -23766,9 +23758,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Series title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Monographs of the Society for Research in Child Development",
       "url": null,
       "year": "1999"
@@ -24188,9 +24181,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Merrill-Palmer Quarterly",
       "url": null,
       "year": "1981"
@@ -25568,9 +25562,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Personality formation: The determinants.",
       "url": null,
       "year": "1953"
@@ -28448,9 +28443,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Journal of Machine Learning Research",
       "url": null,
       "year": "2010"
@@ -30499,19 +30495,19 @@
       "discovered_from": [
         "flake_fried_2020_measurement_schmeasurement"
       ],
-      "doi": "10.17605/osf.io/4g7fv",
+      "doi": "10.17605/OSF.IO/4G7FV",
       "first_page": null,
       "id": "paper:10.17605/osf.io/4g7fv",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-06T20:04:49+00:00",
+      "imported_path": "kb/paper_imports/osf_resource_4g7fv.md",
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: HTTP Error 404: Not Found"
+        "Imported manual bibliographic metadata only; source not reviewed. Resolved via manual source mapping."
       ],
       "priority": "normal",
-      "title": "10.17605/osf.io/4g7fv",
-      "url": "https://doi.org/10.17605/osf.io/4g7fv",
+      "title": "OSF resource 4g7fv",
+      "url": "https://osf.io/4g7fv/",
       "year": null
     },
     {
@@ -31115,9 +31111,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: rejected. Journal title only, not a specific cited work."
       ],
       "priority": "normal",
+      "review_status": "rejected",
       "title": "Harv. Bus. Rev.",
       "url": null,
       "year": "2012"
@@ -31947,9 +31944,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. News article citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "A face is exposed for aol searcher no. 4417749",
       "url": null,
       "year": "2006"
@@ -34224,25 +34222,25 @@
       "year": 2021
     },
     {
-      "container_title": "IEEE Trans. Emerg. Top. Comput.",
+      "container_title": "IEEE Transactions on Emerging Topics in Computing",
       "created_at": "2026-07-01T10:27:03+00:00",
       "discovered_from": [
         "olteanu_2019_social_data_biases"
       ],
-      "doi": "10.1109/TETC.2015.2458574J",
+      "doi": "10.1109/tetc.2015.2458574",
       "first_page": "156",
       "id": "paper:10.1109/tetc.2015.2458574j",
-      "imported": false,
-      "imported_path": null,
+      "imported": true,
+      "imported_at": "2026-07-06T20:04:49+00:00",
+      "imported_path": "kb/paper_imports/toward_reproducibility_in_online_social_network_research.md",
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request",
-        "Pending retry after paper metadata import error: HTTP Error 404: Not Found"
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping."
       ],
       "priority": "normal",
-      "title": "Towards reproducibility in online social network research",
-      "url": "https://doi.org/10.1109/TETC.2015.2458574J",
-      "year": ""
+      "title": "Toward Reproducibility in Online Social Network Research",
+      "url": "https://doi.org/10.1109/tetc.2015.2458574",
+      "year": 2018
     },
     {
       "container_title": "SSRN Electronic Journal",
@@ -38138,9 +38136,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Cognitive therapy and the emotional disorders",
       "url": null,
       "year": "1976"
@@ -38764,9 +38763,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "How the body shapes the mind",
       "url": null,
       "year": "2005"
@@ -38784,9 +38784,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Book or edited-volume title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Neural systems, emotion and personality",
       "url": null,
       "year": "1991"
@@ -39618,9 +39619,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Generic reference or chapter title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Personality traits",
       "url": null,
       "year": "2003"
@@ -39805,9 +39807,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "The psychology of physical symptoms",
       "url": null,
       "year": "1982"
@@ -40450,9 +40453,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Reference work or website title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Web dictionary of cybernetics and systems",
       "url": null,
       "year": "2005"
@@ -40637,9 +40641,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Selected essays volume; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "The person in psychology: Selected essays",
       "url": null,
       "year": "1968"
@@ -40804,9 +40809,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Theory chapter or reference-section title; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Trait and factor theories",
       "url": null,
       "year": "2006"
@@ -41158,9 +41164,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Multi-book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Studies in the nature of character, [part] 1: Studies in deceit: Book 1, General methods and results; book 2, statistical methods and results",
       "url": null,
       "year": "1928"
@@ -41363,9 +41370,10 @@
       "imported_path": null,
       "kind": "paper_reference",
       "notes": [
-        "Pending retry after paper metadata import error: HTTP Error 400: Bad Request"
+        "Paper review status: deferred. Canonical book citation; defer to manual source curation."
       ],
       "priority": "normal",
+      "review_status": "deferred",
       "title": "Personality and assessment",
       "url": null,
       "year": "1968"
@@ -70294,6 +70302,303 @@
       "term": "Aquatic therapy",
       "title": "Aquatic therapy",
       "url": "https://en.wikipedia.org/wiki/Aquatic_therapy"
+    },
+    {
+      "container_title": "Cambridge University Press",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "user-request:2026-07-08"
+      ],
+      "domain": "context_specific_states",
+      "id": "paper-title:a_cognitive_theory_of_consciousness",
+      "imported": true,
+      "imported_at": "2026-07-08T19:33:39Z",
+      "imported_path": "kb/paper_imports/a_cognitive_theory_of_consciousness.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported manual bibliographic metadata only; source not reviewed.",
+        "Original 1988 monograph imported from manual bibliographic lookup because no direct Crossref work DOI was identified."
+      ],
+      "priority": "background",
+      "title": "A Cognitive Theory of Consciousness",
+      "url": "https://openlibrary.org/books/OL2391521M/A_cognitive_theory_of_consciousness",
+      "year": 1988
+    },
+    {
+      "container_title": "Trends in Cognitive Sciences",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1016/s1364-6613(00)01819-2",
+      "domain": "context_specific_states",
+      "id": "paper:10.1016/s1364-6613(00)01819-2",
+      "imported": true,
+      "imported_at": "2026-07-08T19:34:53+00:00",
+      "imported_path": "kb/paper_imports/the_conscious_access_hypothesis_origins_and_recent_evidence.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "The conscious access hypothesis: origins and recent evidence",
+      "url": "https://doi.org/10.1016/s1364-6613(00)01819-2",
+      "year": 2002
+    },
+    {
+      "container_title": "Trends in Cognitive Sciences",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1016/s1364-6613(03)00056-1",
+      "domain": "context_specific_states",
+      "id": "paper:10.1016/s1364-6613(03)00056-1",
+      "imported": true,
+      "imported_at": "2026-07-08T19:34:53+00:00",
+      "imported_path": "kb/paper_imports/how_conscious_experience_and_working_memory_interact.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "How conscious experience and working memory interact",
+      "url": "https://doi.org/10.1016/s1364-6613(03)00056-1",
+      "year": 2003
+    },
+    {
+      "container_title": "Progress in Brain Research",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1016/s0079-6123(05)50004-9",
+      "domain": "context_specific_states",
+      "id": "paper:10.1016/s0079-6123(05)50004-9",
+      "imported": true,
+      "imported_at": "2026-07-08T19:34:54+00:00",
+      "imported_path": "kb/paper_imports/global_workspace_theory_of_consciousness_toward_a_cognitive_neuroscience_of_human_experience.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "Global workspace theory of consciousness: toward a cognitive neuroscience of human experience",
+      "url": "https://doi.org/10.1016/s0079-6123(05)50004-9",
+      "year": 2005
+    },
+    {
+      "container_title": "Cognition",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1016/s0010-0277(00)00123-2",
+      "domain": "context_specific_states",
+      "id": "paper:10.1016/s0010-0277(00)00123-2",
+      "imported": true,
+      "imported_at": "2026-07-08T19:34:54+00:00",
+      "imported_path": "kb/paper_imports/towards_a_cognitive_neuroscience_of_consciousness_basic_evidence_and_a_workspace_framework.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "Towards a cognitive neuroscience of consciousness: basic evidence and a workspace framework",
+      "url": "https://doi.org/10.1016/s0010-0277(00)00123-2",
+      "year": 2001
+    },
+    {
+      "container_title": "Nature Neuroscience",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1038/89551",
+      "domain": "context_specific_states",
+      "id": "paper:10.1038/89551",
+      "imported": true,
+      "imported_at": "2026-07-08T19:39:15+00:00",
+      "imported_path": "kb/paper_imports/cerebral_mechanisms_of_word_masking_and_unconscious_repetition_priming.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "Cerebral mechanisms of word masking and unconscious repetition priming",
+      "url": "https://doi.org/10.1038/89551",
+      "year": 2001
+    },
+    {
+      "container_title": "Proceedings of the National Academy of Sciences",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1073/pnas.1332574100",
+      "domain": "context_specific_states",
+      "id": "paper:10.1073/pnas.1332574100",
+      "imported": true,
+      "imported_at": "2026-07-08T19:39:16+00:00",
+      "imported_path": "kb/paper_imports/a_neuronal_network_model_linking_subjective_reports_and_objective_physiological_data_during_conscious_perception.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "A neuronal network model linking subjective reports and objective  physiological data during conscious perception",
+      "url": "https://doi.org/10.1073/pnas.1332574100",
+      "year": 2003
+    },
+    {
+      "container_title": "Trends in Neurosciences",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1016/j.tins.2003.09.015",
+      "domain": "context_specific_states",
+      "id": "paper:10.1016/j.tins.2003.09.015",
+      "imported": true,
+      "imported_at": "2026-07-08T19:39:19+00:00",
+      "imported_path": "kb/paper_imports/brain_conscious_experience_and_the_observing_self.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "Brain, conscious experience and the observing self",
+      "url": "https://doi.org/10.1016/j.tins.2003.09.015",
+      "year": 2003
+    },
+    {
+      "container_title": "Consciousness and Cognition",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1006/ccog.2001.0507",
+      "domain": "context_specific_states",
+      "id": "paper:10.1006/ccog.2001.0507",
+      "imported": true,
+      "imported_at": "2026-07-08T19:39:20+00:00",
+      "imported_path": "kb/paper_imports/invariant_reversible_qeeg_effects_of_anesthetics.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "Invariant Reversible QEEG Effects of Anesthetics",
+      "url": "https://doi.org/10.1006/ccog.2001.0507",
+      "year": 2001
+    },
+    {
+      "container_title": "Proceedings of the National Academy of Sciences",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1073/pnas.0931349100",
+      "domain": "context_specific_states",
+      "id": "paper:10.1073/pnas.0931349100",
+      "imported": true,
+      "imported_at": "2026-07-08T19:39:20+00:00",
+      "imported_path": "kb/paper_imports/naturalizing_consciousness_a_theoretical_framework.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "Naturalizing consciousness: A theoretical framework",
+      "url": "https://doi.org/10.1073/pnas.0931349100",
+      "year": 2003
+    },
+    {
+      "container_title": "Nature Neuroscience",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1038/nn0203-119",
+      "domain": "context_specific_states",
+      "id": "paper:10.1038/nn0203-119",
+      "imported": true,
+      "imported_at": "2026-07-08T19:39:20+00:00",
+      "imported_path": "kb/paper_imports/a_framework_for_consciousness.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "A framework for consciousness",
+      "url": "https://doi.org/10.1038/nn0203-119",
+      "year": 2003
+    },
+    {
+      "container_title": "Proceedings of the National Academy of Sciences",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1073/pnas.95.24.14529",
+      "domain": "context_specific_states",
+      "id": "paper:10.1073/pnas.95.24.14529",
+      "imported": true,
+      "imported_at": "2026-07-08T19:39:21+00:00",
+      "imported_path": "kb/paper_imports/a_neuronal_model_of_a_global_workspace_in_effortful_cognitive_tasks.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "A neuronal model of a global workspace in effortful cognitive tasks",
+      "url": "https://doi.org/10.1073/pnas.95.24.14529",
+      "year": 1998
+    },
+    {
+      "container_title": "Cognition",
+      "created_at": "2026-07-08T19:33:39Z",
+      "discovered_from": [
+        "paper-title:a_cognitive_theory_of_consciousness",
+        "user-request:2026-07-08"
+      ],
+      "doi": "10.1016/s0010-0277(00)00130-x",
+      "domain": "context_specific_states",
+      "id": "paper:10.1016/s0010-0277(00)00130-x",
+      "imported": true,
+      "imported_at": "2026-07-08T19:39:21+00:00",
+      "imported_path": "kb/paper_imports/are_we_explaining_consciousness_yet.md",
+      "kind": "paper_reference",
+      "notes": [
+        "Imported Crossref bibliographic metadata only; source not reviewed. Resolved via manual review DOI mapping.",
+        "Queued from direct related-article expansion around Baars consciousness work."
+      ],
+      "priority": "background",
+      "title": "Are we explaining consciousness yet?",
+      "url": "https://doi.org/10.1016/s0010-0277(00)00130-x",
+      "year": 2001
     }
   ],
   "version": 1
