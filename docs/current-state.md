@@ -15,6 +15,10 @@ and style modeling platform. The repo now has three concrete foundations:
 There is now a local browser-based MVP web app. The current product build uses
 the stored assessment instruments as the first administrable flow.
 
+The current browser QA baseline includes both automated route checks and
+rendered desktop/mobile screenshot verification for the Administer and
+Workbench views.
+
 ## Current Corpus
 
 - RAG index: 20,600 chunks
@@ -163,6 +167,14 @@ python3 tools/assessment_web_mvp.py --port 8765
 ```
 
 Then open `http://127.0.0.1:8765`.
+
+## Current Handoff
+
+- Browser QA is currently green at the routed and rendered levels.
+- The latest committed visual QA work is in `352e9f4`.
+- The latest task-ledger update is in `f146db4`.
+- The next active build phase is profile atom editing with provenance
+  preservation.
 
 ## Safety Posture
 
