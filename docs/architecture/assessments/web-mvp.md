@@ -59,6 +59,24 @@ python3 tools/assessment_web_mvp.py --port 8765
 
 Open `http://127.0.0.1:8765`.
 
+## Local QA
+
+Run the assessment web MVP QA suite:
+
+```bash
+./scripts/run_assessment_web_mvp_qa.sh
+```
+
+The QA script compiles the Python tools, validates the tracked assessment
+session JSONDB, checks the client JavaScript syntax when Node is available,
+runs the unittest suite, and fails if `jsondb/assessment_sessions.json` is
+modified.
+
+The route tests use `SOL_ASSESSMENT_SESSIONS_DB` to point the session store at
+a temporary JSONDB file, so they do not create persistent assessment sessions.
+In the Codex managed sandbox, route tests that bind a localhost socket may need
+to run outside the sandbox.
+
 ## Boundaries
 
 - This is a local-only MVP, not a deployed service.

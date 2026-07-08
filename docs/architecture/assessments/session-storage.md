@@ -43,6 +43,10 @@ Use:
 
 - `tools/assessment_session_store.py`
 
+For tests and local QA, set `SOL_ASSESSMENT_SESSIONS_DB` to point the session
+store at an isolated JSON file. If unset, the default path remains
+`jsondb/assessment_sessions.json`.
+
 Supported commands:
 
 ```bash

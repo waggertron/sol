@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -14,6 +15,7 @@ from assessment_to_profile_atoms import generate_output, load_json, parse_respon
 ROOT = Path(".")
 JSONDB = ROOT / "jsondb"
 SESSIONS_DB = JSONDB / "assessment_sessions.json"
+SESSIONS_DB_ENV = "SOL_ASSESSMENT_SESSIONS_DB"
 
 
 def save_json(path: Path, data: Any) -> None:
@@ -21,19 +23,27 @@ def save_json(path: Path, data: Any) -> None:
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
+def sessions_db_path() -> Path:
+    configured = os.environ.get(SESSIONS_DB_ENV)
+    if configured:
+        return Path(configured)
+    return SESSIONS_DB
+
+
 def ensure_db() -> None:
-    JSONDB.mkdir(parents=True, exist_ok=True)
-    if not SESSIONS_DB.exists():
-        save_json(SESSIONS_DB, {"version": 1, "sessions": []})
+    path = sessions_db_path()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if not path.exists():
+        save_json(path, {"version": 1, "sessions": []})
 
 
 def load_sessions() -> dict[str, Any]:
     ensure_db()
-    return load_json(SESSIONS_DB)
+    return load_json(sessions_db_path())
 
 
 def save_sessions(data: dict[str, Any]) -> None:
-    save_json(SESSIONS_DB, data)
+    save_json(sessions_db_path(), data)
 
 
 def find_session(data: dict[str, Any], session_id: str) -> dict[str, Any] | None:
@@ -269,7 +279,7 @@ def main() -> None:
     args = parse_args()
     if args.command == "init-db":
         ensure_db()
-        print(json.dumps({"path": SESSIONS_DB.as_posix(), "status": "initialized"}, indent=2))
+        print(json.dumps({"path": sessions_db_path().as_posix(), "status": "initialized"}, indent=2))
         return
     if args.command == "create-session":
         result = create_session(args.session_id, args.instrument, args.started_at, args.user_id)

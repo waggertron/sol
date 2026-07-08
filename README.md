@@ -89,6 +89,12 @@ python3 tools/assessment_web_mvp.py --port 8765
 
 Then open `http://127.0.0.1:8765`.
 
+Run the local QA suite:
+
+```bash
+./scripts/run_assessment_web_mvp_qa.sh
+```
+
 See `docs/current-state.md` for the latest snapshot.
 
 ## Future Feature Set
