@@ -70,12 +70,15 @@ function flattenItems(instrument) {
   );
 }
 
-function switchView(view) {
+function switchView(view, updateHash = true) {
   state.currentView = view;
   elements.adminView.hidden = view !== "administer";
   elements.workbenchView.hidden = view !== "workbench";
   elements.navAdminister.classList.toggle("active", view === "administer");
   elements.navWorkbench.classList.toggle("active", view === "workbench");
+  if (updateHash) {
+    window.history.replaceState(null, "", view === "workbench" ? "#workbench" : "#administer");
+  }
   if (view === "workbench") {
     loadWorkbench().catch((error) => setAutosaveStatus(error.message, "warn"));
   }
@@ -517,3 +520,4 @@ elements.deleteCurrentSession.addEventListener("click", () => {
 
 loadManifest().catch((error) => setAutosaveStatus(error.message, "warn"));
 loadWorkbench().catch((error) => setAutosaveStatus(error.message, "warn"));
+switchView(window.location.hash === "#workbench" ? "workbench" : "administer", false);

@@ -77,6 +77,21 @@ a temporary JSONDB file, so they do not create persistent assessment sessions.
 In the Codex managed sandbox, route tests that bind a localhost socket may need
 to run outside the sandbox.
 
+Rendered visual QA can be run with:
+
+```bash
+./scripts/run_assessment_web_mvp_visual_qa.sh
+```
+
+This starts the local web app against an isolated temporary assessment sessions
+DB, seeds TIPI and Mini-IPIP sessions, captures desktop and mobile screenshots
+for the Administer and Workbench views, and writes artifacts under
+`tmp/assessment-web-mvp-visual/`. Remove those artifacts with:
+
+```bash
+rm -rf tmp/assessment-web-mvp-visual
+```
+
 ## Boundaries
 
 - This is a local-only MVP, not a deployed service.

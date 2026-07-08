@@ -95,6 +95,12 @@ Run the local QA suite:
 ./scripts/run_assessment_web_mvp_qa.sh
 ```
 
+Capture rendered desktop/mobile QA screenshots:
+
+```bash
+./scripts/run_assessment_web_mvp_visual_qa.sh
+```
+
 See `docs/current-state.md` for the latest snapshot.
 
 ## Future Feature Set
