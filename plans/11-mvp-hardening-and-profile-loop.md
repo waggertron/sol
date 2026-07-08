@@ -54,11 +54,14 @@ Tasks:
   - Verify workbench session and atom sections render from API data.
   - Current coverage checks served HTML/JS and static UI contracts; full
     rendered-browser automation remains a later enhancement.
-- [ ] Add responsive layout checks for desktop and mobile widths.
+- [x] Add responsive layout checks for desktop and mobile widths.
+  - Commit: `352e9f4`
   - Confirm no visible text overlap in the sidebar, topbar, questionnaire,
     session cards, atom cards, and action rows.
-  - Commit `b627a9f` added static responsive CSS guard checks; rendered visual
-    overlap checks are still open.
+  - Commit `b627a9f` added static responsive CSS guard checks.
+  - Commit `352e9f4` added rendered desktop/mobile screenshot capture for the
+    Administer and Workbench views, with manual inspection of generated
+    screenshots.
 - [x] Add a local QA script or documented command set.
   - Commit: `b627a9f`
   - The script should compile Python, validate JS syntax, validate JSONDB, and
@@ -76,9 +79,9 @@ Acceptance criteria:
   - Commit: `b627a9f`
 - [x] Tests do not leave persistent repo data changes.
   - Commit: `b627a9f`
-- [ ] The UI is visually usable on desktop and mobile widths.
-  - Static responsive guards exist in commit `b627a9f`; rendered browser
-    verification remains open.
+- [x] The UI is visually usable on desktop and mobile widths.
+  - Static responsive guards exist in commit `b627a9f`.
+  - Rendered screenshot verification exists in commit `352e9f4`.
 
 ## Phase 2: Profile Atom Editing
 
