@@ -30,7 +30,8 @@ The web MVP consists of:
 5. Autosave responses into the active session.
 6. Score the session through the existing scoring contract.
 7. Display scores and derived profile atoms.
-8. Allow confirm/reject/review-only atom state changes.
+8. Allow confirm/reject/review-only atom state changes, claim editing, and user
+   notes while preserving original generated wording and review history.
 9. Resume a prior session by session id.
 10. Export a session as JSON.
 11. Delete a session from local JSONDB storage.
@@ -99,3 +100,5 @@ rm -rf tmp/assessment-web-mvp-visual
 - It is suitable for exploratory product development, not multi-user production
   operation.
 - It does not yet implement authentication or access controls.
+- Atom edits are session- and atom-id-scoped. They update derived profile state,
+  never raw assessment responses.

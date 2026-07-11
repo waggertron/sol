@@ -140,9 +140,25 @@ class AssessmentWebMvpRouteTests(unittest.TestCase):
         )
         self.assertEqual(reviewed["state"], "active_atom")
 
+        edited, _ = self.post_json(
+            "/api/sessions/route_test_tipi_session/review-atom",
+            {
+                "atom_id": "assessment.tipi.tipi_extraversion.v0",
+                "reviewed_at": "2026-07-08T22:07:00Z",
+                "user_feedback": "edited",
+                "claim": "I tend to be socially engaged in familiar settings.",
+                "user_note": "Context matters to me.",
+            },
+        )
+        self.assertEqual(edited["user_feedback"], "edited")
+        self.assertEqual(edited["user_note"], "Context matters to me.")
+        self.assertNotEqual(edited["original_claim"], edited["claim"])
+        self.assertEqual(len(edited["review_history"]), 2)
+
         atom_payload, _ = self.get_json("/api/profile-atoms")
         self.assertEqual(atom_payload["atom_count"], 5)
         self.assertEqual(atom_payload["atoms"][0]["session_id"], "route_test_tipi_session")
+        self.assertEqual(atom_payload["atoms"][0]["user_note"], "Context matters to me.")
 
         sessions, _ = self.get_json("/api/sessions")
         self.assertEqual(sessions["session_count"], 1)

@@ -210,11 +210,13 @@ def build_profile_atom(
         f"Raw score {scored['raw_score']:.2f} on range [{scored['score_min']:.2f}, {scored['score_max']:.2f}] normalized to {normalized:.2f}.",
         *scored["evidence_lines"],
     ]
+    claim = claim_for_domain(scored["domain"], normalized)
     return {
         "id": f"assessment.{instrument_id}.{scale_slug}.v0",
         "label": f"{scored['label']} self-report tendency",
         "domain": "stable_trait_tendencies",
-        "claim": claim_for_domain(scored["domain"], normalized),
+        "original_claim": claim,
+        "claim": claim,
         "state": "provisional_atom",
         "activation_scope": "review_only",
         "evidence": evidence,
@@ -231,6 +233,8 @@ def build_profile_atom(
         "sensitivity_level": "low" if domain != "neuroticism" else "medium",
         "user_visibility": "visible_editable",
         "user_feedback": "unconfirmed",
+        "user_note": "",
+        "review_history": [],
         "generation_mappings": [],
         "counterevidence": [],
         "last_updated": completed_at,

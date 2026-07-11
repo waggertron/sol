@@ -89,32 +89,32 @@ Goal: let users correct profile atoms without losing provenance.
 
 Tasks:
 
-- [ ] Extend the profile atom review contract with editable fields.
+- [x] Extend the profile atom review contract with editable fields.
   - Add or document `original_claim`, edited `claim`, `user_note`, and
     `review_history`.
   - Preserve generated text as provenance when a user edits the claim.
-- [ ] Extend `review_atom` in the session store.
+- [x] Extend `review_atom` in the session store.
   - Support claim edits, notes, feedback state, activation scope, and timestamped
     history entries.
-- [ ] Add web API support for atom edits.
+- [x] Add web API support for atom edits.
   - Keep edits session-scoped and atom-id scoped.
   - Return the updated atom after mutation.
-- [ ] Add UI controls for editing.
+- [x] Add UI controls for editing.
   - Inline edit or compact modal is acceptable.
   - User should be able to confirm, reject, keep review-only, edit claim text,
     and add a note.
-- [ ] Add tests for edit persistence and history.
+- [x] Add tests for edit persistence and history.
   - Confirm edits survive reload and appear in the aggregate workbench.
-- [ ] Update docs.
+- [x] Update docs.
   - Reflect edit semantics in profile atom output docs, session-storage docs,
     and web MVP docs.
 
 Acceptance criteria:
 
-- [ ] A user can edit an atom claim and still inspect the original generated
+- [x] A user can edit an atom claim and still inspect the original generated
   claim.
-- [ ] A user note can be stored without changing raw assessment responses.
-- [ ] Edited atoms remain non-diagnostic and user-visible.
+- [x] A user note can be stored without changing raw assessment responses.
+- [x] Edited atoms remain non-diagnostic and user-visible.
 
 ## Phase 3: Evidence And Uncertainty Views
 
@@ -203,5 +203,18 @@ Acceptance criteria:
 
 ## Current Priority
 
-Start with Phase 1. The next code commit should add tests and browser QA before
-the atom editing feature expands the behavioral surface.
+Start with Phase 3. Phase 1 browser QA and Phase 2 provenance-preserving atom
+editing are complete. The next implementation slice should make score, item,
+instrument, and uncertainty evidence inspectable before profile context export.
+
+## Latest Validation Evidence
+
+- `./scripts/run_assessment_web_mvp_qa.sh`: 9 tests pass on Python 3.14.6;
+  tracked `jsondb/assessment_sessions.json` remains unchanged.
+- The same QA command cannot bind its isolated localhost server inside the
+  Codex managed sandbox (`PermissionError: [Errno 1]`), but passes unchanged in
+  the host shell. This is an execution-environment restriction, not an
+  application failure.
+- `./scripts/run_assessment_web_mvp_visual_qa.sh`: desktop and mobile Administer
+  and Workbench captures pass against an isolated temporary session DB; manual
+  inspection confirms the collapsed atom editor remains usable at both widths.

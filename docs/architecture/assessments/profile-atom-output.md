@@ -26,6 +26,11 @@ Every assessment-derived atom should:
 - start as `activation_scope: "review_only"`
 - remain `user_visibility: "visible_editable"`
 - keep assessment provenance in `source_ids` and `assessment_metadata`
+- initialize `original_claim` to the generated `claim`
+- initialize `user_note` to an empty string and `review_history` to an empty list
+
+User edits change `claim`, not `original_claim`. Review history is append-only,
+and notes or edits must not alter raw assessment responses or derived scores.
 
 ## Current Generator
 

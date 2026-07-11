@@ -58,6 +58,7 @@ python3 tools/assessment_session_store.py list-sessions
 python3 tools/assessment_session_store.py list-profile-atoms
 python3 tools/assessment_session_store.py show-session --session-id session_001
 python3 tools/assessment_session_store.py review-atom --session-id session_001 --atom-id assessment.tipi.tipi_extraversion.v0 --reviewed-at 2026-07-08T21:10:00Z --user-feedback confirmed --state active_atom --activation-scope contextual
+python3 tools/assessment_session_store.py review-atom --session-id session_001 --atom-id assessment.tipi.tipi_extraversion.v0 --reviewed-at 2026-07-08T21:12:00Z --user-feedback edited --claim "I often enjoy social interaction in familiar settings." --user-note "Large groups are different."
 python3 tools/assessment_session_store.py delete-session --session-id session_001
 ```
 
@@ -71,6 +72,11 @@ python3 tools/assessment_session_store.py delete-session --session-id session_00
   `kb/model/profile_atom_schema_v0.md`
 - user review should flow through explicit atom updates rather than silently
   mutating raw scores
+- the first edit preserves generated wording in `original_claim`; later edits
+  update only `claim`
+- material claim, note, feedback, state, and scope changes append timestamped
+  field-level entries to `review_history`
+- older stored atoms gain the edit-provenance fields lazily on first review
 - deletion removes a whole local session, including responses, derived scores,
   and derived profile atoms
 

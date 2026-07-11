@@ -92,6 +92,9 @@ then generate text and visual direction the user can evaluate.
   surface. It serves a static UI plus a thin JSON API over the same shared
   session-store contract. It now supports session export/delete and a
   cross-session profile atom workbench.
+- The profile workbench supports session-scoped claim edits and user notes
+  while retaining immutable generated wording in `original_claim` and material
+  changes in append-only `review_history`.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -148,6 +151,8 @@ Build the first MVP around assessment administration before broader generation:
 5. Let users confirm, edit, reject, export, or delete profile atom candidates.
 6. Keep the web UI thin and route persistence through the shared Python session
    store instead of a second ad hoc storage format.
+7. Make score, item, instrument, and uncertainty evidence inspectable before
+   exporting atoms as generation context.
 
 ## Key Source Anchors
 

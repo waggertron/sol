@@ -31,6 +31,15 @@ class AssessmentStaticUiContractTests(unittest.TestCase):
         self.assertIn(".session-card-header", css)
         self.assertIn("overflow-wrap: anywhere", css)
 
+    def test_atom_editor_contract_is_present(self) -> None:
+        script = (APP / "app.js").read_text(encoding="utf-8")
+        self.assertIn("atomEditMarkup", script)
+        self.assertIn('data-field="claim"', script)
+        self.assertIn('data-field="user-note"', script)
+        self.assertIn("original_claim", script)
+        self.assertIn("review_history", script)
+        self.assertIn("applyAtomEdit", script)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -29,7 +29,8 @@ body {
 
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
 }
 
@@ -188,13 +189,18 @@ select {
 }
 
 input[type="text"],
-select {
+select,
+textarea {
   width: 100%;
   background: #0b0f14;
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 10px 12px;
+}
+
+textarea {
+  resize: vertical;
 }
 
 button {
@@ -362,6 +368,42 @@ button:disabled {
 
 .atom-actions button[data-action="rejected"] {
   border-color: var(--danger);
+}
+
+.atom-editor {
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.atom-editor summary {
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.atom-editor label,
+.original-claim {
+  display: grid;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.original-claim {
+  border-left: 3px solid var(--warning);
+  padding-left: 10px;
+}
+
+.original-claim p {
+  margin: 0;
+}
+
+.atom-editor-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 .empty-state {

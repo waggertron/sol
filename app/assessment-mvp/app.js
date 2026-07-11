@@ -182,6 +182,51 @@ function atomActionButton(label, action) {
   return `<button type="button" data-action="${action}">${label}</button>`;
 }
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function atomEditMarkup(atom) {
+  const originalClaim = atom.original_claim || atom.claim;
+  const wasEdited = originalClaim !== atom.claim;
+  return `
+    <details class="atom-editor">
+      <summary>Edit claim or add a note</summary>
+      <label>
+        <span>Claim</span>
+        <textarea data-field="claim" rows="3">${escapeHtml(atom.claim)}</textarea>
+      </label>
+      <label>
+        <span>Your note</span>
+        <textarea data-field="user-note" rows="2" placeholder="Optional context or correction">${escapeHtml(atom.user_note || "")}</textarea>
+      </label>
+      ${wasEdited ? `<div class="original-claim"><strong>Original generated claim</strong><p>${escapeHtml(originalClaim)}</p></div>` : ""}
+      <div class="atom-editor-footer">
+        <span class="atom-meta">${(atom.review_history || []).length} saved review change(s)</span>
+        <button type="button" data-action="save-edit">Save edit</button>
+      </div>
+    </details>
+  `;
+}
+
+function bindAtomControls(card, atom, sessionId) {
+  card.querySelectorAll("button[data-action='confirmed'], button[data-action='rejected'], button[data-action='review']").forEach((button) => {
+    button.addEventListener("click", async () => {
+      await applyAtomReview(sessionId, atom.id, button.dataset.action);
+    });
+  });
+  card.querySelector("button[data-action='save-edit']").addEventListener("click", async () => {
+    const claim = card.querySelector("[data-field='claim']").value;
+    const userNote = card.querySelector("[data-field='user-note']").value;
+    await applyAtomEdit(sessionId, atom.id, claim, userNote);
+  });
+}
+
 function atomActionMapping(action) {
   return {
     confirmed: {
@@ -213,21 +258,18 @@ function renderAtoms() {
     const card = document.createElement("section");
     card.className = "atom-card";
     card.innerHTML = `
-      <strong>${atom.label}</strong>
-      <div class="atom-meta">${atom.state} | ${atom.activation_scope} | feedback: ${atom.user_feedback}</div>
-      <p>${atom.claim}</p>
+      <strong>${escapeHtml(atom.label)}</strong>
+      <div class="atom-meta">${escapeHtml(atom.state)} | ${escapeHtml(atom.activation_scope)} | feedback: ${escapeHtml(atom.user_feedback)}</div>
+      <p>${escapeHtml(atom.claim)}</p>
       <div class="atom-meta">confidence ${atom.confidence} | sensitivity ${atom.sensitivity_level}</div>
       <div class="atom-actions">
         ${atomActionButton("Confirm", "confirmed")}
         ${atomActionButton("Reject", "rejected")}
         ${atomActionButton("Keep review-only", "review")}
       </div>
+      ${atomEditMarkup(atom)}
     `;
-    card.querySelectorAll("button[data-action]").forEach((button) => {
-      button.addEventListener("click", async () => {
-        await applyAtomReview(state.session.session_id, atom.id, button.dataset.action);
-      });
-    });
+    bindAtomControls(card, atom, state.session.session_id);
     elements.atomResults.appendChild(card);
   }
 }
@@ -317,24 +359,21 @@ function renderWorkbenchAtoms() {
     const card = document.createElement("section");
     card.className = "atom-card";
     card.innerHTML = `
-      <strong>${atom.label}</strong>
+      <strong>${escapeHtml(atom.label)}</strong>
       <div class="atom-meta">
-        ${atom.instrument_name || atom.instrument_id} | ${atom.session_id}
+        ${escapeHtml(atom.instrument_name || atom.instrument_id)} | ${escapeHtml(atom.session_id)}
       </div>
-      <div class="atom-meta">${atom.state} | ${atom.activation_scope} | feedback: ${atom.user_feedback}</div>
-      <p>${atom.claim}</p>
+      <div class="atom-meta">${escapeHtml(atom.state)} | ${escapeHtml(atom.activation_scope)} | feedback: ${escapeHtml(atom.user_feedback)}</div>
+      <p>${escapeHtml(atom.claim)}</p>
       <div class="atom-meta">confidence ${atom.confidence} | sensitivity ${atom.sensitivity_level}</div>
       <div class="atom-actions">
         ${atomActionButton("Confirm", "confirmed")}
         ${atomActionButton("Reject", "rejected")}
         ${atomActionButton("Keep review-only", "review")}
       </div>
+      ${atomEditMarkup(atom)}
     `;
-    card.querySelectorAll("button[data-action]").forEach((button) => {
-      button.addEventListener("click", async () => {
-        await applyAtomReview(atom.session_id, atom.id, button.dataset.action);
-      });
-    });
+    bindAtomControls(card, atom, atom.session_id);
     elements.workbenchAtoms.appendChild(card);
   }
 }
@@ -468,6 +507,25 @@ async function applyAtomReview(sessionId, atomId, action) {
   }
   await loadWorkbench();
   setAutosaveStatus("Atom state updated", "ok");
+}
+
+async function applyAtomEdit(sessionId, atomId, claim, userNote) {
+  await api(apiSessionPath(sessionId, "/review-atom"), {
+    method: "POST",
+    body: JSON.stringify({
+      atom_id: atomId,
+      claim,
+      user_note: userNote,
+      user_feedback: "edited",
+    }),
+  });
+  if (state.session?.session_id === sessionId) {
+    state.session = await api(apiSessionPath(sessionId));
+    renderAtoms();
+    renderSessionMeta();
+  }
+  await loadWorkbench();
+  setAutosaveStatus("Atom edit saved", "ok");
 }
 
 function exportSession(sessionId) {

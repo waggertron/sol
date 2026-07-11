@@ -193,6 +193,7 @@ class AssessmentHandler(BaseHTTPRequestHandler):
                     state=payload.get("state"),
                     activation_scope=payload.get("activation_scope"),
                     claim=payload.get("claim"),
+                    user_note=payload.get("user_note"),
                 )
                 json_response(self, HTTPStatus.OK, atom)
                 return

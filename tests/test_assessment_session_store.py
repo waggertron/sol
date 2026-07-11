@@ -64,6 +64,8 @@ class AssessmentSessionStoreTests(unittest.TestCase):
         self.assertEqual(len(scored["scores"]), 5)
         self.assertEqual(len(scored["profile_atoms"]), 5)
         self.assertTrue(all(atom["state"] == "provisional_atom" for atom in scored["profile_atoms"]))
+        self.assertTrue(all(atom["original_claim"] == atom["claim"] for atom in scored["profile_atoms"]))
+        self.assertTrue(all(atom["review_history"] == [] for atom in scored["profile_atoms"]))
 
         listed = store.list_sessions()
         self.assertEqual(listed["session_count"], 1)
@@ -85,6 +87,39 @@ class AssessmentSessionStoreTests(unittest.TestCase):
         self.assertEqual(reviewed["user_feedback"], "confirmed")
         self.assertEqual(reviewed["state"], "active_atom")
         self.assertEqual(reviewed["activation_scope"], "contextual")
+        self.assertEqual(len(reviewed["review_history"]), 1)
+
+        original_responses = dict(scored["responses"])
+        original_claim = reviewed["original_claim"]
+        edited = store.review_atom(
+            "test_tipi_session",
+            "assessment.tipi.tipi_extraversion.v0",
+            "2026-07-08T22:07:00Z",
+            user_feedback="edited",
+            claim="I often feel energized by social interaction, depending on context.",
+            user_note="This is stronger with close friends than in large groups.",
+        )
+        self.assertEqual(edited["original_claim"], original_claim)
+        self.assertNotEqual(edited["claim"], original_claim)
+        self.assertEqual(edited["user_feedback"], "edited")
+        self.assertEqual(len(edited["review_history"]), 2)
+        self.assertEqual(
+            edited["review_history"][-1]["changes"]["claim"]["from"],
+            original_claim,
+        )
+
+        reloaded = store.show_session("test_tipi_session")
+        reloaded_atom = store.find_atom(reloaded, "assessment.tipi.tipi_extraversion.v0")
+        self.assertEqual(reloaded_atom["user_note"], "This is stronger with close friends than in large groups.")
+        self.assertEqual(reloaded["responses"], original_responses)
+
+        aggregate_atom = next(
+            atom
+            for atom in store.list_profile_atoms()["atoms"]
+            if atom["id"] == "assessment.tipi.tipi_extraversion.v0"
+        )
+        self.assertEqual(aggregate_atom["claim"], edited["claim"])
+        self.assertEqual(len(aggregate_atom["review_history"]), 2)
 
         shown = store.show_session("test_tipi_session")
         self.assertEqual(shown["profile_atoms"][0]["source_ids"][1], "assessment_session:test_tipi_session")
@@ -98,6 +133,17 @@ class AssessmentSessionStoreTests(unittest.TestCase):
             store.show_session("missing")
         with self.assertRaisesRegex(ValueError, "Unknown session"):
             store.delete_session("missing")
+
+    def test_atom_review_rejects_out_of_contract_values(self) -> None:
+        store.create_session("invalid_review", TIPI_PATH.as_posix(), "2026-07-08T22:00:00Z")
+        store.save_response_map("invalid_review", valid_tipi_responses(), merge=False)
+        store.score_session("invalid_review", "2026-07-08T22:05:00Z")
+        atom_id = "assessment.tipi.tipi_extraversion.v0"
+
+        with self.assertRaisesRegex(ValueError, "Invalid atom state"):
+            store.review_atom("invalid_review", atom_id, "2026-07-08T22:06:00Z", state="diagnosed")
+        with self.assertRaisesRegex(ValueError, "cannot be empty"):
+            store.review_atom("invalid_review", atom_id, "2026-07-08T22:06:00Z", claim="   ")
 
 
 if __name__ == "__main__":

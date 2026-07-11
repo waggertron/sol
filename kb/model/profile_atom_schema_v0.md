@@ -21,6 +21,7 @@ The schema exists to preserve four distinctions:
 - `label`
 - `domain`
 - `claim`
+- `original_claim`
 - `state`
 - `activation_scope`
 - `evidence`
@@ -33,6 +34,8 @@ The schema exists to preserve four distinctions:
 - `sensitivity_level`
 - `user_visibility`
 - `user_feedback`
+- `user_note`
+- `review_history`
 - `generation_mappings`
 - `counterevidence`
 - `last_updated`
@@ -71,6 +74,11 @@ Plain-language statement of what the atom means.
 
 This should be interpretable and auditable. Avoid clinical or neuroscientific
 language unless the source explicitly warrants it and the product allows it.
+
+### `original_claim`
+
+Immutable generated claim captured when the atom is created. User edits update
+`claim` but must not overwrite `original_claim`.
 
 ### `state`
 
@@ -216,6 +224,17 @@ Suggested values:
 - `edited`
 - `rejected`
 
+### `user_note`
+
+Optional user-authored context, correction, or qualification. Notes do not
+modify raw evidence or assessment responses.
+
+### `review_history`
+
+Append-only list of material review changes. Each entry records `reviewed_at`
+and field-level `from` / `to` values for changes to claim, note, feedback,
+lifecycle state, or activation scope. No-op reviews do not add history.
+
 ### `generation_mappings`
 
 List of downstream personalization effects that this atom may support.
@@ -275,6 +294,7 @@ For the assessment-first MVP:
   "id": "style.direct_low_fluff.v0",
   "label": "direct, low-fluff communication",
   "domain": "communication_style",
+  "original_claim": "User prefers concise, concrete, action-oriented wording.",
   "claim": "User prefers concise, concrete, action-oriented wording.",
   "state": "active_atom",
   "activation_scope": "global",
@@ -301,6 +321,8 @@ For the assessment-first MVP:
   "sensitivity_level": "low",
   "user_visibility": "visible_editable",
   "user_feedback": "confirmed",
+  "user_note": "Especially for work and planning.",
+  "review_history": [],
   "generation_mappings": [
     "shorter introductions",
     "explicit next steps"

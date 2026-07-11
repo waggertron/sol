@@ -21,7 +21,10 @@ Current implementation state:
   `assessments/`, `docs/`, `plans/`, and the root README
 - JSONDB import queue is active for papers and Wikipedia imports
 - OCEAN assessment repository is populated with permissive/open instruments
-- MVP app is not yet built
+- local assessment web MVP, profile workbench, automated QA, and rendered
+  desktop/mobile QA are built
+- profile atoms can be confirmed, rejected, kept review-only, or edited while
+  preserving their original generated claim and review history
 
 See `docs/current-state.md` for current counts.
 
@@ -132,9 +135,7 @@ Output:
 
 ## Immediate Next Steps
 
-1. Build the MVP web app assessment flow against `assessments/ocean/manifest.json`.
-2. Implement response storage, scoring, and result presentation for TIPI or
-   Mini-IPIP.
-3. Convert assessment scores into editable profile atom candidates.
-4. Define validation checks for scoring correctness and result copy safety.
-5. Continue OCEAN research imports and license-review queue expansion.
+1. Add inspectable score, item, instrument, and uncertainty evidence views.
+2. Define and export a scoped profile context packet.
+3. Pilot one low-risk writing or communication artifact in local dry-run mode.
+4. Continue OCEAN research imports and license-review queue expansion.

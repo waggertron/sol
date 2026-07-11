@@ -1,6 +1,6 @@
 # Current State
 
-Last updated: 2026-07-08
+Last updated: 2026-07-11
 
 ## Project Status
 
@@ -90,6 +90,8 @@ Reference-only or license-review instruments are tracked in:
   thin JSON API over the same session store. The UI now includes assessment
   administration, session export/delete controls, and a cross-session profile
   atom workbench.
+- Profile atom review now supports provenance-preserving claim edits, user
+  notes, lifecycle/scope changes, and timestamped field-level review history.
 
 Current queue ingestion support:
 
@@ -173,8 +175,8 @@ Then open `http://127.0.0.1:8765`.
 - Browser QA is currently green at the routed and rendered levels.
 - The latest committed visual QA work is in `352e9f4`.
 - The latest task-ledger update is in `f146db4`.
-- The next active build phase is profile atom editing with provenance
-  preservation.
+- Profile atom editing with provenance preservation is complete.
+- The next active build phase is inspectable evidence and uncertainty views.
 
 ## Safety Posture
 

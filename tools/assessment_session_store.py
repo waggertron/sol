@@ -16,6 +16,9 @@ ROOT = Path(".")
 JSONDB = ROOT / "jsondb"
 SESSIONS_DB = JSONDB / "assessment_sessions.json"
 SESSIONS_DB_ENV = "SOL_ASSESSMENT_SESSIONS_DB"
+USER_FEEDBACK_VALUES = {"unconfirmed", "confirmed", "edited", "rejected"}
+ATOM_STATE_VALUES = {"observed_candidate", "provisional_atom", "active_atom", "suppressed_atom"}
+ACTIVATION_SCOPE_VALUES = {"review_only", "contextual", "global"}
 
 
 def save_json(path: Path, data: Any) -> None:
@@ -208,6 +211,7 @@ def review_atom(
     state: str | None = None,
     activation_scope: str | None = None,
     claim: str | None = None,
+    user_note: str | None = None,
 ) -> dict[str, Any]:
     data = load_sessions()
     session = find_session(data, session_id)
@@ -218,14 +222,50 @@ def review_atom(
     if not atom:
         raise ValueError(f"Unknown atom `{atom_id}` in session `{session_id}`")
 
-    if user_feedback:
+    if user_feedback is not None and user_feedback not in USER_FEEDBACK_VALUES:
+        raise ValueError(f"Invalid user feedback: {user_feedback}")
+    if state is not None and state not in ATOM_STATE_VALUES:
+        raise ValueError(f"Invalid atom state: {state}")
+    if activation_scope is not None and activation_scope not in ACTIVATION_SCOPE_VALUES:
+        raise ValueError(f"Invalid activation scope: {activation_scope}")
+    if claim is not None:
+        claim = claim.strip()
+        if not claim:
+            raise ValueError("Atom claim cannot be empty")
+    if user_note is not None:
+        user_note = user_note.strip()
+
+    atom.setdefault("original_claim", atom.get("claim", ""))
+    atom.setdefault("user_note", "")
+    atom.setdefault("review_history", [])
+    previous = {
+        "claim": atom.get("claim"),
+        "user_note": atom.get("user_note", ""),
+        "user_feedback": atom.get("user_feedback"),
+        "state": atom.get("state"),
+        "activation_scope": atom.get("activation_scope"),
+    }
+
+    if user_feedback is not None:
         atom["user_feedback"] = user_feedback
-    if state:
+    if state is not None:
         atom["state"] = state
-    if activation_scope:
+    if activation_scope is not None:
         atom["activation_scope"] = activation_scope
-    if claim:
+    if claim is not None:
         atom["claim"] = claim
+    if user_note is not None:
+        atom["user_note"] = user_note
+
+    current = {key: atom.get(key) for key in previous}
+    changes = {
+        key: {"from": previous[key], "to": current[key]}
+        for key in previous
+        if previous[key] != current[key]
+    }
+    if not changes:
+        return atom
+    atom["review_history"].append({"reviewed_at": reviewed_at, "changes": changes})
     atom["last_updated"] = reviewed_at
 
     save_sessions(data)
@@ -271,6 +311,7 @@ def parse_args() -> argparse.Namespace:
     review_parser.add_argument("--state", choices=["observed_candidate", "provisional_atom", "active_atom", "suppressed_atom"])
     review_parser.add_argument("--activation-scope", choices=["review_only", "contextual", "global"])
     review_parser.add_argument("--claim", help="Optional replacement claim text after review.")
+    review_parser.add_argument("--user-note", help="Optional user-authored note; pass an empty value to clear it.")
 
     return parser.parse_args()
 
@@ -318,6 +359,7 @@ def main() -> None:
             state=args.state,
             activation_scope=args.activation_scope,
             claim=args.claim,
+            user_note=args.user_note,
         )
         print(json.dumps(result, indent=2, sort_keys=True))
         return

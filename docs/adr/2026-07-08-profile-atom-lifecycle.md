@@ -99,5 +99,6 @@ Near-term implementation implications:
 Follow-up work:
 
 - add a machine-readable JSON Schema once the MVP storage contract settles
-- align assessment scoring output with `profile_atom_schema_v0.md`
-- add a profile-atom persistence model for sessions and user feedback
+- assessment scoring output is aligned with `profile_atom_schema_v0.md`
+- session persistence now preserves `original_claim`, editable `claim`, optional
+  `user_note`, and append-only `review_history`
