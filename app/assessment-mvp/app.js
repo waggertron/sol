@@ -31,6 +31,8 @@ const elements = {
   resumeSessionId: document.querySelector("#resume-session-id"),
   resumeSession: document.querySelector("#resume-session"),
   refreshWorkbench: document.querySelector("#refresh-workbench"),
+  exportProfileContext: document.querySelector("#export-profile-context"),
+  includeReviewOnlyContext: document.querySelector("#include-review-only-context"),
   workbenchSummary: document.querySelector("#workbench-summary"),
   sessionList: document.querySelector("#session-list"),
   workbenchAtoms: document.querySelector("#workbench-atoms"),
@@ -608,6 +610,11 @@ function exportSession(sessionId) {
   window.location.href = apiSessionPath(sessionId, "/export");
 }
 
+function exportProfileContext() {
+  const includeReviewOnly = elements.includeReviewOnlyContext.checked ? "true" : "false";
+  window.location.href = `/api/profile-context?include_review_only=${includeReviewOnly}`;
+}
+
 async function deleteSessionById(sessionId) {
   const confirmed = window.confirm(`Delete session ${sessionId}? This removes its responses, scores, and derived atoms from local JSONDB storage.`);
   if (!confirmed) {
@@ -640,6 +647,7 @@ elements.startSession.addEventListener("click", () => startSession().catch((erro
 elements.scoreSession.addEventListener("click", () => scoreCurrentSession().catch((error) => setAutosaveStatus(error.message, "warn")));
 elements.resumeSession.addEventListener("click", () => resumeSession().catch((error) => setAutosaveStatus(error.message, "warn")));
 elements.refreshWorkbench.addEventListener("click", () => loadWorkbench().catch((error) => setAutosaveStatus(error.message, "warn")));
+elements.exportProfileContext.addEventListener("click", exportProfileContext);
 elements.atomFilter.addEventListener("change", renderWorkbenchAtoms);
 elements.exportCurrentSession.addEventListener("click", () => {
   if (state.session) {

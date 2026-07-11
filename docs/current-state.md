@@ -95,6 +95,9 @@ Reference-only or license-review instruments are tracked in:
 - Score and atom cards now expose expandable calculation evidence, instrument
   and source context, item response/keying details, and non-diagnostic
   uncertainty cautions for TIPI and reliability-bearing instruments.
+- The workbench exports a scoped profile context packet. Default export includes
+  only active contextual/global atoms; rejected and suppressed atoms are always
+  excluded, and opt-in review candidates are marked generation-ineligible.
 
 Current queue ingestion support:
 
@@ -180,7 +183,8 @@ Then open `http://127.0.0.1:8765`.
 - The latest task-ledger update is in `f146db4`.
 - Profile atom editing with provenance preservation is complete.
 - Inspectable evidence and uncertainty views are complete.
-- The next active build phase is scoped profile context export.
+- Scoped profile context export is complete.
+- The next active build phase is the first low-risk local generation pilot.
 
 ## Safety Posture
 

@@ -109,6 +109,76 @@ def list_profile_atoms() -> dict[str, Any]:
     }
 
 
+def build_profile_context(generated_at: str, include_review_only: bool = False) -> dict[str, Any]:
+    records = list_profile_atoms()["atoms"]
+    selected: list[dict[str, Any]] = []
+    for atom in records:
+        rejected = atom.get("user_feedback") == "rejected"
+        suppressed = atom.get("state") == "suppressed_atom"
+        generation_eligible = (
+            atom.get("state") == "active_atom"
+            and atom.get("activation_scope") in {"contextual", "global"}
+            and not rejected
+        )
+        review_candidate = (
+            include_review_only
+            and atom.get("state") in {"observed_candidate", "provisional_atom"}
+            and atom.get("activation_scope") == "review_only"
+            and not rejected
+        )
+        if suppressed or not (generation_eligible or review_candidate):
+            continue
+
+        metadata = atom.get("assessment_metadata", {})
+        selected.append(
+            {
+                "id": atom["id"],
+                "label": atom.get("label"),
+                "domain": atom.get("domain"),
+                "claim": atom.get("claim"),
+                "state": atom.get("state"),
+                "activation_scope": atom.get("activation_scope"),
+                "eligible_for_generation": generation_eligible,
+                "context": atom.get("context", []),
+                "confidence": atom.get("confidence"),
+                "evidence_summary": atom.get("evidence", []),
+                "source_ids": atom.get("source_ids", []),
+                "contraindications": atom.get("counterevidence", []),
+                "generation_guidance": atom.get("generation_mappings", []),
+                "uncertainty": {
+                    "stability": atom.get("stability"),
+                    "recency": atom.get("recency"),
+                    "sensitivity_level": atom.get("sensitivity_level"),
+                    "assessment_note": metadata.get("uncertainty_note"),
+                },
+                "user_feedback": atom.get("user_feedback"),
+                "last_updated": atom.get("last_updated"),
+            }
+        )
+
+    return {
+        "schema_version": 1,
+        "generated_at": generated_at,
+        "selection_policy": {
+            "default": "active contextual/global atoms that are not rejected or suppressed",
+            "include_review_only": include_review_only,
+            "review_only_atoms_are_generation_eligible": False,
+        },
+        "safety": {
+            "intended_use": "user-reviewed personalization context",
+            "prohibited_uses": [
+                "diagnosis",
+                "protected-class inference",
+                "hidden profiling",
+                "eligibility or high-impact decisions",
+            ],
+            "interpretation": "Claims are user-correctable evidence summaries, not identity facts.",
+        },
+        "atom_count": len(selected),
+        "atoms": selected,
+    }
+
+
 def create_session(
     session_id: str,
     instrument_path: str,
@@ -282,6 +352,10 @@ def parse_args() -> argparse.Namespace:
 
     subparsers.add_parser("list-profile-atoms", help="List derived profile atoms across stored sessions.")
 
+    context_parser = subparsers.add_parser("export-profile-context", help="Build scoped profile context JSON.")
+    context_parser.add_argument("--generated-at", required=True)
+    context_parser.add_argument("--include-review-only", action="store_true")
+
     create_parser = subparsers.add_parser("create-session", help="Create a new assessment response session.")
     create_parser.add_argument("--session-id", required=True)
     create_parser.add_argument("--instrument", required=True, help="Path to instrument JSON.")
@@ -332,6 +406,10 @@ def main() -> None:
         return
     if args.command == "list-profile-atoms":
         result = list_profile_atoms()
+        print(json.dumps(result, indent=2, sort_keys=True))
+        return
+    if args.command == "export-profile-context":
+        result = build_profile_context(args.generated_at, include_review_only=args.include_review_only)
         print(json.dumps(result, indent=2, sort_keys=True))
         return
     if args.command == "save-responses":

@@ -84,11 +84,13 @@ class AssessmentWebMvpRouteTests(unittest.TestCase):
         self.assertIn("nav-workbench", html)
         self.assertIn("export-current-session", html)
         self.assertIn("delete-current-session", html)
+        self.assertIn("export-profile-context", html)
 
         script = request.urlopen(f"{self.base_url}/app.js", timeout=5).read().decode("utf-8")
         self.assertIn("loadWorkbench", script)
         self.assertIn("exportSession", script)
         self.assertIn("deleteSessionById", script)
+        self.assertIn("exportProfileContext", script)
 
     def test_full_route_lifecycle_uses_isolated_jsondb(self) -> None:
         health, _ = self.get_json("/api/health")
@@ -165,6 +167,18 @@ class AssessmentWebMvpRouteTests(unittest.TestCase):
         sessions, _ = self.get_json("/api/sessions")
         self.assertEqual(sessions["session_count"], 1)
         self.assertEqual(sessions["sessions"][0]["active_atom_count"], 1)
+
+        profile_context, context_response = self.get_json("/api/profile-context")
+        self.assertEqual(profile_context["atom_count"], 1)
+        self.assertTrue(profile_context["atoms"][0]["eligible_for_generation"])
+        self.assertIn("attachment", context_response.headers["Content-Disposition"])
+
+        internal_context, _ = self.get_json("/api/profile-context?include_review_only=true")
+        self.assertEqual(internal_context["atom_count"], 5)
+        self.assertEqual(
+            sum(1 for atom in internal_context["atoms"] if not atom["eligible_for_generation"]),
+            4,
+        )
 
         deleted = self.delete_json("/api/sessions/route_test_tipi_session")
         self.assertEqual(deleted["deleted"]["session_id"], "route_test_tipi_session")

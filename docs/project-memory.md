@@ -99,6 +99,10 @@ then generate text and visual direction the user can evaluate.
   item-level response and keying calculations, instrument provenance, and
   uncertainty cautions. Reliability is framed as consistency evidence rather
   than proof of an individual claim.
+- `build_profile_context` and `GET /api/profile-context` provide the first
+  generation-facing packet. Default selection is active contextual/global
+  atoms; rejected/suppressed atoms are excluded, and explicitly included
+  review-only atoms remain generation-ineligible.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -155,8 +159,8 @@ Build the first MVP around assessment administration before broader generation:
 5. Let users confirm, edit, reject, export, or delete profile atom candidates.
 6. Keep the web UI thin and route persistence through the shared Python session
    store instead of a second ad hoc storage format.
-7. Export confirmed/contextual atoms as a scoped, generation-safe context
-   packet while excluding suppressed atoms by default.
+7. Use the scoped packet for a low-risk local writing or communication pilot,
+   beginning with prompt-only dry runs before any external model call.
 
 ## Key Source Anchors
 

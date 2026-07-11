@@ -9,10 +9,11 @@ from datetime import datetime, timezone
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import unquote, urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 from assessment_session_store import (
     create_session,
+    build_profile_context,
     delete_session,
     list_profile_atoms,
     list_sessions,
@@ -117,7 +118,8 @@ class AssessmentHandler(BaseHTTPRequestHandler):
     server_version = "SolAssessmentMVP/0.1"
 
     def do_GET(self) -> None:
-        path = urlparse(self.path).path
+        parsed = urlparse(self.path)
+        path = parsed.path
         if path == "/api/health":
             json_response(self, HTTPStatus.OK, {"status": "ok", "time": now_iso()})
             return
@@ -129,6 +131,15 @@ class AssessmentHandler(BaseHTTPRequestHandler):
             return
         if path == "/api/profile-atoms":
             json_response(self, HTTPStatus.OK, list_profile_atoms())
+            return
+        if path == "/api/profile-context":
+            query = parse_qs(parsed.query)
+            include_review_only = query.get("include_review_only", ["false"])[0].lower() == "true"
+            json_download_response(
+                self,
+                "sol-profile-context.json",
+                build_profile_context(now_iso(), include_review_only=include_review_only),
+            )
             return
         if path.startswith("/api/instruments/"):
             instrument_id = unquote(path.removeprefix("/api/instruments/"))

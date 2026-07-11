@@ -130,6 +130,35 @@ class AssessmentSessionStoreTests(unittest.TestCase):
         self.assertEqual(aggregate_atom["claim"], edited["claim"])
         self.assertEqual(len(aggregate_atom["review_history"]), 2)
 
+        store.review_atom(
+            "test_tipi_session",
+            "assessment.tipi.tipi_agreeableness.v0",
+            "2026-07-08T22:08:00Z",
+            user_feedback="rejected",
+            state="suppressed_atom",
+            activation_scope="review_only",
+        )
+        context = store.build_profile_context("2026-07-08T22:09:00Z")
+        self.assertEqual(context["atom_count"], 1)
+        self.assertEqual(context["atoms"][0]["id"], "assessment.tipi.tipi_extraversion.v0")
+        self.assertTrue(context["atoms"][0]["eligible_for_generation"])
+        self.assertIn("assessment_session:test_tipi_session", context["atoms"][0]["source_ids"])
+        self.assertIn("assessment_note", context["atoms"][0]["uncertainty"])
+
+        internal_context = store.build_profile_context(
+            "2026-07-08T22:09:00Z",
+            include_review_only=True,
+        )
+        self.assertEqual(internal_context["atom_count"], 4)
+        self.assertEqual(
+            sum(1 for atom in internal_context["atoms"] if not atom["eligible_for_generation"]),
+            3,
+        )
+        self.assertNotIn(
+            "assessment.tipi.tipi_agreeableness.v0",
+            {atom["id"] for atom in internal_context["atoms"]},
+        )
+
         shown = store.show_session("test_tipi_session")
         self.assertEqual(shown["profile_atoms"][0]["source_ids"][1], "assessment_session:test_tipi_session")
 

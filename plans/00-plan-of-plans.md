@@ -27,6 +27,8 @@ Current implementation state:
   preserving their original generated claim and review history
 - assessment results and atoms have expandable score, item-level, instrument,
   source, and uncertainty evidence views
+- the workbench exports a scoped, generation-safe profile context packet with
+  explicit review-only inclusion for internal testing
 
 See `docs/current-state.md` for current counts.
 
@@ -137,6 +139,5 @@ Output:
 
 ## Immediate Next Steps
 
-1. Define and export a scoped profile context packet.
-2. Pilot one low-risk writing or communication artifact in local dry-run mode.
-3. Continue OCEAN research imports and license-review queue expansion.
+1. Pilot one low-risk writing or communication artifact in local dry-run mode.
+2. Continue OCEAN research imports and license-review queue expansion.

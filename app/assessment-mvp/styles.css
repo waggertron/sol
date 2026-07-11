@@ -320,6 +320,22 @@ button:disabled {
   gap: 8px;
 }
 
+.workbench-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.compact-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .choice-row {
   flex-wrap: wrap;
   margin-top: 12px;
@@ -508,6 +524,15 @@ code {
   .topbar {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .workbench .panel-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .workbench-actions {
+    justify-content: flex-start;
   }
 
   .summary-grid {

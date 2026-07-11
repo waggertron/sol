@@ -19,6 +19,8 @@ class AssessmentStaticUiContractTests(unittest.TestCase):
             "session-list",
             "workbench-atoms",
             "atom-filter",
+            "export-profile-context",
+            "include-review-only-context",
         ]
         for element_id in required_ids:
             self.assertIn(f'id="{element_id}"', html)
@@ -42,6 +44,8 @@ class AssessmentStaticUiContractTests(unittest.TestCase):
         self.assertIn("evidencePanelMarkup", script)
         self.assertIn("Why this result exists", script)
         self.assertIn("item_evidence", script)
+        self.assertIn("exportProfileContext", script)
+        self.assertIn("/api/profile-context", script)
 
 
 if __name__ == "__main__":

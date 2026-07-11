@@ -90,7 +90,14 @@
           <section class="panel">
             <div class="panel-header">
               <h2>Profile Workbench</h2>
-              <button id="refresh-workbench" type="button">Refresh</button>
+              <div class="workbench-actions">
+                <label class="compact-checkbox">
+                  <input id="include-review-only-context" type="checkbox">
+                  <span>Include provisional atoms</span>
+                </label>
+                <button id="export-profile-context" type="button">Export profile context</button>
+                <button id="refresh-workbench" type="button">Refresh</button>
+              </div>
             </div>
             <div id="workbench-summary" class="summary-grid"></div>
           </section>

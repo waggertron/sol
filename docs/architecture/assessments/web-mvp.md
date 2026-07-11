@@ -38,6 +38,8 @@ The web MVP consists of:
 12. Review profile atoms across stored sessions in the workbench view.
 13. Expand evidence beneath scores or atoms to inspect calculation details,
     instrument/source context, and uncertainty cautions.
+14. Export a scoped profile context packet, with provisional review-only atoms
+    available only through an explicit internal-testing checkbox.
 
 ## API Surface
 
@@ -53,6 +55,7 @@ The web MVP consists of:
 - `POST /api/sessions/<session_id>/review-atom`
 - `DELETE /api/sessions/<session_id>`
 - `GET /api/profile-atoms`
+- `GET /api/profile-context`
 
 ## Local Run
 
@@ -107,3 +110,5 @@ rm -rf tmp/assessment-web-mvp-visual
 - Evidence panels describe assessment results as provisional self-report
   evidence. They do not convert reliability, scores, or trait names into fixed
   identity claims.
+- Profile context export excludes suppressed/rejected atoms and marks explicitly
+  included review-only candidates as ineligible for generation.

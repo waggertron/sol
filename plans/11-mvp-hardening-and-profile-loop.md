@@ -150,26 +150,26 @@ Goal: create the first profile packet that future generation flows can consume.
 
 Tasks:
 
-- [ ] Define a profile context packet schema.
+- [x] Define a profile context packet schema.
   - Include selected active/contextual atoms, confidence, evidence summaries,
     contraindications, and generation-safe language.
-- [ ] Add a session-store or profile-store helper to build the packet.
+- [x] Add a session-store or profile-store helper to build the packet.
   - Default to confirmed/contextual atoms.
   - Exclude suppressed atoms.
   - Include review-only atoms only when explicitly requested.
-- [ ] Add a web API route for profile context export.
-- [ ] Add UI controls in the workbench.
+- [x] Add a web API route for profile context export.
+- [x] Add UI controls in the workbench.
   - Export confirmed/contextual profile context.
   - Optionally include provisional atoms for internal testing.
-- [ ] Add tests for export filtering.
-- [ ] Update docs.
+- [x] Add tests for export filtering.
+- [x] Update docs.
   - Document what the packet can and cannot be used for.
 
 Acceptance criteria:
 
-- [ ] The repo can produce a scoped profile context JSON packet.
-- [ ] Suppressed/rejected atoms are excluded by default.
-- [ ] The packet preserves uncertainty and source provenance.
+- [x] The repo can produce a scoped profile context JSON packet.
+- [x] Suppressed/rejected atoms are excluded by default.
+- [x] The packet preserves uncertainty and source provenance.
 
 ## Phase 5: First Generation Pilot
 
@@ -203,9 +203,10 @@ Acceptance criteria:
 
 ## Current Priority
 
-Start with Phase 4. Browser QA, provenance-preserving atom editing, and
-inspectable evidence/uncertainty views are complete. The next implementation
-slice should define and export a scoped, generation-safe profile context packet.
+Start with Phase 5. Browser QA, provenance-preserving atom editing, inspectable
+evidence, and scoped profile context export are complete. The next slice should
+pilot a low-risk writing or communication artifact with local dry-run output
+before any external model call is introduced.
 
 ## Latest Validation Evidence
 
