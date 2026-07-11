@@ -92,6 +92,9 @@ Reference-only or license-review instruments are tracked in:
   atom workbench.
 - Profile atom review now supports provenance-preserving claim edits, user
   notes, lifecycle/scope changes, and timestamped field-level review history.
+- Score and atom cards now expose expandable calculation evidence, instrument
+  and source context, item response/keying details, and non-diagnostic
+  uncertainty cautions for TIPI and reliability-bearing instruments.
 
 Current queue ingestion support:
 
@@ -176,7 +179,8 @@ Then open `http://127.0.0.1:8765`.
 - The latest committed visual QA work is in `352e9f4`.
 - The latest task-ledger update is in `f146db4`.
 - Profile atom editing with provenance preservation is complete.
-- The next active build phase is inspectable evidence and uncertainty views.
+- Inspectable evidence and uncertainty views are complete.
+- The next active build phase is scoped profile context export.
 
 ## Safety Posture
 

@@ -168,11 +168,24 @@ function renderScores() {
     card.className = "score-card";
     const normalized = Math.round((score.normalized_score || 0) * 100);
     card.innerHTML = `
-      <strong>${score.label}</strong>
+      <strong>${escapeHtml(score.label)}</strong>
       <div class="score-meta">
         Raw ${Number(score.raw_score).toFixed(2)} on [${score.score_min}, ${score.score_max}] | normalized ${normalized}%
       </div>
       <div class="score-bar"><div class="score-fill" style="width:${normalized}%"></div></div>
+      ${evidencePanelMarkup({
+        scoring_method: score.scoring_method,
+        score_interpretation: score.score_interpretation,
+        reliability_alpha: score.reliability_alpha,
+        item_evidence: score.item_evidence,
+        uncertainty_note: uncertaintyNote(state.selectedInstrument, score),
+        instrument_name: state.selectedInstrument?.name,
+        construct_system: state.selectedInstrument?.construct_system,
+        license_status: state.selectedInstrument?.license?.status,
+        source_publisher: state.selectedInstrument?.source?.publisher,
+        source_url: state.selectedInstrument?.source?.url,
+        instrument_notes: state.selectedInstrument?.notes,
+      })}
     `;
     elements.scoreResults.appendChild(card);
   }
@@ -189,6 +202,67 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+}
+
+function uncertaintyNote(instrument, score) {
+  if (instrument?.id === "tipi") {
+    return "TIPI is intentionally very brief. Treat this result as a low-resolution self-report snapshot with diminished precision, not a fixed identity claim.";
+  }
+  if (score?.reliability_alpha != null) {
+    return `This scale reports reliability alpha ${Number(score.reliability_alpha).toFixed(2)}. Reliability describes score consistency in prior measurement work; it does not prove this claim is true for this person or context.`;
+  }
+  return "Treat this score as provisional self-report evidence that may vary by context and time.";
+}
+
+function sourceLink(url, publisher) {
+  if (!url || !/^https?:\/\//.test(url)) {
+    return escapeHtml(publisher || "Source unavailable");
+  }
+  return `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(publisher || "Instrument source")}</a>`;
+}
+
+function evidencePanelMarkup(metadata) {
+  const items = metadata.item_evidence || [];
+  const itemRows = items
+    .map(
+      (item) => `
+        <tr>
+          <td><code>${escapeHtml(item.item_id)}</code><span>${escapeHtml(item.item_text || "")}</span></td>
+          <td>${escapeHtml(item.response_value)}</td>
+          <td>${escapeHtml(item.keying || (item.reverse_scored ? "negative" : "positive"))}</td>
+          <td>${escapeHtml(item.keyed_value)}</td>
+        </tr>
+      `,
+    )
+    .join("");
+  const notes = (metadata.instrument_notes || []).map((note) => `<li>${escapeHtml(note)}</li>`).join("");
+  const reliability = metadata.reliability_alpha == null ? "not reported" : Number(metadata.reliability_alpha).toFixed(2);
+  return `
+    <details class="evidence-panel">
+      <summary>Why this result exists</summary>
+      <div class="evidence-grid">
+        <div><span>Scoring method</span><strong>${escapeHtml(metadata.scoring_method || "not reported")}</strong></div>
+        <div><span>Reliability alpha</span><strong>${reliability}</strong></div>
+        <div><span>Instrument</span><strong>${escapeHtml(metadata.instrument_name || metadata.assessment_name || "stored assessment")}</strong></div>
+        <div><span>Construct system</span><strong>${escapeHtml(metadata.construct_system || "not reported")}</strong></div>
+      </div>
+      <p class="caution-copy">${escapeHtml(metadata.uncertainty_note || "Treat this result as provisional self-report evidence.")}</p>
+      <div class="evidence-source">
+        <span>${escapeHtml(metadata.license_status || "license status unavailable")}</span>
+        <span>${sourceLink(metadata.source_url, metadata.source_publisher)}</span>
+      </div>
+      ${metadata.score_interpretation ? `<p class="atom-meta">${escapeHtml(metadata.score_interpretation)}</p>` : ""}
+      ${notes ? `<ul class="instrument-notes">${notes}</ul>` : ""}
+      ${itemRows ? `
+        <div class="evidence-table-wrap">
+          <table class="evidence-table">
+            <thead><tr><th>Item</th><th>Response</th><th>Keying</th><th>Scored</th></tr></thead>
+            <tbody>${itemRows}</tbody>
+          </table>
+        </div>
+      ` : `<p class="atom-meta">Item-level evidence is unavailable for this older stored result.</p>`}
+    </details>
+  `;
 }
 
 function atomEditMarkup(atom) {
@@ -262,6 +336,7 @@ function renderAtoms() {
       <div class="atom-meta">${escapeHtml(atom.state)} | ${escapeHtml(atom.activation_scope)} | feedback: ${escapeHtml(atom.user_feedback)}</div>
       <p>${escapeHtml(atom.claim)}</p>
       <div class="atom-meta">confidence ${atom.confidence} | sensitivity ${atom.sensitivity_level}</div>
+      ${evidencePanelMarkup(atom.assessment_metadata || {})}
       <div class="atom-actions">
         ${atomActionButton("Confirm", "confirmed")}
         ${atomActionButton("Reject", "rejected")}
@@ -366,6 +441,7 @@ function renderWorkbenchAtoms() {
       <div class="atom-meta">${escapeHtml(atom.state)} | ${escapeHtml(atom.activation_scope)} | feedback: ${escapeHtml(atom.user_feedback)}</div>
       <p>${escapeHtml(atom.claim)}</p>
       <div class="atom-meta">confidence ${atom.confidence} | sensitivity ${atom.sensitivity_level}</div>
+      ${evidencePanelMarkup(atom.assessment_metadata || {})}
       <div class="atom-actions">
         ${atomActionButton("Confirm", "confirmed")}
         ${atomActionButton("Reject", "rejected")}

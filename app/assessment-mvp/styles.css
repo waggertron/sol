@@ -406,6 +406,82 @@ button:disabled {
   margin-top: 12px;
 }
 
+.evidence-panel {
+  margin-top: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  background: #0b0f14;
+}
+
+.evidence-panel summary {
+  cursor: pointer;
+  color: #9de2a8;
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.evidence-grid div {
+  display: grid;
+  gap: 3px;
+}
+
+.evidence-grid span,
+.evidence-source,
+.instrument-notes {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.caution-copy {
+  border-left: 3px solid var(--warning);
+  padding-left: 10px;
+}
+
+.evidence-source {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.evidence-source a {
+  color: #9de2a8;
+}
+
+.evidence-table-wrap {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.evidence-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.evidence-table th,
+.evidence-table td {
+  border-top: 1px solid var(--border);
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.evidence-table td:first-child {
+  min-width: 240px;
+}
+
+.evidence-table td span {
+  display: block;
+  margin-top: 4px;
+}
+
 .empty-state {
   color: var(--muted);
   padding: 8px 0;
@@ -436,5 +512,9 @@ code {
 
   .summary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr;
   }
 }

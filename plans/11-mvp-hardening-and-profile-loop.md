@@ -122,27 +122,27 @@ Goal: make every profile claim inspectable.
 
 Tasks:
 
-- [ ] Add score evidence panels.
+- [x] Add score evidence panels.
   - Show raw score, normalized score, score range, scoring method, and scale id.
-- [ ] Add item-level evidence expansion.
+- [x] Add item-level evidence expansion.
   - Show item ids, response values, keying direction, and reverse-scored status.
-- [ ] Add instrument/source context.
+- [x] Add instrument/source context.
   - Show instrument name, construct system, license posture, source URL when
     available, and interpretation notes.
-- [ ] Add uncertainty/caution text.
+- [x] Add uncertainty/caution text.
   - Explain brief instrument limitations for TIPI.
   - Explain reliability-derived confidence for Mini-IPIP where available.
   - Keep neuroticism/emotional-stability language non-diagnostic.
-- [ ] Add evidence view tests.
+- [x] Add evidence view tests.
   - Verify evidence appears for at least TIPI and Mini-IPIP sample sessions.
-- [ ] Update docs.
+- [x] Update docs.
   - Document evidence display requirements and interpretation boundaries.
 
 Acceptance criteria:
 
-- [ ] A user can answer why a score-derived atom exists.
-- [ ] A user can see the exact assessment evidence behind a claim.
-- [ ] The UI clearly distinguishes self-report evidence from identity facts.
+- [x] A user can answer why a score-derived atom exists.
+- [x] A user can see the exact assessment evidence behind a claim.
+- [x] The UI clearly distinguishes self-report evidence from identity facts.
 
 ## Phase 4: Scoped Profile Context Export
 
@@ -203,13 +203,13 @@ Acceptance criteria:
 
 ## Current Priority
 
-Start with Phase 3. Phase 1 browser QA and Phase 2 provenance-preserving atom
-editing are complete. The next implementation slice should make score, item,
-instrument, and uncertainty evidence inspectable before profile context export.
+Start with Phase 4. Browser QA, provenance-preserving atom editing, and
+inspectable evidence/uncertainty views are complete. The next implementation
+slice should define and export a scoped, generation-safe profile context packet.
 
 ## Latest Validation Evidence
 
-- `./scripts/run_assessment_web_mvp_qa.sh`: 9 tests pass on Python 3.14.6;
+- `./scripts/run_assessment_web_mvp_qa.sh`: 10 tests pass on Python 3.14.6;
   tracked `jsondb/assessment_sessions.json` remains unchanged.
 - The same QA command cannot bind its isolated localhost server inside the
   Codex managed sandbox (`PermissionError: [Errno 1]`), but passes unchanged in

@@ -25,6 +25,8 @@ Current implementation state:
   desktop/mobile QA are built
 - profile atoms can be confirmed, rejected, kept review-only, or edited while
   preserving their original generated claim and review history
+- assessment results and atoms have expandable score, item-level, instrument,
+  source, and uncertainty evidence views
 
 See `docs/current-state.md` for current counts.
 
@@ -135,7 +137,6 @@ Output:
 
 ## Immediate Next Steps
 
-1. Add inspectable score, item, instrument, and uncertainty evidence views.
-2. Define and export a scoped profile context packet.
-3. Pilot one low-risk writing or communication artifact in local dry-run mode.
-4. Continue OCEAN research imports and license-review queue expansion.
+1. Define and export a scoped profile context packet.
+2. Pilot one low-risk writing or communication artifact in local dry-run mode.
+3. Continue OCEAN research imports and license-review queue expansion.

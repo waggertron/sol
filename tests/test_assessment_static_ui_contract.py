@@ -39,6 +39,9 @@ class AssessmentStaticUiContractTests(unittest.TestCase):
         self.assertIn("original_claim", script)
         self.assertIn("review_history", script)
         self.assertIn("applyAtomEdit", script)
+        self.assertIn("evidencePanelMarkup", script)
+        self.assertIn("Why this result exists", script)
+        self.assertIn("item_evidence", script)
 
 
 if __name__ == "__main__":

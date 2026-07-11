@@ -14,6 +14,8 @@ import assessment_session_store as store
 
 
 TIPI_PATH = ROOT / "assessments" / "ocean" / "instruments" / "tipi.json"
+MINI_IPIP_PATH = ROOT / "assessments" / "ocean" / "instruments" / "mini_ipip.json"
+MINI_IPIP_RESPONSES_PATH = ROOT / "assessments" / "ocean" / "examples" / "mini_ipip_sample_responses.json"
 
 
 def valid_tipi_responses() -> dict[str, int]:
@@ -66,6 +68,13 @@ class AssessmentSessionStoreTests(unittest.TestCase):
         self.assertTrue(all(atom["state"] == "provisional_atom" for atom in scored["profile_atoms"]))
         self.assertTrue(all(atom["original_claim"] == atom["claim"] for atom in scored["profile_atoms"]))
         self.assertTrue(all(atom["review_history"] == [] for atom in scored["profile_atoms"]))
+        tipi_score = scored["scores"][0]
+        self.assertEqual(tipi_score["scoring_method"], "average_two_items_per_domain")
+        self.assertEqual(len(tipi_score["item_evidence"]), 2)
+        self.assertTrue(any(item["reverse_scored"] for item in tipi_score["item_evidence"]))
+        tipi_metadata = scored["profile_atoms"][0]["assessment_metadata"]
+        self.assertIn("intentionally very brief", tipi_metadata["uncertainty_note"])
+        self.assertEqual(tipi_metadata["source_publisher"], "Gosling Lab, University of Texas at Austin")
 
         listed = store.list_sessions()
         self.assertEqual(listed["session_count"], 1)
@@ -144,6 +153,27 @@ class AssessmentSessionStoreTests(unittest.TestCase):
             store.review_atom("invalid_review", atom_id, "2026-07-08T22:06:00Z", state="diagnosed")
         with self.assertRaisesRegex(ValueError, "cannot be empty"):
             store.review_atom("invalid_review", atom_id, "2026-07-08T22:06:00Z", claim="   ")
+
+    def test_mini_ipip_evidence_preserves_response_and_keying_contract(self) -> None:
+        responses = store.parse_responses(MINI_IPIP_RESPONSES_PATH)
+        self.assertEqual(len(responses), 20)
+        self.assertTrue(all(1 <= value <= 5 for value in responses.values()))
+        store.create_session("mini_evidence", MINI_IPIP_PATH.as_posix(), "2026-07-08T23:00:00Z")
+        store.save_response_map("mini_evidence", responses, merge=False)
+        scored = store.score_session("mini_evidence", "2026-07-08T23:05:00Z")
+
+        score = scored["scores"][0]
+        self.assertEqual(score["scoring_method"], "sum_keyed_items")
+        self.assertEqual(len(score["item_evidence"]), 4)
+        for item in score["item_evidence"]:
+            expected = 6 - item["response_value"] if item["reverse_scored"] else item["response_value"]
+            self.assertEqual(item["keyed_value"], expected)
+
+        metadata = scored["profile_atoms"][0]["assessment_metadata"]
+        self.assertEqual(metadata["reliability_alpha"], 0.77)
+        self.assertIn("reliability alpha 0.77", metadata["uncertainty_note"])
+        self.assertEqual(metadata["license_status"], "public_domain")
+        self.assertEqual(len(metadata["item_evidence"]), 4)
 
 
 if __name__ == "__main__":

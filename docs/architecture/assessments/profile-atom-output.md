@@ -78,6 +78,21 @@ Each profile atom follows `kb/model/profile_atom_schema_v0.md` and adds:
 - `assessment_metadata.normalized_score`
 - `assessment_metadata.session_id`
 
+Scored results also retain inspectable calculation evidence:
+
+- scoring method and interpretation
+- raw and normalized score bounds
+- reported reliability alpha when present in the stored instrument
+- item id and text
+- original response value
+- positive or negative keying
+- whether reverse scoring was applied
+- the keyed value used in the calculation
+
+The same item evidence, instrument notes, license posture, source link, and
+uncertainty copy are copied into `assessment_metadata` so an exported or
+cross-session atom remains explainable without recomputing the session.
+
 ## Implementation Policy
 
 - assessment results are self-report evidence, not identity facts
@@ -85,6 +100,10 @@ Each profile atom follows `kb/model/profile_atom_schema_v0.md` and adds:
 - neuroticism / emotional stability should use non-diagnostic language
 - generation systems should consume only atoms that have been promoted beyond
   `review_only`
+- reliability is presented as prior score-consistency evidence, not proof that
+  an individual claim is true
+- TIPI results carry an explicit diminished-precision caution because the
+  instrument is intentionally very brief
 
 ## Example Command
 

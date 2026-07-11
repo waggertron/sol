@@ -123,6 +123,8 @@ class AssessmentWebMvpRouteTests(unittest.TestCase):
         )
         self.assertEqual(scored["status"], "completed")
         self.assertEqual(len(scored["profile_atoms"]), 5)
+        self.assertEqual(len(scored["scores"][0]["item_evidence"]), 2)
+        self.assertIn("uncertainty_note", scored["profile_atoms"][0]["assessment_metadata"])
 
         exported, export_response = self.get_json("/api/sessions/route_test_tipi_session/export")
         self.assertEqual(exported["session_id"], "route_test_tipi_session")

@@ -11,6 +11,8 @@ Store:
 - raw responses
 - derived scores
 - derived provisional profile atoms
+- item-level scoring evidence and instrument context needed to explain derived
+  results
 
 This is a local JSONDB persistence layer intended for early implementation and
 testing before a multi-user application database exists.
@@ -66,6 +68,8 @@ python3 tools/assessment_session_store.py delete-session --session-id session_00
 
 - raw responses remain stored
 - scores are derived and reproducible
+- score records preserve response-to-keyed-value calculation details; profile
+  atoms retain a copy of the relevant explanation metadata for aggregate views
 - profile atoms generated from assessment scoring start as
   `provisional_atom` and `review_only`
 - future app code should not bypass the lifecycle contract in

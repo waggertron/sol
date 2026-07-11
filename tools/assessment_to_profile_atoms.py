@@ -95,7 +95,23 @@ def confidence_for_scale(scale: dict[str, Any], item_count: int) -> float:
             return 0.72
         if alpha >= 0.6:
             return 0.64
-        return 0.58
+    return 0.58
+
+
+def uncertainty_note(instrument: dict[str, Any], scored: dict[str, Any]) -> str:
+    if instrument.get("id") == "tipi":
+        return (
+            "TIPI is intentionally very brief. Treat this result as a low-resolution "
+            "self-report snapshot with diminished precision, not a fixed identity claim."
+        )
+    alpha = scored.get("reliability_alpha")
+    if alpha is not None:
+        return (
+            f"This scale reports reliability alpha {alpha:.2f}. Reliability describes "
+            "score consistency in prior measurement work; it does not prove this claim "
+            "is true for this person or context."
+        )
+    return "Treat this score as provisional self-report evidence that may vary by context and time."
     if item_count >= 8:
         return 0.68
     if item_count >= 4:
@@ -155,6 +171,7 @@ def score_scale(
     source_order_index = {item.get("source_order"): item["id"] for item in items if item.get("source_order") is not None}
     keyed_scores: list[float] = []
     evidence_lines: list[str] = []
+    item_evidence: list[dict[str, Any]] = []
     raw_values: list[float] = []
 
     for item in items:
@@ -162,6 +179,16 @@ def score_scale(
         raw_values.append(value)
         keyed = reverse_score(value, resp_scale) if item.get("keyed") == "negative" else value
         keyed_scores.append(keyed)
+        item_evidence.append(
+            {
+                "item_id": item["id"],
+                "item_text": item.get("text"),
+                "response_value": value,
+                "keying": item.get("keyed", "positive"),
+                "reverse_scored": item.get("keyed") == "negative",
+                "keyed_value": keyed,
+            }
+        )
         evidence_lines.append(
             f"{item['id']}={value:g} ({'reverse-keyed' if item.get('keyed') == 'negative' else 'positive-keyed'})"
         )
@@ -189,8 +216,11 @@ def score_scale(
         "normalized_score": normalized,
         "item_count": len(items),
         "raw_responses": raw_values,
+        "item_evidence": item_evidence,
         "evidence_lines": evidence_lines,
         "reliability_alpha": scale.get("reliability_alpha"),
+        "scoring_method": method,
+        "score_interpretation": instrument.get("scoring", {}).get("score_interpretation"),
     }
 
 
@@ -250,6 +280,15 @@ def build_profile_atom(
             "score_value": round(scored["raw_score"], 4),
             "score_range": [scored["score_min"], scored["score_max"]],
             "normalized_score": round(normalized, 4),
+            "reliability_alpha": scored.get("reliability_alpha"),
+            "scoring_method": scored.get("scoring_method"),
+            "score_interpretation": scored.get("score_interpretation"),
+            "item_evidence": scored.get("item_evidence", []),
+            "uncertainty_note": uncertainty_note(instrument, scored),
+            "instrument_notes": instrument.get("notes", []),
+            "license_status": instrument.get("license", {}).get("status"),
+            "source_publisher": instrument.get("source", {}).get("publisher"),
+            "source_url": instrument.get("source", {}).get("url"),
             "session_id": session_id,
         },
     }

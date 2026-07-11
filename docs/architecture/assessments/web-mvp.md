@@ -36,6 +36,8 @@ The web MVP consists of:
 10. Export a session as JSON.
 11. Delete a session from local JSONDB storage.
 12. Review profile atoms across stored sessions in the workbench view.
+13. Expand evidence beneath scores or atoms to inspect calculation details,
+    instrument/source context, and uncertainty cautions.
 
 ## API Surface
 
@@ -102,3 +104,6 @@ rm -rf tmp/assessment-web-mvp-visual
 - It does not yet implement authentication or access controls.
 - Atom edits are session- and atom-id-scoped. They update derived profile state,
   never raw assessment responses.
+- Evidence panels describe assessment results as provisional self-report
+  evidence. They do not convert reliability, scores, or trait names into fixed
+  identity claims.
