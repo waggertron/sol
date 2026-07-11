@@ -180,6 +180,30 @@ class AssessmentWebMvpRouteTests(unittest.TestCase):
             4,
         )
 
+        feedback, feedback_response = self.post_json(
+            "/api/generation-feedback",
+            {
+                "event_id": "route_feedback_001",
+                "pilot_id": "route_writing_guide_001",
+                "recorded_at": "2026-07-08T22:08:00Z",
+                "feedback": "useful",
+                "atom_refs": [
+                    "route_test_tipi_session::assessment.tipi.tipi_extraversion.v0"
+                ],
+                "note": "Useful for a first communication guide.",
+            },
+        )
+        self.assertEqual(feedback_response.status, 201)
+        self.assertEqual(feedback["feedback"], "useful")
+
+        session_after_feedback, _ = self.get_json("/api/sessions/route_test_tipi_session")
+        feedback_atom = next(
+            atom
+            for atom in session_after_feedback["profile_atoms"]
+            if atom["id"] == "assessment.tipi.tipi_extraversion.v0"
+        )
+        self.assertEqual(feedback_atom["generation_mapping_notes"][0]["feedback"], "useful")
+
         deleted = self.delete_json("/api/sessions/route_test_tipi_session")
         self.assertEqual(deleted["deleted"]["session_id"], "route_test_tipi_session")
         sessions_after_delete, _ = self.get_json("/api/sessions")

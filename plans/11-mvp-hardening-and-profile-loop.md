@@ -177,40 +177,40 @@ Goal: close the first assess -> inspect -> correct -> use loop.
 
 Tasks:
 
-- [ ] Choose one low-risk generation artifact.
+- [x] Choose one low-risk generation artifact.
   - Recommended first artifact: writing voice guide or communication style
     summary.
-- [ ] Add a local generation prompt template.
+- [x] Add a local generation prompt template.
   - Input should be the scoped profile context packet.
   - Output should avoid diagnosis, protected traits, and fixed identity claims.
-- [ ] Add a local dry-run mode.
+- [x] Add a local dry-run mode.
   - Render the prompt and context without calling any external model.
 - [ ] Add a model-backed mode later only after the prompt contract is reviewed.
-- [ ] Add feedback capture.
+- [x] Add feedback capture.
   - Store whether output feels accurate, useful, too strong, too generic, or
     wrong.
-- [ ] Feed user feedback back into atom confidence or mapping notes.
-- [ ] Update docs.
+- [x] Feed user feedback back into atom confidence or mapping notes.
+- [x] Update docs.
   - Document pilot scope, risks, and evaluation criteria.
 
 Acceptance criteria:
 
 - [ ] A confirmed profile context packet can produce a first user-visible
   writing/communication artifact.
-- [ ] The user can evaluate and correct the output.
+- [x] The user can evaluate and correct the output.
 - [ ] Generation does not treat assessment scores as deterministic personality
   truth.
 
 ## Current Priority
 
-Start with Phase 5. Browser QA, provenance-preserving atom editing, inspectable
-evidence, and scoped profile context export are complete. The next slice should
-pilot a low-risk writing or communication artifact with local dry-run output
-before any external model call is introduced.
+Continue Phase 5 with joint review of the dry-run prompt and feedback contract.
+The writing/communication guide prompt, local dry-run, structured evaluations,
+and append-only generation-guidance notes are complete. Model-backed execution
+remains intentionally deferred; it should be added only after that review.
 
 ## Latest Validation Evidence
 
-- `./scripts/run_assessment_web_mvp_qa.sh`: 10 tests pass on Python 3.14.6;
+- `./scripts/run_assessment_web_mvp_qa.sh`: 14 tests pass on Python 3.14.6;
   tracked `jsondb/assessment_sessions.json` remains unchanged.
 - The same QA command cannot bind its isolated localhost server inside the
   Codex managed sandbox (`PermissionError: [Errno 1]`), but passes unchanged in

@@ -40,6 +40,7 @@ Each selected atom contains:
 - evidence summaries and source ids
 - contraindications from counterevidence
 - generation guidance
+- generation-guidance notes linked to prior feedback events
 - uncertainty including stability, recency, sensitivity, and assessment caution
 - user feedback and last-updated timestamp
 
@@ -63,4 +64,3 @@ Web exports:
   profiling, or eligibility/high-impact decisions.
 - Consumers should apply contextual atoms only when their context matches the
   generation task.
-

@@ -37,6 +37,7 @@ The schema exists to preserve four distinctions:
 - `user_note`
 - `review_history`
 - `generation_mappings`
+- `generation_mapping_notes`
 - `counterevidence`
 - `last_updated`
 
@@ -246,6 +247,13 @@ Examples:
 - lower ornamentation
 - more exploratory ideation
 
+### `generation_mapping_notes`
+
+Append-only user feedback about how an atom behaved in a generation pilot.
+Entries identify the feedback event, timestamp, evaluation value, and optional
+note. They refine future mapping decisions without silently changing the atom
+claim, assessment responses, or confidence.
+
 ### `counterevidence`
 
 List of observations that weaken or constrain the claim.
@@ -327,6 +335,7 @@ For the assessment-first MVP:
     "shorter introductions",
     "explicit next steps"
   ],
+  "generation_mapping_notes": [],
   "counterevidence": [
     "Prefers more descriptive language in reflective writing."
   ],

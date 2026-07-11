@@ -19,6 +19,7 @@ SESSIONS_DB_ENV = "SOL_ASSESSMENT_SESSIONS_DB"
 USER_FEEDBACK_VALUES = {"unconfirmed", "confirmed", "edited", "rejected"}
 ATOM_STATE_VALUES = {"observed_candidate", "provisional_atom", "active_atom", "suppressed_atom"}
 ACTIVATION_SCOPE_VALUES = {"review_only", "contextual", "global"}
+GENERATION_FEEDBACK_VALUES = {"accurate", "useful", "too_strong", "too_generic", "wrong"}
 
 
 def save_json(path: Path, data: Any) -> None:
@@ -133,6 +134,7 @@ def build_profile_context(generated_at: str, include_review_only: bool = False) 
         selected.append(
             {
                 "id": atom["id"],
+                "session_id": atom.get("session_id"),
                 "label": atom.get("label"),
                 "domain": atom.get("domain"),
                 "claim": atom.get("claim"),
@@ -145,6 +147,7 @@ def build_profile_context(generated_at: str, include_review_only: bool = False) 
                 "source_ids": atom.get("source_ids", []),
                 "contraindications": atom.get("counterevidence", []),
                 "generation_guidance": atom.get("generation_mappings", []),
+                "generation_guidance_notes": atom.get("generation_mapping_notes", []),
                 "uncertainty": {
                     "stability": atom.get("stability"),
                     "recency": atom.get("recency"),
@@ -177,6 +180,71 @@ def build_profile_context(generated_at: str, include_review_only: bool = False) 
         "atom_count": len(selected),
         "atoms": selected,
     }
+
+
+def record_generation_feedback(
+    event_id: str,
+    pilot_id: str,
+    recorded_at: str,
+    feedback: str,
+    atom_refs: list[str],
+    note: str = "",
+) -> dict[str, Any]:
+    if feedback not in GENERATION_FEEDBACK_VALUES:
+        raise ValueError(f"Invalid generation feedback: {feedback}")
+    if not event_id.strip() or not pilot_id.strip():
+        raise ValueError("Feedback event id and pilot id are required")
+    if not atom_refs:
+        raise ValueError("At least one session_id::atom_id reference is required")
+
+    data = load_sessions()
+    events = data.setdefault("generation_feedback", [])
+    if any(event.get("event_id") == event_id for event in events):
+        raise ValueError(f"Generation feedback event already exists: {event_id}")
+
+    matched: list[dict[str, Any]] = []
+    for atom_ref in atom_refs:
+        if "::" not in atom_ref:
+            raise ValueError(f"Invalid atom reference: {atom_ref}")
+        session_id, atom_id = atom_ref.split("::", 1)
+        matches = [
+            atom
+            for session in data["sessions"]
+            for atom in session.get("profile_atoms", [])
+            if session.get("session_id") == session_id and atom.get("id") == atom_id
+        ]
+        if len(matches) != 1:
+            raise ValueError(f"Expected one stored atom for feedback id `{atom_id}`, found {len(matches)}")
+        atom = matches[0]
+        if atom.get("state") != "active_atom" or atom.get("activation_scope") == "review_only":
+            raise ValueError(f"Atom is not generation-eligible: {atom_id}")
+        matched.append(atom)
+
+    event = {
+        "event_id": event_id,
+        "pilot_id": pilot_id,
+        "recorded_at": recorded_at,
+        "feedback": feedback,
+        "atom_refs": atom_refs,
+        "note": note.strip(),
+    }
+    events.append(event)
+    for atom in matched:
+        atom.setdefault("generation_mapping_notes", []).append(
+            {
+                "feedback_event_id": event_id,
+                "recorded_at": recorded_at,
+                "feedback": feedback,
+                "note": note.strip(),
+            }
+        )
+        source_id = f"generation_feedback:{event_id}"
+        if source_id not in atom.setdefault("source_ids", []):
+            atom["source_ids"].append(source_id)
+        atom["last_updated"] = recorded_at
+
+    save_sessions(data)
+    return event
 
 
 def create_session(
@@ -356,6 +424,14 @@ def parse_args() -> argparse.Namespace:
     context_parser.add_argument("--generated-at", required=True)
     context_parser.add_argument("--include-review-only", action="store_true")
 
+    feedback_parser = subparsers.add_parser("record-generation-feedback", help="Store pilot feedback.")
+    feedback_parser.add_argument("--event-id", required=True)
+    feedback_parser.add_argument("--pilot-id", required=True)
+    feedback_parser.add_argument("--recorded-at", required=True)
+    feedback_parser.add_argument("--feedback", required=True, choices=sorted(GENERATION_FEEDBACK_VALUES))
+    feedback_parser.add_argument("--atom-ref", required=True, action="append", dest="atom_refs")
+    feedback_parser.add_argument("--note", default="")
+
     create_parser = subparsers.add_parser("create-session", help="Create a new assessment response session.")
     create_parser.add_argument("--session-id", required=True)
     create_parser.add_argument("--instrument", required=True, help="Path to instrument JSON.")
@@ -410,6 +486,17 @@ def main() -> None:
         return
     if args.command == "export-profile-context":
         result = build_profile_context(args.generated_at, include_review_only=args.include_review_only)
+        print(json.dumps(result, indent=2, sort_keys=True))
+        return
+    if args.command == "record-generation-feedback":
+        result = record_generation_feedback(
+            args.event_id,
+            args.pilot_id,
+            args.recorded_at,
+            args.feedback,
+            args.atom_refs,
+            args.note,
+        )
         print(json.dumps(result, indent=2, sort_keys=True))
         return
     if args.command == "save-responses":

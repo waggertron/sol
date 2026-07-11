@@ -17,6 +17,7 @@ from assessment_session_store import (
     delete_session,
     list_profile_atoms,
     list_sessions,
+    record_generation_feedback,
     review_atom,
     save_response_map,
     score_session,
@@ -180,6 +181,18 @@ class AssessmentHandler(BaseHTTPRequestHandler):
                     user_id=user_id,
                 )
                 json_response(self, HTTPStatus.CREATED, session)
+                return
+            if path == "/api/generation-feedback":
+                payload = read_json_body(self)
+                event = record_generation_feedback(
+                    event_id=payload["event_id"],
+                    pilot_id=payload["pilot_id"],
+                    recorded_at=payload.get("recorded_at") or now_iso(),
+                    feedback=payload["feedback"],
+                    atom_refs=payload["atom_refs"],
+                    note=payload.get("note", ""),
+                )
+                json_response(self, HTTPStatus.CREATED, event)
                 return
             if path.endswith("/responses"):
                 session_id = unquote(path.removeprefix("/api/sessions/").removesuffix("/responses"))

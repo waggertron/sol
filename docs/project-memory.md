@@ -103,6 +103,12 @@ then generate text and visual direction the user can evaluate.
   generation-facing packet. Default selection is active contextual/global
   atoms; rejected/suppressed atoms are excluded, and explicitly included
   review-only atoms remain generation-ineligible.
+- `tools/generation_pilot.py` renders the first model-free writing and
+  communication guide prompt using only generation-eligible packet atoms.
+  Optional artifacts are restricted to ignored `tmp/generation-pilot/` paths.
+- Generation feedback is stored as explicit evaluation events and appended to
+  atom `generation_mapping_notes` with provenance. It does not silently alter
+  raw assessment data, claims, or confidence.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -159,8 +165,8 @@ Build the first MVP around assessment administration before broader generation:
 5. Let users confirm, edit, reject, export, or delete profile atom candidates.
 6. Keep the web UI thin and route persistence through the shared Python session
    store instead of a second ad hoc storage format.
-7. Use the scoped packet for a low-risk local writing or communication pilot,
-   beginning with prompt-only dry runs before any external model call.
+7. Review the writing/communication prompt and feedback contract together
+   before enabling a model-backed pilot.
 
 ## Key Source Anchors
 

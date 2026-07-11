@@ -266,6 +266,7 @@ def build_profile_atom(
         "user_note": "",
         "review_history": [],
         "generation_mappings": [],
+        "generation_mapping_notes": [],
         "counterevidence": [],
         "last_updated": completed_at,
         "assessment_metadata": {

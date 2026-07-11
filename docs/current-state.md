@@ -98,6 +98,14 @@ Reference-only or license-review instruments are tracked in:
 - The workbench exports a scoped profile context packet. Default export includes
   only active contextual/global atoms; rejected and suppressed atoms are always
   excluded, and opt-in review candidates are marked generation-ineligible.
+- Phase 5 has started with a model-free writing and communication guide dry run.
+  It renders the reviewed prompt and generation-eligible packet context without
+  calling an external model; optional artifacts are restricted to ignored
+  `tmp/generation-pilot/` storage.
+- Structured pilot feedback supports `accurate`, `useful`, `too_strong`,
+  `too_generic`, and `wrong`. Events add provenance-linked, append-only
+  generation-guidance notes without automatically changing raw responses,
+  claims, or confidence.
 
 Current queue ingestion support:
 
@@ -184,7 +192,9 @@ Then open `http://127.0.0.1:8765`.
 - Profile atom editing with provenance preservation is complete.
 - Inspectable evidence and uncertainty views are complete.
 - Scoped profile context export is complete.
-- The next active build phase is the first low-risk local generation pilot.
+- The first low-risk local generation pilot is in progress.
+- The next active slice is joint review of the generation prompt and feedback
+  contract before a model-backed mode is considered.
 
 ## Safety Posture
 

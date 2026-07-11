@@ -56,6 +56,7 @@ The web MVP consists of:
 - `DELETE /api/sessions/<session_id>`
 - `GET /api/profile-atoms`
 - `GET /api/profile-context`
+- `POST /api/generation-feedback`
 
 ## Local Run
 

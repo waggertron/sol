@@ -59,6 +59,7 @@ python3 tools/assessment_session_store.py score-session --session-id session_001
 python3 tools/assessment_session_store.py list-sessions
 python3 tools/assessment_session_store.py list-profile-atoms
 python3 tools/assessment_session_store.py export-profile-context --generated-at 2026-07-11T00:00:00Z
+python3 tools/assessment_session_store.py record-generation-feedback --event-id feedback_001 --pilot-id writing_guide_001 --recorded-at 2026-07-11T00:05:00Z --feedback useful --atom-ref 'session_001::assessment.tipi.tipi_extraversion.v0'
 python3 tools/assessment_session_store.py show-session --session-id session_001
 python3 tools/assessment_session_store.py review-atom --session-id session_001 --atom-id assessment.tipi.tipi_extraversion.v0 --reviewed-at 2026-07-08T21:10:00Z --user-feedback confirmed --state active_atom --activation-scope contextual
 python3 tools/assessment_session_store.py review-atom --session-id session_001 --atom-id assessment.tipi.tipi_extraversion.v0 --reviewed-at 2026-07-08T21:12:00Z --user-feedback edited --claim "I often enjoy social interaction in familiar settings." --user-note "Large groups are different."
@@ -86,6 +87,8 @@ python3 tools/assessment_session_store.py delete-session --session-id session_00
   and derived profile atoms
 - scoped context export includes only active contextual/global atoms by default;
   rejected and suppressed atoms are always excluded
+- pilot feedback is stored separately at the JSONDB root and linked to scoped
+  atoms through append-only generation mapping notes and source ids
 
 ## Near-Term Role
 

@@ -29,6 +29,10 @@ Current implementation state:
   source, and uncertainty evidence views
 - the workbench exports a scoped, generation-safe profile context packet with
   explicit review-only inclusion for internal testing
+- a model-free writing/communication guide pilot renders the reviewed prompt
+  and eligible context locally
+- structured pilot feedback produces provenance-linked generation-guidance
+  notes without silently changing assessment evidence or confidence
 
 See `docs/current-state.md` for current counts.
 
@@ -139,5 +143,6 @@ Output:
 
 ## Immediate Next Steps
 
-1. Pilot one low-risk writing or communication artifact in local dry-run mode.
+1. Review the prompt and feedback contract before enabling any external model
+   call.
 2. Continue OCEAN research imports and license-review queue expansion.
