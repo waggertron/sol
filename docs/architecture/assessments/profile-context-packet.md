@@ -12,7 +12,8 @@ An atom is included by default only when:
 
 - `state` is `active_atom`
 - `activation_scope` is `contextual` or `global`
-- `user_feedback` is not `rejected`
+- `user_feedback` is `confirmed` or `edited`
+- `sensitivity_level` is not `blocked`
 
 `suppressed_atom` records are always excluded.
 

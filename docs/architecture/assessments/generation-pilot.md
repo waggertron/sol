@@ -19,11 +19,13 @@ profile context intended for a future writing and communication style guide.
 
 ## Dry Run
 
-At least one atom must first be confirmed as `active_atom` with `contextual` or
-`global` activation scope.
+At least one atom must first have `confirmed` or `edited` feedback, be promoted
+to `active_atom` with `contextual` or `global` activation scope, and have a
+non-blocked sensitivity level.
 
 ```bash
 python3 tools/generation_pilot.py \
+  --pilot-id writing_guide_001 \
   --generated-at 2026-07-11T00:00:00Z
 ```
 
@@ -31,6 +33,7 @@ Optional manual-review output must stay under the ignored feature directory:
 
 ```bash
 python3 tools/generation_pilot.py \
+  --pilot-id writing_guide_001 \
   --generated-at 2026-07-11T00:00:00Z \
   --output tmp/generation-pilot/writing-guide-dry-run.json
 ```
@@ -45,6 +48,10 @@ rm -rf tmp/generation-pilot
 
 `external_model_called` is always `false`. A model-backed mode remains blocked
 until the prompt and feedback contracts have been reviewed together.
+
+The dry run separates the system instruction from a JSON user payload. The
+system instruction explicitly treats every profile-context field as quoted
+data and ignores commands embedded in user-edited claims or notes.
 
 ## Feedback Capture
 
@@ -65,3 +72,7 @@ python3 tools/assessment_session_store.py record-generation-feedback \
 Feedback appends an inspectable `generation_mapping_notes` entry and provenance
 source id. It does not automatically change raw responses, the atom claim, or
 confidence.
+
+Negative feedback (`too_strong`, `too_generic`, or `wrong`) requires an
+explanatory note. Duplicate atom references and feedback for atoms that are not
+currently generation-eligible are rejected.

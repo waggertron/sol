@@ -20,6 +20,16 @@ USER_FEEDBACK_VALUES = {"unconfirmed", "confirmed", "edited", "rejected"}
 ATOM_STATE_VALUES = {"observed_candidate", "provisional_atom", "active_atom", "suppressed_atom"}
 ACTIVATION_SCOPE_VALUES = {"review_only", "contextual", "global"}
 GENERATION_FEEDBACK_VALUES = {"accurate", "useful", "too_strong", "too_generic", "wrong"}
+NEGATIVE_GENERATION_FEEDBACK_VALUES = {"too_strong", "too_generic", "wrong"}
+
+
+def is_generation_eligible(atom: dict[str, Any]) -> bool:
+    return (
+        atom.get("state") == "active_atom"
+        and atom.get("activation_scope") in {"contextual", "global"}
+        and atom.get("user_feedback") in {"confirmed", "edited"}
+        and atom.get("sensitivity_level") != "blocked"
+    )
 
 
 def save_json(path: Path, data: Any) -> None:
@@ -116,11 +126,7 @@ def build_profile_context(generated_at: str, include_review_only: bool = False) 
     for atom in records:
         rejected = atom.get("user_feedback") == "rejected"
         suppressed = atom.get("state") == "suppressed_atom"
-        generation_eligible = (
-            atom.get("state") == "active_atom"
-            and atom.get("activation_scope") in {"contextual", "global"}
-            and not rejected
-        )
+        generation_eligible = is_generation_eligible(atom) and not rejected
         review_candidate = (
             include_review_only
             and atom.get("state") in {"observed_candidate", "provisional_atom"}
@@ -163,7 +169,7 @@ def build_profile_context(generated_at: str, include_review_only: bool = False) 
         "schema_version": 1,
         "generated_at": generated_at,
         "selection_policy": {
-            "default": "active contextual/global atoms that are not rejected or suppressed",
+            "default": "confirmed/edited active contextual/global atoms with non-blocked sensitivity",
             "include_review_only": include_review_only,
             "review_only_atoms_are_generation_eligible": False,
         },
@@ -196,6 +202,14 @@ def record_generation_feedback(
         raise ValueError("Feedback event id and pilot id are required")
     if not atom_refs:
         raise ValueError("At least one session_id::atom_id reference is required")
+    if len(event_id) > 200 or len(pilot_id) > 200:
+        raise ValueError("Feedback event id and pilot id must be 200 characters or fewer")
+    if len(note) > 2000:
+        raise ValueError("Feedback note must be 2000 characters or fewer")
+    if feedback in NEGATIVE_GENERATION_FEEDBACK_VALUES and not note.strip():
+        raise ValueError(f"Feedback note is required for `{feedback}`")
+    if len(set(atom_refs)) != len(atom_refs):
+        raise ValueError("Duplicate atom references are not allowed")
 
     data = load_sessions()
     events = data.setdefault("generation_feedback", [])
@@ -216,7 +230,7 @@ def record_generation_feedback(
         if len(matches) != 1:
             raise ValueError(f"Expected one stored atom for feedback id `{atom_id}`, found {len(matches)}")
         atom = matches[0]
-        if atom.get("state") != "active_atom" or atom.get("activation_scope") == "review_only":
+        if not is_generation_eligible(atom):
             raise ValueError(f"Atom is not generation-eligible: {atom_id}")
         matched.append(atom)
 

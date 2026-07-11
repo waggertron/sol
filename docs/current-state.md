@@ -106,6 +106,10 @@ Reference-only or license-review instruments are tracked in:
   `too_generic`, and `wrong`. Events add provenance-linked, append-only
   generation-guidance notes without automatically changing raw responses,
   claims, or confidence.
+- The prompt and feedback contract review is complete. Model-backed execution
+  is not yet approved; remaining gates are user-reviewed generation-guidance
+  authoring, persisted pilot runs, provider opt-in, output validation, and an
+  end-to-end exclusion test.
 
 Current queue ingestion support:
 
@@ -193,8 +197,8 @@ Then open `http://127.0.0.1:8765`.
 - Inspectable evidence and uncertainty views are complete.
 - Scoped profile context export is complete.
 - The first low-risk local generation pilot is in progress.
-- The next active slice is joint review of the generation prompt and feedback
-  contract before a model-backed mode is considered.
+- The next active slice is generation-guidance authoring and persisted pilot-run
+  provenance. Model-backed execution remains deferred.
 
 ## Safety Posture
 

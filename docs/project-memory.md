@@ -109,6 +109,10 @@ then generate text and visual direction the user can evaluate.
 - Generation feedback is stored as explicit evaluation events and appended to
   atom `generation_mapping_notes` with provenance. It does not silently alter
   raw assessment data, claims, or confidence.
+- The 2026-07-11 generation contract review did not approve model-backed mode.
+  The next prerequisites are user-reviewed generation mappings and persisted
+  pilot-run provenance; see
+  `docs/architecture/assessments/generation-contract-review.md`.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -165,8 +169,8 @@ Build the first MVP around assessment administration before broader generation:
 5. Let users confirm, edit, reject, export, or delete profile atom candidates.
 6. Keep the web UI thin and route persistence through the shared Python session
    store instead of a second ad hoc storage format.
-7. Review the writing/communication prompt and feedback contract together
-   before enabling a model-backed pilot.
+7. Add user-reviewed generation guidance and persisted pilot-run provenance
+   before reconsidering a model-backed pilot.
 
 ## Key Source Anchors
 

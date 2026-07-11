@@ -203,14 +203,15 @@ Acceptance criteria:
 
 ## Current Priority
 
-Continue Phase 5 with joint review of the dry-run prompt and feedback contract.
-The writing/communication guide prompt, local dry-run, structured evaluations,
-and append-only generation-guidance notes are complete. Model-backed execution
-remains intentionally deferred; it should be added only after that review.
+Continue Phase 5 with a user-reviewed generation-guidance authoring path and
+persisted pilot-run records. The prompt/feedback contract review is complete,
+and the model-backed gate remains intentionally unapproved until the entry
+conditions in `docs/architecture/assessments/generation-contract-review.md`
+are satisfied.
 
 ## Latest Validation Evidence
 
-- `./scripts/run_assessment_web_mvp_qa.sh`: 14 tests pass on Python 3.14.6;
+- `./scripts/run_assessment_web_mvp_qa.sh`: 15 tests pass on Python 3.14.6;
   tracked `jsondb/assessment_sessions.json` remains unchanged.
 - The same QA command cannot bind its isolated localhost server inside the
   Codex managed sandbox (`PermissionError: [Errno 1]`), but passes unchanged in

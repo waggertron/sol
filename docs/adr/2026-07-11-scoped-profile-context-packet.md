@@ -38,8 +38,9 @@ explicit and non-generative.
 ## Decision
 
 Choose Option B. The default packet contains only `active_atom` records with
-`contextual` or `global` activation scope that are neither rejected nor
-suppressed. An explicit `include_review_only` option may add provisional review
+`contextual` or `global` activation scope, `confirmed` or `edited` user
+feedback, and non-blocked sensitivity. Rejected and suppressed atoms remain
+excluded. An explicit `include_review_only` option may add provisional review
 candidates for internal inspection, but those records carry
 `eligible_for_generation: false`.
 
@@ -57,4 +58,3 @@ record. It carries prohibited-use guidance alongside the selected atoms.
 - Preserve claims, context, confidence, evidence summaries, source ids,
   counterevidence, uncertainty, and generation guidance.
 - Exclude rejected and suppressed atoms in every mode.
-
