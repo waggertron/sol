@@ -37,13 +37,11 @@ scoped profile from a profile service and submit feedback after generation.
 
 ## Current MVP Direction
 
-The next implementation target is an assessment-first MVP:
-
-- load instruments from `assessments/ocean/manifest.json`
-- administer TIPI, Mini-IPIP, or IPIP-NEO-60
-- store responses and computed scores
-- create editable profile atom candidates
-- present results with uncertainty and non-diagnostic copy
+The assessment-first MVP now loads stored instruments, administers and scores
+them, persists consent/version provenance for new sessions, creates editable
+profile atoms, explains evidence, and exports scoped context. The next
+architecture work should remain wedge-driven: generation-guidance authoring,
+persisted pilot runs, and one consented writing-sample ingestion path.
 
 ## Open Questions
 

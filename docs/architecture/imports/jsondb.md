@@ -111,7 +111,7 @@ Current queue snapshot:
 - 1,338 imported queue records with `kind: wikipedia_article` or
   `wikipedia_linked_article`
 - 7 pending `wikipedia_term` records
-- 1,646 imported paper metadata cards
+- 1,766 paper metadata cards
 - 283 pending `paper_reference` records
 - 0 pending DOI-backed `paper_reference` records
 - 283 pending title-only `paper_reference` records
@@ -128,7 +128,8 @@ Current seeded paper review state:
 - 21 rejected journal-title-only or series-title-only records
 - 31 deferred records for books, manuals, edited volumes, in-press references,
   or clearly non-Crossref-friendly reference works
-- 2 manual mappings for nonstandard DOI resolution
+- 14 manual mappings, including nonstandard DOI resolution and curated
+  source-cluster imports
 
 Example:
 
@@ -168,7 +169,7 @@ set of direct term matches under manual review.
 Paper ingestion now supports both direct DOI imports and Crossref title-search
 fallback, with stricter matching heuristics and a persisted review path for the
 remaining tail. That cleared the entire DOI-backed bulk backlog and most of the
-former title-only backlog, bringing the paper corpus to 1,646 metadata-only
+former title-only backlog, bringing the paper corpus to 1,766 metadata-only
 cards. The remaining backlog is a small unresolved tail of 283 records, now
 entirely title-only references.
 

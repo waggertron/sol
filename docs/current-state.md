@@ -1,6 +1,6 @@
 # Current State
 
-Last updated: 2026-07-11
+Last updated: 2026-07-12
 
 ## Project Status
 
@@ -24,17 +24,17 @@ Workbench views.
 - RAG index: 20,600 chunks
 - Base source registry: 13 sources
 - Adjacent source registry: 34 sources
-- Source cards: 13 Markdown cards
+- Source cards: 15 Markdown cards
 - Wikipedia summary imports: 1,261 background cards
-- Paper metadata imports: 1,646 background cards
-- Import queue: 3,373 total queue entries
-- Imported queue entries: 3,076
+- Paper metadata imports: 1,766 background cards
+- Import queue: 3,386 total queue entries
+- Imported queue entries: 3,089
 - Pending paper references: 283
 - Pending paper references with DOI: 0
 - Pending title-only paper references: 283
 - Paper review rejections: 21
 - Paper review deferrals: 31
-- Paper manual mappings: 2
+- Paper manual mappings: 14
 - Pending linked Wikipedia articles: 0
 - Pending direct Wikipedia term matches: 7
 - Rejected Wikipedia mappings: 7
@@ -96,8 +96,9 @@ Reference-only or license-review instruments are tracked in:
   and source context, item response/keying details, and non-diagnostic
   uncertainty cautions for TIPI and reliability-bearing instruments.
 - The workbench exports a scoped profile context packet. Default export includes
-  only active contextual/global atoms; rejected and suppressed atoms are always
-  excluded, and opt-in review candidates are marked generation-ineligible.
+  only confirmed/edited, active contextual/global atoms with non-blocked
+  sensitivity; rejected and suppressed atoms are always excluded, and opt-in
+  review candidates are marked generation-ineligible.
 - Phase 5 has started with a model-free writing and communication guide dry run.
   It renders the reviewed prompt and generation-eligible packet context without
   calling an external model; optional artifacts are restricted to ignored
@@ -110,6 +111,10 @@ Reference-only or license-review instruments are tracked in:
   is not yet approved; remaining gates are user-reviewed generation-guidance
   authoring, persisted pilot runs, provider opt-in, output validation, and an
   end-to-end exclusion test.
+- The assessment session boundary now validates response IDs/values, persists
+  consent and exact instrument/scoring provenance for new sessions, uses
+  serialized atomic JSON writes, protects reviewed atoms from rescoring, and
+  supports separate deletion of raw responses and derived atoms.
 
 Current queue ingestion support:
 
@@ -139,8 +144,8 @@ title-search fallback as well as DOI lookups, with stricter title-match
 scoring and a persisted paper review DB for manual defer/reject/manual-DOI
 decisions. The current paper review pass has already carved out 21 obvious
 journal-title-only or series-title-only rejects, 31 manual-review deferrals,
-and 2 manual mappings
-that resolved the former DOI-backed failures. The remaining paper tail should
+and 14 manual mappings. Two resolved the former DOI-backed failures; the others
+include later curated source-cluster imports. The remaining paper tail should
 be managed as a review/resolution queue rather than a bulk-ingestion batch.
 The consciousness / global-workspace cluster around Bernard Baars has now also
 been imported into `kb/paper_imports/` and distilled into reviewed source cards
@@ -192,7 +197,7 @@ Then open `http://127.0.0.1:8765`.
 
 - Browser QA is currently green at the routed and rendered levels.
 - The latest committed visual QA work is in `352e9f4`.
-- The latest task-ledger update is in `f146db4`.
+- The latest committed task-ledger update before this audit is in `3ab5cc1`.
 - Profile atom editing with provenance preservation is complete.
 - Inspectable evidence and uncertainty views are complete.
 - Scoped profile context export is complete.

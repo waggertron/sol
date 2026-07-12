@@ -27,7 +27,9 @@ This plan has four phases:
 
 Current state: Phase 2 has an initial acquisition complete for permissive/open
 instruments. `assessments/ocean/manifest.json` currently tracks 11 instruments,
-186 scales, and 1,539 items. The next implementation target is Phase 4.
+186 scales, and 1,539 items. Phase 4 is complete as a local prototype. Phase 3
+(original Sol assessment design) remains intentionally unstarted pending a
+clear product need and empirical validation plan.
 
 ## Working Principles
 

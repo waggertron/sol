@@ -46,6 +46,7 @@ class AssessmentStaticUiContractTests(unittest.TestCase):
         self.assertIn("item_evidence", script)
         self.assertIn("exportProfileContext", script)
         self.assertIn("/api/profile-context", script)
+        self.assertIn("deleteSessionData", script)
 
 
 if __name__ == "__main__":

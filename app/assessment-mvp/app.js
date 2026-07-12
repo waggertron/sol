@@ -398,6 +398,8 @@ function renderSessionList() {
       <div class="session-actions-row">
         <button type="button" data-action="load">Load</button>
         <button type="button" data-action="export">Export</button>
+        <button type="button" data-action="delete-responses">Delete responses</button>
+        <button type="button" data-action="delete-atoms">Delete atoms</button>
         <button class="danger-button" type="button" data-action="delete">Delete</button>
       </div>
     `;
@@ -406,6 +408,12 @@ function renderSessionList() {
       switchView("administer");
     });
     card.querySelector("[data-action='export']").addEventListener("click", () => exportSession(session.session_id));
+    card.querySelector("[data-action='delete-responses']").addEventListener("click", () => {
+      deleteSessionData(session.session_id, "responses").catch((error) => setAutosaveStatus(error.message, "warn"));
+    });
+    card.querySelector("[data-action='delete-atoms']").addEventListener("click", () => {
+      deleteSessionData(session.session_id, "profile-atoms").catch((error) => setAutosaveStatus(error.message, "warn"));
+    });
     card.querySelector("[data-action='delete']").addEventListener("click", () => {
       deleteSessionById(session.session_id).catch((error) => setAutosaveStatus(error.message, "warn"));
     });
@@ -509,7 +517,7 @@ async function startSession() {
   }
   state.session = await api("/api/sessions", {
     method: "POST",
-    body: JSON.stringify({ instrument_id: state.selectedInstrument.id }),
+    body: JSON.stringify({ instrument_id: state.selectedInstrument.id, consent_at: new Date().toISOString() }),
   });
   renderSessionMeta();
   renderQuestionnaire();
@@ -630,6 +638,24 @@ async function deleteSessionById(sessionId) {
   }
   await loadWorkbench();
   setAutosaveStatus("Session deleted", "ok");
+}
+
+async function deleteSessionData(sessionId, kind) {
+  const label = kind === "responses" ? "raw responses" : "derived profile atoms";
+  const confirmed = window.confirm(`Delete ${label} from session ${sessionId}? Other session data will remain.`);
+  if (!confirmed) {
+    return;
+  }
+  await api(apiSessionPath(sessionId, `/${kind}`), { method: "DELETE" });
+  if (state.session?.session_id === sessionId) {
+    state.session = await api(apiSessionPath(sessionId));
+    renderQuestionnaire();
+    renderScores();
+    renderAtoms();
+    renderSessionMeta();
+  }
+  await loadWorkbench();
+  setAutosaveStatus(`${label} deleted`, "ok");
 }
 
 async function resumeSession() {

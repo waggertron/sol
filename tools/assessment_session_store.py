@@ -4,9 +4,14 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
+from functools import wraps
+import hashlib
 import json
 import os
 from pathlib import Path
+import tempfile
+import threading
 from typing import Any
 
 from assessment_to_profile_atoms import generate_output, load_json, parse_responses
@@ -21,6 +26,30 @@ ATOM_STATE_VALUES = {"observed_candidate", "provisional_atom", "active_atom", "s
 ACTIVATION_SCOPE_VALUES = {"review_only", "contextual", "global"}
 GENERATION_FEEDBACK_VALUES = {"accurate", "useful", "too_strong", "too_generic", "wrong"}
 NEGATIVE_GENERATION_FEEDBACK_VALUES = {"too_strong", "too_generic", "wrong"}
+CONSENT_VERSION = "assessment-local-consent-v1"
+MUTATION_LOCK = threading.RLock()
+
+
+def serialized_mutation(function):
+    @wraps(function)
+    def wrapped(*args, **kwargs):
+        with MUTATION_LOCK:
+            return function(*args, **kwargs)
+
+    return wrapped
+
+
+def normalize_utc_timestamp(value: str, field: str) -> str:
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError(f"{field} is required")
+    normalized = value.strip().replace("Z", "+00:00")
+    try:
+        parsed = datetime.fromisoformat(normalized)
+    except ValueError as exc:
+        raise ValueError(f"{field} must be an ISO-8601 timestamp with timezone") from exc
+    if parsed.tzinfo is None:
+        raise ValueError(f"{field} must include a timezone")
+    return parsed.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
 def is_generation_eligible(atom: dict[str, Any]) -> bool:
@@ -32,9 +61,78 @@ def is_generation_eligible(atom: dict[str, Any]) -> bool:
     )
 
 
+def validate_atom_lifecycle(atom: dict[str, Any]) -> None:
+    state = atom.get("state")
+    scope = atom.get("activation_scope")
+    feedback = atom.get("user_feedback")
+    if state == "active_atom" and (
+        scope not in {"contextual", "global"} or feedback not in {"confirmed", "edited"}
+    ):
+        raise ValueError("Active atoms require confirmed/edited feedback and contextual/global scope")
+    if state in {"observed_candidate", "provisional_atom", "suppressed_atom"} and scope != "review_only":
+        raise ValueError(f"{state} atoms must remain review_only")
+    if feedback == "rejected" and (state != "suppressed_atom" or scope != "review_only"):
+        raise ValueError("Rejected atoms must be suppressed and review_only")
+
+
+def has_user_review(atom: dict[str, Any]) -> bool:
+    return bool(
+        atom.get("review_history")
+        or atom.get("generation_mapping_notes")
+        or atom.get("user_feedback") not in {None, "unconfirmed"}
+        or atom.get("state") not in {None, "provisional_atom"}
+        or atom.get("activation_scope") not in {None, "review_only"}
+    )
+
+
 def save_json(path: Path, data: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    payload = json.dumps(data, indent=2, sort_keys=True) + "\n"
+    with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=path.parent, delete=False) as handle:
+        handle.write(payload)
+        handle.flush()
+        os.fsync(handle.fileno())
+        temporary_path = Path(handle.name)
+    try:
+        os.replace(temporary_path, path)
+    finally:
+        temporary_path.unlink(missing_ok=True)
+
+
+def instrument_items(instrument: dict[str, Any]) -> list[dict[str, Any]]:
+    if instrument.get("items"):
+        return list(instrument["items"])
+    return [item for scale in instrument.get("scales", []) for item in scale.get("items", [])]
+
+
+def validate_response_map(instrument: dict[str, Any], responses: dict[str, float]) -> dict[str, float]:
+    items = instrument_items(instrument)
+    allowed_ids = {item["id"] for item in items}
+    order_counts: dict[str, int] = {}
+    for item in items:
+        if item.get("source_order") is not None:
+            key = str(item["source_order"])
+            order_counts[key] = order_counts.get(key, 0) + 1
+    unambiguous_order_ids = {
+        str(item["source_order"]): item["id"]
+        for item in items
+        if item.get("source_order") is not None and order_counts[str(item["source_order"])] == 1
+    }
+    allowed_values = {float(entry["value"]) for entry in instrument["response_scale"]["values"]}
+    raw = {str(key): float(value) for key, value in responses.items()}
+    unknown = sorted(set(raw) - allowed_ids - set(unambiguous_order_ids))
+    if unknown:
+        raise ValueError(f"Unknown response item ids: {', '.join(unknown)}")
+    normalized: dict[str, float] = {}
+    for key, value in raw.items():
+        item_id = unambiguous_order_ids.get(key, key)
+        if item_id in normalized:
+            raise ValueError(f"Duplicate response for item id: {item_id}")
+        normalized[item_id] = value
+    invalid = sorted(key for key, value in normalized.items() if value not in allowed_values)
+    if invalid:
+        raise ValueError(f"Responses outside the instrument scale: {', '.join(invalid)}")
+    return normalized
 
 
 def sessions_db_path() -> Path:
@@ -188,6 +286,7 @@ def build_profile_context(generated_at: str, include_review_only: bool = False) 
     }
 
 
+@serialized_mutation
 def record_generation_feedback(
     event_id: str,
     pilot_id: str,
@@ -234,6 +333,7 @@ def record_generation_feedback(
             raise ValueError(f"Atom is not generation-eligible: {atom_id}")
         matched.append(atom)
 
+    recorded_at = normalize_utc_timestamp(recorded_at, "recorded_at")
     event = {
         "event_id": event_id,
         "pilot_id": pilot_id,
@@ -261,23 +361,39 @@ def record_generation_feedback(
     return event
 
 
+@serialized_mutation
 def create_session(
     session_id: str,
     instrument_path: str,
     started_at: str,
+    consent_at: str,
     user_id: str | None = None,
+    consent_version: str = CONSENT_VERSION,
 ) -> dict[str, Any]:
     data = load_sessions()
     if find_session(data, session_id):
         raise ValueError(f"Session already exists: {session_id}")
 
-    instrument = load_json(Path(instrument_path))
+    instrument_file = Path(instrument_path)
+    instrument = load_json(instrument_file)
+    started_at = normalize_utc_timestamp(started_at, "started_at")
+    consent_at = normalize_utc_timestamp(consent_at, "consent_at")
+    if not consent_version.strip():
+        raise ValueError("consent_version is required")
     session = {
         "session_id": session_id,
         "user_id": user_id,
         "instrument_id": instrument["id"],
         "instrument_name": instrument["name"],
         "instrument_path": instrument_path,
+        "instrument_schema_version": instrument.get("schema_version"),
+        "instrument_sha256": hashlib.sha256(instrument_file.read_bytes()).hexdigest(),
+        "scoring_method": instrument.get("scoring", {}).get("method"),
+        "consent": {
+            "acknowledged_at": consent_at,
+            "version": consent_version,
+            "scope": ["local_response_storage", "provisional_profile_atom_generation"],
+        },
         "status": "in_progress",
         "started_at": started_at,
         "completed_at": None,
@@ -290,13 +406,22 @@ def create_session(
     return session
 
 
+@serialized_mutation
 def save_response_map(session_id: str, responses: dict[str, float], merge: bool = True) -> dict[str, Any]:
     data = load_sessions()
     session = find_session(data, session_id)
     if not session:
         raise ValueError(f"Unknown session: {session_id}")
 
-    normalized = {str(key): float(value) for key, value in responses.items()}
+    if session.get("status") == "completed":
+        raise ValueError("Completed session responses are immutable; create a new session to rescore")
+    instrument_path = Path(session["instrument_path"])
+    instrument = load_json(instrument_path)
+    stored_hash = session.get("instrument_sha256")
+    current_hash = hashlib.sha256(instrument_path.read_bytes()).hexdigest()
+    if stored_hash is not None and stored_hash != current_hash:
+        raise ValueError("Stored instrument fingerprint no longer matches the scoring source")
+    normalized = validate_response_map(instrument, responses)
     if merge:
         merged = dict(session.get("responses", {}))
         merged.update(normalized)
@@ -312,14 +437,24 @@ def save_responses(session_id: str, responses_path: str, merge: bool = True) -> 
     return save_response_map(session_id, responses, merge=merge)
 
 
+@serialized_mutation
 def score_session(session_id: str, completed_at: str) -> dict[str, Any]:
     data = load_sessions()
     session = find_session(data, session_id)
     if not session:
         raise ValueError(f"Unknown session: {session_id}")
 
-    instrument = load_json(Path(session["instrument_path"]))
+    instrument_path = Path(session["instrument_path"])
+    instrument = load_json(instrument_path)
+    stored_hash = session.get("instrument_sha256")
+    current_hash = hashlib.sha256(instrument_path.read_bytes()).hexdigest()
+    if stored_hash is not None and stored_hash != current_hash:
+        raise ValueError("Stored instrument fingerprint no longer matches the scoring source")
     responses = {str(key): float(value) for key, value in session.get("responses", {}).items()}
+    validate_response_map(instrument, responses)
+    if session.get("status") == "completed" and any(has_user_review(atom) for atom in session.get("profile_atoms", [])):
+        raise ValueError("Reviewed profile atoms cannot be overwritten by rescoring; create a new session")
+    completed_at = normalize_utc_timestamp(completed_at, "completed_at")
     output = generate_output(instrument, responses, session_id, completed_at)
 
     session["completed_at"] = completed_at
@@ -338,14 +473,69 @@ def show_session(session_id: str) -> dict[str, Any]:
     return session
 
 
+@serialized_mutation
 def delete_session(session_id: str) -> dict[str, Any]:
     data = load_sessions()
     for index, session in enumerate(data["sessions"]):
         if session["session_id"] == session_id:
             removed = data["sessions"].pop(index)
+            remaining_events = []
+            removed_event_count = 0
+            prefix = f"{session_id}::"
+            for event in data.get("generation_feedback", []):
+                refs = [ref for ref in event.get("atom_refs", []) if not ref.startswith(prefix)]
+                if not refs:
+                    removed_event_count += 1
+                    continue
+                event["atom_refs"] = refs
+                remaining_events.append(event)
+            if "generation_feedback" in data:
+                data["generation_feedback"] = remaining_events
             save_sessions(data)
-            return summarize_session(removed)
+            return {**summarize_session(removed), "generation_feedback_events_deleted": removed_event_count}
     raise ValueError(f"Unknown session: {session_id}")
+
+
+@serialized_mutation
+def delete_session_responses(session_id: str, deleted_at: str) -> dict[str, Any]:
+    data = load_sessions()
+    session = find_session(data, session_id)
+    if not session:
+        raise ValueError(f"Unknown session: {session_id}")
+    deleted_count = len(session.get("responses", {}))
+    session["responses"] = {}
+    session["responses_deleted_at"] = normalize_utc_timestamp(deleted_at, "deleted_at")
+    save_sessions(data)
+    return {"session_id": session_id, "deleted_response_count": deleted_count}
+
+
+@serialized_mutation
+def delete_session_profile_atoms(session_id: str, deleted_at: str) -> dict[str, Any]:
+    data = load_sessions()
+    session = find_session(data, session_id)
+    if not session:
+        raise ValueError(f"Unknown session: {session_id}")
+    deleted_count = len(session.get("profile_atoms", []))
+    session["profile_atoms"] = []
+    session["profile_atoms_deleted_at"] = normalize_utc_timestamp(deleted_at, "deleted_at")
+    prefix = f"{session_id}::"
+    remaining_events = []
+    removed_event_count = 0
+    for event in data.get("generation_feedback", []):
+        refs = [ref for ref in event.get("atom_refs", []) if not ref.startswith(prefix)]
+        if not refs:
+            removed_event_count += 1
+            continue
+        event["atom_refs"] = refs
+        remaining_events.append(event)
+    if "generation_feedback" in data:
+        data["generation_feedback"] = remaining_events
+    save_sessions(data)
+    return {
+        "session_id": session_id,
+        "deleted_profile_atom_count": deleted_count,
+        "generation_feedback_events_deleted": removed_event_count,
+    }
 
 
 def find_atom(session: dict[str, Any], atom_id: str) -> dict[str, Any] | None:
@@ -355,6 +545,7 @@ def find_atom(session: dict[str, Any], atom_id: str) -> dict[str, Any] | None:
     return None
 
 
+@serialized_mutation
 def review_atom(
     session_id: str,
     atom_id: str,
@@ -387,6 +578,7 @@ def review_atom(
     if user_note is not None:
         user_note = user_note.strip()
 
+    reviewed_at = normalize_utc_timestamp(reviewed_at, "reviewed_at")
     atom.setdefault("original_claim", atom.get("claim", ""))
     atom.setdefault("user_note", "")
     atom.setdefault("review_history", [])
@@ -398,16 +590,19 @@ def review_atom(
         "activation_scope": atom.get("activation_scope"),
     }
 
+    proposed = dict(atom)
     if user_feedback is not None:
-        atom["user_feedback"] = user_feedback
+        proposed["user_feedback"] = user_feedback
     if state is not None:
-        atom["state"] = state
+        proposed["state"] = state
     if activation_scope is not None:
-        atom["activation_scope"] = activation_scope
+        proposed["activation_scope"] = activation_scope
     if claim is not None:
-        atom["claim"] = claim
+        proposed["claim"] = claim
     if user_note is not None:
-        atom["user_note"] = user_note
+        proposed["user_note"] = user_note
+    validate_atom_lifecycle(proposed)
+    atom.update(proposed)
 
     current = {key: atom.get(key) for key in previous}
     changes = {
@@ -450,6 +645,7 @@ def parse_args() -> argparse.Namespace:
     create_parser.add_argument("--session-id", required=True)
     create_parser.add_argument("--instrument", required=True, help="Path to instrument JSON.")
     create_parser.add_argument("--started-at", required=True)
+    create_parser.add_argument("--consent-at", required=True)
     create_parser.add_argument("--user-id")
 
     save_parser = subparsers.add_parser("save-responses", help="Save raw responses to a session.")
@@ -466,6 +662,14 @@ def parse_args() -> argparse.Namespace:
 
     delete_parser = subparsers.add_parser("delete-session", help="Delete a stored session.")
     delete_parser.add_argument("--session-id", required=True)
+
+    delete_responses_parser = subparsers.add_parser("delete-session-responses", help="Delete raw responses only.")
+    delete_responses_parser.add_argument("--session-id", required=True)
+    delete_responses_parser.add_argument("--deleted-at", required=True)
+
+    delete_atoms_parser = subparsers.add_parser("delete-session-profile-atoms", help="Delete derived atoms only.")
+    delete_atoms_parser.add_argument("--session-id", required=True)
+    delete_atoms_parser.add_argument("--deleted-at", required=True)
 
     review_parser = subparsers.add_parser("review-atom", help="Update user review state for a derived profile atom.")
     review_parser.add_argument("--session-id", required=True)
@@ -487,7 +691,7 @@ def main() -> None:
         print(json.dumps({"path": sessions_db_path().as_posix(), "status": "initialized"}, indent=2))
         return
     if args.command == "create-session":
-        result = create_session(args.session_id, args.instrument, args.started_at, args.user_id)
+        result = create_session(args.session_id, args.instrument, args.started_at, args.consent_at, args.user_id)
         print(json.dumps(result, indent=2, sort_keys=True))
         return
     if args.command == "list-sessions":
@@ -527,6 +731,14 @@ def main() -> None:
         return
     if args.command == "delete-session":
         result = delete_session(args.session_id)
+        print(json.dumps(result, indent=2, sort_keys=True))
+        return
+    if args.command == "delete-session-responses":
+        result = delete_session_responses(args.session_id, args.deleted_at)
+        print(json.dumps(result, indent=2, sort_keys=True))
+        return
+    if args.command == "delete-session-profile-atoms":
+        result = delete_session_profile_atoms(args.session_id, args.deleted_at)
         print(json.dumps(result, indent=2, sort_keys=True))
         return
     if args.command == "review-atom":

@@ -61,12 +61,12 @@ then generate text and visual direction the user can evaluate.
   notes.
 - `sources/sources.json` tracks source metadata.
 - `sources/adjacent_sources_v1.json` tracks 34 adjacent research sources.
-- `jsondb/import_queue.json` tracks 3,373 pending/imported/rejected research
+- `jsondb/import_queue.json` tracks 3,386 pending/imported/rejected research
   import candidates.
 - `jsondb/paper_import_review.json` stores manual defer/reject/manual-DOI
   decisions for unresolved paper references.
 - `kb/wiki_imports/` contains 1,261 background Wikipedia summary imports.
-- `kb/paper_imports/` contains 1,646 metadata-only paper imports from queued DOI
+- `kb/paper_imports/` contains 1,766 metadata-only paper imports from queued DOI
   references.
 - `kb/research/paper_review_queue.md` is the generated manual-review queue for
   unresolved paper references.
@@ -100,9 +100,10 @@ then generate text and visual direction the user can evaluate.
   uncertainty cautions. Reliability is framed as consistency evidence rather
   than proof of an individual claim.
 - `build_profile_context` and `GET /api/profile-context` provide the first
-  generation-facing packet. Default selection is active contextual/global
-  atoms; rejected/suppressed atoms are excluded, and explicitly included
-  review-only atoms remain generation-ineligible.
+  generation-facing packet. Default selection is confirmed/edited active
+  contextual/global atoms with non-blocked sensitivity; rejected/suppressed
+  atoms are excluded, and explicitly included review-only atoms remain
+  generation-ineligible.
 - `tools/generation_pilot.py` renders the first model-free writing and
   communication guide prompt using only generation-eligible packet atoms.
   Optional artifacts are restricted to ignored `tmp/generation-pilot/` paths.
@@ -113,6 +114,9 @@ then generate text and visual direction the user can evaluate.
   The next prerequisites are user-reviewed generation mappings and persisted
   pilot-run provenance; see
   `docs/architecture/assessments/generation-contract-review.md`.
+- The 2026-07-12 integrity pass moved validation, persisted consent/version
+  provenance, lifecycle invariants, atomic mutation, rescore protection, and
+  selective deletion into the shared assessment session-store boundary.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -129,7 +133,9 @@ then generate text and visual direction the user can evaluate.
   a blind bulk batch. The two DOI-backed failures are now resolved through
   manual mapping. Current seeded review state: 21 rejected
   journal-title-only or series-title-only records, 31 deferred
-  book/manual/in-press or volume records, and 2 manual mappings.
+  book/manual/in-press or volume records, and 14 manual mappings (including the
+  two mappings that resolved the former DOI-backed failures and later curated
+  cluster imports).
 - The operating plan for the remaining paper tail now lives in
   `plans/09-paper-tail-curation.md`. Default approach: conservative hygiene
   passes first, then clustered manual resolution, and only then reconsider

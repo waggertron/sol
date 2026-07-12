@@ -15,6 +15,8 @@ from assessment_session_store import (
     create_session,
     build_profile_context,
     delete_session,
+    delete_session_profile_atoms,
+    delete_session_responses,
     list_profile_atoms,
     list_sessions,
     record_generation_feedback,
@@ -172,12 +174,14 @@ class AssessmentHandler(BaseHTTPRequestHandler):
                 payload = read_json_body(self)
                 instrument_id = payload["instrument_id"]
                 started_at = payload.get("started_at") or now_iso()
+                consent_at = payload.get("consent_at")
                 user_id = payload.get("user_id")
                 session_id = payload.get("session_id") or f"web_{instrument_id}_{session_suffix()}"
                 session = create_session(
                     session_id=session_id,
                     instrument_path=(INSTRUMENTS_DIR / f"{instrument_id}.json").as_posix(),
                     started_at=started_at,
+                    consent_at=consent_at,
                     user_id=user_id,
                 )
                 json_response(self, HTTPStatus.CREATED, session)
@@ -232,6 +236,20 @@ class AssessmentHandler(BaseHTTPRequestHandler):
 
     def do_DELETE(self) -> None:
         path = urlparse(self.path).path
+        if path.startswith("/api/sessions/") and path.endswith("/responses"):
+            session_id = unquote(path.removeprefix("/api/sessions/").removesuffix("/responses"))
+            try:
+                json_response(self, HTTPStatus.OK, delete_session_responses(session_id, now_iso()))
+            except ValueError as exc:
+                json_response(self, HTTPStatus.NOT_FOUND, {"error": str(exc)})
+            return
+        if path.startswith("/api/sessions/") and path.endswith("/profile-atoms"):
+            session_id = unquote(path.removeprefix("/api/sessions/").removesuffix("/profile-atoms"))
+            try:
+                json_response(self, HTTPStatus.OK, delete_session_profile_atoms(session_id, now_iso()))
+            except ValueError as exc:
+                json_response(self, HTTPStatus.NOT_FOUND, {"error": str(exc)})
+            return
         if path.startswith("/api/sessions/"):
             session_id = unquote(path.removeprefix("/api/sessions/"))
             try:

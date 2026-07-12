@@ -40,6 +40,8 @@ The web MVP consists of:
     instrument/source context, and uncertainty cautions.
 14. Export a scoped profile context packet, with provisional review-only atoms
     available only through an explicit internal-testing checkbox.
+15. Delete raw responses or derived profile atoms independently from the
+    workbench session controls.
 
 ## API Surface
 
@@ -54,6 +56,8 @@ The web MVP consists of:
 - `POST /api/sessions/<session_id>/score`
 - `POST /api/sessions/<session_id>/review-atom`
 - `DELETE /api/sessions/<session_id>`
+- `DELETE /api/sessions/<session_id>/responses`
+- `DELETE /api/sessions/<session_id>/profile-atoms`
 - `GET /api/profile-atoms`
 - `GET /api/profile-context`
 - `POST /api/generation-feedback`
@@ -108,6 +112,8 @@ rm -rf tmp/assessment-web-mvp-visual
 - It does not yet implement authentication or access controls.
 - Atom edits are session- and atom-id-scoped. They update derived profile state,
   never raw assessment responses.
+- Consent acknowledgment and exact instrument/scoring provenance are persisted
+  when a new session starts.
 - Evidence panels describe assessment results as provisional self-report
   evidence. They do not convert reliability, scores, or trait names into fixed
   identity claims.

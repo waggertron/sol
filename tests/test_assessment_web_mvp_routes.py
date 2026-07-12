@@ -91,6 +91,7 @@ class AssessmentWebMvpRouteTests(unittest.TestCase):
         self.assertIn("exportSession", script)
         self.assertIn("deleteSessionById", script)
         self.assertIn("exportProfileContext", script)
+        self.assertIn("deleteSessionData", script)
 
     def test_full_route_lifecycle_uses_isolated_jsondb(self) -> None:
         health, _ = self.get_json("/api/health")
@@ -109,6 +110,7 @@ class AssessmentWebMvpRouteTests(unittest.TestCase):
                 "session_id": "route_test_tipi_session",
                 "instrument_id": "tipi",
                 "started_at": "2026-07-08T22:00:00Z",
+                "consent_at": "2026-07-08T22:00:00Z",
             },
         )
         self.assertEqual(created["status"], "in_progress")
@@ -204,6 +206,20 @@ class AssessmentWebMvpRouteTests(unittest.TestCase):
         )
         self.assertEqual(feedback_atom["generation_mapping_notes"][0]["feedback"], "useful")
 
+        deleted_responses = self.delete_json("/api/sessions/route_test_tipi_session/responses")
+        self.assertEqual(deleted_responses["deleted_response_count"], 10)
+        after_response_delete, _ = self.get_json("/api/sessions/route_test_tipi_session")
+        self.assertEqual(after_response_delete["responses"], {})
+        self.assertEqual(len(after_response_delete["scores"]), 5)
+        self.assertEqual(len(after_response_delete["profile_atoms"]), 5)
+
+        deleted_atoms = self.delete_json("/api/sessions/route_test_tipi_session/profile-atoms")
+        self.assertEqual(deleted_atoms["deleted_profile_atom_count"], 5)
+        self.assertEqual(deleted_atoms["generation_feedback_events_deleted"], 1)
+        after_atom_delete, _ = self.get_json("/api/sessions/route_test_tipi_session")
+        self.assertEqual(after_atom_delete["profile_atoms"], [])
+        self.assertEqual(store.load_sessions().get("generation_feedback"), [])
+
         deleted = self.delete_json("/api/sessions/route_test_tipi_session")
         self.assertEqual(deleted["deleted"]["session_id"], "route_test_tipi_session")
         sessions_after_delete, _ = self.get_json("/api/sessions")
@@ -213,6 +229,19 @@ class AssessmentWebMvpRouteTests(unittest.TestCase):
         with self.assertRaises(HTTPError) as ctx:
             self.get_json("/api/sessions/missing")
         self.assertEqual(ctx.exception.code, 404)
+        ctx.exception.close()
+
+    def test_session_creation_requires_persisted_consent(self) -> None:
+        with self.assertRaises(HTTPError) as ctx:
+            self.post_json(
+                "/api/sessions",
+                {
+                    "session_id": "missing_consent",
+                    "instrument_id": "tipi",
+                    "started_at": "2026-07-08T22:00:00Z",
+                },
+            )
+        self.assertEqual(ctx.exception.code, 400)
         ctx.exception.close()
 
 

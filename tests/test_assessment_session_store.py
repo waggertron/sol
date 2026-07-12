@@ -1,7 +1,9 @@
 import os
+import shutil
 import sys
 import tempfile
 import unittest
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 
@@ -11,6 +13,7 @@ if TOOLS.as_posix() not in sys.path:
     sys.path.insert(0, TOOLS.as_posix())
 
 import assessment_session_store as store
+import assessment_to_profile_atoms as generator
 
 
 TIPI_PATH = ROOT / "assessments" / "ocean" / "instruments" / "tipi.json"
@@ -54,9 +57,15 @@ class AssessmentSessionStoreTests(unittest.TestCase):
             "test_tipi_session",
             TIPI_PATH.as_posix(),
             "2026-07-08T22:00:00Z",
+            "2026-07-08T22:00:00Z",
         )
         self.assertEqual(session["status"], "in_progress")
         self.assertEqual(session["instrument_id"], "tipi")
+        self.assertEqual(session["consent"]["version"], store.CONSENT_VERSION)
+        self.assertEqual(session["consent"]["acknowledged_at"], "2026-07-08T22:00:00Z")
+        self.assertEqual(session["instrument_schema_version"], 1)
+        self.assertEqual(len(session["instrument_sha256"]), 64)
+        self.assertEqual(session["scoring_method"], "average_two_items_per_domain")
 
         updated = store.save_response_map("test_tipi_session", valid_tipi_responses(), merge=False)
         self.assertEqual(len(updated["responses"]), 10)
@@ -68,6 +77,7 @@ class AssessmentSessionStoreTests(unittest.TestCase):
         self.assertTrue(all(atom["state"] == "provisional_atom" for atom in scored["profile_atoms"]))
         self.assertTrue(all(atom["original_claim"] == atom["claim"] for atom in scored["profile_atoms"]))
         self.assertTrue(all(atom["review_history"] == [] for atom in scored["profile_atoms"]))
+        self.assertTrue(all(atom["confidence"] == 0.52 for atom in scored["profile_atoms"]))
         tipi_score = scored["scores"][0]
         self.assertEqual(tipi_score["scoring_method"], "average_two_items_per_domain")
         self.assertEqual(len(tipi_score["item_evidence"]), 2)
@@ -112,6 +122,10 @@ class AssessmentSessionStoreTests(unittest.TestCase):
         self.assertNotEqual(edited["claim"], original_claim)
         self.assertEqual(edited["user_feedback"], "edited")
         self.assertEqual(len(edited["review_history"]), 2)
+        with self.assertRaisesRegex(ValueError, "cannot be overwritten"):
+            store.score_session("test_tipi_session", "2026-07-08T22:07:30Z")
+        with self.assertRaisesRegex(ValueError, "responses are immutable"):
+            store.save_response_map("test_tipi_session", {"tipi:item:001": 5})
         self.assertEqual(
             edited["review_history"][-1]["changes"]["claim"]["from"],
             original_claim,
@@ -172,8 +186,29 @@ class AssessmentSessionStoreTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Unknown session"):
             store.delete_session("missing")
 
+    def test_confidence_fallback_uses_item_count_boundaries(self) -> None:
+        self.assertEqual(generator.confidence_for_scale({}, 2), 0.52)
+        self.assertEqual(generator.confidence_for_scale({}, 4), 0.62)
+        self.assertEqual(generator.confidence_for_scale({}, 8), 0.68)
+        self.assertEqual(generator.confidence_for_scale({"reliability_alpha": 0.75}, 2), 0.72)
+
+    def test_timestamps_normalize_to_utc_and_instrument_drift_is_blocked(self) -> None:
+        copied_instrument = Path(self.tmp.name) / "tipi.json"
+        shutil.copyfile(TIPI_PATH, copied_instrument)
+        session = store.create_session(
+            "fingerprint_session",
+            copied_instrument.as_posix(),
+            "2026-07-08T15:00:00-07:00",
+            "2026-07-08T15:00:00-07:00",
+        )
+        self.assertEqual(session["started_at"], "2026-07-08T22:00:00Z")
+        self.assertEqual(session["consent"]["acknowledged_at"], "2026-07-08T22:00:00Z")
+        copied_instrument.write_text(copied_instrument.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "fingerprint"):
+            store.save_response_map("fingerprint_session", {"tipi:item:001": 4})
+
     def test_atom_review_rejects_out_of_contract_values(self) -> None:
-        store.create_session("invalid_review", TIPI_PATH.as_posix(), "2026-07-08T22:00:00Z")
+        store.create_session("invalid_review", TIPI_PATH.as_posix(), "2026-07-08T22:00:00Z", "2026-07-08T22:00:00Z")
         store.save_response_map("invalid_review", valid_tipi_responses(), merge=False)
         store.score_session("invalid_review", "2026-07-08T22:05:00Z")
         atom_id = "assessment.tipi.tipi_extraversion.v0"
@@ -182,12 +217,63 @@ class AssessmentSessionStoreTests(unittest.TestCase):
             store.review_atom("invalid_review", atom_id, "2026-07-08T22:06:00Z", state="diagnosed")
         with self.assertRaisesRegex(ValueError, "cannot be empty"):
             store.review_atom("invalid_review", atom_id, "2026-07-08T22:06:00Z", claim="   ")
+        with self.assertRaisesRegex(ValueError, "Active atoms require"):
+            store.review_atom(
+                "invalid_review",
+                atom_id,
+                "2026-07-08T22:06:00Z",
+                state="active_atom",
+                activation_scope="contextual",
+            )
+
+    def test_response_contract_rejects_unknown_and_out_of_range_values(self) -> None:
+        store.create_session(
+            "invalid_responses",
+            TIPI_PATH.as_posix(),
+            "2026-07-08T22:00:00Z",
+            "2026-07-08T22:00:00Z",
+        )
+        with self.assertRaisesRegex(ValueError, "Unknown response item ids"):
+            store.save_response_map("invalid_responses", {"tipi:item:999": 4})
+        with self.assertRaisesRegex(ValueError, "outside the instrument scale"):
+            store.save_response_map("invalid_responses", {"tipi:item:001": 8})
+        stored = store.save_response_map("invalid_responses", {"1": 4})
+        self.assertEqual(stored["responses"]["tipi:item:001"], 4.0)
+        with self.assertRaisesRegex(ValueError, "Duplicate response"):
+            store.save_response_map("invalid_responses", {"1": 4, "tipi:item:001": 4})
+
+        store.create_session(
+            "ambiguous_source_order",
+            MINI_IPIP_PATH.as_posix(),
+            "2026-07-08T22:00:00Z",
+            "2026-07-08T22:00:00Z",
+        )
+        with self.assertRaisesRegex(ValueError, "Unknown response item ids"):
+            store.save_response_map("ambiguous_source_order", {"1": 4})
+
+    def test_concurrent_response_mutations_are_serialized(self) -> None:
+        store.create_session(
+            "concurrent_responses",
+            TIPI_PATH.as_posix(),
+            "2026-07-08T22:00:00Z",
+            "2026-07-08T22:00:00Z",
+        )
+        responses = valid_tipi_responses()
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            futures = [
+                executor.submit(store.save_response_map, "concurrent_responses", {item_id: value})
+                for item_id, value in responses.items()
+            ]
+            for future in futures:
+                future.result()
+        stored = store.show_session("concurrent_responses")
+        self.assertEqual(stored["responses"], {key: float(value) for key, value in responses.items()})
 
     def test_mini_ipip_evidence_preserves_response_and_keying_contract(self) -> None:
         responses = store.parse_responses(MINI_IPIP_RESPONSES_PATH)
         self.assertEqual(len(responses), 20)
         self.assertTrue(all(1 <= value <= 5 for value in responses.values()))
-        store.create_session("mini_evidence", MINI_IPIP_PATH.as_posix(), "2026-07-08T23:00:00Z")
+        store.create_session("mini_evidence", MINI_IPIP_PATH.as_posix(), "2026-07-08T23:00:00Z", "2026-07-08T23:00:00Z")
         store.save_response_map("mini_evidence", responses, merge=False)
         scored = store.score_session("mini_evidence", "2026-07-08T23:05:00Z")
 

@@ -30,6 +30,10 @@ Each session stores:
 - `instrument_id`
 - `instrument_name`
 - `instrument_path`
+- `instrument_schema_version`
+- `instrument_sha256`
+- `scoring_method`
+- `consent` (`version`, `acknowledged_at`, and granted local scopes)
 - `status`
 - `started_at`
 - `completed_at`
@@ -53,7 +57,7 @@ Supported commands:
 
 ```bash
 python3 tools/assessment_session_store.py init-db
-python3 tools/assessment_session_store.py create-session --session-id session_001 --instrument assessments/ocean/instruments/tipi.json --started-at 2026-07-08T21:00:00Z
+python3 tools/assessment_session_store.py create-session --session-id session_001 --instrument assessments/ocean/instruments/tipi.json --started-at 2026-07-08T21:00:00Z --consent-at 2026-07-08T21:00:00Z
 python3 tools/assessment_session_store.py save-responses --session-id session_001 --responses assessments/ocean/examples/tipi_sample_responses.json
 python3 tools/assessment_session_store.py score-session --session-id session_001 --completed-at 2026-07-08T21:05:00Z
 python3 tools/assessment_session_store.py list-sessions
@@ -64,11 +68,17 @@ python3 tools/assessment_session_store.py show-session --session-id session_001
 python3 tools/assessment_session_store.py review-atom --session-id session_001 --atom-id assessment.tipi.tipi_extraversion.v0 --reviewed-at 2026-07-08T21:10:00Z --user-feedback confirmed --state active_atom --activation-scope contextual
 python3 tools/assessment_session_store.py review-atom --session-id session_001 --atom-id assessment.tipi.tipi_extraversion.v0 --reviewed-at 2026-07-08T21:12:00Z --user-feedback edited --claim "I often enjoy social interaction in familiar settings." --user-note "Large groups are different."
 python3 tools/assessment_session_store.py delete-session --session-id session_001
+python3 tools/assessment_session_store.py delete-session-responses --session-id session_001 --deleted-at 2026-07-08T21:15:00Z
+python3 tools/assessment_session_store.py delete-session-profile-atoms --session-id session_001 --deleted-at 2026-07-08T21:16:00Z
 ```
 
 ## Policy
 
-- raw responses remain stored
+- response IDs and values are validated against the selected instrument before
+  persistence
+- completed-session responses are immutable; changed evidence requires a new
+  session
+- consent and exact instrument/scoring provenance are persisted for new sessions
 - scores are derived and reproducible
 - score records preserve response-to-keyed-value calculation details; profile
   atoms retain a copy of the relevant explanation metadata for aggregate views
@@ -83,12 +93,14 @@ python3 tools/assessment_session_store.py delete-session --session-id session_00
 - material claim, note, feedback, state, and scope changes append timestamped
   field-level entries to `review_history`
 - older stored atoms gain the edit-provenance fields lazily on first review
-- deletion removes a whole local session, including responses, derived scores,
-  and derived profile atoms
+- users can delete raw responses, derived atoms, or a whole session; deleting
+  atoms/session data removes or redacts linked generation-feedback references
 - scoped context export includes only active contextual/global atoms by default;
   rejected and suppressed atoms are always excluded
 - pilot feedback is stored separately at the JSONDB root and linked to scoped
   atoms through append-only generation mapping notes and source ids
+- mutations are serialized within the local server process and JSON writes use
+  atomic same-directory replacement; JSONDB remains single-process storage
 
 ## Near-Term Role
 

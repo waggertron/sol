@@ -95,7 +95,12 @@ def confidence_for_scale(scale: dict[str, Any], item_count: int) -> float:
             return 0.72
         if alpha >= 0.6:
             return 0.64
-    return 0.58
+        return 0.58
+    if item_count >= 8:
+        return 0.68
+    if item_count >= 4:
+        return 0.62
+    return 0.52
 
 
 def uncertainty_note(instrument: dict[str, Any], scored: dict[str, Any]) -> str:
@@ -112,11 +117,6 @@ def uncertainty_note(instrument: dict[str, Any], scored: dict[str, Any]) -> str:
             "is true for this person or context."
         )
     return "Treat this score as provisional self-report evidence that may vary by context and time."
-    if item_count >= 8:
-        return 0.68
-    if item_count >= 4:
-        return 0.62
-    return 0.52
 
 
 def inline_items_for_scale(instrument: dict[str, Any], scale: dict[str, Any]) -> list[dict[str, Any]]:

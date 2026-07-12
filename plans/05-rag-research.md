@@ -21,8 +21,8 @@ Current snapshot:
 
 - 20,600 RAG chunks
 - 1,261 Wikipedia summary cards
-- 1,643 paper metadata cards
-- 3,373 import queue entries
+- 1,766 paper metadata cards
+- 3,386 import queue entries
 - 11 OCEAN assessment instruments
 
 See `docs/current-state.md` for details.

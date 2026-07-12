@@ -37,10 +37,11 @@ than generic generation.
 
 ## Current State
 
-The repository now has a research RAG, JSONDB import queue, and OCEAN
-assessment corpus. The next MVP should validate the profile loop through
-assessment administration, scoring, result presentation, and editable profile
-atom creation before broader multimodal generation.
+The repository now has a research RAG, JSONDB import queue, OCEAN assessment
+corpus, and a local assessment/profile workbench through scoped context export.
+The next product validation step is to add user-reviewed generation guidance,
+persisted pilot runs, and one consented writing-sample path before broader
+multimodal generation.
 
 ## Non-Goals
 

@@ -6,10 +6,10 @@ Create a Personal Creative Style Kit that turns user-provided data into an
 editable personality/style profile, then generates text and visual direction
 that the user can evaluate.
 
-Current implementation note: the first build step should be assessment-first.
-The app should administer a stored OCEAN instrument, score it, present
-non-diagnostic results, and create editable profile atom candidates before the
-full creative style kit is built.
+Current implementation note: the assessment-first step is complete through
+editable atoms, evidence views, and scoped context export. The remaining wedge
+work begins with generation-guidance authoring, persisted pilot provenance, and
+consented writing/preference inputs before visual expansion.
 
 ## Why This Wedge
 

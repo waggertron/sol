@@ -59,6 +59,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--instrument", required=True, help="Path to instrument JSON.")
     parser.add_argument("--responses", required=True, help="Path to responses JSON.")
     parser.add_argument("--started-at", required=True)
+    parser.add_argument("--consent-at", help="Consent timestamp; defaults to --started-at for local fixtures.")
     parser.add_argument("--completed-at", required=True)
     parser.add_argument("--user-id")
     parser.add_argument(
@@ -72,7 +73,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    create_session(args.session_id, args.instrument, args.started_at, args.user_id)
+    create_session(args.session_id, args.instrument, args.started_at, args.consent_at or args.started_at, args.user_id)
     save_responses(args.session_id, args.responses, merge=True)
     session = score_session(args.session_id, args.completed_at)
 

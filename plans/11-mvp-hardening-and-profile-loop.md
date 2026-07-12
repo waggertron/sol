@@ -211,7 +211,7 @@ are satisfied.
 
 ## Latest Validation Evidence
 
-- `./scripts/run_assessment_web_mvp_qa.sh`: 15 tests pass on Python 3.14.6;
+- `./scripts/run_assessment_web_mvp_qa.sh`: 20 tests pass on Python 3.14.6;
   tracked `jsondb/assessment_sessions.json` remains unchanged.
 - The same QA command cannot bind its isolated localhost server inside the
   Codex managed sandbox (`PermissionError: [Errno 1]`), but passes unchanged in
@@ -220,3 +220,17 @@ are satisfied.
 - `./scripts/run_assessment_web_mvp_visual_qa.sh`: desktop and mobile Administer
   and Workbench captures pass against an isolated temporary session DB; manual
   inspection confirms the collapsed atom editor remains usable at both widths.
+
+## 2026-07-12 Integrity Audit Follow-Up
+
+- [x] Restore item-count confidence fallback logic and add boundary tests.
+- [x] Validate response item IDs and response-scale values at the shared store.
+- [x] Prevent reviewed atoms from being overwritten by rescoring.
+- [x] Serialize local mutations and atomically replace JSONDB files.
+- [x] Persist consent and exact instrument/scoring provenance for new sessions.
+- [x] Enforce lifecycle state/scope/feedback invariants.
+- [x] Add separate response/atom deletion with feedback-reference cleanup.
+- [x] Refresh current corpus counts and document the integrity decision.
+
+The full plan/progress audit lives at
+`docs/audits/2026-07-12-initial-plan-progress-audit.md`.

@@ -35,7 +35,7 @@ class GenerationPilotTests(unittest.TestCase):
         responses = store.parse_responses(TIPI_RESPONSES)
         self.assertEqual(len(responses), 10)
         self.assertTrue(all(1 <= value <= 7 for value in responses.values()))
-        store.create_session("pilot_tipi", TIPI_PATH.as_posix(), "2026-07-11T01:00:00Z")
+        store.create_session("pilot_tipi", TIPI_PATH.as_posix(), "2026-07-11T01:00:00Z", "2026-07-11T01:00:00Z")
         store.save_response_map("pilot_tipi", responses, merge=False)
         store.score_session("pilot_tipi", "2026-07-11T01:05:00Z")
         store.review_atom(
@@ -123,16 +123,14 @@ class GenerationPilotTests(unittest.TestCase):
 
     def test_active_but_unconfirmed_atom_is_not_generation_eligible(self) -> None:
         responses = store.parse_responses(TIPI_RESPONSES)
-        store.create_session("unconfirmed_active", TIPI_PATH.as_posix(), "2026-07-11T02:00:00Z")
+        store.create_session("unconfirmed_active", TIPI_PATH.as_posix(), "2026-07-11T02:00:00Z", "2026-07-11T02:00:00Z")
         store.save_response_map("unconfirmed_active", responses, merge=False)
         store.score_session("unconfirmed_active", "2026-07-11T02:05:00Z")
-        store.review_atom(
-            "unconfirmed_active",
-            "assessment.tipi.tipi_extraversion.v0",
-            "2026-07-11T02:06:00Z",
-            state="active_atom",
-            activation_scope="contextual",
-        )
+        data = store.load_sessions()
+        legacy_atom = store.find_atom(data["sessions"][0], "assessment.tipi.tipi_extraversion.v0")
+        legacy_atom["state"] = "active_atom"
+        legacy_atom["activation_scope"] = "contextual"
+        store.save_sessions(data)
         packet = store.build_profile_context("2026-07-11T02:07:00Z")
         self.assertEqual(packet["atom_count"], 0)
         self.assertIn("confirmed/edited", packet["selection_policy"]["default"])

@@ -143,6 +143,10 @@ Output:
 
 ## Immediate Next Steps
 
-1. Review the prompt and feedback contract before enabling any external model
-   call.
-2. Continue OCEAN research imports and license-review queue expansion.
+1. Add user-reviewed generation-guidance authoring and persisted pilot-run
+   provenance.
+2. Operationalize “feels like me,” usefulness, and generic-baseline evaluation.
+3. Return to the original wedge with consented writing samples and direct style
+   preferences before adding visual inputs.
+4. Continue selective OCEAN research and license-review work where it directly
+   supports those product steps.
