@@ -56,7 +56,11 @@ The local assessment MVP supports:
 - structured generation feedback linked to inspectable mapping notes;
 - serialized and atomic local JSONDB mutation for the single-process MVP.
 
-The current automated suite has 23 tests, plus rendered desktop/mobile QA for
+The Creative Style Kit contract foundation now also includes five versioned
+record schemas, a cross-linked example bundle, an offline validator, and an ADR
+covering ownership, consent, retention, deletion, and local/mock boundaries.
+
+The current automated suite has 30 tests, plus rendered desktop/mobile QA for
 the Administer and Workbench views.
 
 ## What Is Not Complete
@@ -119,7 +123,7 @@ As of 2026-07-12:
 | Import queue records | 3,386 |
 | Imported queue records | 3,089 |
 | Pending paper references | 283, all title-only |
-| Automated tests | 23 |
+| Automated tests | 30 |
 
 See [`docs/current-state.md`](docs/current-state.md) for the maintained handoff
 and [`docs/audits/2026-07-12-initial-plan-progress-audit.md`](docs/audits/2026-07-12-initial-plan-progress-audit.md)
@@ -170,13 +174,13 @@ The active product roadmap is
 
 Current order:
 
-1. Define source, observation, guidance, pilot-run, and evaluation contracts.
-2. Add user-reviewed guidance, persisted runs, and dry-run/`mock://` provider
-   behavior.
-3. Add explicitly consented writing samples and direct style calibration.
-4. Close the local source-to-profile-to-artifact-to-feedback loop and compare it
+1. Implement the contract-backed local repository with atomic, validated writes.
+2. Add user-reviewed guidance lifecycle, then persisted dry-run/`mock://` runs.
+3. Bind blinded evaluations to the exact run and guidance used.
+4. Add explicitly consented writing samples and direct style calibration.
+5. Close the local source-to-profile-to-artifact-to-feedback loop and compare it
    against a generic baseline.
-5. Consider a real model provider, visual inputs, or platform extraction only
+6. Consider a real model provider, visual inputs, or platform extraction only
    after their safety and product-value gates pass.
 
 Independent expert/cognitive review of the experimental Sol OCEAN candidate is
@@ -188,6 +192,7 @@ Detailed ledgers:
 - [`plans/12-post-audit-roadmap.md`](plans/12-post-audit-roadmap.md)
 - [`plans/13-sol-ocean-experimental-assessment.md`](plans/13-sol-ocean-experimental-assessment.md)
 - [`plans/14-personal-creative-style-kit-roadmap.md`](plans/14-personal-creative-style-kit-roadmap.md)
+- [`plans/15-style-kit-validated-execution.md`](plans/15-style-kit-validated-execution.md)
 
 ## Safety Boundaries
 
@@ -249,4 +254,5 @@ updates, and ADRs where appropriate.
 - [`kb/model/profile_atom_schema_v0.md`](kb/model/profile_atom_schema_v0.md)
 - [`docs/architecture/assessments/web-mvp.md`](docs/architecture/assessments/web-mvp.md)
 - [`docs/architecture/assessments/sol-ocean-experimental.md`](docs/architecture/assessments/sol-ocean-experimental.md)
+- [`docs/adr/2026-07-12-style-kit-record-contracts.md`](docs/adr/2026-07-12-style-kit-record-contracts.md)
 - [`docs/architecture/rag/research-promotion-workflow.md`](docs/architecture/rag/research-promotion-workflow.md)

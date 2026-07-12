@@ -128,6 +128,14 @@ Reference-only or license-review instruments are tracked in:
 - A repo-local `sol-experimental-assessment-workflow` skill now preserves the
   blueprint-first, manifest-excluded, validation-gated process for future
   original assessment work.
+- Creative Style Kit Phase 0 now defines independent, versioned source,
+  observation, generation-guidance, pilot-run, and evaluation-event contracts.
+  The offline validator checks JSON Schema shape plus ownership, provenance,
+  hashes, references, deletion state, generation eligibility, and external-mode
+  exclusion. No new product data is persisted yet.
+- Optional operator/development dependencies are declared in
+  `requirements-dev.txt`; production assessment and RAG paths remain standard
+  library based.
 
 Current queue ingestion support:
 
@@ -173,8 +181,8 @@ The assessment-first foundation now proves administration, evidence,
 correction, lifecycle controls, and scoped context export. The next product
 proof returns to the Personal Creative Style Kit itself:
 
-1. Define consented source, observation, guidance, pilot-run, and evaluation
-   contracts.
+1. Persist the defined source, observation, guidance, pilot-run, and evaluation
+   contracts through an isolated, atomic local repository.
 2. Add user-reviewed contextual generation guidance and persisted local/mock
    pilot runs.
 3. Ingest authorized writing samples and direct style preferences as the
@@ -226,8 +234,11 @@ Then open `http://127.0.0.1:8765`.
 - Scoped profile context export is complete.
 - The first low-risk local generation dry run exists, but persisted run
   provenance and user-authored guidance remain open.
-- The next active slice is Phase 0 and Phase 1 of
-  `plans/14-personal-creative-style-kit-roadmap.md`.
+- Creative Style Kit Phase 0 contracts are complete and validated by the
+  30-test suite.
+- The next active slice is Increment 1 in
+  `plans/15-style-kit-validated-execution.md`: contract-backed local persistence
+  only, before guidance, providers, routes, or UI.
 - Model-backed execution remains deferred until after the local closed loop and
   product-evaluation gate.
 - Experimental Sol OCEAN follow-up is limited to expert/cognitive review and a

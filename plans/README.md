@@ -28,3 +28,5 @@ Start here:
   for the original Sol OCEAN assessment candidate
 - `14-personal-creative-style-kit-roadmap.md` - current product roadmap from
   consented writing evidence through a local evaluation loop and later gates
+- `15-style-kit-validated-execution.md` - small implementation increments with
+  explicit acceptance behavior and validation commands

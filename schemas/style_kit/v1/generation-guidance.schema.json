@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sol.local/schemas/style-kit/v1/generation-guidance.schema.json",
+  "title": "Sol Creative Style Kit Generation Guidance v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "owner_id",
+    "consent_refs",
+    "source_refs",
+    "observation_refs",
+    "profile_atom_refs",
+    "original_instruction",
+    "instruction",
+    "prompt_safe_instruction",
+    "contexts",
+    "task_scopes",
+    "user_state",
+    "contraindications",
+    "review_history",
+    "provenance",
+    "record_state",
+    "export_state",
+    "created_at",
+    "updated_at",
+    "deleted_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "sol.style-kit.generation-guidance.v1"},
+    "id": {"type": "string", "pattern": "^guide_[a-z0-9][a-z0-9._-]{2,193}$"},
+    "owner_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{2,199}$"},
+    "consent_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^consent_[a-z0-9][a-z0-9._-]{2,191}$"}
+    },
+    "source_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^src_[a-z0-9][a-z0-9._-]{2,195}$"}
+    },
+    "observation_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^obs_[a-z0-9][a-z0-9._-]{2,195}$"}
+    },
+    "profile_atom_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 200}
+    },
+    "original_instruction": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "instruction": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "prompt_safe_instruction": {"type": "string", "minLength": 1, "maxLength": 1000},
+    "contexts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": ["general", "professional", "public", "reflective", "creative"]}
+    },
+    "task_scopes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": ["writing_guide", "professional_bio", "project_description", "introduction"]}
+    },
+    "user_state": {"enum": ["proposed", "confirmed", "edited", "disabled"]},
+    "contraindications": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 500}
+    },
+    "review_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["reviewed_at", "reviewed_by", "changes"],
+        "properties": {
+          "reviewed_at": {"type": "string", "format": "date-time"},
+          "reviewed_by": {"const": "user"},
+          "changes": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["field", "from", "to"],
+              "properties": {
+                "field": {"enum": ["instruction", "contexts", "task_scopes", "user_state", "contraindications"]},
+                "from": {},
+                "to": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created_by", "guidance_version"],
+      "properties": {
+        "created_by": {"enum": ["user", "deterministic_mapping"]},
+        "guidance_version": {"type": "integer", "minimum": 1}
+      }
+    },
+    "record_state": {"enum": ["active", "deleted"]},
+    "export_state": {"enum": ["exportable", "deleted"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "deleted_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}

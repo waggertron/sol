@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sol.local/schemas/style-kit/v1/source.schema.json",
+  "title": "Sol Creative Style Kit Source v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "owner_id",
+    "source_type",
+    "title",
+    "contexts",
+    "content",
+    "content_sha256",
+    "authorship",
+    "third_party_content",
+    "consent",
+    "provenance",
+    "record_state",
+    "export_state",
+    "created_at",
+    "updated_at",
+    "deleted_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "sol.style-kit.source.v1"},
+    "id": {"type": "string", "pattern": "^src_[a-z0-9][a-z0-9._-]{2,195}$"},
+    "owner_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{2,199}$"},
+    "source_type": {
+      "enum": ["writing_sample", "liked_example", "disliked_example", "direct_preference"]
+    },
+    "title": {"type": "string", "minLength": 1, "maxLength": 200},
+    "contexts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": ["general", "professional", "public", "reflective", "creative"]}
+    },
+    "content": {"type": ["string", "null"], "maxLength": 50000},
+    "content_sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "authorship": {"const": "self_authored"},
+    "third_party_content": {"enum": ["none", "redacted"]},
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "consent_id",
+        "consent_version",
+        "granted_at",
+        "allowed_uses",
+        "retention_mode",
+        "external_provider_allowed"
+      ],
+      "properties": {
+        "consent_id": {"type": "string", "pattern": "^consent_[a-z0-9][a-z0-9._-]{2,191}$"},
+        "consent_version": {"const": "style-kit-source-consent-v1"},
+        "granted_at": {"type": "string", "format": "date-time"},
+        "allowed_uses": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["profile_observation", "style_guidance", "local_generation", "product_evaluation"]
+          }
+        },
+        "retention_mode": {"const": "local_until_deleted"},
+        "external_provider_allowed": {"const": false}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capture_method", "created_by", "source_version"],
+      "properties": {
+        "capture_method": {"enum": ["pasted_text", "direct_entry"]},
+        "created_by": {"const": "user"},
+        "source_version": {"type": "integer", "minimum": 1}
+      }
+    },
+    "record_state": {"enum": ["active", "deleted"]},
+    "export_state": {"enum": ["exportable", "deleted"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "deleted_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sol.local/schemas/style-kit/v1/observation.schema.json",
+  "title": "Sol Creative Style Kit Observation v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "owner_id",
+    "source_id",
+    "consent_ref",
+    "observation_type",
+    "description",
+    "method",
+    "evidence",
+    "value",
+    "contexts",
+    "confidence",
+    "counterevidence",
+    "permitted_inference_level",
+    "sensitivity_level",
+    "review_state",
+    "provenance",
+    "record_state",
+    "export_state",
+    "created_at",
+    "updated_at",
+    "deleted_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "sol.style-kit.observation.v1"},
+    "id": {"type": "string", "pattern": "^obs_[a-z0-9][a-z0-9._-]{2,195}$"},
+    "owner_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{2,199}$"},
+    "source_id": {"type": "string", "pattern": "^src_[a-z0-9][a-z0-9._-]{2,195}$"},
+    "consent_ref": {"type": "string", "pattern": "^consent_[a-z0-9][a-z0-9._-]{2,191}$"},
+    "observation_type": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{2,99}$"
+    },
+    "description": {"type": "string", "minLength": 1, "maxLength": 500},
+    "method": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version", "kind"],
+      "properties": {
+        "name": {"type": "string", "pattern": "^[a-z][a-z0-9_]{2,99}$"},
+        "version": {"type": "integer", "minimum": 1},
+        "kind": {"enum": ["deterministic", "direct_user_report"]}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["excerpt", "character_start", "character_end"],
+      "properties": {
+        "excerpt": {"type": ["string", "null"], "maxLength": 1000},
+        "character_start": {"type": ["integer", "null"], "minimum": 0},
+        "character_end": {"type": ["integer", "null"], "minimum": 0}
+      }
+    },
+    "value": {
+      "oneOf": [
+        {"type": "string", "maxLength": 500},
+        {"type": "number"},
+        {"type": "boolean"}
+      ]
+    },
+    "contexts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": ["general", "professional", "public", "reflective", "creative"]}
+    },
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "counterevidence": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1, "maxLength": 500}
+    },
+    "permitted_inference_level": {
+      "enum": ["localized_style_observation", "direct_style_preference"]
+    },
+    "sensitivity_level": {"enum": ["low", "medium", "high", "blocked"]},
+    "review_state": {"enum": ["proposed", "confirmed", "rejected", "invalidated"]},
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["extractor_version", "derived_at"],
+      "properties": {
+        "extractor_version": {"type": "string", "minLength": 1, "maxLength": 100},
+        "derived_at": {"type": "string", "format": "date-time"}
+      }
+    },
+    "record_state": {"enum": ["active", "deleted"]},
+    "export_state": {"enum": ["exportable", "deleted"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "deleted_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}

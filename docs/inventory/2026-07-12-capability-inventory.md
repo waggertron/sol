@@ -26,6 +26,7 @@ Capability maturity:
 | Consent/data control | Working local MVP boundary | Persisted session consent, fingerprints, selective deletion; not source-level or multi-user |
 | Generation | Early contract prototype | Eligible-context packet and model-free prompt dry run only |
 | Evaluation | Minimal | Categorical feedback events; no baseline comparison or reporting |
+| Creative Style Kit contracts | Validated foundation | Five versioned record schemas, cross-record validator, local/mock ADR |
 | Creative Style Kit inputs | Not implemented | No writing samples, examples, preferences, or moodboards |
 | Original Sol assessment | Experimental design review | 30-item inactive candidate; no expert or empirical validation |
 | Production platform | Not implemented | No auth, multi-user DB, deployment, provider operations, or observability |
@@ -42,8 +43,9 @@ Capability maturity:
 - Tests: approximately 124 KB.
 - Main implementation style: Python standard library backend/CLIs plus plain
   HTML, CSS, and browser JavaScript.
-- Operator-only exception: `tools/import_ocean_assessments.py` requires
-  `beautifulsoup4`; the repository has no dependency manifest.
+- Optional operator/development dependencies are declared in
+  `requirements-dev.txt`; the main assessment and RAG runtime remains standard
+  library based.
 
 ## Product And UX Inventory
 
@@ -283,9 +285,9 @@ downloaded official assessment HTML and requires `beautifulsoup4`.
 
 ## Documentation And Decision Inventory
 
-- 15 numbered product/research plan documents (`00` through `14`).
-- Five ADRs for RAG, queueing, profile lifecycle, scoped context, and session
-  integrity.
+- 16 numbered product/research plan documents (`00` through `15`).
+- Six ADRs for RAG, queueing, profile lifecycle, scoped context, session
+  integrity, and Creative Style Kit record ownership.
 - Assessment architecture documents for acquisition, scoring, storage, web,
   evidence, context export, generation, and experimental candidates.
 - Research-promotion and RAG-structure documents.
@@ -314,7 +316,7 @@ Guidance files:
 
 ### Automated
 
-23 unittest cases cover:
+30 unittest cases cover:
 
 - session lifecycle and isolated JSONDB behavior;
 - consent/instrument provenance;
@@ -325,7 +327,9 @@ Guidance files:
 - static UI contracts and responsive CSS guards;
 - scoped context filtering;
 - model-free generation safety and feedback;
-- experimental candidate structure, collision, manifest, and activation guards.
+- experimental candidate structure, collision, manifest, and activation guards;
+- Creative Style Kit schemas, ownership, references, guidance eligibility,
+  deletion redaction, and external-provider rejection.
 
 ### Rendered
 
@@ -365,10 +369,10 @@ shape. They are historical examples, not canonical current-schema golden files.
 5. Pilot-run provenance is absent.
 6. Evaluation events/reporting are incomplete.
 7. JSONDB is intentionally single-process/local.
-8. No dependency manifest records the HTML importer's `beautifulsoup4` need.
-9. Historical sample artifacts are behind the current session schema.
-10. Research volume substantially exceeds reviewed-card coverage.
-11. Experimental assessment work is externally blocked on qualified review and
+8. Historical assessment artifacts remain intentionally labeled examples of an
+   earlier schema rather than current golden fixtures.
+9. Research volume substantially exceeds reviewed-card coverage.
+10. Experimental assessment work is externally blocked on qualified review and
     participant evidence.
 
 ## Honest Capability Statement

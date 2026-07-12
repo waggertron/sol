@@ -267,17 +267,19 @@ variants. Automated tests must never require credentials or network access.
 
 Goal: remove ambiguity before adding user data or generation.
 
+Status: complete. Contract validation and the full 30-test regression suite pass.
+
 Tasks:
 
-- [ ] Confirm the first audience and artifact: creator/professional writing,
-  style guide plus short bio/project description.
-- [ ] Write an ADR for source/observation/guidance/pilot/evaluation ownership.
-- [ ] Define machine-readable schemas and versioning for new records.
-- [ ] Add a declared development dependency path for `beautifulsoup4` or isolate
+- [x] Confirm the first audience and artifact: independent creators and
+  knowledge workers, style guide plus a 150-300 word project description.
+- [x] Write an ADR for source/observation/guidance/pilot/evaluation ownership.
+- [x] Define machine-readable schemas and versioning for new records.
+- [x] Add a declared development dependency path for `beautifulsoup4` or isolate
   the acquisition helper more explicitly.
-- [ ] Refresh tracked sample sessions/artifacts to current schema or label them
-  permanently historical.
-- [ ] Define retention defaults and third-party-content handling.
+- [x] Refresh tracked sample sessions/artifacts to current schema or label them
+  permanently historical; the inventory labels them historical examples.
+- [x] Define retention defaults and third-party-content handling.
 
 Acceptance:
 
@@ -521,14 +523,18 @@ This is not on the current critical path.
 
 ## Product Decisions To Make
 
+### Decided for the first local slice
+
+- audience: independent creators and knowledge workers;
+- first short artifact: a 150-300 word project description;
+- companion artifact: a writing/communication style guide;
+- source retention: local until explicit deletion;
+- source permission: self-authored writing only in v1.
+
 ### Decide before Phase 1 completion
 
-- first persona: independent creator, knowledge worker, or professional brand
-  builder;
-- first short artifact: bio, project description, or introduction;
-- source retention default: stored locally vs ephemeral plus derived evidence;
-- whether users may upload only their own writing in v1;
-- style guidance granularity and supported contexts.
+- style guidance granularity and supported contexts beyond the initial
+  professional/project-description path.
 
 ### Decide at the Phase 5 gate
 
@@ -542,16 +548,20 @@ This is not on the current critical path.
 
 Recommended next implementation sequence:
 
-1. Write the new data-contract ADR and JSON schema drafts.
-2. Add guidance authoring to the existing workbench.
-3. Persist pilot runs and bind feedback to them.
-4. Add output validation plus dry-run/mock provider interface.
-5. Build Guidance and Run History UI.
-6. Add pasted writing-source consent/storage/deletion.
+1. Implement the completed contracts behind an isolated, atomic local
+   repository.
+2. Add guidance lifecycle without routes or UI.
+3. Add persisted dry-run/mock runs and bounded output validation.
+4. Bind evaluation events to exact completed runs and used guidance.
+5. Build Guidance, Run History, and blinded comparison UI.
+6. Add pasted writing-source consent/storage/cascading deletion.
 7. Add deterministic writing observations.
 8. Add direct style calibration.
 9. Close the local mock artifact/evaluation loop.
 10. Run the product-value gate before any real model or visual work.
+
+The acceptance behavior and validation command for each increment live in
+`plans/15-style-kit-validated-execution.md`.
 
 ## Definition Of Done For Product Goal v1
 
@@ -577,3 +587,4 @@ Recommended next implementation sequence:
 - Add new research to product behavior only through reviewed promotion.
 - Keep experimental-assessment work in `plans/13` and off the product critical
   path until external review/validation evidence exists.
+- Execute implementation through the small validation gates in `plans/15`.

@@ -1,0 +1,190 @@
+{
+  "bundle_version": "sol.style-kit.contract-bundle.v1",
+  "sources": [
+    {
+      "schema_version": "sol.style-kit.source.v1",
+      "id": "src_sample_v1",
+      "owner_id": "local_user",
+      "source_type": "writing_sample",
+      "title": "Self-authored project sentence",
+      "contexts": ["professional"],
+      "content": "I build careful tools that make complex work easier to understand.",
+      "content_sha256": "bc1ee2f48ccc31fc501ea434c5d429e0cc4193152e4fd087cfe1063e5ebb11aa",
+      "authorship": "self_authored",
+      "third_party_content": "none",
+      "consent": {
+        "consent_id": "consent_sample_v1",
+        "consent_version": "style-kit-source-consent-v1",
+        "granted_at": "2026-07-12T18:00:00Z",
+        "allowed_uses": [
+          "profile_observation",
+          "style_guidance",
+          "local_generation",
+          "product_evaluation"
+        ],
+        "retention_mode": "local_until_deleted",
+        "external_provider_allowed": false
+      },
+      "provenance": {
+        "capture_method": "pasted_text",
+        "created_by": "user",
+        "source_version": 1
+      },
+      "record_state": "active",
+      "export_state": "exportable",
+      "created_at": "2026-07-12T18:00:00Z",
+      "updated_at": "2026-07-12T18:00:00Z",
+      "deleted_at": null
+    }
+  ],
+  "observations": [
+    {
+      "schema_version": "sol.style-kit.observation.v1",
+      "id": "obs_sentence_length_v1",
+      "owner_id": "local_user",
+      "source_id": "src_sample_v1",
+      "consent_ref": "consent_sample_v1",
+      "observation_type": "sentence_length_words",
+      "description": "This sample uses one 11-word sentence.",
+      "method": {
+        "name": "sentence_length_counter",
+        "version": 1,
+        "kind": "deterministic"
+      },
+      "evidence": {
+        "excerpt": "I build careful tools that make complex work easier to understand.",
+        "character_start": 0,
+        "character_end": 66
+      },
+      "value": 11,
+      "contexts": ["professional"],
+      "confidence": 1.0,
+      "counterevidence": [],
+      "permitted_inference_level": "localized_style_observation",
+      "sensitivity_level": "low",
+      "review_state": "confirmed",
+      "provenance": {
+        "extractor_version": "sentence_length_counter.v1",
+        "derived_at": "2026-07-12T18:01:00Z"
+      },
+      "record_state": "active",
+      "export_state": "exportable",
+      "created_at": "2026-07-12T18:01:00Z",
+      "updated_at": "2026-07-12T18:02:00Z",
+      "deleted_at": null
+    }
+  ],
+  "generation_guidance": [
+    {
+      "schema_version": "sol.style-kit.generation-guidance.v1",
+      "id": "guide_concise_v1",
+      "owner_id": "local_user",
+      "consent_refs": ["consent_sample_v1"],
+      "source_refs": ["src_sample_v1"],
+      "observation_refs": ["obs_sentence_length_v1"],
+      "profile_atom_refs": [],
+      "original_instruction": "Use concise sentences, concrete examples, and a clear next step.",
+      "instruction": "Use concise sentences, concrete examples, and a clear next step.",
+      "prompt_safe_instruction": "Use concise sentences, concrete examples, and a clear next step.",
+      "contexts": ["professional"],
+      "task_scopes": ["project_description"],
+      "user_state": "confirmed",
+      "contraindications": ["Do not assume this preference applies to reflective writing."],
+      "review_history": [
+        {
+          "reviewed_at": "2026-07-12T18:03:00Z",
+          "reviewed_by": "user",
+          "changes": [
+            {"field": "user_state", "from": "proposed", "to": "confirmed"}
+          ]
+        }
+      ],
+      "provenance": {
+        "created_by": "deterministic_mapping",
+        "guidance_version": 1
+      },
+      "record_state": "active",
+      "export_state": "exportable",
+      "created_at": "2026-07-12T18:02:00Z",
+      "updated_at": "2026-07-12T18:03:00Z",
+      "deleted_at": null
+    }
+  ],
+  "pilot_runs": [
+    {
+      "schema_version": "sol.style-kit.pilot-run.v1",
+      "id": "run_sample_v1",
+      "owner_id": "local_user",
+      "consent_refs": ["consent_sample_v1"],
+      "source_refs": ["src_sample_v1"],
+      "mode": "mock",
+      "provider": {
+        "uri": "mock://style-kit-v1",
+        "provider_version": "1",
+        "model": null
+      },
+      "external_provider_consent": false,
+      "prompt_contract_version": 1,
+      "context_sha256": "bf93368cc36565316ef0979125bdaa2104b5cc764266c6a837c5635d024ca4b6",
+      "artifact_type": "project_description",
+      "task_input": "Write a short project description.",
+      "variants": [
+        {
+          "variant_id": "variant_generic_v1",
+          "kind": "generic",
+          "guidance_refs": [],
+          "profile_atom_refs": [],
+          "output": "Write with a clear purpose, one concrete example, and a specific next step.",
+          "output_sha256": "f658c024762375bb11ab8e6a40c0a6b1daf4ff1d46b0945aeaf7425676d3e688",
+          "validation": {"status": "passed", "validator_version": 1, "errors": []}
+        },
+        {
+          "variant_id": "variant_personalized_v1",
+          "kind": "personalized",
+          "guidance_refs": ["guide_concise_v1"],
+          "profile_atom_refs": [],
+          "output": "This project turns complicated workflows into clear, practical tools people can inspect and improve.",
+          "output_sha256": "e000a6222272027b7e086966f87dd486c578c7545a624a4bf68579102805a344",
+          "validation": {"status": "passed", "validator_version": 1, "errors": []}
+        }
+      ],
+      "status": "completed",
+      "provenance": {
+        "created_by": "local_test",
+        "application_version": "style-kit-contract-v1"
+      },
+      "record_state": "active",
+      "export_state": "exportable",
+      "created_at": "2026-07-12T18:04:00Z",
+      "updated_at": "2026-07-12T18:04:01Z",
+      "completed_at": "2026-07-12T18:04:01Z",
+      "deleted_at": null
+    }
+  ],
+  "evaluation_events": [
+    {
+      "schema_version": "sol.style-kit.evaluation-event.v1",
+      "id": "eval_sample_v1",
+      "owner_id": "local_user",
+      "consent_refs": ["consent_sample_v1"],
+      "run_id": "run_sample_v1",
+      "was_blinded": true,
+      "choice": "personalized",
+      "feels_like_me": 4,
+      "usefulness": 4,
+      "labels": ["useful"],
+      "correction": null,
+      "affected_guidance_refs": ["guide_concise_v1"],
+      "provenance": {
+        "recorded_by": "user",
+        "evaluation_contract_version": 1,
+        "revealed_after_choice": true
+      },
+      "record_state": "active",
+      "export_state": "exportable",
+      "created_at": "2026-07-12T18:05:00Z",
+      "updated_at": "2026-07-12T18:05:00Z",
+      "deleted_at": null
+    }
+  ]
+}

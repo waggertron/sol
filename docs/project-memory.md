@@ -138,6 +138,12 @@ a direct global generation control.
   writing-evidence and direct-preference loop locally, compare personalized and
   generic outputs, and keep real-model, visual, and platform expansion behind
   explicit evidence and safety gates.
+- Creative Style Kit Phase 0 is fixed by
+  `docs/adr/2026-07-12-style-kit-record-contracts.md` and the five schemas below
+  `schemas/style_kit/v1/`. The v1 policy is self-authored writing only,
+  local-until-deleted retention, independent cross-linked records, and no
+  external provider. `plans/15-style-kit-validated-execution.md` is the active
+  small-increment ledger; the next step is contract-backed local persistence.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -190,7 +196,8 @@ The latest snapshot is maintained in `docs/current-state.md`.
 The assessment administration foundation is complete enough for the next
 product proof. Build the Creative Style Kit text loop in this order:
 
-1. Define source, observation, guidance, pilot-run, and evaluation contracts.
+1. Persist the defined source, observation, guidance, pilot-run, and evaluation
+   contracts through an isolated, atomic local repository.
 2. Add user-reviewed guidance and persisted runs behind dry-run and deterministic
    `mock://` providers.
 3. Add consented writing samples and direct style calibration.

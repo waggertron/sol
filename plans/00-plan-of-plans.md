@@ -146,11 +146,12 @@ Output:
 
 ## Immediate Next Steps
 
-1. Define the source, observation, guidance, pilot-run, and evaluation contracts.
-2. Add user-reviewed generation-guidance authoring, persisted pilot runs, and a
-   deterministic local/mock provider boundary.
-3. Add consented writing samples and direct style calibration as the primary
-   product evidence.
+1. Persist the completed source, observation, guidance, pilot-run, and
+   evaluation contracts through an isolated, atomic local repository.
+2. Add user-reviewed generation-guidance lifecycle, persisted pilot runs, and a
+   deterministic local/mock provider boundary in separate validated increments.
+3. Bind evaluation to the exact run before adding consented writing samples and
+   direct style calibration as the primary product evidence.
 4. Close the source-to-profile-to-artifact-to-feedback loop locally, then test
    it against a generic baseline before approving a real model provider.
 5. Keep experimental OCEAN review as a parallel validation track rather than a
@@ -159,5 +160,6 @@ Output:
 Execution ledgers:
 
 - `14-personal-creative-style-kit-roadmap.md` (current product roadmap)
+- `15-style-kit-validated-execution.md` (current validated implementation ledger)
 - `12-post-audit-roadmap.md`
 - `13-sol-ocean-experimental-assessment.md` (parallel validation track)

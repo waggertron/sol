@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sol.local/schemas/style-kit/v1/pilot-run.schema.json",
+  "title": "Sol Creative Style Kit Pilot Run v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "owner_id",
+    "consent_refs",
+    "source_refs",
+    "mode",
+    "provider",
+    "external_provider_consent",
+    "prompt_contract_version",
+    "context_sha256",
+    "artifact_type",
+    "task_input",
+    "variants",
+    "status",
+    "provenance",
+    "record_state",
+    "export_state",
+    "created_at",
+    "updated_at",
+    "completed_at",
+    "deleted_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "sol.style-kit.pilot-run.v1"},
+    "id": {"type": "string", "pattern": "^run_[a-z0-9][a-z0-9._-]{2,195}$"},
+    "owner_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{2,199}$"},
+    "consent_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^consent_[a-z0-9][a-z0-9._-]{2,191}$"}
+    },
+    "source_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^src_[a-z0-9][a-z0-9._-]{2,195}$"}
+    },
+    "mode": {"enum": ["dry_run", "mock", "external"]},
+    "provider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["uri", "provider_version", "model"],
+      "properties": {
+        "uri": {"type": "string", "minLength": 1, "maxLength": 500},
+        "provider_version": {"type": "string", "minLength": 1, "maxLength": 100},
+        "model": {"type": ["string", "null"], "maxLength": 200}
+      }
+    },
+    "external_provider_consent": {"type": "boolean"},
+    "prompt_contract_version": {"type": "integer", "minimum": 1},
+    "context_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "artifact_type": {
+      "enum": ["writing_guide", "professional_bio", "project_description", "introduction"]
+    },
+    "task_input": {"type": ["string", "null"], "maxLength": 10000},
+    "variants": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "variant_id",
+          "kind",
+          "guidance_refs",
+          "profile_atom_refs",
+          "output",
+          "output_sha256",
+          "validation"
+        ],
+        "properties": {
+          "variant_id": {"type": "string", "pattern": "^variant_[a-z0-9][a-z0-9._-]{2,191}$"},
+          "kind": {"enum": ["generic", "personalized"]},
+          "guidance_refs": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {"type": "string", "pattern": "^guide_[a-z0-9][a-z0-9._-]{2,193}$"}
+          },
+          "profile_atom_refs": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1, "maxLength": 200}
+          },
+          "output": {"type": ["string", "null"], "maxLength": 50000},
+          "output_sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+          "validation": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status", "validator_version", "errors"],
+            "properties": {
+              "status": {"enum": ["not_run", "passed", "failed"]},
+              "validator_version": {"type": "integer", "minimum": 1},
+              "errors": {
+                "type": "array",
+                "items": {"type": "string", "minLength": 1, "maxLength": 500}
+              }
+            }
+          }
+        }
+      }
+    },
+    "status": {"enum": ["created", "completed", "failed", "deleted"]},
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created_by", "application_version"],
+      "properties": {
+        "created_by": {"enum": ["user", "local_test"]},
+        "application_version": {"type": "string", "minLength": 1, "maxLength": 100}
+      }
+    },
+    "record_state": {"enum": ["active", "deleted"]},
+    "export_state": {"enum": ["exportable", "deleted"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "completed_at": {"type": ["string", "null"], "format": "date-time"},
+    "deleted_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}
