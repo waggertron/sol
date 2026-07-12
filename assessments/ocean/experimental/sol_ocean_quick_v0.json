@@ -1,0 +1,498 @@
+{
+  "administration_status": "experimental_design_review_only",
+  "construct_system": "Experimental Sol OCEAN candidate blueprint v0",
+  "design_provenance": {
+    "blueprint": "kb/assessments/sol_ocean_construct_blueprint_v0.md",
+    "created_date": "2026-07-12",
+    "item_origin": "Original project-authored candidate wording",
+    "review_status": "Requires independent psychometric and cognitive review"
+  },
+  "family": "OCEAN",
+  "id": "sol_ocean_quick_v0",
+  "items": [
+    {
+      "blueprint_ref": "openness.intellectual_curiosity",
+      "design_provenance": "project_authored_v0",
+      "domain": "openness",
+      "expected_failure_modes": ["education_loading", "abstract_wording"],
+      "id": "sol_ocean_quick_v0:openness:intellectual_curiosity:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 1,
+      "subconstruct": "intellectual_curiosity",
+      "text": "I enjoy exploring ideas that do not have an immediate practical use."
+    },
+    {
+      "blueprint_ref": "openness.intellectual_curiosity",
+      "design_provenance": "project_authored_v0",
+      "domain": "openness",
+      "expected_failure_modes": ["practicality_value_judgment", "abstract_wording"],
+      "id": "sol_ocean_quick_v0:openness:intellectual_curiosity:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 2,
+      "subconstruct": "intellectual_curiosity",
+      "text": "I usually avoid questions unless they have a clear practical answer."
+    },
+    {
+      "blueprint_ref": "openness.imaginative_exploration",
+      "design_provenance": "project_authored_v0",
+      "domain": "openness",
+      "expected_failure_modes": ["scenario_dependence", "ability_conflation"],
+      "id": "sol_ocean_quick_v0:openness:imaginative_exploration:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 3,
+      "subconstruct": "imaginative_exploration",
+      "text": "I like imagining several different ways a situation could unfold."
+    },
+    {
+      "blueprint_ref": "openness.imaginative_exploration",
+      "design_provenance": "project_authored_v0",
+      "domain": "openness",
+      "expected_failure_modes": ["conventionality_value_judgment", "ability_conflation"],
+      "id": "sol_ocean_quick_v0:openness:imaginative_exploration:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 4,
+      "subconstruct": "imaginative_exploration",
+      "text": "I rarely spend time inventing possibilities beyond what is already known."
+    },
+    {
+      "blueprint_ref": "openness.aesthetic_engagement",
+      "design_provenance": "project_authored_v0",
+      "domain": "openness",
+      "expected_failure_modes": ["culture_loading", "access_exposure"],
+      "id": "sol_ocean_quick_v0:openness:aesthetic_engagement:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 5,
+      "subconstruct": "aesthetic_engagement",
+      "text": "I notice and value details in art, design, music, or language."
+    },
+    {
+      "blueprint_ref": "openness.aesthetic_engagement",
+      "design_provenance": "project_authored_v0",
+      "domain": "openness",
+      "expected_failure_modes": ["culture_loading", "access_exposure"],
+      "id": "sol_ocean_quick_v0:openness:aesthetic_engagement:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 6,
+      "subconstruct": "aesthetic_engagement",
+      "text": "Artistic or design details seldom hold my attention."
+    },
+    {
+      "blueprint_ref": "conscientiousness.organization_structure",
+      "design_provenance": "project_authored_v0",
+      "domain": "conscientiousness",
+      "expected_failure_modes": ["task_context_loading", "capacity_conflation"],
+      "id": "sol_ocean_quick_v0:conscientiousness:organization_structure:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 7,
+      "subconstruct": "organization_structure",
+      "text": "I make a workable plan before starting tasks with several steps."
+    },
+    {
+      "blueprint_ref": "conscientiousness.organization_structure",
+      "design_provenance": "project_authored_v0",
+      "domain": "conscientiousness",
+      "expected_failure_modes": ["task_context_loading", "capacity_conflation"],
+      "id": "sol_ocean_quick_v0:conscientiousness:organization_structure:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 8,
+      "subconstruct": "organization_structure",
+      "text": "I tend to begin multi-step tasks without deciding how to organize them."
+    },
+    {
+      "blueprint_ref": "conscientiousness.follow_through",
+      "design_provenance": "project_authored_v0",
+      "domain": "conscientiousness",
+      "expected_failure_modes": ["social_desirability", "resource_constraint"],
+      "id": "sol_ocean_quick_v0:conscientiousness:follow_through:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 9,
+      "subconstruct": "follow_through",
+      "text": "When I commit to a manageable task, I usually carry it through."
+    },
+    {
+      "blueprint_ref": "conscientiousness.follow_through",
+      "design_provenance": "project_authored_v0",
+      "domain": "conscientiousness",
+      "expected_failure_modes": ["social_desirability", "resource_constraint"],
+      "id": "sol_ocean_quick_v0:conscientiousness:follow_through:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 10,
+      "subconstruct": "follow_through",
+      "text": "I often leave manageable commitments unfinished after the initial interest fades."
+    },
+    {
+      "blueprint_ref": "conscientiousness.deliberation",
+      "design_provenance": "project_authored_v0",
+      "domain": "conscientiousness",
+      "expected_failure_modes": ["decision_context_loading", "social_desirability"],
+      "id": "sol_ocean_quick_v0:conscientiousness:deliberation:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 11,
+      "subconstruct": "deliberation",
+      "text": "I pause to consider likely consequences before making an important choice."
+    },
+    {
+      "blueprint_ref": "conscientiousness.deliberation",
+      "design_provenance": "project_authored_v0",
+      "domain": "conscientiousness",
+      "expected_failure_modes": ["decision_context_loading", "social_desirability"],
+      "id": "sol_ocean_quick_v0:conscientiousness:deliberation:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 12,
+      "subconstruct": "deliberation",
+      "text": "I often make important choices before considering what may follow."
+    },
+    {
+      "blueprint_ref": "extraversion.social_energy",
+      "design_provenance": "project_authored_v0",
+      "domain": "extraversion",
+      "expected_failure_modes": ["social_context_loading", "accessibility_effect"],
+      "id": "sol_ocean_quick_v0:extraversion:social_energy:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 13,
+      "subconstruct": "social_energy",
+      "text": "Spending time with people I know well often increases my energy."
+    },
+    {
+      "blueprint_ref": "extraversion.social_energy",
+      "design_provenance": "project_authored_v0",
+      "domain": "extraversion",
+      "expected_failure_modes": ["social_context_loading", "current_fatigue"],
+      "id": "sol_ocean_quick_v0:extraversion:social_energy:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 14,
+      "subconstruct": "social_energy",
+      "text": "Even enjoyable time with familiar people usually drains my energy."
+    },
+    {
+      "blueprint_ref": "extraversion.expressive_engagement",
+      "design_provenance": "project_authored_v0",
+      "domain": "extraversion",
+      "expected_failure_modes": ["culture_loading", "masking_or_role_effect"],
+      "id": "sol_ocean_quick_v0:extraversion:expressive_engagement:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 15,
+      "subconstruct": "expressive_engagement",
+      "text": "In group conversations, I often show my interest openly."
+    },
+    {
+      "blueprint_ref": "extraversion.expressive_engagement",
+      "design_provenance": "project_authored_v0",
+      "domain": "extraversion",
+      "expected_failure_modes": ["culture_loading", "masking_or_role_effect"],
+      "id": "sol_ocean_quick_v0:extraversion:expressive_engagement:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 16,
+      "subconstruct": "expressive_engagement",
+      "text": "In group conversations, I usually keep my reactions to myself."
+    },
+    {
+      "blueprint_ref": "extraversion.assertive_participation",
+      "design_provenance": "project_authored_v0",
+      "domain": "extraversion",
+      "expected_failure_modes": ["confidence_conflation", "power_context"],
+      "id": "sol_ocean_quick_v0:extraversion:assertive_participation:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 17,
+      "subconstruct": "assertive_participation",
+      "text": "When a group needs input, I am comfortable offering my view."
+    },
+    {
+      "blueprint_ref": "extraversion.assertive_participation",
+      "design_provenance": "project_authored_v0",
+      "domain": "extraversion",
+      "expected_failure_modes": ["confidence_conflation", "power_context"],
+      "id": "sol_ocean_quick_v0:extraversion:assertive_participation:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 18,
+      "subconstruct": "assertive_participation",
+      "text": "I tend to hold back my view even when a group asks for input."
+    },
+    {
+      "blueprint_ref": "agreeableness.perspective_taking",
+      "design_provenance": "project_authored_v0",
+      "domain": "agreeableness",
+      "expected_failure_modes": ["social_desirability", "ability_conflation"],
+      "id": "sol_ocean_quick_v0:agreeableness:perspective_taking:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 19,
+      "subconstruct": "perspective_taking",
+      "text": "I try to understand another person's perspective before responding."
+    },
+    {
+      "blueprint_ref": "agreeableness.perspective_taking",
+      "design_provenance": "project_authored_v0",
+      "domain": "agreeableness",
+      "expected_failure_modes": ["social_desirability", "ability_conflation"],
+      "id": "sol_ocean_quick_v0:agreeableness:perspective_taking:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 20,
+      "subconstruct": "perspective_taking",
+      "text": "I rarely consider how a situation may look from another person's side."
+    },
+    {
+      "blueprint_ref": "agreeableness.cooperative_orientation",
+      "design_provenance": "project_authored_v0",
+      "domain": "agreeableness",
+      "expected_failure_modes": ["social_desirability", "conflict_context"],
+      "id": "sol_ocean_quick_v0:agreeableness:cooperative_orientation:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 21,
+      "subconstruct": "cooperative_orientation",
+      "text": "When working with others, I look for solutions that account for everyone's main concerns."
+    },
+    {
+      "blueprint_ref": "agreeableness.cooperative_orientation",
+      "design_provenance": "project_authored_v0",
+      "domain": "agreeableness",
+      "expected_failure_modes": ["social_desirability", "individualism_collectivism"],
+      "id": "sol_ocean_quick_v0:agreeableness:cooperative_orientation:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 22,
+      "subconstruct": "cooperative_orientation",
+      "text": "In shared decisions, I usually focus on my own preferred outcome."
+    },
+    {
+      "blueprint_ref": "agreeableness.respectful_conflict",
+      "design_provenance": "project_authored_v0",
+      "domain": "agreeableness",
+      "expected_failure_modes": ["social_desirability", "culture_loading"],
+      "id": "sol_ocean_quick_v0:agreeableness:respectful_conflict:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 23,
+      "subconstruct": "respectful_conflict",
+      "text": "During disagreement, I can be direct without dismissing the other person."
+    },
+    {
+      "blueprint_ref": "agreeableness.respectful_conflict",
+      "design_provenance": "project_authored_v0",
+      "domain": "agreeableness",
+      "expected_failure_modes": ["social_desirability", "culture_loading"],
+      "id": "sol_ocean_quick_v0:agreeableness:respectful_conflict:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "low",
+      "source_order": 24,
+      "subconstruct": "respectful_conflict",
+      "text": "When I disagree, I often treat the other person's concerns as unimportant."
+    },
+    {
+      "blueprint_ref": "emotional_stability.stress_recovery",
+      "design_provenance": "project_authored_v0",
+      "domain": "emotional_stability",
+      "expected_failure_modes": ["current_stressor_effect", "recall_bias"],
+      "id": "sol_ocean_quick_v0:emotional_stability:stress_recovery:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "medium",
+      "source_order": 25,
+      "subconstruct": "stress_recovery",
+      "text": "After an ordinary setback, I usually regain my balance within a reasonable time."
+    },
+    {
+      "blueprint_ref": "emotional_stability.stress_recovery",
+      "design_provenance": "project_authored_v0",
+      "domain": "emotional_stability",
+      "expected_failure_modes": ["current_stressor_effect", "recall_bias"],
+      "id": "sol_ocean_quick_v0:emotional_stability:stress_recovery:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "medium",
+      "source_order": 26,
+      "subconstruct": "stress_recovery",
+      "text": "Ordinary setbacks tend to stay with me long after the situation has passed."
+    },
+    {
+      "blueprint_ref": "emotional_stability.emotional_evenness",
+      "design_provenance": "project_authored_v0",
+      "domain": "emotional_stability",
+      "expected_failure_modes": ["clinical_overlap", "emotion_value_judgment"],
+      "id": "sol_ocean_quick_v0:emotional_stability:emotional_evenness:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "medium",
+      "source_order": 27,
+      "subconstruct": "emotional_evenness",
+      "text": "My emotions are usually steady enough for me to keep perspective."
+    },
+    {
+      "blueprint_ref": "emotional_stability.emotional_evenness",
+      "design_provenance": "project_authored_v0",
+      "domain": "emotional_stability",
+      "expected_failure_modes": ["clinical_overlap", "emotion_value_judgment"],
+      "id": "sol_ocean_quick_v0:emotional_stability:emotional_evenness:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "medium",
+      "source_order": 28,
+      "subconstruct": "emotional_evenness",
+      "text": "My emotional reactions often make it hard to keep a situation in perspective."
+    },
+    {
+      "blueprint_ref": "emotional_stability.uncertainty_tolerance",
+      "design_provenance": "project_authored_v0",
+      "domain": "emotional_stability",
+      "expected_failure_modes": ["current_stressor_effect", "task_context_loading"],
+      "id": "sol_ocean_quick_v0:emotional_stability:uncertainty_tolerance:positive:01",
+      "keyed": "positive",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "medium",
+      "source_order": 29,
+      "subconstruct": "uncertainty_tolerance",
+      "text": "When outcomes are uncertain, I can usually continue without needing immediate resolution."
+    },
+    {
+      "blueprint_ref": "emotional_stability.uncertainty_tolerance",
+      "design_provenance": "project_authored_v0",
+      "domain": "emotional_stability",
+      "expected_failure_modes": ["current_stressor_effect", "task_context_loading"],
+      "id": "sol_ocean_quick_v0:emotional_stability:uncertainty_tolerance:negative:01",
+      "keyed": "negative",
+      "reading_level_target": "plain_language_adult",
+      "sensitivity_level": "medium",
+      "source_order": 30,
+      "subconstruct": "uncertainty_tolerance",
+      "text": "Uncertain outcomes often occupy my attention until they are resolved."
+    }
+  ],
+  "license": {
+    "evidence": "Original project-authored candidate wording; no external instrument permission is implied.",
+    "status": "project_original_experimental"
+  },
+  "name": "Sol OCEAN Quick v0 Experimental Candidate",
+  "notes": [
+    "Design-review artifact only; not validated, reliable, normed, or product-ready.",
+    "Keep outside assessments/ocean/manifest.json until an explicit pilot ADR.",
+    "Scores must not emit product profile atoms before pilot approval."
+  ],
+  "response_scale": {
+    "type": "likert_1_5_accuracy_experimental",
+    "values": [
+      {"label": "Very unlike me", "value": 1},
+      {"label": "Somewhat unlike me", "value": 2},
+      {"label": "Neither like nor unlike me", "value": 3},
+      {"label": "Somewhat like me", "value": 4},
+      {"label": "Very like me", "value": 5}
+    ]
+  },
+  "scales": [
+    {
+      "domain": "openness",
+      "id": "sol_ocean_quick_v0:openness",
+      "item_refs": [
+        "sol_ocean_quick_v0:openness:intellectual_curiosity:positive:01",
+        "sol_ocean_quick_v0:openness:intellectual_curiosity:negative:01",
+        "sol_ocean_quick_v0:openness:imaginative_exploration:positive:01",
+        "sol_ocean_quick_v0:openness:imaginative_exploration:negative:01",
+        "sol_ocean_quick_v0:openness:aesthetic_engagement:positive:01",
+        "sol_ocean_quick_v0:openness:aesthetic_engagement:negative:01"
+      ],
+      "label": "Openness To Experience"
+    },
+    {
+      "domain": "conscientiousness",
+      "id": "sol_ocean_quick_v0:conscientiousness",
+      "item_refs": [
+        "sol_ocean_quick_v0:conscientiousness:organization_structure:positive:01",
+        "sol_ocean_quick_v0:conscientiousness:organization_structure:negative:01",
+        "sol_ocean_quick_v0:conscientiousness:follow_through:positive:01",
+        "sol_ocean_quick_v0:conscientiousness:follow_through:negative:01",
+        "sol_ocean_quick_v0:conscientiousness:deliberation:positive:01",
+        "sol_ocean_quick_v0:conscientiousness:deliberation:negative:01"
+      ],
+      "label": "Conscientiousness"
+    },
+    {
+      "domain": "extraversion",
+      "id": "sol_ocean_quick_v0:extraversion",
+      "item_refs": [
+        "sol_ocean_quick_v0:extraversion:social_energy:positive:01",
+        "sol_ocean_quick_v0:extraversion:social_energy:negative:01",
+        "sol_ocean_quick_v0:extraversion:expressive_engagement:positive:01",
+        "sol_ocean_quick_v0:extraversion:expressive_engagement:negative:01",
+        "sol_ocean_quick_v0:extraversion:assertive_participation:positive:01",
+        "sol_ocean_quick_v0:extraversion:assertive_participation:negative:01"
+      ],
+      "label": "Extraversion"
+    },
+    {
+      "domain": "agreeableness",
+      "id": "sol_ocean_quick_v0:agreeableness",
+      "item_refs": [
+        "sol_ocean_quick_v0:agreeableness:perspective_taking:positive:01",
+        "sol_ocean_quick_v0:agreeableness:perspective_taking:negative:01",
+        "sol_ocean_quick_v0:agreeableness:cooperative_orientation:positive:01",
+        "sol_ocean_quick_v0:agreeableness:cooperative_orientation:negative:01",
+        "sol_ocean_quick_v0:agreeableness:respectful_conflict:positive:01",
+        "sol_ocean_quick_v0:agreeableness:respectful_conflict:negative:01"
+      ],
+      "label": "Agreeableness"
+    },
+    {
+      "domain": "emotional_stability",
+      "id": "sol_ocean_quick_v0:emotional_stability",
+      "item_refs": [
+        "sol_ocean_quick_v0:emotional_stability:stress_recovery:positive:01",
+        "sol_ocean_quick_v0:emotional_stability:stress_recovery:negative:01",
+        "sol_ocean_quick_v0:emotional_stability:emotional_evenness:positive:01",
+        "sol_ocean_quick_v0:emotional_stability:emotional_evenness:negative:01",
+        "sol_ocean_quick_v0:emotional_stability:uncertainty_tolerance:positive:01",
+        "sol_ocean_quick_v0:emotional_stability:uncertainty_tolerance:negative:01"
+      ],
+      "label": "Emotional Stability"
+    }
+  ],
+  "schema_version": 1,
+  "scoring": {
+    "method": "sum_keyed_items",
+    "negative_keyed": "Reverse score 1-5 responses before summing.",
+    "product_profile_atom_output_enabled": false,
+    "score_interpretation": "Draft structural scoring only; no norms, cutoffs, or validated interpretation."
+  }
+}

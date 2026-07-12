@@ -14,7 +14,7 @@ import tempfile
 import threading
 from typing import Any
 
-from assessment_to_profile_atoms import generate_output, load_json, parse_responses
+from assessment_to_profile_atoms import ensure_product_assessment, generate_output, load_json, parse_responses
 
 
 ROOT = Path(".")
@@ -376,6 +376,7 @@ def create_session(
 
     instrument_file = Path(instrument_path)
     instrument = load_json(instrument_file)
+    ensure_product_assessment(instrument)
     started_at = normalize_utc_timestamp(started_at, "started_at")
     consent_at = normalize_utc_timestamp(consent_at, "consent_at")
     if not consent_version.strip():

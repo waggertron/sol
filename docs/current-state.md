@@ -53,6 +53,12 @@ Current OCEAN acquisition:
 - 186 scales
 - 1,539 stored items
 
+Experimental design work:
+
+- 1 project-authored candidate outside the administrable manifest
+- `Sol-OCEAN-Quick-v0`: 30 items, 5 domains, 15 candidate subconstructs
+- status: design review only; no reliability, validity, norms, or product use
+
 Stored instruments include:
 
 - IPIP Goldberg Big-Five Factor Markers
@@ -115,6 +121,10 @@ Reference-only or license-review instruments are tracked in:
   consent and exact instrument/scoring provenance for new sessions, uses
   serialized atomic JSON writes, protects reviewed atoms from rescoring, and
   supports separate deletion of raw responses and derived atoms.
+- Original Sol OCEAN design work now includes a reviewed-source-backed
+  construct blueprint, a 30-item experimental candidate, and a validator for
+  structure, balanced keying, required risk metadata, manifest exclusion, and
+  exact wording collisions. Expert and empirical review remain open.
 
 Current queue ingestion support:
 
@@ -204,6 +214,8 @@ Then open `http://127.0.0.1:8765`.
 - The first low-risk local generation pilot is in progress.
 - The next active slice is generation-guidance authoring and persisted pilot-run
   provenance. Model-backed execution remains deferred.
+- Experimental Sol OCEAN follow-up is limited to expert/cognitive review and a
+  later validation-gated pilot; the candidate is not active in the MVP.
 
 ## Safety Posture
 

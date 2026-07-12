@@ -22,3 +22,7 @@ Start here:
 - `11-mvp-hardening-and-profile-loop.md` - active task ledger for browser QA,
   tests, atom editing, evidence views, profile export, and first generation
   pilot
+- `12-post-audit-roadmap.md` - committed backlog of unresolved audit and product
+  work after the assessment-integrity pass
+- `13-sol-ocean-experimental-assessment.md` - validation-gated execution ledger
+  for the original Sol OCEAN assessment candidate

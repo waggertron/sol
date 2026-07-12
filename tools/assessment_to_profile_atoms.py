@@ -295,7 +295,15 @@ def build_profile_atom(
     }
 
 
+def ensure_product_assessment(instrument: dict[str, Any]) -> None:
+    if instrument.get("administration_status") == "experimental_design_review_only":
+        raise ValueError("Experimental design-review assessments cannot enter the product scoring flow")
+    if instrument.get("scoring", {}).get("product_profile_atom_output_enabled") is False:
+        raise ValueError("Profile atom output is disabled for this assessment")
+
+
 def generate_output(instrument: dict[str, Any], responses: dict[str, float], session_id: str, completed_at: str) -> dict[str, Any]:
+    ensure_product_assessment(instrument)
     resp_scale = response_scale_bounds(instrument)
     scores = [score_scale(instrument, scale, responses, resp_scale) for scale in instrument["scales"]]
     atoms = [build_profile_atom(instrument, session_id, completed_at, score) for score in scores]

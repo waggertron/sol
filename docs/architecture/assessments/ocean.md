@@ -17,6 +17,11 @@ Current OCEAN assessment corpus:
 - 186 scales
 - 1,539 items
 
+Original project-authored candidates are tracked separately under
+`assessments/ocean/experimental/` and excluded from these administrable counts.
+`sol_ocean_quick_v0.json` is currently a 30-item design-review candidate. Its
+contract lives in `docs/architecture/assessments/sol-ocean-experimental.md`.
+
 ## Directory Layout
 
 ```text
@@ -52,6 +57,11 @@ Recommended first app candidates:
 
 Longer IPIP forms are better suited for validation, item analysis, and
 construct mapping than first-run user onboarding.
+
+Experimental forms must not be added to the manifest, administered, scored for
+product output, or converted into profile atoms until their explicit review and
+pilot gates pass. The shared session and scoring boundaries reject candidates
+marked `experimental_design_review_only`.
 
 ## Result Safety
 

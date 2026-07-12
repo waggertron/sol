@@ -9,6 +9,19 @@ Current acquisition:
 - 186 scales
 - 1,539 stored items
 
+Experimental project-authored candidates are tracked separately under
+`experimental/` and are not counted as administrable instruments. The current
+design-review candidate is:
+
+- `experimental/sol_ocean_quick_v0.json` - 30 original candidate items,
+  explicitly unvalidated and excluded from `manifest.json`
+
+Validate it with:
+
+```bash
+python3 tools/validate_sol_ocean_candidate.py
+```
+
 ## Imported Instruments
 
 The current import is summarized in:
@@ -65,6 +78,9 @@ Current local MVP flow:
 - run the end-to-end local workflow with `tools/run_assessment_mvp.py`
 - serve the local browser workflow with `tools/assessment_web_mvp.py`
   including session export/delete and cross-session atom review
+
+Experimental Sol forms must remain outside this flow until their review and
+pilot gates are approved.
 
 ## Known Import Caveats
 

@@ -117,6 +117,11 @@ then generate text and visual direction the user can evaluate.
 - The 2026-07-12 integrity pass moved validation, persisted consent/version
   provenance, lifecycle invariants, atomic mutation, rescore protection, and
   selective deletion into the shared assessment session-store boundary.
+- Original Sol OCEAN Phase 3 now has a design-review blueprint at
+  `kb/assessments/sol_ocean_construct_blueprint_v0.md` and a 30-item candidate
+  at `assessments/ocean/experimental/sol_ocean_quick_v0.json`. It is excluded
+  from the manifest and must not emit product atoms before expert review,
+  cognitive interviews, a pilot ADR, and later empirical validation.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been

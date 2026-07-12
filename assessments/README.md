@@ -41,3 +41,7 @@ Every stored assessment should include:
 ## Areas
 
 - `ocean/` - Big Five / OCEAN and OCEAN-adjacent assessments.
+
+Project-authored experimental candidates remain in an `experimental/`
+subdirectory and outside administrable manifests until explicit review and
+pilot approval.

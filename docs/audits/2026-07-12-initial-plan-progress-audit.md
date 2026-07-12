@@ -110,7 +110,7 @@ Status meanings:
 | Evaluation and safety | Partial | Blocked-use policy, non-diagnostic copy, eligibility filtering, prompt review gate, correction controls | “Feels like me” measurement, generic-vs-personalized comparison, correction/rejection analytics, calibration study, user-study protocol execution |
 | OCEAN research | Partial | Broad corpus and assessment catalog | Domain-by-domain reviewed definitions/cautions and primary-source coverage are not demonstrated as complete |
 | OCEAN assessment acquisition | Complete for prototype | 11 stored instruments with license posture; proprietary/reference-only inventory | Ongoing license review and validation-source curation |
-| Original Sol assessment design | Planned only | Candidate names and methodology in Plan 08 | No reviewed construct blueprint, original item pool, scoring spec, or empirical validation |
+| Original Sol assessment design | Partial/design review | Reviewed-source-backed blueprint, item-writing contract, 30-item experimental candidate, structural/collision validator | Independent expert review, cognitive interviews, named pilot ADR, and empirical validation |
 | Assessment web MVP | Complete for local prototype | Catalog, consent gate, questionnaire, autosave/resume, scoring, results, atom review, export/delete, workbench | Persisted consent/version proof, admin scoring/version view, selective deletion, production concerns |
 | MVP hardening phases 1-4 | Complete with defects noted below | QA, atom editing/history, evidence views, scoped export | Correctness and storage hardening findings from this audit |
 | First generation pilot | Partial/deferred | Safe dry-run prompt, scoped eligible context, structured feedback contract | User-authored mappings, persisted pilot run, actual artifact, output validation, provider opt-in; model mode correctly unapproved |
@@ -174,6 +174,11 @@ reflects the post-repair worktree and the 20-test validation run.
 | F10 operational evaluation | Open | Required to validate product usefulness |
 | F11 stale state counts | Resolved | Current-state counts refreshed from repository data |
 | F12 original wedge inputs | Open | Planned return after integrity and generation-contract work |
+
+Remaining audit-derived work is now committed as an executable backlog in
+`plans/12-post-audit-roadmap.md`. Experimental original-assessment work is
+tracked separately in `plans/13-sol-ocean-experimental-assessment.md` so it
+cannot be confused with completion of the Creative Style Kit wedge.
 
 ### High Impact
 

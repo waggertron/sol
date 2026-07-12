@@ -33,6 +33,9 @@ Current implementation state:
   and eligible context locally
 - structured pilot feedback produces provenance-linked generation-guidance
   notes without silently changing assessment evidence or confidence
+- original Sol OCEAN design work has a 30-item, manifest-excluded experimental
+  candidate with a construct blueprint and structural/collision validator;
+  expert and empirical validation remain open
 
 See `docs/current-state.md` for current counts.
 
@@ -150,3 +153,8 @@ Output:
    preferences before adding visual inputs.
 4. Continue selective OCEAN research and license-review work where it directly
    supports those product steps.
+
+Execution ledgers:
+
+- `12-post-audit-roadmap.md`
+- `13-sol-ocean-experimental-assessment.md`
