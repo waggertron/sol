@@ -8,6 +8,11 @@ description: Use when working in this repository on paper ingestion, related-sou
 Use this skill when a user asks to import a paper, expand a source cluster, or
 turn research into durable repository knowledge.
 
+For project-authored assessment blueprints, item pools, experimental candidate
+JSON, or activation review, use
+`.codex/skills/sol-experimental-assessment-workflow/SKILL.md` as the primary
+workflow after research has been promoted into reviewed cards.
+
 ## Core Workflow
 
 1. Resolve the requested source:

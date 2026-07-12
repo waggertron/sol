@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sol Experimental Assessment"
+  short_description: "Design and gate experimental Sol assessments"
+  default_prompt: "Use $sol-experimental-assessment-workflow to design or review an experimental Sol assessment candidate safely."

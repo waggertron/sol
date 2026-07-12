@@ -30,3 +30,5 @@ interpretation.
 - `docs/architecture/assessments/session-storage.md`
 - `docs/architecture/assessments/mvp-flow.md`
 - `kb/assessments/ocean_profile_atom_mapping_v0.md`
+- `.codex/skills/sol-experimental-assessment-workflow/SKILL.md` for original
+  project-authored candidate design and activation gates

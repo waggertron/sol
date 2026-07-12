@@ -5,6 +5,10 @@
 Execute Phase 3 of `plans/08-ocean-assessment-plan.md` without presenting an
 original Sol instrument as validated.
 
+Reusable agent workflow:
+
+- `.codex/skills/sol-experimental-assessment-workflow/SKILL.md`
+
 ## Safety And Evidence Posture
 
 - Candidate items are design artifacts, not a personality diagnosis or ground
@@ -64,4 +68,3 @@ original Sol instrument as validated.
 The candidate must not enter `assessments/ocean/manifest.json` or emit product
 profile atoms until Phase D review is complete and an explicit ADR approves a
 limited pilot. Product use requires later empirical evidence from Phase E.
-

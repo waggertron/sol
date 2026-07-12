@@ -5,6 +5,10 @@
 Define the repository boundary for original Sol OCEAN candidates while they are
 being designed and reviewed.
 
+The reusable implementation/review workflow is maintained at:
+
+- `.codex/skills/sol-experimental-assessment-workflow/SKILL.md`
+
 ## Current Candidate
 
 - id: `sol_ocean_quick_v0`
@@ -62,4 +66,3 @@ does not create norms, cutoffs, validated interpretations, or product confidence
 Do not describe the candidate as validated, reliable, normed, diagnostic,
 clinically meaningful, culturally invariant, or predictive of eligibility or
 real-world performance.
-

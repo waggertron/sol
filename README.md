@@ -1,201 +1,204 @@
 # Sol
 
-Sol is an early research and planning workspace for a user-consented
-personality and style modeling platform. The project is investigating whether
-personal data, user declarations, and user corrections can support a structured,
-evidence-weighted model that helps generative systems produce outputs that feel
-more aligned with a user's communication style, creative taste, motivations,
-values, and context.
+Sol is a research-first, local prototype for building a user-consented,
+evidence-backed, and user-correctable personality and style model for
+personalized generation.
 
-The project intentionally avoids claiming that it can discover a user's "true"
-personality or produce a clinical diagnosis. The working goal is narrower:
+It does **not** claim to detect a person's true personality, read minds, or
+provide clinical diagnosis. Assessment results are treated as self-report
+evidence, not identity facts.
 
-> Build a user-inspectable, evidence-weighted, context-aware personality and
-> style model from consented data, then use that model to personalize generated
-> outputs across modalities.
+> Current product thesis: authorized evidence becomes inspectable provisional
+> profile atoms; users correct and scope those atoms; only eligible atoms may
+> influence a specific generation task.
 
-## Intent
+## Product Snapshot
 
-Modern generative systems can write, draw, summarize, synthesize, and act, but
-they usually lack a durable model of the specific person they are helping. Sol
-starts from the hypothesis that a useful user model should not be a single
-personality score. It should be a layered, inspectable structure made from:
+The long-term first wedge remains the **Personal Creative Style Kit**: combine
+writing samples, preferences, examples, and direct calibration into an editable
+style profile, then generate text and visual direction the user can evaluate.
 
-- stable trait tendencies
-- context-specific states and modes
-- communication and linguistic markers
-- aesthetic and creative preferences
-- motivational patterns
-- values and goals
-- behavioral regularities
-- user-declared self-concepts
-- contraindications and uncertainty markers
+The working implementation is currently narrower and assessment-first. It
+proves this local loop:
 
-Every profile claim should carry provenance, confidence, context, recency, and
-room for user correction. The system should preserve uncertainty instead of
-flattening a person into a fixed label.
+```text
+consent
+  -> OCEAN self-report assessment
+  -> validated responses and scores
+  -> provisional profile atoms
+  -> evidence inspection and user correction
+  -> lifecycle/scope review
+  -> generation-safe context export
+  -> model-free writing-guide prompt dry run
+  -> structured feedback notes
+```
 
-## First Product Wedge
+## What Works Today
 
-The first candidate feature set is a Personal Creative Style Kit.
+The local assessment MVP supports:
 
-The wedge takes a small set of user-provided materials, such as writing samples,
-liked and disliked examples, short calibration answers, and optional moodboard
-references. It converts those inputs into editable profile atoms, then uses the
-profile to generate artifacts the user can evaluate.
+- 11 permissive/open OCEAN and OCEAN-adjacent instruments;
+- browser administration, autosave, resume, scoring, and result display;
+- persisted consent plus instrument/scoring fingerprints for new sessions;
+- response ID/range validation and protected completed-session evidence;
+- provisional, non-diagnostic profile atoms;
+- confirm, reject, review-only, claim-edit, and user-note controls;
+- immutable original claims and timestamped review history;
+- expandable item, keying, score, source, reliability, and uncertainty evidence;
+- whole-session, raw-response-only, or derived-atom-only deletion;
+- scoped profile context export with ineligible atoms excluded by default;
+- a model-free writing/communication guide prompt dry run;
+- structured generation feedback linked to inspectable mapping notes;
+- serialized and atomic local JSONDB mutation for the single-process MVP.
 
-Initial outputs may include:
+The current automated suite has 23 tests, plus rendered desktop/mobile QA for
+the Administer and Workbench views.
 
-- communication style summary
-- writing voice guide
-- aesthetic preference summary
-- motivational and value hypotheses
-- creative pattern observations
-- short bio or positioning statement
-- content ideas
-- image prompt directions
-- visual moodboard description
+## What Is Not Complete
 
-The main product loop is:
+The repository does not yet provide:
 
-1. The user authorizes or uploads data.
-2. The system extracts evidence-backed observations.
-3. Observations update profile atoms with confidence and provenance.
-4. The user confirms, edits, or rejects profile atoms.
-5. Generation uses scoped profile atoms for a specific task.
-6. Feedback updates confidence, mappings, and future generation behavior.
+- writing-sample, liked/disliked-example, or moodboard ingestion;
+- user-authored contextual generation guidance;
+- persisted pilot runs that bind prompts, exact atoms, and feedback;
+- model-backed artifact generation;
+- “feels like me,” usefulness, or generic-baseline evaluation reporting;
+- a validated original Sol personality assessment;
+- production authentication, authorization, multi-user storage, or deployment;
+- multimodal generation adapters.
 
-## Current State
+Model-backed generation is intentionally unapproved until the entry conditions
+in [`generation-contract-review.md`](docs/architecture/assessments/generation-contract-review.md)
+are satisfied.
 
-The repository is currently research-first and assessment-ready. It has:
+## Experimental Sol OCEAN Work
 
-- a local Markdown/JSON RAG corpus with source cards, planning docs, imported
-  Wikipedia summaries, source registries, and import queues
-- a JSONDB import queue for pending papers, Wikipedia linked articles, and
-  reviewed/rejected imports
-- an OCEAN assessment repository with 11 permissive/open instruments, 186
-  scales, and 1,539 stored items
+The repository contains one project-authored design-review candidate:
 
-The repository now has a local assessment web MVP that can administer one
-stored OCEAN instrument, persist responses, compute scores, present results,
-create editable profile atom candidates, export/delete sessions, and review
-profile atoms across sessions against the current JSONDB storage layer.
+- `Sol-OCEAN-Quick-v0`
+- 30 original candidate items
+- five OCEAN domains
+- 15 candidate subconstructs
+- balanced positive/negative keying
+- explicit sensitivity and expected-failure metadata
 
-Start it locally:
+The candidate is stored at
+[`assessments/ocean/experimental/sol_ocean_quick_v0.json`](assessments/ocean/experimental/sol_ocean_quick_v0.json).
+It is excluded from the administrable manifest, and the product scoring/session
+boundaries reject it.
+
+Passing repository validation means the candidate is ready for independent
+review—not that it is reliable, valid, normed, invariant, or product-ready.
+Expert review, cognitive interviews, a pilot ADR, and empirical validation
+remain required.
+
+Validate the candidate:
+
+```bash
+python3 tools/validate_sol_ocean_candidate.py
+```
+
+## Current Repository Snapshot
+
+As of 2026-07-12:
+
+| Surface | Current state |
+|---|---:|
+| Administrable instruments | 11 |
+| Stored scales | 186 |
+| Stored instrument items | 1,539 |
+| Experimental Sol candidates | 1 (30 items; inactive) |
+| Reviewed/source cards | 15 |
+| Wikipedia background cards | 1,261 |
+| Paper metadata cards | 1,766 |
+| Import queue records | 3,386 |
+| Imported queue records | 3,089 |
+| Pending paper references | 283, all title-only |
+| Automated tests | 23 |
+
+See [`docs/current-state.md`](docs/current-state.md) for the maintained handoff
+and [`docs/audits/2026-07-12-initial-plan-progress-audit.md`](docs/audits/2026-07-12-initial-plan-progress-audit.md)
+for the full initial-plan audit.
+
+## Run The Local MVP
 
 ```bash
 python3 tools/assessment_web_mvp.py --port 8765
 ```
 
-Then open `http://127.0.0.1:8765`.
+Open `http://127.0.0.1:8765`.
 
-Run the local QA suite:
+Run automated QA:
 
 ```bash
 ./scripts/run_assessment_web_mvp_qa.sh
 ```
 
-Capture rendered desktop/mobile QA screenshots:
+Capture isolated desktop/mobile visual QA:
 
 ```bash
 ./scripts/run_assessment_web_mvp_visual_qa.sh
 ```
 
-See `docs/current-state.md` for the latest snapshot.
+Visual artifacts are written below ignored `tmp/assessment-web-mvp-visual/` and
+do not modify tracked assessment storage.
 
-## Future Feature Set
+## Model-Free Generation Dry Run
 
-The long-term platform should generalize beyond the first creative wedge while
-keeping consent, interpretability, and user control as core primitives.
+After at least one atom has confirmed/edited feedback, `active_atom` state, and
+`contextual` or `global` scope:
 
-Candidate product capabilities:
+```bash
+python3 tools/generation_pilot.py \
+  --pilot-id writing_guide_001 \
+  --generated-at 2026-07-12T00:00:00Z
+```
 
-- Profile workbench for viewing, editing, deleting, exporting, and versioning
-  profile atoms.
-- Consent and source controls for deciding which data can be used for which
-  modeling or generation purposes.
-- Evidence browser showing why a profile claim exists and which sources support
-  or contradict it.
-- Multimodal generation adapters for text, image, audio, video, avatar, UI, and
-  agent behavior.
-- Style transfer and voice continuity tools for writing, brand, creative
-  direction, and personal expression.
-- Reflective self-modeling flows where users compare system hypotheses against
-  their declared self-concept.
-- Feedback loops for "feels like me", usefulness, confidence calibration, and
-  direct corrections.
-- API layer for requesting scoped, permissioned profile context inside other
-  applications.
-- Evaluation harnesses for construct validity, prediction quality, user
-  satisfaction, bias, privacy, and misuse risk.
-- Safety controls for sensitive attributes, contraindications, uncertainty
-  markers, deletion, audit, and non-diagnostic boundaries.
+This renders the prompt and eligible context only. It does not call an external
+model.
 
-Candidate platform services:
+## Roadmap
 
-- data ingestion and source normalization
-- consent and permissions
-- feature extraction
-- profile atom store
-- inference engine
-- user correction interface
-- generation orchestrator
-- modality adapters
-- feedback loop
-- audit, deletion, and export
+The committed roadmap is
+[`plans/12-post-audit-roadmap.md`](plans/12-post-audit-roadmap.md).
 
-## Research Foundation
+Current order:
 
-This repository currently prioritizes the knowledge base, assessment corpus,
-and architecture plan before application code. The research program pulls from
-personality psychology, psychometrics, behavioral science, abnormal psychology,
-computational linguistics, aesthetic preference research, motivation and values
-research, human-computer interaction, privacy, and model evaluation.
+1. Obtain independent expert/cognitive review of the experimental Sol OCEAN
+   candidate; repository design/validation is complete.
+2. Add user-reviewed contextual generation guidance and persisted pilot runs.
+3. Operationalize “feels like me,” usefulness, correction, and generic-baseline
+   evaluation.
+4. Return to the Creative Style Kit with explicitly consented writing samples
+   and direct style preferences.
+5. Consider model-backed generation, visual inputs, or platform extraction only
+   after their safety and evidence gates pass.
 
-The RAG corpus is intended to help answer questions such as:
+Detailed ledgers:
 
-- Which constructs are well-supported enough to model?
-- Which signals are weak, context-bound, biased, or overclaimed?
-- How should user corrections update confidence?
-- Which inferences should be forbidden, gated, or marked uncertain?
-- What evidence is required before a profile atom can affect generation?
+- [`plans/11-mvp-hardening-and-profile-loop.md`](plans/11-mvp-hardening-and-profile-loop.md)
+- [`plans/12-post-audit-roadmap.md`](plans/12-post-audit-roadmap.md)
+- [`plans/13-sol-ocean-experimental-assessment.md`](plans/13-sol-ocean-experimental-assessment.md)
 
-## Non-Goals
+## Safety Boundaries
 
-Sol is not intended to:
+Blocked by default:
 
-- diagnose mental health conditions
-- infer protected traits without explicit user intent and controls
-- rank people for employment, housing, lending, insurance, education, legal, or
-  similar eligibility decisions
-- hide profiling from users
-- claim complete psychological accuracy
-- present generated personality claims as immutable facts
+- clinical diagnosis or personality-disorder labeling;
+- protected-class inference;
+- hidden profiling;
+- covert political persuasion;
+- employment, housing, lending, insurance, legal, or education eligibility use.
 
-## Structure
+High-sensitivity claims—such as trauma interpretation, emotional instability,
+honesty/exploitiveness, attachment, intelligence, or competence—must not be
+casually inferred or used as ordinary generation controls.
 
-- `kb/00_intent.md` - project intent, boundaries, and operating assumptions.
-- `kb/model/knowledge_model_v0.md` - first draft of the expandable knowledge model.
-- `kb/research/research_plan.md` - outward-expanding research plan.
-- `kb/assessments/` - assessment catalogs and profile atom mapping notes.
-- `kb/cards/` - source cards and research notes.
-- `kb/paper_imports/` - metadata-only paper imports from queued DOI references.
-- `assessments/` - acquired assessment instruments and scoring metadata.
-- `docs/current-state.md` - current repo snapshot, counts, and next build target.
-- `docs/architecture/rag/structure.md` - RAG architecture and update workflow.
-- `docs/architecture/assessments/ocean.md` - OCEAN assessment architecture.
-- `docs/architecture/assessments/web-mvp.md` - local browser MVP architecture.
-- `docs/project-memory.md` - compact context for future sessions.
-- `plans/` - product and platform planning skeleton.
-- `sources/*.json` - source registries for papers, frameworks, and references.
-- `jsondb/` - import queue, term inventory, and import run logs.
-- `tools/rag.py` - local standard-library retrieval CLI.
-- `tools/assessment_web_mvp.py` - local browser app and JSON API for the
-  current assessment-first MVP.
-- `tools/kb_importer.py` - import queue and Wikipedia/Crossref helper.
-- `rag_index/` - generated retrieval index.
+## Research And Knowledge Base
 
-## Local RAG
+The repository includes reviewed source cards, metadata-only paper imports,
+Wikipedia background summaries, model contracts, assessment catalogs, and a
+local lexical RAG index.
 
 Build the index:
 
@@ -203,22 +206,38 @@ Build the index:
 python3 tools/rag.py index
 ```
 
-Search the internal knowledge base:
+Search or print context:
 
 ```bash
-python3 tools/rag.py search "personality problem solving context traits"
-python3 tools/rag.py search "why avoid diagnostic claims"
-python3 tools/rag.py search "language cues digital footprints personality"
-python3 tools/rag.py search "TIPI scoring reverse scored items"
-python3 tools/rag.py search "paper metadata import personality architecture"
+python3 tools/rag.py search "construct validity personality profile"
+python3 tools/rag.py context "why broad traits should not control generation" --top-k 6
 ```
 
-Print larger context blocks for downstream prompting:
+Metadata imports are background references, not reviewed knowledge. Research
+changes reach product behavior only through reviewed cards, model/contract
+updates, and ADRs where appropriate.
 
-```bash
-python3 tools/rag.py context "construct validity personality profile" --top-k 6
-```
+## Repository Map
 
-The first retriever is lexical BM25-style search so the knowledge base works
-without external dependencies or API keys. An embedding-backed retriever can be
-added once the source corpus stabilizes.
+- `app/assessment-mvp/` — local browser UI.
+- `assessments/ocean/instruments/` — administrable permissive/open instruments.
+- `assessments/ocean/experimental/` — inactive project-authored candidates.
+- `kb/cards/` — reviewed research source cards.
+- `kb/model/` — knowledge, signal, and profile-atom contracts.
+- `kb/assessments/` — assessment catalogs, mappings, and construct blueprints.
+- `docs/architecture/` — implementation and research architecture.
+- `docs/adr/` — architecture decisions.
+- `docs/audits/` — repository plan/progress audits.
+- `plans/` — committed product and research execution ledgers.
+- `jsondb/` — local queues and MVP persistence.
+- `tools/` — RAG, import, assessment, validation, and pilot CLIs.
+- `.codex/skills/` — repo-local reusable agent workflows.
+
+## Key Documents
+
+- [`docs/project-memory.md`](docs/project-memory.md)
+- [`docs/current-state.md`](docs/current-state.md)
+- [`kb/model/profile_atom_schema_v0.md`](kb/model/profile_atom_schema_v0.md)
+- [`docs/architecture/assessments/web-mvp.md`](docs/architecture/assessments/web-mvp.md)
+- [`docs/architecture/assessments/sol-ocean-experimental.md`](docs/architecture/assessments/sol-ocean-experimental.md)
+- [`docs/architecture/rag/research-promotion-workflow.md`](docs/architecture/rag/research-promotion-workflow.md)

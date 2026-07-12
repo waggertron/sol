@@ -125,6 +125,9 @@ Reference-only or license-review instruments are tracked in:
   construct blueprint, a 30-item experimental candidate, and a validator for
   structure, balanced keying, required risk metadata, manifest exclusion, and
   exact wording collisions. Expert and empirical review remain open.
+- A repo-local `sol-experimental-assessment-workflow` skill now preserves the
+  blueprint-first, manifest-excluded, validation-gated process for future
+  original assessment work.
 
 Current queue ingestion support:
 

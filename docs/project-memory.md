@@ -122,6 +122,10 @@ then generate text and visual direction the user can evaluate.
   at `assessments/ocean/experimental/sol_ocean_quick_v0.json`. It is excluded
   from the manifest and must not emit product atoms before expert review,
   cognitive interviews, a pilot ADR, and later empirical validation.
+- The reusable workflow for future project-authored assessment candidates lives
+  at `.codex/skills/sol-experimental-assessment-workflow/SKILL.md`. The durable
+  lesson is that structural completeness, scoring metadata, and passing tests
+  are readiness for review—not psychometric validation or product activation.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
