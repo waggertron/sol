@@ -30,7 +30,8 @@ required.
 - list a collection;
 - get a record by id;
 - create a record;
-- replace a record without changing its id.
+- replace a record without changing its id;
+- apply a domain mutation under the repository lock.
 
 Collections are limited to:
 

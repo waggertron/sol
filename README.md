@@ -60,9 +60,11 @@ The Creative Style Kit foundation now also includes five versioned record
 schemas, a cross-linked example bundle, an offline validator, an ADR covering
 ownership/consent/retention/deletion, and a contract-validated atomic local
 repository. The repository defaults to ignored `tmp/` storage and exposes no UI
-or network service yet.
+or network service yet. A guidance-domain service now enforces explicit user
+review, immutable original wording, prompt-safe edit history, evidence
+eligibility, and disable behavior.
 
-The current automated suite has 38 tests, plus rendered desktop/mobile QA for
+The current automated suite has 45 tests, plus rendered desktop/mobile QA for
 the Administer and Workbench views.
 
 ## What Is Not Complete
@@ -70,7 +72,7 @@ the Administer and Workbench views.
 The repository does not yet provide:
 
 - writing-sample, liked/disliked-example, or moodboard ingestion;
-- user-authored contextual generation guidance;
+- browser-based contextual generation-guidance authoring;
 - persisted pilot runs that bind prompts, exact atoms, and feedback;
 - model-backed artifact generation;
 - “feels like me,” usefulness, or generic-baseline evaluation reporting;
@@ -125,7 +127,7 @@ As of 2026-07-12:
 | Import queue records | 3,386 |
 | Imported queue records | 3,089 |
 | Pending paper references | 283, all title-only |
-| Automated tests | 38 |
+| Automated tests | 45 |
 
 See [`docs/current-state.md`](docs/current-state.md) for the maintained handoff
 and [`docs/audits/2026-07-12-initial-plan-progress-audit.md`](docs/audits/2026-07-12-initial-plan-progress-audit.md)
@@ -176,9 +178,9 @@ The active product roadmap is
 
 Current order:
 
-1. Add user-reviewed generation-guidance lifecycle.
-2. Add persisted dry-run/`mock://` runs behind one provider contract.
-3. Bind blinded evaluations to the exact run and guidance used.
+1. Add persisted dry-run/`mock://` runs behind one provider contract.
+2. Bind blinded evaluations to the exact run and guidance used.
+3. Add browser guidance/run history and comparison surfaces.
 4. Add explicitly consented writing samples and direct style calibration.
 5. Close the local source-to-profile-to-artifact-to-feedback loop and compare it
    against a generic baseline.

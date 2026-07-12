@@ -95,15 +95,18 @@ python3 tools/validate_style_kit_contracts.py
 
 Goal: make concrete contextual guidance a first-class, user-reviewed record.
 
+Status: complete. Seven focused guidance tests and the full 45-test suite pass;
+tracked assessment storage is unchanged.
+
 Implementation:
 
-- [ ] Add create/review/disable operations for guidance.
-- [ ] Allow `proposed -> confirmed|edited|disabled` and
+- [x] Add create/review/disable operations for guidance.
+- [x] Allow `proposed -> confirmed|edited|disabled` and
   `confirmed|edited -> edited|disabled`; reject invalid transitions.
-- [ ] Preserve `original_instruction` and append field-level review history.
-- [ ] Keep prompt-safe text separate from raw source/evidence text.
-- [ ] Require at least one valid observation or eligible profile-atom reference.
-- [ ] Do not automatically convert broad OCEAN claims into guidance.
+- [x] Preserve `original_instruction` and append field-level review history.
+- [x] Keep prompt-safe text separate from raw source/evidence text.
+- [x] Require at least one valid observation or eligible profile-atom reference.
+- [x] Do not automatically convert broad OCEAN claims into guidance.
 
 Acceptance:
 
@@ -333,5 +336,5 @@ reviewed.
 
 ## Current Next Step
 
-Implement Increment 2 only: generation-guidance lifecycle. Do not mix provider
-behavior, routes, or UI into that change.
+Implement Increment 3 only: persisted dry-run and deterministic `mock://` pilot
+runs with output validation. Do not add routes or UI in that change.

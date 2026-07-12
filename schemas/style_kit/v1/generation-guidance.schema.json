@@ -90,7 +90,7 @@
               "additionalProperties": false,
               "required": ["field", "from", "to"],
               "properties": {
-                "field": {"enum": ["instruction", "contexts", "task_scopes", "user_state", "contraindications"]},
+                "field": {"enum": ["instruction", "prompt_safe_instruction", "contexts", "task_scopes", "user_state", "contraindications"]},
                 "from": {},
                 "to": {}
               }

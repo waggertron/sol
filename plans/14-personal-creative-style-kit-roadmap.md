@@ -267,7 +267,7 @@ variants. Automated tests must never require credentials or network access.
 
 Goal: remove ambiguity before adding user data or generation.
 
-Status: complete. Contract validation and the current full 38-test regression
+Status: complete. Contract validation and the current full 45-test regression
 suite pass.
 
 Tasks:
@@ -297,7 +297,7 @@ uploads.
 Tasks:
 
 - [ ] Add user-editable contextual generation guidance to profile atoms.
-- [ ] Enforce guidance lifecycle and prompt-safe representation.
+- [x] Enforce guidance lifecycle and prompt-safe representation.
 - [ ] Persist pilot runs with exact atom/guidance references and context hash.
 - [ ] Require feedback to target a known run and used guidance.
 - [ ] Add output schema/safety validator.

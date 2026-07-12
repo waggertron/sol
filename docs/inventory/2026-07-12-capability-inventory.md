@@ -226,11 +226,15 @@ production deployment contract.
 - system/user message separation and embedded-instruction handling;
 - feedback values: accurate, useful, too strong, too generic, wrong;
 - provenance-linked generation mapping notes;
-- documented model-backed gate review.
+- documented model-backed gate review;
+- explicit proposed/confirmed/edited/disabled guidance lifecycle;
+- shared profile-atom generation-eligibility policy;
+- immutable original guidance plus field-level prompt-safe review history;
+- observation/profile-atom evidence checks and context/task filtering.
 
 ### Missing Gate Conditions
 
-- user-reviewed generation-guidance authoring;
+- browser/API generation-guidance authoring;
 - persisted pilot-run records;
 - feedback enforcement against a known run and exact atoms used;
 - provider abstraction and explicit external-model opt-in;
@@ -331,7 +335,7 @@ Guidance files:
 
 ### Automated
 
-38 unittest cases cover:
+45 unittest cases cover:
 
 - session lifecycle and isolated JSONDB behavior;
 - consent/instrument provenance;
@@ -346,7 +350,9 @@ Guidance files:
 - Creative Style Kit schemas, ownership, references, guidance eligibility,
   deletion redaction, and external-provider rejection;
 - Style Kit read-after-write, invalid-write atomicity, defensive copies,
-  environment isolation, corruption handling, and in-process concurrency.
+  environment isolation, corruption handling, and in-process concurrency;
+- guidance transitions, edits/history, prompt-safe separation, evidence
+  eligibility, atom exclusions, filtering, and disabling.
 
 ### Rendered
 

@@ -132,7 +132,7 @@ Reference-only or license-review instruments are tracked in:
   observation, generation-guidance, pilot-run, and evaluation-event contracts.
   The offline validator checks JSON Schema shape plus ownership, provenance,
   hashes, references, deletion state, generation eligibility, and external-mode
-  exclusion. No new product data is persisted yet.
+  exclusion. No tracked or UI-created Style Kit product data exists yet.
 - Optional operator/development dependencies are declared in
   `requirements-dev.txt`; production assessment and RAG paths remain standard
   library based.
@@ -141,6 +141,11 @@ Reference-only or license-review instruments are tracked in:
   JSON repository that validates the full record graph before each mutation and
   returns defensive copies. Its default manual path is ignored
   `tmp/style-kit/style-kit-records.json`; no routes or UI use it yet.
+- `tools/style_kit_guidance.py` now provides explicit proposed/confirmed/edited/
+  disabled guidance transitions, immutable original instructions, separate
+  prompt-safe edit history, evidence eligibility checks, and context/task
+  filtering. `tools/profile_atom_policy.py` is the shared eligibility predicate
+  used by both assessment context export and Style Kit guidance.
 
 Current queue ingestion support:
 
@@ -186,9 +191,9 @@ The assessment-first foundation now proves administration, evidence,
 correction, lifecycle controls, and scoped context export. The next product
 proof returns to the Personal Creative Style Kit itself:
 
-1. Add user-reviewed contextual generation-guidance lifecycle to the completed
-   local repository.
-2. Add persisted local/mock pilot runs behind one provider boundary.
+1. Add persisted local/mock pilot runs behind one provider boundary and consume
+   only eligible reviewed guidance.
+2. Bind evaluation events to the exact completed run and used guidance.
 3. Ingest authorized writing samples and direct style preferences as the
    primary product evidence.
 4. Present localized observations and editable, context-specific guidance.
@@ -238,11 +243,12 @@ Then open `http://127.0.0.1:8765`.
 - Scoped profile context export is complete.
 - The first low-risk local generation dry run exists, but persisted run
   provenance and user-authored guidance remain open.
-- Creative Style Kit Phase 0 contracts and Increment 1 local persistence are
-  complete and validated by the 38-test suite.
-- The next active slice is Increment 2 in
-  `plans/15-style-kit-validated-execution.md`: guidance lifecycle only, before
-  providers, routes, or UI.
+- Creative Style Kit Phase 0 contracts, Increment 1 local persistence, and
+  Increment 2 guidance lifecycle are complete and validated by the 45-test
+  suite.
+- The next active slice is Increment 3 in
+  `plans/15-style-kit-validated-execution.md`: persisted dry-run/mock runs and
+  output validation only, before routes or UI.
 - Model-backed execution remains deferred until after the local closed loop and
   product-evaluation gate.
 - Experimental Sol OCEAN follow-up is limited to expert/cognitive review and a

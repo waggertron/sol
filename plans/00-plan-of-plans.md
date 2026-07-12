@@ -146,15 +146,13 @@ Output:
 
 ## Immediate Next Steps
 
-1. Add user-reviewed generation-guidance lifecycle to the completed atomic
-   local repository.
-2. Add persisted pilot runs and a deterministic local/mock provider boundary as
-   a separate validated increment.
-3. Bind evaluation to the exact run before adding consented writing samples and
+1. Add persisted pilot runs and a deterministic local/mock provider boundary to
+   the completed guidance lifecycle.
+2. Bind evaluation to the exact run before adding consented writing samples and
    direct style calibration as the primary product evidence.
-4. Close the source-to-profile-to-artifact-to-feedback loop locally, then test
+3. Close the source-to-profile-to-artifact-to-feedback loop locally, then test
    it against a generic baseline before approving a real model provider.
-5. Keep experimental OCEAN review as a parallel validation track rather than a
+4. Keep experimental OCEAN review as a parallel validation track rather than a
    dependency of the Creative Style Kit.
 
 Execution ledgers:

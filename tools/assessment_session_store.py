@@ -15,6 +15,7 @@ import threading
 from typing import Any
 
 from assessment_to_profile_atoms import ensure_product_assessment, generate_output, load_json, parse_responses
+from profile_atom_policy import is_generation_eligible
 
 
 ROOT = Path(".")
@@ -50,15 +51,6 @@ def normalize_utc_timestamp(value: str, field: str) -> str:
     if parsed.tzinfo is None:
         raise ValueError(f"{field} must include a timezone")
     return parsed.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-
-
-def is_generation_eligible(atom: dict[str, Any]) -> bool:
-    return (
-        atom.get("state") == "active_atom"
-        and atom.get("activation_scope") in {"contextual", "global"}
-        and atom.get("user_feedback") in {"confirmed", "edited"}
-        and atom.get("sensitivity_level") != "blocked"
-    )
 
 
 def validate_atom_lifecycle(atom: dict[str, Any]) -> None:

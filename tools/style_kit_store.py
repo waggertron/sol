@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 import tempfile
 import threading
-from typing import Any, Protocol
+from typing import Any, Callable, Protocol
 
 from validate_style_kit_contracts import SCHEMA_FILES, validate_contract_bundle
 
@@ -40,6 +40,13 @@ class StyleKitRepository(Protocol):
         collection: str,
         record_id: str,
         record: dict[str, Any],
+    ) -> dict[str, Any]: ...
+
+    def mutate_record(
+        self,
+        collection: str,
+        record_id: str,
+        mutation: Callable[[dict[str, Any]], dict[str, Any]],
     ) -> dict[str, Any]: ...
 
 
@@ -166,4 +173,26 @@ class JsonStyleKitRepository:
                     validate_bundle(bundle)
                     atomic_write_json(self.path, bundle)
                     return deepcopy(candidate_record)
+        raise KeyError(f"Unknown Style Kit record in {collection}: {record_id}")
+
+    def mutate_record(
+        self,
+        collection: str,
+        record_id: str,
+        mutation: Callable[[dict[str, Any]], dict[str, Any]],
+    ) -> dict[str, Any]:
+        """Apply one validated record mutation while holding the repository lock."""
+        validate_collection(collection)
+        with MUTATION_LOCK:
+            bundle = self._load_unlocked()
+            for index, existing in enumerate(bundle[collection]):
+                if existing.get("id") != record_id:
+                    continue
+                candidate_record = deepcopy(mutation(deepcopy(existing)))
+                if candidate_record.get("id") != record_id:
+                    raise ValueError("Mutation cannot change a Style Kit record id")
+                bundle[collection][index] = candidate_record
+                validate_bundle(bundle)
+                atomic_write_json(self.path, bundle)
+                return deepcopy(candidate_record)
         raise KeyError(f"Unknown Style Kit record in {collection}: {record_id}")

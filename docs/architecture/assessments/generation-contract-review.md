@@ -51,3 +51,13 @@ Before adding a model-backed mode:
   notes, duplicate references, invalid values, and raw-response preservation.
 - The repository QA command passes with tracked assessment storage unchanged.
 
+## Progress Since Review
+
+- `tools/style_kit_guidance.py` now provides the domain-level user review path
+  for proposed, confirmed, edited, and disabled guidance.
+- Guidance activation uses the same shared profile-atom eligibility policy as
+  scoped assessment context export and never derives an instruction from a
+  broad assessment claim automatically.
+- A browser/API authoring surface is still open.
+- Persisted pilot runs, provider integration, and output validation remain open,
+  so model-backed mode is still not approved.
