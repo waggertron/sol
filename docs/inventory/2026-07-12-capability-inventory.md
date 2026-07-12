@@ -26,7 +26,7 @@ Capability maturity:
 | Consent/data control | Working local MVP boundary | Persisted session consent, fingerprints, selective deletion; not source-level or multi-user |
 | Generation | Early contract prototype | Eligible-context packet and model-free prompt dry run only |
 | Evaluation | Minimal | Categorical feedback events; no baseline comparison or reporting |
-| Creative Style Kit contracts | Validated foundation | Five versioned record schemas, cross-record validator, local/mock ADR |
+| Creative Style Kit contracts/storage | Validated foundation | Five record schemas, cross-record validator, atomic local repository, local/mock ADR |
 | Creative Style Kit inputs | Not implemented | No writing samples, examples, preferences, or moodboards |
 | Original Sol assessment | Experimental design review | 30-item inactive candidate; no expert or empirical validation |
 | Production platform | Not implemented | No auth, multi-user DB, deployment, provider operations, or observability |
@@ -180,6 +180,21 @@ provenance.
 - generation mappings and mapping feedback notes;
 - counterevidence and user visibility.
 
+### Creative Style Kit Repository
+
+`tools/style_kit_store.py` provides:
+
+- a repository protocol and local JSON implementation;
+- environment-selected storage with an ignored `tmp/` default;
+- empty reads without filesystem side effects;
+- create/read/list/replace operations for all five record collections;
+- complete bundle validation before every write;
+- atomic replacement and in-process mutation serialization;
+- defensive copies and explicit corruption/unsupported-operation errors;
+- user-only permissions on created repository files.
+
+It remains single-process and has no routes or product UI.
+
 ## API Inventory
 
 The local HTTP server exposes JSON/static routes for:
@@ -316,7 +331,7 @@ Guidance files:
 
 ### Automated
 
-30 unittest cases cover:
+38 unittest cases cover:
 
 - session lifecycle and isolated JSONDB behavior;
 - consent/instrument provenance;
@@ -329,7 +344,9 @@ Guidance files:
 - model-free generation safety and feedback;
 - experimental candidate structure, collision, manifest, and activation guards;
 - Creative Style Kit schemas, ownership, references, guidance eligibility,
-  deletion redaction, and external-provider rejection.
+  deletion redaction, and external-provider rejection;
+- Style Kit read-after-write, invalid-write atomicity, defensive copies,
+  environment isolation, corruption handling, and in-process concurrency.
 
 ### Rendered
 

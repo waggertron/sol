@@ -60,18 +60,21 @@ Validation gate:
 
 Goal: persist the new records without adding UI or generation behavior.
 
+Status: complete. Eight focused repository tests and the full 38-test suite
+pass; tracked assessment storage is unchanged.
+
 Implementation:
 
-- [ ] Add a repository interface for loading, listing, getting, creating, and
+- [x] Add a repository interface for loading, listing, getting, creating, and
   replacing a versioned Style Kit bundle.
-- [ ] Add a local JSONDB implementation with atomic same-directory replacement
+- [x] Add a local JSONDB implementation with atomic same-directory replacement
   and in-process mutation serialization.
-- [ ] Select storage through an environment variable; tests always use a
+- [x] Select storage through an environment variable; tests always use a
   temporary path and manual defaults remain under ignored `tmp/` storage.
-- [ ] Validate the full bundle before every successful write.
-- [ ] Reject duplicate IDs, owner mismatches, dangling references, invalid
+- [x] Validate the full bundle before every successful write.
+- [x] Reject duplicate IDs, owner mismatches, dangling references, invalid
   lifecycle states, and unapproved external runs.
-- [ ] Return copies so callers cannot mutate persisted state out of band.
+- [x] Return copies so callers cannot mutate persisted state out of band.
 
 Acceptance:
 
@@ -330,5 +333,5 @@ reviewed.
 
 ## Current Next Step
 
-Implement Increment 1 only: the contract-backed local repository. Do not mix
-guidance lifecycle, provider behavior, routes, or UI into that change.
+Implement Increment 2 only: generation-guidance lifecycle. Do not mix provider
+behavior, routes, or UI into that change.

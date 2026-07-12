@@ -267,7 +267,8 @@ variants. Automated tests must never require credentials or network access.
 
 Goal: remove ambiguity before adding user data or generation.
 
-Status: complete. Contract validation and the full 30-test regression suite pass.
+Status: complete. Contract validation and the current full 38-test regression
+suite pass.
 
 Tasks:
 
@@ -548,17 +549,15 @@ This is not on the current critical path.
 
 Recommended next implementation sequence:
 
-1. Implement the completed contracts behind an isolated, atomic local
-   repository.
-2. Add guidance lifecycle without routes or UI.
-3. Add persisted dry-run/mock runs and bounded output validation.
-4. Bind evaluation events to exact completed runs and used guidance.
-5. Build Guidance, Run History, and blinded comparison UI.
-6. Add pasted writing-source consent/storage/cascading deletion.
-7. Add deterministic writing observations.
-8. Add direct style calibration.
-9. Close the local mock artifact/evaluation loop.
-10. Run the product-value gate before any real model or visual work.
+1. Add guidance lifecycle without routes or UI.
+2. Add persisted dry-run/mock runs and bounded output validation.
+3. Bind evaluation events to exact completed runs and used guidance.
+4. Build Guidance, Run History, and blinded comparison UI.
+5. Add pasted writing-source consent/storage/cascading deletion.
+6. Add deterministic writing observations.
+7. Add direct style calibration.
+8. Close the local mock artifact/evaluation loop.
+9. Run the product-value gate before any real model or visual work.
 
 The acceptance behavior and validation command for each increment live in
 `plans/15-style-kit-validated-execution.md`.

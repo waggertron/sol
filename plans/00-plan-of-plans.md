@@ -146,10 +146,10 @@ Output:
 
 ## Immediate Next Steps
 
-1. Persist the completed source, observation, guidance, pilot-run, and
-   evaluation contracts through an isolated, atomic local repository.
-2. Add user-reviewed generation-guidance lifecycle, persisted pilot runs, and a
-   deterministic local/mock provider boundary in separate validated increments.
+1. Add user-reviewed generation-guidance lifecycle to the completed atomic
+   local repository.
+2. Add persisted pilot runs and a deterministic local/mock provider boundary as
+   a separate validated increment.
 3. Bind evaluation to the exact run before adding consented writing samples and
    direct style calibration as the primary product evidence.
 4. Close the source-to-profile-to-artifact-to-feedback loop locally, then test

@@ -56,11 +56,13 @@ The local assessment MVP supports:
 - structured generation feedback linked to inspectable mapping notes;
 - serialized and atomic local JSONDB mutation for the single-process MVP.
 
-The Creative Style Kit contract foundation now also includes five versioned
-record schemas, a cross-linked example bundle, an offline validator, and an ADR
-covering ownership, consent, retention, deletion, and local/mock boundaries.
+The Creative Style Kit foundation now also includes five versioned record
+schemas, a cross-linked example bundle, an offline validator, an ADR covering
+ownership/consent/retention/deletion, and a contract-validated atomic local
+repository. The repository defaults to ignored `tmp/` storage and exposes no UI
+or network service yet.
 
-The current automated suite has 30 tests, plus rendered desktop/mobile QA for
+The current automated suite has 38 tests, plus rendered desktop/mobile QA for
 the Administer and Workbench views.
 
 ## What Is Not Complete
@@ -123,7 +125,7 @@ As of 2026-07-12:
 | Import queue records | 3,386 |
 | Imported queue records | 3,089 |
 | Pending paper references | 283, all title-only |
-| Automated tests | 30 |
+| Automated tests | 38 |
 
 See [`docs/current-state.md`](docs/current-state.md) for the maintained handoff
 and [`docs/audits/2026-07-12-initial-plan-progress-audit.md`](docs/audits/2026-07-12-initial-plan-progress-audit.md)
@@ -174,8 +176,8 @@ The active product roadmap is
 
 Current order:
 
-1. Implement the contract-backed local repository with atomic, validated writes.
-2. Add user-reviewed guidance lifecycle, then persisted dry-run/`mock://` runs.
+1. Add user-reviewed generation-guidance lifecycle.
+2. Add persisted dry-run/`mock://` runs behind one provider contract.
 3. Bind blinded evaluations to the exact run and guidance used.
 4. Add explicitly consented writing samples and direct style calibration.
 5. Close the local source-to-profile-to-artifact-to-feedback loop and compare it

@@ -143,7 +143,9 @@ a direct global generation control.
   `schemas/style_kit/v1/`. The v1 policy is self-authored writing only,
   local-until-deleted retention, independent cross-linked records, and no
   external provider. `plans/15-style-kit-validated-execution.md` is the active
-  small-increment ledger; the next step is contract-backed local persistence.
+  small-increment ledger. Increment 1 added an atomic, contract-validating,
+  filesystem-backed repository at `tools/style_kit_store.py`; the next step is
+  generation-guidance lifecycle without providers, routes, or UI.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -196,9 +198,9 @@ The latest snapshot is maintained in `docs/current-state.md`.
 The assessment administration foundation is complete enough for the next
 product proof. Build the Creative Style Kit text loop in this order:
 
-1. Persist the defined source, observation, guidance, pilot-run, and evaluation
-   contracts through an isolated, atomic local repository.
-2. Add user-reviewed guidance and persisted runs behind dry-run and deterministic
+1. Add user-reviewed guidance lifecycle to the completed atomic local
+   repository.
+2. Add persisted runs behind dry-run and deterministic
    `mock://` providers.
 3. Add consented writing samples and direct style calibration.
 4. Present source-bound observations and editable contextual guidance.

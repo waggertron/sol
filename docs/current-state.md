@@ -136,6 +136,11 @@ Reference-only or license-review instruments are tracked in:
 - Optional operator/development dependencies are declared in
   `requirements-dev.txt`; production assessment and RAG paths remain standard
   library based.
+- `tools/style_kit_store.py` now provides the first Creative Style Kit
+  persistence boundary: an environment-selectable, atomic, single-process local
+  JSON repository that validates the full record graph before each mutation and
+  returns defensive copies. Its default manual path is ignored
+  `tmp/style-kit/style-kit-records.json`; no routes or UI use it yet.
 
 Current queue ingestion support:
 
@@ -181,10 +186,9 @@ The assessment-first foundation now proves administration, evidence,
 correction, lifecycle controls, and scoped context export. The next product
 proof returns to the Personal Creative Style Kit itself:
 
-1. Persist the defined source, observation, guidance, pilot-run, and evaluation
-   contracts through an isolated, atomic local repository.
-2. Add user-reviewed contextual generation guidance and persisted local/mock
-   pilot runs.
+1. Add user-reviewed contextual generation-guidance lifecycle to the completed
+   local repository.
+2. Add persisted local/mock pilot runs behind one provider boundary.
 3. Ingest authorized writing samples and direct style preferences as the
    primary product evidence.
 4. Present localized observations and editable, context-specific guidance.
@@ -234,11 +238,11 @@ Then open `http://127.0.0.1:8765`.
 - Scoped profile context export is complete.
 - The first low-risk local generation dry run exists, but persisted run
   provenance and user-authored guidance remain open.
-- Creative Style Kit Phase 0 contracts are complete and validated by the
-  30-test suite.
-- The next active slice is Increment 1 in
-  `plans/15-style-kit-validated-execution.md`: contract-backed local persistence
-  only, before guidance, providers, routes, or UI.
+- Creative Style Kit Phase 0 contracts and Increment 1 local persistence are
+  complete and validated by the 38-test suite.
+- The next active slice is Increment 2 in
+  `plans/15-style-kit-validated-execution.md`: guidance lifecycle only, before
+  providers, routes, or UI.
 - Model-backed execution remains deferred until after the local closed loop and
   product-evaluation gate.
 - Experimental Sol OCEAN follow-up is limited to expert/cognitive review and a
