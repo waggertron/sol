@@ -10,7 +10,10 @@
     "owner_id",
     "consent_refs",
     "run_id",
+    "evaluation_state",
     "was_blinded",
+    "presented_variant_order",
+    "selected_variant_id",
     "choice",
     "feels_like_me",
     "usefulness",
@@ -30,13 +33,23 @@
     "owner_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{2,199}$"},
     "consent_refs": {
       "type": "array",
-      "minItems": 1,
       "uniqueItems": true,
       "items": {"type": "string", "pattern": "^consent_[a-z0-9][a-z0-9._-]{2,191}$"}
     },
     "run_id": {"type": "string", "pattern": "^run_[a-z0-9][a-z0-9._-]{2,195}$"},
+    "evaluation_state": {"enum": ["choice_recorded", "revealed", "deleted"]},
     "was_blinded": {"const": true},
-    "choice": {"enum": ["personalized", "generic", "tie", "cannot_judge"]},
+    "presented_variant_order": {
+      "type": "array",
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^variant_[a-z0-9][a-z0-9._-]{2,191}$"}
+    },
+    "selected_variant_id": {
+      "type": ["string", "null"],
+      "pattern": "^variant_[a-z0-9][a-z0-9._-]{2,191}$"
+    },
+    "choice": {"enum": ["personalized", "generic", "tie", "cannot_judge", null]},
     "feels_like_me": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
     "usefulness": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
     "labels": {
@@ -53,11 +66,19 @@
     "provenance": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["recorded_by", "evaluation_contract_version", "revealed_after_choice"],
+      "required": [
+        "recorded_by",
+        "evaluation_contract_version",
+        "choice_recorded_at",
+        "identity_revealed_at",
+        "revealed_after_choice"
+      ],
       "properties": {
         "recorded_by": {"const": "user"},
         "evaluation_contract_version": {"const": 1},
-        "revealed_after_choice": {"const": true}
+        "choice_recorded_at": {"type": ["string", "null"], "format": "date-time"},
+        "identity_revealed_at": {"type": ["string", "null"], "format": "date-time"},
+        "revealed_after_choice": {"type": "boolean"}
       }
     },
     "record_state": {"enum": ["active", "deleted"]},

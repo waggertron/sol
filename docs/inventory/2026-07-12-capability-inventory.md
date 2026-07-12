@@ -24,9 +24,9 @@ Capability maturity:
 | Assessment administration | Working local MVP | Browser flow, persistence, scoring, evidence, correction, deletion |
 | Profile atom lifecycle | Working local MVP | Provisional/active/suppressed states, review history, scoped export |
 | Consent/data control | Working local MVP boundary | Persisted session consent, fingerprints, selective deletion; not source-level or multi-user |
-| Generation | Early contract prototype | Eligible-context packet and model-free prompt dry run only |
-| Evaluation | Minimal | Categorical feedback events; no baseline comparison or reporting |
-| Creative Style Kit contracts/storage | Validated foundation | Five record schemas, cross-record validator, atomic local repository, local/mock ADR |
+| Generation | Local contract prototype | Eligible context, reviewed guidance, persisted dry-run/deterministic mock variant pairs |
+| Evaluation | Local contract prototype | Two-step blinded run-bound events and deletion; no browser flow or aggregate reporting |
+| Creative Style Kit contracts/storage | Validated foundation | Five record schemas, cross-record validator, atomic repository, local mock runs/evaluation |
 | Creative Style Kit inputs | Not implemented | No writing samples, examples, preferences, or moodboards |
 | Original Sol assessment | Experimental design review | 30-item inactive candidate; no expert or empirical validation |
 | Production platform | Not implemented | No auth, multi-user DB, deployment, provider operations, or observability |
@@ -195,6 +195,12 @@ provenance.
 
 It remains single-process and has no routes or product UI.
 
+`tools/style_kit_guidance.py`, `tools/style_kit_pilot.py`, and
+`tools/style_kit_evaluation.py` add reviewed guidance, persisted deterministic
+generic/personalized runs, and a two-step blinded choice/reveal lifecycle over
+that repository. Evaluations accept only exact completed runs and guidance used
+by their personalized variant, and can be independently redacted.
+
 ## API Inventory
 
 The local HTTP server exposes JSON/static routes for:
@@ -234,16 +240,17 @@ production deployment contract.
 - persisted generic/personalized pilot-run records;
 - dry-run and deterministic local mock providers behind one interface;
 - task, context, consent, guidance-snapshot, request, and output hashes;
-- bounded output structure/framing validation and failed-output redaction.
+- bounded output structure/framing validation and failed-output redaction;
+- run-bound two-step blinded choice/reveal evaluation events;
+- optional ratings, constrained labels/corrections, and independent deletion.
 
 ### Missing Gate Conditions
 
 - browser/API generation-guidance authoring;
-- feedback enforcement against a known run and exact atoms used;
 - explicit external-model opt-in and approved external provider;
 - user-visible generated artifact;
-- generic baseline comparison;
-- output evaluation/reporting.
+- browser-based generic baseline comparison;
+- aggregate output evaluation/reporting.
 
 ## Research And RAG Inventory
 
@@ -336,7 +343,7 @@ Guidance files:
 
 ### Automated
 
-54 unittest cases cover:
+61 unittest cases cover:
 
 - session lifecycle and isolated JSONDB behavior;
 - consent/instrument provenance;
@@ -356,7 +363,9 @@ Guidance files:
   eligibility, atom exclusions, filtering, and disabling;
 - dry-run/mock persistence, deterministic output, generic isolation, exact
   hashes/snapshots, output validation/redaction, provider exclusion, and stale
-  guidance rejection.
+  guidance rejection;
+- two-step blinded choice/reveal ordering, exact run/guidance binding, rating
+  and correction boundaries, and independent evaluation deletion.
 
 ### Rendered
 
@@ -393,8 +402,8 @@ shape. They are historical examples, not canonical current-schema golden files.
 2. The original wedge's direct style evidence is absent.
 3. Broad assessment traits have weak direct linkage to generation behavior.
 4. Generation is contract-only and model-free.
-5. Pilot-run provenance is absent.
-6. Evaluation events/reporting are incomplete.
+5. Pilot-run and evaluation contracts are not exposed through the browser.
+6. Aggregate evaluation reporting is absent.
 7. JSONDB is intentionally single-process/local.
 8. Historical assessment artifacts remain intentionally labeled examples of an
    earlier schema rather than current golden fixtures.

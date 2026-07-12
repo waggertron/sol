@@ -267,7 +267,7 @@ variants. Automated tests must never require credentials or network access.
 
 Goal: remove ambiguity before adding user data or generation.
 
-Status: complete. Contract validation and the current full 54-test regression
+Status: complete. Contract validation and the current full 61-test regression
 suite pass.
 
 Tasks:
@@ -299,7 +299,7 @@ Tasks:
 - [ ] Add user-editable contextual generation guidance to profile atoms.
 - [x] Enforce guidance lifecycle and prompt-safe representation.
 - [x] Persist pilot runs with exact atom/guidance references and context hash.
-- [ ] Require feedback to target a known run and used guidance.
+- [x] Require feedback to target a known run and used guidance.
 - [x] Add output schema/safety validator.
 - [x] Add `dry-run` and deterministic `mock://` providers behind one interface.
 - [ ] Add workbench Guidance and Run History surfaces.
@@ -549,13 +549,12 @@ This is not on the current critical path.
 
 Recommended next implementation sequence:
 
-1. Bind evaluation events to exact completed runs and used guidance.
-2. Build Guidance, Run History, and blinded comparison UI.
-3. Add pasted writing-source consent/storage/cascading deletion.
-4. Add deterministic writing observations.
-5. Add direct style calibration.
-6. Close the local mock artifact/evaluation loop.
-7. Run the product-value gate before any real model or visual work.
+1. Build Guidance, Run History, and blinded comparison UI.
+2. Add pasted writing-source consent/storage/cascading deletion.
+3. Add deterministic writing observations.
+4. Add direct style calibration.
+5. Close the local mock artifact/evaluation loop.
+6. Run the product-value gate before any real model or visual work.
 
 The acceptance behavior and validation command for each increment live in
 `plans/15-style-kit-validated-execution.md`.

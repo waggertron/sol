@@ -9,8 +9,8 @@ The model-backed generation gate is **not yet approved**.
 The local dry-run and feedback contracts are suitable for continued local
 development after the hardening in this review, but enabling an external model
 would currently create pressure to invent style rules from broad assessment
-claims. Assessment-derived atoms have no user-reviewed generation mappings by
-default, and feedback events are not yet constrained to a persisted pilot run.
+claims. Assessment-derived atoms still have no browser authoring path for
+concrete user-reviewed generation mappings, and provider opt-in remains open.
 
 ## Findings Resolved
 
@@ -34,14 +34,9 @@ Before adding a model-backed mode:
 1. Add a user-reviewed authoring path for concrete generation guidance.
    Assessment claims with empty `generation_mappings` should remain questions,
    not be converted into style instructions by a model.
-2. Persist pilot-run records with pilot id, prompt-contract version, exact atom
-   references, timestamps, and eventual output metadata. Feedback must target a
-   known run and only atoms actually used by that run.
-3. Define the provider boundary and explicit user opt-in. The default command
+2. Define the provider boundary and explicit user opt-in. The default command
    must remain dry-run and must not require cloud credentials.
-4. Add output validation for required sections, prohibited diagnostic or fixed-
-   identity framing, and provenance back to the pilot run.
-5. Add an end-to-end test proving rejected, suppressed, unconfirmed, blocked,
+3. Add an end-to-end test proving rejected, suppressed, unconfirmed, blocked,
    and review-only atoms cannot reach a model request.
 
 ## Review Evidence
@@ -62,6 +57,8 @@ Before adding a model-backed mode:
 - `tools/style_kit_pilot.py` now persists exact generic/personalized dry-run and
   mock records with versioned prompt-safe guidance snapshots, request/context
   hashes, and bounded output validation.
-- External-provider opt-in, evaluation binding, the full exclusion test at the
-  eventual provider request boundary, and browser/API surfaces remain open, so
-  model-backed mode is still not approved.
+- `tools/style_kit_evaluation.py` now binds a two-step blinded choice/reveal
+  event to an active completed mock run and the exact guidance used.
+- External-provider opt-in, the full exclusion test at the eventual provider
+  request boundary, and browser/API surfaces remain open, so model-backed mode
+  is still not approved.

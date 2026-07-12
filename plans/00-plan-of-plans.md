@@ -33,6 +33,8 @@ Current implementation state:
   and eligible context locally
 - structured pilot feedback produces provenance-linked generation-guidance
   notes without silently changing assessment evidence or confidence
+- deterministic Style Kit pilot runs now support a persisted two-step blinded
+  evaluation lifecycle bound to the exact run and guidance used
 - original Sol OCEAN design work has a 30-item, manifest-excluded experimental
   candidate with a construct blueprint and structural/collision validator;
   expert and empirical validation remain open
@@ -146,13 +148,12 @@ Output:
 
 ## Immediate Next Steps
 
-1. Bind blinded evaluation events to the exact persisted run and used guidance.
-2. Add browser guidance, run-history, and comparison surfaces before adding
+1. Add browser guidance, run-history, and comparison surfaces before adding
    consented writing samples and direct style calibration as the primary
    product evidence.
-3. Close the source-to-profile-to-artifact-to-feedback loop locally, then test
+2. Close the source-to-profile-to-artifact-to-feedback loop locally, then test
    it against a generic baseline before approving a real model provider.
-4. Keep experimental OCEAN review as a parallel validation track rather than a
+3. Keep experimental OCEAN review as a parallel validation track rather than a
    dependency of the Creative Style Kit.
 
 Execution ledgers:

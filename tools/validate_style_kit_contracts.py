@@ -140,6 +140,15 @@ def validate_timestamps(value: Any, label: str, errors: list[str]) -> None:
             validate_timestamps(nested, f"{label}[{index}]", errors)
 
 
+def parse_timestamp(value: Any) -> datetime | None:
+    if not isinstance(value, str):
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
 def validate_cross_record_contracts(bundle: dict[str, Any], allow_external: bool = False) -> list[str]:
     errors: list[str] = []
     collections = {
@@ -312,6 +321,87 @@ def validate_cross_record_contracts(bundle: dict[str, Any], allow_external: bool
             continue
         if event.get("owner_id") != run.get("owner_id"):
             errors.append(f"{event_id} owner does not match its run")
+        if event.get("record_state") == "deleted":
+            if event.get("evaluation_state") != "deleted":
+                errors.append(f"{event_id} deleted record must use deleted evaluation_state")
+            fields_to_clear = {
+                "consent_refs": [],
+                "presented_variant_order": [],
+                "selected_variant_id": None,
+                "choice": None,
+                "feels_like_me": None,
+                "usefulness": None,
+                "labels": [],
+                "correction": None,
+                "affected_guidance_refs": [],
+            }
+            for field, cleared_value in fields_to_clear.items():
+                if event.get(field) != cleared_value:
+                    errors.append(f"{event_id} deleted evaluation must clear {field}")
+            provenance = event.get("provenance", {})
+            if provenance.get("choice_recorded_at") is not None:
+                errors.append(f"{event_id} deleted evaluation must clear choice_recorded_at")
+            if provenance.get("identity_revealed_at") is not None:
+                errors.append(f"{event_id} deleted evaluation must clear identity_revealed_at")
+            if provenance.get("revealed_after_choice") is not False:
+                errors.append(f"{event_id} deleted evaluation must clear reveal state")
+            continue
+        evaluation_state = event.get("evaluation_state")
+        if evaluation_state not in {"choice_recorded", "revealed"}:
+            errors.append(f"{event_id} active evaluation has invalid evaluation_state")
+        if event.get("choice") is None:
+            errors.append(f"{event_id} active evaluation requires a choice")
+        if event.get("consent_refs") != run.get("consent_refs"):
+            errors.append(f"{event_id} consent_refs must match its run")
+        if run.get("record_state") != "active" or run.get("status") != "completed" or run.get("mode") != "mock":
+            errors.append(f"{event_id} requires an active completed mock run")
+        variants = run.get("variants", [])
+        variant_by_id = {variant.get("variant_id"): variant for variant in variants}
+        presented_order = event.get("presented_variant_order", [])
+        if len(presented_order) != 2 or set(presented_order) != set(variant_by_id):
+            errors.append(f"{event_id} presented_variant_order must contain both run variants")
+        if any(
+            variant.get("output") is None or variant.get("validation", {}).get("status") != "passed"
+            for variant in variants
+        ):
+            errors.append(f"{event_id} run variants must have passed visible output")
+        selected_variant_id = event.get("selected_variant_id")
+        choice = event.get("choice")
+        if choice in {"generic", "personalized"}:
+            selected = variant_by_id.get(selected_variant_id)
+            if selected is None or selected.get("kind") != choice:
+                errors.append(f"{event_id} selected_variant_id does not match choice")
+        elif choice in {"tie", "cannot_judge"} and selected_variant_id is not None:
+            errors.append(f"{event_id} tie/cannot_judge choice must not select a variant")
+        provenance = event.get("provenance", {})
+        choice_at = parse_timestamp(provenance.get("choice_recorded_at"))
+        reveal_at = parse_timestamp(provenance.get("identity_revealed_at"))
+        created_at = parse_timestamp(event.get("created_at"))
+        updated_at = parse_timestamp(event.get("updated_at"))
+        if choice_at is not None and created_at is not None and created_at != choice_at:
+            errors.append(f"{event_id} created_at must match blinded choice time")
+        if evaluation_state == "choice_recorded":
+            if reveal_at is not None or provenance.get("revealed_after_choice") is not False:
+                errors.append(f"{event_id} choice_recorded event cannot reveal identity")
+            if updated_at is not None and choice_at is not None and updated_at != choice_at:
+                errors.append(f"{event_id} choice_recorded updated_at must match choice time")
+            feedback_to_clear = {
+                "feels_like_me": None,
+                "usefulness": None,
+                "labels": [],
+                "correction": None,
+                "affected_guidance_refs": [],
+            }
+            for field, cleared_value in feedback_to_clear.items():
+                if event.get(field) != cleared_value:
+                    errors.append(f"{event_id} choice_recorded event must not contain {field}")
+        if evaluation_state == "revealed":
+            if provenance.get("revealed_after_choice") is not True or reveal_at is None:
+                errors.append(f"{event_id} revealed event requires identity reveal provenance")
+            if choice_at is not None and reveal_at is not None and reveal_at <= choice_at:
+                errors.append(f"{event_id} identity reveal must be later than blinded choice")
+            if reveal_at is not None and updated_at is not None and updated_at < reveal_at:
+                errors.append(f"{event_id} cannot be updated before identity reveal")
         for consent_ref in event.get("consent_refs", []):
             source = consent_to_source.get(consent_ref)
             if source is None:

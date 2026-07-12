@@ -149,8 +149,11 @@ a direct global generation control.
   and centralized atom eligibility in `tools/profile_atom_policy.py`. Increment
   3 added persisted dry-run/mock generic-personalized run pairs, exact
   prompt-safe guidance snapshots, deterministic request/context hashes, and
-  bounded output validation at `tools/style_kit_pilot.py`; the next step is
-  evaluation binding without routes or UI.
+  bounded output validation at `tools/style_kit_pilot.py`. Increment 4 added the
+  two-step blinded lifecycle at `tools/style_kit_evaluation.py`, bound to exact
+  completed mock runs and used guidance, with independently deletable feedback.
+  The recorded stopping point is after Increment 4; Increment 5 browser
+  workbench work is explicitly unstarted.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -203,14 +206,13 @@ The latest snapshot is maintained in `docs/current-state.md`.
 The assessment administration foundation is complete enough for the next
 product proof. Build the Creative Style Kit text loop in this order:
 
-1. Bind evaluation events to exact completed runs and used guidance.
-2. Add browser guidance, run-history, comparison, and evaluation surfaces.
-3. Add consented writing samples and direct style calibration.
-4. Present source-bound observations and editable contextual guidance.
-5. Compare personalized and generic text artifacts blind and bind feedback to
+1. Add browser guidance, run-history, comparison, and evaluation surfaces.
+2. Add consented writing samples and direct style calibration.
+3. Present source-bound observations and editable contextual guidance.
+4. Compare personalized and generic text artifacts blind and bind feedback to
    the exact run and guidance used.
-6. Validate export, cascading deletion, and ineligible-atom exclusion.
-7. Use the product-value gate before any real model, visual input, or platform
+5. Validate export, cascading deletion, and ineligible-atom exclusion.
+6. Use the product-value gate before any real model, visual input, or platform
    extraction.
 
 ## Key Source Anchors

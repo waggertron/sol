@@ -160,14 +160,17 @@ python3 tools/validate_style_kit_contracts.py
 
 Goal: bind feedback to what the user actually saw.
 
+Status: complete. Seven focused evaluation tests and the full 61-test suite
+pass; tracked assessment storage is unchanged.
+
 Implementation:
 
-- [ ] Create evaluation events only for known completed runs.
-- [ ] Record the blinded choice before revealing variant identity.
-- [ ] Validate “feels like me” and usefulness ratings.
-- [ ] Restrict affected guidance to guidance used by the personalized variant.
-- [ ] Require correction text for wrong/too-strong/too-generic labels.
-- [ ] Never mutate assessment responses, claims, or confidence from an event.
+- [x] Create evaluation events only for known completed runs.
+- [x] Record the blinded choice before revealing variant identity.
+- [x] Validate “feels like me” and usefulness ratings.
+- [x] Restrict affected guidance to guidance used by the personalized variant.
+- [x] Require correction text for wrong/too-strong/too-generic labels.
+- [x] Never mutate assessment responses, claims, or confidence from an event.
 
 Acceptance:
 
@@ -337,7 +340,15 @@ because the local implementation is complete. A separate ADR must approve one
 provider/model/task combination after the local product and safety evidence is
 reviewed.
 
-## Current Next Step
+## Current Stopping Point
 
-Implement Increment 4 only: bind blinded evaluation events to completed runs and
-the exact guidance used. Do not add routes or UI in that change.
+Stop after Increment 4. Increments 0-4 are complete and validated; Increment 5
+is explicitly unstarted. This is a clean boundary because contracts, local
+storage, reviewed guidance, deterministic pilot runs, and the two-step blinded
+evaluation lifecycle now work without routes, UI, credentials, or network
+access.
+
+Resume with Increment 5 only: add the Guidance and Run History browser
+workbench, including the blinded comparison and evaluation form. Do not begin
+writing-source intake until that browser flow passes its HTTP, regression, and
+desktop/mobile validation gates.

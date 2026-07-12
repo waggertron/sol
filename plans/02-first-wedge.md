@@ -8,9 +8,9 @@ that the user can evaluate.
 
 Current implementation note: the assessment-first step is complete through
 editable atoms, evidence views, and scoped context export. Domain-level guidance
-and persisted dry-run/mock pilot provenance are also complete. The remaining
-wedge work begins with evaluation binding and browser surfaces, then consented
-writing/preference inputs before visual expansion.
+persisted dry-run/mock pilot provenance, and run-bound blinded evaluation are
+also complete. The remaining wedge work begins with browser surfaces, then
+consented writing/preference inputs before visual expansion.
 
 ## Why This Wedge
 

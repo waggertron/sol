@@ -15,3 +15,8 @@ def normalize_utc_iso(value: str, field: str) -> str:
     if parsed.tzinfo is None:
         raise ValueError(f"{field} must include a timezone")
     return parsed.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def normalized_utc_datetime(value: str) -> datetime:
+    """Parse a value already emitted by normalize_utc_iso for ordering checks."""
+    return datetime.fromisoformat(value.replace("Z", "+00:00"))

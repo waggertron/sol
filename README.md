@@ -33,10 +33,10 @@ consent
   -> structured feedback notes
 ```
 
-The next product slice prioritizes direct style choices and authorized writing
-samples, then compares personalized and generic text artifacts. OCEAN is
-optional context, and visual direction follows only after the text loop proves
-useful.
+The next product slice exposes the completed local guidance, run, and blinded
+evaluation contracts in the browser. Direct style choices and authorized
+writing samples follow. OCEAN is optional context, and visual direction follows
+only after the text loop proves useful.
 
 ## What Works Today
 
@@ -69,7 +69,12 @@ Persisted pilot runs now support credential-free `dry-run://` and deterministic
 prompt-safe guidance snapshots, task/context/request hashes, provider versions,
 and bounded output validation results.
 
-The current automated suite has 54 tests, plus rendered desktop/mobile QA for
+Evaluation events now enforce a persisted two-step blinded lifecycle: the
+opaque choice is recorded before identity reveal, and later feedback is bound
+to the exact run and guidance actually used. Events are exportable and
+independently deletable without changing assessment evidence or guidance.
+
+The current automated suite has 61 tests, plus rendered desktop/mobile QA for
 the Administer and Workbench views.
 
 ## What Is Not Complete
@@ -78,7 +83,7 @@ The repository does not yet provide:
 
 - writing-sample, liked/disliked-example, or moodboard ingestion;
 - browser-based contextual generation-guidance authoring;
-- evaluation events bound to persisted runs and exact used guidance;
+- browser guidance, run-history, blinded comparison, and evaluation surfaces;
 - model-backed artifact generation;
 - “feels like me,” usefulness, or generic-baseline evaluation reporting;
 - a validated original Sol personality assessment;
@@ -132,7 +137,7 @@ As of 2026-07-12:
 | Import queue records | 3,386 |
 | Imported queue records | 3,089 |
 | Pending paper references | 283, all title-only |
-| Automated tests | 54 |
+| Automated tests | 61 |
 
 See [`docs/current-state.md`](docs/current-state.md) for the maintained handoff
 and [`docs/audits/2026-07-12-initial-plan-progress-audit.md`](docs/audits/2026-07-12-initial-plan-progress-audit.md)
@@ -183,13 +188,13 @@ The active product roadmap is
 
 Current order:
 
-1. Bind blinded evaluations to the exact run and guidance used.
-2. Add browser guidance/run history and comparison surfaces.
-3. Add source intake and cascading deletion over the same record graph.
-4. Add explicitly consented writing samples and direct style calibration.
-5. Close the local source-to-profile-to-artifact-to-feedback loop and compare it
+1. Add browser guidance/run history, blinded comparison, and evaluation
+   surfaces.
+2. Add source intake and cascading deletion over the same record graph.
+3. Add explicitly consented writing samples and direct style calibration.
+4. Close the local source-to-profile-to-artifact-to-feedback loop and compare it
    against a generic baseline.
-6. Consider a real model provider, visual inputs, or platform extraction only
+5. Consider a real model provider, visual inputs, or platform extraction only
    after their safety and product-value gates pass.
 
 Independent expert/cognitive review of the experimental Sol OCEAN candidate is

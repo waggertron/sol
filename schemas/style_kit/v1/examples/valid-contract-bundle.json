@@ -185,7 +185,10 @@
       "owner_id": "local_user",
       "consent_refs": ["consent_sample_v1"],
       "run_id": "run_sample_v1",
+      "evaluation_state": "revealed",
       "was_blinded": true,
+      "presented_variant_order": ["variant_personalized_v1", "variant_generic_v1"],
+      "selected_variant_id": "variant_personalized_v1",
       "choice": "personalized",
       "feels_like_me": 4,
       "usefulness": 4,
@@ -195,11 +198,13 @@
       "provenance": {
         "recorded_by": "user",
         "evaluation_contract_version": 1,
+        "choice_recorded_at": "2026-07-12T18:04:59Z",
+        "identity_revealed_at": "2026-07-12T18:05:00Z",
         "revealed_after_choice": true
       },
       "record_state": "active",
       "export_state": "exportable",
-      "created_at": "2026-07-12T18:05:00Z",
+      "created_at": "2026-07-12T18:04:59Z",
       "updated_at": "2026-07-12T18:05:00Z",
       "deleted_at": null
     }

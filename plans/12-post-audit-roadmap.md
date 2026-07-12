@@ -27,13 +27,14 @@ The full evidence and resolved findings are in:
 - [ ] Add user-reviewed, contextual generation-guidance authoring.
 - [x] Persist pilot-run records with prompt version, exact atom references,
   context hash, timestamps, mode, and output metadata.
-- [ ] Require feedback to reference a known pilot run and only atoms used in it.
+- [x] Require Style Kit feedback to reference a known pilot run and only
+  guidance used in its personalized variant.
 - [x] Add output structure and safety validation.
 - [ ] Repeat the model-backed gate review; dry-run remains the default.
 
 ### B. Operationalize Evaluation
 
-- [ ] Define local events for “feels like me,” usefulness, correction, and
+- [x] Define local events for “feels like me,” usefulness, correction, and
   generic-versus-personalized preference.
 - [ ] Add a generic baseline comparison to the writing-guide pilot.
 - [ ] Report correction, rejection, completion, and feedback distributions.
@@ -71,8 +72,8 @@ The full evidence and resolved findings are in:
 
 1. Follow `plans/14-personal-creative-style-kit-roadmap.md` for the active
    product sequence.
-2. Bind blinded evaluation to persisted runs, then expose guidance/run history
-   through the workbench.
+2. Expose guidance, run history, blinded comparison, and evaluation through the
+   workbench.
 3. Add consented writing evidence, direct style calibration, and operational
    evaluation.
 4. Pursue expert/cognitive review of the experimental Sol OCEAN candidate as a
