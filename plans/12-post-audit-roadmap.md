@@ -50,9 +50,11 @@ The full evidence and resolved findings are in:
 
 ### D. Research And Assessment Work
 
-- [ ] Develop the original Sol OCEAN assessment only as an experimental,
-  validation-gated candidate; tracked in
+- [x] Develop the original Sol OCEAN assessment only as an experimental,
+  validation-gated candidate; repository design work is complete and tracked in
   `plans/13-sol-ocean-experimental-assessment.md`.
+- [ ] Complete independent expert/cognitive review before any pilot or
+  activation consideration.
 - [ ] Continue paper-tail curation only in high-signal manual clusters.
 - [ ] Add retrieval-quality evaluation before expanding the RAG architecture.
 
@@ -67,8 +69,12 @@ The full evidence and resolved findings are in:
 
 ## Current Priority Order
 
-1. Independent expert/cognitive review of the experimental Sol OCEAN candidate;
-   repository design artifacts and validation are complete.
-2. Generation-guidance authoring and persisted pilot provenance.
-3. Operational evaluation and writing-sample ingestion.
-4. Model-backed or multimodal work only after the relevant gates pass.
+1. Follow `plans/14-personal-creative-style-kit-roadmap.md` for the active
+   product sequence.
+2. Build generation-guidance authoring, persisted pilot provenance, and the
+   local/mock provider contract.
+3. Add consented writing evidence, direct style calibration, and operational
+   evaluation.
+4. Pursue expert/cognitive review of the experimental Sol OCEAN candidate as a
+   parallel, non-critical validation track.
+5. Keep model-backed and multimodal work behind their explicit gates.

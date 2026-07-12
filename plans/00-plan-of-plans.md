@@ -146,15 +146,18 @@ Output:
 
 ## Immediate Next Steps
 
-1. Add user-reviewed generation-guidance authoring and persisted pilot-run
-   provenance.
-2. Operationalize “feels like me,” usefulness, and generic-baseline evaluation.
-3. Return to the original wedge with consented writing samples and direct style
-   preferences before adding visual inputs.
-4. Continue selective OCEAN research and license-review work where it directly
-   supports those product steps.
+1. Define the source, observation, guidance, pilot-run, and evaluation contracts.
+2. Add user-reviewed generation-guidance authoring, persisted pilot runs, and a
+   deterministic local/mock provider boundary.
+3. Add consented writing samples and direct style calibration as the primary
+   product evidence.
+4. Close the source-to-profile-to-artifact-to-feedback loop locally, then test
+   it against a generic baseline before approving a real model provider.
+5. Keep experimental OCEAN review as a parallel validation track rather than a
+   dependency of the Creative Style Kit.
 
 Execution ledgers:
 
+- `14-personal-creative-style-kit-roadmap.md` (current product roadmap)
 - `12-post-audit-roadmap.md`
-- `13-sol-ocean-experimental-assessment.md`
+- `13-sol-ocean-experimental-assessment.md` (parallel validation track)

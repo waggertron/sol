@@ -169,17 +169,29 @@ docs.
 
 ## Current Product Direction
 
-The first product wedge remains the Personal Creative Style Kit, but the
-immediate implementation path remains assessment-first:
+The assessment-first foundation now proves administration, evidence,
+correction, lifecycle controls, and scoped context export. The next product
+proof returns to the Personal Creative Style Kit itself:
 
-1. Administer a permissive OCEAN instrument.
-2. Store responses and score results with instrument-version provenance.
-3. Convert scores into editable, non-diagnostic profile atom candidates.
-4. Present results with uncertainty and user correction controls in the local
-   web MVP.
-5. Export or delete local assessment sessions when needed.
-6. Review profile atoms across sessions in the workbench.
-7. Use confirmed atoms as scoped context for future generation experiments.
+1. Define consented source, observation, guidance, pilot-run, and evaluation
+   contracts.
+2. Add user-reviewed contextual generation guidance and persisted local/mock
+   pilot runs.
+3. Ingest authorized writing samples and direct style preferences as the
+   primary product evidence.
+4. Present localized observations and editable, context-specific guidance.
+5. Compare personalized and generic short text artifacts blind.
+6. Bind correction and evaluation to the exact run and guidance used.
+7. Gate any real-model, visual, or platform expansion on safety and measured
+   product value.
+
+OCEAN assessment remains optional context. Broad traits are not direct global
+generation controls, and the inactive Sol candidate is not part of this path.
+
+The full capability inventory and active roadmap live at:
+
+- `docs/inventory/2026-07-12-capability-inventory.md`
+- `plans/14-personal-creative-style-kit-roadmap.md`
 
 The first implementation-facing assessment output contract now lives at:
 
@@ -209,14 +221,15 @@ Then open `http://127.0.0.1:8765`.
 ## Current Handoff
 
 - Browser QA is currently green at the routed and rendered levels.
-- The latest committed visual QA work is in `352e9f4`.
-- The latest committed task-ledger update before this audit is in `3ab5cc1`.
 - Profile atom editing with provenance preservation is complete.
 - Inspectable evidence and uncertainty views are complete.
 - Scoped profile context export is complete.
-- The first low-risk local generation pilot is in progress.
-- The next active slice is generation-guidance authoring and persisted pilot-run
-  provenance. Model-backed execution remains deferred.
+- The first low-risk local generation dry run exists, but persisted run
+  provenance and user-authored guidance remain open.
+- The next active slice is Phase 0 and Phase 1 of
+  `plans/14-personal-creative-style-kit-roadmap.md`.
+- Model-backed execution remains deferred until after the local closed loop and
+  product-evaluation gate.
 - Experimental Sol OCEAN follow-up is limited to expert/cognitive review and a
   later validation-gated pilot; the candidate is not active in the MVP.
 

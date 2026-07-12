@@ -26,3 +26,5 @@ Start here:
   work after the assessment-integrity pass
 - `13-sol-ocean-experimental-assessment.md` - validation-gated execution ledger
   for the original Sol OCEAN assessment candidate
+- `14-personal-creative-style-kit-roadmap.md` - current product roadmap from
+  consented writing evidence through a local evaluation loop and later gates

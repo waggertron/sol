@@ -26,9 +26,14 @@ Current recommended wedge:
 
 > Personal Creative Style Kit
 
-The wedge should ingest user-provided writing samples, preferences, examples,
-and direct calibration answers; produce an editable personality/style profile;
-then generate text and visual direction the user can evaluate.
+The wedge should begin with user-provided writing samples, preferences,
+examples, and direct calibration answers; produce an editable style profile;
+then generate text the user can compare with a generic baseline. Visual
+direction comes only after the text loop demonstrates value.
+
+Direct style choices and authorized writing evidence are the primary product
+signals. OCEAN assessment is optional context, not required onboarding and not
+a direct global generation control.
 
 ## Core Loop
 
@@ -37,7 +42,8 @@ then generate text and visual direction the user can evaluate.
 3. Observations become provisional profile atoms.
 4. User confirms, edits, rejects, or scopes those atoms.
 5. Generation uses confirmed or high-confidence atoms.
-6. Output feedback updates the profile.
+6. Output feedback updates scoped generation guidance or records a correction;
+   it does not silently rewrite assessment evidence or confidence.
 
 ## Research Principles
 
@@ -126,6 +132,12 @@ then generate text and visual direction the user can evaluate.
   at `.codex/skills/sol-experimental-assessment-workflow/SKILL.md`. The durable
   lesson is that structural completeness, scoring metadata, and passing tests
   are readiness for review—not psychometric validation or product activation.
+- The complete 2026-07-12 repository inventory lives at
+  `docs/inventory/2026-07-12-capability-inventory.md`. The active product roadmap
+  is `plans/14-personal-creative-style-kit-roadmap.md`: prove a consented
+  writing-evidence and direct-preference loop locally, compare personalized and
+  generic outputs, and keep real-model, visual, and platform expansion behind
+  explicit evidence and safety gates.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -175,17 +187,19 @@ The latest snapshot is maintained in `docs/current-state.md`.
 
 ## Current Build Direction
 
-Build the first MVP around assessment administration before broader generation:
+The assessment administration foundation is complete enough for the next
+product proof. Build the Creative Style Kit text loop in this order:
 
-1. Load an instrument from `assessments/ocean/manifest.json`.
-2. Administer TIPI, Mini-IPIP, or IPIP-NEO-60.
-3. Persist responses and scores with assessment-version provenance.
-4. Present non-diagnostic results with uncertainty.
-5. Let users confirm, edit, reject, export, or delete profile atom candidates.
-6. Keep the web UI thin and route persistence through the shared Python session
-   store instead of a second ad hoc storage format.
-7. Add user-reviewed generation guidance and persisted pilot-run provenance
-   before reconsidering a model-backed pilot.
+1. Define source, observation, guidance, pilot-run, and evaluation contracts.
+2. Add user-reviewed guidance and persisted runs behind dry-run and deterministic
+   `mock://` providers.
+3. Add consented writing samples and direct style calibration.
+4. Present source-bound observations and editable contextual guidance.
+5. Compare personalized and generic text artifacts blind and bind feedback to
+   the exact run and guidance used.
+6. Validate export, cascading deletion, and ineligible-atom exclusion.
+7. Use the product-value gate before any real model, visual input, or platform
+   extraction.
 
 ## Key Source Anchors
 

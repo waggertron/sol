@@ -14,12 +14,12 @@ evidence, not identity facts.
 
 ## Product Snapshot
 
-The long-term first wedge remains the **Personal Creative Style Kit**: combine
+The first product wedge is the **Personal Creative Style Kit**: combine
 writing samples, preferences, examples, and direct calibration into an editable
 style profile, then generate text and visual direction the user can evaluate.
 
-The working implementation is currently narrower and assessment-first. It
-proves this local loop:
+The working implementation is currently a narrower assessment-first foundation.
+It proves this local loop:
 
 ```text
 consent
@@ -32,6 +32,11 @@ consent
   -> model-free writing-guide prompt dry run
   -> structured feedback notes
 ```
+
+The next product slice prioritizes direct style choices and authorized writing
+samples, then compares personalized and generic text artifacts. OCEAN is
+optional context, and visual direction follows only after the text loop proves
+useful.
 
 ## What Works Today
 
@@ -118,7 +123,8 @@ As of 2026-07-12:
 
 See [`docs/current-state.md`](docs/current-state.md) for the maintained handoff
 and [`docs/audits/2026-07-12-initial-plan-progress-audit.md`](docs/audits/2026-07-12-initial-plan-progress-audit.md)
-for the full initial-plan audit.
+for the full initial-plan audit. The complete current inventory is
+[`docs/inventory/2026-07-12-capability-inventory.md`](docs/inventory/2026-07-12-capability-inventory.md).
 
 ## Run The Local MVP
 
@@ -159,26 +165,29 @@ model.
 
 ## Roadmap
 
-The committed roadmap is
-[`plans/12-post-audit-roadmap.md`](plans/12-post-audit-roadmap.md).
+The active product roadmap is
+[`plans/14-personal-creative-style-kit-roadmap.md`](plans/14-personal-creative-style-kit-roadmap.md).
 
 Current order:
 
-1. Obtain independent expert/cognitive review of the experimental Sol OCEAN
-   candidate; repository design/validation is complete.
-2. Add user-reviewed contextual generation guidance and persisted pilot runs.
-3. Operationalize “feels like me,” usefulness, correction, and generic-baseline
-   evaluation.
-4. Return to the Creative Style Kit with explicitly consented writing samples
-   and direct style preferences.
-5. Consider model-backed generation, visual inputs, or platform extraction only
-   after their safety and evidence gates pass.
+1. Define source, observation, guidance, pilot-run, and evaluation contracts.
+2. Add user-reviewed guidance, persisted runs, and dry-run/`mock://` provider
+   behavior.
+3. Add explicitly consented writing samples and direct style calibration.
+4. Close the local source-to-profile-to-artifact-to-feedback loop and compare it
+   against a generic baseline.
+5. Consider a real model provider, visual inputs, or platform extraction only
+   after their safety and product-value gates pass.
+
+Independent expert/cognitive review of the experimental Sol OCEAN candidate is
+a parallel validation track, not a dependency of the product wedge.
 
 Detailed ledgers:
 
 - [`plans/11-mvp-hardening-and-profile-loop.md`](plans/11-mvp-hardening-and-profile-loop.md)
 - [`plans/12-post-audit-roadmap.md`](plans/12-post-audit-roadmap.md)
 - [`plans/13-sol-ocean-experimental-assessment.md`](plans/13-sol-ocean-experimental-assessment.md)
+- [`plans/14-personal-creative-style-kit-roadmap.md`](plans/14-personal-creative-style-kit-roadmap.md)
 
 ## Safety Boundaries
 
