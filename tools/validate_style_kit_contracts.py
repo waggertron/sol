@@ -45,11 +45,29 @@ def context_sha256(run: dict[str, Any]) -> str:
         {},
     )
     context = {
-        "guidance_refs": personalized.get("guidance_refs", []),
+        "consent_refs": run.get("consent_refs", []),
+        "guidance_snapshot": personalized.get("guidance_snapshot", []),
         "profile_atom_refs": personalized.get("profile_atom_refs", []),
+        "requested_context": run.get("context"),
         "source_refs": run.get("source_refs", []),
     }
     encoded = json.dumps(context, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def request_sha256(run: dict[str, Any], variant: dict[str, Any]) -> str:
+    kind = variant.get("kind")
+    request = {
+        "artifact_type": run.get("artifact_type"),
+        "context_sha256": run.get("context_sha256") if kind == "personalized" else None,
+        "requested_context": run.get("context"),
+        "guidance_refs": variant.get("guidance_refs", []),
+        "profile_atom_refs": variant.get("profile_atom_refs", []),
+        "prompt_contract_version": run.get("prompt_contract_version"),
+        "task_sha256": run.get("task_sha256"),
+        "variant_kind": kind,
+    }
+    encoded = json.dumps(request, sort_keys=True, separators=(",", ":")).encode("utf-8")
     return hashlib.sha256(encoded).hexdigest()
 
 
@@ -209,6 +227,9 @@ def validate_cross_record_contracts(bundle: dict[str, Any], allow_external: bool
         validate_timestamps(run, run_id, errors)
         validate_record_lifecycle(run, run_id, errors)
         mode = run.get("mode")
+        task_input = run.get("task_input")
+        if isinstance(task_input, str) and run.get("task_sha256") != sha256_text(task_input):
+            errors.append(f"{run_id} task_sha256 does not match task_input")
         provider_uri = run.get("provider", {}).get("uri", "")
         if mode == "dry_run" and not provider_uri.startswith("dry-run://"):
             errors.append(f"{run_id} dry_run mode requires a dry-run:// provider URI")
@@ -244,11 +265,18 @@ def validate_cross_record_contracts(bundle: dict[str, Any], allow_external: bool
             errors.append(f"{run_id} must contain one generic and one personalized variant")
         for variant in variants:
             label = f"{run_id}/{variant.get('variant_id', '<variant>')}"
+            if variant.get("request_sha256") != request_sha256(run, variant):
+                errors.append(f"{label} request_sha256 does not match exact request fields")
             if variant.get("kind") == "generic" and (
-                variant.get("guidance_refs") or variant.get("profile_atom_refs")
+                variant.get("guidance_refs")
+                or variant.get("guidance_snapshot")
+                or variant.get("profile_atom_refs")
             ):
                 errors.append(f"{label} generic variant must not contain personalization references")
             if variant.get("kind") == "personalized":
+                snapshot_ids = [item.get("id") for item in variant.get("guidance_snapshot", [])]
+                if snapshot_ids != variant.get("guidance_refs", []):
+                    errors.append(f"{label} guidance snapshot ids must match guidance_refs in order")
                 for guidance_ref in variant.get("guidance_refs", []):
                     item = guidance.get(guidance_ref)
                     if item is None:
@@ -263,8 +291,16 @@ def validate_cross_record_contracts(bundle: dict[str, Any], allow_external: bool
                 errors.append(f"{label} output_sha256 does not match output")
             if output is None and output_checksum is not None:
                 errors.append(f"{label} has an output checksum without output")
+            validation_status = variant.get("validation", {}).get("status")
+            if mode == "mock" and run.get("status") == "completed":
+                if output is None or validation_status != "passed":
+                    errors.append(f"{label} completed mock output must exist and pass validation")
+            if mode == "dry_run" and (output is not None or validation_status != "not_run"):
+                errors.append(f"{label} dry-run output must remain empty and not_run")
         if run.get("context_sha256") != context_sha256(run):
             errors.append(f"{run_id} context_sha256 does not match exact run references")
+        if run.get("status") == "completed" and not run.get("completed_at"):
+            errors.append(f"{run_id} completed run requires completed_at")
 
     for event in collections["evaluation_events"]:
         event_id = event.get("id", "<evaluation>")

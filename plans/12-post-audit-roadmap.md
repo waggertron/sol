@@ -25,10 +25,10 @@ The full evidence and resolved findings are in:
 ### A. Finish The Safe Generation Contract
 
 - [ ] Add user-reviewed, contextual generation-guidance authoring.
-- [ ] Persist pilot-run records with prompt version, exact atom references,
+- [x] Persist pilot-run records with prompt version, exact atom references,
   context hash, timestamps, mode, and output metadata.
 - [ ] Require feedback to reference a known pilot run and only atoms used in it.
-- [ ] Add output structure and safety validation.
+- [x] Add output structure and safety validation.
 - [ ] Repeat the model-backed gate review; dry-run remains the default.
 
 ### B. Operationalize Evaluation
@@ -71,8 +71,8 @@ The full evidence and resolved findings are in:
 
 1. Follow `plans/14-personal-creative-style-kit-roadmap.md` for the active
    product sequence.
-2. Build generation-guidance authoring, persisted pilot provenance, and the
-   local/mock provider contract.
+2. Bind blinded evaluation to persisted runs, then expose guidance/run history
+   through the workbench.
 3. Add consented writing evidence, direct style calibration, and operational
    evaluation.
 4. Pursue expert/cognitive review of the experimental Sol OCEAN candidate as a

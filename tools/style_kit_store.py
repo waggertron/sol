@@ -29,6 +29,11 @@ class StyleKitRepository(Protocol):
 
     def replace_bundle(self, bundle: dict[str, Any]) -> dict[str, Any]: ...
 
+    def mutate_bundle(
+        self,
+        mutation: Callable[[dict[str, Any]], dict[str, Any]],
+    ) -> dict[str, Any]: ...
+
     def list_records(self, collection: str) -> list[dict[str, Any]]: ...
 
     def get_record(self, collection: str, record_id: str) -> dict[str, Any] | None: ...
@@ -123,6 +128,20 @@ class JsonStyleKitRepository:
         if not isinstance(candidate, dict):
             raise ValueError("Style Kit bundle must be a JSON object")
         with MUTATION_LOCK:
+            validate_bundle(candidate)
+            atomic_write_json(self.path, candidate)
+            return deepcopy(candidate)
+
+    def mutate_bundle(
+        self,
+        mutation: Callable[[dict[str, Any]], dict[str, Any]],
+    ) -> dict[str, Any]:
+        """Apply one whole-graph mutation under validation and the repository lock."""
+        with MUTATION_LOCK:
+            current = self._load_unlocked()
+            candidate = deepcopy(mutation(deepcopy(current)))
+            if not isinstance(candidate, dict):
+                raise ValueError("Style Kit bundle mutation must return a JSON object")
             validate_bundle(candidate)
             atomic_write_json(self.path, candidate)
             return deepcopy(candidate)

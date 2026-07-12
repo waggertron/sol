@@ -64,7 +64,12 @@ or network service yet. A guidance-domain service now enforces explicit user
 review, immutable original wording, prompt-safe edit history, evidence
 eligibility, and disable behavior.
 
-The current automated suite has 45 tests, plus rendered desktop/mobile QA for
+Persisted pilot runs now support credential-free `dry-run://` and deterministic
+`mock://` providers. Each run stores generic and personalized variants, exact
+prompt-safe guidance snapshots, task/context/request hashes, provider versions,
+and bounded output validation results.
+
+The current automated suite has 54 tests, plus rendered desktop/mobile QA for
 the Administer and Workbench views.
 
 ## What Is Not Complete
@@ -73,7 +78,7 @@ The repository does not yet provide:
 
 - writing-sample, liked/disliked-example, or moodboard ingestion;
 - browser-based contextual generation-guidance authoring;
-- persisted pilot runs that bind prompts, exact atoms, and feedback;
+- evaluation events bound to persisted runs and exact used guidance;
 - model-backed artifact generation;
 - “feels like me,” usefulness, or generic-baseline evaluation reporting;
 - a validated original Sol personality assessment;
@@ -127,7 +132,7 @@ As of 2026-07-12:
 | Import queue records | 3,386 |
 | Imported queue records | 3,089 |
 | Pending paper references | 283, all title-only |
-| Automated tests | 45 |
+| Automated tests | 54 |
 
 See [`docs/current-state.md`](docs/current-state.md) for the maintained handoff
 and [`docs/audits/2026-07-12-initial-plan-progress-audit.md`](docs/audits/2026-07-12-initial-plan-progress-audit.md)
@@ -178,9 +183,9 @@ The active product roadmap is
 
 Current order:
 
-1. Add persisted dry-run/`mock://` runs behind one provider contract.
-2. Bind blinded evaluations to the exact run and guidance used.
-3. Add browser guidance/run history and comparison surfaces.
+1. Bind blinded evaluations to the exact run and guidance used.
+2. Add browser guidance/run history and comparison surfaces.
+3. Add source intake and cascading deletion over the same record graph.
 4. Add explicitly consented writing samples and direct style calibration.
 5. Close the local source-to-profile-to-artifact-to-feedback loop and compare it
    against a generic baseline.

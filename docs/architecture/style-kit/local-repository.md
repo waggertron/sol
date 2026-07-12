@@ -27,6 +27,7 @@ required.
 `JsonStyleKitRepository` implements the `StyleKitRepository` protocol:
 
 - load or replace the complete versioned bundle;
+- apply an atomic whole-bundle domain mutation;
 - list a collection;
 - get a record by id;
 - create a record;

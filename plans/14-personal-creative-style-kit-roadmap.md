@@ -267,7 +267,7 @@ variants. Automated tests must never require credentials or network access.
 
 Goal: remove ambiguity before adding user data or generation.
 
-Status: complete. Contract validation and the current full 45-test regression
+Status: complete. Contract validation and the current full 54-test regression
 suite pass.
 
 Tasks:
@@ -298,10 +298,10 @@ Tasks:
 
 - [ ] Add user-editable contextual generation guidance to profile atoms.
 - [x] Enforce guidance lifecycle and prompt-safe representation.
-- [ ] Persist pilot runs with exact atom/guidance references and context hash.
+- [x] Persist pilot runs with exact atom/guidance references and context hash.
 - [ ] Require feedback to target a known run and used guidance.
-- [ ] Add output schema/safety validator.
-- [ ] Add `dry-run` and deterministic `mock://` providers behind one interface.
+- [x] Add output schema/safety validator.
+- [x] Add `dry-run` and deterministic `mock://` providers behind one interface.
 - [ ] Add workbench Guidance and Run History surfaces.
 
 Acceptance:
@@ -549,15 +549,13 @@ This is not on the current critical path.
 
 Recommended next implementation sequence:
 
-1. Add guidance lifecycle without routes or UI.
-2. Add persisted dry-run/mock runs and bounded output validation.
-3. Bind evaluation events to exact completed runs and used guidance.
-4. Build Guidance, Run History, and blinded comparison UI.
-5. Add pasted writing-source consent/storage/cascading deletion.
-6. Add deterministic writing observations.
-7. Add direct style calibration.
-8. Close the local mock artifact/evaluation loop.
-9. Run the product-value gate before any real model or visual work.
+1. Bind evaluation events to exact completed runs and used guidance.
+2. Build Guidance, Run History, and blinded comparison UI.
+3. Add pasted writing-source consent/storage/cascading deletion.
+4. Add deterministic writing observations.
+5. Add direct style calibration.
+6. Close the local mock artifact/evaluation loop.
+7. Run the product-value gate before any real model or visual work.
 
 The acceptance behavior and validation command for each increment live in
 `plans/15-style-kit-validated-execution.md`.

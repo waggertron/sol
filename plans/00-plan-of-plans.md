@@ -146,10 +146,10 @@ Output:
 
 ## Immediate Next Steps
 
-1. Add persisted pilot runs and a deterministic local/mock provider boundary to
-   the completed guidance lifecycle.
-2. Bind evaluation to the exact run before adding consented writing samples and
-   direct style calibration as the primary product evidence.
+1. Bind blinded evaluation events to the exact persisted run and used guidance.
+2. Add browser guidance, run-history, and comparison surfaces before adding
+   consented writing samples and direct style calibration as the primary
+   product evidence.
 3. Close the source-to-profile-to-artifact-to-feedback loop locally, then test
    it against a generic baseline before approving a real model provider.
 4. Keep experimental OCEAN review as a parallel validation track rather than a

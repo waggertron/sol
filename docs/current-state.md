@@ -114,9 +114,10 @@ Reference-only or license-review instruments are tracked in:
   generation-guidance notes without automatically changing raw responses,
   claims, or confidence.
 - The prompt and feedback contract review is complete. Model-backed execution
-  is not yet approved; remaining gates are user-reviewed generation-guidance
-  authoring, persisted pilot runs, provider opt-in, output validation, and an
-  end-to-end exclusion test.
+  is not yet approved. Domain-level guidance, persisted dry-run/mock runs, and
+  output validation now exist; remaining gates include browser/API authoring,
+  evaluation binding, external-provider opt-in, and the eventual provider-
+  request exclusion test.
 - The assessment session boundary now validates response IDs/values, persists
   consent and exact instrument/scoring provenance for new sessions, uses
   serialized atomic JSON writes, protects reviewed atoms from rescoring, and
@@ -146,6 +147,11 @@ Reference-only or license-review instruments are tracked in:
   prompt-safe edit history, evidence eligibility checks, and context/task
   filtering. `tools/profile_atom_policy.py` is the shared eligibility predicate
   used by both assessment context export and Style Kit guidance.
+- `tools/style_kit_pilot.py` now persists generic/personalized run pairs through
+  credential-free dry-run and deterministic mock providers. Runs bind the exact
+  task, requested context, consent/source refs, versioned prompt-safe guidance
+  snapshot, atom refs, provider/prompt versions, request/context/output hashes,
+  UTC timestamps, and output validation state. Failed unsafe output is redacted.
 
 Current queue ingestion support:
 
@@ -191,9 +197,8 @@ The assessment-first foundation now proves administration, evidence,
 correction, lifecycle controls, and scoped context export. The next product
 proof returns to the Personal Creative Style Kit itself:
 
-1. Add persisted local/mock pilot runs behind one provider boundary and consume
-   only eligible reviewed guidance.
-2. Bind evaluation events to the exact completed run and used guidance.
+1. Bind blinded evaluation events to the exact completed run and used guidance.
+2. Add browser guidance, run-history, comparison, and evaluation surfaces.
 3. Ingest authorized writing samples and direct style preferences as the
    primary product evidence.
 4. Present localized observations and editable, context-specific guidance.
@@ -241,14 +246,13 @@ Then open `http://127.0.0.1:8765`.
 - Profile atom editing with provenance preservation is complete.
 - Inspectable evidence and uncertainty views are complete.
 - Scoped profile context export is complete.
-- The first low-risk local generation dry run exists, but persisted run
-  provenance and user-authored guidance remain open.
-- Creative Style Kit Phase 0 contracts, Increment 1 local persistence, and
-  Increment 2 guidance lifecycle are complete and validated by the 45-test
-  suite.
-- The next active slice is Increment 3 in
-  `plans/15-style-kit-validated-execution.md`: persisted dry-run/mock runs and
-  output validation only, before routes or UI.
+- The earlier assessment-context prompt dry run remains available; the new Style
+  Kit boundary now also persists generic/personalized dry-run and mock records.
+- Creative Style Kit Phase 0 plus Increments 1-3 are complete and validated by
+  the 54-test suite.
+- The next active slice is Increment 4 in
+  `plans/15-style-kit-validated-execution.md`: evaluation binding only, before
+  routes or UI.
 - Model-backed execution remains deferred until after the local closed loop and
   product-evaluation gate.
 - Experimental Sol OCEAN follow-up is limited to expert/cognitive review and a

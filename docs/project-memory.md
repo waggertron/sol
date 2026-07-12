@@ -146,8 +146,11 @@ a direct global generation control.
   small-increment ledger. Increment 1 added an atomic, contract-validating,
   filesystem-backed repository at `tools/style_kit_store.py`. Increment 2 added
   explicit user-reviewed guidance lifecycle at `tools/style_kit_guidance.py`
-  and centralized atom eligibility in `tools/profile_atom_policy.py`; the next
-  step is persisted dry-run/mock pilot runs without routes or UI.
+  and centralized atom eligibility in `tools/profile_atom_policy.py`. Increment
+  3 added persisted dry-run/mock generic-personalized run pairs, exact
+  prompt-safe guidance snapshots, deterministic request/context hashes, and
+  bounded output validation at `tools/style_kit_pilot.py`; the next step is
+  evaluation binding without routes or UI.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -200,9 +203,8 @@ The latest snapshot is maintained in `docs/current-state.md`.
 The assessment administration foundation is complete enough for the next
 product proof. Build the Creative Style Kit text loop in this order:
 
-1. Add persisted runs behind dry-run and deterministic
-   `mock://` providers.
-2. Bind evaluation events to exact completed runs and used guidance.
+1. Bind evaluation events to exact completed runs and used guidance.
+2. Add browser guidance, run-history, comparison, and evaluation surfaces.
 3. Add consented writing samples and direct style calibration.
 4. Present source-bound observations and editable contextual guidance.
 5. Compare personalized and generic text artifacts blind and bind feedback to

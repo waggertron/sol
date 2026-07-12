@@ -59,5 +59,9 @@ Before adding a model-backed mode:
   scoped assessment context export and never derives an instruction from a
   broad assessment claim automatically.
 - A browser/API authoring surface is still open.
-- Persisted pilot runs, provider integration, and output validation remain open,
-  so model-backed mode is still not approved.
+- `tools/style_kit_pilot.py` now persists exact generic/personalized dry-run and
+  mock records with versioned prompt-safe guidance snapshots, request/context
+  hashes, and bounded output validation.
+- External-provider opt-in, evaluation binding, the full exclusion test at the
+  eventual provider request boundary, and browser/API surfaces remain open, so
+  model-backed mode is still not approved.

@@ -127,15 +127,18 @@ python3 -m unittest tests.test_style_kit_guidance
 
 Goal: create and read persisted generic/personalized runs without a real model.
 
+Status: complete. Eight focused pilot tests, hash-contract coverage, and the
+full 54-test suite pass; tracked assessment storage is unchanged.
+
 Implementation:
 
-- [ ] Define one provider interface used by `dry-run` and `mock://`.
-- [ ] Make `mock://` output deterministic from task and context hashes.
-- [ ] Create generic and personalized variants from the same task input.
-- [ ] Persist exact source, atom, guidance, prompt-contract, and provider
+- [x] Define one provider interface used by `dry-run` and `mock://`.
+- [x] Make `mock://` output deterministic from task and context hashes.
+- [x] Create generic and personalized variants from the same task input.
+- [x] Persist exact source, atom, guidance, prompt-contract, and provider
   versions plus content hashes.
-- [ ] Add bounded output structure/safety validation.
-- [ ] Fail loudly for unsupported provider operations.
+- [x] Add bounded output structure/safety validation.
+- [x] Fail loudly for unsupported provider operations.
 
 Acceptance:
 
@@ -336,5 +339,5 @@ reviewed.
 
 ## Current Next Step
 
-Implement Increment 3 only: persisted dry-run and deterministic `mock://` pilot
-runs with output validation. Do not add routes or UI in that change.
+Implement Increment 4 only: bind blinded evaluation events to completed runs and
+the exact guidance used. Do not add routes or UI in that change.

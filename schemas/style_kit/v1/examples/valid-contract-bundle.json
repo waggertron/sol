@@ -125,14 +125,18 @@
       },
       "external_provider_consent": false,
       "prompt_contract_version": 1,
-      "context_sha256": "bf93368cc36565316ef0979125bdaa2104b5cc764266c6a837c5635d024ca4b6",
+      "task_sha256": "83c005cfcfc259adb427c11bcb9f0d49ff026147aab561066e6c09d571a84709",
+      "context_sha256": "15ada3fbbe7d4f87c8506d900b8db095a88ebe7405382708b96c38722ed0a464",
       "artifact_type": "project_description",
+      "context": "professional",
       "task_input": "Write a short project description.",
       "variants": [
         {
           "variant_id": "variant_generic_v1",
           "kind": "generic",
+          "request_sha256": "0bebdf16ace929599d7ed6ca7fff7ba0a198965fc3aee4d1b3558e9d5927894b",
           "guidance_refs": [],
+          "guidance_snapshot": [],
           "profile_atom_refs": [],
           "output": "Write with a clear purpose, one concrete example, and a specific next step.",
           "output_sha256": "f658c024762375bb11ab8e6a40c0a6b1daf4ff1d46b0945aeaf7425676d3e688",
@@ -141,7 +145,20 @@
         {
           "variant_id": "variant_personalized_v1",
           "kind": "personalized",
+          "request_sha256": "0c9d9cf0805713523b6091b51ab41747110096d09424cf62e2e850f560edf7e5",
           "guidance_refs": ["guide_concise_v1"],
+          "guidance_snapshot": [
+            {
+              "id": "guide_concise_v1",
+              "guidance_version": 1,
+              "prompt_safe_instruction": "Use concise sentences, concrete examples, and a clear next step.",
+              "contexts": ["professional"],
+              "task_scopes": ["project_description"],
+              "contraindications": ["Do not assume this preference applies to reflective writing."],
+              "observation_refs": ["obs_sentence_length_v1"],
+              "profile_atom_refs": []
+            }
+          ],
           "profile_atom_refs": [],
           "output": "This project turns complicated workflows into clear, practical tools people can inspect and improve.",
           "output_sha256": "e000a6222272027b7e086966f87dd486c578c7545a624a4bf68579102805a344",

@@ -14,8 +14,10 @@
     "provider",
     "external_provider_consent",
     "prompt_contract_version",
+    "task_sha256",
     "context_sha256",
     "artifact_type",
+    "context",
     "task_input",
     "variants",
     "status",
@@ -55,10 +57,12 @@
     },
     "external_provider_consent": {"type": "boolean"},
     "prompt_contract_version": {"type": "integer", "minimum": 1},
+    "task_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
     "context_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
     "artifact_type": {
       "enum": ["writing_guide", "professional_bio", "project_description", "introduction"]
     },
+    "context": {"enum": ["general", "professional", "public", "reflective", "creative"]},
     "task_input": {"type": ["string", "null"], "maxLength": 10000},
     "variants": {
       "type": "array",
@@ -70,7 +74,9 @@
         "required": [
           "variant_id",
           "kind",
+          "request_sha256",
           "guidance_refs",
+          "guidance_snapshot",
           "profile_atom_refs",
           "output",
           "output_sha256",
@@ -79,10 +85,60 @@
         "properties": {
           "variant_id": {"type": "string", "pattern": "^variant_[a-z0-9][a-z0-9._-]{2,191}$"},
           "kind": {"enum": ["generic", "personalized"]},
+          "request_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
           "guidance_refs": {
             "type": "array",
             "uniqueItems": true,
             "items": {"type": "string", "pattern": "^guide_[a-z0-9][a-z0-9._-]{2,193}$"}
+          },
+          "guidance_snapshot": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "guidance_version",
+                "prompt_safe_instruction",
+                "contexts",
+                "task_scopes",
+                "contraindications",
+                "observation_refs",
+                "profile_atom_refs"
+              ],
+              "properties": {
+                "id": {"type": "string", "pattern": "^guide_[a-z0-9][a-z0-9._-]{2,193}$"},
+                "guidance_version": {"type": "integer", "minimum": 1},
+                "prompt_safe_instruction": {"type": "string", "minLength": 1, "maxLength": 1000},
+                "contexts": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {"enum": ["general", "professional", "public", "reflective", "creative"]}
+                },
+                "task_scopes": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {"enum": ["writing_guide", "professional_bio", "project_description", "introduction"]}
+                },
+                "contraindications": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {"type": "string", "minLength": 1, "maxLength": 500}
+                },
+                "observation_refs": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {"type": "string", "pattern": "^obs_[a-z0-9][a-z0-9._-]{2,195}$"}
+                },
+                "profile_atom_refs": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {"type": "string", "minLength": 1, "maxLength": 200}
+                }
+              }
+            }
           },
           "profile_atom_refs": {
             "type": "array",

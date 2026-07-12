@@ -230,16 +230,17 @@ production deployment contract.
 - explicit proposed/confirmed/edited/disabled guidance lifecycle;
 - shared profile-atom generation-eligibility policy;
 - immutable original guidance plus field-level prompt-safe review history;
-- observation/profile-atom evidence checks and context/task filtering.
+- observation/profile-atom evidence checks and context/task filtering;
+- persisted generic/personalized pilot-run records;
+- dry-run and deterministic local mock providers behind one interface;
+- task, context, consent, guidance-snapshot, request, and output hashes;
+- bounded output structure/framing validation and failed-output redaction.
 
 ### Missing Gate Conditions
 
 - browser/API generation-guidance authoring;
-- persisted pilot-run records;
 - feedback enforcement against a known run and exact atoms used;
-- provider abstraction and explicit external-model opt-in;
-- local/mock provider exercising the same contract as a future real provider;
-- output schema and safety validator;
+- explicit external-model opt-in and approved external provider;
 - user-visible generated artifact;
 - generic baseline comparison;
 - output evaluation/reporting.
@@ -335,7 +336,7 @@ Guidance files:
 
 ### Automated
 
-45 unittest cases cover:
+54 unittest cases cover:
 
 - session lifecycle and isolated JSONDB behavior;
 - consent/instrument provenance;
@@ -352,7 +353,10 @@ Guidance files:
 - Style Kit read-after-write, invalid-write atomicity, defensive copies,
   environment isolation, corruption handling, and in-process concurrency;
 - guidance transitions, edits/history, prompt-safe separation, evidence
-  eligibility, atom exclusions, filtering, and disabling.
+  eligibility, atom exclusions, filtering, and disabling;
+- dry-run/mock persistence, deterministic output, generic isolation, exact
+  hashes/snapshots, output validation/redaction, provider exclusion, and stale
+  guidance rejection.
 
 ### Rendered
 

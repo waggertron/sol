@@ -4,11 +4,11 @@
 from __future__ import annotations
 
 from copy import deepcopy
-from datetime import datetime, timezone
 from typing import Any, Callable
 
 from profile_atom_policy import is_generation_eligible as profile_atom_is_eligible
 from style_kit_store import StyleKitRepository
+from time_contracts import normalize_utc_iso
 
 
 ProfileAtomLookup = Callable[[str], dict[str, Any] | None]
@@ -29,15 +29,7 @@ EDITABLE_FIELDS = (
 
 
 def normalize_utc_timestamp(value: str) -> str:
-    if not isinstance(value, str) or not value.strip():
-        raise ValueError("reviewed_at is required")
-    try:
-        parsed = datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
-    except ValueError as exc:
-        raise ValueError("reviewed_at must be an ISO-8601 timestamp with timezone") from exc
-    if parsed.tzinfo is None:
-        raise ValueError("reviewed_at must include a timezone")
-    return parsed.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return normalize_utc_iso(value, "reviewed_at")
 
 
 class GuidanceService:
@@ -177,6 +169,26 @@ class GuidanceService:
             "disabled",
         )
 
+    def is_guidance_eligible(
+        self,
+        guidance: dict[str, Any],
+        owner_id: str,
+        *,
+        context: str | None = None,
+        task_scope: str | None = None,
+    ) -> bool:
+        if guidance.get("owner_id") != owner_id:
+            return False
+        if guidance.get("record_state") != "active":
+            return False
+        if guidance.get("user_state") not in {"confirmed", "edited"}:
+            return False
+        if context is not None and context not in guidance.get("contexts", []):
+            return False
+        if task_scope is not None and task_scope not in guidance.get("task_scopes", []):
+            return False
+        return not self._evidence_errors(guidance, activation=True)
+
     def eligible_guidance(
         self,
         owner_id: str,
@@ -186,16 +198,11 @@ class GuidanceService:
     ) -> list[dict[str, Any]]:
         eligible: list[dict[str, Any]] = []
         for guidance in self.repository.list_records(GUIDANCE_COLLECTION):
-            if guidance.get("owner_id") != owner_id:
-                continue
-            if guidance.get("record_state") != "active":
-                continue
-            if guidance.get("user_state") not in {"confirmed", "edited"}:
-                continue
-            if context is not None and context not in guidance.get("contexts", []):
-                continue
-            if task_scope is not None and task_scope not in guidance.get("task_scopes", []):
-                continue
-            if not self._evidence_errors(guidance, activation=True):
+            if self.is_guidance_eligible(
+                guidance,
+                owner_id,
+                context=context,
+                task_scope=task_scope,
+            ):
                 eligible.append(guidance)
         return eligible

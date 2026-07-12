@@ -2,12 +2,14 @@
 set -euo pipefail
 
 python3 -m py_compile \
+  tools/time_contracts.py \
   tools/profile_atom_policy.py \
   tools/assessment_session_store.py \
   tools/assessment_web_mvp.py \
   tools/assessment_to_profile_atoms.py \
   tools/generation_pilot.py \
   tools/style_kit_guidance.py \
+  tools/style_kit_pilot.py \
   tools/style_kit_store.py \
   tools/validate_style_kit_contracts.py \
   tools/validate_sol_ocean_candidate.py

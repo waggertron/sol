@@ -76,7 +76,8 @@ instruction edit must supply its prompt-safe representation explicitly; the
 service does not guess, sanitize, or silently repair it. Both changes appear in
 review history.
 
-Prompt construction and output safety validation remain Increment 3 work.
+Prompt-safe snapshots and output safety validation are now consumed by the
+persisted local pilot boundary documented in `pilot-runs.md`.
 
 ## Atomicity
 
