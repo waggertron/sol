@@ -13,6 +13,21 @@ pilot link -> participant ID -> scenario -> organic response -> assessment
 The selected hosting path is Vercel plus hosted Postgres, documented in
 `docs/adr/2026-07-13-vercel-validation-mvp-hosting.md`.
 
+## Resume Note
+
+Resume here with H0 and V0 before writing hosted route code:
+
+1. Confirm the Vercel project/domain, hosted Postgres provider, API stack
+   choice, environment variable names, and region.
+2. Draft participant consent, provider disclosure, retention/export/delete copy,
+   and the first safe scenario module set.
+3. Then implement the hosted persistence boundary and route skeleton in mock or
+   dry-run mode only.
+
+Do not deploy the JSONDB-backed local server unchanged. Do not enable real model
+provider calls until provider disclosure, request inspection, output validation,
+export/delete, and the organic-response exclusion test are in place.
+
 ## Hosting Decision
 
 Use Vercel for the validation MVP, but do not deploy the current local JSONDB
