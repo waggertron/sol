@@ -32,16 +32,24 @@ scoped profile from a profile service and submit feedback after generation.
 3. Extraction or scoring creates observations.
 4. Inference proposes profile atoms.
 5. User confirms or corrects atoms.
-6. Generation uses scoped atoms.
-7. Feedback updates atom confidence and generation mappings.
+6. Generation uses scoped eligible context or a bounded pilot prediction
+   context.
+7. Feedback creates evaluation evidence and reviewed generation-mapping input;
+   it does not silently rewrite atom confidence or claims.
 
 ## Current MVP Direction
 
 The assessment-first MVP now loads stored instruments, administers and scores
 them, persists consent/version provenance for new sessions, creates editable
-profile atoms, explains evidence, and exports scoped context. The next
-architecture work should remain wedge-driven: generation-guidance authoring,
-persisted pilot runs, and one consented writing-sample ingestion path.
+profile atoms, explains evidence, and exports scoped context. The current
+validation architecture work is the participant-link scenario MVP: no-auth
+pilot link, opaque participant ID, bounded fictional scenario, organic response
+storage, assessment-derived candidate context, predicted response generation,
+response-quality ranking, and alignment feedback.
+
+Hosting direction: use Vercel for the validation MVP's public participant UI
+and stateless API routes, with hosted Postgres for durable pilot data. Do not
+use repo-local JSONDB files as hosted persistence.
 
 ## Open Questions
 

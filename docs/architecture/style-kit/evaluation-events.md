@@ -9,6 +9,12 @@ external provider, or automatic profile mutation.
 An evaluation is user feedback about two outputs shown for one exact task. It
 is not personality evidence, an identity fact, or a diagnostic result.
 
+The participant-link validation MVP also uses evaluation evidence for one
+predicted response compared against the participant's stored organic response.
+That feedback asks whether the predicted response sounds like the participant
+and why. The organic response may be used for comparison and prompt-answering
+ranking, but not as input to the predicted-response generation request.
+
 ## Two-Step Blinded Lifecycle
 
 Blinding is enforced through two persisted operations:
@@ -41,6 +47,10 @@ Evaluation creation requires:
 `wrong`, `too_strong`, and `too_generic` labels require correction text.
 Evaluation writes do not modify sources, observations, profile atoms,
 guidance, pilot runs, assessment responses, claims, or confidence.
+
+Participant-link alignment feedback follows the same rule. It can feed a
+reviewed modeling or guidance-mapping queue, but it must not silently rewrite
+assessment evidence, profile atom claims, confidence, or model weights.
 
 ## Deletion
 

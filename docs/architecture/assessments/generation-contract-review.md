@@ -12,6 +12,12 @@ would currently create pressure to invent style rules from broad assessment
 claims. Assessment-derived atoms still have no browser authoring path for
 concrete user-reviewed generation mappings, and provider opt-in remains open.
 
+The 2026-07-13 participant-link validation MVP does not reverse this general
+decision. It defines a possible narrow pilot-provider gate for one scenario
+response task, with explicit provider disclosure, assessment-derived candidate
+context, and a required proof that the participant's organic response is
+excluded from the generation request.
+
 ## Findings Resolved
 
 - Generation eligibility now requires `active_atom`, `contextual` or `global`
@@ -39,6 +45,10 @@ Before adding a model-backed mode:
 3. Add an end-to-end test proving rejected, suppressed, unconfirmed, blocked,
    and review-only atoms cannot reach a model request.
 
+For the participant-link validation MVP, add a separate request-inspection test
+proving the organic participant response cannot reach the predicted-response
+request.
+
 ## Review Evidence
 
 - Automated tests cover confirmed selection, unconfirmed active exclusion,
@@ -62,3 +72,6 @@ Before adding a model-backed mode:
 - External-provider opt-in, the full exclusion test at the eventual provider
   request boundary, and browser/API surfaces remain open, so model-backed mode
   is still not approved.
+- Any real participant-link predicted-response pilot requires its own explicit
+  provider disclosure and approval; mock and dry-run remain the default for
+  automated validation.

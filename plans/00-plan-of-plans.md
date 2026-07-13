@@ -35,6 +35,14 @@ Current implementation state:
   notes without silently changing assessment evidence or confidence
 - deterministic Style Kit pilot runs now support a persisted two-step blinded
   evaluation lifecycle bound to the exact run and guidance used
+- the fastest validation path is now the participant-link scenario MVP in
+  `16-participant-link-validation-mvp.md`: a no-auth shared link, opaque
+  participant ID, fictional writing scenario, organic response, assessment,
+  assessment-informed predicted response, response ranking, and alignment
+  feedback
+- hosting for that validation path is planned in
+  `17-validation-mvp-hosting.md`, using Vercel for the public participant link
+  and stateless API with hosted Postgres for durable pilot data
 - original Sol OCEAN design work has a 30-item, manifest-excluded experimental
   candidate with a construct blueprint and structural/collision validator;
   expert and empirical validation remain open
@@ -148,11 +156,12 @@ Output:
 
 ## Immediate Next Steps
 
-1. Add browser guidance, run-history, and comparison surfaces before adding
-   consented writing samples and direct style calibration as the primary
-   product evidence.
-2. Close the source-to-profile-to-artifact-to-feedback loop locally, then test
-   it against a generic baseline before approving a real model provider.
+1. Build the participant-link voice validation MVP before the full Style Kit
+   workbench: shared link, participant ID, scenario response, assessment,
+   predicted response, ranking, and alignment feedback.
+2. Use the pilot to decide whether assessment-informed writing can sound like
+   the participant before investing in richer source intake and observation
+   dashboards.
 3. Keep experimental OCEAN review as a parallel validation track rather than a
    dependency of the Creative Style Kit.
 
@@ -160,5 +169,7 @@ Execution ledgers:
 
 - `14-personal-creative-style-kit-roadmap.md` (current product roadmap)
 - `15-style-kit-validated-execution.md` (current validated implementation ledger)
+- `16-participant-link-validation-mvp.md` (fast real-user validation slice)
+- `17-validation-mvp-hosting.md` (Vercel hosting plan for the validation slice)
 - `12-post-audit-roadmap.md`
 - `13-sol-ocean-experimental-assessment.md` (parallel validation track)

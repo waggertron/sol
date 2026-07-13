@@ -30,3 +30,8 @@ python3 -m pip install -r requirements-dev.txt
 The first product policy supports only self-authored writing, stores it locally
 until explicit deletion, and does not send it to an external provider. Schema
 support for a state does not by itself approve that state for product use.
+
+The participant-link validation MVP in `../../../plans/16-participant-link-validation-mvp.md`
+is a separate planned pilot slice. Any real predicted-response provider use
+requires its own explicit gate and disclosure; it is not implied by these
+schemas.

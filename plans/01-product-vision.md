@@ -38,10 +38,11 @@ than generic generation.
 ## Current State
 
 The repository now has a research RAG, JSONDB import queue, OCEAN assessment
-corpus, and a local assessment/profile workbench through scoped context export.
-The next product validation step is to add user-reviewed generation guidance,
-persisted pilot runs, and one consented writing-sample path before broader
-multimodal generation.
+corpus, local assessment/profile workbench, and Style Kit run/evaluation
+contracts. The next product validation step is the participant-link scenario
+MVP: collect an organic written response, run an assessment, generate an
+assessment-informed predicted response that excludes the organic response, and
+ask whether it sounds like the participant.
 
 ## Non-Goals
 

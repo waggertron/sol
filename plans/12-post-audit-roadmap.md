@@ -36,7 +36,12 @@ The full evidence and resolved findings are in:
 
 - [x] Define local events for “feels like me,” usefulness, correction, and
   generic-versus-personalized preference.
-- [ ] Add a generic baseline comparison to the writing-guide pilot.
+- [ ] Add the participant-link scenario validation flow from
+  `plans/16-participant-link-validation-mvp.md`.
+- [ ] Add the Vercel/Postgres hosted pilot path from
+  `plans/17-validation-mvp-hosting.md`.
+- [ ] Rank organic and predicted scenario responses separately from voice
+  alignment.
 - [ ] Report correction, rejection, completion, and feedback distributions.
 - [ ] Write a small consenting-user evaluation protocol.
 
@@ -72,10 +77,13 @@ The full evidence and resolved findings are in:
 
 1. Follow `plans/14-personal-creative-style-kit-roadmap.md` for the active
    product sequence.
-2. Expose guidance, run history, blinded comparison, and evaluation through the
-   workbench.
-3. Add consented writing evidence, direct style calibration, and operational
-   evaluation.
-4. Pursue expert/cognitive review of the experimental Sol OCEAN candidate as a
+2. Build the participant-link voice validation MVP in `plans/16` before the
+   full guidance/run-history workbench.
+3. Add the Vercel/Postgres hosting path in `plans/17` before sharing the pilot
+   with real participants.
+4. Use real participant feedback to decide whether assessment-informed predicted
+   responses sound like users before expanding writing evidence, direct style
+   calibration, and observation dashboards.
+5. Pursue expert/cognitive review of the experimental Sol OCEAN candidate as a
    parallel, non-critical validation track.
-5. Keep model-backed and multimodal work behind their explicit gates.
+6. Keep model-backed and multimodal work behind their explicit gates.

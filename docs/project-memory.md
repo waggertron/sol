@@ -154,6 +154,19 @@ a direct global generation control.
   completed mock runs and used guidance, with independently deletable feedback.
   The recorded stopping point is after Increment 4; Increment 5 browser
   workbench work is explicitly unstarted.
+- On 2026-07-13 the fastest validation path changed to the participant-link
+  voice validation MVP in `plans/16-participant-link-validation-mvp.md`, with
+  architecture decision
+  `docs/adr/2026-07-13-participant-link-validation-mvp.md`. This slice uses a
+  no-auth shared link, opaque participant ID, modular fictional scenario,
+  organic response before assessment, assessment-informed predicted response
+  that excludes the organic response, prompt-answering rankings, and alignment
+  feedback. It is a pilot validation shortcut, not a diagnostic or fixed
+  identity claim.
+- Hosting for that slice is planned in `plans/17-validation-mvp-hosting.md`
+  with ADR `docs/adr/2026-07-13-vercel-validation-mvp-hosting.md`: use Vercel
+  for the participant UI/stateless API and hosted Postgres for durable pilot
+  data. Do not deploy the current JSONDB-backed local server unchanged.
 - Wikimedia/Wikipedia imports must be slow and serial: default to `--sleep 12`,
   keep queue-drain runs at `--link-limit 0`, do not run parallel jobs, and stop
   after HTTP `429` or `503` once `Retry-After` or the configured delay has been
@@ -188,6 +201,8 @@ a direct global generation control.
   future paper-cluster ingestion and promotion work.
 - Repo-local agent guidance now lives in:
   `AGENTS.md`, `assessments/AGENTS.md`, and `kb/AGENTS.md`.
+- The participant-link validation workflow is preserved in the repo-local skill
+  `.codex/skills/sol-participant-link-validation-mvp/SKILL.md`.
 - `tools/import_ocean_assessments.py` normalizes downloaded official assessment
   pages into repo JSON.
 - `docs/architecture/assessments/profile-atom-output.md` defines the current
@@ -203,17 +218,23 @@ The latest snapshot is maintained in `docs/current-state.md`.
 
 ## Current Build Direction
 
-The assessment administration foundation is complete enough for the next
-product proof. Build the Creative Style Kit text loop in this order:
+The assessment administration foundation and Style Kit contracts are complete
+enough for the next product proof. Build the validation MVP in this order:
 
-1. Add browser guidance, run-history, comparison, and evaluation surfaces.
-2. Add consented writing samples and direct style calibration.
-3. Present source-bound observations and editable contextual guidance.
-4. Compare personalized and generic text artifacts blind and bind feedback to
-   the exact run and guidance used.
-5. Validate export, cascading deletion, and ineligible-atom exclusion.
-6. Use the product-value gate before any real model, visual input, or platform
-   extraction.
+1. Add the participant-link flow: no-auth link, participant ID, modular
+   scenario, organic response storage, assessment, predicted response, response
+   ranking, and alignment feedback.
+2. Prove the predicted response uses the same scenario plus assessment-derived
+   candidate context, but not the participant's organic response.
+3. Store alignment/misalignment feedback as evaluation evidence and mapping
+   review input, without silently changing assessment evidence, atom claims,
+   confidence, or model weights.
+4. Run a small consenting pilot and decide whether the output sounds like users
+   before building the full guidance/run-history workbench, writing-source
+   observation dashboard, visual input, or platform extraction.
+5. Host the validation slice through Vercel only after the Postgres-backed pilot
+   data boundary, export/delete behavior, provider disclosure, and
+   organic-response exclusion tests exist.
 
 ## Key Source Anchors
 

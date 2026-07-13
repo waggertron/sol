@@ -247,6 +247,7 @@ production deployment contract.
 ### Missing Gate Conditions
 
 - browser/API generation-guidance authoring;
+- participant-link scenario validation UI/API;
 - explicit external-model opt-in and approved external provider;
 - user-visible generated artifact;
 - browser-based generic baseline comparison;
@@ -327,7 +328,8 @@ downloaded official assessment HTML and requires `beautifulsoup4`.
 Repo-local `.codex` skills:
 
 - `sol-research-kb-workflow`;
-- `sol-experimental-assessment-workflow`.
+- `sol-experimental-assessment-workflow`;
+- `sol-participant-link-validation-mvp`.
 
 Additional repository skill package:
 

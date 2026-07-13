@@ -9,6 +9,15 @@ explicitly selected, eligible guidance. Increment 3 supports only local
 There is no external provider, credential, network call, route, or UI in this
 increment.
 
+The participant-link validation MVP in
+`plans/16-participant-link-validation-mvp.md` adds a planned pilot-specific run
+shape: one predicted response to a stored fictional scenario, influenced by
+assessment-derived candidate context and explicitly excluding the participant's
+prior organic response. That predicted-response path must keep the same
+provenance discipline: scenario version, assessment/session fingerprint,
+context hash, provider version, output validation, and request inspection. It
+does not by itself approve a general external provider mode.
+
 ## Provider Contract
 
 A provider exposes:
@@ -44,6 +53,10 @@ Every run stores:
 - source, observation, and profile-atom references carried by that guidance;
 - personalized context SHA-256;
 - output SHA-256 and validation result when output passes.
+
+For participant-link predicted-response runs, provenance must additionally
+store `organic_response_excluded: true` and enough request-inspection metadata
+to prove the organic response text was not included in the generation request.
 
 The personalized context hash covers consent references, requested context,
 source references, profile-atom references, and the complete prompt-safe

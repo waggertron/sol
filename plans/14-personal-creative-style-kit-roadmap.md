@@ -24,6 +24,30 @@ The product must preserve provenance, uncertainty, context, and user control.
 It must not present personality assessment results as identity facts or use
 broad traits as direct global writing controls.
 
+## Current Validation Shortcut
+
+The fastest path to real user evidence is the participant-link voice validation
+MVP in `plans/16-participant-link-validation-mvp.md`.
+
+That slice intentionally narrows the first user-facing build:
+
+- share a no-auth pilot link;
+- assign an opaque participant ID and tell the participant to write it down;
+- present a modular fictional scenario with a bounded description length;
+- collect and store the participant's organic written response before
+  assessment;
+- administer an existing assessment and derive provisional candidate context;
+- generate a predicted response to the same scenario from assessment outcomes
+  while explicitly excluding the organic response;
+- rank both the organic and predicted responses for prompt-answering quality;
+- ask whether the predicted response sounds like the participant and record
+  structured alignment or misalignment reasons.
+
+This is a validation shortcut, not a claim that assessment results reveal fixed
+identity. Feedback updates modeling review and future guidance decisions; it
+must not silently rewrite raw assessment evidence, atom claims, confidence, or
+model weights.
+
 ## Recommended Product Strategy
 
 ### Primary wedge
@@ -549,15 +573,22 @@ This is not on the current critical path.
 
 Recommended next implementation sequence:
 
-1. Build Guidance, Run History, and blinded comparison UI.
-2. Add pasted writing-source consent/storage/cascading deletion.
-3. Add deterministic writing observations.
-4. Add direct style calibration.
-5. Close the local mock artifact/evaluation loop.
-6. Run the product-value gate before any real model or visual work.
+1. Build the participant-link validation slice in `plans/16`: no-auth link,
+   participant ID, scenario response, assessment, predicted response, ranking,
+   and alignment feedback.
+2. Add only the route/UI/storage needed for that slice; defer the full Style Kit
+   run-history and source-observation workbench until the first user pilot is
+   interpretable.
+3. Use an existing administrable assessment first; do not activate the
+   experimental Sol OCEAN candidate.
+4. Prove the predicted-response request excludes the participant's organic
+   response.
+5. Run the first 5-8 participant pilot and evaluate whether outputs sound like
+   users before expanding source intake or visual work.
 
 The acceptance behavior and validation command for each increment live in
-`plans/15-style-kit-validated-execution.md`.
+`plans/15-style-kit-validated-execution.md` and
+`plans/16-participant-link-validation-mvp.md`.
 
 ## Definition Of Done For Product Goal v1
 
@@ -583,4 +614,5 @@ The acceptance behavior and validation command for each increment live in
 - Add new research to product behavior only through reviewed promotion.
 - Keep experimental-assessment work in `plans/13` and off the product critical
   path until external review/validation evidence exists.
-- Execute implementation through the small validation gates in `plans/15`.
+- Execute implementation through the small validation gates in `plans/15`, with
+  the current real-user shortcut captured in `plans/16`.

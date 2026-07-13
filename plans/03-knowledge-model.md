@@ -46,6 +46,14 @@ Each profile atom should include:
 - sensitivity level
 - generation mappings
 
+## Participant-Link MVP Distinction
+
+The participant-link validation MVP may use assessment outcomes as
+scenario-scoped candidate prediction context. That context is for testing a
+predicted response, not for promoting assessment-derived atoms to active/global
+profile controls. Alignment feedback should inform reviewed mapping decisions
+and future model design, not silently change raw evidence or confidence.
+
 ## Open Questions
 
 - Which constructs are useful enough for generation?

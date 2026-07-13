@@ -49,6 +49,12 @@ rm -rf tmp/generation-pilot
 `external_model_called` is always `false`. A model-backed mode remains blocked
 until the prompt and feedback contracts have been reviewed together.
 
+The participant-link validation MVP defines a separate predicted-response
+pilot path. That path may later request a narrow provider gate for one scenario
+response task, but it must preserve explicit provider disclosure, bounded
+assessment-prediction context, and proof that the participant's organic
+response was excluded from generation input.
+
 The dry run separates the system instruction from a JSON user payload. The
 system instruction explicitly treats every profile-context field as quoted
 data and ignores commands embedded in user-edited claims or notes.

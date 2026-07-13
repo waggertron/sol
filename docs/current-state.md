@@ -1,6 +1,6 @@
 # Current State
 
-Last updated: 2026-07-12
+Last updated: 2026-07-13
 
 ## Project Status
 
@@ -157,6 +157,21 @@ Reference-only or license-review instruments are tracked in:
   ratings/correction later. Events are limited to active completed mock runs and
   exact used guidance, and deletion redacts feedback without mutating evidence,
   guidance, runs, or assessment data.
+- The active validation shortcut is now the participant-link voice validation
+  MVP in `plans/16-participant-link-validation-mvp.md`, backed by
+  `docs/adr/2026-07-13-participant-link-validation-mvp.md`. The slice uses a
+  no-auth shared link, opaque participant ID, modular fictional scenario,
+  organic response collected before assessment, assessment-informed predicted
+  response that excludes the organic response, response-quality ranking, and
+  alignment feedback.
+- Repo-local workflow guidance for that slice lives at
+  `.codex/skills/sol-participant-link-validation-mvp/SKILL.md`.
+- Hosting for the participant-link validation MVP is now planned in
+  `plans/17-validation-mvp-hosting.md`, with ADR
+  `docs/adr/2026-07-13-vercel-validation-mvp-hosting.md`. The decision is to
+  use Vercel for the public participant UI/stateless API and hosted Postgres for
+  durable pilot data. The current JSONDB-backed local server should not be
+  deployed unchanged.
 
 Current queue ingestion support:
 
@@ -199,16 +214,19 @@ docs.
 ## Current Product Direction
 
 The assessment-first foundation now proves administration, evidence,
-correction, lifecycle controls, and scoped context export. The next product
-proof returns to the Personal Creative Style Kit itself:
+correction, lifecycle controls, scoped context export, and the local
+Style Kit run/evaluation contracts. The next product proof should optimize for
+real user validation:
 
-1. Add browser guidance, run-history, comparison, and evaluation surfaces.
-2. Ingest authorized writing samples and direct style preferences as the
-   primary product evidence.
-3. Present localized observations and editable, context-specific guidance.
-4. Compare personalized and generic short text artifacts blind.
-5. Gate any real-model, visual, or platform expansion on safety and measured
-   product value.
+1. Build the participant-link scenario MVP: shared link, participant ID,
+   fictional scenario, organic response, assessment, predicted response,
+   response ranking, and alignment feedback.
+2. Prove the predicted-response request excludes the participant's organic
+   response and frames assessment outcomes as provisional hypotheses.
+3. Run a small consenting pilot and measure whether predicted responses sound
+   like participants while still answering the prompt well.
+4. Only then expand into fuller Style Kit source intake, guidance workbench,
+   deterministic observations, visual inputs, or platform extraction.
 
 OCEAN assessment remains optional context. Broad traits are not direct global
 generation controls, and the inactive Sol candidate is not part of this path.
@@ -217,6 +235,8 @@ The full capability inventory and active roadmap live at:
 
 - `docs/inventory/2026-07-12-capability-inventory.md`
 - `plans/14-personal-creative-style-kit-roadmap.md`
+- `plans/16-participant-link-validation-mvp.md`
+- `plans/17-validation-mvp-hosting.md`
 
 The first implementation-facing assessment output contract now lives at:
 
@@ -253,12 +273,13 @@ Then open `http://127.0.0.1:8765`.
   Kit boundary now also persists generic/personalized dry-run and mock records.
 - Creative Style Kit Phase 0 plus Increments 1-4 are complete and validated by
   the 61-test suite.
-- The recorded stopping point is the boundary after Increment 4. Increment 5 is
-  explicitly unstarted; resume with the browser guidance, run-history, blinded
-  comparison, and evaluation workbench in
-  `plans/15-style-kit-validated-execution.md`.
+- The recorded stopping point is the boundary after Increment 4. Resume with
+  Increment 5V, the participant-link validation slice, and Increment 5H, the
+  hosted Vercel/Postgres path, before the full guidance/run-history workbench.
 - Model-backed execution remains deferred until after the local closed loop and
-  product-evaluation gate.
+  product-evaluation gate, except for a separately disclosed narrow pilot
+  provider gate if real predicted responses are needed for participant
+  validation.
 - Experimental Sol OCEAN follow-up is limited to expert/cognitive review and a
   later validation-gated pilot; the candidate is not active in the MVP.
 

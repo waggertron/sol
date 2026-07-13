@@ -33,10 +33,17 @@ consent
   -> structured feedback notes
 ```
 
-The next product slice exposes the completed local guidance, run, and blinded
-evaluation contracts in the browser. Direct style choices and authorized
-writing samples follow. OCEAN is optional context, and visual direction follows
-only after the text loop proves useful.
+The next product slice is a faster participant-link validation MVP: share a
+no-auth link, assign an opaque participant ID, show a bounded fictional
+scenario, collect the participant's organic written response, run an assessment,
+generate an assessment-informed predicted response that excludes the organic
+response, and ask whether the prediction sounds like the participant. The full
+Style Kit guidance/source workbench follows only after this first validation
+slice is interpretable.
+
+The planned hosting path for that slice is Vercel plus hosted Postgres. Vercel
+can host the public participant UI and stateless API routes, but the current
+local JSONDB-backed server should not be deployed unchanged.
 
 ## What Works Today
 
@@ -84,6 +91,7 @@ The repository does not yet provide:
 - writing-sample, liked/disliked-example, or moodboard ingestion;
 - browser-based contextual generation-guidance authoring;
 - browser guidance, run-history, blinded comparison, and evaluation surfaces;
+- participant-link scenario validation UI;
 - model-backed artifact generation;
 - “feels like me,” usefulness, or generic-baseline evaluation reporting;
 - a validated original Sol personality assessment;
@@ -188,14 +196,17 @@ The active product roadmap is
 
 Current order:
 
-1. Add browser guidance/run history, blinded comparison, and evaluation
-   surfaces.
-2. Add source intake and cascading deletion over the same record graph.
-3. Add explicitly consented writing samples and direct style calibration.
-4. Close the local source-to-profile-to-artifact-to-feedback loop and compare it
-   against a generic baseline.
-5. Consider a real model provider, visual inputs, or platform extraction only
-   after their safety and product-value gates pass.
+1. Build the participant-link validation MVP in
+   [`plans/16-participant-link-validation-mvp.md`](plans/16-participant-link-validation-mvp.md).
+2. Add the Vercel/Postgres hosting path in
+   [`plans/17-validation-mvp-hosting.md`](plans/17-validation-mvp-hosting.md).
+3. Prove the predicted response uses assessment-derived candidate context while
+   excluding the participant's organic response.
+4. Store alignment/misalignment feedback as evaluation evidence, not as an
+   automatic rewrite of assessment claims or confidence.
+5. Run a small consenting pilot and decide whether the output sounds like users.
+6. Expand into fuller Style Kit guidance, source intake, visual inputs, or
+   platform extraction only after the validation gate is reviewed.
 
 Independent expert/cognitive review of the experimental Sol OCEAN candidate is
 a parallel validation track, not a dependency of the product wedge.
@@ -207,6 +218,8 @@ Detailed ledgers:
 - [`plans/13-sol-ocean-experimental-assessment.md`](plans/13-sol-ocean-experimental-assessment.md)
 - [`plans/14-personal-creative-style-kit-roadmap.md`](plans/14-personal-creative-style-kit-roadmap.md)
 - [`plans/15-style-kit-validated-execution.md`](plans/15-style-kit-validated-execution.md)
+- [`plans/16-participant-link-validation-mvp.md`](plans/16-participant-link-validation-mvp.md)
+- [`plans/17-validation-mvp-hosting.md`](plans/17-validation-mvp-hosting.md)
 
 ## Safety Boundaries
 
@@ -269,4 +282,6 @@ updates, and ADRs where appropriate.
 - [`docs/architecture/assessments/web-mvp.md`](docs/architecture/assessments/web-mvp.md)
 - [`docs/architecture/assessments/sol-ocean-experimental.md`](docs/architecture/assessments/sol-ocean-experimental.md)
 - [`docs/adr/2026-07-12-style-kit-record-contracts.md`](docs/adr/2026-07-12-style-kit-record-contracts.md)
+- [`docs/adr/2026-07-13-participant-link-validation-mvp.md`](docs/adr/2026-07-13-participant-link-validation-mvp.md)
+- [`docs/adr/2026-07-13-vercel-validation-mvp-hosting.md`](docs/adr/2026-07-13-vercel-validation-mvp-hosting.md)
 - [`docs/architecture/rag/research-promotion-workflow.md`](docs/architecture/rag/research-promotion-workflow.md)

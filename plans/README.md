@@ -30,3 +30,8 @@ Start here:
   consented writing evidence through a local evaluation loop and later gates
 - `15-style-kit-validated-execution.md` - small implementation increments with
   explicit acceptance behavior and validation commands
+- `16-participant-link-validation-mvp.md` - fast real-user validation slice with
+  a no-auth participant link, fictional scenario response, assessment-informed
+  predicted response, and alignment feedback
+- `17-validation-mvp-hosting.md` - Vercel plus hosted Postgres hosting plan for
+  the participant-link validation MVP

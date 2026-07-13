@@ -12,6 +12,12 @@ persisted dry-run/mock pilot provenance, and run-bound blinded evaluation are
 also complete. The remaining wedge work begins with browser surfaces, then
 consented writing/preference inputs before visual expansion.
 
+Current validation shortcut: before building the full Style Kit surface, build
+the participant-link scenario MVP in `plans/16-participant-link-validation-mvp.md`.
+It tests whether an assessment-informed predicted response to a fictional
+scenario sounds like the participant, while storing the participant's organic
+response only for comparison and never using it as generation input.
+
 ## Why This Wedge
 
 - It exercises the complete platform loop.
@@ -22,11 +28,12 @@ consented writing/preference inputs before visual expansion.
 
 ## MVP Inputs
 
-- 3-10 writing samples
-- short calibration questionnaire or OCEAN assessment from `assessments/ocean/`
-- liked/disliked examples
-- optional moodboard or visual references
-- direct user corrections
+- no-auth shared pilot link and opaque participant ID
+- modular fictional scenario with a specific recipient and writing request
+- one organic participant response
+- short administrable assessment from `assessments/ocean/`
+- alignment/misalignment feedback on the predicted response
+- direct correction text
 
 ## MVP Profile Outputs
 
@@ -39,12 +46,13 @@ consented writing/preference inputs before visual expansion.
 
 ## MVP Generated Outputs
 
-- short bio
-- writing voice guide
-- personal manifesto or positioning statement
-- content ideas
-- image prompt directions
-- visual moodboard description
+- predicted response to the same scenario, using assessment-derived candidate
+  context and excluding the organic response
+- prompt-answering quality rankings for organic and predicted responses
+
+Later Style Kit outputs can include a short bio, writing voice guide, project
+description, content ideas, image-prompt directions, and visual moodboard
+description after the validation shortcut is interpretable.
 
 ## Required Feedback
 

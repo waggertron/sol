@@ -185,6 +185,85 @@ python3 -m unittest tests.test_style_kit_evaluation
 ./scripts/run_assessment_web_mvp_qa.sh
 ```
 
+## Increment 5V: Participant Link Validation Slice
+
+Goal: expose the minimum browser/API path needed for real user validation before
+building the full Style Kit workbench.
+
+This increment is defined in detail by
+`plans/16-participant-link-validation-mvp.md`.
+Hosted rollout is defined by `plans/17-validation-mvp-hosting.md`.
+
+Implementation:
+
+- [ ] Add a no-auth pilot link route with an opaque participant ID.
+- [ ] Tell the participant to write down the ID for resume/export/delete.
+- [ ] Generate and persist one modular fictional scenario with a bounded
+  description length.
+- [ ] Collect and store the participant's organic response before assessment.
+- [ ] Administer an existing assessment and derive provisional candidate
+  context.
+- [ ] Generate a predicted response to the same scenario using assessment
+  outcomes while proving the organic response is excluded.
+- [ ] Rank the organic and predicted responses against a prompt-answering
+  rubric.
+- [ ] Show the predicted response and collect structured alignment or
+  misalignment feedback.
+
+Acceptance:
+
+- one participant can complete link -> ID -> scenario -> organic response ->
+  assessment -> predicted response -> alignment feedback;
+- predicted-response provenance proves the organic response was not used as
+  generation input;
+- assessment-derived outputs are framed as provisional hypotheses, not identity
+  facts;
+- participant export/delete works by ID for the pilot records;
+- no experimental Sol OCEAN candidate, high-stakes scenario, or hidden profile
+  claim is used.
+
+Validation:
+
+```bash
+python3 -m unittest tests.test_participant_link_mvp
+./scripts/run_assessment_web_mvp_qa.sh
+./scripts/run_assessment_web_mvp_visual_qa.sh
+```
+
+## Increment 5H: Hosted Validation Pilot
+
+Goal: make Increment 5V available to real participants through a shareable
+Vercel URL without relying on local JSONDB persistence.
+
+Implementation:
+
+- [ ] Add a hosted participant-pilot persistence boundary backed by Postgres.
+- [ ] Add Vercel-compatible participant UI/API routes.
+- [ ] Keep the participant route no-auth while protecting preview/admin
+  surfaces separately.
+- [ ] Configure server-only environment variables for provider keys and kill
+  switches.
+- [ ] Add deployment smoke tests for mock/dry-run mode.
+- [ ] Verify export/delete and organic-response exclusion in the hosted path.
+
+Acceptance:
+
+- one participant can complete the validation flow on a Vercel preview or
+  production pilot URL;
+- hosted data writes go to the reviewed database, not repo files;
+- no raw participant text, assessment answers, prompts, or predicted outputs are
+  written to application logs;
+- real provider mode remains disabled until the separate pilot-provider gate is
+  approved.
+
+Validation:
+
+```bash
+python3 -m unittest tests.test_participant_link_mvp
+python3 -m unittest tests.test_hosted_participant_repository
+./scripts/run_assessment_web_mvp_qa.sh
+```
+
 ## Increment 5: Guidance And Run-History Workbench
 
 Goal: expose the completed guidance/run/evaluation contracts in the local UI.
@@ -342,13 +421,15 @@ reviewed.
 
 ## Current Stopping Point
 
-Stop after Increment 4. Increments 0-4 are complete and validated; Increment 5
-is explicitly unstarted. This is a clean boundary because contracts, local
-storage, reviewed guidance, deterministic pilot runs, and the two-step blinded
-evaluation lifecycle now work without routes, UI, credentials, or network
-access.
+Stop after Increment 4. Increments 0-4 are complete and validated. The previous
+next step was the full Increment 5 Guidance and Run-History Workbench, but the
+current product priority is faster real-user validation.
 
-Resume with Increment 5 only: add the Guidance and Run History browser
-workbench, including the blinded comparison and evaluation form. Do not begin
-writing-source intake until that browser flow passes its HTTP, regression, and
-desktop/mobile validation gates.
+Resume with Increment 5V first, then 5H when the route is ready to be shared:
+build only the participant-link scenario validation slice from
+`plans/16-participant-link-validation-mvp.md` and host it through
+`plans/17-validation-mvp-hosting.md`. The full Increment 5 workbench remains
+useful, but it should not block the first participant pilot. Do not begin broad
+writing-source intake, deterministic observation dashboards, visual work, or
+experimental Sol OCEAN activation until the participant-link pilot is
+interpretable.

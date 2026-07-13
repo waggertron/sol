@@ -22,6 +22,12 @@ When `include_review_only` is explicitly enabled, non-rejected
 also included. They are marked `eligible_for_generation: false` and are for
 internal inspection, not steering.
 
+The participant-link validation MVP uses a separate
+`assessment_prediction_context` for one scenario-scoped predicted response.
+That pilot context may summarize assessment-derived candidates as hypotheses,
+but it is not the default scoped profile context packet and does not promote
+review-only atoms to normal generation eligibility.
+
 ## Shape
 
 The packet contains:
@@ -65,3 +71,6 @@ Web exports:
   profiling, or eligibility/high-impact decisions.
 - Consumers should apply contextual atoms only when their context matches the
   generation task.
+- Pilot prediction contexts must be labeled separately from normal generation
+  packets and must prove any stored organic participant response was excluded
+  from the request.

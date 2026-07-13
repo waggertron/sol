@@ -85,6 +85,12 @@ For the first local product slice:
 - direct preferences and writing observations remain separate from OCEAN
   self-report evidence and do not become personality facts.
 
+2026-07-13 update: `docs/adr/2026-07-13-participant-link-validation-mvp.md`
+defines a separate validation shortcut. That MVP may request a narrow
+pilot-provider gate for one predicted scenario response after explicit provider
+disclosure and request-inspection tests. This does not approve a general
+external-provider mode for the Creative Style Kit contracts.
+
 Local-until-deleted is chosen over an undocumented ephemeral mode because the
 first wedge requires inspectable evidence, reproducible extraction, correction,
 export, and cascading deletion. A future derived-only mode needs its own threat,

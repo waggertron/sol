@@ -33,6 +33,12 @@ now has a design-review-only construct blueprint, item-writing contract, and
 Independent expert review, cognitive interviews, and empirical validation
 remain open in `plans/13-sol-ocean-experimental-assessment.md`.
 
+Participant-link validation MVP note: use only existing administrable
+manifest-approved instruments. The first real pilot should default to
+Mini-IPIP for a short but more informative OCEAN path, with TIPI reserved for a
+very short smoke test. Do not use `Sol-OCEAN-Quick-v0` for product sessions or
+predicted-response generation.
+
 ## Working Principles
 
 - Do not copy protected test items into the repo unless the instrument license
